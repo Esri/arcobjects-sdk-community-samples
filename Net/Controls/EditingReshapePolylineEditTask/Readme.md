@@ -27,7 +27,7 @@ Illustration of performing a reshape on the selected feature.
 
 
 ####See Also  
-[EngineEditorClass](http://desktopdev.arcgis.com/search/?q=EngineEditorClass&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[EngineEditorClass](http://desktop.arcgis.com/search/?q=EngineEditorClass&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

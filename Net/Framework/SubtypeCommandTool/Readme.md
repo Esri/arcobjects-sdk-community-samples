@@ -20,7 +20,7 @@ You can create multiple commands or tools with similar functionalities in a sing
 
 
 ####See Also  
-[How to create multiple commands or tools in a single class subtyped command](http://desktopdev.arcgis.com/search/?q=How%20to%20create%20multiple%20commands%20or%20tools%20in%20a%20single%20class%20subtyped%20command&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create multiple commands or tools in a single class subtyped command](http://desktop.arcgis.com/search/?q=How%20to%20create%20multiple%20commands%20or%20tools%20in%20a%20single%20class%20subtyped%20command&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Sample: Recently used files—Command, MultiItem, and ComboBox](../../../Net/Framework/RecentFilesCommands)  
 
 

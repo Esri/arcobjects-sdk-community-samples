@@ -26,8 +26,8 @@ Schematic rules are executed during schematic diagram generation and update. Se
 
 
 ####See Also  
-[ISchematicRule interface](http://desktopdev.arcgis.com/search/?q=ISchematicRule%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicRuleDesign interface](http://desktopdev.arcgis.com/search/?q=ISchematicRuleDesign%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicRule interface](http://desktop.arcgis.com/search/?q=ISchematicRule%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicRuleDesign interface](http://desktop.arcgis.com/search/?q=ISchematicRuleDesign%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

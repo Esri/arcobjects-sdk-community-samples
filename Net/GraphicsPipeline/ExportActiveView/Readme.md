@@ -19,7 +19,7 @@ This sample shows how to export the active view to any supported export format.
 
 
 ####See Also  
-[Output](http://desktopdev.arcgis.com/search/?q=Output&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Output](http://desktop.arcgis.com/search/?q=Output&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

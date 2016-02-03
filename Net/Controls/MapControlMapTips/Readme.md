@@ -16,8 +16,8 @@ This sample demonstrates displaying MapTips in the MapControl using the IMapCont
 
 
 ####See Also  
-[MapControl class](http://desktopdev.arcgis.com/search/?q=MapControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IMapControl3 interface](http://desktopdev.arcgis.com/search/?q=IMapControl3%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[MapControl class](http://desktop.arcgis.com/search/?q=MapControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IMapControl3 interface](http://desktop.arcgis.com/search/?q=IMapControl3%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

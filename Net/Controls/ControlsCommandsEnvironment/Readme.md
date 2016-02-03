@@ -24,9 +24,9 @@ This sample demonstrates changing the symbols used by the out-of-the-box New Mar
 
 
 ####See Also  
-[CommandsEnvironment class](http://desktopdev.arcgis.com/search/?q=CommandsEnvironment%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IGraphicProperties interface](http://desktopdev.arcgis.com/search/?q=IGraphicProperties%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Workaround for controls display issues in 96 versus 120 dpi](http://desktopdev.arcgis.com/search/?q=Workaround%20for%20controls%20display%20issues%20in%2096%20versus%20120%20dpi&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[CommandsEnvironment class](http://desktop.arcgis.com/search/?q=CommandsEnvironment%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IGraphicProperties interface](http://desktop.arcgis.com/search/?q=IGraphicProperties%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Workaround for controls display issues in 96 versus 120 dpi](http://desktop.arcgis.com/search/?q=Workaround%20for%20controls%20display%20issues%20in%2096%20versus%20120%20dpi&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

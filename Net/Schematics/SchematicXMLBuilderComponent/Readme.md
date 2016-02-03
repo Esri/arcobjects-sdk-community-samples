@@ -44,8 +44,8 @@ This sample demonstrates the implementation of ISchematicXmlGenerate and ISchema
 
 
 ####See Also  
-[ISchematicXMLGenerate interface](http://desktopdev.arcgis.com/search/?q=ISchematicXMLGenerate%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicXMLUpdate interface](http://desktopdev.arcgis.com/search/?q=ISchematicXMLUpdate%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicXMLGenerate interface](http://desktop.arcgis.com/search/?q=ISchematicXMLGenerate%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicXMLUpdate interface](http://desktop.arcgis.com/search/?q=ISchematicXMLUpdate%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

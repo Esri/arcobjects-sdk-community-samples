@@ -25,7 +25,7 @@ Screen shot showing the Select Events and Listen to Events tabs.
 
 
 ####See Also  
-[Working with editing events](http://desktopdev.arcgis.com/search/?q=Working%20with%20editing%20events&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Working with editing events](http://desktop.arcgis.com/search/?q=Working%20with%20editing%20events&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

@@ -28,7 +28,7 @@ Illustration showing multipatch example UI after adding geometries.
 
 
 ####See Also  
-[How to create a multipatch using a series of triangles](http://desktopdev.arcgis.com/search/?q=How%20to%20create%20a%20multipatch%20using%20a%20series%20of%20triangles&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create a multipatch using a series of triangles](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20multipatch%20using%20a%20series%20of%20triangles&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

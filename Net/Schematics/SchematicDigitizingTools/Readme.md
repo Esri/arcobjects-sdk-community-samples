@@ -147,7 +147,7 @@ This sample shows how to implement a tool that can be used in ArcMap to digitiz
 
 
 ####See Also  
-[ISchematicInMemoryFeatureClass](http://desktopdev.arcgis.com/search/?q=ISchematicInMemoryFeatureClass&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicInMemoryFeatureClass](http://desktop.arcgis.com/search/?q=ISchematicInMemoryFeatureClass&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

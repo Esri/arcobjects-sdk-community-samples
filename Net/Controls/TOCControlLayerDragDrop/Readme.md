@@ -18,8 +18,8 @@ This sample shows how to drag and drop layers in the TOCControl. The sample use
 
 
 ####See Also  
-[TOCControl class](http://desktopdev.arcgis.com/search/?q=TOCControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ITOCControl2 interface](http://desktopdev.arcgis.com/search/?q=ITOCControl2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[TOCControl class](http://desktop.arcgis.com/search/?q=TOCControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ITOCControl2 interface](http://desktop.arcgis.com/search/?q=ITOCControl2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

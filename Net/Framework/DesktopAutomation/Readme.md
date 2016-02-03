@@ -28,7 +28,7 @@ This sample shows how to automate ArcGIS for Desktop applications (ArcMap, ArcSc
 
 
 ####See Also  
-[Automating ArcGIS for Desktop applications](http://desktopdev.arcgis.com/search/?q=Automating%20ArcGIS%20for%20Desktop%20applications&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Automating ArcGIS for Desktop applications](http://desktop.arcgis.com/search/?q=Automating%20ArcGIS%20for%20Desktop%20applications&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

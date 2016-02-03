@@ -19,7 +19,7 @@ This sample demonstrates an implementation of a custom graphic element. These el
 
 
 ####See Also  
-[Implementing cloning](http://desktopdev.arcgis.com/search/?q=Implementing%20cloning&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Implementing cloning](http://desktop.arcgis.com/search/?q=Implementing%20cloning&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

@@ -21,8 +21,8 @@ This sample shows how to create a report using a selected template. The user is
 
 
 ####See Also  
-[How to register COM components](http://desktopdev.arcgis.com/search/?q=How%20to%20register%20COM%20components&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Working with reports](http://desktopdev.arcgis.com/search/?q=Working%20with%20reports&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to register COM components](http://desktop.arcgis.com/search/?q=How%20to%20register%20COM%20components&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Working with reports](http://desktop.arcgis.com/search/?q=Working%20with%20reports&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

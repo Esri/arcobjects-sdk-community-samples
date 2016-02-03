@@ -20,8 +20,8 @@ This sample demonstrates how to print the active view of a map document using t
 
 
 ####See Also  
-[Output library overview](http://desktopdev.arcgis.com/search/?q=Output%20library%20overview&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[OutputExtensions library overview](http://desktopdev.arcgis.com/search/?q=OutputExtensions%20library%20overview&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Output library overview](http://desktop.arcgis.com/search/?q=Output%20library%20overview&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[OutputExtensions library overview](http://desktop.arcgis.com/search/?q=OutputExtensions%20library%20overview&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

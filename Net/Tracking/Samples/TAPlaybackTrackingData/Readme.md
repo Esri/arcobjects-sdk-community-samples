@@ -17,7 +17,7 @@ This sample demonstrates using the ArcGIS Tracking Analyst extension to play bac
 
 
 ####See Also  
-[How to connect to ArcGIS Tracking Server](http://desktopdev.arcgis.com/search/?q=How%20to%20connect%20to%20ArcGIS%20Tracking%20Server&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to connect to ArcGIS Tracking Server](http://desktop.arcgis.com/search/?q=How%20to%20connect%20to%20ArcGIS%20Tracking%20Server&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

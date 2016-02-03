@@ -19,7 +19,7 @@ This sample demonstrates how to create a custom editor extension using add-ins.
 
 
 ####See Also  
-[Walkthrough: Building editor extensions using add-ins](http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Building%20editor%20extensions%20using%20add-ins&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: Building editor extensions using add-ins](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Building%20editor%20extensions%20using%20add-ins&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

@@ -21,9 +21,9 @@ This sample demonstrates how to retrieve a color ramp from the SymbologyControl 
 
 
 ####See Also  
-[SymbologyControl Class](http://desktopdev.arcgis.com/search/?q=SymbologyControl%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISymbologyControl Interface](http://desktopdev.arcgis.com/search/?q=ISymbologyControl%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISymbologyStyleClass Interface](http://desktopdev.arcgis.com/search/?q=ISymbologyStyleClass%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[SymbologyControl Class](http://desktop.arcgis.com/search/?q=SymbologyControl%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISymbologyControl Interface](http://desktop.arcgis.com/search/?q=ISymbologyControl%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISymbologyStyleClass Interface](http://desktop.arcgis.com/search/?q=ISymbologyStyleClass%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

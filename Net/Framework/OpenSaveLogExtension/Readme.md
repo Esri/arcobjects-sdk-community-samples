@@ -17,7 +17,7 @@ A component can listen to events fired by the application when a document is cre
 
 
 ####See Also  
-[How to listen to document events](http://desktopdev.arcgis.com/search/?q=How%20to%20listen%20to%20document%20events&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to listen to document events](http://desktop.arcgis.com/search/?q=How%20to%20listen%20to%20document%20events&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

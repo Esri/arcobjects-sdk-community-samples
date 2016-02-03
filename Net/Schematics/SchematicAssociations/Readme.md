@@ -40,10 +40,10 @@ This sample shows how to implement associations between geographic information
 
 
 ####See Also  
-[ISchematicInMemoryFeatureLinkerEdit interface](http://desktopdev.arcgis.com/search/?q=ISchematicInMemoryFeatureLinkerEdit%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[AfterLoadDiagram Schematic event](http://desktopdev.arcgis.com/search/?q=AfterLoadDiagram%20Schematic%20event&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicInMemoryDiagram interface](http://desktopdev.arcgis.com/search/?q=ISchematicInMemoryDiagram%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicInMemoryFeature interface](http://desktopdev.arcgis.com/search/?q=ISchematicInMemoryFeature%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicInMemoryFeatureLinkerEdit interface](http://desktop.arcgis.com/search/?q=ISchematicInMemoryFeatureLinkerEdit%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[AfterLoadDiagram Schematic event](http://desktop.arcgis.com/search/?q=AfterLoadDiagram%20Schematic%20event&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicInMemoryDiagram interface](http://desktop.arcgis.com/search/?q=ISchematicInMemoryDiagram%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicInMemoryFeature interface](http://desktop.arcgis.com/search/?q=ISchematicInMemoryFeature%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

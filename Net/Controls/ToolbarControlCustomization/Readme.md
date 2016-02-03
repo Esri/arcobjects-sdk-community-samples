@@ -18,11 +18,11 @@ This sample demonstrates customizing the ToolbarControl at run time. The Toolbar
 
 
 ####See Also  
-[ToolbarControl class](http://desktopdev.arcgis.com/search/?q=ToolbarControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IToolbarControl interface](http://desktopdev.arcgis.com/search/?q=IToolbarControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[CustomizeDialog class](http://desktopdev.arcgis.com/search/?q=CustomizeDialog%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ICustomizeDialog interface](http://desktopdev.arcgis.com/search/?q=ICustomizeDialog%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ICustomizeDialogEvents interface](http://desktopdev.arcgis.com/search/?q=ICustomizeDialogEvents%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ToolbarControl class](http://desktop.arcgis.com/search/?q=ToolbarControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IToolbarControl interface](http://desktop.arcgis.com/search/?q=IToolbarControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[CustomizeDialog class](http://desktop.arcgis.com/search/?q=CustomizeDialog%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ICustomizeDialog interface](http://desktop.arcgis.com/search/?q=ICustomizeDialog%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ICustomizeDialogEvents interface](http://desktop.arcgis.com/search/?q=ICustomizeDialogEvents%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

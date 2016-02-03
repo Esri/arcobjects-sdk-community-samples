@@ -19,7 +19,7 @@ This sample demonstrates how to set up field mapping for tools such as Merge, Ta
 
 
 ####See Also  
-[Mapping fields](http://desktopdev.arcgis.com/search/?q=Mapping%20fields&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Mapping fields](http://desktop.arcgis.com/search/?q=Mapping%20fields&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

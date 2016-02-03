@@ -28,10 +28,10 @@ This sample shows how to work with the geometry bridge in dynamic display and a
 
 
 ####See Also  
-[How to use IGeometryBridge to update dynamic geometries](http://desktopdev.arcgis.com/search/?q=How%20to%20use%20IGeometryBridge%20to%20update%20dynamic%20geometries&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Walkthrough: Getting started with dynamic display](http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Getting%20started%20with%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Dynamic display](http://desktopdev.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How dynamic display works](http://desktopdev.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to use IGeometryBridge to update dynamic geometries](http://desktop.arcgis.com/search/?q=How%20to%20use%20IGeometryBridge%20to%20update%20dynamic%20geometries&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: Getting started with dynamic display](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Getting%20started%20with%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Dynamic display](http://desktop.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How dynamic display works](http://desktop.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Sample: Dynamic display layer](../../../Net/GraphicsPipeline/MyDynamicLayer)  
 [Sample: Dynamic display—tracking dynamic object](../../../Net/GraphicsPipeline/DynamicObjectTracking)  
 

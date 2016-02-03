@@ -21,8 +21,8 @@ This sample illustrates a real-life scenario for creating a new layer to consume
 
 
 ####See Also  
-[Writing multithreaded ArcObjects code](http://desktopdev.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to wire ArcObjects .NET events](http://desktopdev.arcgis.com/search/?q=How%20to%20wire%20ArcObjects%20.NET%20events&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Writing multithreaded ArcObjects code](http://desktop.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to wire ArcObjects .NET events](http://desktop.arcgis.com/search/?q=How%20to%20wire%20ArcObjects%20.NET%20events&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

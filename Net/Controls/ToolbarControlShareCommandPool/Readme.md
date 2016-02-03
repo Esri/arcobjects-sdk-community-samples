@@ -21,9 +21,9 @@ This sample demonstrates what happens when multiple ToolbarControls share the sa
 
 
 ####See Also  
-[ToolbarControl Class](http://desktopdev.arcgis.com/search/?q=ToolbarControl%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IToolbarControl Interface](http://desktopdev.arcgis.com/search/?q=IToolbarControl%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ICommandPool Interface](http://desktopdev.arcgis.com/search/?q=ICommandPool%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ToolbarControl Class](http://desktop.arcgis.com/search/?q=ToolbarControl%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IToolbarControl Interface](http://desktop.arcgis.com/search/?q=IToolbarControl%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ICommandPool Interface](http://desktop.arcgis.com/search/?q=ICommandPool%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

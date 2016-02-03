@@ -23,9 +23,9 @@ This sample demonstrates how to use the IHookActions interface in custom command
 
 
 ####See Also  
-[HookHelper](http://desktopdev.arcgis.com/search/?q=HookHelper&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[GlobeHookHelper](http://desktopdev.arcgis.com/search/?q=GlobeHookHelper&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IHookActions](http://desktopdev.arcgis.com/search/?q=IHookActions&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[HookHelper](http://desktop.arcgis.com/search/?q=HookHelper&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[GlobeHookHelper](http://desktop.arcgis.com/search/?q=GlobeHookHelper&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IHookActions](http://desktop.arcgis.com/search/?q=IHookActions&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

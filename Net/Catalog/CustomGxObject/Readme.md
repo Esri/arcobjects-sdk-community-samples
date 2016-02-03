@@ -15,7 +15,7 @@ This sample code demonstrates how to create a custom GxObject and the GxObject f
 
 
 ####See Also  
-[How to register COM components](http://desktopdev.arcgis.com/search/?q=How%20to%20register%20COM%20components&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to register COM components](http://desktop.arcgis.com/search/?q=How%20to%20register%20COM%20components&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

@@ -22,7 +22,7 @@ This sample demonstrates using the ITAUpdateControl interface of the Tracking An
 
 ####See Also  
 [Sample: Adding a real-time feed to ArcMap](../../../Net/Tracking/Samples/TAAddRealTimeTemporalLayer)  
-[Updating the purge rule on a real-time temporal layer](http://desktopdev.arcgis.com/search/?q=Updating%20the%20purge%20rule%20on%20a%20real-time%20temporal%20layer&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Updating the purge rule on a real-time temporal layer](http://desktop.arcgis.com/search/?q=Updating%20the%20purge%20rule%20on%20a%20real-time%20temporal%20layer&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

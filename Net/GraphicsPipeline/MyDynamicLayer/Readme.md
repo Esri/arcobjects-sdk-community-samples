@@ -19,14 +19,14 @@ This sample demonstrates using the ArcGIS Dynamic Display to implement a dynamic
 
 
 ####See Also  
-[Dynamic display](http://desktopdev.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Walkthrough: Getting started with dynamic display](http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Getting%20started%20with%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How dynamic display works](http://desktopdev.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Best practices for using dynamic display](http://desktopdev.arcgis.com/search/?q=Best%20practices%20for%20using%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Dynamic display](http://desktop.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: Getting started with dynamic display](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Getting%20started%20with%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How dynamic display works](http://desktop.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Best practices for using dynamic display](http://desktop.arcgis.com/search/?q=Best%20practices%20for%20using%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Sample: Dynamic display—tracking dynamic object](../../../Net/GraphicsPipeline/DynamicObjectTracking)  
 [Sample: Dynamic display compass](../../../Net/GraphicsPipeline/DynamicDisplayCompass)  
-[Writing multithreaded ArcObjects code](http://desktopdev.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to create a dynamic glyph from a marker symbol](http://desktopdev.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Writing multithreaded ArcObjects code](http://desktop.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create a dynamic glyph from a marker symbol](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Sample: Dynamic logo](../../../Net/GraphicsPipeline/DynamicLogo)  
 [Sample: Dynamic heads up display](../../../Net/GraphicsPipeline/DynamicDisplayHUD)  
 

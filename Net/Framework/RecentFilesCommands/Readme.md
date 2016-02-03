@@ -19,7 +19,7 @@ Screen shot of the Recent Files list
 
 
 ####See Also  
-[How to create dynamic menu commands using a MultiItem](http://desktopdev.arcgis.com/search/?q=How%20to%20create%20dynamic%20menu%20commands%20using%20a%20MultiItem&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create dynamic menu commands using a MultiItem](http://desktop.arcgis.com/search/?q=How%20to%20create%20dynamic%20menu%20commands%20using%20a%20MultiItem&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

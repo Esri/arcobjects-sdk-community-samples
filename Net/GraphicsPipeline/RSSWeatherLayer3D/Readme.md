@@ -19,11 +19,11 @@ This sample illustrates a comprehensive real-life scenario for creating a new l
 
 
 ####See Also  
-[How to get and install an OpenGL wrapper for .NET](http://desktopdev.arcgis.com/search/?q=How%20to%20get%20and%20install%20an%20OpenGL%20wrapper%20for%20.NET&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to draw a geographical object on the globe using direct OpenGL plug-in](http://desktopdev.arcgis.com/search/?q=How%20to%20draw%20a%20geographical%20object%20on%20the%20globe%20using%20direct%20OpenGL%20plug-in&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Implementing custom globe layers with dynamic feed](http://desktopdev.arcgis.com/search/?q=Implementing%20custom%20globe%20layers%20with%20dynamic%20feed&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to draw mouse feedback on the globe using direct OpenGL plug-in](http://desktopdev.arcgis.com/search/?q=How%20to%20draw%20mouse%20feedback%20on%20the%20globe%20using%20direct%20OpenGL%20plug-in&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Writing multithreaded ArcObjects code](http://desktopdev.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to get and install an OpenGL wrapper for .NET](http://desktop.arcgis.com/search/?q=How%20to%20get%20and%20install%20an%20OpenGL%20wrapper%20for%20.NET&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to draw a geographical object on the globe using direct OpenGL plug-in](http://desktop.arcgis.com/search/?q=How%20to%20draw%20a%20geographical%20object%20on%20the%20globe%20using%20direct%20OpenGL%20plug-in&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Implementing custom globe layers with dynamic feed](http://desktop.arcgis.com/search/?q=Implementing%20custom%20globe%20layers%20with%20dynamic%20feed&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to draw mouse feedback on the globe using direct OpenGL plug-in](http://desktop.arcgis.com/search/?q=How%20to%20draw%20mouse%20feedback%20on%20the%20globe%20using%20direct%20OpenGL%20plug-in&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Writing multithreaded ArcObjects code](http://desktop.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

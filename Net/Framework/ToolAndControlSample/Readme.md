@@ -21,8 +21,8 @@ This sample shows how to implement a tool and a tool control. The ToolSample cl
 
 
 ####See Also  
-[How to create a command with a custom interface ToolControl](http://desktopdev.arcgis.com/search/?q=How%20to%20create%20a%20command%20with%20a%20custom%20interface%20ToolControl&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Creating commands and tools](http://desktopdev.arcgis.com/search/?q=Creating%20commands%20and%20tools&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create a command with a custom interface ToolControl](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20command%20with%20a%20custom%20interface%20ToolControl&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Creating commands and tools](http://desktop.arcgis.com/search/?q=Creating%20commands%20and%20tools&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

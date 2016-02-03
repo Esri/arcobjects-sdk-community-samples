@@ -19,7 +19,7 @@ This sample demonstrates how resource files are used to configure an application
 
 
 ####See Also  
-[IToolbarMenu2 Interface](http://desktopdev.arcgis.com/search/?q=IToolbarMenu2%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IToolbarMenu2 Interface](http://desktop.arcgis.com/search/?q=IToolbarMenu2%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

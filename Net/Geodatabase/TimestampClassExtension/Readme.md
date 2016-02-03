@@ -17,8 +17,8 @@ This sample provides an example of a geodatabase class extension that implements
 
 
 ####See Also  
-[Creating class extensions](http://desktopdev.arcgis.com/search/?q=Creating%20class%20extensions&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to create property pages and property sheets](http://desktopdev.arcgis.com/search/?q=How%20to%20create%20property%20pages%20and%20property%20sheets&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Creating class extensions](http://desktop.arcgis.com/search/?q=Creating%20class%20extensions&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create property pages and property sheets](http://desktop.arcgis.com/search/?q=How%20to%20create%20property%20pages%20and%20property%20sheets&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

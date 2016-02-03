@@ -22,9 +22,9 @@ This sample demonstrates how the Ink Sketch Commit options can be set and how th
 
 
 ####See Also  
-[EngineInkEnvironment Class](http://desktopdev.arcgis.com/search/?q=EngineInkEnvironment%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IEngineInkEnvironment Interface](http://desktopdev.arcgis.com/search/?q=IEngineInkEnvironment%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IEngineInkEnvironmentEvents Interface](http://desktopdev.arcgis.com/search/?q=IEngineInkEnvironmentEvents%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[EngineInkEnvironment Class](http://desktop.arcgis.com/search/?q=EngineInkEnvironment%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IEngineInkEnvironment Interface](http://desktop.arcgis.com/search/?q=IEngineInkEnvironment%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IEngineInkEnvironmentEvents Interface](http://desktop.arcgis.com/search/?q=IEngineInkEnvironmentEvents%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

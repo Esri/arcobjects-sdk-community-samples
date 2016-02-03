@@ -21,7 +21,7 @@ In this sample, the MapControl, PageLayoutControl, TOCControl, and ToolbarContro
 
 
 ####See Also  
-[Walkthrough: Building a map viewing application using the ArcGIS Engine controls](http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Building%20a%20map%20viewing%20application%20using%20the%20ArcGIS%20Engine%20controls&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: Building a map viewing application using the ArcGIS Engine controls](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Building%20a%20map%20viewing%20application%20using%20the%20ArcGIS%20Engine%20controls&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

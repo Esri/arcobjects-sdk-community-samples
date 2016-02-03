@@ -18,8 +18,8 @@ This sample demonstrates how to create a tool. Tools are commands that enable th
 
 
 ####See Also  
-[Walkthrough: Create a custom tool](http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Create%20a%20custom%20tool&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Creating commands and tools](http://desktopdev.arcgis.com/search/?q=Creating%20commands%20and%20tools&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: Create a custom tool](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Create%20a%20custom%20tool&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Creating commands and tools](http://desktop.arcgis.com/search/?q=Creating%20commands%20and%20tools&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

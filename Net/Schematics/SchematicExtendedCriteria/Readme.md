@@ -95,10 +95,10 @@ This sample shows how to implement custom extended criteria that are intended 
 
 
 ####See Also  
-[ISchematicCollapseRelatedElementsExtended interface](http://desktopdev.arcgis.com/search/?q=ISchematicCollapseRelatedElementsExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicNodeReductionExtended interface](http://desktopdev.arcgis.com/search/?q=ISchematicNodeReductionExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicFeatureRemovalExtended interface](http://desktopdev.arcgis.com/search/?q=ISchematicFeatureRemovalExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicExpandLinksByAttributeExtended interface](http://desktopdev.arcgis.com/search/?q=ISchematicExpandLinksByAttributeExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicCollapseRelatedElementsExtended interface](http://desktop.arcgis.com/search/?q=ISchematicCollapseRelatedElementsExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicNodeReductionExtended interface](http://desktop.arcgis.com/search/?q=ISchematicNodeReductionExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicFeatureRemovalExtended interface](http://desktop.arcgis.com/search/?q=ISchematicFeatureRemovalExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicExpandLinksByAttributeExtended interface](http://desktop.arcgis.com/search/?q=ISchematicExpandLinksByAttributeExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

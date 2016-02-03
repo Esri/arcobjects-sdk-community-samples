@@ -22,7 +22,7 @@ This sample shows how to programmatically print multiple pages from a map docum
 
 ####See Also  
 [Sample: Print active view](../../../Net/GraphicsPipeline/PrintActiveView)  
-[Output](http://desktopdev.arcgis.com/search/?q=Output&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Output](http://desktop.arcgis.com/search/?q=Output&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

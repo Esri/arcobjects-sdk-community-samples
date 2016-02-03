@@ -19,7 +19,7 @@ This sample demonstrates how to create and save a layer file in a stand-alone Ar
 
 
 ####See Also  
-[How to save a layer file](http://desktopdev.arcgis.com/search/?q=How%20to%20save%20a%20layer%20file&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to save a layer file](http://desktop.arcgis.com/search/?q=How%20to%20save%20a%20layer%20file&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

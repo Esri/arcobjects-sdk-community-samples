@@ -15,7 +15,7 @@ A common conversion task is the large-scale transfer of data from one format to 
 
 
 ####See Also  
-[How to list data](http://desktopdev.arcgis.com/search/?q=How%20to%20list%20data&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to list data](http://desktop.arcgis.com/search/?q=How%20to%20list%20data&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

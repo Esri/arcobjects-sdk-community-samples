@@ -31,7 +31,7 @@ This sample shows how to customize the BeforeRemoveFeature predefined schematic 
 
 
 ####See Also  
-[BeforeRemoveFeature Schematic event](http://desktopdev.arcgis.com/search/?q=BeforeRemoveFeature%20Schematic%20event&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[BeforeRemoveFeature Schematic event](http://desktop.arcgis.com/search/?q=BeforeRemoveFeature%20Schematic%20event&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

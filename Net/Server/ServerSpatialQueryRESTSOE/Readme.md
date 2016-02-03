@@ -59,12 +59,12 @@ This sample shows a server object extension (SOE) that queries and clips featu
 
 
 ####See Also  
-[Walkthrough: What's in the REST SOE](http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20What%27s%20in%20the%20REST%20SOE&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to develop the REST SOE](http://desktopdev.arcgis.com/search/?q=How%20to%20develop%20the%20REST%20SOE&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to register the REST SOE](http://desktopdev.arcgis.com/search/?q=How%20to%20register%20the%20REST%20SOE&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to develop a property page for the REST SOE](http://desktopdev.arcgis.com/search/?q=How%20to%20develop%20a%20property%20page%20for%20the%20REST%20SOE&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to enable and test the REST SOE on a service](http://desktopdev.arcgis.com/search/?q=How%20to%20enable%20and%20test%20the%20REST%20SOE%20on%20a%20service&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to use the REST SOE in a Web application](http://desktopdev.arcgis.com/search/?q=How%20to%20use%20the%20REST%20SOE%20in%20a%20Web%20application&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: What's in the REST SOE](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20What%27s%20in%20the%20REST%20SOE&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to develop the REST SOE](http://desktop.arcgis.com/search/?q=How%20to%20develop%20the%20REST%20SOE&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to register the REST SOE](http://desktop.arcgis.com/search/?q=How%20to%20register%20the%20REST%20SOE&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to develop a property page for the REST SOE](http://desktop.arcgis.com/search/?q=How%20to%20develop%20a%20property%20page%20for%20the%20REST%20SOE&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to enable and test the REST SOE on a service](http://desktop.arcgis.com/search/?q=How%20to%20enable%20and%20test%20the%20REST%20SOE%20on%20a%20service&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to use the REST SOE in a Web application](http://desktop.arcgis.com/search/?q=How%20to%20use%20the%20REST%20SOE%20in%20a%20Web%20application&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

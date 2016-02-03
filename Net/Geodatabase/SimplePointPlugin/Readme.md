@@ -31,10 +31,10 @@ This sample implements a plug-in data source for a SimplePoint data format to pr
 
 
 ####See Also  
-[Plug-in data sources](http://desktopdev.arcgis.com/search/?q=Plug-in%20data%20sources&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Creating a plug-in data source](http://desktopdev.arcgis.com/search/?q=Creating%20a%20plug-in%20data%20source&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Implementing optional functionality on plug-in data sources](http://desktopdev.arcgis.com/search/?q=Implementing%20optional%20functionality%20on%20plug-in%20data%20sources&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Adding a plug-in data source programmatically](http://desktopdev.arcgis.com/search/?q=Adding%20a%20plug-in%20data%20source%20programmatically&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Plug-in data sources](http://desktop.arcgis.com/search/?q=Plug-in%20data%20sources&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Creating a plug-in data source](http://desktop.arcgis.com/search/?q=Creating%20a%20plug-in%20data%20source&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Implementing optional functionality on plug-in data sources](http://desktop.arcgis.com/search/?q=Implementing%20optional%20functionality%20on%20plug-in%20data%20sources&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Adding a plug-in data source programmatically](http://desktop.arcgis.com/search/?q=Adding%20a%20plug-in%20data%20source%20programmatically&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

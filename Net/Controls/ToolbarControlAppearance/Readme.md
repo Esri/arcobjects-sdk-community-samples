@@ -16,8 +16,8 @@ Display hidden items on a "hidden items menu"
 
 
 ####See Also  
-[ToolbarControl coclass](http://desktopdev.arcgis.com/search/?q=ToolbarControl%20coclass&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IToolbarControl2 interface](http://desktopdev.arcgis.com/search/?q=IToolbarControl2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ToolbarControl coclass](http://desktop.arcgis.com/search/?q=ToolbarControl%20coclass&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IToolbarControl2 interface](http://desktop.arcgis.com/search/?q=IToolbarControl2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

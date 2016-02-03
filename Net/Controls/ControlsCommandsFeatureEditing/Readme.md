@@ -17,9 +17,9 @@ This sample demonstrates feature editing using the control commands in conjuncti
 
 
 ####See Also  
-[EngineEditor class](http://desktopdev.arcgis.com/search/?q=EngineEditor%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IEngineEditProperties interface](http://desktopdev.arcgis.com/search/?q=IEngineEditProperties%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IEngineEditProperties2 interface](http://desktopdev.arcgis.com/search/?q=IEngineEditProperties2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[EngineEditor class](http://desktop.arcgis.com/search/?q=EngineEditor%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IEngineEditProperties interface](http://desktop.arcgis.com/search/?q=IEngineEditProperties%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IEngineEditProperties2 interface](http://desktop.arcgis.com/search/?q=IEngineEditProperties2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

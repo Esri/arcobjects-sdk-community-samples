@@ -17,8 +17,8 @@ This topic provides a set of sample PanZoom commands and tools that can be used 
 
 
 ####See Also  
-[HookHelper Class](http://desktopdev.arcgis.com/search/?q=HookHelper%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IHookHelper Interface](http://desktopdev.arcgis.com/search/?q=IHookHelper%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[HookHelper Class](http://desktop.arcgis.com/search/?q=HookHelper%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IHookHelper Interface](http://desktop.arcgis.com/search/?q=IHookHelper%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

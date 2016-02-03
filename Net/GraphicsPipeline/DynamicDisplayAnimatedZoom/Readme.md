@@ -23,9 +23,9 @@ This sample shows how to use rubber banding envelopes to animate zooming in an
 
 
 ####See Also  
-[Dynamic display](http://desktopdev.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Persisting cache information for use in dynamic display](http://desktopdev.arcgis.com/search/?q=Persisting%20cache%20information%20for%20use%20in%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Limitations for dynamic display](http://desktopdev.arcgis.com/search/?q=Limitations%20for%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Dynamic display](http://desktop.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Persisting cache information for use in dynamic display](http://desktop.arcgis.com/search/?q=Persisting%20cache%20information%20for%20use%20in%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Limitations for dynamic display](http://desktop.arcgis.com/search/?q=Limitations%20for%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Sample: Dynamic display layer](../../../Net/GraphicsPipeline/MyDynamicLayer)  
 
 

@@ -18,9 +18,9 @@ This sample demonstrate an implementation of a clonable object through serializa
 
 
 ####See Also  
-[Implement IPersistStream in a .NET class](http://desktopdev.arcgis.com/search/?q=Implement%20IPersistStream%20in%20a%20.NET%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Implementing persistence](http://desktopdev.arcgis.com/search/?q=Implementing%20persistence&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Implementing cloning](http://desktopdev.arcgis.com/search/?q=Implementing%20cloning&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Implement IPersistStream in a .NET class](http://desktop.arcgis.com/search/?q=Implement%20IPersistStream%20in%20a%20.NET%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Implementing persistence](http://desktop.arcgis.com/search/?q=Implementing%20persistence&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Implementing cloning](http://desktop.arcgis.com/search/?q=Implementing%20cloning&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Sample: Triangle graphic element](../../../Net/GraphicsPipeline/TriangleElement)  
 [Sample: Clonable object](../../../Net/SDK_General/ClonableObject)  
 

@@ -16,7 +16,7 @@ This sample shows how to create a custom button, tool, menu, and toolbar using 
 
 
 ####See Also  
-[Walkthrough: Building custom UI elements using add-ins](http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Building%20custom%20UI%20elements%20using%20add-ins&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: Building custom UI elements using add-ins](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Building%20custom%20UI%20elements%20using%20add-ins&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

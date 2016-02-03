@@ -21,11 +21,11 @@ This sample shows a customized schematic layout algorithm implementation. Schem
 
 
 ####See Also  
-[ISchematicAlgorithm interface](http://desktopdev.arcgis.com/search/?q=ISchematicAlgorithm%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicAlgorithmEventsTrigger interface](http://desktopdev.arcgis.com/search/?q=ISchematicAlgorithmEventsTrigger%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicAnalystFindConnected interface](http://desktopdev.arcgis.com/search/?q=ISchematicAnalystFindConnected%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicInMemoryDiagram interface](http://desktopdev.arcgis.com/search/?q=ISchematicInMemoryDiagram%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicInMemoryFeature interface](http://desktopdev.arcgis.com/search/?q=ISchematicInMemoryFeature%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicAlgorithm interface](http://desktop.arcgis.com/search/?q=ISchematicAlgorithm%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicAlgorithmEventsTrigger interface](http://desktop.arcgis.com/search/?q=ISchematicAlgorithmEventsTrigger%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicAnalystFindConnected interface](http://desktop.arcgis.com/search/?q=ISchematicAnalystFindConnected%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicInMemoryDiagram interface](http://desktop.arcgis.com/search/?q=ISchematicInMemoryDiagram%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicInMemoryFeature interface](http://desktop.arcgis.com/search/?q=ISchematicInMemoryFeature%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

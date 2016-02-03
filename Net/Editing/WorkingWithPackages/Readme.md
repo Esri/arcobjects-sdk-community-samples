@@ -18,8 +18,8 @@ This sample demonstrates how to open map and layer packages from ArcGIS.com. As
 
 
 ####See Also  
-[Working with packages](http://desktopdev.arcgis.com/search/?q=Working%20with%20packages&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ArcGIS.com](http://desktopdev.arcgis.com/search/?q=ArcGIS.com&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Working with packages](http://desktop.arcgis.com/search/?q=Working%20with%20packages&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ArcGIS.com](http://desktop.arcgis.com/search/?q=ArcGIS.com&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

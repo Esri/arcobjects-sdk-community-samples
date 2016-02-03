@@ -20,8 +20,8 @@ This sample describes how to use the TOCControl to access a layer on the PageL
 
 
 ####See Also  
-[TOCControl class](http://desktopdev.arcgis.com/search/?q=TOCControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ITOCControl interface](http://desktopdev.arcgis.com/search/?q=ITOCControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[TOCControl class](http://desktop.arcgis.com/search/?q=TOCControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ITOCControl interface](http://desktop.arcgis.com/search/?q=ITOCControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

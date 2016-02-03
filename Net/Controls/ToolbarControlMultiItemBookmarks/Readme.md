@@ -21,11 +21,11 @@ This sample demonstrates creating a MultiItem and adding it to a ToolbarMenu. Th
 
 
 ####See Also  
-[ToolbarControl class](http://desktopdev.arcgis.com/search/?q=ToolbarControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IToolbarControl interface](http://desktopdev.arcgis.com/search/?q=IToolbarControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IToolbarMenu2 interface](http://desktopdev.arcgis.com/search/?q=IToolbarMenu2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IMultiItem interface](http://desktopdev.arcgis.com/search/?q=IMultiItem%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to create dynamic menu commands using a MultiItem](http://desktopdev.arcgis.com/search/?q=How%20to%20create%20dynamic%20menu%20commands%20using%20a%20MultiItem&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ToolbarControl class](http://desktop.arcgis.com/search/?q=ToolbarControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IToolbarControl interface](http://desktop.arcgis.com/search/?q=IToolbarControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IToolbarMenu2 interface](http://desktop.arcgis.com/search/?q=IToolbarMenu2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IMultiItem interface](http://desktop.arcgis.com/search/?q=IMultiItem%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create dynamic menu commands using a MultiItem](http://desktop.arcgis.com/search/?q=How%20to%20create%20dynamic%20menu%20commands%20using%20a%20MultiItem&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

@@ -16,9 +16,9 @@ Microsoft's Windows Presentation Foundation (WPF) provides the facility to host
 
 
 ####See Also  
-[How to host an ArcGIS Engine MapControl in a WPF application](http://desktopdev.arcgis.com/search/?q=How%20to%20host%20an%20ArcGIS%20Engine%20MapControl%20in%20a%20WPF%20application&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[WindowsClient.NET](http://desktopdev.arcgis.com/search/?q=WindowsClient.NET&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Walkthrough: Hosting a Windows Forms Composite Control in Windows Presentation Foundation](http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Hosting%20a%20Windows%20Forms%20Composite%20Control%20in%20Windows%20Presentation%20Foundation&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to host an ArcGIS Engine MapControl in a WPF application](http://desktop.arcgis.com/search/?q=How%20to%20host%20an%20ArcGIS%20Engine%20MapControl%20in%20a%20WPF%20application&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[WindowsClient.NET](http://desktop.arcgis.com/search/?q=WindowsClient.NET&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: Hosting a Windows Forms Composite Control in Windows Presentation Foundation](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Hosting%20a%20Windows%20Forms%20Composite%20Control%20in%20Windows%20Presentation%20Foundation&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

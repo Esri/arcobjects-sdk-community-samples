@@ -21,10 +21,10 @@ This sample shows how context menus appear when you right-click a TOCControl t
 
 
 ####See Also  
-[TOCControl class](http://desktopdev.arcgis.com/search/?q=TOCControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ITOCControl interface](http://desktopdev.arcgis.com/search/?q=ITOCControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ToolbarMenu class](http://desktopdev.arcgis.com/search/?q=ToolbarMenu%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IToolbarMenu interface](http://desktopdev.arcgis.com/search/?q=IToolbarMenu%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[TOCControl class](http://desktop.arcgis.com/search/?q=TOCControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ITOCControl interface](http://desktop.arcgis.com/search/?q=ITOCControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ToolbarMenu class](http://desktop.arcgis.com/search/?q=ToolbarMenu%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IToolbarMenu interface](http://desktop.arcgis.com/search/?q=IToolbarMenu%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

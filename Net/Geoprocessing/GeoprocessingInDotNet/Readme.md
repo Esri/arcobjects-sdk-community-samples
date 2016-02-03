@@ -23,7 +23,7 @@ Screen shot showing data and files on the local drive and in the Catalog tree.
 
 
 ####See Also  
-[Walkthrough: Consuming a geoprocessing model tool in .NET](http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Consuming%20a%20geoprocessing%20model%20tool%20in%20.NET&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: Consuming a geoprocessing model tool in .NET](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Consuming%20a%20geoprocessing%20model%20tool%20in%20.NET&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

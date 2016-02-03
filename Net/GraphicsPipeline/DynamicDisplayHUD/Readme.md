@@ -20,11 +20,11 @@ This sample demonstrates a combination of the Dynamic Display application progra
 
 
 ####See Also  
-[Dynamic display](http://desktopdev.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Dynamic display](http://desktop.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Sample: Dynamic display compass](../../../Net/GraphicsPipeline/DynamicDisplayCompass)  
 [Sample: Dynamic display layer](../../../Net/GraphicsPipeline/MyDynamicLayer)  
 [Sample: Dynamic logo](../../../Net/GraphicsPipeline/DynamicLogo)  
-[How to create a dynamic glyph from a marker symbol](http://desktopdev.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create a dynamic glyph from a marker symbol](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

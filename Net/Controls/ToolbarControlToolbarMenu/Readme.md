@@ -21,10 +21,10 @@ This sample demonstrates creating menu items, submenus, and pop-up menus using t
 
 
 ####See Also  
-[ToolbarControl class](http://desktopdev.arcgis.com/search/?q=ToolbarControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IToolbarControl interface](http://desktopdev.arcgis.com/search/?q=IToolbarControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IToolbarMenu interface](http://desktopdev.arcgis.com/search/?q=IToolbarMenu%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IMenuDef interface](http://desktopdev.arcgis.com/search/?q=IMenuDef%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ToolbarControl class](http://desktop.arcgis.com/search/?q=ToolbarControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IToolbarControl interface](http://desktop.arcgis.com/search/?q=IToolbarControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IToolbarMenu interface](http://desktop.arcgis.com/search/?q=IToolbarMenu%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IMenuDef interface](http://desktop.arcgis.com/search/?q=IMenuDef%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

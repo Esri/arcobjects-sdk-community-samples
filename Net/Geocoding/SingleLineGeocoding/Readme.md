@@ -19,7 +19,7 @@ This sample shows how to use ArcObjects to geocode an address using the single l
 
 
 ####See Also  
-[Creating an address locator](http://desktopdev.arcgis.com/search/?q=Creating%20an%20address%20locator&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Creating an address locator](http://desktop.arcgis.com/search/?q=Creating%20an%20address%20locator&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

@@ -24,9 +24,9 @@ Screen shot of the My_Menu command in ArcMap.
 
 
 ####See Also  
-[Walkthrough: Adding a custom menu created in .NET to ArcGIS for Desktop](http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Adding%20a%20custom%20menu%20created%20in%20.NET%20to%20ArcGIS%20for%20Desktop&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Creating toolbars and menus](http://desktopdev.arcgis.com/search/?q=Creating%20toolbars%20and%20menus&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Creating commands and tools](http://desktopdev.arcgis.com/search/?q=Creating%20commands%20and%20tools&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: Adding a custom menu created in .NET to ArcGIS for Desktop](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Adding%20a%20custom%20menu%20created%20in%20.NET%20to%20ArcGIS%20for%20Desktop&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Creating toolbars and menus](http://desktop.arcgis.com/search/?q=Creating%20toolbars%20and%20menus&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Creating commands and tools](http://desktop.arcgis.com/search/?q=Creating%20commands%20and%20tools&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

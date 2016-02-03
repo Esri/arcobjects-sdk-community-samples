@@ -21,7 +21,7 @@ This sample illustrates different implementations of application extensions in A
 
 
 ####See Also  
-[Creating an application extension](http://desktopdev.arcgis.com/search/?q=Creating%20an%20application%20extension&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Creating an application extension](http://desktop.arcgis.com/search/?q=Creating%20an%20application%20extension&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

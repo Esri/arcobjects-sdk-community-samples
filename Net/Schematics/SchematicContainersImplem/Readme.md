@@ -28,8 +28,8 @@ This sample demonstrates the implementation of schematic containers. It uses the
 
 
 ####See Also  
-[ISchematicContainerManager interface](http://desktopdev.arcgis.com/search/?q=ISchematicContainerManager%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISchematicRelationManager interface](http://desktopdev.arcgis.com/search/?q=ISchematicRelationManager%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicContainerManager interface](http://desktop.arcgis.com/search/?q=ISchematicContainerManager%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicRelationManager interface](http://desktop.arcgis.com/search/?q=ISchematicRelationManager%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

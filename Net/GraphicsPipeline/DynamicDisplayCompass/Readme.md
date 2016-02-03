@@ -17,11 +17,11 @@ This sample demonstrates drawing on the map in dynamic mode using an OpenGL appl
 
 
 ####See Also  
-[How dynamic display works](http://desktopdev.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Rendering dynamic map content](http://desktopdev.arcgis.com/search/?q=Rendering%20dynamic%20map%20content&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to create a dynamic glyph from a marker symbol](http://desktopdev.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to plug in dynamic drawing](http://desktopdev.arcgis.com/search/?q=How%20to%20plug%20in%20dynamic%20drawing&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Limitations for dynamic display](http://desktopdev.arcgis.com/search/?q=Limitations%20for%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How dynamic display works](http://desktop.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Rendering dynamic map content](http://desktop.arcgis.com/search/?q=Rendering%20dynamic%20map%20content&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create a dynamic glyph from a marker symbol](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to plug in dynamic drawing](http://desktop.arcgis.com/search/?q=How%20to%20plug%20in%20dynamic%20drawing&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Limitations for dynamic display](http://desktop.arcgis.com/search/?q=Limitations%20for%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Sample: Dynamic display—tracking dynamic object](../../../Net/GraphicsPipeline/DynamicObjectTracking)  
 [Sample: Dynamic display layer](../../../Net/GraphicsPipeline/MyDynamicLayer)  
 [Sample: Dynamic heads up display](../../../Net/GraphicsPipeline/DynamicDisplayHUD)  

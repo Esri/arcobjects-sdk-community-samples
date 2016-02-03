@@ -21,9 +21,9 @@ This sample demonstrates execution of a geoprocessing tool using the .NET geopro
 
 
 ####See Also  
-[How to run a geoprocessing tool](http://desktopdev.arcgis.com/search/?q=How%20to%20run%20a%20geoprocessing%20tool&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[Accessing licensing and extensions for the geoprocessor](http://desktopdev.arcgis.com/search/?q=Accessing%20licensing%20and%20extensions%20for%20the%20geoprocessor&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[How to get returned messages](http://desktopdev.arcgis.com/search/?q=How%20to%20get%20returned%20messages&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to run a geoprocessing tool](http://desktop.arcgis.com/search/?q=How%20to%20run%20a%20geoprocessing%20tool&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Accessing licensing and extensions for the geoprocessor](http://desktop.arcgis.com/search/?q=Accessing%20licensing%20and%20extensions%20for%20the%20geoprocessor&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to get returned messages](http://desktop.arcgis.com/search/?q=How%20to%20get%20returned%20messages&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

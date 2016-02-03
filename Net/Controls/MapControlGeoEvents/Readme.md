@@ -15,8 +15,8 @@ This sample demonstrates adding elements to a map's GraphicsContainer, then movi
 
 
 ####See Also  
-[MapControl class](http://desktopdev.arcgis.com/search/?q=MapControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[IMapControl2 interface](http://desktopdev.arcgis.com/search/?q=IMapControl2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[MapControl class](http://desktop.arcgis.com/search/?q=MapControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IMapControl2 interface](http://desktop.arcgis.com/search/?q=IMapControl2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

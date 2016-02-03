@@ -17,7 +17,7 @@ This sample demonstrates a clonable object that implements the IClone interface.
 
 
 ####See Also  
-[Implementing cloning](http://desktopdev.arcgis.com/search/?q=Implementing%20cloning&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Implementing cloning](http://desktop.arcgis.com/search/?q=Implementing%20cloning&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

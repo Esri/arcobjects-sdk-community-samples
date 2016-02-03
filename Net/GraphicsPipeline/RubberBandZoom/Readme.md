@@ -20,7 +20,7 @@ This sample demonstrates how to use the Display library's RubberBand object to z
 
 
 ####See Also  
-[Display library overview](http://desktopdev.arcgis.com/search/?q=Display%20library%20overview&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Display library overview](http://desktop.arcgis.com/search/?q=Display%20library%20overview&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

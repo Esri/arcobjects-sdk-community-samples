@@ -21,7 +21,7 @@ This sample shows how to print the active view using the IPrintAndExport inte
 
 
 ####See Also  
-[Output](http://desktopdev.arcgis.com/search/?q=Output&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Output](http://desktop.arcgis.com/search/?q=Output&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

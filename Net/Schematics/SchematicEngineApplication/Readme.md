@@ -16,7 +16,7 @@ This ArcGIS Engine application is a sample of a Schematics application using a 
 
 
 ####See Also  
-[MapControl class](http://desktopdev.arcgis.com/search/?q=MapControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[MapControl class](http://desktop.arcgis.com/search/?q=MapControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

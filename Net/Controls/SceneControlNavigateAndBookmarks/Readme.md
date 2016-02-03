@@ -16,8 +16,8 @@ This sample demonstrates navigating around the SceneControl using the built-in s
 
 
 ####See Also  
-[SceneControl class](http://desktopdev.arcgis.com/search/?q=SceneControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISceneControl interface](http://desktopdev.arcgis.com/search/?q=ISceneControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[SceneControl class](http://desktop.arcgis.com/search/?q=SceneControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISceneControl interface](http://desktop.arcgis.com/search/?q=ISceneControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

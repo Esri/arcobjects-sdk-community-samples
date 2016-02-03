@@ -17,8 +17,8 @@ This sample provides a set of Scene commands and tools that can be used in conju
 
 
 ####See Also  
-[SceneHookHelper Class](http://desktopdev.arcgis.com/search/?q=SceneHookHelper%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
-[ISceneHookHelper Interface](http://desktopdev.arcgis.com/search/?q=ISceneHookHelper%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[SceneHookHelper Class](http://desktop.arcgis.com/search/?q=SceneHookHelper%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISceneHookHelper Interface](http://desktop.arcgis.com/search/?q=ISceneHookHelper%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

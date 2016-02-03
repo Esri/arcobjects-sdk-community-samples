@@ -22,7 +22,7 @@ Screen shot showing the Events Listener and Select Events tabs.
 
 
 ####See Also  
-[How to listen to edit events](http://desktopdev.arcgis.com/search/?q=How%20to%20listen%20to%20edit%20events&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to listen to edit events](http://desktop.arcgis.com/search/?q=How%20to%20listen%20to%20edit%20events&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

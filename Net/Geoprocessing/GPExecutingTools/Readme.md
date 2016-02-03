@@ -15,7 +15,7 @@ This sample uses the Geoprocessor class in conjunction with geoprocessing tool c
 
 
 ####See Also  
-[Using geoprocessing](http://desktopdev.arcgis.com/search/?q=Using%20geoprocessing&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Using geoprocessing](http://desktop.arcgis.com/search/?q=Using%20geoprocessing&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------

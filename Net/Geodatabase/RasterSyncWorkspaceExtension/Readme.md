@@ -51,7 +51,7 @@ Developers might want to extend the core replica behavior during synchronization
 
 
 ####See Also  
-[How to create a replica in a connected environment](http://desktopdev.arcgis.com/search/?q=How%20to%20create%20a%20replica%20in%20a%20connected%20environment&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create a replica in a connected environment](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20replica%20in%20a%20connected%20environment&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
