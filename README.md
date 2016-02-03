@@ -11,7 +11,7 @@ This repository contains ArcObjects SDK Samples for the ArcObjects SDK 10.4.  Th
 
 ## Features
 
-This repository contains 229 ArcObjects SDK Samples shown in detail in the [ArcObjects SDK Community Samples list](#arcobjects-sdk-community-samples):
+This repository contains 229 ArcObjects SDK Samples which are all itemized in this [ArcObjects SDK Community Samples list](#arcobjects-sdk-community-samples)  
 
 ## Instructions
 
@@ -27,14 +27,14 @@ If you wish to contribute to this website, please
 
 ##Resources
 
-* [API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
 * [Sample Data Download](../../releases)  
 * [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
 * Download the ArcObjects SDK for .Net from MyEsri.com  
 
 ## Requirements
 
-[ArcObjects SDK System Requirements](http://desktop.arcgis.com/en/desktop/latest/get-started/system-requirements/arcobjects-sdk-system-requirements.htm)  
+* [ArcObjects SDK System Requirements](http://desktop.arcgis.com/en/desktop/latest/get-started/system-requirements/arcobjects-sdk-system-requirements.htm)  
 
 ##ArcObjects SDK Community Samples  
 
