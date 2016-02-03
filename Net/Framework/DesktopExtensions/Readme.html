@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Extension implementation</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Extension implementation</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample illustrates different implementations of application extensions in ArcGIS. The SimpleExtension class contains the minimal implementation of IExtension, which listens to document events. Examples of configurable extensions are shown by the ArcViewOnlyExtension, ArcEditorOnlyExtension, and ArcInfoOnlyExtension classes in the project. The extension state of these implementations can be toggled in the Extension Manager dialog box and is only enabled when the appropriate product license is running in the current application.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open and compile the sample project in Visual Studio. If necessary, set up a debug application.  </li>
+<li>Start ArcCatalog, ArcMap, ArcScene, or ArcGlobe (this sample works in any of these applications).   </li>
+<li>Create or open a document. If you are debugging, select the Output Window in Visual Studio where the SimpleExtension class prints debugging information, which indicates it is listening to document events.  </li>
+<li>Click the Customize menu, and click Extensions. The Extension Manager dialog box opens.  </li>
+<li>Select one of the sample extensions to view its associated description shown at the bottom of the dialog box.  </li>
+<li>Verify the product license your application is running against and select the appropriate sample extension on the dialog box. For example, if you are running an ArcInfo license, select ArcInfo Extension (C#) or ArcInfo Extension (VB .NET) from the list; extension checking will be successful, therefore, you can check the extension off.  </li>
+<li>If you check the other product extension on, an error similar to the standard ArcGIS extensions appears, indicating it is unavailable.  </li>
+<li>Close, then open the Extension Manager dialog box. The License not available message appears next to the extensions that you did not enable.   </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Creating%20an%20application%20extension&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Creating an application extension</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

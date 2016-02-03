@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasterSyncExtension", "RasterSyncExtension\RasterSyncExtension.csproj", "{53BA8FC5-D7E3-4C27-BE17-4D69574A8663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RasterSyncExtensionReg", "RasterSyncExtensionReg\RasterSyncExtensionReg.csproj", "{FEA5088B-F833-4C0B-902D-9CEA22026504}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53BA8FC5-D7E3-4C27-BE17-4D69574A8663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BA8FC5-D7E3-4C27-BE17-4D69574A8663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BA8FC5-D7E3-4C27-BE17-4D69574A8663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BA8FC5-D7E3-4C27-BE17-4D69574A8663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA5088B-F833-4C0B-902D-9CEA22026504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA5088B-F833-4C0B-902D-9CEA22026504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA5088B-F833-4C0B-902D-9CEA22026504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA5088B-F833-4C0B-902D-9CEA22026504}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

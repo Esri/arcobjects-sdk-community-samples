@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GPCalculateArea", "GPCalculateArea\GPCalculateArea.vbproj", "{5666F107-3A8D-4CE2-AFE2-1B6E847A93D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5666F107-3A8D-4CE2-AFE2-1B6E847A93D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5666F107-3A8D-4CE2-AFE2-1B6E847A93D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5666F107-3A8D-4CE2-AFE2-1B6E847A93D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5666F107-3A8D-4CE2-AFE2-1B6E847A93D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.704" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Set sun position tool</title>
+  <purpose>This sample demonstrates manipulation of the globe light source—enabling and disabling the light source, moving it as a response to the mouse position, and changing the sun's ambient light and contrast.  </purpose>
+  <development_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>SunPositionTool.cs</filename>
+        <description>Tool implementation file used to manually set the sun's position on the globe.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    
+  <files lang="VBNet">
+									<file>
+										<filename>SunPositionTool.vb</filename>
+										<description>Tool implementation file used to manually set the sun's position on the globe.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								</files></file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the solution file, and build the project.</step>
+        
+        <step>Open ArcGlobe in design mode.</step>
+        <step>Click the Customize menu, and click Customize Mode. The Customize dialog box opens. </step><step>Choose the Add-Ins Controls category.</step>
+        <step>Drag the Sun Position tool from the command items pane onto a toolbar.</step>
+        <step>Run the application and choose the tool.</step>
+        <step>Click the mouse to change the sun's position on the globe. </step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>3D analysis &amp; visualization</tag>
+  <tag>Add-ins</tag></content_area_tags>
+  <guid>77a7b41a-4133-4c5d-80bc-b8e3e26f2f95</guid>
+  <content_management>
+    <owner>Deepinder Deol</owner>
+    <tech_reviewer>Hardeep Bajwa</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-14</last_updated_date>
+    <last_updated_time>11:39:28</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-03-02</last_copyedit_date>
+									<last_copyedit_time>13:21:16</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-03-02</edit_date>
+									<edit_time>13:19:46</edit_time>
+									<edit_notes>Edited, but returned to author to add VB .NET code (CR 136,413).</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>kyli4140</editor_name>
+									<edit_date>2010-04-30</edit_date>
+									<edit_time>10:12:13</edit_time>
+									<edit_notes>VB.NET code has been added, so set to SDK inclusion completed</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

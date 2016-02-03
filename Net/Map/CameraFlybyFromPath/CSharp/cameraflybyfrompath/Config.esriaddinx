@@ -1,0 +1,21 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>CameraFlybyFromPath</Name>
+  <AddInID>{72a4dcb2-02b9-4d79-aa96-4861727e4b54}</AddInID>
+  <Description>This sample describes how to create a camera fly from path. The tool mimics the out-of-the-box functionality to create camera fly from path available on the Animations toolbar. The tool creates a Globe Camera animation, which moves the camera along a selected feature in a feature class.
+</Description>
+  <Version>1.0</Version>
+  <Image>Images\CameraFlybyFromPath.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>12/11/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="CameraFlybyFromPath.dll" namespace="CameraFlybyFromPath">
+    <ArcGlobe>
+      <Commands>
+        <Button id="ESRI_CameraFlybyFromPath_clsCameraFlyby" class="clsCameraFlyby" message="CameraFlybyFromPath" caption="CameraFlybyFromPath" tip="CameraFlybyFromPath" category="Add-In Controls" image="Images\clsCameraFlyby.png" />
+      </Commands>
+    </ArcGlobe>
+  </AddIn>
+</ESRI.Configuration>

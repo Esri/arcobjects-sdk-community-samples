@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BisectorRuleCS", "BisectorRule\BisectorRuleCS.csproj", "{0E98A44A-95CA-422C-9F77-ECC1F29F801C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BisectorRulePageCS", "BisectorRulePage\BisectorRulePageCS.csproj", "{DD1F9259-BDCD-49E6-BDE4-92AB6D57DF18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E98A44A-95CA-422C-9F77-ECC1F29F801C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E98A44A-95CA-422C-9F77-ECC1F29F801C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E98A44A-95CA-422C-9F77-ECC1F29F801C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E98A44A-95CA-422C-9F77-ECC1F29F801C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1F9259-BDCD-49E6-BDE4-92AB6D57DF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1F9259-BDCD-49E6-BDE4-92AB6D57DF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1F9259-BDCD-49E6-BDE4-92AB6D57DF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1F9259-BDCD-49E6-BDE4-92AB6D57DF18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

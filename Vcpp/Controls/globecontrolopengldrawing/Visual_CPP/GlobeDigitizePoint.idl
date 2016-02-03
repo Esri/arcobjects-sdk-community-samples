@@ -1,0 +1,65 @@
+// GlobeDigitizePoint.idl : IDL source for GlobeDigitizePoint.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (GlobeDigitizePoint.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(EC5796BE-D8E7-4547-8333-B23C86B9ACC5),
+	version(1.0),
+	helpstring("GlobeDigitizePoint 1.0 Type Library")
+]
+library GlobeDigitizePoint
+{
+	//If you are working on a 64-bit machine, you will need to update the 
+	//OLB path to \Program Files (x86)\ArcGIS for the samples to work.
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		object,
+		uuid(B705200F-B199-4DC6-9E54-2488A5A3B938),
+		dual,
+		helpstring("IGlobeDigitizePointTool Interface"),
+		pointer_default(unique)
+	]
+	interface IGlobeDigitizePointTool : IDispatch
+	{
+	};
+	
+	[
+		object,
+		uuid(AFB86606-46D4-4463-BCE8-83963124277E),
+		dual,
+		helpstring("IAddGeographicPoint Interface"),
+		pointer_default(unique)
+	]
+	interface IAddGeographicPoint : IDispatch
+	{
+	};
+
+	
+	[
+		uuid(B87A598C-A8C0-41BA-AC35-450416C38A35),
+		helpstring("GlobeDigitizePointTool Class")
+	]
+	coclass GlobeDigitizePointTool
+	{
+		[default] interface IUnknown;
+		interface IGlobeDigitizePointTool;
+	};
+	
+	
+	[
+		uuid(EA9A6EEA-10A1-4F25-9979-F96EDA7750B5),
+		helpstring("AddGeographicPoint Class")
+	]
+	coclass AddGeographicPoint
+	{
+		[default] interface IUnknown;
+		interface IAddGeographicPoint;
+	};
+};

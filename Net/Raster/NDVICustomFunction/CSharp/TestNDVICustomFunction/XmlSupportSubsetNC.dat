@@ -1,0 +1,10 @@
+	<Type>
+		<Name>NDVICustomFunction</Name>
+		<Namespace>http://www.esri.com/schemas/ArcGIS/10.2</Namespace>
+		<CLSID>{652642F3-9106-4EB3-9262-A4C39E03BC56}</CLSID>
+	</Type>
+	<Type>
+		<Name>NDVICustomFunctionArguments</Name>
+		<Namespace>http://www.esri.com/schemas/ArcGIS/10.2</Namespace>
+		<CLSID>{CB684500-0A15-46C5-B1C1-8062A1629F66}</CLSID>
+	</Type>

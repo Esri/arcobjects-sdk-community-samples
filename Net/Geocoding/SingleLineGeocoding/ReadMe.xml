@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" productVersion="12.0.0" solutionVersion="9.4.0.923" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Single line address geocoding</title>
+	<purpose>This sample shows how to use ArcObjects to geocode an address using the single line input option.</purpose>
+	<development_license>
+		
+	<license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires>A locator that was made with ArcGIS 9.3 or later.</requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>SingleLineGeocoding/Program.cs</filename>
+				<description>The code that executes the Windows form.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>SingleLineGeocoding/SingleLineGeocodingForm.cs</filename>
+									<description>The main functionality of the sample.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>SingleLineGeocoding/Program.vb</filename>
+										<description>The code that executes the Windows form.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>SingleLineGeocoding/SingleLineGeocodingForm.vb</filename>
+									<description>The main functionality of the sample.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Open the solution using Visual Studio.</step><step>Build the solution.</step><step>Run the SingleLineGeocoding application.</step><step>Browse for an ArcGIS 9.3 or later locator that has been stored in a file folder.</step><step>Enter an address into the Address box.</step><step>Click Find or press Enter.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display>Creating an address locator</topic_display>
+			<topic_link>f3f6ab60-da24-43d6-a869-c611c7a84505</topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Geocoding</tag>
+	</content_area_tags>
+	<indexing_tags>
+		<new_tag>ArcGIS for Desktop</new_tag>
+	<existing_tag>ArcGIS Engine</existing_tag><existing_tag>Single line geocoding</existing_tag></indexing_tags>
+	<guid>d848c464-3ff5-483b-ab8c-7ac97fdbae3b</guid>
+	<content_management>
+		<owner>brad5993</owner>
+		<tech_reviewer>awong</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>true</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-10-01</langrev_last_updated_date>
+		<langrev_last_updated_time>08:31:36</langrev_last_updated_time>
+		<last_updated_date>2012-03-16</last_updated_date>
+		<last_updated_time>14:38:54</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2012-03-16</last_copyedit_date>
+									<last_copyedit_time>14:39:51</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>mine3384</editor_name>
+										<edit_date>2009-11-05</edit_date>
+										<edit_time>11:22:10</edit_time>
+										<edit_notes>Edited, but VB .NET code example does not have a description for SingleLineGeocoding/SingleLineGeocodingForm.vb.</edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-11-10</edit_date>
+									<edit_time>08:00:28</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Ready for SDK inclusion.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Verified VB .NET code example has a description.</div></edit_notes>
+								</editing_section><editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2012-03-16</edit_date>
+									<edit_time>14:39:38</edit_time>
+									<edit_notes>10.2 product name changes update.</edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>linn</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

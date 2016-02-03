@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobeFlyTool", "GlobeFlyTool.csproj", "{9286CC00-432D-437E-8427-16726A67B1FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9286CC00-432D-437E-8427-16726A67B1FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9286CC00-432D-437E-8427-16726A67B1FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9286CC00-432D-437E-8427-16726A67B1FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9286CC00-432D-437E-8427-16726A67B1FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

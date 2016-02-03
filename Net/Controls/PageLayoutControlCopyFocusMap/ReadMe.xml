@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.673" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Copy the PageLayoutControl focus map and overwrite the MapControl map</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to set the PageLayoutControl's FocusMap and use the IObjectCopy object to overwrite the MapControl's map object with a copy of the PageLayoutControl's FocusMap. The map object must be copied because the MapControl and PageLayoutControl are unable to share the same ActiveView at the same time.</div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>CopyFocusMap.cs</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>CopyFocusMap.vb</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Load a map document into the PageLayoutControl. </step>
+        <step>Use the left mouse button to zoom in and the right mouse button to pan both the page and the map data. </step>
+        <step>Change the PageLayoutControl's FocusMap.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The Browse dialog box allows you to search and select map documents, which are validated and loaded into the PageLayoutControl using the CheckMxFile and LoadMxFile methods. This triggers the OnPageLayoutReplaced event, which loops through the elements in the PageLayoutControl's GraphicsContainer finding MapFrame elements. The name of each MapFrame is set to the name of the map in the MapFrame using the IElementProperties interface. A combo box is populated with all of the map names to allow you to change the FocusMap. The FindElementByName method is used to find the MapFrame containing the map that is to become the FocusMap. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The PageLayoutControl's OnFocusMapChanged and OnAfterScreenDraw (when a new map document has been loaded into the PageLayoutControl) events use the IObjectCopy Copy and Overwrite methods to overwrite the MapControl's map with a copy of the PageLayoutControl's FocusMap. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Each map contained within the PageLayout, encapsulated by the PageLayoutControl, resides within a separate MapFrame, and therefore has its IMap.IsFramed property set to true. A map contained within the MapControl does not reside within a MapFrame. As such, before overwriting the MapControl's map, the IMap.IsFramed property must be set to false. (Failure to do this will lead to corrupted map documents containing the contents of the MapControl being saved).</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The PageLayoutControl and MapControl OnMouseDown events use the TrackRectangle and Pan methods to zoom in and pan around either the PageLayoutControl's page or the MapControl's map. If the MapControl's display is redrawn due to a change in VisibleExtent, the OnAfterScreenDraw event is used to set the extent of the PageLayoutControl's FocusMap equal to that of the MapControl using the IDisplayTransformation interface. </div></additional_information><related_topics>
+    <topic>
+      <topic_display>PageLayoutControl class</topic_display>
+      <topic_link>esriControls/PageLayoutControl.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IPageLayoutControl interface</topic_display>
+      <topic_link>esriControls/IPageLayoutControl.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IObjectCopy interface</topic_display>
+      <topic_link>esriSystem/IObjectCopy.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+  </content_area_tags>
+  <guid>A4390A53-80C1-4754-BF05-46C558C9EE11</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-03-23</last_updated_date>
+    <last_updated_time>16:52:56</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-03-23</last_copyedit_date>
+									<last_copyedit_time>16:54:14</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-03-23</edit_date>
+									<edit_time>16:53:50</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

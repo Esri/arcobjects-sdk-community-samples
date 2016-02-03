@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.923" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Extending the replication synchronization process</title>
+  <purpose><div style="MARGIN-TOP: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><span>Developers might want to extend the core replica behavior during synchronization. The synchronization process can be extended by implementing a workspace extension that supports IWorkspaceReplicaSyncEvents. By implementing this interface in an extension, custom behavior can be executed before and after any replica synchronization process executed on a geodatabase.</span></div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li style="MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt"><span>This sample describes the process using the example of a developer wanting to copy new raster datasets from a raster catalog during the synchronization. In this example, when synchronization is executed, the extension identifies and copies the new raster datasets from the source geodatabase to the target geodatabase.</span></li>
+<li style="MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt"><span>This sample is for connected synchronization where connections are made to local geodatabases.</span></li>
+<li style="MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt"><span>This sample can be used as a reference for developers needing to extend synchronization for any reason.</span> </li></ul></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine</name>
+      <extension>Geodatabase Update</extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>RasterSyncExtension/RasterSyncWorkspaceExtension.cs</filename>
+        <description>A workspace extension that extends the synchronization process.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RasterSyncExtensionReg/RegisterExtension.cs</filename>
+        <description>A console application that registers the extension with a geodatabase.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>RasterSyncExtension/RasterSyncWorkspaceExtension.vb</filename>
+        <description>A workspace extension that extends the synchronization process.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RasterSyncExtensionReg/RegisterExtension.vb</filename>
+        <description>A console application that registers the extension with a geodatabase.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    
+  <how_to_use>
+									<title>Preparing the data</title>
+									<how_to_use_steps>
+										<step>This sample requires that the raster catalog has a long integer column named "gen." If the replica has been created and has that column, proceed with Step 7 in this section. </step><step>Open the parent raster catalog to be synchronized in ArcMap.</step><step>Add the gen column to the raster catalog using the Add Field option in the attribute table.</step><step>Set the value of the gen column for any existing raster datasets in the raster catalog to 0. The field calculator can be used to do this quickly.</step><step>Repeat Steps 2-4 for the child raster catalog.</step><step>Create a replica of the raster catalog. For more information, see "How to create a replica in a connected environment" in the See Also section in this topic. The creation process copies the raster catalog and the raster datasets that intersect the replica geometry by default. To create the replica, at least one versioned feature class with edit permission must also be included in the replica. It is not possible to create a replica consisting only of the raster dataset.</step><step>Once the replica exists, make sure that the raster catalog exists in the parent and the child replica geodatabases, and that each has a long integer column named gen.</step><step>If there are common raster datasets, set the value in the gen column to 0 for the common datasets in the parent and child replica geodatabases.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Building the extension</title>
+									<how_to_use_steps>
+										<step>Once the data is prepared, build the extension and register it with the replica geodatabases by completing the following steps.</step><step>Copy the solution locally and open the solution.</step><step>Open the RasterSyncWorkspaceExtension.cs (if working in C#) or RasterSyncWorkspaceExtension.vb (if working in VB .NET) source file.</step><step>There are two member variables in the extension that can be adjusted. The rasterCatalog variable (a private constant string, currently set to "ras_cat") is the name of the raster catalog to involve in the synchronization. By changing this value before building the assembly, the synchronized raster catalog can be changed.</step><step>The other variable is the replica variable (a private constant string, currently set to "myreplicaras"), which is the name of the replica whose synchronization event triggers this behavior. By changing this value before building the assembly, the replica with extended behavior can be changed.</step><step>Right-click the project and choose build. This creates the assembly in the project's debug or release directory (depending on the selected option).</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Applying the extension to one or more geodatabases</title>
+									<how_to_use_steps>
+										<step>Which geodatabase or geodatabases require the workspace extension depends on the type of replica being used. For one-way parent-to-child replication, both geodatabases involved with the replica requires the extension. For two-way replication, both geodatabases involved with the replica requires the extension. The RasterSynchExtensionReg* project compiles to an executable that registers the workspace extension with a geodatabase.</step><step>Right-click the RasterSyncExtensionReg* project and choose Set as StartUp Project.</step><step>Open RegisterExtension.cs.</step><step>Change the RegisterExtension.workspacePath value to the path of an ArcSDE connection file or local geodatabase that has the extension applied to it.</step><step>Change the RegisterExtension.geodatabaseType value to reflect the type of geodatabase on which the extension is being registered.</step><step>Right-click the project and choose build.</step><step>Press F5 to run the project.</step><step>Steps 2-7 in this section registers the extension with one of the replica geodatabases. If two-way replication is being used, repeat these steps for the other replica geodatabase. Once this is completed, synchronizing the replica identified in the previous steps executes the extension.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Using the extension</title>
+									<how_to_use_steps>
+										<step>Synchronizing the replica associated with the extension using the wizards, or the geoprocessing tools in ArcCatalog or ArcMap, triggers the extension's behavior. To test this, assuming that a two-way replica is being used, complete the following steps.</step><step>Load one or more new raster datasets into the raster catalog in the parent geodatabase. When this is done, the gen column has a null value for the new raster datasets.</step><step>In the same way, load one or more new raster datasets into the raster catalog in the child.</step><step>In ArcCatalog, connect to the parent replica geodatabase and synchronize from the parent to the child. Notice that a value is assigned to the gen column of the new raster datasets. This is the generation number of the synchronization in which the raster datasets were sent.</step><step>In ArcCatalog, connect to the child replica geodatabase and preview the raster catalog. Notice that the raster datasets from the parent have been applied and have a gen value of –1. The –1 value indicates that these have been received from the parent.</step><step>In ArcCatalog, synchronize from the child to the parent. Notice that the raster datasets that were added to the child in Step 3 were applied to the parent and the values in the gen column for these datasets were adjusted. </step><step>As raster datasets are added and synchronized, the parent and child are kept up to date with the new raster datasets. The extension also supports cases where (for any reason) synchronization fails. Here, the generation information in the gen column is used to determine if rasters need to be resent.</step>
+									</how_to_use_steps>
+								</how_to_use></how_to_use_section>
+  <additional_information><h4 style="FONT-WEIGHT: normal" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><strong>Expanding the sample</strong></h4>
+<div style="FONT-WEIGHT: normal" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The main goal of the sample is to show how to extend replica synchronization. There are a number of enhancements that can be added to support your specific requirements. Some of these include the following:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li style="FONT-WEIGHT: normal"><strong>Disconnected replication</strong><font face="Verdana">—</font>The sample does not work in cases where you are performing disconnected synchronization where changes are synchronized using delta files. If you use disconnected synchronization, the raster catalog is ignored.</li>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="FONT-WEIGHT: normal">To extend the sample to cover this case, you can implement the AfterExportingDataChanges event in the extension. This event is called when you run the export data changes command. Here, you can use the same logic from the AfterSynchronizingDataChanges event handler to copy the raster datasets to a local file geodatabase. This can then be copied with the delta file to a location accessible by the target replica geodatabase. When the data file is imported, you can add code to the AfterSynchronizingDataChanges event, which is also called with the import message command. This code can import the raster datasets from the local file geodatabase.</li></ul>
+<li style="FONT-WEIGHT: normal"><strong>Multiple replicas</strong><font face="Verdana">—</font>This sample is for a single replica. Implementing it for several replicas involves creating a gen column per replica.</li>
+<li style="FONT-WEIGHT: normal"><strong>Multiple raster catalogs</strong><font face="Verdana">—</font>This sample is for a single raster catalog. Implementing it for several raster catalogs involves adding enhancements to keep track of which raster catalogs to synchronize.
+</li><li style="FONT-WEIGHT: normal"><strong>Replication using geodata services and ArcGIS for Server</strong><font face="Verdana">—</font>This sample does not work in this environment. Synchronizing using geodata services and ArcGIS for Server ignores the raster catalog. In this case, you can use similar techniques as previously described for disconnected replication, since the server uses delta files to synchronize changes.</li>
+<li style="FONT-WEIGHT: normal"><strong>Creating a workspace property page</strong><font face="Verdana">—</font>To avoid hard coding the values, such as the replica and raster dataset name, a property page can be created that gets and sets the values from a private table.</li></ul></additional_information><related_topics>
+    <topic>
+      <topic_display>How to create a replica in a connected environment</topic_display>
+      <topic_link>c2cf8989-07cf-43fd-b9b0-b1be47aadb79</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+  </content_area_tags>
+  <guid>6f3127f4-9b95-4488-8132-a600ae290f09</guid>
+  <content_management>
+    <owner>Gary MacDougall</owner>
+    <tech_reviewer>Premjit Singh</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2012-03-12</last_updated_date>
+    <last_updated_time>15:27:03</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2012-03-12</last_copyedit_date>
+									<last_copyedit_time>15:27:31</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-03-01</edit_date>
+									<edit_time>15:23:25</edit_time>
+									<edit_notes>Not edited. Changed status to Authoring in progress. See CR#142,560.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>kyli4140</editor_name>
+									<edit_date>2010-04-26</edit_date>
+									<edit_time>14:48:46</edit_time>
+									<edit_notes>Technical review by Premjit, and submitting for copyediting on her behalf.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-04-27</edit_date>
+									<edit_time>08:49:32</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Edited. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">SDK inclusion requested.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample is associated with CR #142,560, to incorporate the readme.doc file into this sample.</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li><strong>Question:</strong> In the "Expanding the sample" section changed: When the data file is imported, you can add code to the AfterSynchronizingDataChanges event <strong>when </strong>is also called with the import message command. <font color="#0000ff">(If my change is not correct, let me know what is correct and I'll update the topic.)</font> </li>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li><strong>Changed to:</strong> When the data file is imported, you can add code to the AfterSynchronizingDataChanges event, <strong>which is </strong>also called with the import message command.</li></ul>
+<li>Changed all references to ArcGIS server to ArcGIS Server.</li></ul></edit_notes>
+								</editing_section><editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2012-03-12</edit_date>
+									<edit_time>15:27:19</edit_time>
+									<edit_notes>10.2 product name changes update.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

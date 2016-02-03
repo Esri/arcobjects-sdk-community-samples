@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Schematic Create Basic Settings AddIn (CSharp)</Name>
+  <AddInID>{253052e1-3e5c-4c61-b6f7-045dec2b416a}</AddInID>
+  <Description>This add-in allows to create a schematic dataset and quickly configure a schematic diagram template that will use geometric network data as the input for generating schematic diagrams.</Description>
+  <Version>1.0</Version>
+  <Image>Images\SchematicCreateBasicSettingsAddIn.png</Image>
+  <Author>kenr4233</Author>
+  <Company>ESRI</Company>
+  <Date>11/1/2010</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="SchematicCreateBasicSettingsAddIn.dll" namespace="SchematicCreateBasicSettingsAddIn">
+    <ArcCatalog>
+      <Commands>
+        <Button id="ESRI_SchematicCreateBasicSettingsAddIn_CSharp" class="GenerateSchematicTemplate" message="Creates a schematic dataset in the currently selected geodatabase and configures a schematic template that will use geometric network data as the input for generating schematic diagrams." caption="Create Basic Schematic Settings (CSharp)" tip="Create Basic Schematic Settings (CSharp)" category="Schematic Extras (CSharp)" image="Images\GenerateSchematicTemplate.png" />
+      </Commands>
+    </ArcCatalog>
+  </AddIn>
+</ESRI.Configuration>

@@ -1,0 +1,32 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.DWG]
+@="CAD_auto_file"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.DWG]
+@="CAD_auto_file"
+[HKEY_CLASSES_ROOT\.DXF]
+@="CAD_auto_file"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.DXF]
+@="CAD_auto_file"
+[HKEY_CLASSES_ROOT\.DGN]
+@="CAD_auto_file"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.DGN]
+@="CAD_auto_file"
+
+[HKEY_CLASSES_ROOT\CAD_auto_file]
+@="CAD Files"
+[HKEY_CLASSES_ROOT\CAD_auto_file\shell]
+[HKEY_CLASSES_ROOT\CAD_auto_file\shell\View]
+@=""
+[HKEY_CLASSES_ROOT\CAD_auto_file\shell\View\command]
+@="C:\\Program Files\\ArcGIS\\DeveloperKit10.0\\Samples\\ArcObjectsNET\\MapControlCADViewer\\CSharp\\CADView.exe \"%1\""
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CAD_auto_file]
+@="CAD Files"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CAD_auto_file\shell]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CAD_auto_file\shell\View]
+@=""
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CAD_auto_file\shell\View\command]
+@="C:\\Program Files\\ArcGIS\\DeveloperKit10.0\\Samples\\ArcObjectsNET\\MapControlCADViewer\\CSharp\\CADView.exe \"%1\""
+

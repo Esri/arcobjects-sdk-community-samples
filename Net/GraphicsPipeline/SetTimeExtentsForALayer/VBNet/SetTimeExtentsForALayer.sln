@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SetTimeExtentsForALayer", "SetTimeExtentsForALayer.vbproj", "{FE8D4CDD-7982-459C-B6F2-AB0CA567A20F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE8D4CDD-7982-459C-B6F2-AB0CA567A20F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8D4CDD-7982-459C-B6F2-AB0CA567A20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8D4CDD-7982-459C-B6F2-AB0CA567A20F}.Debug|x86.ActiveCfg = Debug|x86
+		{FE8D4CDD-7982-459C-B6F2-AB0CA567A20F}.Debug|x86.Build.0 = Debug|x86
+		{FE8D4CDD-7982-459C-B6F2-AB0CA567A20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8D4CDD-7982-459C-B6F2-AB0CA567A20F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE8D4CDD-7982-459C-B6F2-AB0CA567A20F}.Release|x86.ActiveCfg = Release|x86
+		{FE8D4CDD-7982-459C-B6F2-AB0CA567A20F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="9.4.0.896" PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Create a custom raster type from the ground up for DMCII data</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">
+<div><font size="2">This sample shows how to implement a custom raster type from the ground up to provide support for DMCII data. Also provided is an optional test application to create a geodatabase and a mosaic dataset, and add data using the custom type. The main interface to be implemented is the IRasterBuilder interface along with secondary interfaces such as IRasterBuilderInit (which provides access to the parent MD), IPersistVariant (which implements persistence), IRasterBuilderInit2 and IRasterBuilder2 (new interfaces added at 10.2).</font></div>
+<div> </div>
+<div><font size="2">The interface IRasterFactory also needs to be implemented for the raster type to show up in the list of raster types in the Add Rasters GP tool. The factory is responsible for creating the raster type object and setting some properties on it. It also enables the use of the aster product.</font></div></div></purpose>
+	<development_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.2</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>DMCIIRasterType\DMCIIRasterType.cs</filename>
+				<description>Main source file that implements the custom raster type.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>TestDMCIIRasterType\TestDMCIIRasterType.cs</filename>
+									<description>Main source file for the optional test application that is used to generate a mosaic dataset and add items to it using the custom raster type.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>DMCIIRasterType\DMCIIRasterType.vb</filename>
+										<description>Main source file that implements the custom raster type.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>TestDMCIIRasterType\TestDMCIIRasterType.vb</filename>
+									<description>Main source file for the optional test application that is used to generate a mosaic dataset and add items to it using the custom raster type.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		
+	<how_to_use>
+									<title>Setting up the custom function</title>
+									<how_to_use_steps>
+										<step>Start Visual Studio and open the solution.</step><step>Build the DMCIIRasterType and TestDMCIIRasterType projects.</step><step>The raster type can now be used like any of the built-in raster types in the system.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Using the custom raster type in desktop</title>
+									<how_to_use_steps>
+										<step>Start ArcMap.</step><step>Create a mosaic dataset.</step><step>Run the Add Rasters To Mosaic Dataset tool.</step><step>Select the mosaic dataset created as source.</step><step>Select the DMCII Raster Type from the list of raster types.</step><step>To adjust raster type specific properties, click the Raster Type Properties button to the right of the Raster Type Selection drop-down list. The Raster Type properties page opens with options to pick the specific product to add (All, L1R, or L1T) and the template to apply (Raw or Stretch). </step><step>Change settings as desired and click OK.</step><step>Use the directory picker, or drag and drop the directory containing the DMCII data into the table showing input workspaces.</step><step>Click OK.</step><step>The tool adds the DMCII data to the mosaic dataset using the custom raster type.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+			<title>Using the custom raster type test application</title>
+			<how_to_use_steps>
+				<step>Start Visual Studio and open the solution file.</step><step>Open the TestDMCIIRasterType project.</step><step>Edit the strings in the Setup MD Test Parameters region to specify the parameters that control what geodatabase to create, where to create the geodatabase and mosaic dataset, the names of the geodatabase and the mosaic dataset, what folder to add data from, and so on.</step><step>Compile and run the program.</step><step>The program console displays detailed messaging regarding the steps it performs and whether it has succeeded or not. It will also display any errors that occur.</step><step>Load the created mosaic dataset into ArcMap or ArcCatalog.</step>
+			</how_to_use_steps>
+		</how_to_use></how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Rasters</tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag>Raster dataset</existing_tag>
+	<existing_tag>Mosaic dataset</existing_tag></indexing_tags>
+	<guid>64335cf6-3609-48ef-98e9-bf649dc6fdcb</guid>
+	<content_management>
+		<owner>pras4765</owner>
+		<tech_reviewer>Wenxue Ju</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2011-11-18</langrev_last_updated_date>
+		<langrev_last_updated_time>16:15:42</langrev_last_updated_time>
+		<last_updated_date>2011-11-22</last_updated_date>
+		<last_updated_time>15:05:14</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2011-11-22</last_copyedit_date>
+									<last_copyedit_time>15:13:24</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>mine3384</editor_name>
+										<edit_date>2011-11-22</edit_date>
+										<edit_time>15:13:23</edit_time>
+										<edit_notes>Edited. SDK inclusion completed. Per Prashant, added sample to the TOC under the Working with Mosaic datasets folder.</edit_notes>
+									</editing_section>
+								</edits></content_management>
+	<current_user>mine3384</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

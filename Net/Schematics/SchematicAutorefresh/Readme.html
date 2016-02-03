@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Schematic diagram auto refresh</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Schematic diagram auto refresh</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample is an ArcMap add-in that shows how to create a custom button that turns the automatic refresh feature on and off in a schematic diagram.  </p>
+
+<h3>Usage</h3>
+
+<h4>Building the component</h4>
+
+<ol>
+<li>Open the solution file and build the project.  </li>
+</ol>
+
+<h4>Configuring schematic attributes to be evaluated at On Start Editing</h4>
+
+<ol>
+<li>Start ArcCatalog and edit a schematic dataset with a diagram template configured to work from a geometric network.  </li>
+<li>Check the On Start Editing evaluation mode for any Associated Field schematic attribute that is used to label or symbolize the schematic features in the schematic diagrams.  </li>
+<li>Save the schematic dataset and exit the Schematic Dataset Editor.  </li>
+</ol>
+
+<h4>Adding the custom AutoRefresh button to the Schematic Editor toolbar</h4>
+
+<ol>
+<li>Start ArcMap with a new empty map.  </li>
+<li>Click Customize and click Customize Mode.  </li>
+<li>Click the Commands tab and click AutoRefresh (VBNet) or AutoRefresh (C#) in the Categories list.  </li>
+<li>Drag and drop the AutoRefresh command onto the Schematic Editor toolbar.  </li>
+</ol>
+
+<h4>Testing auto refresh in the schematic diagram</h4>
+
+<ol>
+<li>In the Layers data frame, add the geometric network data with which your diagram template works.  </li>
+<li>Open a schematic diagram containing schematic features that were affected by the changes made during the On Start Editing evaluation, or generate a schematic diagram.  </li>
+<li>Click Schematic Editor and click Start Editing Diagram on the Schematic Editor toolbar.  </li>
+<li>Click the AutoRefresh (VBNet) or AutoRefresh (C#) button. The Schematic Auto Refresh Properties dialog box opens.  </li>
+<li>Check the Auto Refresh On option, configure the time interval parameter values, then close the dialog box.  </li>
+<li>In the active schematic diagram, select a schematic feature impacted by the changes made during the On Start Editing evaluation.  </li>
+<li>Click Propagate Schematic Selection To Map on the Schematic toolbar. The associated feature is automatically selected in the Layers data frame.  </li>
+<li>Activate this data frame and zoom in on the selected geographic information system (GIS) feature.  </li>
+<li>On the Editor toolbar, click Editor and click Start Editing.  </li>
+<li>Change some attribute values for the selected GIS feature.  </li>
+<li>Activate the data frame containing the schematic diagram. After the specified time interval, all schematic attributes configured during the On Start Editing evaluation have been automatically re-evaluated. They reflect the changes you made to the associated GIS feature attributes. If these schematic attributes are used to label or symbolize the schematic feature, the impact is visual; the symbol or the label has been automatically changed.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic: Schematics </td><td> ArcGIS for Desktop Basic: Schematics </td></tr>  
+<tr><td> ArcGIS for Desktop Standard: Schematics </td><td> ArcGIS for Desktop Standard: Schematics </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced: Schematics </td><td> ArcGIS for Desktop Advanced: Schematics </td></tr>  
+</table>
+
+</body>
+</html>

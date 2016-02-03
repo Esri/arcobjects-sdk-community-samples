@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TestWatermarkFunction", "TestWatermarkFunction\TestWatermarkFunction.vbproj", "{CD3B09AC-3877-4319-9327-7065BCCE03CD}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WatermarkFunction", "WatermarkFunction\WatermarkFunction.vbproj", "{02301E05-3B5D-4DEB-ACBB-5C67FE1F181F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WatermarkFunctionUI", "WatermarkFunctionUI\WatermarkFunctionUI.vbproj", "{C63246F2-2934-4094-8080-93B15F5C2BA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD3B09AC-3877-4319-9327-7065BCCE03CD}.Debug|x86.ActiveCfg = Debug|x86
+		{CD3B09AC-3877-4319-9327-7065BCCE03CD}.Debug|x86.Build.0 = Debug|x86
+		{CD3B09AC-3877-4319-9327-7065BCCE03CD}.Release|x86.ActiveCfg = Release|x86
+		{CD3B09AC-3877-4319-9327-7065BCCE03CD}.Release|x86.Build.0 = Release|x86
+		{02301E05-3B5D-4DEB-ACBB-5C67FE1F181F}.Debug|x86.ActiveCfg = Debug|x86
+		{02301E05-3B5D-4DEB-ACBB-5C67FE1F181F}.Debug|x86.Build.0 = Debug|x86
+		{02301E05-3B5D-4DEB-ACBB-5C67FE1F181F}.Release|x86.ActiveCfg = Release|x86
+		{02301E05-3B5D-4DEB-ACBB-5C67FE1F181F}.Release|x86.Build.0 = Release|x86
+		{C63246F2-2934-4094-8080-93B15F5C2BA5}.Debug|x86.ActiveCfg = Debug|x86
+		{C63246F2-2934-4094-8080-93B15F5C2BA5}.Debug|x86.Build.0 = Debug|x86
+		{C63246F2-2934-4094-8080-93B15F5C2BA5}.Release|x86.ActiveCfg = Release|x86
+		{C63246F2-2934-4094-8080-93B15F5C2BA5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

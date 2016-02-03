@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>PrintActiveViewVB_Net_Addin</Name>
+  <AddInID>{b321d1c0-e995-440a-9115-7e61f94f9129}</AddInID>
+  <Description>Prints Active View to Default printer</Description>
+  <Version>1.0</Version>
+  <Image>Images\PrintActiveViewVB_Net_Addin.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>12/9/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="PrintActiveViewVB_Net_Addin.dll" namespace="PrintActiveViewVB_Net_Addin">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_PrintActiveViewVB" class="PrintActiveViewVB_Net_Addin" message="Prints Active View to Default printer" caption="Print Active View VB.NET" tip="Print Active View VB" category="Developer Samples" image="Images\PrintActiveViewVB_Net_Addin.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

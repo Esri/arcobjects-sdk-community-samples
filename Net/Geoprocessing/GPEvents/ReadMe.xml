@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.673" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Geoprocessing events listener</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">When using geoprocessing (GP) to execute tools, you usually get the tool execution results when it is done. In many cases, you need to listen to the GP events as they happen, for example, when a toolbox is loaded, or messages received while a tool is executing.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates the implementation of a listener helper that allows you to listen to the various GP events. The TestListner application serves as the client that listens to the GP events. </div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>GeoprocessorEventHelper/GPEventHelper.cs</filename>
+        <description>GP events helper class implementation file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TestListner/GPEventListner.cs</filename>
+        <description>Test application that uses the GP events helper class to listen to GP events.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>GeoprocessorEventHelper/GPEventHelper.vb</filename>
+        <description>GP events helper class implementation file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TestListner/GPEventListner.vb</filename>
+        <description>Test application that uses the GP events helper class to listen to GP events.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution.</step>
+        <step>Build the solution to make the GeoprocessorEventHelper class .dll and the TestListner test application.</step>
+        <step>Right-click the project and select Set as Startup Project to ensure the TestListner project is the start-up project for the solution (notice the messages on the Output window in Visual Studio as they get fired by the geoprocessor). The application creates a random shapefile in the machine's temporary directory.</step>
+        
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Geoprocessing</tag>
+    <tag>Events</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>IGeoprocessor interface</existing_tag>
+  </indexing_tags>
+  <guid>ab73eb66-8c4c-4a74-98b8-29ae44d8ac61</guid>
+  <content_management>
+    <owner>Nobbir Ahmed</owner>
+    <tech_reviewer>Shing Lin</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-03-23</last_updated_date>
+    <last_updated_time>08:09:51</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-03-23</last_copyedit_date>
+									<last_copyedit_time>08:12:07</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-03-23</edit_date>
+									<edit_time>08:12:23</edit_time>
+									<edit_notes>Edited. SDK inclusion requested.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

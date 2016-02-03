@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.524" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Cut polygons without selection edit task</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample illustrates how to create a custom ArcGIS Engine edit task that can be used in conjunction with the out-of-the-box editing commands. The Cut Polygons Without Selection edit task allows the user to cut features in a polygon layer using the Sketch tool without requiring a selection.</div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>CutPolygonsWithoutSelection\CutPolygonsWithoutSelectionEditTask.cs</filename>
+        <description>Implementation of the edit task.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Application\EditingForm.cs</filename>
+        <description>The main form for the application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>CutPolygonsWithoutSelection\CutPolygonsWithoutSelectionEditTask.vb</filename>
+        <description>Implementation of the edit task.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Application\EditingForm.vb</filename>
+        <description>The main form for the application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Build and run the sample. </step>
+        <step>Start editing.</step>
+        <step>Zoom in polygon features to cut.</step>
+        <step>Click the Cut Polygons Without Selection task.</step>
+        <step>Click the Sketch tool.</step>
+        <step>Cut a polygon (or polygons) in two or more places with the Sketch tool.</step>
+        <step>Finish the sketch to perform the cut.</step>
+        <step>Stop editing. See the following illustration:</step>
+      </how_to_use_steps>
+      <how_to_use_pictures>
+        <picture>
+          <image>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</image>
+          <caption>Illustration using the edit task to split a feature without selecting it.</caption>
+        </picture>
+      </how_to_use_pictures>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The edit task is created by implementing the IEngineEditTask interface. Compiling this sample registers the edit task in the ESRI Engine Edit Tasks component category which is used to populate the ControlsEditingTaskToolControl at runtime.  </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The position of the task in the ControlsEditingTaskToolControl list is controlled using the IEngineEditTask.GroupName property and the display name using the IEngineEditTask.Name property.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The IEngineEditTask.Activate method is called when the end user selects the edit task in the ControlsEditingTaskToolControl. The Activate method is used to set up listeners to the following IEngineEditEvents: </div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>OnTargetLayerChanged fires when the target layer changes.</li>
+<li>OnCurrentTaskChanged fires when selected task changes. </li></ul>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><br/>These event listeners set the IEngineEditSketch.GeometryType to null if the target layer does not have a polygon geometry type, thereby disabling the Sketch tool.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The IEngineEditTask.OnFinishSketch method is used to cut the intersected features using the IFeatureEdit.Split method, passing in the geometry from the digitized sketch as an argument. Edits to features are made in a single edit operation and added to the operation stack.  </div></additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Editing</tag>
+    <tag>Controls</tag>
+  </content_area_tags>
+  <indexing_tags>
+  </indexing_tags>
+  <guid>0e7f24eb-290f-4867-aa91-1f64809f511c</guid>
+  <content_management>
+    <owner>Mike Rudden</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2009-10-09</last_updated_date>
+    <last_updated_time>13:17:49</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2009-10-09</last_copyedit_date>
+									<last_copyedit_time>13:18:20</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-10-09</edit_date>
+									<edit_time>13:18:19</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Ready for SDK inclusion.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Dynamic cache layer manager controller</title>
+  <purpose>This sample shows the properties of the dynamic cache layer manager. The user is able to change the cache layer properties to optimize the display of non-dynamic layers in dynamic mode.</purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path>World/World.mxd</data_path>
+  </data_paths>
+  <requirements>
+    <requires>To switch to dynamic mode, compile the DynamicDisplayHUD sample to retrieve the Toggle Dynamic Mode command. This command can be found in the .NET samples category.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>CacheManagerDlg.cs</filename>
+        <description>Dialog box used to change the Cache Layer Manager properties. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CacheLayerManagerCmd.cs</filename>
+        <description>Command that opens the Cache Layer Manager properties dialog box.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>CacheManagerDlg.vb</filename>
+        <description>Dialog box used to change the Cache Layer Manager properties. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CacheLayerManagerCmd.vb</filename>
+        <description>Command that opens the Cache Layer Manager properties dialog box.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution. </step>
+        <step>Build the solution to make the Dynamic Cache Layer Manager command .dll file. Use the command in an application with a MapControl and ToolbarControl, such as the MyDynamicDisplayApp sample located in the .NET samples folder.</step>
+        <step>Add this command to a ToolbarControl. The command (Dynamic Cache Layer Manager) can be found in the .NET samples category.</step>
+        <step>Run the application containing the MapControl and ToolbarControl.</step>
+        <step>Open the map document located in &lt;Your ArcGIS Developer kit install location&gt;/Samples/Data/World/World.mxd. </step>
+        <step>Enable dynamic display first (see Additional Requirements in this sample for details if not using the MyDynamicDisplayApp sample), then click the Dynamic Cache Layer Manager button. The CacheManagerDlg dialog box appears.</step>
+        <step>Experiment with the display of non-dynamic layers by modifying the cache layer properties in dynamic mode.</step>
+        <step>Click Apply on the dialog box to accept the change.</step>
+        <step>Click OK to accept all changes, then close the dialog box.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Dynamic display</topic_display>
+      <topic_link>c9e1ccf5-df7d-44d3-a2da-d916f65fd94a</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How dynamic display works</topic_display>
+      <topic_link>ce103ad6-848e-4bb6-9de3-5519d577cc2f</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Best practices for using dynamic display</topic_display>
+      <topic_link>35db2220-8004-4588-8629-dafaca5a6b11</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Walkthrough: Getting started with dynamic display</topic_display>
+      <topic_link>756d0373-8e76-4145-a337-5af537ee6393</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic display layer</topic_display>
+      <topic_link>37c19547-1902-46fe-a98a-fb605c188dea</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic biking</topic_display>
+      <topic_link>101efef5-9071-49ac-9ce9-c5a5fe5cc896</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+    <tag>Layer</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>Dynamic display</existing_tag>
+  </indexing_tags>
+  <guid>77c80161-ddf0-430f-a916-d3554919ecba</guid>
+  <content_management>
+    <owner>Yaron Fine</owner>
+    <tech_reviewer>Craig Proctor</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:21:15</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-23</last_copyedit_date>
+      <last_copyedit_time>11:07:10</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>dara4409</editor_name>
+        <edit_date>2009-09-01</edit_date>
+        <edit_time>16:24:42</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml" style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0pt">
+            <font face="Times New Roman">Support has requested we provide an application that already has a dd button in order to get the sample up and running quickly. I have added the alternative to use the MyDynamicDisplayApp in addition compiling the HUD sample and creating a MapControl app<em>.</em></font>
+          </div>
+        </edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-23</edit_date>
+        <edit_time>11:06:54</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">Ready for SDK inclusion.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">If owner needs to be changed, do so on the content management page.</div>
+        </edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

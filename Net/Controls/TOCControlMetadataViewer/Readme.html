@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>TOCControl metadata viewer</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>TOCControl metadata viewer</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample describes how to use the TOCControl to access a layer on the PageLayoutControl to show its metadata within a Web Browser control. The metadata Extensible Markup Language (XML) is transformed using the selected style sheet provided by the sample.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Load a map document into the PageLayoutControl.   </li>
+<li>Select a style sheet or type the style sheet's file path.   </li>
+<li>Right-click a layer on the TOCControl to show its metadata.   </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">A browse dialog box allows you to search and select map documents (*.mxd) that are validated and loaded into the PageLayoutControl using the CheckMxFile and LoadMxFile methods. The ITOCControl.HitTest method is used in the ITOCControlEvents.OnMouseDown event when right-clicked to determine if a layer has been clicked.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">If the layer is an IDataLayer, the metadata is retrieved using the IMetadata.Metadata property. The IXmlPropertySet2.SaveAsFile method is used to create a temporary metadata.htm file in the same folder as the sample code. The metadata.htm file contains the metadata XML transformed using the selected style sheet. The Web Browser control is used to show this file.</div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=TOCControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">TOCControl class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=ITOCControl%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ITOCControl interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

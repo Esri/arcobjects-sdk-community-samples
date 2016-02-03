@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.896" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Graphics layers ToolControl</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates creating a ToolControl by implementing the IToolControl interface. The ToolControl hosts a drop-down list that displays the names of the graphics layers in the map. The end user can select and activate a graphics layer from the ToolControl. This sample also includes a command that creates and adds a new graphics layer to a map. A ToolbarDef hosts both the ToolControl and the new graphics layer command. The following techniques are covered by this sample:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Implementing IToolControl</li>
+<li>Wiring IActiveViewEvents</li>
+<li>Creating graphics layer</li>
+<li>Getting and setting the active graphics layer</li>
+<li>Implementing IToolbarDef </li></ul></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>GraphicsLayersListToolCtrl.cs</filename>
+        <description>The implementation file of the ToolControl.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GraphicsLayersListCtrl.cs</filename>
+        <description>The UserControl, which hosts the graphics layers list.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GraphicsLayersListCtrl.Designer.cs</filename>
+        <description>The designer file of the UserControl.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>NewGraphicsLayerCmd.cs</filename>
+        <description>The implementation file for the New Graphics Layer command.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GraphicsLayersToolbar.cs</filename>
+        <description>The toolbar, which hosts the ToolControl and the New Graphics Layer command.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>GraphicsLayersListToolCtrl.vb</filename>
+        <description>The implementation file of the ToolControl.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GraphicsLayersListCtrl.vb</filename>
+        <description>The UserControl, which hosts the graphics layers list.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GraphicsLayersListCtrl.Designer.vb</filename>
+        <description>The designer file of the UserControl.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>NewGraphicsLayerCmd.vb</filename>
+        <description>The implementation file for the New Graphics Layer command.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GraphicsLayersToolbar.vb</filename>
+        <description>The toolbar, which hosts the ToolControl and the New Graphics Layer command.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution.</step>
+        <step>Build the solution.</step>
+        <step>Open a MapControl or PageLayoutControl application (or ArcMap).</step>
+        <step>From the ToolbarControl Customize dialog box, double-click the Graphics Layers toolset to add the commands to the ToolbarControl.</step>
+        <step>Use the graphics layers list to select the active graphics layer and use the New Graphics Layer command to add new graphics layers to the map.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>How to wire ArcObjects .NET events</topic_display>
+      <topic_link>8dbe2ce3-f2cc-497e-8a6f-b89ab93d1373</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IToolControl interface</topic_display>
+      <topic_link>esriSystemUI/IToolControl.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Commands &amp; Tools</tag>
+    <tag>Layer</tag>
+    <tag>Events</tag>
+  </content_area_tags>
+  <guid>81489b9a-e3ea-481f-bec3-ec9ad967b46b</guid>
+  <content_management>
+    <owner>Gayle Young</owner>
+    <tech_reviewer>mharvey</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-03-23</last_updated_date>
+    <last_updated_time>14:03:16</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-03-23</last_copyedit_date>
+									<last_copyedit_time>14:08:32</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-03-23</edit_date>
+									<edit_time>14:08:20</edit_time>
+									<edit_notes>Edited. SDK inclusion requested.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>elea2233</editor_name>
+									<edit_date>2011-05-04</edit_date>
+									<edit_time>15:45:20</edit_time>
+									<edit_notes>Topic has been in the SDk for a long time but still showed as SDK Inclusion requested. Updated to reflect correct state.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>elea2233</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

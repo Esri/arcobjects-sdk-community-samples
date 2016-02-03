@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.923" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Move a graphic along a path in ArcMap</title>
+  <purpose>This sample implements the move-object-along-path functionality for ArcMap animation. It allows you to move a point graphic element or a text element along a selected line feature or a selected line graphic. A new animation type (Map Graphic animation type) and its corresponding keyframe (Map Graphic keyframe) are implemented to support moving a graphic along the path. It also implements an ArcMap command for creating a move-object-along-path animation. The purpose of this sample is to show how to create a custom animation type in ArcMap and how to implement an ArcMap command to import the animation tracks. To create a custom animation type, implement a new keyframe class and a new animation type class. </purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AnimationTypeMapGraphic.cs</filename>
+        <description>The map graphic animation type class.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MapGraphicKeyframe.cs</filename>
+        <description>The map graphic keyframe class.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>cmdMoveGraphicAlongPath.cs</filename>
+        <description>Command for creating move-graphic-along-path animation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>frmCreateGraphicTrackOptions.cs</filename>
+        <description>Dialog box to get the parameters for creating move-graphic-along-path animation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MapGraphicTrackPropPage.cs</filename>
+        <description>Map graphic track property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AnimationUtils.cs</filename>
+        <description>Utility code for creating a move-graphic-along-path animation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MapGraphicTrackExtension.cs</filename>
+        <description>The Map graphic track extension class.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AnimationTypeMapGraphic.vb</filename>
+        <description>The map graphic animation type class.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MapGraphicKeyframe.vb</filename>
+        <description>The map graphic keyframe class.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>cmdMoveGraphicAlongPath.vb</filename>
+        <description>Command for creating move-graphic-along-path animation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>frmCreateGraphicTrackOptions.vb</filename>
+        <description>Dialog box to get the parameters for creating move-graphic-along-path animation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MapGraphicTrackPropPage.vb</filename>
+        <description>Map graphic track property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AnimationUtils.vb</filename>
+        <description>Utility code for creating a move-graphic-along-path animation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MapGraphicTrackExtension.vb</filename>
+        <description>The Map graphic track extension class.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>Add and use the move-graphic-along-path functionality in ArcMap</title>
+      <how_to_use_steps>
+        <step>Compile the sample project in Visual Studio.</step>
+        <step>Start ArcMap and click Customize, Toolbars, and Animation. The Animation toolbar appears.</step>
+        <step>Click Customize, then Customize Mode. The Customize dialog box appears.</step>
+        <step>On the Commands tab, locate the Animation Developer Samples category.</step>
+        <step>Drag the Move Graphic along Path command from the Animation Developer Samples category to the Animation drop-down on the Animation toolbar. Close the Customize dialog box.</step>
+        <step>Add a line feature layer on to the table of contents (TOC) in ArcMap; or alternatively, draw a line graphic element on the ArcMap display.</step>
+        <step>Draw a point graphic element (or a text element) on the display and symbolize it as necessary.</step>
+        <step>Select the point graphic element (or the text element) and a line feature (or line graphic). The Move Graphic along Path command is enabled.</step>
+        <step>On the Animation drop-down, click the Move Graphic along Path command.</step>
+        <step>Accept all default settings and click the Import button on the Move Graphic along Path dialog box to create a track.</step>
+        <step>Play the animation and the point graphic element (or text element) moves along the selected path.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="1" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>
+<div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt">If more then one line feature (or line graphic) is selected, only the first one is used as the path of the movement.</div>
+</li><li>
+<div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt">You can elect to show the trace of the moving graphic element by selecting the Trace path option on the Move Graphic along Path dialog box when you create the track. </div>
+</li><li>
+<div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt">You can change the Trace path option after a track is created by opening the Animation Manager and selecting the track on the Tracks tab. Click Properties, then click the Graphic Track Properties tab. The Trace path option is available on this tab.</div>
+</li><li>
+<div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt"><span>You can change the symbology for the point graphic element (or text element) and the line graphic representing the trace on the ArcMap display window.</span> </div></li></ol></additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    
+    <tag>Commands &amp; Tools</tag>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+  </content_area_tags>
+  <indexing_tags>
+    
+    
+    
+    
+    <existing_tag>Animation</existing_tag>
+  </indexing_tags>
+  <guid>9981d7dd-c7b4-47c4-ac21-6cd8ddd912b5</guid>
+  <content_management>
+    <owner>Xuguang Wang</owner>
+    <tech_reviewer>Hardeep Bajwa</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2012-01-24</last_updated_date>
+    <last_updated_time>12:10:42</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-04-07</last_copyedit_date>
+									<last_copyedit_time>15:14:06</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-04-07</edit_date>
+									<edit_time>15:14:09</edit_time>
+									<edit_notes>Edited. SDK inclusion requested.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>elea2233</editor_name>
+									<edit_date>2011-05-04</edit_date>
+									<edit_time>14:09:37</edit_time>
+									<edit_notes>Topic has been in the SDk for a long time but still showed as SDK Inclusion requested. Updated to reflect correct state.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>jaim5024</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

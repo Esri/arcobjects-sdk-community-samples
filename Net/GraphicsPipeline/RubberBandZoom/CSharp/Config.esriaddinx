@@ -1,0 +1,20 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>RubberBandZoomCS</Name>
+  <AddInID>{55f59d9c-fb99-4854-b245-4c28368eef74}</AddInID>
+  <Description>Zoom to a newly drawn RubberPolygon</Description>
+  <Version>1.0</Version>
+  <Image>Images\RubberBandZoom2008.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>12/16/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="RubberBandZoomCS.dll" namespace="RubberBandZoom">
+    <ArcMap>
+      <Commands>
+        <Tool id="ESRI_RubberBandZoomCS" class="RubberBandZoom" message="Zoom to a newly drawn RubberPolygon" caption="RubberBandZoom" tip="RubberBandZoom Tool CS" category="Developer Samples" image="Images\RubberBandZoom.png" cursor="Images\RubberBandZoom.cur" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

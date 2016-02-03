@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.667" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Schematics Engine application</title>
+  <purpose>This ArcGIS Engine application is a sample of a Schematics application using a MapControl and the Schematics engine controls.</purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension></extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Schematics</extension>
+    </license>
+  </deployment_license>
+  <apis>
+    <api></api>
+  </apis>
+  <capabilities>
+    <capability></capability>
+  </capabilities>
+  <min_version>10.0</min_version>
+  <min_sp></min_sp>
+  <max_version></max_version>
+  <max_sp></max_sp>
+  <data_paths>
+    <data_path></data_path>
+  </data_paths>
+  <requirements>
+    <requires></requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>MainForm.cs</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Program.cs</filename>
+        <description>Main entry point for the application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CreateNewDocument.cs</filename>
+        <description>Command to create a map. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Properties/AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>MainForm.vb</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ApplicationEvents.vb</filename>
+        <description>Startup code for the application implemented in the MyApplication_Startup event.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CreateNewDocument.vb</filename>
+        <description>Command to create a map. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Properties/AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the solution file, and build the project.</step>
+        <step>Start the SchematicApplication.exe application.</step>
+        <step>Display a schematic diagram by either opening a saved .mxd file containing a schematic layer or adding a schematic diagram (using the Add Data command). The Schematics engine controls are now available (the Schematics extension is required).</step>
+        
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>MapControl class</topic_display>
+      <topic_link>esriControls/MapControl.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Schematics extension</tag>
+    <tag>Controls</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>MapControl</existing_tag>
+  </indexing_tags>
+  <guid>e0434633-3624-440d-9cef-f0409999ace9</guid>
+  <content_management>
+    <owner>Dominique Broux</owner>
+    <tech_reviewer>Anne-Yvonne BLIN</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>false</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <langrev_last_updated_date>2009-10-27</langrev_last_updated_date>
+    <langrev_last_updated_time>17:21:44</langrev_last_updated_time>
+    <last_updated_date>2010-02-05</last_updated_date>
+    <last_updated_time>11:19:10</last_updated_time>
+  <copyediting>
+									<last_copyedit_date>2010-02-05</last_copyedit_date>
+									<last_copyedit_time>11:19:05</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2009-12-29</edit_date>
+										<edit_time>16:33:35</edit_time>
+										<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div></edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-02-05</edit_date>
+									<edit_time>11:18:57</edit_time>
+									<edit_notes>Minor edits.</edit_notes>
+								</editing_section></edits></content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Implementing schematic containers around schematic features</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Implementing schematic containers around schematic features</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates the implementation of schematic containers. It uses the AfterLoadDiagram procedure to define relations between schematic features contained in a diagram. The schematic diagrams contains Stations and Containers features. For the Stations schematic feature class, the RelatedFeeder schematic attribute has been created using the Schematic Dataset Editor. This attribute is used in the AfterLoadDiagram procedure to identify the schematic container related to each station contained in the diagram. This sample shows how schematic relations and containers can be managed by custom code; however, schematic containers can also be configured in schematic diagrams without developing custom code when configuring the PEN and PTN predefined schematic attributes.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio, open the solution, and build the project.  </li>
+<li>Navigate to the ContainerSample.gdb sample geodatabase, located by default at <ArcGIS DeveloperKit install location>\Samples\data\Schematics and copy this geodatabase in a folder for which you have full rights.  </li>
+<li>Start ArcMap and open a new empty map.  </li>
+<li>Click Customize and click Extensions. The Extensions dialog box opens.  </li>
+<li>Confirm that neither the Implementation of Schematic Containers (VBNet) nor Implementation of Schematic Containers (C#) extension is checked, and close the Extensions dialog box.  </li>
+<li>Click Open Schematic Diagrams on the Schematic toolbar. The Select Schematic Diagrams To Open dialog box opens.   </li>
+<li>Browse and select the All schematic diagram contained in the ContainerSample_Schematic schematic dataset in the ContainerSample.gdb you copied at step#2.  </li>
+<li>Start an edit session on the All schematic diagram.  </li>
+<li>Right-click the Containers feature layer entry in the TOC under the All schematic diagram layer, click Selection, then click Select All. Three schematic features containers are selected in the diagram.  </li>
+<li>Click Selection on the ArcMap menu and click Clear Selected Features.  </li>
+<li>Close the edit session on the All schematic diagram. If you are prompted to save, click No.  </li>
+<li>Click Customize and click Extensions. The Extensions dialog box opens.  </li>
+<li>Check the Implementation of Schematic Containers (VBNet) or Implementation of Schematic Containers (C#) extension (depending on the language you're using) and close the Extensions dialog box.  </li>
+<li>Start an edit session on the All schematic diagram. The Containers schematic features now display around the Stations schematic features to which they are related.  </li>
+<li>Stop the edit session. If you are prompted to save, click No.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=ISchematicContainerManager%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ISchematicContainerManager interface</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=ISchematicRelationManager%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ISchematicRelationManager interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic: Schematics </td><td> ArcGIS for Desktop Basic: Schematics </td></tr>  
+<tr><td> ArcGIS for Desktop Standard: Schematics </td><td> ArcGIS for Desktop Standard: Schematics </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced: Schematics </td><td> ArcGIS for Desktop Advanced: Schematics </td></tr>  
+</table>
+
+</body>
+</html>

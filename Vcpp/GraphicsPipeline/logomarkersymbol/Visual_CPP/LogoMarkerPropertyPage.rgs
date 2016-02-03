@@ -1,0 +1,22 @@
+HKCR
+{
+	LogoMarkerSymbolVC.LogoMarkerPropertyPage.1 = s 'LogoMarkerPropertyPage Class'
+	{
+		CLSID = s '{520120CD-8B8F-11D5-A162-00508BA08E68}'
+	}
+	LogoMarkerSymbolVC.LogoMarkerPropertyPage = s 'LogoMarkerPropertyPage Class'
+	{
+		CLSID = s '{520120CD-8B8F-11D5-A162-00508BA08E68}'
+		CurVer = s 'LogoMarkerSymbolVC.LogoMarkerPropertyPage.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {520120CD-8B8F-11D5-A162-00508BA08E68} = s 'LogoMarkerPropertyPage Class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}

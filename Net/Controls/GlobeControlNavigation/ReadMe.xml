@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.706" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Navigating around the GlobeControl</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to control the size, position, and spin speed of the globe object in the GlobeControl. There is a command button provided to allow globe documents to be selected. However, control of the globe can be seen with or without globe data loaded, since the globe is visible as a wire mesh when no data is loaded. </div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>Navigation.cs</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>Navigation.vb</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Browse to a globe document to load into the GlobeControl. </step>
+        <step>Navigate around the globe using the command buttons in the application. </step>
+        <step>Control the globe position and size using the option buttons and mouse. </step>
+        <step>Set the globe spinning using the check box and control the spin speed with the slider control.  </step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The three other command buttons provided with the application demonstrate how to zoom in and out from the current viewpoint and how to restore the globe to its default position by setting properties of the GlobeCamera. The option buttons either enable the GlobeControl's default navigation functionality or use the mouse events to provide zoom in and out functionality. The check box and slider control the spin and spin speed of the GlobeViewer. </div></additional_information><related_topics>
+    <topic>
+      <topic_display>GlobeControl class</topic_display>
+      <topic_link>esriControls/GlobeControl.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IGlobeControl interface</topic_display>
+      <topic_link>esriControls/IGlobeControl.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>3D analysis &amp; visualization</tag>
+    <tag>Globe</tag>
+  </content_area_tags>
+  <guid>80252A0E-5BA2-420c-85C3-A6D7963358D7</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-05-10</last_updated_date>
+    <last_updated_time>16:53:18</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-05-10</last_copyedit_date>
+									<last_copyedit_time>16:53:15</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-05-10</edit_date>
+									<edit_time>16:52:53</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Dynamic display animated zoom</title>
+  <purpose>This sample shows how to use rubber banding envelopes to animate zooming in and out of the map in dynamic mode.</purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>To switch to dynamic mode, compile the DynamicDisplayHUD sample to retrieve the Toggle Dynamic Mode command, which is located in the .NET samples category.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AnimatedZoomInTool.cs</filename>
+        <description>Tool that animates the map zoom in while dynamic display is enabled.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AnimatedZoomOutTool.cs</filename>
+        <description>Tool that animates the map zoom out while dynamic display is enabled.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AnimatedZoomInTool.vb</filename>
+        <description>Tool that animates the map zoom in while dynamic display is enabled.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AnimatedZoomOutTool.vb</filename>
+        <description>Tool that animates the map zoom out while dynamic display is enabled.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution.</step>
+        <step>Build the solution to make the Animated Zoom In and Animated Zoom Out tool .dll files. Use both tools in an application with a MapControl and ToolbarControl, such as the MyDynamicDisplayApp sample located in the .NET samples folder.</step>
+        <step>Add the Animated Zoom In and Animated Zoom Out tools to the ToolbarControl (located in the .NET samples category).</step>
+        <step>Run the application.</step>
+        <step>Click the Add Data command, select the Rasters data type on the dialog box, browse to &lt;your ArcGIS developer kit install location&gt;\Samples\data\wsiearth, then choose the wsiearth.tif file.</step>
+        <step>Click Open to add the .tif file to the map.</step>
+        <step>Make sure the map is in dynamic mode (see Additional Requirements in this sample for details if not using the MyDynamicDisplayApp sample).</step>
+        <step>Click the Animated Zoom In tool, then click and drag an envelope on to the map.</step>
+        <step>Click the Animated Zoom Out tool, then click and drag an envelope on to the map.</step>
+        <step>Turn off the dynamic map and close the application.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Dynamic display</topic_display>
+      <topic_link>c9e1ccf5-df7d-44d3-a2da-d916f65fd94a</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Persisting cache information for use in dynamic display</topic_display>
+      <topic_link>0ff8707e-74cb-4f21-a0f9-aec37d29f331</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Limitations for dynamic display</topic_display>
+      <topic_link>0b062497-a3fc-4c56-a688-0fb9b2fcb4ea</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic display layer</topic_display>
+      <topic_link>37c19547-1902-46fe-a98a-fb605c188dea</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>Dynamic display</existing_tag>
+  </indexing_tags>
+  <guid>0e1c371c-a4c8-4907-9e99-976ea3e929c6</guid>
+  <content_management>
+    <owner>Craig Proctor</owner>
+    <tech_reviewer>Jianxia Song</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:20:39</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-23</last_copyedit_date>
+      <last_copyedit_time>11:52:45</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>dara4409</editor_name>
+        <edit_date>2009-09-02</edit_date>
+        <edit_time>11:46:58</edit_time>
+        <edit_notes>
+          <div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+            <font face="Times New Roman">Support has requested we provide an application that already has a dd button in order to get the sample up and running quickly. I have added the alternative to use the MyDynamicDisplayApp in addition compiling the HUD sample and creating a MapControl app<em>.</em></font>
+          </div>
+        </edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-23</edit_date>
+        <edit_time>11:52:40</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">Ready for SDK inclusion.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">If owner needs to change, do so on content management page.</div>
+        </edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

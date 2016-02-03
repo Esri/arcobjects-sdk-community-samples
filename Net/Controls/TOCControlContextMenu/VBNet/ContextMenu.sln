@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ContextMenu", "ContextMenu.vbproj", "{B62B6AD8-F0D1-43AB-B7E3-F956674D4E10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B62B6AD8-F0D1-43AB-B7E3-F956674D4E10}.Debug|x86.ActiveCfg = Debug|x86
+		{B62B6AD8-F0D1-43AB-B7E3-F956674D4E10}.Debug|x86.Build.0 = Debug|x86
+		{B62B6AD8-F0D1-43AB-B7E3-F956674D4E10}.Release|x86.ActiveCfg = Release|x86
+		{B62B6AD8-F0D1-43AB-B7E3-F956674D4E10}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

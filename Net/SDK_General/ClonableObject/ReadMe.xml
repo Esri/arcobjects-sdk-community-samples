@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.667" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Clonable object</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates a clonable object that implements the IClone interface. This sample supplements the "Implement cloning" topic (refer to the "See Also" link at the bottom of this sample). This sample creates an instance of a user-defined clonable object that has managed and unmanaged class members, then the test application clones the object, and reports the values of class members from original and cloned objects in a console window.</div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>ClonableObjClass.cs</filename>
+        <description>Implementation file of the ClonableObject.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TestApp/LicenseInitializer.cs</filename>
+        <description>ArcGIS license initialization class implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TestApp/Program.cs</filename>
+        <description>Test application's main entry point.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TestApp/TestClass.cs</filename>
+        <description>Test class that creates and clones the clonable object.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>ClonableObjClass.vb</filename>
+        <description>Implementation file of the ClonableObject.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TestApp/LicenseInitializer.vb</filename>
+        <description>ArcGIS license initialization class implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TestApp/Program.vb</filename>
+        <description>Test application's main entry point.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TestApp/TestClass.vb</filename>
+        <description>Test class that creates and clones the clonable object.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution.</step>
+        <step>Build the solution to make the ClonableObject class library and the TestApp test application.</step>
+        <step>Right-click the project and choose Set as Startup Project to ensure the TestApp project is the startup project for the solution.</step>
+        <step>Press F5 to start the application (review the messages that show in the console window).</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Implementing cloning</topic_display>
+      <topic_link>9915ff7d-f119-47ed-b381-cf7dded5cd93</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>Cloning</existing_tag>
+  </indexing_tags>
+  <guid>ccdea95b-0685-4127-a140-fcb4680f15fa</guid>
+  <content_management>
+    <owner>Jianxia Song</owner>
+    <tech_reviewer>Yaron Fine</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-02-16</last_updated_date>
+    <last_updated_time>11:48:30</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2010-02-16</last_copyedit_date>
+      <last_copyedit_time>11:49:38</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-02-16</edit_date>
+									<edit_time>11:49:34</edit_time>
+									<edit_notes>Edited. SDK inclusion requested.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Custom feedback tool and font drop-down list tool control</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to implement a tool and a tool control.</div>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The ToolSample class is an implementation of a tool that tracks mouse events with a circle display feedback in the map and page layout views, including the magnifier and viewer window. It also shows how to track key press events to change the color of the display feedback.</div>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The FontToolControl class is an implementation of a tool control with a drop-down list of all installed fonts. It also shows how to write code to perform custom drawing with .NET Windows Form controls. When you select a font item from the list, the font is drawn. An advanced implementation is provided to allow the custom tool control to set the document default font similar to the out-of-the-box Font drop-down list on the Draw toolbar. For more information, see step 8 in this sample. </div>
+  </purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>ArcScan</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>FontToolControl.cs</filename>
+        <description>Class implementing a custom font drop-down list tool control.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ToolSample.cs</filename>
+        <description>Class implementing a feedback tool.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>FontToolControl.vb</filename>
+        <description>Class implementing a custom font drop-down list tool control.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ToolSample.vb</filename>
+        <description>Class implementing a feedback tool.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open and compile the sample project in Visual Studio. If necessary, set up ArcMap as the debug application.</step>
+        <step>Start ArcMap, click the Customize menu, and click Customize Mode. The Customize dialog box opens. </step>
+        <step>Select the .NET Samples category, then drag and drop the FeedBack tool (C#) or Feedback tool (VB .NET) for the sample tool on to a toolbar.</step>
+        <step>Activate the tool and click the map to start the new circle feedback. Click again to finish the feedback.</step>
+        <step>Press the Ctrl key to randomly change the color of the feedback. The Feedback tool also works in the magnifier or viewer window and on the page layout view. </step>
+        <step>Drag and drop the sample Font drop-down (C#) and Font drop-down (VB.NET) tool control onto a toolbar from the Customize dialog box under the .NET Samples category.</step>
+        <step>Click the Font drop-down list and scroll through the items. The selected item is drawn with the font.</step>
+        <step>Optionally, to use this custom tool control in a similar way as the default Font drop-down list on the Draw toolbar, uncomment the code in the ICommand.OnCreate implementation and recompile. The control listens to document events and is updated according to the default document text font.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>How to create a command with a custom interface ToolControl</topic_display>
+      <topic_link>92ddb879-b759-4d42-90c2-81797b6de000</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Creating commands and tools</topic_display>
+      <topic_link>0bf044f6-dbcd-4d04-836e-3b5e47204818</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Application Framework</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag></existing_tag>
+  </indexing_tags>
+  <guid>e60b9512-8caa-4c7c-85c5-a29b69f234b5</guid>
+  <content_management>
+    <owner>Steve Van Esch</owner>
+    <tech_reviewer>Xiaoling Yang</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:03:33</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-25</last_copyedit_date>
+      <last_copyedit_time>11:17:53</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-09-25</edit_date>
+        <edit_time>11:17:37</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div>
+        </edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

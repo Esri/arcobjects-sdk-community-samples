@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.706" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Custom map navigation commands</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This topic provides a set of sample PanZoom commands and tools that can be used in conjunction with the MapControl, PageLayoutControl, and ToolbarControl. It is assumed you have previous experience in creating custom tools and commands. </div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>FixedZoomIn.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>FixedZoomOut.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>FullExtent.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GoBackToPreviousExtent.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GoToNextExtent.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Pan.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PanDown.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PanLeft.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PanRight.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PanUp.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomIn.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomOut.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>FixedZoomIn.vb</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>FixedZoomOut.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>FullExtent.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GoBackToPreviousExtent.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GoToNextExtent.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Pan.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PanDown.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PanLeft.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PanRight.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PanUp.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomIn.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomOut.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Build the project.</step>
+        <step>Do one of the following: a) Add the commands to the ToolbarControl programmatically using the IToolbarControl.AddItem method; b) Use the commands directly with the MapControl or PageLayoutControl programmatically by creating a new instance of a command and passing the MapControl or PageLayoutControl to its OnCreate event; c) Add the commands interactively to the ToolbarControl by clicking the Add from File button in the ToolbarControl's Customizing dialog box (available through the property pages) and browsing to the *.tlb file; or d) Add the commands interactively to the ToolbarControl by dragging them from the Sample_Pan[_VBNET]/Zoom category in the ToolbarControl's Customizing dialog box.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample uses the following:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>FixedZoomIn and FixedZoomOut commands—The IEnvelope.Expand method is used to scale the size of the IActiveView.Extent property to zoom in and out on the FocusMap by a fixed amount. </li>
+<li>ZoomIn and ZoomOut tools—An INewEnvelopeFeedback object is used to track IEnvelope in the OnMouseDown, OnMouseMove, and OnMouseUp events, which is then set to the IActiveView.Extent property of the FocusMap. If the Escape (Esc) key is pressed, the track is cancelled.</li>
+<li>FullExtent command—The IActiveView.Extent property is set to the FullExtent of all the data layers present in the FocusMap.</li>
+<li>GoBackToPrevious (UndoExt) and GoToNextExtent (RedoExt) commands—The IActiveView.Extent property is set to the previous and next extent held in the IActiveView.ExtentStack property of the FocusMap. </li>
+<li>Pan tool—The IScreenDisplay interface PanStart and PanMoveTo methods are used in the OnMouseDown and OnMouseMove events to start and move a pan, and the IScreenDisplay.PanStop method is used in the OnMouseUp event to set the IActiveView.Extent property of the FocusMap to the new visible bounds.</li>
+<li>PanDown, PanLeft, PanUp, and PanRight commands—The IActiveView.Extent property of the FocusMap is centered on a point to the left, right, top, or bottom of the current extent's center. </li></ul></additional_information><related_topics>
+    <topic>
+      <topic_display>HookHelper Class</topic_display>
+      <topic_link>esriControls/HookHelper.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IHookHelper Interface</topic_display>
+      <topic_link>esriControls/IHookHelper.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <guid>0B7C352D-ECF4-4bd7-B89F-7208573B6882</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-05-11</last_updated_date>
+    <last_updated_time>12:13:25</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2010-05-11</last_copyedit_date>
+      <last_copyedit_time>13:54:39</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-05-11</edit_date>
+									<edit_time>13:54:19</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

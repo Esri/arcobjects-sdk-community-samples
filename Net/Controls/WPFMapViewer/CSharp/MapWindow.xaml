@@ -1,0 +1,14 @@
+﻿<Window x:Class="WPFMapViewer.MapWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MapViewer Hosted in WPF" Height="433.29" Width="559.944"  Closing="Window_Closing" Loaded="Window_Loaded" Background="Beige"
+    MaxHeight="600" MaxWidth="840"
+    xmlns:my="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration">
+    <Grid>
+        
+        <my:WindowsFormsHost Name="mapHost" Margin="174,30,0,22" />
+        <my:WindowsFormsHost Margin="0,30,0,22" Name="tocHost" HorizontalAlignment="Left" Width="173" />
+        <my:WindowsFormsHost Height="30" Name="toolbarHost" VerticalAlignment="Top" />
+        <TextBlock Height="23.75" VerticalAlignment="Bottom" Name="textBlock1" Margin="0,0,7.056,0">Ready</TextBlock>
+    </Grid>
+</Window>

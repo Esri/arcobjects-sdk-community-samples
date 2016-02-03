@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.572" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>ViperPin tool</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample is a custom edit tool that creates parcel PIN values for parcel features. It is a new version of the SnakePin sample provided with ArcGIS 9.3.1 and earlier. The tool creates PIN values based on the intersection of an edit sketch and an underlying parcel layer. A base PIN value and an increment value can be added. This task works with any polygon data that has a numeric field to accept the PIN value. However, due to the numerous ways organizations represent parcel PINs, it is difficult to produce a generic tool that works for all; therefore, this tool serves as a sample only.</div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <apis>
+    <api>
+    </api>
+  </apis>
+  <capabilities>
+    <capability>
+    </capability>
+  </capabilities>
+  <min_version>10.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>
+    </data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>ViperPinTool.cs</filename>
+        <description>Tool definition.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ViperPinForm.cs</filename>
+        <description>Form definition.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  <files lang="VBNet">
+									<file>
+										<filename>ViperPinTool.vb</filename>
+										<description>Tool definition.</description>
+										<viewable_code>false</viewable_code>
+									</file>
+								<file>
+									<filename>ViperPinForm.vb</filename>
+									<description>Form definition.</description>
+									<viewable_code>false</viewable_code>
+								</file></files></file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Compile and register the .dll.</step>
+        <step>Start ArcMap and add some parcel data with a numeric field.</step>
+        <step>Customize ArcMap and place the sample tool on a toolbar.</step>
+        <step>Start editing and select a parcel feature template.</step>
+        <step>Select the tool and sketch over some parcels.</step>
+        <step>On the PIN dialog box, select the PIN field. Add a start PIN and increment.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>
+    </tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>47e11156-57de-4b2e-ae58-f3fa72eb0e0a</guid>
+  <content_management>
+    <owner>sean3281</owner>
+    <tech_reviewer>dougm</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-01-26</last_updated_date>
+    <last_updated_time>10:26:15</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-21</last_copyedit_date>
+      <last_copyedit_time>08:08:38</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-21</edit_date>
+        <edit_time>08:08:37</edit_time>
+        <edit_notes>
+          <ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml">
+            <li>Edited.</li>
+            <li>Ready for SDK inclusion.</li>
+            <li>Does not have VB .NET code.</li>
+          </ul>
+          <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+        </edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>sean3281</editor_name>
+									<edit_date>2009-10-09</edit_date>
+									<edit_time>10:34:56</edit_time>
+									<edit_notes>VB.Net code added</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>ArcReaderControl map tools</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>ArcReaderControl map tools</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to set the IARControl.CurrentTool property to the MapZoomIn, MapZoomOut, or MapPan tool to navigate around the map view or any of the data frames when the current view is a PageLayout.  The OnAfterScreenDraw event uses the IARMap.CanUndoExtent and CanRedoExtent properties to determine whether the IARMap.UndoExtent and RedoExtent methods can be used to undo or redo extent changes. The IARMap.SetExtent method is set to the result of the IARMap.GetFullExtent method to zoom to the full extent of the data in the map.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Compile and run the sample from the provided code.   </li>
+<li>Enter a valid file path of a Published Map File (PMF) from ArcMap and load.   </li>
+<li>Click the Map button to display the data view.   </li>
+<li>Use the tools to navigate around the focus map.   </li>
+<li>Click the Layout button to display the layout view.  </li>
+<li>Use the tools to navigate the data in any of the data frames on the page layout.   </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic: Publisher </td><td> ArcReader </td></tr>  
+<tr><td> ArcGIS for Desktop Standard: Publisher </td><td> Engine </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced: Publisher </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

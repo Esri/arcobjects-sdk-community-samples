@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Controls", "Controls\Controls.vbproj", "{C46933F1-BF70-4761-97DD-1937D8A4DB68}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7405307D-62AA-46D9-A106-872A0E88AA95} = {7405307D-62AA-46D9-A106-872A0E88AA95}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CultureSamples", "CulturalSamples\CultureSamples.vbproj", "{7405307D-62AA-46D9-A106-872A0E88AA95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C46933F1-BF70-4761-97DD-1937D8A4DB68}.Debug|x86.ActiveCfg = Debug|x86
+		{C46933F1-BF70-4761-97DD-1937D8A4DB68}.Debug|x86.Build.0 = Debug|x86
+		{C46933F1-BF70-4761-97DD-1937D8A4DB68}.Release|x86.ActiveCfg = Release|x86
+		{C46933F1-BF70-4761-97DD-1937D8A4DB68}.Release|x86.Build.0 = Release|x86
+		{7405307D-62AA-46D9-A106-872A0E88AA95}.Debug|x86.ActiveCfg = Debug|x86
+		{7405307D-62AA-46D9-A106-872A0E88AA95}.Release|x86.ActiveCfg = Release|x86
+		{7405307D-62AA-46D9-A106-872A0E88AA95}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

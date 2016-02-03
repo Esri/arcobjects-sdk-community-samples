@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>VisualizeCameraPath</Name>
+  <AddInID>{e318acb8-1656-45a6-8b8d-f026214ddda1}</AddInID>
+  <Description>This add-in allows you to generate and visualize the trace back path the camera follows in a GlobeCamera animation. The path is created using 3D graphic elements. The sample allows the placement of graphics (at the camera positions) as the number of graphic elements created per second or by setting the maximum number of elements created between keyframe positions. This is useful to visualize the camera's location at a time duration without playing or previewing the animation—for example, to generate the flight path of an animation you created by recording the navigation (using the Navigate tool, Fly tool, and so on). Also, the GlobeCamera keyframes have a different color than the intermediate camera positions. There is also the option to generate graphics for the "Camera to target" direction at each of the camera positions. By visualizing this information, users can make changes to their keyframe attributes resulting in better and fine tuned animations.</Description>
+  <Version>1.0</Version>
+  <Image>Images\VisualizeCameraPath.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>10/25/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="VisualizeCameraPath.dll" namespace="VisualizeCameraPath">
+    <ArcGlobe>
+      <Commands>
+        <Button id="ESRI_VisualizeCameraPath_VisualizeCameraPath" class="VisualizeCameraPath" message="Use this command to generate and visualize the trace back path the camera follows in a GlobeCamera animation." caption="VisualizeCameraPath" tip="Visualize Camera Path" category="Add-In Controls" image="Images\VisualizeCameraPath.png" />
+      </Commands>
+    </ArcGlobe>
+  </AddIn>
+</ESRI.Configuration>

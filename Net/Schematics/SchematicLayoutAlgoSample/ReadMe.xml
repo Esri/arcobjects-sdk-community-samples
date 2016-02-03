@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.923" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Implementing a schematic layout algorithm and its layout property page</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample shows a customized schematic layout algorithm implementation. Schematics handles the customized algorithm in the same way as a standard algorithm. The customized implementation of ISchematicAlgorithm can be added to the Layout Task drop-down list and applied from the Apply Layout button in the same way as any standard algorithm. Implementing a new IPropertyPage provides access to your custom layout algorithm's parameters. </div>
+<div xmlns="http://www.w3.org/1999/xhtml"><strong></strong> </div>
+<div xmlns="http://www.w3.org/1999/xhtml"><strong>Caution:</strong> If you plan to implement a customized schematic layout algorithm to be executed via a client-server application, the solution must implement two projects; one for the custom algorithm property page and the other for the custom algorithm execution itself. The component dedicated to the custom algorithm execution will have to be registered with the ArcGIS server to be used on any client-server application.</div><div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">This sample creates a schematic layout algorithm (named TranslateTree) that translates a set of connected schematic features starting from a selected node according to given X and Y translation factors. The Apply Layout Task button is available for the algorithm only when a single node is currently selected in the active diagram.</div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Schematics</extension>
+    </license>
+  <license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension>Schematics</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>Schematics</extension>
+								</license></development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Schematics</extension>
+    </license>
+  <license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>Schematics</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>Schematics</extension>
+								</license></deployment_license>
+  <min_version>10.2</min_version>
+  <max_version>
+  </max_version>
+  <requirements>
+    <requires>This sample uses the PropertyPages.dll assembly, which was written by Robert Simpson. For more information, see http://www.codeguru.com/cpp/controls/propertysheet/propertysheetbuttons/article.php/c8545</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      
+      
+      <file>
+        <filename>TranslateTree.cs</filename>
+        <description>Implementation for the custom algorithm.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ITranslateTree.cs</filename>
+        <description>Custom algorithm.</description>
+        <viewable_code>true</viewable_code>
+      </file><file>
+        <filename>ApplicativeAlgorithmsCS2010.csproj</filename>
+        <description>Project file for the Translate Tree custom algorithm code.</description>
+        <viewable_code>false</viewable_code>
+      </file><file>
+        <filename>TranslateTreePropPage.cs</filename>
+        <description>Implementation for the custom algorithm's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file><file>
+									<filename>TranslateTreePropPage.Designer.cs</filename>
+									<description>Custom algorithm's property page.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>ApplicativeAlgorithmsPageCS2010.csproj</filename>
+									<description>Project file for the Translate Tree custom algorithm property page.</description>
+									<viewable_code>false</viewable_code>
+								</file>
+      <file>
+        <filename>ApplicativeAlgorithmsCS2010.sln</filename>
+        <description>C# solution.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>TranslateTree.vb</filename>
+        <description>Implementation for the custom algorithm.</description>
+        <viewable_code>true</viewable_code>
+      </file><file>
+        <filename>ITranslateTree.vb</filename>
+        <description>Custom algorithm.</description>
+        <viewable_code>true</viewable_code>
+      </file><file>
+        <filename>ApplicativeAlgorithmsVBNet2010.vbproj</filename>
+        <description>Project file for the Translate Tree custom algorithm code.</description>
+        <viewable_code>false</viewable_code>
+      </file><file>
+        <filename>TranslateTreePropPage.vb</filename>
+        <description>Implementation for the custom algorithm's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      
+      
+      <file>
+									<filename>TranslateTreePropPage.Designer.vb</filename>
+									<description>Custom algorithm's property page.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>ApplicativeAlgorithmsPageVBNet2010.vbproj</filename>
+									<description>Project file for the Translate Tree custom algorithm property page.</description>
+									<viewable_code>false</viewable_code>
+								</file>
+      <file>
+        <filename>ApplicativeAlgorithmsVBNet2010.sln</filename>
+        <description>VB .NET solution.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the solution file in Visual Studio and build the project.</step>
+        
+        <step>Start ArcMap.</step>
+        <step>Open a schematic diagram and start an edit session on the diagram.</step><step>Click the Edit/Move Schematic Features tool on the Schematic Editor toolbar and select an only schematic node in the active diagram.</step>
+        
+        <step>Select Translate Tree in the language you're using (C# or VB .NET) from the Layout Task drop-down list.</step>
+        <step>Click Layout Algorithm Properties to edit and modify the Translate Tree properties (X  and Y translation factors) if needed.</step>
+        <step>Click OK.</step>
+        <step>Click Apply Layout Task.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>ISchematicAlgorithm interface</topic_display>
+      <topic_link>esriSchematic/ISchematicAlgorithm.htm</topic_link>
+    </topic>
+  <topic>
+									<topic_display>ISchematicAlgorithmEventsTrigger interface</topic_display>
+									<topic_link>esriSchematic/ISchematicAlgorithmEventsTrigger.htm</topic_link>
+								</topic><topic>
+									<topic_display>ISchematicAnalystFindConnected interface</topic_display>
+									<topic_link>esriSchematic/ISchematicAnalystFindConnected.htm</topic_link>
+								</topic><topic>
+									<topic_display>ISchematicInMemoryDiagram interface</topic_display>
+									<topic_link>esriSchematic/ISchematicInMemoryDiagram.htm</topic_link>
+								</topic><topic>
+									<topic_display>ISchematicInMemoryFeature interface</topic_display>
+									<topic_link>esriSchematic/ISchematicInMemoryFeature.htm</topic_link>
+								</topic></related_topics>
+  <content_area_tags>
+    <tag>Schematics extension</tag>
+  </content_area_tags>
+  <indexing_tags>
+									<existing_tag></existing_tag>
+								</indexing_tags><guid>46a84cd4-9a57-4a02-a73f-1aca85b60bf7</guid>
+
+	<content_management>
+		<owner>Dominique Broux</owner>
+		<tech_reviewer>Anne-Yvonne BLIN</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-10-22</langrev_last_updated_date>
+		<langrev_last_updated_time>13:20:46</langrev_last_updated_time>
+		<last_updated_date>2012-11-14</last_updated_date>
+		<last_updated_time>09:45:52</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2009-12-11</last_copyedit_date>
+									<last_copyedit_time>15:45:40</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2009-12-11</edit_date>
+										<edit_time>15:44:38</edit_time>
+										<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div></edit_notes>
+									</editing_section>
+								</edits></content_management>
+	<current_user>anne0002</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

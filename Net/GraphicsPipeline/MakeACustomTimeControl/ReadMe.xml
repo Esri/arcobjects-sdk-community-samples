@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.700" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Make a custom time slider</title>
+	<purpose>This sample demonstrates how the map's current time can be controlled using a custom control dialog box. The sample includes code showing how to convert the time values from Windows date and time controls into ArcGIS Time objects. It also shows how you can add and subtract times using the TimeExtent and TimeDuration classes.</purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path>Time/TimeAwareHurricanes.mxd</data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>CustomTimeSliderButton.cs</filename>
+				<description>Contains the functionality to manipulate the map's current time and demonstrates how to do time calculations using TimeExtent and TimeDuration classes.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>TimeSliderDialog.cs</filename>
+									<description>Contains the functionality to convert between ArcGIS TimeExtent objects and Windows date and time controls.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>CustomTimeSliderButton.vb</filename>
+										<description>Contains the functionality to manipulate the map's current time and demonstrates how to do time calculations using TimeExtent and TimeDuration classes.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>TimeSliderDialog.vb</filename>
+									<description>Contains the functionality to convert between ArcGIS TimeExtent objects and Windows date and time controls.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Open the Visual Studio solution file and build the project. This will create a .dll and a type library (.tlb) file in the \bin folder. The .dll gets registered with the ESRI Add-Ins component category. </step><step>Start ArcMap and load the TimeAwareHurricanes.mxd map in the folder &lt;Your ArcGIS Developer Kit Install directory&gt;/Samples/data/Time.</step><step>Open the Customize dialog box. On the Commands tab, select the Add-In Controls. The Add-In Controls appear, including the Custom Time Control. </step><step>Drag the Custom Time Control button onto one of the toolbars and close the Customize dialog box.</step><step>Double-click atlantic_hurricanes_2000 to open the layer's properties. </step><step>Click the Time tab. Make sure the Enable Time on this layer check box is selected.</step><step>Click OK to close the properties panel. </step><step>Click the Custom Time Control button.</step><step>Note that only a portion of the hurricane data shows on the map. Drag the slider in the Custom Time Control back and forth to interactively change the time. Try using the date picker in the Custom Time Control to go to a specific date.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Add-ins</tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>465028dd-0ba0-4a92-afc8-46d1d6d1085f</guid>
+	<content_management>
+		<owner>Ryan Elliott</owner>
+		<tech_reviewer>Hanoch Kalmanovich</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<last_updated_date>2009-10-29</last_updated_date>
+		<last_updated_time>13:09:53</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2009-10-29</last_copyedit_date>
+									<last_copyedit_time>13:09:25</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>mine3384</editor_name>
+										<edit_date>2009-10-06</edit_date>
+										<edit_time>13:25:23</edit_time>
+										<edit_notes><ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml">
+<li style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt">Returning to owner to fix. Not ready for SDK inclusion.</li>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt">Sample has no text (needs steps), just has code for C#.</li>
+<li style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt">Needs VB .NET code also.</li></ul></ul></edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-10-29</edit_date>
+									<edit_time>13:09:23</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Ready for SDK inclusion.</div></edit_notes>
+								</editing_section><editing_section>
+									<editor_name>kyli4140</editor_name>
+									<edit_date>2009-11-16</edit_date>
+									<edit_time>14:30:54</edit_time>
+									<edit_notes>Returned to author: VB.NET code doesn't compile.</edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>kyli4140</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

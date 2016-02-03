@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Control text symbols using the SymbologyControl</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Control text symbols using the SymbologyControl</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates using the SymbologyControl to display text symbols that control the style of text elements. The sample uses the SymbologyControl in conjunction with the PageLayoutControl, ToolbarControl, and the controls commands.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Select TextSymbol from the SymbologyControl.   </li>
+<li>Add the text and select the text font size.   </li>
+<li>Right-click the PageLayoutControl to add a text element.   </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The LoadStyleFile method is used in the Form_Load event of the SymbolForm to add the contents of the ESRI.ServerStyle into the SymbologyControl. The StyleClass property is used to display text symbols in the SymbologyControl. When an item is selected by the end user from the SymbologyControl, a ServerStyleGalleryItem is returned.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The IPageLayoutControlEvents.OnMouseDown event is used to add a TextElement to the GraphicsContainer of the PageLayout when right-clicked. The ITextElement.Symbol is set to the IStyleGalleryItem.Item property.</div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=SymbologyControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">SymbologyControl class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=ISymbologyControl%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ISymbologyControl interface</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=ISymbologyStyleClass%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ISymbologyStyleClass interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

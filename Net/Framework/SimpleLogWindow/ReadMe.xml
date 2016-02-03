@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.923" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Simple logging dockable window with a custom context menu</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to create a custom dockable window for use in ArcGIS for Desktop applications. A dockable window is a window that can exist in a floating state or be attached to the main application window. The table of contents in ArcMap is an example of a dockable window.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Use the IDockableWindowDef interface to define a custom dockable window to be created by the application. This interface allows you to set properties and define the child control window. The class you create is the definition of the window, not the actual dockable window object you interact with in the application. The application uses the definition of the dockable window in your class to create the actual dockable window, accessed by the IDockableWindow interface. You can query properties of the dockable window, such as caption, name, and visibility, as well as user-defined data.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The dockable window in this sample contains a list box for message logging, and the list box is exposed to other components via the IDockableWindowDef.UserData property. Other components can access the list box by the IDockableWindow.UserData property. A command that toggles the visibility of the dockable window is also included.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample also demonstrates different ways to provide a custom context menu that manipulates message items in the list box of the custom dockable window. You can either use the pure .NET Windows Forms ContextMenuStrip class or an ArcGIS framework context menu to implement the context menu. In general, the ContextMenuStrip class is less complicated to implement since the context menu code can be contained in the same class as the dockable window. However, it has a slightly different look and feel than the standard ArcGIS context menu and cannot be interactively customized with the Customize dialog box. </div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>ClearLoggingCommand.cs</filename>
+        <description>Command to clear all items in the logging list box of the dockable window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LoggingDockableWindow.cs</filename>
+        <description>User control with dockable window definition implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LoggingDockableWindowCommand.cs</filename>
+        <description>Command toggling visibility of the dockable window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LoggingWindowCtxMnu.cs</filename>
+        <description>Context menu class for the list box of the dockable window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LogLineMultiItemCmd.cs</filename>
+        <description>MultiItem command listing items in the list box of the dockable window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>ClearLoggingCommand.vb</filename>
+        <description>Command to clear all items in the logging list box of the dockable window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LoggingDockableWindow.vb</filename>
+        <description>User control with dockable window definition implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LoggingDockableWindowCommand.vb</filename>
+        <description>Command toggling visibility of the dockable window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LoggingWindowCtxMnu.vb</filename>
+        <description>Context menu class for the list box of the dockable window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LogLineMultiItemCmd.vb</filename>
+        <description>MultiItem command listing items in the list box of the dockable window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open and compile the sample project in Visual Studio. If needed, set up a debug application.</step>
+        <step>Open ArcCatalog, ArcMap, ArcScene, or ArcGlobe. Drag and drop the Show/Hide Log Window (VB .NET) or Show/Hide Log Window (C#) toggle command from the Customize dialog box under the .NET Samples category onto the application.</step>
+        <step>Click the command to show the dockable window. </step>
+        <step>Dock the window at various locations on the application window. </step>
+        <step>Float the dockable window.</step>
+        <step>Insert text into the list box by typing in the text box and press Enter.</step>
+        <step>In the Context Menu Option panel at the bottom of the dockable window, select the Pure .NET (Windows Forms) radio button and right-click the list box. A context menu from the Windows Forms ContextMenuStrip class is displayed. </step>
+        <step>Switch to the predefined (ArcObjects) option and right-click the list box again. A standard ArcGIS for Desktop context menu is displayed. </step>
+        <step>This predefined context menu can be customized interactively in the Customize dialog box. Click the Toolbars tab, check Context Menu and expand to show Logging Window Context Menu (VB .NET) or Logging Window Context Menu (C#). Reverse the order of the commands. After closing the dialog box, right-click the list box again to see your interactive change.</step>
+        <step>Switch to the Dynamic (ArcObjects) option and right-click the list box. It displays a similar ArcGIS for Desktop context menu that is created dynamically at run time that is not customizable.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Application Framework</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag></existing_tag>
+  </indexing_tags>
+  <guid>e439cf8c-778b-4fdb-b4c4-fab51a546ac6</guid>
+  <content_management>
+    <owner>Steve Van Esch</owner>
+    <tech_reviewer>Xiaoling Yang</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2012-03-16</last_updated_date>
+    <last_updated_time>17:08:53</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2012-03-16</last_copyedit_date>
+      <last_copyedit_time>17:11:33</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-09-25</edit_date>
+        <edit_time>14:10:42</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div>
+        </edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2012-03-16</edit_date>
+									<edit_time>17:11:20</edit_time>
+									<edit_notes>10.2 product name changes update.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,22 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Schematic Feature Remove (C#)</Name>
+  <AddInID>{34abded4-d895-4114-9436-554e7105b5ae}</AddInID>
+  <Description>Remove specific Schematic Feature from specific diagram</Description>
+  <Version>1.0</Version>
+  <Image>Images\SchematicFeatureRemove.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI Cartonet</Company>
+  <Date>16/10/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="ESRI.ArcGIS.SchematicSamples.SchematicFeatureRemoveCS.dll" namespace="SchematicFeatureRemoveCS">
+    <ArcMap>
+      <Extensions>
+        <Extension id="ESRI_Cartonet_SchematicFeatureRemoveCS_FeatureRemovalMgmt" class="FeatureRemovalMgmt" productName="Schematic Features Removal Events (C#)" showInExtensionDialog="true" autoLoad="true">
+          <Description>Remove specific Schematic Feature from specific diagram</Description>
+        </Extension>
+      </Extensions>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

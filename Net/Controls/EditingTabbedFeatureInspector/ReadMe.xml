@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.540" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Tabbed feature inspector</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to create a custom object inspector.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">A custom object inspectors allows you to control the information that is returned to the user when selected features are inspected. The custom inspector calculates and reports the area and perimeter of selected polygons, the length and coordinates of selected lines, and the coordinates of selected points. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The custom information is shown in the second panel of a tabbed control. The first panel of the control shows the standard information for the feature. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The selected features must be from an object that supports both IFeatureClass and IClassSchemaEdit (see the Additional information section).</div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>A geodatabase feature class containing either point, polyline, or polygon data is necessary to use this sample.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>EngineApplication/EngineApplication.cs</filename>
+        <description>The main application, implementing IApplicationServices.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TabbedInspector/AttachTabbedInspectorExtensionCommand.cs</filename>
+        <description>Attaches the custom inspector to the feature class selected in the table of contents.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TabbedInspector/TabbedInspector.cs</filename>
+        <description>An IEngineObjectInspector that displays custom information on the Attribute dialog box for each selected feature.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>EngineApplication/EngineApplication.vb</filename>
+        <description>The main application, implements IApplicationServices.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TabbedInspector/AttachTabbedInspectorExtensionCommand.vb</filename>
+        <description>Attaches the custom inspector to the feature class selected in the table of contents.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TabbedInspector/TabbedInspector.vb</filename>
+        <description>An IEngineObjectInspector which displays custom information on the Attribute dialog box for each selected feature.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Open the solution and set EngineApplication as the startup project.</step>
+        <step>Build the solution and run the application.</step>
+        <step>Add point, polyline, and/or polygon feature class data to the map.</step>
+        <step>Select a feature layer and use the Attach/Detach Tabbed Inspector Extension command.</step>
+        <step>Confirm that the status bar at the bottom of the EngineApplication displays the Tabbed Inspector Extension as successfully attached to the selected feature class.</step>
+        <step>Start editing, then choose one or more features from the selected feature class and open the Attribute dialog box.</step>
+        <step>Ensure that a feature is selected in the Attribute dialog box tree. The Custom tab of the Attribute dialog box shows the output from the custom object inspector.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The inspected features must be from an object that supports both IFeatureClass and IClassSchemaEdit. The Tabbed Feature Inspector is attached to a feature class using the feature class's IClassSchemaEdit interface. Classes that do not implement this interface, such as a shapefile class, cannot be used with this sample. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">In addition, a feature class can have only one IFeatureClassExtension at a time, so some feature classes<font face="Verdana">—</font>such as annotation feature classes<font face="Verdana">—</font>cannot be used with this sample.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample can be adapted for use with an ObjectClass that is not displayed in the table of contents but that has a feature class extension.</div></additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Editing</tag>
+    <tag>
+    </tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>594cd0f4-51ea-42a0-abeb-0205643afb15</guid>
+  <content_management>
+    <owner>Gayle Young</owner>
+    <tech_reviewer>Mary Harvey</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2009-11-05</last_updated_date>
+    <last_updated_time>14:56:35</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2009-11-05</last_copyedit_date>
+									<last_copyedit_time>14:57:38</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-11-05</edit_date>
+									<edit_time>14:57:29</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Edited. SDK inclusion requested.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><strong>Note:</strong> The view code link check box is not selected for EngineApplication/EngineApplication.cs. However, it is selected for EngineApplication/EngineApplication.vb.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

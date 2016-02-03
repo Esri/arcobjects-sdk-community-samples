@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.706" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Custom scene navigation commands</title>
+  <purpose>This sample provides a set of Scene commands and tools that can be used in conjunction with the SceneControl. It is assumed you have previous experience in creating custom tools and commands. </purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>ExpandFOV.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Fly.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>FullExtent.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>NarrowFOV.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Navigate.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Pan.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SelectFeatures.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SelectGraphics.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SetObserver.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TargetCenter.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TargetZoom.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomIn.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomInOut.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomOut.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>ExpandFOV.vb</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Fly.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>FullExtent.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>NarrowFOV.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Navigate.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Pan.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SelectFeatures.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SelectGraphics.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SetObserver.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TargetCenter.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TargetZoom.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomIn.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomInOut.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomOut.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Build the project.</step>
+        <step>Do one of the following: a) Add the commands to the ToolbarControl programmatically using the IToolbarControl.AddItem method; b) Use the commands directly with the SceneControl programmatically by creating a new instance of a command and passing the SceneControl to its OnCreate event; c) Add the commands interactively to the ToolbarControl by clicking the Add from File button in the ToolbarControl's Customizing dialog box, (available through the property pages) and browsing to the *.tlb file; or d) Add the commands interactively to the ToolbarControl by dragging them from the Sample_SceneControl category in the ToolbarControl's Customizing dialog box.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample uses the following:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>ZoomIn and ZoomOut tools—Windows Graphical Device Interface (GDI) calls are used to draw the tracked rectangle on the SceneControl in the OnMouseMove event. The ICamera.Zoom and ICamera.ZoomToRect methods are used in the OnMouseUp event to zoom in and out.</li>
+<li>ZoomInOut tool—The ICamera.Zoom method is used in the OnMouseMove event.</li>
+<li>Pan tool—The ICamera.Pan method is used in the OnMouseMove event.</li>
+<li>FullExtent command—The ICamera.SetDefaultsMBB property is set to the SceneGraph.Extent to zoom to a minimum bounding box.</li>
+<li>ExpandFieldOfView and NarrowFieldOfView commands—The ICamera.ViewFieldAngle property is set and the ISceneViewer.Redraw method is used to reflect the change.</li>
+<li>Fly tool—The OnMouseUp event is used to start, stop, and alter the speed of a fly-through. Once a fly-through has been started, the ICamera.Observer, ICamera.Target, and ICamera.RollAngle properties are constantly updated based on the current mouse coordinates. The IMessageDispatcher interface is used to determine whether the Escape (Esc) key is pressed to stop the fly-through. The KeyUp, KeyRight, KeyDown, and KeyLeft keys can also be used to increase and decrease the speed of the fly-through.</li>
+<li>Navigate tool—The OnKeyUp event uses the ICamera.Move, ICamera.HTurnAround, and ICamera.PolarUpdate methods to pan, zoom, and update the camera's observer position. Use the KeyUp, KeyDown, KeyLeft, and KeyRight keys to update the camera observer position. Use the same keys in combination with the Shift key to pan and the Ctrl key to zoom in and out. <br/><br/>The OnMouseMove event uses the ICamera.Pan, ICamera.Zoom, and ICamera.PolarUpdate methods to pan, zoom, and update the camera's observer position. Use the right mouse button to zoom in and out, and the left and right mouse buttons together to pan. Use the left mouse button to update the camera observer position. If the ISceneViewer.GestureEnabled property is true, using the left mouse button will cause the scene to spin by continuously updating the camera observer position based on the ISceneViewer.GestureSensitivity property. The IMessageDispatcher interface is used to determine whether the Esc key is pressed to stop the scene from spinning. The ISceneViewer.GestureEnabled property can be toggled in the OnKeyDown event by holding both the Shift and Ctrl keys. The Page Up and Page Down keys can be used to increase and decrease the spin speed.</li>
+<li>TargetCenter, ZoomTarget, and SetObserver tools—In the OnMouseUp event, the ISceneGraph.Locate method is used to create a new target or observer based on the screen coordinates. The ICamera.Target and ICamera.Observer properties are gradually moved toward the new target or observer based on the ISceneGraph.GetDrawingTimeInfo method.</li>
+<li>Select Features tool—The ISceneGraph.Locate method is used in the OnMouseUp event to create a new point and owner object based on screen coordinates. If the owner object is a selectable FeatureLayer, the IScene.SelectByShape method is used to select features. If the Shift key is held down, selected features are added to the existing selection; otherwise a new selection is made.</li>
+<li>SelectGraphics tool—The ISceneGraph.Locate method is used in the OnMouseUp event to create a new point and object based on screen coordinates. If the object is an element, it is added to the GraphicsSelection. If the Shift key is held down, selected graphics are added to the existing selection; otherwise, a new selection is made.</li></ul></additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>SceneHookHelper Class</topic_display>
+      <topic_link>esriControls/SceneHookHelper.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>ISceneHookHelper Interface</topic_display>
+      <topic_link>esriControls/ISceneHookHelper.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <guid>ABD8EC96-5FA3-49af-A1A2-2E00122538D9</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-05-11</last_updated_date>
+    <last_updated_time>14:19:48</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2010-05-11</last_copyedit_date>
+      <last_copyedit_time>14:24:24</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-05-11</edit_date>
+									<edit_time>14:23:58</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Edited.</li>
+<li xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

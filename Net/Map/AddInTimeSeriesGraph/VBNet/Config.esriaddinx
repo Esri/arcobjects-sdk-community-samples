@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>TimeSeriesGraphAddInVB</Name>
+  <AddInID>{477d104e-0fe0-4ea9-bbb4-4864ba454add}</AddInID>
+  <Description>Create a time series graph</Description>
+  <Version>1.0</Version>
+  <Image>Images\TimeSeriesGraphAddInVB.png</Image>
+  <Author>xugu4526</Author>
+  <Company>ESRI</Company>
+  <Date>11/17/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="TimeSeriesGraphAddInVB.dll" namespace="TimeSeriesGraphAddInVB">
+    <ArcMap>
+      <Commands>
+        <Tool id="ESRI_TimeSeriesGraphAddInVB_TimeSeriesGraph" class="TimeSeriesGraph" message="Create a time series graph" caption="TimeSeriesGraph" tip="Create a time series graph" category="Add-In Controls" image="Images\TimeSeriesGraph.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

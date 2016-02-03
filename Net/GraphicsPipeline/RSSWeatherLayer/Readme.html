@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>RSS weather layer</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>RSS weather layer</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample illustrates a real-life scenario for creating a new layer to consume a Web service and display the information in a map.  This sample shows implementation of the following:Simple editing capabilitiesSelection by attribute and locationPersistenceIdentify  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio, open the solution file, and build the project.  </li>
+<li>Open a MapControl application or ArcMap.  </li>
+<li>From the toolbars list, select the RSS Weather layer toolbar to add to the application.  </li>
+<li>Click Load Layer to connect to the RSS weather service.  </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">To use the layer without using the existing AddRSSWeatherLayer command, you will have to manage the refreshes of the layer. You can do that by listening to the OnWeatherItemAdded and OnWeatherItemsUpdated events or by using a timer to refresh the layer.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The following items are covered in this sample:</div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Writing multithreaded ArcObjects code</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=How%20to%20wire%20ArcObjects%20.NET%20events&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to wire ArcObjects .NET events</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

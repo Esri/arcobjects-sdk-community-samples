@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.706" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Configure a command for a specific locale</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how resource files are used to configure an application's interface for a specific culture. This is important when developing localized applications that must use different resources at run time, depending on the user's language and location (culture). </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The ResourceManager examines the application's thread user interface (UI) culture (for example, System.Threading.Thread.CurrentThread.CurrentUICulture) to determine which resource file to employ. Typically, the thread UI culture is automatically set by the operating system, but it can be temporarily overwritten to allow you to test different resource files.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The application in this sample creates a tool, a command, a menu, and a pop-up menu and employs resource files to set their Icon Bitmap, ToolTip, Caption, and Message properties. The application contains three resource files—one for each of the following cultures: English (United States), French (France), and Spanish (Spain)—and are named Resources.en-US.resX, Resources.fr-FR.resX, and Resources.es-ES.resX, respectively. There is also a default resource file named Resources.resX. </div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>Controls/AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>Controls/CulturalResources.cs</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CulturalSamples/AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>CulturalSamples/CultureCommand.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CulturalSamples/CultureMenu.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CulturalSamples/CultureTool.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>Controls/AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>Controls/CulturalResources.vb</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CulturalSamples/AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>CulturalSamples/CultureCommand.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CulturalSamples/CultureMenu.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CulturalSamples/CultureTool.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the project file in the language of your choice, and build the solution to create an ArcGIS Engine application. This loads a command, tool, and menu using the current UI culture. </step>
+        <step>Load some map data and navigate around using the tools and scroll bars in the application.</step>
+        <step>Click the Culture button to use the command to identify the current UI culture this application is using.</step>
+        <step>Use the Timestamp tool (with the blue clock image) to place the current time stamp on the PageLayout control. Notice that this matches the format for the selected culture.</step>
+        <step>The default culture is French (France). To use a different resource file, reset the thread to a new culture by editing the Form1_Load method in either Controls/CulturalResources.cs (C#) or Controls/CulturalResources.vb (VB .NET). For example, to use the French resource file (Resources.fr-FR.resX), a French culture in the Form1_Load with System.Globalization.CultureInfo.CreateSpecificCulture has been created. Then set the current threading UI Culture to that culture. The code to set the culture to either English or Spanish is contained in that function as well and is commented out. To use a different culture, change those that are commented out and the one that is active, then recompile and rerun the sample.</step>
+        <step>To create your own resource file for another culture, copy the Resource.en-US.resX file in Solution Explorer and paste it into the CultureSamples project. Rename this file the appropriate culture name. For example, change en-US to ru-RU for Russian (Russia). Change the value of any strings, but remember that the names must match those defined in the default resource file. Similarly, you can change the file name of any images, but ensure that the name is left unchanged.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>IToolbarMenu2 Interface</topic_display>
+      <topic_link>esriControls/IToolbarMenu2.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <guid>FC233D6A-5D87-46e3-A7D7-886BB831218F</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-05-11</last_updated_date>
+    <last_updated_time>11:55:45</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-05-11</last_copyedit_date>
+									<last_copyedit_time>11:56:49</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-05-11</edit_date>
+									<edit_time>11:56:27</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

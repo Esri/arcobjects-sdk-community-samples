@@ -1,0 +1,22 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Container Manager VB2008</Name>
+  <AddInID>{b1efbe1c-39b6-4bd2-9fac-4fd5cdada7f2}</AddInID>
+  <Description>This sample demonstrates the implementation of schematic containers.</Description>
+  <Version>1.0</Version>
+  <Image>Images\ContainerManagerVB.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>28/10/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="ESRI.ArcGIS.SchematicSamples.ContainerManagerVB.dll" namespace="ContainerManagerVB">
+    <ArcMap>
+      <Extensions>
+        <Extension id="ESRI_ContainerManagerVB_StationsInContainers" class="StationsInContainers" productName="Implementation of Schematic Containers (VBNet)" showInExtensionDialog="true" autoLoad="true">
+          <Description>This sample uses the AfterLoadDiagram procedure to define relations between schematic elements contained in a diagram.</Description>
+        </Extension>
+      </Extensions>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

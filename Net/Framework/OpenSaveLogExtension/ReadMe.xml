@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.510" productVersion="12.0.0" ?>
+<?mso-application progid="InfoPath.Document"?>
+<esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Extension to listen to document open and save events</title>
+  <purpose>A component can listen to events fired by the application when a document is created, opened, or closed. However, no event is fired when a document is saved. To log the time when a document is saved, create a custom extension that implements persistence. This sample shows how to implement an application extension that logs user and date time information when a document is opened or saved. </purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp />
+  <max_version>
+  </max_version>
+  <max_sp />
+  <data_paths>
+    <data_path />
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>LogExtension.cs</filename>
+        <description>Class implementing an extension that listens to document events.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>LogExtension.vb</filename>
+        <description>Class implementing an extension that listens to document events.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open and compile the sample project in Visual Studio. Set up a debug application if needed. </step>
+        <step>Start ArcMap, ArcScene, or ArcGlobe.</step>
+        <step>Open or save a document. </step>
+        <step>Check the status bar for a message with the user name and time information of the event.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>How to listen to document events</topic_display>
+      <topic_link>593bb848-4e85-44b0-8ebe-6984218c5b0d</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Application Framework</tag>
+    <tag>Events</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag></existing_tag>
+  </indexing_tags>
+  <guid>f90f78a3-6dcc-4a17-8e22-74c25c93eb4a</guid>
+  <content_management>
+    <owner>Steve Van Esch</owner>
+    <tech_reviewer>Xiaoling Yang</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2009-09-25</last_updated_date>
+    <last_updated_time>14:51:24</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-25</last_copyedit_date>
+      <last_copyedit_time>14:51:18</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-09-25</edit_date>
+        <edit_time>14:51:04</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div>
+        </edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

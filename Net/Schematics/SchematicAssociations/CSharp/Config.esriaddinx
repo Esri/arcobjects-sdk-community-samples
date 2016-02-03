@@ -1,0 +1,22 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>LinkerManager C#</Name>
+  <AddInID>{67434102-e6e3-4eeb-bffc-fcdc794a1c79}</AddInID>
+  <Description>This sample shows how to associate schematic features with geographic features</Description>
+  <Version>1.0</Version>
+  <Image>Images\LinkerManagerCS2008.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI Cartonet</Company>
+  <Date>27/10/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="ESRI.ArcGIS.SchematicSamples.LinkerManagerCS.dll" namespace="LinkerManagerCS">
+    <ArcMap>
+      <Extensions>
+        <Extension id="ESRI_Cartonet_LinkerManagerCS_ElementFeatureAssociation" class="ElementFeatureAssociation" productName="Schematic Features Associations with Geographic Features (C#)" showInExtensionDialog="true" autoLoad="true">
+          <Description>Associate schematic features with geographic features</Description>
+        </Extension>
+      </Extensions>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

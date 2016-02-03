@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" language="en-us" solutionVersion="9.4.0.561" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Implementing associations between GIS features and schematic features</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample shows how to implement associations between geographic information system (GIS) features displayed on a map and schematic features contained in a schematic diagram.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">Two particular attributes, RelatedFeatureCN and RelatedFeatureOID, are used on the AfterLoadDiagram schematic event to automatically create the associations when an edit session is started on a diagram. </div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">These attributes can be created on schematic feature classes associated with the diagram template that implements these diagrams; they must return the feature class name and ObjectID that allow you to identify the GIS feature you want associated with a schematic feature.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">This sample is developed as an add-in ArcMap extension.</div></purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension>Schematics</extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>Schematics</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>Schematics</extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension>Schematics</extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>Schematics</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>Schematics</extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="VBNet">
+			<file>
+				<filename>ElementFeatureAssociation.vb</filename>
+				<description>Initializes the associations on the AfterLoadDiagram schematic event.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>Config.esriaddinx</filename>
+									<description>Add-in declarations in XML.</description>
+									<viewable_code>false</viewable_code>
+								</file></files>
+	<files lang="CSharp">
+									<file>
+										<filename>ElementFeatureAssociation.cs</filename>
+										<description>Initializes associations on the AfterLoadDiagram schematic event.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>Config.esriaddinx</filename>
+									<description>Add-in declarations in XML.</description>
+									<viewable_code>false</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title>Building the component</title>
+			<how_to_use_steps>
+				<step>Open the solution file and build the project. This automatically registers the component.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	<how_to_use>
+									<title>Configuring the RelatedFeatureCN and RelatedFeatureOID attributes on the schematic feature class</title>
+									<how_to_use_steps>
+										<step>Start ArcCatalog.</step><step>Browse to a geodatabase that contains a schematic dataset.</step><step>Right-click the schematic dataset entry and click Edit. The Schematic Dataset Editor starts.</step><step>In the Dataset Editor tree window, right-click the schematic feature class entry for which you want to define an association and click New Attribute.</step><step>Type RelatedFeatureCN as the attribute name.</step><step>Configure the schematic attribute parameter so it returns the name of the GIS feature class that contains the desired associated GIS features.</step><step>Check On Start Editing in the Evaluation mode section.</step><step>Click OK. The RelatedFeatureCN attribute creation is complete.</step><step>Right-click the schematic feature class entry and click New Attribute.</step><step>Type RelatedFeatureOID for the attribute name.</step><step>Configure the schematic attribute parameter so it returns the ObjectID of the GIS feature.</step><step>Check On Start Editing in the Evaluation mode section.</step><step>Click OK. The RelatedFeatureOID attribute creation is complete.</step><step>Click Save on the Schematic Dataset Editor toolbar and close the Schematic Dataset Editor.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Testing the newly specified associations</title>
+									<how_to_use_steps>
+										<step>Start ArcMap with a new empty map.</step><step>Enable the Schematic Features Associations with Geographic Features (VB .NET) or Schematic Features Associations with Geographic Features (C#) extension using the Customize&gt;Extensions menu.</step><step>Add the GIS features in the active data frame.</step><step>Open a diagram containing schematic features for which new associations have been configured, or generate a diagram containing such schematic features.</step><step>Start an edit session on the schematic diagram.</step><step>Click the Identify tool and click any schematic feature that should be impacted by this configuration change. In the Identify window, under the schematic feature branch, a new branch shows the newly associated GIS feature.</step><step>Select any schematic feature that should be impacted by this configuration change and click Propagate Schematic Selection To Map. The associated GIS feature is selected on the map.</step>
+									</how_to_use_steps>
+								</how_to_use></how_to_use_section>
+	<related_topics>
+		<topic>
+									<topic_display>ISchematicInMemoryFeatureLinkerEdit interface</topic_display>
+									<topic_link>esriSchematic/ISchematicInMemoryFeatureLinkerEdit.htm</topic_link>
+								</topic>
+	<topic>
+									<topic_display>AfterLoadDiagram Schematic event</topic_display>
+									<topic_link>esriSchematic/ISchematicDatasetEvents_AfterLoadDiagram.htm</topic_link>
+								</topic><topic>
+									<topic_display>ISchematicInMemoryDiagram interface</topic_display>
+									<topic_link>esriSchematic/ISchematicInMemoryDiagram.htm</topic_link>
+								</topic><topic>
+									<topic_display>ISchematicInMemoryFeature interface</topic_display>
+									<topic_link>esriSchematic/ISchematicInMemoryFeature.htm</topic_link>
+								</topic></related_topics>
+	<content_area_tags>
+		<tag>Schematics extension</tag>
+	<tag>Add-ins</tag></content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>93fe0cb4-c474-450e-906d-8b85110b2789</guid>
+	<content_management>
+		<owner>Dominique Broux</owner>
+		<tech_reviewer>Anne-Yvonne BLIN</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-10-27</langrev_last_updated_date>
+		<langrev_last_updated_time>19:29:44</langrev_last_updated_time>
+		<last_updated_date>2009-12-10</last_updated_date>
+		<last_updated_time>15:13:28</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2009-12-10</last_copyedit_date>
+									<last_copyedit_time>15:13:32</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2009-12-10</edit_date>
+										<edit_time>14:08:34</edit_time>
+										<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div></edit_notes>
+									</editing_section>
+								</edits></content_management>
+	<current_user>kyli4140</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

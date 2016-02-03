@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.896" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Export any network analysis class to a text file</title>
+  <purpose>This sample exports the field names and data for a network analysis class to a text file. This sample shows how to open a cursor on the active network analysis class, and iterate through its fields and data.</purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Network Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Network Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Network Analyst</extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Network Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Network Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Network Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp>3</min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>NAClassToTextfileCmd.cs</filename>
+        <description>Class that contains the command.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>NAClassToTextfileCmd.bmp</filename>
+        <description>Image file for the command.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>NAClassToTextfileCmd.vb</filename>
+        <description>Class that contains the command.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ExportNAClass.bmp</filename>
+        <description>Image file for the command.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Start Visual Studio to build the project.  If running on non-XP Windows, be sure to start Visual Studio "As Administrator."</step>
+        <step>Start ArcMap.</step>
+        <step>Right-click a class in the NAWindow.</step>
+        <step>Click Export To Textfile.</step>
+        <step>Name and save the text export.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Programming with ArcGIS Network Analyst extension</topic_display>
+      <topic_link>dcd61a15-8837-4577-a762-2661018351b7</topic_link>
+    </topic>
+    <topic>
+      <topic_display>What is ArcGIS Network Analyst extension?</topic_display>
+      <topic_link>5B4F85A5-0976-4266-9481-DCFBD3EE850B/9D7270A4-DEA5-42E1-B7F2-569C11731F8C</topic_link>
+    </topic>
+    <topic>
+      <topic_display>About the ArcGIS Network Analyst extension tutorial</topic_display>
+      <topic_link>5B4F85A5-0976-4266-9481-DCFBD3EE850B/19205FCD-879C-4D89-AE90-F952F83F869B</topic_link>
+    </topic>
+    <topic>
+      <topic_display>NetworkAnalyst</topic_display>
+      <topic_link>f0b6867e-e145-4a22-be8b-6b8daad40d58</topic_link>
+    </topic>
+    <topic>
+      <topic_display>ArcGIS Network Analyst extension Object Model Diagram</topic_display>
+      <topic_link>esriNetworkAnalyst/NetworkAnalystObjectModel.pdf</topic_link>
+    </topic>
+    <topic>
+      <topic_display>An overview of the network analyst toolbox</topic_display>
+      <topic_link>05B6872E-680C-4349-968D-32BE82DC063E/FF78130E-01A3-4C2E-A7C9-650C83C52702</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Network extension</tag>
+    <tag>Commands &amp; Tools</tag>
+    <tag>Networks</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>013cc02e-af09-4abe-bd4a-4aa4e38c2786</guid>
+  <content_management>
+    <owner>Patrick Stevens</owner>
+    <tech_reviewer>Matt Crowder</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2011-04-04</last_updated_date>
+    <last_updated_time>13:34:10</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-09</last_copyedit_date>
+      <last_copyedit_time>12:18:20</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-09</edit_date>
+        <edit_time>12:18:18</edit_time>
+        <edit_notes>Edited.</edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>patr5651</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

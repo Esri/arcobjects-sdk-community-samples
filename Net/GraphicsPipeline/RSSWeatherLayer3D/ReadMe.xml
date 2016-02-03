@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>RSS weather 3D layer</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample illustrates a comprehensive real-life scenario for creating a new layer to consume a Web service and display the information in a three-dimensional (3D) environment using a direct OpenGL plug-in.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows implementation of the following:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Simple editing capabilities</li>
+<li>Selection by attribute and location</li>
+<li>Persistence</li>
+<li>Identify</li></ul></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path>USZipCodeData/US_ZipCodes.shp </data_path>
+    <data_path>USZipCodeData/ZipCode_Boundaries_US_Major_Cities.shp</data_path>
+  </data_paths>
+  <requirements>
+    <requires>This sample can only be done in C# (and not in VB .NET). This is because "unsafe" is not supported in VB .NET, and it is needed here because pointers need to be used with this third party library.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>RSSWeatherLayer3DClass.cs</filename>
+        <description>Implementation file of the custom layer.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GlobeWeatherIdentifyObject.cs</filename>
+        <description>Implementation file of IIdentifyObject required to support standard identification.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>IdentifyDlg.cs</filename>
+        <description>Identify dialog box used by the Identify object.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>AddWeatherLayerCmd.cs</filename>
+        <description>Command that connects and disconnects the layer from RSS Web service.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RefreshLayerCmd.cs</filename>
+        <description>Command that produces the update thread of the layer.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddWeatherItemCmd.cs</filename>
+        <description>Command that allows adding weather items by a given ZIP Code.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZipCodeDlg.cs</filename>
+        <description>Dialog box where users type a ZIP Code to add new weather items.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddWeatherItemTool.cs</filename>
+        <description>Tool that allows adding weather items by clicking a location on the Globe.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SelectByCityNameCmd.cs</filename>
+        <description>Allows selection of weather items from a list according to the city name.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>WeatherItemSelectionDlg.cs</filename>
+        <description>Selection dialog box for the SelectByCityName command.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SelectItemsTool.cs</filename>
+        <description>Selection tool that allows select by location.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>WeatherLayerToolbar.cs</filename>
+        <description>Toolbar that hosts the layer's commands and tools.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GlobeCustomLayerBase.cs</filename>
+        <description>Abstract base class implementing essential interfaces required to implement an ArcGIS layer for ArcGlobe and GlobeControl.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the solution file, and build the project.</step>
+        
+        <step>Open a GlobeControl application or ArcGlobe.</step>
+        <step>From the toolbars list, select the Weather toolbar to add to the application.</step>
+        <step>Click Load Layer to connect to the Yahoo RSS weather service.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The following items are covered in this sample:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Implementing a GlobeCustomLayer through inheritance of a BaseClass.</li>
+<li>Consuming Web services (Yahoo really simple syndication [RSS] service).</li>
+<li>Executing a lengthy ArcObjects task on a background thread.</li>
+<li>Sharing resources between multiple threads.</li>
+<li>Updating user interface (UI) components from a background thread to keep responsiveness.</li>
+<li>Creating OpenGL display lists.</li>
+<li>Mapping a bitmap into OpenGL texture and binding the texture to a geometry.</li>
+<li>Technique to filter items that are outside the viewport.</li>
+<li>Technique to billboard items.</li>
+<li>OpenGL selection buffer (to perform select by area).</li>
+<li>Implementing identification.</li>
+<li>Implementing commands and tools to interact with a custom layer.</li>
+<li>Implementing a toolbar for GlobeControl and ArcGlobe. </li></ul></additional_information><related_topics>
+    <topic>
+      <topic_display>How to get and install an OpenGL wrapper for .NET</topic_display>
+      <topic_link>0b0cb380-490e-4c8e-829d-d8083967387b</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How to draw a geographical object on the globe using direct OpenGL plug-in</topic_display>
+      <topic_link>9a7aa7d4-2653-4d31-b03a-1c3eff79921c</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Implementing custom globe layers with dynamic feed</topic_display>
+      <topic_link>b0e91ce8-c180-47dc-8323-06cac5d77064</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How to draw mouse feedback on the globe using direct OpenGL plug-in</topic_display>
+      <topic_link>cca60395-7aa7-451e-9e1f-61cc32824309</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Writing multithreaded ArcObjects code</topic_display>
+      <topic_link>2c2d2655-a208-4902-bf4d-b37a1de120de</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>3D analysis &amp; visualization</tag>
+    <tag>Layer</tag>
+    <tag>Globe</tag>
+    <tag>Threading</tag>
+    <tag>Events</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>OpenGL</existing_tag>
+    <existing_tag>Custom layer</existing_tag>
+    <existing_tag>3D</existing_tag>
+  </indexing_tags>
+  <guid>96ea2d17-98a3-414f-a60a-32830fe95bb5</guid>
+  <content_management>
+    <owner>Yaron Fine</owner>
+    <tech_reviewer>Morakot Pilouk</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-23</last_updated_date>
+    <last_updated_time>16:17:00</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-04-23</last_copyedit_date>
+									<last_copyedit_time>16:24:36</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-04-23</edit_date>
+									<edit_time>16:24:14</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAAddRealTimeTemporalLayer", "TAAddRealTimeTemporalLayer.csproj", "{6F7C1603-53BB-4346-BBB6-9145CE5F0BC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F7C1603-53BB-4346-BBB6-9145CE5F0BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7C1603-53BB-4346-BBB6-9145CE5F0BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7C1603-53BB-4346-BBB6-9145CE5F0BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7C1603-53BB-4346-BBB6-9145CE5F0BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

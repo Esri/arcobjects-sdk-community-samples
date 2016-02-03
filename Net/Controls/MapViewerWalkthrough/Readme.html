@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Building a MapViewer application using the ArcGIS Engine controls</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Building a MapViewer application using the ArcGIS Engine controls</h2>
+
+<h3>Purpose</h3>
+
+<p>In this sample, the MapControl, PageLayoutControl, TOCControl, and ToolbarControl are used in conjunction with other ArcObjects and the control commands to create a Map Viewer application. This sample accompanies the Building a map viewing application using the ArcGIS Engine controls walkthrough and demonstrates the following:Loading preauthored map documents into the PageLayoutControl and MapControl using the CheckMxFile and LoadMxFile methods.Setting the ToolbarControl and TOCControl buddy control to be the PageLayoutControl using the SetBuddyControl method.Resizing the MapControl and PageLayoutControl when the container form or dialog box is resized.Adding navigation and inquiry commands to the ToolbarControl using the AddItem method.Creating a pop-up menu from the commands that work with the PageLayoutControl and displays as a right-click context menu.Creating a palette of tools from the commands and adding it to the ToolbarControl.Managing the way map and layer labels are edited in the TOCControl using the LabelEdit property and the ITOCControlEvents.OnEndLabelEdit event.Using the MapControl as an overview window by using the DrawShape method to highlight the current extent of data in the PageLayoutControl.Creating a custom Add Date command that works with the PageLayoutControl, ToolbarControl, and MapControl.Customizing the ToolbarControl with the Customize property and displaying the CustomizeDialog to the end user at runtime.Persisting the ToolbarControl items using the SaveItems and LoadItems methods.Printing the contents of the PageLayoutControl using the PrintPageLayout method.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open the .NET solution file and build the projects.  </li>
+<li>Run the controls application.  </li>
+<li>Use the Open Document command on the ToolbarControl to browse to a preauthored map document to load into the PageLayoutControl.  </li>
+<li>Use the commands and tools on the ToolbarControl to navigate around the map document. Right-click the PageLayoutControl to display the pop-up menu. Use the palette on the ToolbarControl to draw graphic elements on the PageLayoutControl.  </li>
+<li>Use the custom Add Date tool to add an element to the PageLayoutControl containing the current date.  </li>
+<li>Click a map or layer label in the TOCControl, then click it again to edit the label.  </li>
+<li>Customize the ToolbarControl by adding new commands, menus, or palettes from the CustomizeDialog. To alter the appearance of an existing item on the ToolbarControl, right-click the item to display the context menu. Stop running the application, then restart the application to see that the customizations you made were persisted.  </li>
+<li>Print the contents of the PageLayoutControl by selecting Print from the File menu.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Building%20a%20map%20viewing%20application%20using%20the%20ArcGIS%20Engine%20controls&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Walkthrough: Building a map viewing application using the ArcGIS Engine controls</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

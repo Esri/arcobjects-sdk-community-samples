@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Dynamic display—tracking dynamic object</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to use the ArcGIS dynamic display to track a dynamic object and simulate a tracking mode where the map is centered and aligned according to the tracked object. The following items are discussed in this sample:</div>
+    <ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+      <li>Switching the display into dynamic mode
+</li>
+      <li>Updating the map visible extent and rotation according to information for the tracked object
+</li>
+      <li>Listening to the AfterDynamicDraw event to show the location of the tracked object</li>
+      <li>Creating dynamic glyphs from in-memory bitmaps
+</li>
+      <li>Changing different characters of the dynamic symbol</li>
+    </ul>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The tracking data for this sample gets created synthetically out of an existing feature class. This process might take time before the sample starts running. </div>
+  </purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path>USAMajorHighways/usa_major_highways.shp</data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>TrackObject.cs</filename>
+        <description>Implementation file of the command for tracking the dynamic object.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>TrackObject.vb</filename>
+        <description>Implementation file of the command for tracking the dynamic object.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution file.</step>
+        <step>Build the solution to make the Track Dynamic Object command .dll file. Use the command in an application with a MapControl and ToolbarControl, such as the MapControlApplication template included with the Visual Studio integration.</step>
+        <step>Add this command to a ToolbarControl. The command (Track Dynamic Object) is located in the .NET samples category.</step>
+        <step>Add the provided data to the MapControl. Make sure the file type is set to Shape files (*.shp).</step>
+        <step>Run the application containing the MapControl and ToolbarControl, then zoom in an area on the roads. The application loads the navigation information from the target feature class and starts navigating (this procedure can take a few seconds).</step>
+        <step>Click Track Dynamic Object to start tracking.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Dynamic display</topic_display>
+      <topic_link>c9e1ccf5-df7d-44d3-a2da-d916f65fd94a</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How dynamic display works</topic_display>
+      <topic_link>ce103ad6-848e-4bb6-9de3-5519d577cc2f</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Best practices for using dynamic display</topic_display>
+      <topic_link>35db2220-8004-4588-8629-dafaca5a6b11</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Walkthrough: Getting started with dynamic display </topic_display>
+      <topic_link>756d0373-8e76-4145-a337-5af537ee6393</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic display layer</topic_display>
+      <topic_link>37c19547-1902-46fe-a98a-fb605c188dea</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic display compass</topic_display>
+      <topic_link>ef4797a2-c0ec-4410-a6de-aec2bacb66cc</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How to create a dynamic glyph from a marker symbol</topic_display>
+      <topic_link>113991a0-b335-47db-9528-2e097f4d7ed0</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+    <tag>3D analysis &amp; visualization</tag>
+    <tag>Commands &amp; Tools</tag>
+    <tag>Layer</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>Dynamic display</existing_tag>
+  </indexing_tags>
+  <guid>6ecff86c-990f-4f9f-a9f9-1e05e7940622</guid>
+  <content_management>
+    <owner>Yaron Fine</owner>
+    <tech_reviewer>Craig Proctor</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:18:00</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-23</last_copyedit_date>
+      <last_copyedit_time>12:54:10</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>dara4409</editor_name>
+        <edit_date>2009-09-02</edit_date>
+        <edit_time>10:39:25</edit_time>
+        <edit_notes>
+          <div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+            <font face="Times New Roman">Support has requested we provide an application that already has a dd button in order to get the sample up and running quickly. I have added the alternative to use the MapControlApplication template</font>
+          </div>
+        </edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-23</edit_date>
+        <edit_time>12:54:02</edit_time>
+        <edit_notes>Edited.<br xmlns="http://www.w3.org/1999/xhtml"/>Ready for SDK inclusion.<br xmlns="http://www.w3.org/1999/xhtml"/>If owner needs to change, do so on the content management page.<br xmlns="http://www.w3.org/1999/xhtml"/></edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

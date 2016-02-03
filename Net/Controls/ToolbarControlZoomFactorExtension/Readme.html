@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Creating a zoom factor extension that works with a ToolbarControl</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Creating a zoom factor extension that works with a ToolbarControl</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates creating a ZoomFactor extension containing three commands that work with the ToolbarControl.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Browse to a map document to load into the MapControl.   </li>
+<li>Navigate around the data using the commands on the ToolbarControl.   </li>
+<li>Enable the extension and navigate around the data using the commands from the extension.   </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The AddItem method is used within the Form Load event to add new command items to the ToolbarControl with their style set. These command items are defined in the controls commands library and the ZoomFactor extension.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The ZoomFactor extension is created via its ProgID and added to the ExtensionManager singleton object using the IExtensionManagerAdmin.AddExtension method. The application is responsible for the lifetime and state of the ZoomFactor extension. The IExtensionManager.FindExtension method is used to find the ZoomFactor extension, and the IExtensionConfig.State property controls the state of the ZoomFactor extension.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The ZoomFactor extension is used to control the state of the ZoomIn, ZoomOut, and SetZoomFactor commands. The ZoomFactor extension implements IExtension, IExtensionConfig, and the IZoomExtension custom interface, which has a ZoomFactor property. The SetZoomFactor command prompts you for a zoom factor to set into the ZoomFactor property. The ZoomIn and ZoomOut commands use the ZoomFactor to determine the zoom ratio. The Enabled state of each command is determined by IExtensionConfig.State.</div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=ToolbarControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ToolbarControl class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IToolbarControl%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IToolbarControl interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

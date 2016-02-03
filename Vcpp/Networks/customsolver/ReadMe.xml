@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/vcpp/VCppSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:VCPPSample:" language="en-us" solutionVersion="9.4.0.929" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Custom solver</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample provides a custom ArcGIS Network Analyst extension solver for traversing a network dataset and finding connected/disconnected network components. </div></purpose>
+  <development_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension/>
+    </license>
+  </development_license>
+  <deployment_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Network Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Network Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Network Analyst</extension>
+    </license>
+  </deployment_license>
+  <apis>
+    <api>
+    </api>
+  </apis>
+  <capabilities>
+    <capability>
+    </capability>
+  </capabilities>
+  <min_version>9.2</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>
+    </data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="VCPP">
+      <file>
+        <filename>ConnectivitySolver.h</filename>
+        <description>Header file for defining the connectivity solver.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ConnectivitySolver.cpp</filename>
+        <description>Implementation of the connectivity solver.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ConnectivitySymbolizer.h</filename>
+        <description>Header file for defining the connectivity solver's custom symbolizer.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ConnectivitySymbolizer.cpp</filename>
+        <description>Implementation of the connectivity solver's custom symbolizer.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ConnSolverPropPage.h</filename>
+        <description>Header file for defining the connectivity solver's custom property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ConnSolverPropPage.cpp</filename>
+        <description>Implementation of the connectivity solver's custom property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>DataStructures.h</filename>
+        <description>Header file for defining custom data structures.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>NameConstants.h</filename>
+        <description>Header file for defining custom string values.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Resource.h</filename>
+        <description>Header file for defining resource IDs.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>StdAfx.h</filename>
+        <description>Used for building a precompiled header file and precompiled type file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>StdAfx.cpp</filename>
+        <description>Used for building a precompiled header file and precompiled type file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CustomSolver.cpp</filename>
+        <description>Object map and DLL exports.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CustomSolver.rc</filename>
+        <description>Contains a listing of all the Microsoft Windows resources that the program uses.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>CustomSolver.rgs</filename>
+        <description>Registration script for the custom solver project.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>_CustomSolver_i.c</filename>
+        <description>GUID definitions for the project.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title/>
+      <how_to_use_steps>
+        <step>Open the solution file in Visual Studio.</step><step>If your SDK is not installed in "\Program Files (x86)\ArcGIS\DeveloperKit10.2", search for that string and replace all entries with the correct path.</step><step>Build the solution.</step><step>If the compilation process does not register the CustomSolver.dll into ArcGIS for Desktop, register it manually.</step>
+        <step>Start ArcMap.</step>
+        <step>Add a network dataset to the map.</step><step>On the Network Analyst toolbar, click Network Analyst &gt; Options, and set it to show all messages.</step>
+        <step>Open the Network Analyst toolbar and click Network Analyst &gt; New Connectivity.</step>
+        <step>Load locations into the Seed Points layer of the Connectivity analysis layer.</step>
+        <step>Click Solve. Lines are added to the Lines layer that reference source features that are not connected to any of the seed points.</step>
+        
+        <step>Right-click the Connectivity layer and click Properties to change the properties of the analysis layer, including whether you want to output the connected features instead of the disconnected features and whether or not you want to generate the line geometry.</step>
+        <step>Re-solve to see the effects of changing the analysis layer properties.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>
+    </tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>D463AD8F-83BE-4641-A39A-B4EA5597A7B4</guid>
+  <content_management>
+    <owner>Patrick Stevens</owner>
+    <tech_reviewer>Michael Rice</tech_reviewer>
+    <status>SDK inclusion requested</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2012-03-19</last_updated_date>
+    <last_updated_time>17:02:53</last_updated_time>
+  <copyediting>
+									<last_copyedit_date>2012-03-19</last_copyedit_date>
+									<last_copyedit_time>17:04:22</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2012-03-19</edit_date>
+										<edit_time>17:03:35</edit_time>
+										<edit_notes>Edited.</edit_notes>
+									</editing_section>
+								</edits></content_management>
+  <current_user>linn</current_user>
+  <sdk>VCPP</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExtCriteriaCS", "CustomExtCriteriaCS.csproj", "{0453B025-A1D3-4DE2-9F3D-5185ABADFF83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0453B025-A1D3-4DE2-9F3D-5185ABADFF83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0453B025-A1D3-4DE2-9F3D-5185ABADFF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0453B025-A1D3-4DE2-9F3D-5185ABADFF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0453B025-A1D3-4DE2-9F3D-5185ABADFF83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

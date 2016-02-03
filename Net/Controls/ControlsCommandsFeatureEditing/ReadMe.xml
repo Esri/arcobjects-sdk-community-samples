@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.896" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Feature editing with the control commands</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates feature editing using the control commands in conjunction with the ToolbarControl and MapControl.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The AddItem method is used within the Form_Load event to add new feature editing commands to the ToolbarControl with their Style set. A Sketch menu and Vertex menu are added to ToolbarMenu's using the AddItem method. Within the MapControl's OnMouseDown event, the PopupMenu method is used to display the appropriate ToolbarMenu when the right mouse button has been clicked.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The editing properties used by the feature editing commands in the ToolbarControl and the ToolbarMenu are determined by the IEditProperties and IEditProperties2 interface members implemented by the EngineEditor object. The EditProperties and EditProperties2 forms are used to manage and validate changes to these properties by the end user.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Note: If you are editing features from a shapefile or a personal geodatabase, the minimum license required to initialize this application is an ArcGIS Engine or ArcGIS for Desktop Basic license. If you are editing features from an enterprise geodatabase, the minimum license required to initialize this application is an ArcGIS Engine Enterprise GeoDatabase or ArcGIS for Desktop Standard license. Before running this application, check the product licenses in the LicenseControl property pages accordingly. </div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>FeatureEditing.cs</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditProperties.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditProperties2.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>FeatureEditing.vb</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditProperties.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditProperties2.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Browse to a map document to load into the MapControl. </step>
+        <step>Use the commands on the ToolbarControl to sketch new features, update existing features, update parts of a sketch, or update attributes. </step>
+        <step>Right-click the MapControl to access the Sketch context menu. </step>
+        <step>Click the Option buttons to change the edit properties.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>EngineEditor class</topic_display>
+      <topic_link>esriControls/EngineEditor.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IEngineEditProperties interface</topic_display>
+      <topic_link>esriControls/IEngineEditProperties.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IEngineEditProperties2 interface</topic_display>
+      <topic_link>esriControls/IEngineEditProperties2.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Commands &amp; Tools</tag>
+    <tag>Editing</tag>
+  </content_area_tags>
+  <guid>E37EC3FD-2F39-4607-B3B3-E4B4A25F7E84</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2011-09-08</last_updated_date>
+    <last_updated_time>13:11:03</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2011-09-08</last_copyedit_date>
+									<last_copyedit_time>13:10:59</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-11-05</edit_date>
+									<edit_time>14:41:58</edit_time>
+									<edit_notes>Edited. Ready for SDK inclusion.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2011-09-08</edit_date>
+									<edit_time>13:11:06</edit_time>
+									<edit_notes>10.2 product name change</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>mine3384</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

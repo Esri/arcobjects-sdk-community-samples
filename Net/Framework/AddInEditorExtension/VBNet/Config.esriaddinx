@@ -1,0 +1,22 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>AddInEditorExtension</Name>
+  <AddInID>{be3892ee-98b2-4d13-8ac2-33896ef8c55e}</AddInID>
+  <Description>Walkthrough Add-in for Editor Extension.</Description>
+  <Version>1.0</Version>
+  <Image>Images\AddInEditorExtension.png</Image>
+  <Author>arok5348</Author>
+  <Company>ESRI</Company>
+  <Date>8/19/2009 12:59:51 PM</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="AddInEditorExtension.dll" namespace="AddInEditorExtension">
+    <ArcMap>
+      <Editor>
+        <Extensions>
+          <Extension id="ESRI_AddInEditorExtension_ValidateFeaturesExtension" class="ValidateFeaturesExtension" />
+        </Extensions>
+      </Editor>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

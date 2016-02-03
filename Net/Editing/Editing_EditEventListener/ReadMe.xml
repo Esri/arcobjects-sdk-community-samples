@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.572" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Edit event listener</title>
+  <purpose>The add-in in this sample provides the ability to understand when various edit events are fired in response to changes in the editing environment or user actions. Using this sample can help you determine which events are appropriate to listen for in various situations, and understand what causes an event to fire.</purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>EventListener.cs</filename>
+        <description>Class containing implementation to listen to edit events.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EnumHelper.cs</filename>
+        <description>Helper class for working with enumerations.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditorEventsDialogCommand.cs</filename>
+        <description>Class containing ICommand implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditorEventsDialog.cs</filename>
+        <description>Class containing dockable window implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  <files lang="VBNet">
+									<file>
+										<filename>EventListener.vb</filename>
+										<description>Class containing implementation to listen to edit events.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>EnumHelper.vb</filename>
+									<description>Helper class for working with enumerations.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>EditorEventsDialogCommand.vb</filename>
+									<description>Class containing the add-in button that opens the Edit Events dockable window.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>EditorEventsDialog.vb</filename>
+									<description>Class containing the add-in dockable window implementation</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the solution file, and build the project.</step><step>Start ArcMap, click the Customize menu, and click Add-In Manager. The Add-In Manager dialog box opens.</step><step>Using the Browse for Add-In command, browse to the location of the add-in and select the .esriAddIn file located in the projects bin\Debug folder. </step><step>On the Customize dialog box, drag the Edit Events command from the Add-In Controls category to a toolbar.</step>
+        <step>Add one or more editable data sources to ArcMap.</step>
+        <step>Click the Edit Events command. The Edit Events window opens.</step>
+        <step>Click the Select Events tab. See the following screen shot on the left.</step>
+        <step>Select one or more edit events in the list for which you want to receive notification, then click the Listen to Events tab.</step>
+        
+        <step>Perform one or more actions in the editor. Events that fire as a result of the action are listed on the Listen to Events tab. See the following screen shot on the right.</step>
+        <step>Right-click in the list to clear it.</step>
+      </how_to_use_steps>
+      <how_to_use_pictures>
+        <picture>
+          <image>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</image>
+          <caption>Screen shot showing the Select Events and Listen to Events tabs.</caption>
+        </picture>
+      </how_to_use_pictures>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Working with editing events</topic_display>
+      <topic_link>3e306e15-d0f9-4c0c-a6b7-ef9c69077132</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Editing</tag>
+    <tag>Events</tag>
+  <tag>Add-ins</tag></content_area_tags>
+  <indexing_tags>
+    <existing_tag>Edit session</existing_tag>
+  </indexing_tags>
+  <guid>788993f2-2c99-4df3-9217-16a20ae3d010</guid>
+  <content_management>
+    <owner>Doug Morgenthaler</owner>
+    <tech_reviewer>Lisa Crowe</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-01-27</last_updated_date>
+    <last_updated_time>16:51:16</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-01-27</last_copyedit_date>
+									<last_copyedit_time>16:51:13</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>kyli4140</editor_name>
+									<edit_date>2009-12-17</edit_date>
+									<edit_time>23:45:00</edit_time>
+									<edit_notes>Sample is not compiling in VB.NET. If it is still not working at 9am tomorrow I will need to remove it from the Beta 2 SDK.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-01-27</edit_date>
+									<edit_time>16:50:34</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Already in the SDK.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

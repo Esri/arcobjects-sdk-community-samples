@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/vcpp/VCppSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:VCPPSample:" language="en-us" productVersion="12.0.0" solutionVersion="9.4.0.698" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Create a custom geodata transform</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml">
+<div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt"><span><font face="Verdana">ArcGIS supports many geodata transforms such as RPCXFrom and PolynomialXForm for transforming pixel coordinates to map coordinates and vice versa. This sample shows how to create a custom geodata transform.</font></span></div></div></purpose>
+  <development_license>
+    
+  <license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></development_license>
+  <deployment_license>
+    
+  <license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+  <apis>
+    <api>
+    </api>
+  </apis>
+  <capabilities>
+    <capability>
+    </capability>
+  </capabilities>
+  <min_version>10.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version></max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>
+    </data_path>
+  </data_paths>
+  <requirements>
+    <requires>CustomGDALDriverSample, available at the ArcGIS Image Management Resource Center code gallery</requires>
+  </requirements>
+  <file_section>
+    <files lang="VCPP">
+      <file>
+        <filename>SimpleXForm.cpp</filename>
+        <description>Implementation file for the SimpleXForm COM object.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>CustomXForm.cpp</filename>
+        <description>Implementation file for the CustomXForm COM object.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>SimpleXForm.h</filename>
+        <description>Header file for the SimpleXForm COM object.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>CustomXForm.h</filename>
+        <description>Header file for the CustomXForm COM object.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+    <file>
+									<filename>RMCXForm.cpp</filename>
+									<description>Implementation file for the RMCXform COM object.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+									<filename>RMCXForm.h</filename>
+									<description>Header file for the RMCXform COM object.</description>
+									<viewable_code>false</viewable_code>
+								</file></files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title></title>
+      <how_to_use_steps>
+        <step>Compile and build the solution and generate CustomXForm.dll.</step>
+        <step>Register CustomXForm.dll.</step>
+        <step>To transform a raster using SimpleXForm, modify the GeodataXForm on a geodataset. It will then be persisted to the geodataset, as shown in the code example in the Additional information section below. </step><step>To transform a raster using RMCXForm, download and unzip the Custom GDAL Driver sample.</step><step>If you're using an existing GDAL driver, follow these steps: a) Compile rmcdataset.cpp from stage2 to create gdal_RMC.dll; b) Copy the .dll file to the GDAL plugins directory; c) Register the format with ArcGIS (using the New Format Properties dialog box or by editing RasterFormats.dat); and d) Copy RasterXforms.dat to the ArcGIS bin directory (or modify the existing file if present).</step><step>If you're using a new GDAL driver (using GDAL XML Metadata), follow these steps: a) Compile rmcdataset.cpp from stage3 to create gdal_RMC.dll; b) Copy the .dll file to the GDAL plugins directory; c) Register the format with ArcGIS if not done previously; and d) Edit RasterXforms.dat to remove the RMCXform entry (it's not needed in this case).</step><step>Ensure rmcdata\rmcS.rmc has the correct file paths to the data files.</step><step>Start ArcMap, navigate to rmcdata, and open rmcS.rmc.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml"><font face="Verdana">To create a custom geodata transform, you will create a GeodataXForm class by implementing the IGeodataXform, IPersistStream, and IClone interfaces.</font></div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml"><font face="Verdana">The C++ sample solution implements two custom GeodataXforms, SimpleXform and RMCXform, which are hosted in a dynamic-link library (DLL), CustomXform.dll. The two custom geodata transforms are used in different ways as follows:</font></div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml">
+<li style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; MARGIN-BOTTOM: 0pt"><font face="Verdana">To use the SimpleXform class, open a raster dataset and use the IGeoDatasetSchemaEdit2 interface to assign the geodata transform to the raster dataset as shown in the following code example:<br/></font></li>
+<div>Sub ApplySimpleXForm(pRasterDataset As IRasterDataset)</div>
+<div>    ' This procedure creates a SimpleXForm and persists it to the raster dataset. </div>
+<div>    'Create simplexform. </div>
+<div>    Dim pSimpleXForm As ISimpleXForm </div>
+<div>    Set pSimpleXForm = New SimpleXForm</div>
+<div> </div>
+<div>    'Persist the xform to the input raster dataset. </div>
+<div>    Dim pGeoDatasetEdit As IGeoDatasetSchemaEdit2 </div>
+<div>    Set pGeoDatasetEdit = pRasterDataset </div>
+<div> </div>
+<div>    Dim pSimpleXForm As ISimpleXForm </div>
+<div>    Set pSimpleXForm = New SimpleXForm </div>
+<div> </div>
+<div>    pGeoDatasetEdit.AlterGeodataXform pSimpleXForm</div>
+<div>End Sub</div>
+<li style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; MARGIN-BOTTOM: 0pt"><font face="Verdana">To use the RMCXform sample, you will also have to implement one of the scenarios from the CustomGDALDriverSample available as a download from the ArcGIS Image Management Resource Center code gallery. The RMCXform is specifically designed to work with the encoded rmcS.rmc file.</font></li></ul></additional_information><related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>
+    </tag>
+  <tag></tag></content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>954B42BC-A74C-45C9-9BB9-A2A2006AF573</guid>
+  <content_management>
+    <owner>Joe Roubal</owner>
+    <tech_reviewer>Hong Xu</tech_reviewer>
+    <status>SDK inclusion requested</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-05-12</last_updated_date>
+    <last_updated_time>17:52:49</last_updated_time>
+  <copyediting>
+									<last_copyedit_date>2010-05-12</last_copyedit_date>
+									<last_copyedit_time>17:52:46</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2010-05-12</edit_date>
+										<edit_time>17:51:00</edit_time>
+										<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li xmlns="http://www.w3.org/1999/xhtml">Edited.</li>
+<li xmlns="http://www.w3.org/1999/xhtml">The title of the topic is "Create a custom geodata transform", but the title in the TOC is "Create custom GeodataXForm". I don't know which is correct.</li>
+<li xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</li></ul></edit_notes>
+									</editing_section>
+								</edits></content_management>
+  <current_user>linn</current_user>
+  <sdk>VCPP</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

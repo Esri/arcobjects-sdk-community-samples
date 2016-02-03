@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Applying user interface customizations at startup</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Applying user interface customizations at startup</h2>
+
+<h3>Purpose</h3>
+
+<p>It is unsafe to make user interface customizations before the ArcGIS application framework has fully initialized. This sample shows you how to use IApplicationStatusEvents and IApplicationStatus inside a custom extension to monitor the framework's state and properly apply interface customizations when the extension loads.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open and compile the solution in Visual Studio.  </li>
+<li>Start ArcMap.  </li>
+<li>Click Customize and click Extensions.  </li>
+<li>Turn on the ACME extension. The ACME menu appears on the main menu bar.  </li>
+<li>Turning off the extension removes the ACME menu.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Creating%20an%20application%20extension&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Creating an application extension</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

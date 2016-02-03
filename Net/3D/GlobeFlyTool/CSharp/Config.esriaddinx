@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>GlobeFlyTool</Name>
+  <AddInID>{1e3ebb07-38d1-4ce2-92e7-9f26adaf9ee8}</AddInID>
+  <Description>This add-in sample shows how to create a Fly tool for ArcGlobe. This sample mimics the out-of-the-box Fly tool for ArcGlobe. The developers can use this sample as a starting point to customize the Fly tool according to their needs.</Description>
+  <Version>1.0</Version>
+  <Image>Images\GlobeFlyTool.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>12/10/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="GlobeFlyTool.dll" namespace="GlobeFlyTool">
+    <ArcGlobe>
+      <Commands>
+        <Tool id="ESRI_GlobeFlyTool_Fly" class="Fly" message="This add-in sample shows how to create a Fly tool for ArcGlobe. This sample mimics the out-of-the-box Fly tool for ArcGlobe. The developers can use this sample as a starting point to customize the Fly tool according to their needs." caption="Globe Fly Tool" tip="Globe Fly Tool" category="Add-In Controls" image="Images\Fly.png" cursor="Images\Fly.cur" />
+      </Commands>
+    </ArcGlobe>
+  </AddIn>
+</ESRI.Configuration>

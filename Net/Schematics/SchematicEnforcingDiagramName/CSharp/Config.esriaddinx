@@ -1,0 +1,22 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Enforcing Diagram Name</Name>
+  <AddInID>{cc4579a3-daf8-4413-bdfa-7590ab71ea49}</AddInID>
+  <Description>Add user name to Schematic diagram name when generating a new schematic diagram.</Description>
+  <Version>1.0</Version>
+  <Image>Images\EnforcingDiagramName.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>20/10/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="EnforcingDiagramName.dll" namespace="EnforcingDiagramName">
+    <ArcMap>
+      <Extensions>
+        <Extension id="ESRI_EnforcingDiagramName_EnforcingDiagramName" class="EnforcingDiagramName" productName="Enforcing Diagram Name (C#)" showInExtensionDialog="true" autoLoad="true">
+          <Description>Add user name to Schematic diagram name when generating a new schematic diagram.</Description>
+        </Extension>
+      </Extensions>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

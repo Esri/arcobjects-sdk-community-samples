@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple point plug-in data source</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Simple point plug-in data source</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample implements a plug-in data source for a SimplePoint data format to provide direct read-only ArcGIS support for the format. The data in this sample follows a simple format. An American Standard Code for Information Interchange (ASCII) text file contains data for each new point on a new line. The first six characters are the x-coordinate, the next six characters contain the y-coordinate, and the trailing characters contain an attribute value. You can use the sample data from the software development kit (SDK) samples folder or create data according to the preceding specifications. For more information, see Creating a plug-in data source.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open the solution using Visual Studio.  </li>
+<li>Build the solution to make the SimplePointPlugin class library.  </li>
+</ol>
+
+<h4>Using simple point with ArcGIS for Desktop</h4>
+
+<ol>
+<li>Start ArcCatalog and ArcMap.  </li>
+<li>In ArcCatalog, browse to the ArcGIS installation folder and locate the Developer Kit's Samples\Data\SimplePointData\ folder (you will see a Points dataset).  </li>
+<li>In ArcCatalog's tree-view, expand the feature dataset to view the contained datasets.  </li>
+<li>Drag the Points dataset onto ArcMap.  </li>
+<li>In ArcMap, use the layer's properties to change the renderer to a "Unique values renderer." Use the values from the ColumnOne field.  </li>
+<li>Examine the layer's attribute table, identify and apply the selection on the layer.  </li>
+</ol>
+
+<h4>Using simple point with ArcGIS Engine</h4>
+
+<ol>
+<li>Use this command in an application with a MapControl or PageLayoutControl, and a ToolbarControl.  </li>
+<li>Add the command to the ToolbarControl. The command (Add SimplePoint layer) can be found in the .NET Samples category.  </li>
+<li>Run the application.  </li>
+<li>Click the Add SimplePoint layer command. The OpenSimplePointDlg dialog box appears.   </li>
+<li>Click the Open Simple Point Data button to browse for Simple Point data datasets. Use Points in <ArcGIS Developer Kit Installation folder>\Samples\data\SimplePointData.  </li>
+<li>From the datasets list, select the datasets to add to the map and click OK.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Plug-in%20data%20sources&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Plug-in data sources</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=Creating%20a%20plug-in%20data%20source&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Creating a plug-in data source</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=Implementing%20optional%20functionality%20on%20plug-in%20data%20sources&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Implementing optional functionality on plug-in data sources</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=Adding%20a%20plug-in%20data%20source%20programmatically&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Adding a plug-in data source programmatically</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+</table>
+
+</body>
+</html>

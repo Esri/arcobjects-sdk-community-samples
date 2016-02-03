@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.923" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Implementing a schematic rule and its property page</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Schematic rules are executed during schematic diagram generation and update. Several schematic rules are provided with this version, <font face="Verdana">for example, </font>the Node Reduction By Priority rule, Relationship rule, and so on. You can also develop your own custom schematic rule. Schematics treats this custom rule the same as the standard rules. To create a custom rule, implement new ISchematicRule and ISchematicRuleDesign interfaces. To create the associated property page, implement the IComPropertyPage interface. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><span style="FONT-SIZE: 10pt"><strong></strong></span> </div>
+<div style="LINE-HEIGHT: 12pt; MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><span style="FONT-SIZE: 10pt"><strong>Caution:</strong> If you plan to implement a custom schematic rule to be executed via a client-server application, the solution must implement two projects; one for the custom rule property page and the other for the custom rule execution itself. The component dedicated to the custom rule execution will have to be registered with the ArcGIS server to be used on any client-server application.</span></div>
+<div style="LINE-HEIGHT: 12pt; MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><span style="FONT-SIZE: 10pt"></span> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample details a customized schematic rule implementation. The goal of this sample is not in the rule, but how to implement it. The purpose is to create a schematic rule (in this sample, Reduce Schematic Links) that reduces schematic links, implemented by a specific schematic feature class, when two or more links have the same extremity nodes (and optionally, connect at the same port on these extremity nodes).</div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Schematics</extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Schematics</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="VBNet">
+      <file>
+        <filename>ReductionLinkRule.vb</filename>
+        <description>Implementation for the custom rule.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      
+      <file>
+									<filename>CustomRulesVBNet2010.vbproj</filename>
+									<description>Project file for the custom rule code.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+        <filename>ReductionLinkPropertyPage.vb</filename>
+        <description>Implementation for the custom rule's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file><file>
+        <filename>frmReductionLink.vb</filename>
+        <description>Custom rule's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>frmReductionLink.Designer.vb</filename>
+        <description>Custom rule's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      
+    <file>
+									<filename>CustomRulesPageVBNet2010.vbproj</filename>
+									<description>Project file for the custom rule's property page code.</description>
+									<viewable_code>false</viewable_code>
+								</file></files>
+    <files lang="CSharp">
+      <file>
+        <filename>ReductionLinkRule.cs</filename>
+        <description>Implementation for the custom rule.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      
+      <file>
+									<filename>CustomRulesCS2010.csproj</filename>
+									<description>Project file for the custom rule code.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+        <filename>ReductionLinkPropertyPage.cs</filename>
+        <description>Implementation for the custom rule's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file><file>
+        <filename>frmReductionLink.cs</filename>
+        <description>Custom rule's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>frmReductionLink.Designer.cs</filename>
+        <description>Custom rule's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      
+    <file>
+									<filename>CustomRulesPageCS2010.csproj</filename>
+									<description>Project file for the custom rule's property page code.</description>
+									<viewable_code>false</viewable_code>
+								</file></files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the solution file and build the project. Note that this step is automatically registering the components.</step>
+        <step>Start ArcCatalog.</step>
+        <step>Browse to any geodatabase that contains a schematic dataset.</step>
+        <step>Right-click this schematic dataset entry and select Edit. The Schematic Dataset Editor starts.</step>
+        
+        <step>Select any diagram template entry that works with the Standard builder or create a diagram template that works with the Standard builder.</step>
+        <step>Click the Rules tab.</step>
+        <step>Click Add Rule on the Rules tab toolbar.</step>
+        <step>Select the new custom rule from the Type drop-down list (that is, select Reduction Link Rule VBNet or Reduction Link Rule C#).</step><step>Click Rule Properties on the Rules tab toolbar. The custom rule properties page appears.</step>
+        
+        <step>Select the link schematic feature class (that implements the schematic links that will be automatically reduced during the rule execution) in the Link to reduce drop-down list.</step><step>Select the Use Port check box if your schematic links connect to a specific port at their extremity nodes and you want the rule to take these port connections into account during its execution.</step>
+        <step>Click Save to save the schematic dataset's new parameters.</step><step>Start ArcMap and generate or update a schematic diagram from the diagram template (which definition has been just modified); the custom rule will be executed.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>ISchematicRule interface</topic_display>
+      <topic_link>esriSchematic/ISchematicRule.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>ISchematicRuleDesign interface</topic_display>
+      <topic_link>esriSchematic/ISchematicRuleDesign.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Schematics extension</tag>
+  </content_area_tags>
+  <guid>0fdc0fe6-b664-4934-9384-041711ea75e7</guid>
+  <content_management>
+    <owner>Dominique BROUX</owner>
+    <tech_reviewer>Anne-Yvonne BLIN</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2012-03-05</last_updated_date>
+    <last_updated_time>18:53:29</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-04-08</last_copyedit_date>
+									<last_copyedit_time>10:24:40</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-04-08</edit_date>
+									<edit_time>10:24:32</edit_time>
+									<edit_notes>Edited. SDK inclusion requested.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>anne0002</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

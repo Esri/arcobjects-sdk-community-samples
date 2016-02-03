@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>CustomGxFilter_CS</Name>
+  <AddInID>{63e30311-197f-4a5e-a3b7-25ac5795c23c}</AddInID>
+  <Description>This sample code demonstrates how to create a custom object filter in ArcCatalog and use it through a custom command to select a Python file. </Description>
+  <Version>1.0</Version>
+  <Image>Images\CustomGxFilter_CS.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>8/31/2010</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="CustomGxFilter_CS.dll" namespace="CustomGxFilter_CS">
+    <ArcCatalog>
+      <Commands>
+        <Button id="ESRI_CustomGxFilter_CS_CustomCommand" class="CustomCommand" message="This sample code demonstrates how to create a custom object filter in ArcCatalog and use it through a custom command to select a *.py (Python file). " caption="Custom button to add python file" tip="Add Python file" category="Add-In Controls" image="Images\CustomCommand.png" />
+      </Commands>
+    </ArcCatalog>
+  </AddIn>
+</ESRI.Configuration>

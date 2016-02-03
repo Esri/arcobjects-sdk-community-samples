@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" productVersion="12.0.0" solutionVersion="9.4.0.706" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Export active view</title>
+	<purpose>This sample shows how to export the active view to any supported export format. Functionality includes setting output quality, clipping to graphics extent, and disabling and re-enabling Microsoft font-smoothing or ClearType, using IPrintAndExport.</purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine Developer Kit</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="VBNet">
+			<file>
+				<filename>ExportActiveViewVB_Net.vb</filename>
+				<description>Source code for ExportActiveView.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		</files>
+	<files lang="CSharp">
+									<file>
+										<filename>ExportActiveViewCS_Net.cs</filename>
+										<description>Source code for ExportActiveView.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								</files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Start Visual Studio, open the solution file, and compile the program.</step><step>Start ArcMap and open an ArcMap document.</step><step>Click the Customize menu, and click Customize Mode. The Customize dialog box opens.</step><step>Click the Commands tab, and select the Developer Samples category.</step><step>Drag and drop the Export active view tool icon onto a valid toolbar.</step><step>Click the Export active view button to export the active view.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display>Output</topic_display>
+			<topic_link>230e9f9e-4180-4b8a-a053-278a4618d020</topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Output</tag>
+	<tag>Add-ins</tag></content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>0853199c-416c-4957-9f30-8c6cfa585c90</guid>
+	<content_management>
+		<owner>jere3963</owner>
+		<tech_reviewer>Michael Grossman</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-12-11</langrev_last_updated_date>
+		<langrev_last_updated_time>17:18:16</langrev_last_updated_time>
+		<last_updated_date>2010-01-20</last_updated_date>
+		<last_updated_time>16:38:17</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2010-01-20</last_copyedit_date>
+									<last_copyedit_time>17:09:26</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2010-01-20</edit_date>
+										<edit_time>16:37:52</edit_time>
+										<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Already in the SDK.</div></edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-01-20</edit_date>
+									<edit_time>17:08:48</edit_time>
+									<edit_notes>Changed the min version on the InfoPath form to 10.0.</edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>kyli4140</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

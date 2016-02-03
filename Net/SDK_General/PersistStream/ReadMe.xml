@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.673" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Cloning an object using persistence</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrate an implementation of a clonable object through serialization. Sometimes, when you are writing your objects, you might need to support serialization. For example, a custom symbol or custom element needs to be saved with the map document and reloaded when the map document is opened. In most cases, you can achieve this functionality by implementing the IPersistVariant interface, which gives you an elegant solution. However, in some cases, IPersistVariant is not enough and your object must support IPersisStream, for example, if you need to support cloning through serialization. By temporarily saving your object to an ObjectStream, you can duplicate the object by creating an instance of your class and loading its properties from the temporary ObjectStream. To do so, use an ObjectCopy class (which uses ObjectStream internally). </div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>This sample can only be done in C# (and not in VB.NET). This is because "unsafe" isn't supported in VB.NET, and it is needed here because pointers need to be used with this 3rd party library.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>PeristStreamHelper.cs</filename>
+        <description>Helper class that provides helper methods to read and write objects to the structured stream.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ClonableObj/ClonableObjClass.cs</filename>
+        <description>An implementation of an object that implements IPersistStream using the helper class.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ClonableObj/TestApp/Program.cs</filename>
+        <description>The main entry point for the test application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ClonableObj/TestApp/TestClass.cs</filename>
+        <description>A test class that creates an instance of the clonable object, assigns properties to it, then clones it.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ClonableObj/TestApp/LicenseInitializer.cs</filename>
+        <description>ESRI license initialize class.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution.</step>
+        <step>Build the PeristStreamHelper.csproj, ClonableObj.csproj, and TestApp.csproj projects.</step>
+        <step>Make sure the TestApp.csproj project is set as the startup project (in the Solution Explorer, right-click the project and select Set as StartUp Project).</step>
+        <step>Press F5 to run the test application. A console window appears listing the flow of the test application (note the different messages reporting the state of the original and  cloned objects).</step>
+        <step>When done, press any key to close the application.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Implement IPersistStream in a .NET class</topic_display>
+      <topic_link>http://support.esri.com/index.cfm?fa=knowledgebase.techarticles.articleShow&amp;d=32035</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Implementing persistence</topic_display>
+      <topic_link>f39eb22f-fa51-4fb6-a413-55d33adddcac</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Implementing cloning</topic_display>
+      <topic_link>9915ff7d-f119-47ed-b381-cf7dded5cd93</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Triangle graphic element</topic_display>
+      <topic_link>ca7f7974-a2ec-4ca8-8767-04a6caa575f1</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Clonable object</topic_display>
+      <topic_link>ccdea95b-0685-4127-a140-fcb4680f15fa</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>Cloning</existing_tag>
+    <existing_tag>Persistence</existing_tag>
+  </indexing_tags>
+  <guid>c9c17e3b-7cd5-42b2-8041-d07d1c09d58c</guid>
+  <content_management>
+    <owner>Jianxia Song</owner>
+    <tech_reviewer>Yaron Fine</tech_reviewer>
+    <status>authoring in progress</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-06</last_updated_date>
+    <last_updated_time>11:01:35</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-02-26</last_copyedit_date>
+									<last_copyedit_time>13:35:56</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-02-26</edit_date>
+									<edit_time>13:13:05</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Edited, but returning for the following:</div>
+<ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Only has C# code files. Should it have VB .NET?</li></ul></edit_notes>
+								</editing_section><editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-02-26</edit_date>
+									<edit_time>13:35:42</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Per Jianxia, there is <span>CR#142024 to add VB .NET code. Leaving status set to Authoring in progress. When code is added, resubmit for another edit.</span></div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

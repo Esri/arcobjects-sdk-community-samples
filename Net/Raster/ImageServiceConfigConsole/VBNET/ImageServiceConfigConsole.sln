@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ImageServiceConfigConsole", "ImageServiceConfigConsole.vbproj", "{63CA5F6E-9160-45E2-BEC2-2159E3B1BF2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63CA5F6E-9160-45E2-BEC2-2159E3B1BF2A}.Debug|x86.ActiveCfg = Debug|x86
+		{63CA5F6E-9160-45E2-BEC2-2159E3B1BF2A}.Debug|x86.Build.0 = Debug|x86
+		{63CA5F6E-9160-45E2-BEC2-2159E3B1BF2A}.Release|x86.ActiveCfg = Release|x86
+		{63CA5F6E-9160-45E2-BEC2-2159E3B1BF2A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

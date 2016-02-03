@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.524" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Editing using a custom form</title>
+  <purpose>This sample demonstrates how to hide the complexity of editing in an ArcGIS Engine application by presenting a simple editing interface to users. It also shows how to impose business rules on the editing process by listening to ArcGIS Engine edit events. </purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path>USAMajorHighways\us_lakes</data_path><data_path>USAMajorHighways\usa_major_highways</data_path>
+  </data_paths>
+  <requirements>
+    <requires>Designed to run with a display setting of 96 dots per inch (dpi).</requires>
+    <requires>This sample uses two other samples in the software development kit (SDK): Reshape polyline edit task and Custom vertex editing commands. Ensure that the C# version of these samples is compiled before running this sample.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>MainForm.cs</filename>
+        <description>The main form for the application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditorForm.cs</filename>
+        <description>The form used to provide editing functionality.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditHelper.cs</filename>
+        <description>A helper class that enables communication between the MainForm and the EditorForm.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditCmd.cs</filename>
+        <description>The command that launches the EditorForm.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>MainForm.vb</filename>
+        <description>The main form for the application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditorForm.vb</filename>
+        <description>The form used to provide editing functionality.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditHelper.vb</filename>
+        <description>A helper class that enables communication between the MainForm and the EditorForm.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>EditCmd.vb</filename>
+        <description>The command that launches the EditorForm.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Compile and run the sample.</step>
+        <step>Click the launch editor form command (blue square, white E).</step>
+        <step>Click Edit on the EditorForm to start editing the Highways layer.</step>
+        <step>On the EditorForm, try the Create, Modify, and Reshape tools.</step>
+        <step>Perform an action to intersect a lake, for example, digitize a new road through a lake (the application should not allow you to do this).</step>
+        <step>Try the undo and redo functionality.</step>
+        <step>Click Finish to stop editing (save or discard edits). See the following screen shot:</step>
+      </how_to_use_steps>
+      <how_to_use_pictures>
+        <picture>
+          <image>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</image>
+          <caption>Screen shot of the EditorForm used to edit the Highways layer.</caption>
+        </picture>
+      </how_to_use_pictures>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Applications that allow users to edit data often attempt to simplify the editing process and maintain data integrity through business rules. The following shows how this sample achieves this in an ArcGIS Engine application:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Present a simple user interface (UI) for editing. Users can only edit the Highways layer and do not have to understand what a target layer is, or have to select an appropriate edit task.</li>
+<li>Use out-of-the-box tools and edit tasks. Users can create highways, modify (move, insert, and delete vertices), and reshape highways.</li>
+<li>Impose business rules on the editing process. For demonstration purposes, a hypothetical rule has been created that states highways cannot intersect lakes. </li></ul>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><strong>Presenting a simple UI for editing</strong> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The MainForm form provides viewing capabilities for the application and the EditorForm (shown in the previous screen shot) presents a simple UI dedicated to editing the Highways layer.  </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">To start an edit session, click the E command (EditCmd) on the MainForm, then click Edit in the EditorForm. The target layer is set to Highways using the IEngineEditLayers.SetTargetLayer method. Clicking one of the editing buttons (Create, Modify, and Reshape) adds an appropriate ToolbarControl to the flowLayoutPanel1 and sets the edit task using the IEngineEditor.CurrentTask property. Each ToolbarControl contains out-of-the-box editing commands or sample commands.  </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><strong>Buddying controls hosted on separate forms</strong> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Buddying the ToolbarControls hosted on the EditorForm with the axMapControl1 on the MainForm has been achieved through the use of the EditHelper class.</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>In the MainForm_Load event procedure, the <font size="2">EditHelper</font><font size="2">.TheMainForm property is set to reference the MainForm. This property can be called without an instance of the EditHelper class as it is marked as static. An internal instance of the EditHelper class is created the first time the property is called (acts like a singleton object).</font></li>
+<li>In the EditorForm_Load event procedure, a reference to the MainForm is available through the <font size="2">EditHelper</font><font size="2">.TheMainForm property. The MainForm.MapControl property is then used to return an axMapControl1 reference to the EditorForm.</font> </li></ul>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><strong>Imposing business rules on the editing process</strong> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The EditorForm listens to the IEngineEditEvents.OnSketchModified event to check whether an  edit is valid or invalid. A spatial query is performed in the IsHighWaysEditValid function to determine whether the highway feature being edited intersects the Lakes layer. If the function returns false, the edit is rolled back by calling the IOperationStack.Undo method<font face="Verdana">—</font>an Invalid Edit warning appears on the EditorForm.</div></additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>Sample: Custom reshape polyline edit task</topic_display>
+      <topic_link>15cf41df-7bba-4a52-aa5c-0471f3f6819e</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Custom vertex editing commands</topic_display>
+      <topic_link>8f27dbee-d13f-4de2-b83e-7bc993ac0bc0</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Editing</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>0f75f3f7-7de0-4f21-a009-cb22b0dcbe15</guid>
+  <content_management>
+    <owner>Mike Rudden</owner>
+    <tech_reviewer>Mary Harvey</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2009-11-02</last_updated_date>
+    <last_updated_time>16:57:53</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2009-10-09</last_copyedit_date>
+									<last_copyedit_time>14:43:27</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-10-09</edit_date>
+									<edit_time>14:43:22</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Ready for SDK inclusion.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Has links to topics not in the build.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

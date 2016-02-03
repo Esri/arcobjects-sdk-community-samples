@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Displaying a TOCControl context menu</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Displaying a TOCControl context menu</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample shows how context menus appear when you right-click a TOCControl that has a MapControl as its "buddy." The sample contains a map context menu and a layer context menu that host control commands and custom commands defined within the application.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Load a map document into the MapControl.    </li>
+<li>Right-click a map or layer on the TOCControl to display a context menu.   </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The map context menu contains feature selection and layer visibility commands and appears on the TOCControl when a map item is clicked. The layer context menu contains selection and scale threshold commands and appears when a layer item on the TOCControl is right-clicked.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Each context menu is implemented using the ToolbarMenu coclass. In Form_Load, the AddItem method is used to add custom commands defined within the application to a map ToolbarMenu and a layer ToolbarMenu with their style set. A predefined SelectionMenu is added to the map ToolbarMenu with the AddSubMenu method. The Hook property of each ToolbarMenu is set to the MapControl. The ITOCControl.HitTest method is used in the ITOCControlEvents.OnMouseDown event when right-clicked to determine whether a map or a layer has been clicked. The ITOCControl.SelectItem method is used to select the item that is clicked. The MapControl CustomProperty is set to the resulting layer and is used by the custom commands. The PopupMenu method displays the map's ToolbarMenu or the layer's ToolbarMenu.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Several of the custom command classes, such as the LayerVisibility class, define multiple related command objects by implementing the ICommandSubType interface. For custom commands that are added to the layer's ToolbarMenu to determine which layer to work with, the IMapControl3.CustomProperty property is used. </div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=TOCControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">TOCControl class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=ITOCControl%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ITOCControl interface</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=ToolbarMenu%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ToolbarMenu class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IToolbarMenu%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IToolbarMenu interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DesktopAutomationVB", "DesktopAutomationVB.vbproj", "{6FD09347-4BBA-4FF7-BA30-9FB099D0B947}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FD09347-4BBA-4FF7-BA30-9FB099D0B947}.Debug|x86.ActiveCfg = Debug|x86
+		{6FD09347-4BBA-4FF7-BA30-9FB099D0B947}.Debug|x86.Build.0 = Debug|x86
+		{6FD09347-4BBA-4FF7-BA30-9FB099D0B947}.Release|x86.ActiveCfg = Release|x86
+		{6FD09347-4BBA-4FF7-BA30-9FB099D0B947}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

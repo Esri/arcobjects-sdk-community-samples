@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.524" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Managing snap agents</title>
+  <purpose>This sample demonstrates how to programmatically add, remove, and turn on  <a href="http://esriControls/IEngineSnapAgent.htm" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">IEngineSnapAgent</a> and <a href="http://esriControls/IEngineFeatureSnapAgent.htm" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">IEngineFeatureSnapAgent</a>. These changes are made to  <a href="http://esriControls/IEngineSnapEnvironment.htm" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">IEngineSnapEnvironment</a> and reflected on the Editor's Snap Settings dialog box and the custom Snap Editor form supplied with this sample.</purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>USAMajorHighways/usa_major_highways</data_path>
+  </data_paths>
+  <requirements>
+    <requires>An active edit session</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>Application/EditingForm.cs</filename>
+        <description>The main form, which contains a Map control and basic editing tools.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>Core/SnapSettingsCommand.cs</filename>
+        <description>The command that launches the Snap Editor form.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Core/SnapEditorForm.cs</filename>
+        <description>Shows the snap agents and tolerance set in IEngineSnapEnvironment.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>Application/EditingForm.vb</filename>
+        <description>The main form, which contains a Map control and basic editing tools.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Core/SnapSettingsCommand.vb</filename>
+        <description>The command that launches the Snap Editor form.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Core/SnapEditorForm.vb</filename>
+        <description>Shows the snap agents and tolerance set in IEngineSnapEnvironment.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Build the solution and start the application.</step>
+        <step>Start editing.</step>
+        <step>Click the Snap Settings command to open the Snap Editor form.</step>
+        <step>Use the controls on the Snap Editor form to edit IEngineSnapEnvironment. The IEngineSnapEnvironment settings, shown on the Snap Editor form are reflected on the Snap Settings dialog box. </step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Editing</tag>
+    <tag>Controls</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>544b0b78-e2c3-439e-b1a2-6a7bf0b8d326</guid>
+  <content_management>
+    <owner>Gayle Young</owner>
+    <tech_reviewer>Mary Harvey</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2009-11-02</last_updated_date>
+    <last_updated_time>16:53:09</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2009-10-09</last_copyedit_date>
+									<last_copyedit_time>13:44:26</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-10-09</edit_date>
+									<edit_time>13:44:22</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Ready for SDK inclusion.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

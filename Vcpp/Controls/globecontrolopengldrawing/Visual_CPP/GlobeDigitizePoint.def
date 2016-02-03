@@ -1,0 +1,9 @@
+; GlobeDigitizePoint.def : Declares the module parameters.
+
+LIBRARY      "GlobeDigitizePoint.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer	PRIVATE

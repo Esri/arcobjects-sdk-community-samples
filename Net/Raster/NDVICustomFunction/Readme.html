@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Create an NDVI custom raster function</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Create an NDVI custom raster function</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample shows how to create a custom raster function, its corresponding arguments object and the user interface (UI) for the function by implementing the IRasterFunction and IRasterFunctionArguments interfaces along with additional interfaces. The implemented function is a function that calculates the Normalized Differential Vegetation index (NDVI) for an image given the indexes of the Near Infrared and Red bands. The Function UI can be used to view or modify the parameters of the function. The function editor can be used to add or remove it from a function raster dataset or mosaic dataset. The optional test application provided can be used to apply the custom function to a raster dataset or a mosaic dataset, create a Raster Function template from the custom function, serialize the function template to Extensible Markup Language (XML), and deserialize it back from an XML file.  Note: To be able to serialize a function to and from an XML file, you need to update the XmlSupport.dat file, which is described in this sample topic.  </p>
+
+<h3>Usage</h3>
+
+<h4>Setting up the custom function</h4>
+
+<ol>
+<li>Start Visual Studio and open the solution.  </li>
+<li>Build the NDVICustomFunction and NDVICustomFunctionUI projects.  </li>
+<li>The function can now be used like any of the built-in functions in the system.  </li>
+</ol>
+
+<h4>Updating XmlSupport.dat to serialize functions to and from XML</h4>
+
+<ol>
+<li>Open the XmlSupportSubsetNC.dat file in the TestNDVICustomFunction folder. Copy its contents.  </li>
+<li>Open <Program Files>\ArcGIS\<Desktop Directory>\bin\XmlSupport.dat. This is an XML file containing types that can be serialized to and from an XML file. Create a backup of the file.  </li>
+<li>Paste the contents copied in Step 1 inside the main node of the XML along with the other type entries. Make sure it's between type nodes and not inside one.  </li>
+<li>Save the XMLSupport.dat file.  </li>
+</ol>
+
+<h4>Using the custom function in desktop</h4>
+
+<ol>
+<li>Start ArcMap.  </li>
+<li>Open the raster dataset on which the function is to be applied.  </li>
+<li>Open the Image Analysis window.  </li>
+<li>Select the raster dataset on which the function is to be applied in the topmost section.  </li>
+<li>In ArcGIS 10.0, under the Processing section, click the Clip button, open the properties of the newly created layer, then navigate to the functions tab. The function editor opens. Right-click the Clip function and click Remove.  </li>
+<li>In ArcGIS 10.2 and after, under the Processing section, click the fx button. The function editor opens.  </li>
+<li>Right-click the dataset and open the Insert menu, then click the NDVI Custom function. This opens the NDVI Function UI page, which allows you to set the parameter.  </li>
+<li>Input the band indexes for the NIR and Red bands separated by a space.  </li>
+<li>Click OK.  </li>
+<li>In ArcGIS 10.0, the layer now represents the output of the custom function applied to the raster dataset.  </li>
+<li>In ArcGIS 10.2 and after, a new layer is created that represents the output of the custom function applied to the raster dataset.  </li>
+</ol>
+
+<h4>Using the custom function test application</h4>
+
+<ol>
+<li>Start Visual Studio and open the solution file.  </li>
+<li>Open the TestNDVICustomFunction project.  </li>
+<li>Set the flags to add the NDVI Custom function on top of a raster dataset and a mosaic dataset, to serialize a Raster Function template containing the custom function to an XML file, or to deserialize an XML file back to a function template containing the custom function.  </li>
+<li>Edit the strings in the Specify inputs region to specify the directory and name of the input dataset, the Geodatabase and name of the mosaic dataset, the output directory, the name of the output dataset (including the .afr extension), and the full path to the XML file to write out or read from if needed.   </li>
+<li>Set the parameters for the NDVI Custom function (that is, indexes of the NIR and Red band delimited by spaces).  </li>
+<li>Compile and run the program. If the program succeeds, the console shows a Success message. If an error occurs, it shows on the console window.  </li>
+<li>If adding on top of a raster dataset, load the created output .afr file into an ArcMap or ArcCatalog dataset. An image that represents the output of the custom function applied to the raster dataset appears.  </li>
+<li>If adding on top of a mosaic dataset, load the mosaic dataset to which the custom function was added in ArcMap or ArcCatalog. An image that represents the output of the custom function applied to the raster dataset appears.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+</table>
+
+</body>
+</html>

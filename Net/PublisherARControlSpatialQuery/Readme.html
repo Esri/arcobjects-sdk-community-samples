@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>ArcReaderControl spatial query</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>ArcReaderControl spatial query</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to use the IARMap.QueryARFeatures method to search for visible features intersecting a given envelope using IARSearchDef.  The SetEnvelopeShape method sets the search geometry of the query to the current visual extent of the focus map, and the SpatialRelationship is set to "intersects." This query definition is passed to the QueryARFeatures method to create an ARFeatureSet. Features are accessed from ARFeatureSet using the Next method and the ARFeature property. The FieldAliasName and Value of each field is displayed if the loaded document was published with permission to query values.  The ZoomTo, CenterAt, Flash, and Flicker methods are used to identify each feature on the map.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio, open the solution file, and build the project.  </li>
+<li>Run the application.   </li>
+<li>Browse to a Published Map File (PMF) from ArcMap to load.   </li>
+<li>Navigate to some features of interest.  </li>
+<li>Query the focus map for all visible features within the current map extent.  </li>
+<li>Loop through the features to display field values, and use the PanTo, ZoomTo, Flash, and Flicker buttons to identify each feature on the map.   </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic: Publisher </td><td> ArcReader </td></tr>  
+<tr><td> ArcGIS for Desktop Standard: Publisher </td><td> Engine </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced: Publisher </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

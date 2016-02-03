@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Visualizing the camera path while animating</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Visualizing the camera path while animating</h2>
+
+<h3>Purpose</h3>
+
+<p>This add-in sample allows you to generate and visualize the trace back path the camera follows in a GlobeCamera animation. The path is created using three-dimensional (3D) graphic elements. The sample allows the placement of graphics (at the camera positions) as the number of graphic elements created per second or by setting the maximum number of elements created between keyframe positions. This is useful to visualize the camera's location at a time duration without playing or previewing the animation—for example, to generate the flight path of an animation you created by recording the navigation (using the Navigate tool, Fly tool, and so on). Also, the GlobeCamera keyframes have a different color than the intermediate camera positions.  There is also the option to generate graphics for the "Camera to target" direction at each of the camera positions. By visualizing this information, users can make changes to their keyframe attributes resulting in better and fine tuned animations.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio, open the solution, and build the project.  </li>
+<li>Open the ArcGlobe application in design mode.  </li>
+<li>Click the Customize menu and click Customize Mode. The Customize dialog box opens.   </li>
+<li>Choose the Add-In Controls category.  </li>
+<li>Drag the Visualize Camera Path command from the Command Items pane onto a toolbar.  </li>
+<li>Run the application and create an animation.  </li>
+<li>Click the command.  </li>
+<li>Make your choices on the form and play the animation or generate the camera path.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic: 3D Analyst </td><td> ArcGIS for Desktop Basic: 3D Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Standard: 3D Analyst </td><td> ArcGIS for Desktop Standard: 3D Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced: 3D Analyst </td><td> ArcGIS for Desktop Advanced: 3D Analyst </td></tr>  
+</table>
+
+</body>
+</html>

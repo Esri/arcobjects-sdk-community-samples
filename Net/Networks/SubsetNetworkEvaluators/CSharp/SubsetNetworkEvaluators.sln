@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsetNetworkEvaluators", "SubsetNetworkEvaluators\SubsetNetworkEvaluators.csproj", "{582A9018-17C2-427B-8948-1454FEB82C1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsetNetworkEvaluatorsUI", "SubsetNetworkEvaluatorsUI\SubsetNetworkEvaluatorsUI.csproj", "{50900E76-B6B1-434C-B0F1-F0A76699DDFA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{582A9018-17C2-427B-8948-1454FEB82C1B} = {582A9018-17C2-427B-8948-1454FEB82C1B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{582A9018-17C2-427B-8948-1454FEB82C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582A9018-17C2-427B-8948-1454FEB82C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582A9018-17C2-427B-8948-1454FEB82C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582A9018-17C2-427B-8948-1454FEB82C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50900E76-B6B1-434C-B0F1-F0A76699DDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50900E76-B6B1-434C-B0F1-F0A76699DDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50900E76-B6B1-434C-B0F1-F0A76699DDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50900E76-B6B1-434C-B0F1-F0A76699DDFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

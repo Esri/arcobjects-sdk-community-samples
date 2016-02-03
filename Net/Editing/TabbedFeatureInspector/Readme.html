@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Tabbed feature inspector</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tabbed feature inspector</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to create a custom object inspector. Custom object inspectors allow you to control the information that's returned to the user when selected features are inspected. The custom inspector calculates and reports the area and perimeter for the selected polygons, length, and coordinates for selected lines and points. It also reports the total number of selected features.  The custom information is shown in the second panel of a tabbed control. The first panel of the control shows the standard information for the feature. A command button is also created for the extension classid value to be added to the feature class so it can recognize the extension.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio, open the solution file, and build the project.   </li>
+<li>Register the sample with ESRIRegAsm.exe.  </li>
+<li>Start ArcMap and add the Editor toolbar.   </li>
+<li>Click the Customize menu, click Customize Mode, and click the Commands tab.  </li>
+<li>Under Categories, scroll down, and click Developer Samples.  </li>
+<li>Under Commands, select the AddEXTCLSID command, and drag it to an available toolbar.   </li>
+<li>Click the command, browse to the personal or file geodatabase feature class you want to use, and click Add.  </li>
+<li>Load the feature class you selected with the AddEXTCLSID command onto the map.   </li>
+<li>Start an edit session and use the Edit tool to select several features.  </li>
+<li>Click the Attributes tool on the Editor toolbar. The Attributes dialog box opens. The custom inspector appears in the right-hand window of the Attributes dialog box whenever you inspect features belonging to the customized feature class. The default feature inspector shows for features belonging to any other feature class added to the map.  </li>
+<li>Click a single feature ID (FID) in the tree view; its properties are reported.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

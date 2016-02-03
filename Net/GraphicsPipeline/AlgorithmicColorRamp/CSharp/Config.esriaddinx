@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>AlgorithmicColorRampCS</Name>
+  <AddInID>{e054523a-91c2-47fc-9155-ea3d13705a65}</AddInID>
+  <Description>Creates an AlgorithmicColorRamp which is then applied to a ClassBreaksRenderer (catagories).</Description>
+  <Version>1.0</Version>
+  <Image>Images\AlgorithmicColorRamp2008.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>12/15/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="AlgorithmicColorRampCS.dll" namespace="AlgorithmicColorRamp">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_AlgorithmicColorRamp_CS" class="AlgorithmicColorRamp" message="Creates an AlgorithmicColorRamp which is then applied to a ClassBreaksRenderer (catagories)." caption="C# AlgorithmicColorRamp to color a ClassBreaksRenderer" tip="Set AlgorithmicColorRamp onto ClassBreaksRenderer" category="Developer Samples" image="Images\AlgorithmicColorRamp2008.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>CustomReportVBNET</Name>
+  <AddInID>{6f3823d1-4c8f-4025-b8dc-f2b21d61f35b}</AddInID>
+  <Description>This sample shows of how to use ArcObjects' interfaces to build a report.</Description>
+  <Version>1.0</Version>
+  <Image>Images\CustomReportVBNET.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>9/14/2010</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="CustomReportVBNET.dll" namespace="CustomReportVBNET">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_CustomReportVBNET_GenerateReport" class="GenerateReport" message="Generate a report based on user's preference" caption="Generate a report VBNET" tip="Generate a report VBNET" category="Add-In Controls" image="Images\GenerateReport.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

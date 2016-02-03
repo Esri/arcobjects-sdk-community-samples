@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.923" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Create a custom selection extension by extending ArcObjects</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates how to create ArcGIS for Desktop user interface (UI) components by extending ArcObjects. The sample is based on a selection theme, but it also shows multiple ArcObjects components working together. It contains an extension, a dockview, a toolbar with a combo box, a tool palette, a multiItem, several buttons and tools, and a menu. The sample also has several event handlers.</div></purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>SelectByLineTool.cs</filename>
+				<description>Selection tool.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>SelectionCountDockWin.cs</filename>
+									<description>Dockable window reporting the count of selected features.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>ToggleDockWinBtn.cs</filename>
+									<description>Button to toggle the dockable window.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>SelectionExtension.cs</filename>
+									<description>Main extension.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>SelectionMenu.cs</filename>
+									<description>Menu containing selection commands.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>SelectionTargetComboBox.cs</filename>
+									<description>Combo box containing target layers.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>SelectionToolbar.cs</filename>
+									<description>Main toolbar.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>SelectionToolPalette.cs</filename>
+									<description>Tool palette containing a set of selection tools.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>SelectionZoomToLayerMenu.cs</filename>
+									<description>Menu containing the multiItem.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>ZoomToLayerMultiItem.cs</filename>
+									<description>MultiItem containing layers.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>SelectByLineTool.vb</filename>
+										<description>Selection tool.</description>
+										<viewable_code>false</viewable_code>
+									</file>
+								<file>
+									<filename>SelectionCountDockWin.vb</filename>
+									<description>Dockable window reporting the count of selected features.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+									<filename>ToggleDockWinBtn.vb</filename>
+									<description>Button to toggle the dockable window.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+									<filename>SelectionExtension.vb</filename>
+									<description>Main extension.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+									<filename>SelectionMenu.vb</filename>
+									<description>Menu containing selection commands.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+									<filename>SelectionTargetComboBox.vb</filename>
+									<description>Combo box containing target layers.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+									<filename>SelectionToolbar.vb</filename>
+									<description>Main tool bar.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+									<filename>SelectionToolPalette.vb</filename>
+									<description>Tool palette containing a set of selection tools.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+									<filename>SelectionZoomToLayerMenu.vb</filename>
+									<description>Menu containing the multiItem.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+									<filename>ZoomToLayerMultiItem.vb</filename>
+									<description>MultiItem containing layers.</description>
+									<viewable_code>false</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Build the solution.</step><step>Start ArcMap and add some data.</step><step>Click the Customize menu, select Toolbars, and click the Selection COM toolbar.</step><step>Click the Customize menu and click Extensions. The Extensions dialog box appears.</step><step>Select the Selection Sample Extension option.</step><step>Use the toggle button to show the dockable window.</step><step>Make a selection using one of the tools.</step><step>Optionally, use the combo box to choose target selection layers.</step><step>Optionally, click the Zoom to layer menu to zoom to a selected layer.</step><step>The dockable window will report the selected features count.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Application Framework</tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>db2177fe-b97f-446e-91cb-25cd4051bce4</guid>
+	<content_management>
+		<owner>Xiaoling Yang</owner>
+		<tech_reviewer>Steve van esch</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-12-17</langrev_last_updated_date>
+		<langrev_last_updated_time>13:28:02</langrev_last_updated_time>
+		<last_updated_date>2012-03-16</last_updated_date>
+		<last_updated_time>17:22:26</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2012-03-16</last_copyedit_date>
+									<last_copyedit_time>17:23:09</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2009-12-30</edit_date>
+										<edit_time>11:19:42</edit_time>
+										<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Changed the title from Custom selection extension by extending ArcObjects to Create a custom selection extension by extending ArcObjects.</li>
+<li>SDK inclusion requested.</li></ul></edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2012-03-16</edit_date>
+									<edit_time>17:22:59</edit_time>
+									<edit_notes>10.2 product name changes update.</edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>linn</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

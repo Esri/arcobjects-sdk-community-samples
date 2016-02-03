@@ -1,0 +1,25 @@
+HKCR
+{
+	Tree.TreeFeature.1 = s 'TreeFeature Class'
+	{
+		CLSID = s '{D52B8F3E-1B1F-11D6-8A9D-00104BB6FCCB}'
+	}
+	Tree.TreeFeature = s 'TreeFeature Class'
+	{
+		CLSID = s '{D52B8F3E-1B1F-11D6-8A9D-00104BB6FCCB}'
+		CurVer = s 'Tree.TreeFeature.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D52B8F3E-1B1F-11D6-8A9D-00104BB6FCCB} = s 'TreeFeature Class'
+		{
+			ProgID = s 'Tree.TreeFeature.1'
+			VersionIndependentProgID = s 'Tree.TreeFeature'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{D52B8F31-1B1F-11D6-8A9D-00104BB6FCCB}'
+		}
+	}
+}

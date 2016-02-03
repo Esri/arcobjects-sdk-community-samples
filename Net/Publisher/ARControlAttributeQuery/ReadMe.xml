@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.780" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>ArcReaderControl attribute query</title>
+  <purpose>This sample shows how to query the field attribute values of a layer in a Published Map File (PMF) that has been loaded into the ReaderControl. </purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Publisher</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Publisher</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Publisher</extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcReader</name>
+      <extension>
+      </extension>
+    </license>
+  <license>
+									<name>Engine</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="VBNet">
+      <file>
+        <filename>AttributeQuery.vb</filename>
+        <description>Form file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AssemblyInfo.vb</filename>
+        <description>Assembly information.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="CSharp">
+      <file>
+        <filename>AttributeQuery.cs</filename>
+        <description>Form file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the .solution file, and build the project.</step>
+        <step>Run the application. </step>
+        <step>Browse to a PMF (published from ArcMap) to load. </step>
+        <step>Select a layer to search. </step>
+        <step>Select the type of field to search.</step>
+        <step>Select the actual field to search.</step>
+        <step>Enter a threshold value and click Query. </step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information>A simple interface allows you to specify query criteria based on an ARLayer, FieldName, operator, and value. All searchable layers in the map are stored in a Collection or Dictionary object (the Dictionary object in the Visual Basic sample requires a Microsoft Scripting Runtime reference). The Collection or Dictionary object is used to populate a combo box with the ARLayer.Name of the searchable layers. You can select a field to query from the combo box. All fields in the PMF, even those hidden by the publisher in the original map document, will be listed in the combo box. The operators available for use in the query are dependent on IARFeature.FieldType (for example, a greater than operator cannot be used when querying a string FieldType).<br xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"/><br xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"/>When you click the Query button, two WhereClause strings are constructed; one selects features that meet the criteria and one selects features that fail the criteria. The WhereClause strings are properties of an ARSearchDef object. ARSearchDef is used with the IARLayer.QueryARFeatures method to return two ARFeatureSet objects. One ARFeatureSet object meets the criteria and one ARFeatureSet object fails the criteria. The nonspatial field attribute information for each ARFeatureSet object is displayed in tabular format in Microsoft FlexGrids using the IARFeature.Value property. For this reason, this sample may be of interest if you are implementing attribute table functionality with the ReaderControl. Each ARFeatureSet can be flashed, zoomed, and centered using the IARFeatureSet.Flash, IARFeatureSet.ZoomTo, and IARFeature.CenterAt methods, respectively.</additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Publisher</tag>
+  </content_area_tags>
+  <guid>3822c790-97fe-41d0-977b-660488e15dee</guid>
+  <content_management>
+    <owner>Mark Bockenhauer</owner>
+    <tech_reviewer>Shelly Gill</tech_reviewer>
+    <status>copyediting requested</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-08-18</last_updated_date>
+    <last_updated_time>12:57:39</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-03-08</last_copyedit_date>
+									<last_copyedit_time>14:44:46</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-03-08</edit_date>
+									<edit_time>14:44:21</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>gyoung</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

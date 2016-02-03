@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Time Series Graph tool add-in</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Time Series Graph tool add-in</h2>
+
+<h3>Purpose</h3>
+
+<p>The Time Series Graph tool builds a line graph from a point feature layer according to different time values. The layer contains multiple measurements for a set of seven gages. Each measurement has its own stream flow value, date and time, and gage ID attributes associated with it. When you click a feature point (gage station) using the Time Series Graph tool, the tool identifies the point and finds the gage ID. All the measurements from this point for this gage ID are used in making a graph based on a graph template. If there is an existing open graph window, the tool creates the graph series in this window. If there is no open graph window, the tool creates the graph series in a new graph window.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open the solution file in Visual Studio and build the project.   </li>
+<li>Start ArcMap, click the Customize drop-down menu, and click Customize Mode. The Customize dialog box appears.  </li>
+<li>Click the Commands tab, scroll to Add-in Controls in the categories list, and drag the Time Series Graph tool to a toolbar in ArcMap.   </li>
+<li>Move the timeseries.tee file from the sample folder to the <your ArcGIS for Desktop install location>/GraphTemplates folder.  </li>
+<li>Add the TimeSerTool.lyr to ArcMap.   </li>
+<li>Select the Time Series Graph tool and click the point (gage station). A line graph is drawn in a new graph window.   </li>
+<li>To add lines to the same graph, keep the graph window open, and a new line is added into it. To draw lines on a new graph, close the graph window, and a new line is drawn in a separate graph window.   </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

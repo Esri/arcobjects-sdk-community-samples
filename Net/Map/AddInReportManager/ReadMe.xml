@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.824" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Generate a report</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample shows how to create a report using a selected template. The user is given a set of templates to choose from. The selected report template is then exported to a Portable Document Format (PDF) file. The templates are set to use the data included in the software development kit (SDK) installation.</div></purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name></name>
+			<extension></extension>
+		</license>
+	</deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.2</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path>California/California.gdb</data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>GenerateReport.cs</filename>
+				<description>The class file that launches the ExportReport form.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>ExportReport.cs</filename>
+									<description>The form the user interacts with. It allows the user to choose the report to export.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>GenerateReport.vb</filename>
+										<description>The class file that launches the ExportReport form.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>ExportReport.vb</filename>
+									<description>The form the user interacts with. It allows the user to choose the report to export.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Start Visual Studio and build the solution.</step><step>Start ArcMap. Click the Customize menu.</step><step>Select Add-In Manager. Ensure that Custom Report Add-Ins is installed.</step><step>Click Customize.</step><step>Click the Commands tab. Under the Categories panel, browse to Add-In Controls. </step><step>Click and drag the "Generate a report" button to ArcMap's toolbar from the Commands panel.</step><step>Add the Counties layer to the table of contents (TOC) in ArcMap. The layer path is located at ArcGIS data sample location (that is, C:\Program Files (x86)\ArcGIS\DeveloperKit10.2\Samples\data\California).</step><step>Click the "Generate a report" button.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display>How to register COM components </topic_display>
+			<topic_link>8ec382ff-a019-4f22-8057-c5b075c99b95</topic_link>
+		</topic>
+	<topic>
+									<topic_display>Working with reports</topic_display>
+									<topic_link>e9ee6727-a00d-47cb-8445-df7a33beadc1</topic_link>
+								</topic></related_topics>
+	<content_area_tags>
+		<tag></tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>67d1069a-52ad-4e06-99cd-64847098aef1</guid>
+	<content_management>
+		<owner>Bobby Pohan</owner>
+		<tech_reviewer>Kent Marten</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2010-09-14</langrev_last_updated_date>
+		<langrev_last_updated_time>13:48:00</langrev_last_updated_time>
+		<last_updated_date>2010-09-28</last_updated_date>
+		<last_updated_time>13:35:49</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2010-09-17</last_copyedit_date>
+									<last_copyedit_time>11:01:57</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>mine3384</editor_name>
+										<edit_date>2010-09-17</edit_date>
+										<edit_time>11:01:56</edit_time>
+										<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml">
+<li>Changed title from "Generate a Report" to "Generate a report." See (<a href="http://devinfo/sites/sdk/shared%20documents/styleguide.aspx#headings_capitalizing">http://devinfo/sites/sdk/shared%20documents/styleguide.aspx#headings_capitalizing</a>) in the style guide.</li></ul></edit_notes>
+									</editing_section>
+								</edits></content_management>
+	<current_user>kyli4140</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

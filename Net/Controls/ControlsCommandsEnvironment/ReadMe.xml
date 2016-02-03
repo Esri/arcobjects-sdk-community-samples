@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.706" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Controls commands environment</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates changing the symbols used by the out-of-the-box New Marker, Line, Freehand, Rectangle, and Polygon element tools. By default, these tools use a black symbol (and a yellow fill where appropriate). The default symbols can be changed by updating the properties of the CommandsEnvironment singleton object. The sample uses the SymbologyControl in conjunction with the PageLayoutControl, ToolbarControl, and the controls commands. The properties on the IGraphicProperties interface are used by the controls commands to manage default symbology.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample has been developed on a machine with a display screen resolution of 96 dots per inch (dpi). This sample also contains code that will correctly scale the ArcGIS Engine controls when run at a resolution of 120 dpi. This issue is discussed in detail in the <a href="http://6cebc1d9-2318-472e-923a-13e13b1a8e45">Workaround for controls display issues in 96 versus 120 dpi</a> topic. </div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>CommandsEnvironment.cs</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>CommandsEnvironment.vb</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Load a map document into the PageLayoutControl.</step>
+        <step>Add elements to the display using the commands on the ToolbarControl.</step>
+        <step>Right-click the display to add a text element containing today's date.</step>
+        <step>Change the application default symbol properties using the combo box and the items displayed in the SymbologyControl.</step><step>Repeat steps 2 and 4 if desired.</step>
+        
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The LoadStyleFile method is used within the Form_Load event to add the contents of ESRI.ServerStyle into the SymbologyControl. A new ServerStyleGalleryItem is created with its name set to myStyle and its item set to the MarkerSymbol, LineSymbol, FillSymbol, and TextSymbol properties on the IGraphicProperties interface. ServerStyleGalleryItem is added to the appropriate StyleClass using the ISymbologyStyleClass.AddItem method.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">A combo box is populated with marker, line, fill, and text symbol items. The SelectedIndexChanged event of the combo box is used to set the type of items displayed in the SymbologyControl using the StyleClass property. Clicking an item displayed in the SymbologyControl fires OnItemSelectedEvent. The IStyleGalleryItem.Item property is used to determine whether the item implements IMarkerSymbol, ILineSymbol, IFillSymbol, or ITextSymbol; and either the MarkerSymbol, LineSymbol, FillSymbol, or TextSymbol property on the IGraphicProperties interface is set.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The IPageLayoutControlEvents.OnMouseDown event is used to create a new TextElement. The Text property is set to today's date and the Symbol property is set to IGraphicsProperties.TextSymbol. The element is added to the GraphicsContainer using the IPageLayoutControl.AddElement method.</div></additional_information><related_topics>
+    <topic>
+      <topic_display>CommandsEnvironment class</topic_display>
+      <topic_link>esriControls/CommandsEnvironment.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IGraphicProperties interface</topic_display>
+      <topic_link>esriControls/IGraphicProperties.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Workaround for controls display issues in 96 versus 120 dpi</topic_display>
+      <topic_link>6cebc1d9-2318-472e-923a-13e13b1a8e45</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <guid>E20E1DAE-157A-4f51-BBC5-A01A412691DA</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-05-10</last_updated_date>
+    <last_updated_time>18:00:28</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-05-10</last_copyedit_date>
+									<last_copyedit_time>18:02:36</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-05-10</edit_date>
+									<edit_time>18:02:19</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

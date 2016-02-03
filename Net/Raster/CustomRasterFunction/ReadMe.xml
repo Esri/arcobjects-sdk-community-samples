@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.896" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Create a custom raster function</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample shows how to create a custom raster function, its corresponding arguments object and the user interface (UI) for the function by implementing the IRasterFunction and IRasterFunctionArguments interfaces along with additional interfaces. The implemented function is a watermark function that uses GDI+ to read a small watermark image and blend it with the raster to which it is applied.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">The Function UI can be used to view or modify the parameters of the function. The function editor can be used to add or remove it from a function raster dataset or mosaic dataset. The optional test application provided can be used to apply the custom function to a raster dataset or a mosaic dataset, create a Raster Function template from the custom function, serialize the function template to Extensible Markup Language (XML), and deserialize it back from an XML file. </div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">Note: To serialize a function to and from an XML file, you need to update the XmlSupport.dat file, which is described in this sample topic.</div></purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine Developer Kit</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>WatermarkFunction\WatermarkFunction.cs</filename>
+				<description>Source file that implements the custom raster function.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>WatermarkFunctionUI\WatermarkFunctionUIClass.cs</filename>
+									<description>Source file that implements the custom raster function UI.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>TestWatermarkFunction\TestWatermarkFunction.cs</filename>
+									<description>Source file for the test application that can be used to apply the custom function to a raster dataset or a mosaic dataset.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>WatermarkFunction\WatermarkFunction.vb</filename>
+										<description>Source file that implements the custom raster function.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>WatermarkFunctionUI\WatermarkFunctionUIClass.vb</filename>
+									<description>Source file that implements the custom raster function UI.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>TestWatermarkFunction\TestWatermarkFunction.vb</filename>
+									<description>Source file for the test application that can be used to apply the custom function to a raster dataset or a mosaic dataset.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+									<title>Setting up the custom function</title>
+									<how_to_use_steps>
+										<step>Start Visual Studio and open the solution.</step><step>Build the WatermarkFunction and WatermarkFunctionUI projects.</step><step>The function can now be used like any of the built-in functions in the system.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Updating XmlSupport.dat to be able to serialize functions to and from xml</title>
+									<how_to_use_steps>
+										<step>Open the XmlSupportSubsetWM.dat file in the TestWatermarkFunction folder. Copy its contents.</step><step>Open &lt;Program Files&gt;\ArcGIS\&lt;Desktop Directory&gt;\bin\XmlSupport.dat. This is an XML file containing types that can be serialized to and from an XML file. Create a backup of the file.</step><step>Paste the contents copied in Step 1 inside the main node of the XML file along with the other type entries. Make sure it's between type nodes and not inside one.</step><step>Save the XMLSupport.dat file.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Using the custom function in desktop</title>
+									<how_to_use_steps>
+										<step>Start ArcMap.</step><step>Open the raster dataset on which the function is to be applied.</step><step>Open the Image Analysis window.</step><step>Select the raster dataset on which the function is to be applied in the topmost section.</step><step>In ArcGIS 10.0, under the Processing section, click the Clip button, open the properties of the newly created layer, then navigate to the functions tab. The function editor opens. Right-click the Clip function and click Remove.</step><step>In ArcGIS 10.2 and after, under the Processing section click the fx button. The function editor opens.</step><step>Right-click the dataset, open the Insert menu, and click the NDVI Custom function. This opens the Watermark Function UI page, which allows you to set parameters.</step><step>Input the location of the watermark, the path to the watermark image, and the blend percentage.</step><step>Click OK.</step><step>In ArcGIS 10.0, the layer now represents the output of the custom function applied to the raster dataset.</step><step>In ArcGIS 10.2 and after, a new layer is created that represents the output of the custom function applied to the raster dataset.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+			<title>Using the custom function test application</title>
+			<how_to_use_steps>
+				<step>Start Visual Studio and open the solution file.</step><step>Open the TestWatermarkFunction project.</step><step>Set the flags to add the Watermark function on top of a raster dataset and a mosaic dataset, to serialize a raster function template containing the custom function to an XML file, or to deserialize an XML file back to a function template containing the custom function.</step><step>Edit the strings in the Specify inputs region to specify the directory and name of the input dataset, the Geodatabase and name of the mosaic dataset, the output directory, the name of the output dataset (including the .afr extension), and the full path to the XML file to write out or read from if needed. </step><step>Set the parameters for the Watermark Custom function (that is, the location of the watermark, the path to the watermark image and the blending percentage).</step><step>Compile and run the program. If the program succeeds, the console shows a Success message. If an error occurs, it shows on the console window.</step><step>If adding on top of a raster dataset, load the created output .afr file into an ArcMap or ArcCatalog dataset. An image that represents the output of the custom function applied to the raster dataset appears.</step><step>If adding on top of a mosaic dataset, load the mosaic dataset to which the custom function was added in ArcMap or ArcCatalog. An image that represents the output of the custom function applied to the raster dataset appears.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Rasters</tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag>Raster function</existing_tag>
+	</indexing_tags>
+	<guid>e10d5da4-297f-4ebb-a1c3-91afc8b05f17</guid>
+	<content_management>
+		<owner>pras4765</owner>
+		<tech_reviewer>Hong Xu</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>true</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<last_updated_date>2011-11-21</last_updated_date>
+		<last_updated_time>14:42:10</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2011-11-21</last_copyedit_date>
+									<last_copyedit_time>14:43:34</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2009-12-07</edit_date>
+										<edit_time>11:13:02</edit_time>
+										<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div></edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2011-11-21</edit_date>
+									<edit_time>14:43:40</edit_time>
+									<edit_notes>Edited. Already included in the SDK.</edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>mine3384</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

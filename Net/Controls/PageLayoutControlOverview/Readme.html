@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Use a PageLayoutControl as an overview window</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Use a PageLayoutControl as an overview window</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample application contains two PageLayoutControls and shows how to use one to view the visible extent of the other.    </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Click the Load button and browse to a map document to load into the PageLayoutControl.   </li>
+<li>Click to zoom in and right-click to pan the main PageLayoutControl. View the visible extent on the other PageLayoutControl.   </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The Browse dialog box allows you to search and select map documents that are validated and loaded into the main PageLayoutControl, triggering the OnPageLayoutReplaced event. The OnPageLayoutReplaced event determines the MxPath property of the main PageLayoutControl and uses it to load the same document into the second PageLayoutControl with the LoadMxFile method.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The OnExtentUpdated event is triggered when you zoom in on the main PageLayoutControl. The event uses the AddElement method to add an element displaying the visible extent of the main PageLayoutControl on the second PageLayoutControl. Any previous elements on the second PageLayoutControl are found using the FindElementByName method and are deleted from the GraphicsContainer. The Refresh method is used to refresh the graphics to reflect the changes. </div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=PageLayoutControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">PageLayoutControl class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IPageLayoutControl%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IPageLayoutControl interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

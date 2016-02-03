@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ExtentView_CS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files (x86)\ArcGIS\DeveloperKit10.2\Samples\data\World</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

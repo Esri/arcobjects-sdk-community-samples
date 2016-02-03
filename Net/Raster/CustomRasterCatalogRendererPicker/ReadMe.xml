@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" productVersion="12.0.0" solutionVersion="9.4.0.570" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Create a custom default raster catalog renderer</title>
+	<purpose>This sample shows how to customize the default raster catalog renderer. This sample sets two available renderers<font face="Verdana" xmlns="http://www.w3.org/1999/xhtml">—the </font>RGB and stretch renderers<font face="Verdana" xmlns="http://www.w3.org/1999/xhtml">—</font>then displays the single band raster datasets with a defined stretch renderer and multiple band raster datasets with a defined RGB renderer.</purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine Developer Kit</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>9.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>CustomRasterCatalogRenderer_CSharp.cs</filename>
+				<description>Source file that implements the raster catalog renderer picker class.</description>
+				<viewable_code>false</viewable_code>
+			</file>
+		</files>
+	<files lang="VBNet">
+									<file>
+										<filename>CustomRasterCatalogRenderer_VBNET.vb</filename>
+										<description>Source file that implements the raster catalog renderer picker class.</description>
+										<viewable_code>false</viewable_code>
+									</file>
+								</files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Start Visual Studio, open the solution file, and compile the program. A dynamic-link library (DLL) file is generated and registered in the ESRI RasterCatalogRendererPickers component category.</step><step>Run category.exe from the ArcGIS bin directory to confirm that the custom DLL was added to that category.</step><step>Start ArcMap and add a raster catalog with multiple bands (&gt; 4) or single band raster datasets to test.</step><step>To return to the ArcGIS built-in default renderer for raster catalogs, use the esriregasm.exe utility from the Program Files\Common Files\ArcGIS\bin folder to unregister the DLL.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Rasters</tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>60b6bc62-2200-4837-8df5-508bf57ea8c0</guid>
+	<content_management>
+		<owner>hong2734</owner>
+		<tech_reviewer>Robert Berger</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-12-16</langrev_last_updated_date>
+		<langrev_last_updated_time>12:24:31</langrev_last_updated_time>
+		<last_updated_date>2010-01-19</last_updated_date>
+		<last_updated_time>15:33:38</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2010-01-20</last_copyedit_date>
+									<last_copyedit_time>11:13:21</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2010-01-19</edit_date>
+										<edit_time>15:09:07</edit_time>
+										<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li xmlns="http://www.w3.org/1999/xhtml">Edited.</li>
+<li xmlns="http://www.w3.org/1999/xhtml">Author needs to add VB .NET code file before SDK inclusion.</li></ul></edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-01-20</edit_date>
+									<edit_time>11:12:28</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Confirmed VB .NET code was added.</li>
+<li>Already included in the SDK.</li></ul></edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>linn</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

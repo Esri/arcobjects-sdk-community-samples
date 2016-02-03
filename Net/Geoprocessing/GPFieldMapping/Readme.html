@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Geoprocessing field mapping</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Geoprocessing field mapping</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to set up field mapping for tools such as Merge, Table to Table, Feature Class to Feature Class, and Append.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Provide local data. You need to update the code to reference your dataset and its fields. You also need to update the path to the output table to the location where you want it created.  </li>
+<li>Compile and run the project.   </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">In this sample, a table containing United States (U.S.) census data is converted to a new table. One of the input attributes in the input table is a text field, STFID. This 15-digit value is a unique identifier for all census blocks for the U.S. The value can be broken into four components. The first two digits provide the state code, the next three indicate the county, the following six identify the census tract, and the last four identify the census block.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The value 360899912001006 represents the census block (1006) containing the State University of New York at Potsdam in upstate New York (36), in census tract 991200 of the county of St. Lawrence (089). This sample converts this table and also creates a field, TRACTID, because the input data only has the STFID attribute. To do this, the GPFieldMapping object is initialized using the AddTable method to enter the input table. The default IGPFieldMapping object is then modified by creating an IGPFieldMap object, populating its properties, and adding them to the IGPFieldMapping object. </div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Mapping%20fields&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Mapping fields</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+</table>
+
+</body>
+</html>

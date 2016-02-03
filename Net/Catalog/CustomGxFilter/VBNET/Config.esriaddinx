@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>CustomGxFilterVBNET</Name>
+  <AddInID>{b7ea45c8-659c-4781-a200-c4e4f9d5f3ec}</AddInID>
+  <Description>This sample code demonstrates how to create a custom object filter in ArcCatalog and use it through a custom command to select a *.py (Python file). In order to browse for a file type not supported by ArcCatalog by default, an entry must be added to the file filter list. The code also shows how to check for the file type in the filter and add it to the list if necessary.</Description>
+  <Version>1.0</Version>
+  <Image>Images\CustomGxFilterVBNET.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>9/1/2010</Date>
+  <Targets>
+    <Target name="Desktop" version="10.3" />
+  </Targets>
+  <AddIn language="CLR" library="CustomGxFilterVBNET.dll" namespace="CustomGxFilterVBNET">
+    <ArcCatalog>
+      <Commands>
+        <Button id="ESRI_CustomGxFilterVBNET_CustomCommand" class="CustomCommand" message="This sample code demonstrates how to create a custom object filter in ArcCatalog and use it through a custom command to select a *.py (Python file). " caption="Add python file" tip="Add python file" category="Add-In Controls" image="Images\CustomCommand.png" />
+      </Commands>
+    </ArcCatalog>
+  </AddIn>
+</ESRI.Configuration>

@@ -1,0 +1,21 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>LoadNetworkLayerFromActiveAnalysisToTOC</Name>
+  <AddInID>{818bce22-0b65-4880-8a4e-583c874260d8}</AddInID>
+  <Description>Load the Network Layer from the Active Analysis Layer to the TOC - VBNET</Description>
+  <Version>1.0</Version>
+  <Image>Images\AddNetworkLayer.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>8/26/2009 12:23:12 PM</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="LoadNetworkLayerFromActiveAnalysisToTOC.dll" namespace="LoadNetworkLayerFromActiveAnalysisToTOC">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_LoadNetworkLayerFromActiveAnalysisToTOC_LoadNetworkLayerFromActiveAnalysisToTOC" class="LoadNetworkLayerFromActiveAnalysisToTOC" tip="Load the Network Layer from the Active Analysis Layer to the TOC - VBNET" message="Load the Network Layer from the Active Analysis Layer to the TOC - VBNET" caption="Load the Network Layer from the Active Analysis Layer to the TOC - VBNET" category="Network Analyst" image="Images\AddNetworkLayer.png">
+        </Button>
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

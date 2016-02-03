@@ -1,0 +1,44 @@
+##Load network layer from active analysis to the table of contents
+
+###Purpose  
+Network analysis layers can be opened in ArcMap without loading their corresponding network layer. This add-in interrogates a network analysis layer to determine its associated network dataset, then the network dataset is loaded to the map as a network layer.  
+
+
+###Usage
+1. Start Visual Studio and open the solution.  
+1. Compile the solution.  
+1. Start ArcMap.  
+1. Click Customize, then Customize Mode.  
+1. Click the Commands tab.  
+1. Scroll down to Network Analyst.  
+1. Drag the command onto the Network Analyst toolbar.  
+1. Load a network analysis layer to the map.  
+1. Click the command button to load the network layer.  
+
+
+
+
+
+
+
+####See Also  
+[Programming with ArcGIS Network Analyst extension](http://desktopdev.arcgis.com/search/?q=Programming%20with%20ArcGIS%20Network%20Analyst%20extension&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[What is ArcGIS Network Analyst extension?](http://desktopdev.arcgis.com/search/?q=What%20is%20ArcGIS%20Network%20Analyst%20extension%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[What is a network dataset?](http://desktopdev.arcgis.com/search/?q=What%20is%20a%20network%20dataset%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Geodatabase](http://desktopdev.arcgis.com/search/?q=Geodatabase&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[About the ArcGIS Network Analyst extension tutorial](http://desktopdev.arcgis.com/search/?q=About%20the%20ArcGIS%20Network%20Analyst%20extension%20tutorial&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[NetworkAnalyst](http://desktopdev.arcgis.com/search/?q=NetworkAnalyst&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ArcGIS Network Analyst extension Object Model Diagram](http://desktopdev.arcgis.com/search/?q=ArcGIS%20Network%20Analyst%20extension%20Object%20Model%20Diagram&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[An overview of the network analyst toolbox](http://desktopdev.arcgis.com/search/?q=An%20overview%20of%20the%20network%20analyst%20toolbox&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+
+
+---------------------------------
+
+####Licensing  
+| Development licensing | Deployment licensing | 
+| :------------- | :------------- | 
+| ArcGIS for Desktop Advanced: Network Analyst | ArcGIS for Desktop Advanced: Network Analyst |  
+| ArcGIS for Desktop Standard: Network Analyst | ArcGIS for Desktop Standard: Network Analyst |  
+| ArcGIS for Desktop Basic: Network Analyst | ArcGIS for Desktop Basic: Network Analyst |  
+
+

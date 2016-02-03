@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Automate ArcGIS for Desktop applications</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Automate ArcGIS for Desktop applications</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample shows how to automate ArcGIS for Desktop applications (ArcMap, ArcScene, and ArcGlobe) from stand-alone .NET applications. To programmatically start a new application session, you can use the new operator to create a new Document object (MxDocument, SxDocument, or GMxDocument). Once you successfully create the new Document object, a new application session is started.  The stand-alone application also allows you to add layers to the new session of the application. IObjectFactory is used to create the new layers inside the application's process space. In addition, it shows how to programmatically clean up and shut down the application properly, including how to handle the case when the application has been closed by the user manually (with AppROT event).   </p>
+
+<h3>Usage</h3>
+
+<h4>Automating an ArcGIS for Desktop application</h4>
+
+<ol>
+<li>Open the solution file in Visual Studio and compile the sample.  </li>
+<li>Run DesktopAutomationCS.exe or DesktopAutomationVB.exe depending on the language version.  </li>
+<li>Select ArcMap, ArcScene, or ArcGlobe from the application drop-down list and click Start to start a new application session. Notice the change in the state of the Start (becomes unavailable) and the Exit (becomes available) buttons.  </li>
+<li>Type the path of a valid shapefile in the text box, and click Add Layer to add it to the new application session.  </li>
+<li>Click Exit to shut down the application session. Notice the change in the state of the Start (becomes available) and the Exit (becomes unavailable) buttons.  </li>
+</ol>
+
+<h4>Handling modal dialog boxes when exiting the application</h4>
+
+<ol>
+<li>Start a new application session.  </li>
+<li>Open a modal dialog box of the application; for example, click the Add Data button.  </li>
+<li>With the Add Data dialog box displayed, click Exit to shut down the application session.  </li>
+</ol>
+
+<h4>Handling the manual application shutdown in an automation session</h4>
+
+<ol>
+<li>Start a new application session.  </li>
+<li>Close the application manually by clicking File, then clicking Exit or click the Close (X) button on the title bar. Notice the change in the state of the Start (becomes available) and the Exit (becomes unavailable) buttons.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Automating%20ArcGIS%20for%20Desktop%20applications&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Automating ArcGIS for Desktop applications</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

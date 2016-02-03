@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/vcpp/VCppSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:VCPPSample:" language="en-us" productVersion="11.0.8034" solutionVersion="9.4.0.698" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>TreeFeature</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample makes a subclass of the standard esriGeodatabase Feature by adding an interface with functions specific to trees.</div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension/>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension/>
+    </license>
+  </deployment_license>
+  <apis>
+    <api>
+    </api>
+  </apis>
+  <capabilities>
+    <capability>
+    </capability>
+  </capabilities>
+  <min_version>9.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version></max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>Trees/GDBTrees.gdb</data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="VCPP">
+      <file>
+        <filename>StdAfx.h</filename>
+        <description>Standard precompiled header file that imports the ArcGIS object libraries.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Tree.idl</filename>
+        <description>Interface Definition Language file that defines the coclass and custom interface.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>TreeFeature.cpp</filename>
+        <description>Implementation of the custom feature.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TreeFeature.h</filename>
+        <description>Header file for the custom feature.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title/>
+      <how_to_use_steps>
+        <step>Open and build the solution to register the DLL and register to component categories.</step>
+        <step>Open ArcMap and add the Trees feature class. You will find this feature class in the Samples/Data/Trees/GDBTrees.gdb of the ArcObjects Developer Kit. This feature class has been preconfigured to store custom tree features.</step><step>In the ArcMap VBA environment, Click Tools, then References and browse to the example's DLL. </step><step>Run the 'TreeFeatureTest' VBA macro from the TreeFeatureTest.bas file that accompanies the example.</step>
+        
+        
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>
+    </tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>e2bfd217-0ded-49eb-bcfc-198253f49653</guid>
+  <content_management>
+    <owner>James MacKay</owner>
+    <tech_reviewer>Tim Kay</tech_reviewer>
+    <status>SDK inclusion requested</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>20:34:15</last_updated_time>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>VCPP</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

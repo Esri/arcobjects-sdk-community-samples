@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.923" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>RSS weather GraphicTracker</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrate the use of GraphicTracker to simplify visualization of dynamic elements in Map and Globe.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">In this sample, GraphicTracker is used to draw an RSS weather feed from Yahoo! services. </div></purpose>
+	<development_license>
+		<license>
+			<name>Engine Developer Kit</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension>3D Analyst</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>3D Analyst</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>3D Analyst</extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>Engine</name>
+			<extension>3D Analyst</extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension>3D Analyst</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>3D Analyst</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>3D Analyst</extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path>USZipCodeData</data_path>
+	</data_paths>
+	<requirements>
+		<requires>The user must have administrator access rights since the sample creates a temporary folder.</requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>RSSWeatherGraphicTracker/RSSWeather.cs</filename>
+				<description>Main implementation class that connects the RSS feed and visualizes the information on the Map or Globe using GraphicTracker.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>RSSWeatherGraphicTracker/AddRSSWeather.cs</filename>
+									<description>Command that toggles the RSS feed on and off.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>RSSWeatherGraphicTracker/RSSWeather.vb</filename>
+										<description>Main implementation class that connects the RSS feed and visualizes the information on the Map or Globe using GraphicTracker.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>RSSWeatherGraphicTracker/AddRSSWeather.vb</filename>
+									<description>Command that toggles the RSS feed on and off.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Start Visual Studio, open the solution file, and build the project.</step><step>Open the application (ArcMap, ArcGlobe, or a MapControl or GlobeControl application) to add the command.</step><step>Open the Customize dialog box, find the Weather category, and drag the Add RSS Weather command onto your toolbar.</step><step>Alternatively, click the Add from file button on the Customize dialog box, browse to RSSWeatherGraphicTracker.tlb, then drag the Add RSS Weather command onto your toolbar.</step><step>Add any data type to serve as a background for the sample, such as ArcGIS Online StreetMap data.</step><step>Click Add RSS Weather to connect the RSS feed and show the information geographically.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<additional_information>The same command and code works in the ArcMap, ArcGlobe, MapControl, and GlobeControl applications.</additional_information><related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Cartography, Mapping, &amp; 2D Display</tag>
+	<tag>3D analysis &amp; visualization</tag><tag>Globe</tag><tag>Commands &amp; Tools</tag><tag>Threading</tag></content_area_tags>
+	<indexing_tags>
+		<existing_tag>GraphicTracker</existing_tag><existing_tag>Dynamic display</existing_tag>
+	</indexing_tags>
+	<guid>9457b9e1-8b76-44aa-801f-83e048601a92</guid>
+	<content_management>
+		<owner>yaro4525</owner>
+		<tech_reviewer>Gayle young</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<requested_tocs>
+			<desktop>true</desktop>
+			<engine>true</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<last_updated_date>2010-03-30</last_updated_date>
+		<last_updated_time>14:23:59</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2010-03-30</last_copyedit_date>
+									<last_copyedit_time>14:26:04</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2009-12-29</edit_date>
+										<edit_time>16:10:29</edit_time>
+										<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited but returned to author to add reference to VB .NET files.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Not ready for SDK inclusion.</div></edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-03-30</edit_date>
+									<edit_time>14:25:22</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li xmlns="http://www.w3.org/1999/xhtml">Editing complete.</li>
+<li xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</li></ul></edit_notes>
+								</editing_section><editing_section>
+									<editor_name>elea2233</editor_name>
+									<edit_date>2011-05-04</edit_date>
+									<edit_time>14:12:21</edit_time>
+									<edit_notes>Topic has been in the SDk for a long time but still showed as SDK Inclusion requested. Updated to reflect correct state.</edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>deep6732</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

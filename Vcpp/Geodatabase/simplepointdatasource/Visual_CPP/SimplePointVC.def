@@ -1,0 +1,9 @@
+; SimplePointVC.def : Declares the module parameters.
+
+LIBRARY      "SimplePointVC.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer	PRIVATE

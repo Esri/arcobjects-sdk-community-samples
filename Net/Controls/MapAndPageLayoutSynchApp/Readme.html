@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Synchronized MapControl and PageLayoutControl application</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Synchronized MapControl and PageLayoutControl application</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates synchronization of a MapControl and a PageLayoutControl in one application. This means that, as in ArcMap, you can switch between the two views and maintain the scale and extent, as well as add graphics to the Map view and see them in the PageLayout view. For simplicity, this sample only handles one data frame; it selects the first data frame from a map document.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio, open the solution, and build the project.  </li>
+<li>Press F5 or double-click the resulting executable to run the application.  </li>
+<li>Use the Open Map Document command to load a new map document to the application.  </li>
+<li>Zoom in and add graphic elements using the Graphics toolbar at the bottom on the application window.  </li>
+<li>Click the Layout tab to switch to the Layout view. The PageLayout is centered around the same point as the MapControl, and the graphic elements from the Map view are visible in the Layout view.  </li>
+<li>Use the Pan tool in the PageLayout view, then switch back to the Map view. Once again, the map is centered around the same point as the Layout view.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=How%20to%20create%20a%20MapControl%20application&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to create a MapControl application</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Building%20a%20map%20viewing%20application%20using%20the%20ArcGIS%20Engine%20controls&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Walkthrough: Building a map viewing application using the ArcGIS Engine controls</a><br />
+<a href="../../../Net/Controls/PageLayoutControlLoadMapDocument">Sample: Load a map document into the PageLayoutControl</a><br />
+<a href="../../../Net/Controls/PageLayoutControlPrinting">Sample: Printing with the PageLayoutControl</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=Working%20with%20map%20elements&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Working with map elements</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=How%20to%20drop%20data%20onto%20the%20MapControl&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to drop data onto the MapControl</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

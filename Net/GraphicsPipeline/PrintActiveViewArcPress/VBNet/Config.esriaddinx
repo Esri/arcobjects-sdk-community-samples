@@ -1,0 +1,32 @@
+<!--  Copyright 2011 ESRI
+ 
+ All rights reserved under the copyright laws of the United States
+ and applicable international laws, treaties, and conventions.
+ 
+ You may freely redistribute and use this sample code, with or
+ without modification, provided you include the original copyright
+ notice and use restrictions.
+ 
+ See the use restrictions at <your ArcGIS install location>/DeveloperKit10.2/userestrictions.txt.
+ 
+ -->
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>PrintActiveViewArcPressVB_Net_Addin</Name>
+  <AddInID>{279c13df-ec9c-4d0b-bd65-a696b26269d9}</AddInID>
+  <Description>Prints the Active view with ArcPress</Description>
+  <Version>1.0</Version>
+  <Image>Images\PrintActiveViewArcPressVB_Net2008_Addin.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>3/15/2010</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="PrintActiveViewArcPressVB_Net_Addin.dll" namespace="PrintActiveViewArcPressVB_Net_Addin">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_PrintActiveViewArcPressVB" class="PrintActiveViewArcPressVB_Net_Addin" message="Prints the Active view with ArcPress" caption="Print Active View with ArcPress VB.NET" tip="Print Active View with ArcPress VB.NET" category="Developer Samples" image="Images\PrintActiveViewArcPressVB_Net2008_Addin.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

@@ -1,0 +1,21 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>NAAddTraversalResultToMap</Name>
+  <AddInID>{f790d00d-5176-44a2-8c34-992a5df73990}</AddInID>
+  <Description>Add the traversal result from the active analysis layer to the map - VBNET</Description>
+  <Version>1.0</Version>
+  <Image>Images\AddTraversalResult.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>8/20/2009 3:52:50 PM</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="NAAddTraversalResultToMap.dll" namespace="NAAddTraversalResultToMap">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_NAAddTraversalResultToMap_AddTraversalResultsToMap" class="AddTraversalResultsToMap" tip="Add the traversal result from the active analysis layer to the map - VBNET" message="Add the traversal result from the active analysis layer to the map - VBNET" caption="Add Traversal Results to the Map - VBNET" category="Network Analyst" image="Images\AddTraversalResult.png">
+        </Button>
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

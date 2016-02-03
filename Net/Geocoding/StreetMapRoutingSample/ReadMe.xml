@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.923" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>StreetMap routing</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to utilize the StreetMap routing application programming interface (API). It is an implementation of a simple dialog box allowing you to set from and to stop addresses along with other routing settings, such as calculate a route, display route geometry on the map, and display driving directions text.</div>
+  </purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>
+      </name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>
+      </name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>The StreetMap routing API only functions with Smart Data Compression (SDC) data and the accompanying routing service (.rs) and address locator files that are created with the DDK-Pro application. The Data &amp; Maps data package that is shipped with ArcGIS Engine and ArcGIS for Desktop contains a complete set of SDC data with routing and address files (this data can be used with the sample). On the Data &amp; Maps and StreetMap North America DVD, navigate to the streetmap_na\data folder to access the routing service and address locator files. </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>RoutingSample\RoutingForm.cs</filename>
+        <description>Main form and code file for the Routing Sample dialog box.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>RoutingSample\DirectionsForm.cs</filename>
+        <description>Form and code file for the Driving Directions dialog box.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>RoutingSample\RestrictionsForm.cs</filename>
+        <description>Form and code file for the Restrictions dialog box.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>RoutingSample\RestrictControl.cs</filename>
+        <description>Code file for the list of restriction items in the Restrictions dialog box.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>RoutingSample\RoutingCommand.cs</filename>
+        <description>Code file for the Routing Sample button on the Routing Sample toolbar.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>RoutingSample\RoutingToolbar.cs</filename>
+        <description>Code file for the Routing Sample toolbar.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>RoutingSample\RoutingForm.vb</filename>
+        <description>Main form and code file for the Routing Sample dialog box.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>RoutingSample\DirectionsForm.vb</filename>
+        <description>Form and code file for the Driving Directions dialog box.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>RoutingSample\RestrictionsForm.vb</filename>
+        <description>Form and code file for the Restrictions dialog box.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>RoutingSample\RestrictControl.vb</filename>
+        <description>Code file for the list of restriction items in the Restrictions dialog box.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>RoutingSample\RoutingCommand.vb</filename>
+        <description>Code file for the Routing Sample button on the Routing Sample toolbar.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>RoutingSample\RoutingToolbar.vb</filename>
+        <description>Code file for the Routing Sample toolbar.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the solution file in Visual Studio and build the project.</step>
+        <step>Start ArcMap.</step>
+        <step>Click the Customize menu, click Toolbars, and click Routing Sample to enable the Routing Sample toolbar.</step>
+        <step>Click the button on the Routing Sample toolbar to open the Routing Sample dialog box. </step>
+        <step>Browse to the location of a routing service file (.rs extension) and select it in the Routing Service field.</step>
+        <step>Browse to the location of an address locator file and select it in the Address Locator field. </step>
+        <step>Type the address of the starting location for driving directions in the Start section and the address of the ending location in the Finish section.</step>
+        <step>In the Options section, specify the type of route, quickest or shortest, to be calculated. Specify the distance units and select the street type preference for routing using the slider bar; for example, moving the slider towards Use Local Roads causes the router to utilize non-highway roads as much as possible in the output driving directions.</step>
+        <step>Optional. Click the Restrictions button to open the Restrictions dialog box. If the data referenced by the routing service file specified in step 5 contains restriction attributes, this dialog box will be populated with the available restriction parameters. Set the restrictions in this dialog box as desired. </step>
+        <step>Optional. If a point feature class containing barrier features is available, browse to it in the Barriers Table field.</step>
+        <step>Click the Find Route button to generate a list of driving directions and display a route graphic in ArcMap.</step>
+        <step>Click the Show Directions button to open the Driving Directions dialog box, which contains the list of driving directions.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>StreetMap</tag>
+  </content_area_tags>
+  <guid>BB7F69A6-F21E-4247-BE92-74FF5D9AFC50</guid>
+  <content_management>
+    <owner>Matt Chaffin</owner>
+    <tech_reviewer>kkutsner@softech.ru</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2012-03-16</last_updated_date>
+    <last_updated_time>14:33:44</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2012-03-16</last_copyedit_date>
+      <last_copyedit_time>14:34:35</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-09-24</edit_date>
+        <edit_time>11:15:09</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Edited.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">SDK inclusion requested pending the following:</div>
+          <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+          <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Matt - Andrey Kozhevnikov was listed as the owner of this topic and you were listed as tech reviewer. Email doesn't recognize Andrey, so I made you the owner. Consequently, a new tech reviewer needs to be listed (or a new owner, whichever).</div>
+          <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+          <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Thanks,</div>
+          <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+          <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Linn</div>
+        </edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-09-24</edit_date>
+        <edit_time>13:07:42</edit_time>
+        <edit_notes>Added <span xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Konstantin Kutsner - <a href="mailto:kkutsner@softech.ru">kkutsner@softech.ru</a> as tech reviewer.</span></edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2012-03-16</edit_date>
+									<edit_time>14:34:21</edit_time>
+									<edit_notes>10.2 product name changes update.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

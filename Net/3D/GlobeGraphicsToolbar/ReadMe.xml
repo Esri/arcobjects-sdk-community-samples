@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.706" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Creating a toolbar of globe tools</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This add-in sample shows how to write ArcObjects code to build a toolbar of tools that work in ArcGlobe, which allows you to interactively create three-dimensional (3D) points, rasterized polylines and polygons, and two-dimensional (2D) text by clicking the globe surface. This sample also shows how to work with globe graphic containers, text elements, polygon elements, polyline elements, and point elements, and how to programmatically adjust various display settings. </div></purpose>
+  <development_license>
+    
+  </development_license>
+  <deployment_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>ColorCommand.cs</filename>
+        <description>Color command implementation. Sets static color selection to color selected via the color palette.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ColorPalette.cs</filename>
+        <description>Color palette implementation. Displays dialog box allowing you to select red, green, and blue (RGB) color.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ColorSelection.cs</filename>
+        <description>Color selection implementation. Static class used to persist selected color.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      
+      
+      <file>
+        <filename>GeographicCoordinates.cs</filename>
+        <description>Geographic coordinates implementation. Converts from window to geographic coordinates and allows coordinates to be accessed as individual getters.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Layer.cs</filename>
+        <description>Layer implementation. Wrapper class for globe graphics layer, returning element count and allowing elements to be added, removed, and retrieved by index.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PointElement.cs</filename>
+        <description>Point element implementation. Sets element properties for a marker element whose symbol is set to 2D or 3D.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PointGeometry.cs</filename>
+        <description>Point geometry implementation. Constructs a 3D point from supplied geographic coordinates.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PointTool.cs</filename>
+        <description>Point tool implementation. Adds a point element to the globe graphics container and refreshes the display.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PolygonElement.cs</filename>
+        <description>Polygon element implementation. Sets element properties for rasterized polygon based on default and supplied parameters.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PolygonGeometry.cs</filename>
+        <description>Polygon geometry implementation. Wrapper class, allowing points to be added to the polygon, polygon to be closed and points counted, and resulting geometry to be returned.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PolygonTool.cs</filename>
+        <description>Polygon tool implementation. Adds polyline elements to the globe graphics container with each click showing polygon boundaries, completes the polygon with a double-click, and refreshes the display.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PolylineElement.cs</filename>
+        <description>Polyline element implementation. Sets element properties for rasterized polyline based on default and supplied parameters.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PolylineGeometry.cs</filename>
+        <description>Polyline geometry implementation. Wrapper class, allowing points to be added to polyline and point count, and resulting geometry to be returned.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PolylineTool.cs</filename>
+        <description>Polyline tool implementation. Adds polyline elements to the globe graphics container with each click, completes the polyline with a double-click, and refreshes the display.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SpatialReference.cs</filename>
+        <description>Spatial reference implementation. Initializes a spatial reference object from a supplied x,y coordinate system.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      
+      
+      
+      
+      
+      
+      
+      <file>
+        <filename>TableOfContents.cs</filename>
+        <description>Table of contents implementation. Wrapper class for scene object, allowing you to check if a globe graphics layer exists, construct a globe graphics layer, and access a globe graphics layer by index.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TextElement.cs</filename>
+        <description>Text element implementation. Sets element properties for a text element whose symbol is constructed from default and user-supplied parameters.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TextForm.cs</filename>
+        <description>Text form implementation. Form that resizes to fit text box used to obtain user-supplied text to be symbolized.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TextForm.Designer.cs</filename>
+        <description>Text form designer implementation. Designer for text form.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TextTool.cs</filename>
+        <description>Text tool implementation. Adds a text element to the globe graphics container and refreshes the display.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    
+  <files lang="VBNet">
+									<file>
+										<filename>ColorCommand.vb</filename>
+										<description>Color command implementation. Sets static color selection to color selected via the color palette.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>ColorPalette.vb</filename>
+									<description>Color palette implementation. Displays dialog box allowing you to select red, green, and blue (RGB) color.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>ColorSelection.vb</filename>
+									<description>Color selection implementation. Static class used to persist selected color.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>GeographicCoordinates.vb</filename>
+									<description>Geographic coordinates implementation. Converts from window to geographic coordinates and allows coordinates to be accessed as individual getters.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>Layer.vb</filename>
+									<description>Layer implementation. Wrapper class for globe graphics layer, returning element count and allowing elements to be added, removed, and retrieved by index.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>PointElement.vb</filename>
+									<description>Point element implementation. Sets element properties for a marker element whose symbol is set to 2D or 3D.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>PointGeometry.vb</filename>
+									<description>Point geometry implementation. Constructs a 3D point from supplied geographic coordinates.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>PointTool.vb</filename>
+									<description>Point tool implementation. Adds a point element to the globe graphics container and refreshes the display.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>PolygonElement.vb</filename>
+									<description>Polygon element implementation. Sets element properties for rasterized polygon based on default and supplied parameters.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>PolygonTool.vb</filename>
+									<description>Polygon tool implementation. Adds polyline elements to the globe graphics container with each click showing polygon boundaries, completes the polygon with a double-click, and refreshes the display.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>PolygonGeometry.vb</filename>
+									<description>Polygon geometry implementation. Wrapper class, allowing points to be added to the polygon, polygon to be closed and points counted, and resulting geometry to be returned.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>PolylineElement.vb</filename>
+									<description>Polyline element implementation. Sets element properties for rasterized polyline based on default and supplied parameters.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>PolylineGeometry.vb</filename>
+									<description>Polyline geometry implementation. Wrapper class, allowing points to be added to polyline and point count, and resulting geometry to be returned.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>PolylineTool.vb</filename>
+									<description>Polyline tool implementation. Adds polyline elements to the globe graphics container with each click, completes the polyline with a double-click, and refreshes the display.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>SpatialReference.vb</filename>
+									<description>Spatial reference implementation. Initializes a spatial reference object from a supplied x,y coordinate system.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>TableOfContents.vb</filename>
+									<description>Table of contents implementation. Wrapper class for scene object, allowing you to check if a globe graphics layer exists, construct a globe graphics layer, and access a globe graphics layer by index.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>TextElement.vb</filename>
+									<description>Text element implementation. Sets element properties for a text element whose symbol is constructed from default and user-supplied parameters.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>TextForm.vb</filename>
+									<description>Text form implementation. Form that resizes to fit text box used to obtain user-supplied text to be symbolized.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>TextForm.Designer.vb</filename>
+									<description>Text form designer implementation. Designer for text form.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>TextTool.vb</filename>
+									<description>Text tool implementation. Adds a text element to the globe graphics container and refreshes the display.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>Running the sample from ArcGlobe</title>
+      <how_to_use_steps>
+        <step>Start ArcGlobe.</step>
+        <step>Click Customize, click Customize Mode, then click the Toolbars tab.</step>
+        
+        <step>Select GraphicsToolbar on the Toolbars pane.</step>
+        <step>Close the Customize dialog box.</step>
+        <step>To use the Point tool, click the globe surface to digitize a 3D sphere.</step>
+        <step>To use the Polyline tool, click the globe surface to digitize the polyline vertices, and double-click to end the polyline.</step>
+        <step>To use the Polygon tool, click the globe surface to digitize the polygon vertices and double-click to close the polygon.</step>
+        <step>To use the Text tool, click the globe surface to specify where the text should be centered, type text on the dialog box that appears, and press Enter.</step>
+        <step>Selecting a custom color via the Color tool before using any of the previous tools, causes the color of the digitized geometry or text to change accordingly.</step>
+        
+        
+        
+      </how_to_use_steps>
+      <how_to_use_pictures>
+        
+      </how_to_use_pictures>
+    </how_to_use>
+    
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>3D analysis &amp; visualization</tag>
+    <tag>Commands &amp; Tools</tag>
+    
+    <tag>Globe</tag>
+  <tag>Add-ins</tag></content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>aa9824ca-2b00-4877-b97d-4b205eed9924</guid>
+  <content_management>
+    <owner>Deepinder Deol</owner>
+    <tech_reviewer>Hardeep Bajwa</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-05-28</last_updated_date>
+    <last_updated_time>13:45:46</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-05-28</last_copyedit_date>
+									<last_copyedit_time>13:45:43</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-02-26</edit_date>
+									<edit_time>15:39:46</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Per Kylie's comment in StarTeam, this sample does not have VB .NET code.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Returning to owner for the following:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Need clarification on the following description for GeographicCoordinates.cs:</li>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Geographic coordinates implementation. Converts from window to geographic coordinates and allows coordinates and allows coordinates to be accessed as individual getters. </li>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Should this be: Geographic coordinates implementation. Converts from window to geographic coordinates and allows coordinates to be accessed as individual getters.</li></ul></ul>
+<li>Need clarification on the following description for PolygonGeometry.cs:</li>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Polygon geometry implementation. Wrapper class, allowing points to be added to the polygon, polygon to be closed and point count, and resulting geometry to be returned. </li>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Should this be: Polygon geometry implementation. Wrapper class, allowing points to be added to the polygon, polygon to be closed and points counted, and resulting geometry to be returned.</li></ul></ul></ul></edit_notes>
+								</editing_section><editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-05-28</edit_date>
+									<edit_time>13:42:49</edit_time>
+									<edit_notes><ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Edited.</li>
+<li>Confirmed author addressed issues in previous edit log.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

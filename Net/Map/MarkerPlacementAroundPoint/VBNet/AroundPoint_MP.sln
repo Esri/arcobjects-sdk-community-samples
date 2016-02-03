@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AroundPoint_MP", "AroundPoint_MP.vbproj", "{4B700884-11A2-4C7E-A3EA-1B3F3542E8A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B700884-11A2-4C7E-A3EA-1B3F3542E8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B700884-11A2-4C7E-A3EA-1B3F3542E8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B700884-11A2-4C7E-A3EA-1B3F3542E8A7}.Debug|x86.ActiveCfg = Debug|x86
+		{4B700884-11A2-4C7E-A3EA-1B3F3542E8A7}.Debug|x86.Build.0 = Debug|x86
+		{4B700884-11A2-4C7E-A3EA-1B3F3542E8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B700884-11A2-4C7E-A3EA-1B3F3542E8A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B700884-11A2-4C7E-A3EA-1B3F3542E8A7}.Release|x86.ActiveCfg = Release|x86
+		{4B700884-11A2-4C7E-A3EA-1B3F3542E8A7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

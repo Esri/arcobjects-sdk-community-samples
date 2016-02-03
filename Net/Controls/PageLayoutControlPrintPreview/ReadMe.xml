@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.706" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Print preview using the PageLayoutControl</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates changing the printer and printer settings and applying the changes to the PageLayoutControl and its print preview. The sample uses .NET OpenFileDialog, PageSetupDialog, PrintPreviewDialog, and PrintDialog to load a map document into the PageLayoutControl, change the printer settings, display a print preview, and print the IPageLayoutControl.Page property, respectively. The terminology used is as follows:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Print page—A page that is displayed in the Print Preview dialog box or printed to a physical printer.</li>
+<li>Device boundaries—The boundaries of the page to which the map document is printed.</li>
+<li>Visible boundaries—The area of the map document that fits on the print page.</li>
+<li>Graphics device—Encapsulates a graphical device interface (GDI) drawing surface, provides methods for drawing objects to the display device, and is associated with a specific device context. </li></ul></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>PrintPreview.cs</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>PrintPreview.vb</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Browse and select a map document to load into the PageLayoutControl. </step>
+        <step>Select a printer and change the page settings in the Page Setup dialog box. </step>
+        <step>Preview the print layout of the map in the Print Preview dialog box. </step>
+        <step>Print the document using the Print dialog box. </step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">After loading a map document into the PageLayoutControl using OpenFileDialog, select a printer and change the page settings using PageSetupDialog. PrintPreviewDialog displays IPageLayoutControl.Page as print pages dependent upon the selected printer and the page settings. The key functionality is implemented in the document_PrintPage event handler, which is called when PrintPreviewDialog appears.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">First, the IPage.PageToPrinterMapping property is set with the selected index from the combo box. The combo box allows you to specify the way the IPageLayoutControl.Page property is mapped to the print pages. The following options are available:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>esriPageMappingTile—Tiles up the map document and prints every tile onto a separate print page.</li>
+<li>esriPageMappingCrop—Prints the first tile only; there will be one print page only.</li>
+<li>esriPageMappingScale—Scales the map document onto a single print page. </li></ul>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Second, the device boundaries (devBounds) of the printer, as well as the visible boundaries (visBounds) of the map document, are obtained using the selected printer properties.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">IPageLayoutControl.Page is printed into PrintPreviewDialog using the Output method of the PageLayoutControl.ActiveView. In addition to the graphics device's resolution (dpi), device boundaries (devBounds), visible boundaries (visBounds), and CancelTracker, the method gets passed a handle to the graphics device to which the map document is printed. This graphics device handle is obtained by calling GetHdc on the graphics object that gets passed within the method's argument structure. Calls to the GetHdc and ReleaseHdc methods must appear in pairs. If ReleaseHdc is not called, the application will fail with an exception.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">If the map document is to be mapped to more than one page, the HasMorePages property of the document_PrintPage's argument is set to true. This ensures that document_PrintPage will be called again. This is repeated until the last page is printed to PrintPreviewDialog. The document can then be printed using PrintDialog.</div></additional_information><related_topics>
+    <topic>
+      <topic_display>PageLayoutControl class</topic_display>
+      <topic_link>esriControls/PageLayoutControl.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IPageLayoutControl interface</topic_display>
+      <topic_link>esriControls/IPageLayoutControl.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+    <tag>Printing</tag>
+  </content_area_tags>
+  <guid>512B38D4-6C40-4caa-83BA-2AF2BD521AD0</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-05-10</last_updated_date>
+    <last_updated_time>15:06:48</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-05-10</last_copyedit_date>
+									<last_copyedit_time>15:14:29</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-05-10</edit_date>
+									<edit_time>15:14:10</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GlobeControlAnimation", "GlobeControlAnimation.vbproj", "{B7C2E611-F94C-4388-92C8-B3143F0B8EB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7C2E611-F94C-4388-92C8-B3143F0B8EB4}.Debug|x86.ActiveCfg = Debug|x86
+		{B7C2E611-F94C-4388-92C8-B3143F0B8EB4}.Debug|x86.Build.0 = Debug|x86
+		{B7C2E611-F94C-4388-92C8-B3143F0B8EB4}.Release|x86.ActiveCfg = Release|x86
+		{B7C2E611-F94C-4388-92C8-B3143F0B8EB4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

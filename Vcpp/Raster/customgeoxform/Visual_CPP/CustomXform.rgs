@@ -1,0 +1,25 @@
+HKCR
+{
+	CustomXform.SimpleXform.1 = s 'SimpleXform Class'
+	{
+		CLSID = s '{2FA1F0BB-E7DA-4a7a-A11A-56E9D712C3EF}'
+	}
+	CustomXform.SimpleXform = s 'SimpleXform Class'
+	{
+		CLSID = s '{2FA1F0BB-E7DA-4a7a-A11A-56E9D712C3EF}'
+		CurVer = s 'CustomXform.SimpleXform.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {2FA1F0BB-E7DA-4a7a-A11A-56E9D712C3EF} = s 'SimpleXform Class'
+		{
+			ProgID = s 'CustomXform.SimpleXform.1'
+			VersionIndependentProgID = s 'CustomXform.SimpleXform'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{E1B666EB-5173-4bdf-A607-CD643EAC7993}'
+		}
+	}
+}

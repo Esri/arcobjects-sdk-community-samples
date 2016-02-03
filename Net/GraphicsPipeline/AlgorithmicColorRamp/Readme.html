@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Use an AlgorithmicColorRamp to color a ClassBreaksRenderer</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Use an AlgorithmicColorRamp to color a ClassBreaksRenderer</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates a tool for producing a user-specified AlgorithmicColorRamp, which is used to color the symbols on a ClassBreaksRenderer on a feature layer.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open the Visual Studio solution file and build the project.  </li>
+<li>Start ArcMap and create a map.   </li>
+<li>Open the Customize dialog box. On the Toolbars tab, select the Context Menus option. The Context Menus toolbar appears.   </li>
+<li>Using the Context Menus toolbar, click Context Menus and click Feature Layer Context Menu. The Feature Layer context menu appears.  </li>
+<li>On the Commands tab on the Customize dialog box, select the new AlgorithmicColorRamp command from the Developer Samples category. Drag this command onto the Feature Layer context menu that was displayed in the previous step. Close the Customize dialog box.   </li>
+<li>Add a feature layer (containing polygons, lines, or points) to the map document.  </li>
+<li>Render your layer with a ClassBreaksRenderer. Right-click the layer and click Properties, then Symbology. Choose the Quantities, GraduatedColors option and add values from any suitable Value field.   </li>
+<li>Change the colors on the renderer by right-clicking the feature layer in the table of contents (TOC). The dialog box that appears allows you to create an AlgorithmicColorRamp based on a FromColor, a ToColor, and an Algorithm.  </li>
+<li>Click OK to recolor your feature layer renderer according to your selections.   </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

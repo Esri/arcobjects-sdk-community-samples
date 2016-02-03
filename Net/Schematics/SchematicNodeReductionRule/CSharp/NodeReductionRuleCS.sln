@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeReductionRuleCS", "NodeReductionRule\NodeReductionRuleCS.csproj", "{394135EE-58FB-4E4C-9959-6FB6B79B7B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeReductionRulePageCS", "NodeReductionRulePage\NodeReductionRulePageCS.csproj", "{26071B7A-EFA9-4BD5-B71C-044650503600}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{394135EE-58FB-4E4C-9959-6FB6B79B7B1D}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{394135EE-58FB-4E4C-9959-6FB6B79B7B1D}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{394135EE-58FB-4E4C-9959-6FB6B79B7B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{394135EE-58FB-4E4C-9959-6FB6B79B7B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26071B7A-EFA9-4BD5-B71C-044650503600}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{26071B7A-EFA9-4BD5-B71C-044650503600}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{26071B7A-EFA9-4BD5-B71C-044650503600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26071B7A-EFA9-4BD5-B71C-044650503600}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

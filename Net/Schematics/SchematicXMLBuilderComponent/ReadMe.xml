@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.923" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Implementing an XML builder external component</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates the implementation of ISchematicXmlGenerate and ISchematicXmlUpdate to automatically create the input Extensible Markup Language (XML) data to generate and update diagrams based on the XML builder. The creation of the input XML data is based on the features in the GISForXMLSample geodatabase. This component can be used to generate and update XML builder diagrams from features contained in this geodatabase when they are currently selected on a map document. </div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Schematics</extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Schematics</extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>Schematics/GISForXMLSample</data_path>
+  </data_paths>
+  <requirements>
+    <requires></requires>
+  </requirements>
+  <file_section>
+    <files lang="VBNet">
+      <file>
+        <filename>XMLDocImpl.vb</filename>
+        <description>Implementation of the ISchematicXMLGenerate and ISchematicXMLUpdate interfaces.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="CSharp">
+      <file>
+        <filename>XMLDocImpl.cs</filename>
+        <description>Implementation of the ISchematicXMLGenerate and ISchematicXMLUpdate interfaces.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>Building the component</title>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the solution file, and build the component.</step>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </how_to_use_steps>
+    </how_to_use>
+  <how_to_use>
+									<title>Copying the sample database in a working folder</title>
+									<how_to_use_steps>
+										<step>Navigate to &lt;ArcGIS DeveloperKit install location&gt;\Samples\data\Schematics</step><step>Copy both the GISForXMLSample.gdb geodatabase and the GISForXMLSample.mxd file in a folder for which you have full rights.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Configuring the schematic dataset</title>
+									<how_to_use_steps>
+										<step>Start ArcCatalog.</step><step>Browse to the GISForXMLSample geodatabase you have just copied.</step><step>Right-click the GISForXMLSample_Schematic schematic dataset contained in this geodatabase and click Edit. The Schematic Dataset Editor opens.</step><step>Click the XMLDiagrams diagram template in the Dataset Editor tree.</step><step>On the Properties tab on the right, click the Schematic Builder Properties button. The Schematic Builder Properties dialog box opens.</step><step>Type MyExtXMLComponentCS.XMLDocImpl or MyExtXMLComponentVB.XMLDocImpl (depending on the language you're using) in the Generate and Update fields.</step><step>Check the Initialize link vertices and Automatic schematic feature class creation options.</step><step>Click OK.</step><step>Click Save and exit the Schematic Dataset Editor.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Testing the XML builder diagram generate and update functions</title>
+									<how_to_use_steps>
+										<step>Start ArcMap and open the GISForXMLSample.mxd file from your working folder. This .mxd file references the ElectricDataset feature dataset stored in the copied GISForXMLSample geodatabase.</step><step>Start the Schematics extension.</step><step>In ArcMap, click Customize, click Toolbars, and choose the Schematic, Schematic Editor, and Schematic Network Analyst toolbars.</step><step>Click the Select Features tool on the Tools toolbar and select a set of features on the active data frame.</step><step>Click Generate New Schematic Diagram on the Schematic toolbar. The New Schematic Diagram dialog box opens.</step><step>Ensure that the GISForXMLSample_Schematic schematic dataset is selected on the Schematic Dataset or Schematic Folder drop-down list and that the XMLDiagrams diagram template is selected on the Schematic Diagram Template drop-down list.</step><step>Type a name for the diagram in the Schematic Diagram Name field, for example, XMLDiagramFromSelection1.</step><step>Click OK. The XMLDiagramFromSelection1 diagram, based on the selected set of features, is generated and opens in a new data frame.</step><step>Activate the Layers data frame containing the ElectricDataset features and select a new set of features.</step><step>Click Schematic on the Schematic toolbar and click Update Diagram. The Update Diagram dialog box opens.</step><step>Click OK. The active diagram is updated according to the features currently selected on the map.</step><step>Select the Propagate Map Selection to Schematic command to confirm that the schematic features contained in the active diagram are correctly associated with the features from which they were created.</step>
+									</how_to_use_steps>
+								</how_to_use></how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>ISchematicXMLGenerate interface </topic_display>
+      <topic_link>esriSchematic/ISchematicXMLGenerate.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>ISchematicXMLUpdate interface </topic_display>
+      <topic_link>esriSchematic/ISchematicXMLUpdate.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Schematics extension</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>6680383d-4d3a-4fb4-b2e4-9ad36473dc0b</guid>
+  <content_management>
+    <owner>Dominique Broux</owner>
+    <tech_reviewer>Anne-Yvonne BLIN</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2012-04-04</last_updated_date>
+    <last_updated_time>10:22:17</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-02-05</last_copyedit_date>
+									<last_copyedit_time>13:46:44</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-02-05</edit_date>
+									<edit_time>13:46:26</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Already in the SDK.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>anne0002</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Multiple globe viewers</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Multiple globe viewers</h2>
+
+<h3>Purpose</h3>
+
+<p>This add-in sample shows how multiple viewer windows can be opened in ArcGlobe and tied to the main viewer. With this capability, developers can have multiple views from the same camera position. In this sample, the user has the option to add a new viewer to ArcGlobe, then by using the tool, get the "observer top down" view in the new window for the current observer location in the main viewer. The display in the new viewer is dynamically updated as the user navigates around in the main window. In a similar manner, developers can add other options in addition to the observer top down view.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open the solution in Visual Studio.  </li>
+<li>Build the solution.  </li>
+<li>Start ArcGlobe.  </li>
+<li>On the Customize dialog box, choose the Add-In Controls category.  </li>
+<li>On the Command Items pane, drag the MultipleGlobeViewers command onto a toolbar.  </li>
+<li>Run the application.  </li>
+<li>Add a new viewer using the Add New Viewer command on the ArcGlobe user interface (UI).  </li>
+<li>Click the tool to open the form and select the viewer that you want to work with.  </li>
+<li>Select the way you want to tie the new viewer to the main viewer; either TopDown or Synced up.  </li>
+<li>Navigate on the main viewer and see how the secondary viewer is automatically updated.  </li>
+<li>Note that the Top Down view works only in the surface mode. Therefore, if you choose the Top Down option while you are in the global navigation mode, until you change to local navigation mode, the secondary viewer is in sync with the main viewer.  </li>
+<li>If the form is closed, the secondary viewers are no longer tied to the main viewer.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic: 3D Analyst </td><td> ArcGIS for Desktop Basic: 3D Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Standard: 3D Analyst </td><td> ArcGIS for Desktop Standard: 3D Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced: 3D Analyst </td><td> ArcGIS for Desktop Advanced: 3D Analyst </td></tr>  
+</table>
+
+</body>
+</html>

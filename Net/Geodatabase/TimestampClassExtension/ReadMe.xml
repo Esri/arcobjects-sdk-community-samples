@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="11.0.8034" solutionVersion="9.4.0.700" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Timestamper class extension</title>
+  <purpose>This sample provides an example of a geodatabase class extension that implements the optional IObjectClassEvents interface. By listening to object creation and modification events from the base class, this extension automatically maintains creation and modification time stamps for each object in the class, along with the name of the user who created or last modified the object. Along with this class extension, this sample contains two ancillary classes<font face="Verdana" xmlns="http://www.w3.org/1999/xhtml">—</font>a custom class description and a custom property page. The custom class description allows time-stamped feature classes to be created from ArcCatalog and the property page allows users to configure the class extension from ArcCatalog.</purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>TimestampClassExtension.cs</filename>
+        <description>Class extension source.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TimestampClassDescription.cs</filename>
+        <description>Class description source.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TimestampPropertyPage.cs</filename>
+        <description>Feature class property page source.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>TimestampClassExtension.vb</filename>
+        <description>Class extension source.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TimestampClassDescription.vb</filename>
+        <description>Class description source.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TimestampPropertyPage.vb</filename>
+        <description>Feature class property page source.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the solution in Visual Studio.</step>
+        <step>Ensure ArcCatalog is closed. Build the solution's class library in Visual Studio (this registers the class extension, description, and property page with ArcGIS).</step>
+        <step>Start ArcCatalog. When creating a feature class in a geodatabase, Timestamped Class should show as a type of class.</step>
+        <step>After creating a time-stamped feature class, view the feature class's properties. There should be a Timestamp Settings tab that allows the extension to be configured.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Creating class extensions</topic_display>
+      <topic_link>6caed32d-8baf-4771-8bb4-2f350b7f0d7a</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How to create property pages and property sheets</topic_display>
+      <topic_link>18d56b46-c80c-42cd-9cc3-59f3b9e2b17c</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Geodatabase</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>Class, extension</existing_tag>
+    <existing_tag>Extensions, feature class</existing_tag>
+  </indexing_tags>
+  <guid>C16F2960-9A7D-4d46-8966-A27CCF9BF1A9</guid>
+  <content_management>
+    <owner>James MacKay</owner>
+    <tech_reviewer>Brent Pierce</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:11:30</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2009-11-12</last_copyedit_date>
+									<last_copyedit_time>08:40:51</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-11-12</edit_date>
+									<edit_time>08:40:44</edit_time>
+									<edit_notes>Edited.<br xmlns="http://www.w3.org/1999/xhtml"/>Ready for SDK inclusion.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

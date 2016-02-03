@@ -1,0 +1,31 @@
+HKCR
+{
+	GlobeDigitizePoint.GlobeDigitizePointTool.1 = s 'GlobeDigitizePointTool Class'
+	{
+		CLSID = s '{B87A598C-A8C0-41BA-AC35-450416C38A35}'
+	}
+	GlobeDigitizePoint.GlobeDigitizePointTool = s 'GlobeDigitizePointTool Class'
+	{
+		CLSID = s '{B87A598C-A8C0-41BA-AC35-450416C38A35}'
+		CurVer = s 'GlobeDigitizePoint.GlobeDigitizePointTool.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B87A598C-A8C0-41BA-AC35-450416C38A35} = s 'GlobeDigitizePointTool Class'
+		{
+			ProgID = s 'GlobeDigitizePoint.GlobeDigitizePointTool.1'
+			VersionIndependentProgID = s 'GlobeDigitizePoint.GlobeDigitizePointTool'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{EC5796BE-D8E7-4547-8333-B23C86B9ACC5}'
+			
+			'Implemented Categories'
+			{
+				{B284D891-22EE-4F12-A0A9-B1DDED9197F4}
+			}
+		}
+	}
+}

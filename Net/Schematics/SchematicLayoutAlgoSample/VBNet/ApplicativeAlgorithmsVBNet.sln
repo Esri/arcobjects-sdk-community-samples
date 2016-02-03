@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ApplicativeAlgorithmsVBNet", "ApplicativeAlgorithms\ApplicativeAlgorithmsVBNet.vbproj", "{843D1AED-CFBA-453D-B3D9-591919102C74}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ApplicativeAlgorithmsPageVBNet", "ApplicativeAlgorithmsPage\ApplicativeAlgorithmsPageVBNet.vbproj", "{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{843D1AED-CFBA-453D-B3D9-591919102C74} = {843D1AED-CFBA-453D-B3D9-591919102C74}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{843D1AED-CFBA-453D-B3D9-591919102C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843D1AED-CFBA-453D-B3D9-591919102C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843D1AED-CFBA-453D-B3D9-591919102C74}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{843D1AED-CFBA-453D-B3D9-591919102C74}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{843D1AED-CFBA-453D-B3D9-591919102C74}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{843D1AED-CFBA-453D-B3D9-591919102C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843D1AED-CFBA-453D-B3D9-591919102C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843D1AED-CFBA-453D-B3D9-591919102C74}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{843D1AED-CFBA-453D-B3D9-591919102C74}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{843D1AED-CFBA-453D-B3D9-591919102C74}.Release|Win32.ActiveCfg = Release|Any CPU
+		{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C979AB14-5CFC-476D-B7C2-1D4F32F2FF2F}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

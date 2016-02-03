@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Cut polygons without selection edit task</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Cut polygons without selection edit task</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample illustrates how to create a custom ArcGIS Engine edit task that can be used in conjunction with the out-of-the-box editing commands. The Cut Polygons Without Selection edit task allows the user to cut features in a polygon layer using the Sketch tool without requiring a selection.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Build and run the sample.   </li>
+<li>Start editing.  </li>
+<li>Zoom in polygon features to cut.  </li>
+<li>Click the Cut Polygons Without Selection task.  </li>
+<li>Click the Sketch tool.  </li>
+<li>Cut a polygon (or polygons) in two or more places with the Sketch tool.  </li>
+<li>Finish the sketch to perform the cut.  </li>
+<li>Stop editing. See the following illustration:  </li>
+</ol>
+
+<p><img src="images/pic1.png" alt="Illustration using the edit task to split a feature without selecting it." /><br />
+Illustration using the edit task to split a feature without selecting it.  </p>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The edit task is created by implementing the IEngineEditTask interface. Compiling this sample registers the edit task in the ESRI Engine Edit Tasks component category which is used to populate the ControlsEditingTaskToolControl at runtime.  </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The position of the task in the ControlsEditingTaskToolControl list is controlled using the IEngineEditTask.GroupName property and the display name using the IEngineEditTask.Name property.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The IEngineEditTask.Activate method is called when the end user selects the edit task in the ControlsEditingTaskToolControl. The Activate method is used to set up listeners to the following IEngineEditEvents: </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+  <br />These event listeners set the IEngineEditSketch.GeometryType to null if the target layer does not have a polygon geometry type, thereby disabling the Sketch tool.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The IEngineEditTask.OnFinishSketch method is used to cut the intersected features using the IFeatureEdit.Split method, passing in the geometry from the digitized sketch as an argument. Edits to features are made in a single edit operation and added to the operation stack.  </div>  
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td>  </td><td> Engine </td></tr>  
+</table>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+HKCR
+{
+	LogoMarkerSymbolVC.LogoMarkerSymbol.1 = s 'LogoMarkerSymbol Class'
+	{
+		CLSID = s '{D7F5BF35-852A-11D5-A161-00508BA08E68}'
+	}
+	LogoMarkerSymbolVC.LogoMarkerSymbol = s 'LogoMarkerSymbol Class'
+	{
+		CLSID = s '{D7F5BF35-852A-11D5-A161-00508BA08E68}'
+		CurVer = s 'LogoMarkerSymbolVC.LogoMarkerSymbol.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D7F5BF35-852A-11D5-A161-00508BA08E68} = s 'LogoMarkerSymbol Class'
+		{
+			ProgID = s 'LogoMarkerSymbolVC.LogoMarkerSymbol.1'
+			VersionIndependentProgID = s 'LogoMarkerSymbolVC.LogoMarkerSymbol'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{D7F5BF28-852A-11D5-A161-00508BA08E67}'
+		}
+	}
+}

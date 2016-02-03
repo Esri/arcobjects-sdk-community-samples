@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/vcpp/VCppSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:VCPPSample:" language="en-us" solutionVersion="9.4.0.681" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>SimplePoint Plug-in Data Source</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample implements a read-only plug-in data source. The data format is a text file of formatted XY locations with a single character attribute.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div></purpose>
+  <development_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension/>
+    </license>
+  </development_license>
+  <deployment_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension/>
+    </license>
+  </deployment_license>
+  <apis>
+    <api>
+    </api>
+  </apis>
+  <capabilities>
+    <capability>
+    </capability>
+  </capabilities>
+  <min_version>9.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>SimplePoint_Towns.spt</data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="VCPP">
+      <file>
+        <filename>ClassFactory.h</filename>
+        <description>Header file containing implementation of per-thread singleton object.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GeneralUtils.cpp</filename>
+        <description>Implementation of utility functions.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>GeneralUtils.h</filename>
+        <description>Header file for utility functions.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointCursorHelper.cpp</filename>
+        <description>Implementation of plug-in cursor helper object.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointCursorHelper.h</filename>
+        <description>Header file for plug-in cursor helper.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointDatasetHelper.cpp</filename>
+        <description>Implementation of plug-in dataset helper object</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointDatasetHelper.h</filename>
+        <description>Header file for plug-in dataset helper.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointVC.idl</filename>
+        <description>Interface Definition Language file.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointWorkspaceFactory.cpp</filename>
+        <description>Implementation of plug-in workspace factory object.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointWorkspaceFactory.h</filename>
+        <description>Header file for plug-in workspace factory.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointWorkspaceHelper.cpp</filename>
+        <description>Implementation of plug-in workspace helper object.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointWorkspaceHelper.h</filename>
+        <description>Header file for plug-in workspace helper.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>StdAfx.h</filename>
+        <description>Standard precompiled header file that imports ArcGIS object libraries.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title/>
+      <how_to_use_steps>
+        <step>Open and build the solution to register the DLL and register to component categories.</step>
+        
+        <step>In ArcCatalog, browse to the Simplepoint_towns.spt file. Try previewing the dataset, using the zoom and identify tools. </step>
+        <step>You should also be able to use the Towns dataset in ArcMap.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>
+    </tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>aa2d96f9-18f8-4225-a2cd-97381248f9fc</guid>
+  <content_management>
+    <owner>Tim Kay</owner>
+    <tech_reviewer>James MacKay</tech_reviewer>
+    <status>SDK inclusion requested</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-02-04</last_updated_date>
+    <last_updated_time>17:03:16</last_updated_time>
+  </content_management>
+  <current_user>ralf4792</current_user>
+  <sdk>VCPP</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

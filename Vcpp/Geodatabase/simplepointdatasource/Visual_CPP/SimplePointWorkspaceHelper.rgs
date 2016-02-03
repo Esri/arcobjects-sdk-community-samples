@@ -1,0 +1,25 @@
+HKCR
+{
+	SimplePointVC.SimplePointWorkspaceHelper.1 = s 'SimplePointWorkspaceHelper Class'
+	{
+		CLSID = s '{79D3B764-730F-11D6-8ADA-00104BB6FCCB}'
+	}
+	SimplePointVC.SimplePointWorkspaceHelper = s 'SimplePointWorkspaceHelper Class'
+	{
+		CLSID = s '{79D3B764-730F-11D6-8ADA-00104BB6FCCB}'
+		CurVer = s 'SimplePointVC.SimplePointWorkspaceHelper.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {79D3B764-730F-11D6-8ADA-00104BB6FCCB} = s 'SimplePointWorkspaceHelper Class'
+		{
+			ProgID = s 'SimplePointVC.SimplePointWorkspaceHelper.1'
+			VersionIndependentProgID = s 'SimplePointVC.SimplePointWorkspaceHelper'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{65E5BA11-721A-11D6-8AD9-00104BB6FCCB}'
+		}
+	}
+}

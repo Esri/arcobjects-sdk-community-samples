@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Add a custom menu created in .NET to ArcGIS for Desktop</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Add a custom menu created in .NET to ArcGIS for Desktop</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to create a base or root-level menu with submenu functionality. The root-level menu is created by inheriting the BaseMenu class from the ESRI.ArcGIS.ADF.Local assembly's ESRI.ArcGIS.ADF namespace and by implementing the ESRI.ArcGIS.Framework.IRootLevelMenu interface. The submenu functionality is created by using existing ArcGIS functionality that is accessed by the class identifier (CLSID) and ProgID in ArcMap. Additionally, a custom command is created and is accessed as a submenu. This sample contains all of the code demonstrated in the Adding a custom menu created in .NET to ArcGIS for Desktop walkthrough.  </p>
+
+<h3>Usage</h3>
+
+<h4>Add and use menu and submenu commands in ArcMap</h4>
+
+<ol>
+<li>Open and compile the solution in Visual Studio.  </li>
+<li>Start ArcMap.  </li>
+<li>Click the Customize menu and click Customize Mode. The Customize dialog box appears.   </li>
+<li>Click the Commands tab, and in the Categories area, scroll down and click [Menus].   </li>
+<li>In the Commands area, click My_Menu and drag it onto the ArcMap graphical user interface (GUI) in the menu bar area.   </li>
+<li>Click Close. You can now access the functionality on your custom menu and submenu items. See the following screen shots:  </li>
+</ol>
+
+<p><img src="images/pic1.png" alt="Screen shot of the Customize dialog box." /><br />
+Screen shot of the Customize dialog box.<br />
+<img src="images/pic1.png" alt="Screen shot of the My<em>Menu command in ArcMap." /><br />
+Screen shot of the My</em>Menu command in ArcMap.  </p>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Walkthrough%3A%20Adding%20a%20custom%20menu%20created%20in%20.NET%20to%20ArcGIS%20for%20Desktop&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Walkthrough: Adding a custom menu created in .NET to ArcGIS for Desktop</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=Creating%20toolbars%20and%20menus&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Creating toolbars and menus</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=Creating%20commands%20and%20tools&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Creating commands and tools</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

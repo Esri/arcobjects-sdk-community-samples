@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DigitToolVBNet", "DigitToolVBNet.vbproj", "{B45D0223-EDBC-4A0F-A06E-7AA058FB0371}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B45D0223-EDBC-4A0F-A06E-7AA058FB0371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45D0223-EDBC-4A0F-A06E-7AA058FB0371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45D0223-EDBC-4A0F-A06E-7AA058FB0371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45D0223-EDBC-4A0F-A06E-7AA058FB0371}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

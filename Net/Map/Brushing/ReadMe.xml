@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.706" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Brushing to create a selection</title>
+	<purpose>The Brushing tool allows you to use any graphic to create a selection within the map view in ArcMap. You can select a feature by dragging the graphic object so that it overlaps the feature. Selected features update dynamically as the user drags the graphic across the map area. If a graph is created showing the selected features, it gets updated dynamically. </purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="VBNet">
+			
+		<file>
+									<filename>BrushingVB_NET_Addin\BrushingVB_NET_Addin\BrushingVB.vb</filename>
+									<description>The class file.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="CSharp">
+									
+								<file>
+									<filename>BrushingCS_NET_Addin\BrushingCS_NET_Addin\BrushingCS.cs</filename>
+									<description>The class file.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Start Visual Studio, open the solution file, then build the project.</step><step>Start ArcMap and add some data. </step><step>Click the Customize menu and click Customize Mode. The Customize dialog box appears. </step><step>Click the Commands tab on the Customize dialog box, find Brushing from Custom Graph Controls, then drag the Brushing tool from the commands to any toolbar in ArcMap. Close the Customize dialog box.</step><step>Draw a graphic object (for example, a rectangle) using the Draw tool on the Draw toolbar. </step><step>Select the Brushing tool and slowly drag the graphic across the features. You will see features that are overlapping with the graphic get selected while you drag. </step><step>To further explore the data, you can add a graph based on the feature. The selected items in the graph update as the graphic is being dragged across the feature. </step><step>The Brushing tool is intended to be used for a small dataset. If your dataset is large, the dynamic update is slow. For the best results in using this tool, slowly drag the graphic across the feature to see the dynamic update between the map and graph. </step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Cartography, Mapping, &amp; 2D Display</tag>
+	<tag>Add-ins</tag></content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>7794b344-f6ad-45b6-bf3a-189f2e02aa37</guid>
+	<content_management>
+		<owner>maxi4368</owner>
+		<tech_reviewer>Jeremy Wright</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-12-16</langrev_last_updated_date>
+		<langrev_last_updated_time>21:25:59</langrev_last_updated_time>
+		<last_updated_date>2010-05-03</last_updated_date>
+		<last_updated_time>10:39:09</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2010-05-03</last_copyedit_date>
+									<last_copyedit_time>10:40:39</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>kyli4140</editor_name>
+										<edit_date>2010-04-29</edit_date>
+										<edit_time>14:31:21</edit_time>
+										<edit_notes>Updated how to use to be about Customize menu and Customize Mode (like 10) instead of the Tool menu and Customize option (like 9.3).</edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>kyli4140</editor_name>
+									<edit_date>2010-04-29</edit_date>
+									<edit_time>14:36:44</edit_time>
+									<edit_notes>Added to the SDK for 10 Final and sent to copyediting</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-05-03</edit_date>
+									<edit_time>10:40:48</edit_time>
+									<edit_notes>Edited.<br xmlns="http://www.w3.org/1999/xhtml"/>SDK inclusion completed.</edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>mine3384</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

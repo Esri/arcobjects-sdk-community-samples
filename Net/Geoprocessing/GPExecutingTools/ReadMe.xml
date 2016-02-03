@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="11.0.8034" solutionVersion="9.4.0.700" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Executing geoprocessing tools</title>
+  <purpose>This sample uses the Geoprocessor class in conjunction with geoprocessing tool classes to execute a series of geoprocessing tools. This sample shows how to extract features to a new feature class based on a location and an attribute query. This sample illustrates how to execute geoprocessing tools and set geoprocessing environments in a .NET application. </purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="VBNet">
+      <file>
+        <filename>executetool/copyfeatures.vb</filename>
+        <description>Source file containing code for executing geoprocessing tools.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="CSharp">
+      <file>
+        <filename>executetool/copyfeatures.cs</filename>
+        <description>Source file containing code for executing geoprocessing tools.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the solution file in Visual Studio.</step>
+        <step>You can substitute the paths to your own data in the code, compile, and run this sample, or you can use it as a template for running other tools.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information>This sample is a console application, and Microsoft Visual Studio is required to run this application. </additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>Using geoprocessing</topic_display>
+      <topic_link>e97c1aa4-8489-458b-9336-ace7465d5582</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Geoprocessing</tag>
+  </content_area_tags>
+  <guid>43d8cc77-5193-4ca8-9878-6027782e2bbb</guid>
+  <content_management>
+    <owner>Nobbir Ahmed</owner>
+    <tech_reviewer>Dale Honeycutt</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:13:20</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-13</last_copyedit_date>
+      <last_copyedit_time>12:49:51</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-09-13</edit_date>
+        <edit_time>12:49:45</edit_time>
+        <edit_notes>Edited.</edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

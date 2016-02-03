@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Executing tools</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Executing tools</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample uses the IGeoprocessor object to perform a number of geoprocessing operations. This sample extracts features to a new feature class based on a location and an attribute query.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Copy the test data to C:\data folder.  </li>
+<li>Start Visual Studio.  </li>
+<li>Open the solution (*.sln) file.  </li>
+<li>If your data is not in C:\data folder, change the hard-coded paths to data in the gp_copyfeatures.cpp file.  </li>
+<li>Build the solution.  </li>
+<li>Run the program (start debugging or press F5).  </li>
+<li>Start ArcMap.  </li>
+<li>Drag and drop the districts and contaminated_areas feature classes.  </li>
+<li>The output shows only those contaminated sites that fall within the districts.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

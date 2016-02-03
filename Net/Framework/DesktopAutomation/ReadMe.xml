@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.923" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Automate ArcGIS for Desktop applications</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to automate ArcGIS for Desktop applications (ArcMap, ArcScene, and ArcGlobe) from stand-alone .NET applications. To programmatically start a new application session, you can use the new operator to create a new Document object (MxDocument, SxDocument, or GMxDocument). Once you successfully create the new Document object, a new application session is started. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The stand-alone application also allows you to add layers to the new session of the application. IObjectFactory is used to create the new layers inside the application's process space. In addition, it shows how to programmatically clean up and shut down the application properly, including how to handle the case when the application has been closed by the user manually (with AppROT event). </div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>Form1.cs</filename>
+        <description>Form for automation demonstration showing how to start an ArcGIS for Desktop application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>Form1.vb</filename>
+        <description>Form for automation demonstration showing how to start an ArcGIS for Desktop application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>Automating an ArcGIS for Desktop application</title>
+      <how_to_use_steps>
+        <step>Open the solution file in Visual Studio and compile the sample.</step>
+        <step>Run DesktopAutomationCS.exe or DesktopAutomationVB.exe depending on the language version.</step>
+        <step>Select ArcMap, ArcScene, or ArcGlobe from the application drop-down list and click Start to start a new application session. Notice the change in the state of the Start (becomes unavailable) and the Exit (becomes available) buttons.</step>
+        <step>Type the path of a valid shapefile in the text box, and click Add Layer to add it to the new application session.</step>
+        <step>Click Exit to shut down the application session. Notice the change in the state of the Start (becomes available) and the Exit (becomes unavailable) buttons.</step>
+      </how_to_use_steps>
+    </how_to_use>
+    <how_to_use>
+      <title>Handling modal dialog boxes when exiting the application</title>
+      <how_to_use_steps>
+        <step>Start a new application session.</step>
+        <step>Open a modal dialog box of the application; for example, click the Add Data button.</step>
+        <step>With the Add Data dialog box displayed, click Exit to shut down the application session.</step>
+      </how_to_use_steps>
+    </how_to_use>
+    <how_to_use>
+      <title>Handling the manual application shutdown in an automation session</title>
+      <how_to_use_steps>
+        <step>Start a new application session.</step>
+        <step>Close the application manually by clicking File, then clicking Exit or click the Close (X) button on the title bar. Notice the change in the state of the Start (becomes available) and the Exit (becomes unavailable) buttons.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Automating ArcGIS for Desktop applications</topic_display>
+      <topic_link>56eba175-54c1-46b4-801a-fc968e582581</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Application Framework</tag>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag></existing_tag>
+  </indexing_tags>
+  <guid>5FA97F03-D985-44B9-B40B-5091E50933D3</guid>
+  <content_management>
+    <owner>Steve Van Esch</owner>
+    <tech_reviewer>Xiaoling Yang</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2012-03-19</last_updated_date>
+    <last_updated_time>16:13:14</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2012-03-19</last_copyedit_date>
+      <last_copyedit_time>16:14:17</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-09-25</edit_date>
+        <edit_time>15:59:04</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml">Edit.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div>
+        </edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2012-03-19</edit_date>
+									<edit_time>16:14:05</edit_time>
+									<edit_notes>10.2 product name changes update.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

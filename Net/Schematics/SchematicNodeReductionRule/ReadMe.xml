@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.923" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Reducing schematic nodes and computing a cumulative attribute via a schematic rule</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Several schematic node reduction rules are provided with this version to simplify schematic diagrams content by removing some specific schematic nodes while preserving the topology. You can also develop your custom schematic node reduction rule by implementing the IComPropertyPage interface to create the rule property page, and the new ISchematicRule and ISchematicRuleDesign interfaces. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><span style="FONT-SIZE: 10pt"><strong></strong></span> </div>
+<div style="LINE-HEIGHT: 12pt; MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10pt" xmlns="http://www.w3.org/1999/xhtml"><span style="FONT-SIZE: 10pt"><strong>Caution:</strong> If you plan to implement a custom schematic rule to be executed via a client-server application, the solution must implement two projects; one for the custom rule property page and the other for the custom rule execution itself. The component dedicated to the custom rule execution will have to be registered with the ArcGIS server to be used on any client-server application.</span></div>
+<div style="LINE-HEIGHT: 12pt; MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10pt" xmlns="http://www.w3.org/1999/xhtml"><span style="FONT-SIZE: 10pt"></span> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample details a customized schematic node reduction rule implementation. The goal of this rule is as follows:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml">
+<li xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Reducing schematic nodes with two connections, implemented by a specific schematic feature class. The rule works on nodes that connect only two links.</li>
+<li xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Preserving the initial topology by creating super spans based on a given schematic link feature class. A super span link is created to replace the two "reduced" links that initially connect a reduced node.</li>
+<li xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Cumulating values of a given attribute brought by the two "reduced" links on the super span attribute.</li></ul></purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension>Schematics</extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>Schematics</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>Schematics</extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension>Schematics</extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>Schematics</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>Schematics</extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.2</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="VBNet">
+			<file>
+				<filename>NodeReductionRule.vb</filename>
+				<description>Implementation for the custom node reduction rule.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>NodeReductionRuleVBNet2010.vbproj</filename>
+									<description>Project file for the custom node reduction code.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+									<filename>NodeReductionRulePropertyPage.vb</filename>
+									<description>Implementation for the custom rule's property page.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>FrmNodeReductionRule.vb</filename>
+									<description>Custom rule's property page.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>FrmNodeReductionRule.Designer.vb</filename>
+									<description>Custom rule's property page.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>NodeReductionRulePageVBNet2010.vbproj</filename>
+									<description>Project file for the custom node reduction rule's property page code.</description>
+									<viewable_code>false</viewable_code>
+								</file></files>
+	<files lang="CSharp">
+									
+								<file>
+        <filename>NodeReductionRule.cs</filename>
+        <description>Implementation for the custom node reduction rule.</description>
+        <viewable_code>true</viewable_code>
+      </file><file>
+									<filename>NodeReductionRuleCS2010.csproj</filename>
+									<description>Project file for the custom node reduction code.</description>
+									<viewable_code>false</viewable_code>
+								</file><file>
+        <filename>NodeReductionRulePropertyPage.cs</filename>
+        <description>Implementation for the custom rule's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file><file>
+        <filename>FrmNodeReductionRule.cs</filename>
+        <description>Custom rule's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file><file>
+        <filename>FrmNodeReductionRule.Designer.cs</filename>
+        <description>Custom rule's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file><file>
+									<filename>NodeReductionRulePageCS2010.csproj</filename>
+									<description>Project file for the custom node reduction rule's property page code.</description>
+									<viewable_code>false</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Open the solution file and build the project. Note that this step automatically registers the components.</step><step>Start ArcCatalog.</step><step>Browse to any geodatabase that contains a schematic dataset.</step><step>Right-click this schematic dataset entry and select Edit. The Schematic Dataset Editor starts.</step><step>Select any diagram template entry that works with the Standard builder or create a diagram template that works with the Standard builder.</step><step>Click the Rules tab.</step><step>Click Add Rule on the Rules tab toolbar.</step><step>Select the new custom node reduction rule from the Type drop-down list (that is, select Node Reduction Rule C# or Node Reduction Rule VBNet).</step><step>Click Rule Properties on the Rules tab toolbar. The custom rule properties page appears.</step><step>Select the node schematic feature class (that implements the nodes reduced during the rule execution) in the Select the schematic class to reduce drop-down list.</step><step>In the Target superspan link section, select the link schematic feature class (that automatically implements the schematic links created to preserve the topology during the rule execution) in the Select the schematic class drop-down list .</step><step>Add the name of the attribute that needs to be computed during the rule execution in the Cumulative attribute name text box. This attribute must exist with the same name on the schematic feature classes related to the links that connect the reduced nodes (that is, it must exist for each "reduced" link) and on the superspan link schematic feature class.</step><step>Select the Keep vertices check box if you want to report the original path of the reduced links to the superspan link.</step><step>Click Save to save the schematic dataset's new parameters.</step><step>Start ArcMap and generate or update a schematic diagram from the diagram template (which the definition has just been modified). The custom rule will be executed.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display>ISchematicRule interface</topic_display>
+			<topic_link>esriSchematic/ISchematicRule.htm</topic_link>
+		</topic>
+	<topic>
+									<topic_display>ISchematicRuleDesign interface</topic_display>
+									<topic_link>esriSchematic/ISchematicRuleDesign.htm</topic_link>
+								</topic></related_topics>
+	<content_area_tags>
+		<tag>Schematics extension</tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>f33c519e-159b-4f8e-b7c7-1cf270638ba9</guid>
+	<content_management>
+		<owner>anne0002</owner>
+		<tech_reviewer>Rick Anderson</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2011-03-15</langrev_last_updated_date>
+		<langrev_last_updated_time>10:52:14</langrev_last_updated_time>
+		<last_updated_date>2012-03-05</last_updated_date>
+		<last_updated_time>18:53:12</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2011-03-29</last_copyedit_date>
+									<last_copyedit_time>14:41:47</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>mine3384</editor_name>
+										<edit_date>2011-03-29</edit_date>
+										<edit_time>14:41:48</edit_time>
+										<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Owner needs to verify the use of super span vs. superspan.</li>
+<li>Set status back to SDK inclusion completed.</li></ul></edit_notes>
+									</editing_section>
+								</edits></content_management>
+	<current_user>anne0002</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

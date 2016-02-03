@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DemoITableBinding2010", "DemoITableBinding\DemoITableBinding2010.vbproj", "{DA7BCEA2-86BA-4591-8B9A-EFD3B41F1132}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ArcDataBinding2010", "ArcDataBinding\ArcDataBinding2010.vbproj", "{468A5C96-0BAC-48EB-BE26-6BB3BFA7CBE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA7BCEA2-86BA-4591-8B9A-EFD3B41F1132}.Debug|x86.ActiveCfg = Debug|x86
+		{DA7BCEA2-86BA-4591-8B9A-EFD3B41F1132}.Debug|x86.Build.0 = Debug|x86
+		{DA7BCEA2-86BA-4591-8B9A-EFD3B41F1132}.Release|x86.ActiveCfg = Release|x86
+		{DA7BCEA2-86BA-4591-8B9A-EFD3B41F1132}.Release|x86.Build.0 = Release|x86
+		{468A5C96-0BAC-48EB-BE26-6BB3BFA7CBE3}.Debug|x86.ActiveCfg = Debug|x86
+		{468A5C96-0BAC-48EB-BE26-6BB3BFA7CBE3}.Debug|x86.Build.0 = Debug|x86
+		{468A5C96-0BAC-48EB-BE26-6BB3BFA7CBE3}.Release|x86.ActiveCfg = Release|x86
+		{468A5C96-0BAC-48EB-BE26-6BB3BFA7CBE3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

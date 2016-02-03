@@ -1,0 +1,10 @@
+	<Type>
+		<Name>WatermarkFunction</Name>
+		<Namespace>http://www.esri.com/schemas/ArcGIS/10.2</Namespace>
+		<CLSID>{168721E7-7010-4a36-B886-F644437B164D}</CLSID>
+	</Type>
+	<Type>
+		<Name>WatermarkFunctionArguments</Name>
+		<Namespace>http://www.esri.com/schemas/ArcGIS/10.2</Namespace>
+		<CLSID>{996DC8E5-086B-41b5-919A-A3B9B86F2B30}</CLSID>
+	</Type>

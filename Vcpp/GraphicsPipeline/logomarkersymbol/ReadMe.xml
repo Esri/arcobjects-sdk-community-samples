@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/vcpp/VCppSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:VCPPSample:" language="en-us" productVersion="12.0.0" solutionVersion="9.4.0.661" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>LogoMarkerSymbol</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml">This example provides a custom symbol which draws a company logo to symbolize a point. Simple custom functionality is provided to alter the colors of the different parts of the symbol, and a property page is also provided to allow end users to edit the properties of the symbol.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension/>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension/>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension/>
+    </license>
+  </deployment_license>
+  <apis>
+    <api>
+    </api>
+  </apis>
+  <capabilities>
+    <capability>
+    </capability>
+  </capabilities>
+  <min_version>9.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>
+    </data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="VCPP">
+      <file>
+        <filename>bmp_butt.bmp</filename>
+        <description>Bitmap for the ColorButton control.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>LogoMarkerPropertyPage.cpp</filename>
+        <description>Implementation of the property page for the LogoMarkerSymbol.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LogoMarkerPropertyPage.h</filename>
+        <description>Header file of the property page for the LogoMarkerSymbol.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LogoMarkerPropertyPage.rgs</filename>
+        <description>ATL registration script for the property page.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>LogoMarkerSymbol.cpp</filename>
+        <description>Implementation of the LogoMarkerSymbol.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LogoMarkerSymbol.h</filename>
+        <description>Header file for the LogoMarkerSymbol.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LogoMarkerSymbol.rgs</filename>
+        <description>ATL registration script for the LogoMarkerSymbol.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>LogoMarkerSymbolVC.cpp</filename>
+        <description>Implementation of the C++ project.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      
+      <file>
+        <filename>LogoMarkerSymbolVC.h</filename>
+        <description>Header file for the project.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>LogoMarkerSymbolVC.idl</filename>
+        <description>Interface Definition Language file for the custom interface, ILogoMarkerSymbol, implemented by the LogoMarkerSymbol coclass.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>LogoMarkerSymbolVC.rc</filename>
+        <description>Resource file for the project.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      
+      <file>
+        <filename>resource.h</filename>
+        <description>Resoure definitions file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>StdAfx.cpp</filename>
+        <description>Standard precompiled implementation file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>StdAfx.h</filename>
+        <description>Standard precompiled header file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title/>
+      <how_to_use_steps>
+        <step>Register LogoMarkerSymbolVB.dll or LogoMarkerSymbolVC.dll.</step>
+        <step>Open ArcMap, and add a layer with point features, or a marker graphic element.</step>
+        <step>For a layer, right-click the layer in the ArcMap table of contents, choose Properties, and then in the Layer Properties dialog box, choose the Symbology tab. The Single Symbol renderer should be  selected by default—click the Symbol button to show the Symbol Selector.</step>
+        <step>For a marker element, right-click the element, and choose Properties. In the Properties dialog box, make sure the Symbol tab is selected, and click the Change Symbol button.</step>
+        <step>In the Symbol Selector dialog box, click the Properties button to display the Symbol Editor.</step>
+        <step>In the Symbol Editor dialog box, pull down the Type list box and choose Logo Marker Symbol.</step>
+        <step>You can now set the properties of a LogoMarkerSymbol. Click OK to select the symbol and return to the             Symbol Selector.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>
+    </tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>678ef75f-4e65-42ef-9f1c-e85eaf22d09a</guid>
+  <content_management>
+    <owner>Shelly Gill</owner>
+    <tech_reviewer>katy dalton</tech_reviewer>
+    <status>SDK inclusion requested</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-02-03</last_updated_date>
+    <last_updated_time>19:21:47</last_updated_time>
+  </content_management>
+  <current_user>katy4195</current_user>
+  <sdk>VCPP</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

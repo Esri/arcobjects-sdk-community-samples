@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.673" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Building a MapViewer application using the ArcGIS Engine controls</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">In this sample, the MapControl, PageLayoutControl, TOCControl, and ToolbarControl are used in conjunction with other ArcObjects and the control commands to create a Map Viewer application. This sample accompanies the <a href="http://7bd52ed1-18ae-4aa7-8cde-e9eaed9537fe">Building a map viewing application using the ArcGIS Engine controls</a> walkthrough and demonstrates the following:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Loading preauthored map documents into the PageLayoutControl and MapControl using the CheckMxFile and LoadMxFile methods.</li>
+<li>Setting the ToolbarControl and TOCControl buddy control to be the PageLayoutControl using the SetBuddyControl method.</li>
+<li>Resizing the MapControl and PageLayoutControl when the container form or dialog box is resized.</li>
+<li>Adding navigation and inquiry commands to the ToolbarControl using the AddItem method.</li>
+<li>Creating a pop-up menu from the commands that work with the PageLayoutControl and displays as a right-click context menu.</li>
+<li>Creating a palette of tools from the commands and adding it to the ToolbarControl.</li>
+<li>Managing the way map and layer labels are edited in the TOCControl using the LabelEdit property and the ITOCControlEvents.OnEndLabelEdit event.</li>
+<li>Using the MapControl as an overview window by using the DrawShape method to highlight the current extent of data in the PageLayoutControl.</li>
+<li>Creating a custom Add Date command that works with the PageLayoutControl, ToolbarControl, and MapControl.</li>
+<li>Customizing the ToolbarControl with the Customize property and displaying the CustomizeDialog to the end user at runtime.</li>
+<li>Persisting the ToolbarControl items using the SaveItems and LoadItems methods.</li>
+<li>Printing the contents of the PageLayoutControl using the PrintPageLayout method. </li></ul></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>Controls/MapViewer.cs</filename>
+        <description>The form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Controls/AssemblyInfo.cs</filename>
+        <description>The assembly information. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Commands/AddDateTool.cs</filename>
+        <description>The class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Commands/AssemblyInfo.cs</filename>
+        <description>The assembly information.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>Controls/MapViewer.vb</filename>
+        <description>The form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Controls/AssemblyInfo.vb</filename>
+        <description>The assembly information. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Commands/AddDateTool.vb</filename>
+        <description>The class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Commands/AssemblyInfo.vb</filename>
+        <description>The assembly information. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the .NET solution file and build the projects.</step>
+        <step>Run the controls application.</step>
+        <step>Use the Open Document command on the ToolbarControl to browse to a preauthored map document to load into the PageLayoutControl.</step>
+        <step>Use the commands and tools on the ToolbarControl to navigate around the map document. Right-click the PageLayoutControl to display the pop-up menu. Use the palette on the ToolbarControl to draw graphic elements on the PageLayoutControl.</step>
+        <step>Use the custom Add Date tool to add an element to the PageLayoutControl containing the current date.</step>
+        <step>Click a map or layer label in the TOCControl, then click it again to edit the label.</step>
+        <step>Customize the ToolbarControl by adding new commands, menus, or palettes from the CustomizeDialog. To alter the appearance of an existing item on the ToolbarControl, right-click the item to display the context menu. Stop running the application, then restart the application to see that the customizations you made were persisted.</step>
+        <step>Print the contents of the PageLayoutControl by selecting Print from the File menu.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Walkthrough: Building a map viewing application using the ArcGIS Engine controls</topic_display>
+      <topic_link>7bd52ed1-18ae-4aa7-8cde-e9eaed9537fe</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Commands &amp; Tools</tag>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+  </content_area_tags>
+  <guid>b107b782-e5b0-495f-b00f-4d2b0fb42f47</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-03-08</last_updated_date>
+    <last_updated_time>13:49:53</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-03-08</last_copyedit_date>
+									<last_copyedit_time>13:53:56</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-03-08</edit_date>
+									<edit_time>13:53:48</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Edited. SDK inclusion requested.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

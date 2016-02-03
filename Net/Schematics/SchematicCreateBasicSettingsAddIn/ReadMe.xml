@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" productVersion="12.0.0" solutionVersion="9.4.0.896" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Utility wizard for basic schematic datasets configuration</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample, developed as an add-in ArcCatalog extension, is a Utility wizard that can be used to create a schematic dataset in a geodatabase with basic settings on a diagram template that uses geometric network data as the input for generating schematic diagrams. It greatly simplifies the schematic dataset's primary configuration steps for simple cases. It allows the following:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml">
+<li>Configuration of some basic properties for the Standard builder that will be used to generate the schematic diagrams (optional).</li>
+<li>Specification of the input geometric network data from which the diagrams will be generated (required). This results in the creation of the associated schematic feature classes in the schematic dataset.</li>
+<li>Specification of node reduction by priority rules to systematically reduce any orphan nodes and nodes with two connections when those nodes are based on specific schematic feature classes (optional).</li>
+<li>Specification of the directions for a Hierarchical-Smart Tree layout algorithm to be automatically executed at the diagram generation (optional).</li>
+<li>Creation of specific schematic attributes associated with fields in the geometric network feature classes (optional).</li></ul></purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Advanced</name>
+			<extension>Schematics</extension>
+		</license>
+	</development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Advanced</name>
+			<extension>Schematics</extension>
+		</license>
+	</deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			
+		<file>
+									<filename>GenerateSchematicTemplate.cs</filename>
+									<description>Class file that implements the ArcCatalog tool.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>frmDatasetTemplateName.cs</filename>
+									<description>Class that implements the Dataset and Template Name form.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>frmSelectItemsToReduce.cs</filename>
+									<description>Class that implements the Select network feature classes form.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>frmAdvanced.cs</filename>
+									<description>Class that implements the Advanced Options form.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>Events.cs</filename>
+									<description>Class that implements the events.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>Config.esriaddinx</filename>
+									<description>Add-in declarations in Extensible Markup Language (XML).</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>GenerateSchematicTemplate.vb</filename>
+										<description>Class file that implements the ArcCatalog tool.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>frmDatasetTemplateName.vb</filename>
+									<description>Class that implements the Dataset and Template Name form.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>frmSelectItemsToReduce.vb</filename>
+									<description>Class that implements the Select network feature classes form.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>frmAdvanced.vb</filename>
+									<description>Class that implements the Advanced Options form.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>Events.vb</filename>
+									<description>Class that implements the events.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>Config.esriaddinx</filename>
+									<description>Add-in declarations in Extensible Markup Language (XML).</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title>Building the component</title>
+			<how_to_use_steps>
+				<step>Start Visual Studio.</step><step>Open the solution and build the project.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	<how_to_use>
+									<title>Adding the custom Create Basic Schematic Settings button to any ArcCatalog toolbar</title>
+									<how_to_use_steps>
+										<step>Start ArcCatalog.</step><step>Click Customize and click Customize Mode.</step><step>Click the Commands tab, and click Schematic Extras (VBNet) or Schematic Extras (CSharp) in the Categories list.</step><step>Drag-and-drop the Create Basic Schematic Settings command onto any toolbar.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Testing the Create Basic Schematic Settings wizard</title>
+									<how_to_use_steps>
+										<step>In the Catalog tree, either select the geodatabase in which you want to create the new schematic dataset with basic settings or select the schematic dataset in which you want to configure a new diagram template.</step><step>Click the Create Basic Schematic Settings (VBNet) or Create Basic Schematic Settings (C#) button. The Dataset and Template Name dialog box appears.</step><step>If you started from a selected geodatabase, type a name for the new schematic dataset to create in the Dataset Name field. When starting from a schematic dataset, the Dataset Name field is already specified.</step><step>Type a name for the diagram template in the Template Name field.</step><step>Select Use digitized vertices if you want the schematic links in the diagrams based on the new diagram template to display with their initial vertices.</step><step>Click Next. The Select a map document dialog box appears.</step><step>Select the map that contains the geographic feature classes from which you want to generate the diagrams based on the new diagram template and click Add. The Select network feature classes to reduce dialog box appears.</step><step>If you want a Node reduction by priority rule to be configured on your diagram template for one or several schematic feature classes, select the desired schematic feature class items.</step><step>Click Next. The Advanced Options dialog box appears.</step><step>In the Algorithm tab, if you want a Smart Tree schematic layout algorithm to be automatically executed at the end of each diagram generation, select the Apply Smart Tree algorithm check box, then configure the desired Direction and Root Feature Class using the drop-down lists.</step><step>In the Attributes tab, if you want some schematic associated field attributes to be automatically created on your schematic feature classes, select the Create associated attribute check box. Select the desired schematic feature class on the left part of the form and, on the right part, select the check box related to each desired field item.</step><step>Click Done. The process starts. A new schematic dataset containing a new diagram template with the settings you specified is created in the geodatabase.</step><step>You can now open the map that was selected in the preceding Step 7, select some features, and generate a new diagram based on the new dataset and/or template.</step>
+									</how_to_use_steps>
+								</how_to_use></how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag></tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>5a1d9c45-7930-4b6d-b537-64e6712cbbe4</guid>
+	<content_management>
+		<owner>anne0002</owner>
+		<tech_reviewer>Rick Anderson</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2011-01-07</langrev_last_updated_date>
+		<langrev_last_updated_time>14:40:46</langrev_last_updated_time>
+		<last_updated_date>2011-03-29</last_updated_date>
+		<last_updated_time>14:16:46</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2011-03-29</last_copyedit_date>
+									<last_copyedit_time>14:18:18</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>mine3384</editor_name>
+										<edit_date>2011-03-29</edit_date>
+										<edit_time>14:18:32</edit_time>
+										<edit_notes>Edited.</edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>elea2233</editor_name>
+									<edit_date>2011-03-30</edit_date>
+									<edit_time>14:07:19</edit_time>
+									<edit_notes>Adding this sample into the SDK even though it did not compile for me. Schematics team have got it compiling successfully on multiple machines in their group.</edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>elea2233</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

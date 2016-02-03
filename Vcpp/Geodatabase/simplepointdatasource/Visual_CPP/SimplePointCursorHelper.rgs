@@ -1,0 +1,25 @@
+HKCR
+{
+	SimplePointVC.SimplePointCursorHelper.1 = s 'SimplePointCursorHelper Class'
+	{
+		CLSID = s '{A049B834-73D7-11D6-8ADB-00104BB6FCCB}'
+	}
+	SimplePointVC.SimplePointCursorHelper = s 'SimplePointCursorHelper Class'
+	{
+		CLSID = s '{A049B834-73D7-11D6-8ADB-00104BB6FCCB}'
+		CurVer = s 'SimplePointVC.SimplePointCursorHelper.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A049B834-73D7-11D6-8ADB-00104BB6FCCB} = s 'SimplePointCursorHelper Class'
+		{
+			ProgID = s 'SimplePointVC.SimplePointCursorHelper.1'
+			VersionIndependentProgID = s 'SimplePointVC.SimplePointCursorHelper'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{65E5BA11-721A-11D6-8AD9-00104BB6FCCB}'
+		}
+	}
+}

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Extension implementation</title>
+  <purpose>This sample illustrates different implementations of application extensions in ArcGIS. The SimpleExtension class contains the minimal implementation of IExtension, which listens to document events. Examples of configurable extensions are shown by the ArcViewOnlyExtension, ArcEditorOnlyExtension, and ArcInfoOnlyExtension classes in the project. The extension state of these implementations can be toggled in the Extension Manager dialog box and is only enabled when the appropriate product license is running in the current application. </purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>ArcEditorOnlyExtension.cs</filename>
+        <description>A configurable extension only available with an ArcEditor product license.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ArcInfoOnlyExtension.cs</filename>
+        <description>A configurable extension only available with an ArcInfo product license.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ArcViewOnlyExtension.cs</filename>
+        <description>A configurable extension only available with an ArcView product license.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimpleExtension.cs</filename>
+        <description>Simple extension listening to document events.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>ArcEditorOnlyExtension.vb</filename>
+        <description>A configurable extension only available with an ArcEditor product license.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ArcInfoOnlyExtension.vb</filename>
+        <description>A configurable extension only available with an ArcInfo product license.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ArcViewOnlyExtension.vb</filename>
+        <description>A configurable extension only available with an ArcView product license.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimpleExtension.vb</filename>
+        <description>Simple extension listening to document events.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open and compile the sample project in Visual Studio. If necessary, set up a debug application.</step>
+        <step>Start ArcCatalog, ArcMap, ArcScene, or ArcGlobe (this sample works in any of these applications). </step>
+        <step>Create or open a document. If you are debugging, select the Output Window in Visual Studio where the SimpleExtension class prints debugging information, which indicates it is listening to document events.</step>
+        <step>Click the Customize menu, and click Extensions. The Extension Manager dialog box opens.</step>
+        <step>Select one of the sample extensions to view its associated description shown at the bottom of the dialog box.</step>
+        <step>Verify the product license your application is running against and select the appropriate sample extension on the dialog box. For example, if you are running an ArcInfo license, select ArcInfo Extension (C#) or ArcInfo Extension (VB .NET) from the list; extension checking will be successful, therefore, you can check the extension off.</step>
+        <step>If you check the other product extension on, an error similar to the standard ArcGIS extensions appears, indicating it is unavailable.</step>
+        <step>Close, then open the Extension Manager dialog box. The License not available message appears next to the extensions that you did not enable. </step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Creating an application extension</topic_display>
+      <topic_link>06b87b98-6477-4036-85f3-ef27caa00bb0</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Application Framework</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>1e2d8ca6-aa59-413e-828b-c0d7466c9fa4</guid>
+  <content_management>
+    <owner>Steve Van Esch</owner>
+    <tech_reviewer>Xiaoling Yang</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:07:44</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-25</last_copyedit_date>
+      <last_copyedit_time>14:31:13</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-09-25</edit_date>
+        <edit_time>14:30:59</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div>
+        </edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

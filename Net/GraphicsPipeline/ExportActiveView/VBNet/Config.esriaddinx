@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ExportActiveViewVB_Net_Addin</Name>
+  <AddInID>{501c2c50-b1bc-4458-9fc9-249aa709c408}</AddInID>
+  <Description>Exports the Active View using VisualBAsic .NET</Description>
+  <Version>1.0</Version>
+  <Image>Images\ExportActiveViewVB_Net.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>12/8/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="ExportActiveViewVB_Net_Addin.dll" namespace="ExportActiveViewVB_Net_Addin">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_ExportActiveViewVB" class="ExportActiveViewVB_Net" message="Exports the Active View using VisualBAsic .NET" caption="Export Active View VB.NET" tip="Export Active View VB .NET" category="Developer Samples" image="Images\ExportActiveViewVB_Net.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

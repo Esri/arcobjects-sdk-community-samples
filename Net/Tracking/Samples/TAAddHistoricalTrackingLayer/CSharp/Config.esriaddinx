@@ -1,0 +1,22 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>TAAddHistoricalTrackingLayer</Name>
+  <AddInID>{4cd5ffcc-1aef-4fae-9430-5d6a71c71611}</AddInID>
+  <Description>Adds a temporal layer and loads static data into the layer.</Description>
+  <Version>1.0</Version>
+  <Image>Images\TAAddHistoricalTrackingLayer.png</Image>
+  <Author>Ryan Elliott</Author>
+  <Company>ESRI</Company>
+  <Date>8/31/2009 10:47:06 AM</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="TAAddHistoricalTrackingLayer.dll" namespace="TAAddHistoricalTrackingLayer">
+    <ArcMap>
+      <Commands>
+        <Button id="TAAddHistoricalTrackingLayer_AddTemporalLayerButton" class="AddTemporalLayerButton" caption="Add Temporal Layer" category="Add-In Controls" image="Images\AddTemporalLayerButton.png">
+          <Help>Adds a temporal layer and loads static data into the layer</Help>     
+        </Button>
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

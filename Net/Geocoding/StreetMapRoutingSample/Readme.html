@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>StreetMap routing</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>StreetMap routing</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample shows how to utilize the StreetMap routing application programming interface (API). It is an implementation of a simple dialog box allowing you to set from and to stop addresses along with other routing settings, such as calculate a route, display route geometry on the map, and display driving directions text.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open the solution file in Visual Studio and build the project.  </li>
+<li>Start ArcMap.  </li>
+<li>Click the Customize menu, click Toolbars, and click Routing Sample to enable the Routing Sample toolbar.  </li>
+<li>Click the button on the Routing Sample toolbar to open the Routing Sample dialog box.   </li>
+<li>Browse to the location of a routing service file (.rs extension) and select it in the Routing Service field.  </li>
+<li>Browse to the location of an address locator file and select it in the Address Locator field.   </li>
+<li>Type the address of the starting location for driving directions in the Start section and the address of the ending location in the Finish section.  </li>
+<li>In the Options section, specify the type of route, quickest or shortest, to be calculated. Specify the distance units and select the street type preference for routing using the slider bar; for example, moving the slider towards Use Local Roads causes the router to utilize non-highway roads as much as possible in the output driving directions.  </li>
+<li>Optional. Click the Restrictions button to open the Restrictions dialog box. If the data referenced by the routing service file specified in step 5 contains restriction attributes, this dialog box will be populated with the available restriction parameters. Set the restrictions in this dialog box as desired.   </li>
+<li>Optional. If a point feature class containing barrier features is available, browse to it in the Barriers Table field.  </li>
+<li>Click the Find Route button to generate a list of driving directions and display a route graphic in ArcMap.  </li>
+<li>Click the Show Directions button to open the Driving Directions dialog box, which contains the list of driving directions.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td>  </td><td>  </td></tr>  
+</table>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Layer effects animation in ArcMap</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Layer effects animation in ArcMap</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample shows how to create custom animations in ArcGIS for Desktop and implement a layer effects animation type for ArcMap. It allows you to animate through layer brightness and contrast. This animation only works with raster layers that support contrast and brightness as layer properties.  As shown by the sample code, to create a custom animation type in ArcMap, ArcScene, or ArcGlobe, implement a new keyframe class and a new animation type class. Register the animation type class in the Esri Map Animation Types component category (or Esri 3D Animation Types for ArcScene and Esri 3D Animation Types for Globe or ArcGlobe).  </p>
+
+<h3>Usage</h3>
+
+<h4>Add layer effects animation functionality to ArcMap</h4>
+
+<ol>
+<li>Compile the sample project in Visual Studio.  </li>
+<li>Start ArcMap and add a raster layer to the table of contents (TOC).  </li>
+<li>Click Customize, Toolbars, and Animation to open the Animation toolbar.  </li>
+<li>You can now create layer effects animation in ArcMap in a similar way as you create a map layer animation (first use the Create Animation Keyframe dialog box to create a layer effects track with two keyframes, then use the Animation Manager to set the keyframe properties).  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

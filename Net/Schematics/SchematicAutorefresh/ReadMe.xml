@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" language="en-us" solutionVersion="9.4.0.561" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Schematic diagram auto refresh</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">
+<div><span class="PropertyValue">This sample is an ArcMap add-in that shows how to create a custom button that turns the automatic refresh feature on and off in a schematic diagram.</span></div></div></purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension>Schematics</extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>Schematics</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>Schematics</extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension>Schematics</extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>Schematics</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>Schematics</extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>Autorefresh.cs</filename>
+				<description>Implements the AutoRefresh button.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>FormAutorefresh.cs</filename>
+									<description>Implements the form's interval time.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>Autorefresh.vb</filename>
+										<description>Implements the AutoRefresh button.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>FormAutorefresh.vb</filename>
+									<description>Implements the form's interval time.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title>Building the component</title>
+			<how_to_use_steps>
+				<step>Open the solution file and build the project.</step>
+			</how_to_use_steps>
+		<how_to_use_pictures>
+									
+								</how_to_use_pictures></how_to_use>
+	<how_to_use>
+									<title>Configuring schematic attributes to be evaluated at On Start Editing</title>
+									<how_to_use_steps>
+										<step>Start ArcCatalog and edit a schematic dataset with a diagram template configured to work from a geometric network.</step><step>Check the On Start Editing evaluation mode for any Associated Field schematic attribute that is used to label or symbolize the schematic features in the schematic diagrams.</step><step>Save the schematic dataset and exit the Schematic Dataset Editor.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Adding the custom AutoRefresh button to the Schematic Editor toolbar</title>
+									<how_to_use_steps>
+										<step>Start ArcMap with a new empty map.</step><step>Click Customize and click Customize Mode.</step><step>Click the Commands tab and click AutoRefresh (VBNet) or AutoRefresh (C#) in the Categories list.</step><step>Drag and drop the AutoRefresh command onto the Schematic Editor toolbar.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Testing auto refresh in the schematic diagram</title>
+									<how_to_use_steps>
+										<step>In the Layers data frame, add the geometric network data with which your diagram template works.</step><step>Open a schematic diagram containing schematic features that were affected by the changes made during the On Start Editing evaluation, or generate a schematic diagram.</step><step>Click Schematic Editor and click Start Editing Diagram on the Schematic Editor toolbar.</step><step>Click the AutoRefresh (VBNet) or AutoRefresh (C#) button. The Schematic Auto Refresh Properties dialog box opens.</step><step>Check the Auto Refresh On option, configure the time interval parameter values, then close the dialog box.</step><step>In the active schematic diagram, select a schematic feature impacted by the changes made during the On Start Editing evaluation.</step><step>Click Propagate Schematic Selection To Map on the Schematic toolbar. The associated feature is automatically selected in the Layers data frame.</step><step>Activate this data frame and zoom in on the selected geographic information system (GIS) feature.</step><step>On the Editor toolbar, click Editor and click Start Editing.</step><step>Change some attribute values for the selected GIS feature.</step><step>Activate the data frame containing the schematic diagram. After the specified time interval, all schematic attributes configured during the On Start Editing evaluation have been automatically re-evaluated. They reflect the changes you made to the associated GIS feature attributes. If these schematic attributes are used to label or symbolize the schematic feature, the impact is visual; the symbol or the label has been automatically changed.</step>
+									</how_to_use_steps>
+								</how_to_use></how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Schematics extension</tag>
+	<tag>Add-ins</tag></content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>dcbefb09-a64c-49a9-8759-dfd991edd54c</guid>
+	<content_management>
+		<owner>Dominique Broux</owner>
+		<tech_reviewer>Anne-Yvonne BLIN</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-10-27</langrev_last_updated_date>
+		<langrev_last_updated_time>20:00:29</langrev_last_updated_time>
+		<last_updated_date>2009-12-11</last_updated_date>
+		<last_updated_time>14:46:32</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2009-12-11</last_copyedit_date>
+									<last_copyedit_time>14:47:17</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2009-12-11</edit_date>
+										<edit_time>14:47:00</edit_time>
+										<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div></edit_notes>
+									</editing_section>
+								</edits></content_management>
+	<current_user>kyli4140</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

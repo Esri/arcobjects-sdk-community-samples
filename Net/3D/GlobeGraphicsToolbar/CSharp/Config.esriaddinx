@@ -1,0 +1,36 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>GlobeGraphicsToolbar</Name>
+  <AddInID>{2629f470-06e8-4d7a-9c43-81c7ace4b119}</AddInID>
+  <Description>This add-in sample shows how to write ArcObjects code to build a toolbar of tools that work in ArcGlobe, which allows you to interactively create 3D points, rasterized polylines and polygons, 2D text by clicking the globe surface. By reviewing this sample, a developer can learn how to work with globe graphics containers, text elements, polygon elements, polyline elements, and point elements, and how to programmatically adjust various display settings. </Description>
+  <Version>1.0</Version>
+  <Image>Images\GlobeGraphicsToolbar.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>12/11/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="GlobeGraphicsToolbar.dll" namespace="GlobeGraphicsToolbar">
+    <ArcGlobe>
+      <Commands>
+        <Button id="ESRI_GlobeGraphicsToolbar_ColorCommand" class="ColorCommand" message="ColorCommand" caption="ColorCommand" tip="ColorCommand" category="Add-In Controls" image="Images\ColorCommand.png" />
+        <Tool id="ESRI_GlobeGraphicsToolbar_PointTool" class="PointTool" message="PointTool" caption="PointTool" tip="PointTool" category="Add-In Controls" image="Images\PointTool.png" cursor="Images\PointTool.cur" />
+        <Tool id="ESRI_GlobeGraphicsToolbar_PolylineTool" class="PolylineTool" message="PolylineTool" caption="PolylineTool" tip="PolylineTool" category="Add-In Controls" image="Images\PolylineTool.png" cursor="Images\PolylineTool.cur" />
+        <Tool id="ESRI_GlobeGraphicsToolbar_PolygonTool" class="PolygonTool" message="PolygonTool" caption="PolygonTool" tip="PolygonTool" category="Add-In Controls" image="Images\PolygonTool.png" cursor="Images\PolygonTool.cur" />
+        <Tool id="ESRI_GlobeGraphicsToolbar_TextTool" class="TextTool" message="TextTool" caption="TextTool" tip="TextTool" category="Add-In Controls" image="Images\TextTool.png" cursor="Images\TextTool.cur" />
+        <Tool id="ESRI_GlobeGraphicsToolbar_StyleTool" class="StyleTool" message="StyleTool" caption="StyleTool" tip="StyleTool" category="Add-In Controls" image="Images\StyleTool.png" cursor="Images\StyleTool.cur" />
+      </Commands>
+      <Toolbars>
+        <Toolbar id="ESRI_GlobeGraphicsToolbar_GraphicsToolbar" caption="GraphicsToolbar" showInitially="false">
+          <Items>
+            <Button refID="ESRI_GlobeGraphicsToolbar_ColorCommand" separator="false" />
+            <Tool refID="ESRI_GlobeGraphicsToolbar_PointTool" separator="false" />
+            <Tool refID="ESRI_GlobeGraphicsToolbar_PolylineTool" separator="false" />
+            <Tool refID="ESRI_GlobeGraphicsToolbar_PolygonTool" separator="false" />
+            <Tool refID="ESRI_GlobeGraphicsToolbar_TextTool" separator="false" />           
+          </Items>
+        </Toolbar>
+      </Toolbars>
+    </ArcGlobe>
+  </AddIn>
+</ESRI.Configuration>

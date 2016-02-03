@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Feature editing with the control commands</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Feature editing with the control commands</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates feature editing using the control commands in conjunction with the ToolbarControl and MapControl. The AddItem method is used within the Form_Load event to add new feature editing commands to the ToolbarControl with their Style set. A Sketch menu and Vertex menu are added to ToolbarMenu's using the AddItem method. Within the MapControl's OnMouseDown event, the PopupMenu method is used to display the appropriate ToolbarMenu when the right mouse button has been clicked. The editing properties used by the feature editing commands in the ToolbarControl and the ToolbarMenu are determined by the IEditProperties and IEditProperties2 interface members implemented by the EngineEditor object. The EditProperties and EditProperties2 forms are used to manage and validate changes to these properties by the end user. Note: If you are editing features from a shapefile or a personal geodatabase, the minimum license required to initialize this application is an ArcGIS Engine or ArcGIS for Desktop Basic license. If you are editing features from an enterprise geodatabase, the minimum license required to initialize this application is an ArcGIS Engine Enterprise GeoDatabase or ArcGIS for Desktop Standard license. Before running this application, check the product licenses in the LicenseControl property pages accordingly.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Browse to a map document to load into the MapControl.   </li>
+<li>Use the commands on the ToolbarControl to sketch new features, update existing features, update parts of a sketch, or update attributes.   </li>
+<li>Right-click the MapControl to access the Sketch context menu.   </li>
+<li>Click the Option buttons to change the edit properties.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=EngineEditor%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">EngineEditor class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IEngineEditProperties%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IEngineEditProperties interface</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IEngineEditProperties2%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IEngineEditProperties2 interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

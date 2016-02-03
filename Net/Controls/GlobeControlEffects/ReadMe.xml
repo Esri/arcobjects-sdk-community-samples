@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.706" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Effects in the GlobeControl</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to manipulate heads-up display (HUD), north arrow, observer location (latitude, longitude, and altitude), enabling, setting sun, and ambient light effects. This sample shows how to do the following:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Use the IGlobeViewer interface NorthArrowEnabled and HUDEnabled properties to enable north arrow and heads-up display.</li>
+<li>Use the IGlobeDisplayRendering interface GetSunColor, SetSunColor, GetSunPosition, and SetSunPosition methods and AmbientLight property to get and set the sun color, sun position, and ambient light.</li>
+<li>Use the IGlobeCamera.GetObserverLatLonAlt method to get observer latitude, longitude, and altitude.</li>
+<li>Listen to an AfterDraw event of IGlobeDisplayEvents.</li></ul></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>Designed to run with a display setting of 96 dpi.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>Effects.cs</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AssemblyInfo.vb</filename>
+        <description>Assembly information. </description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>Effects.vb</filename>
+        <description>Form file. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>If no default document is loaded, open a globe document.</step>
+        <step>Select the Enable Sun check box to enable and disable the sun effect and click the Set Sun Color button to set the desired color of the sun. </step>
+        <step>Select the HUD check boxes to enable and disable the built-in heads-up display; the Alternate HUD area shows how to make a heads-up display. </step>
+      </how_to_use_steps>
+      <how_to_use_pictures>
+        <picture>
+          <image>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</image>
+          <caption>Screen shot of the HUD options used in this sample.</caption>
+        </picture>
+      </how_to_use_pictures>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>GlobeControl class</topic_display>
+      <topic_link>esriControls/GlobeControl.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IGlobeControl interface</topic_display>
+      <topic_link>esriControls/IGlobeControl.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>3D analysis &amp; visualization</tag>
+    <tag>Globe</tag>
+  </content_area_tags>
+  <guid>9111623F-5296-4e2a-ADAA-3332C5816BA1</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-05-10</last_updated_date>
+    <last_updated_time>16:40:52</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-05-10</last_copyedit_date>
+									<last_copyedit_time>16:43:16</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-05-10</edit_date>
+									<edit_time>16:42:58</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

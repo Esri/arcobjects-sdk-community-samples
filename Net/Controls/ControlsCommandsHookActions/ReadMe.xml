@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.780" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Using HookActions in custom commands</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to use the IHookActions interface in custom commands to zoom, pan, flash and create graphics, labels, and callouts of selected features. The sample uses the MapControl, GlobeControl, and ToolbarControl in conjunction with the control commands.</div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path></data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>HookActions.cs</filename>
+        <description>Form file.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsCallout.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsFlash.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsGraphic.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsLabel.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsPan.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsZoom.cs</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>HookActions.vb</filename>
+        <description>Form file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsCallout.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsFlash.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsGraphic.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsLabel.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsPan.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>hookActionsZoom.vb</filename>
+        <description>Class file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Add data to map, globe or both. For instance, add wsiearth/wsiearth.tif as the globe backdrop to allow black graphics and callouts to be seen. You could add line features from UsaMajorHighways/usa_major_highways.shp.</step><step>Select some features. Note: on globe, you must select multiple features using Shift+Ctrl; there is no extent selection.</step>
+        <step>Right-click the display to zoom, pan, flash or create graphics, labels, or callouts of selected features.</step><step>Note: on globe, graphics cannot be selected.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml">Each custom command uses the HookHelper and GlobeHookHelper object to manage the hook passed to the ICommand.OnCreate event. In the ICommand.OnClick event, the IBasicMap.FeatureSelection method is used to return the feature selection of the IHookHelper.FocusMap or the IGlobeHookHelper.Globe. The geometry of each feature in the feature selection is added to an IArray.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">The IHookActions.ActionSupportedOnMultiple property is used to determine whether the specified action (zoom, pan, flash, graphic, label, or callout) is supported with the geometries in the array. If the action is supported, the IHookActions.DoActionOnMultiple or IHookActions.DoActionWithNameOnMultiple method is called to perform the specific action. The DoActionWithNameOnMultiple method is used when performing a label or callout action. In addition to passing an array of geometries, an array of strings for labeling is also passed. In this case, that string array contains the value from the first field of each feature.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">The custom commands are added to a ToolbarMenu using the IToolbarMenu.AddItem method and the ToolbarMenu's hook property is set to the ToolbarControl. In the MapControl and GlobeControl OnMouseDown event, the IToolbarMenu.PopupMenu method is used to display the menu when the right mouse button is clicked.</div></additional_information><related_topics>
+    <topic>
+      <topic_display>HookHelper</topic_display>
+      <topic_link>esriControls/HookHelper.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>GlobeHookHelper</topic_display>
+      <topic_link>esriControls/GlobeHookHelper.htm</topic_link>
+    </topic>
+    <topic>
+      <topic_display>IHookActions</topic_display>
+      <topic_link>esriControls/IHookActions.htm</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <guid>7f4c4aa6-ec6d-4811-9bac-f33ba12b2ce1</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>copyediting requested</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-08-03</last_updated_date>
+    <last_updated_time>13:15:08</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-05-07</last_copyedit_date>
+									<last_copyedit_time>11:14:54</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-05-07</edit_date>
+									<edit_time>11:14:15</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>gyoung</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

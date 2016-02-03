@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BisectorRuleVBNet", "BisectorRule\BisectorRuleVBNet.vbproj", "{97C2836A-A4CD-406A-A8CF-DD276D4ABBBE}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BisectorRulePageVBNet", "BisectorRulePage\BisectorRulePageVBNet.vbproj", "{1F3D0D3B-818A-41F7-A866-FC65646746D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97C2836A-A4CD-406A-A8CF-DD276D4ABBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C2836A-A4CD-406A-A8CF-DD276D4ABBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C2836A-A4CD-406A-A8CF-DD276D4ABBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C2836A-A4CD-406A-A8CF-DD276D4ABBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3D0D3B-818A-41F7-A866-FC65646746D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3D0D3B-818A-41F7-A866-FC65646746D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3D0D3B-818A-41F7-A866-FC65646746D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3D0D3B-818A-41F7-A866-FC65646746D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

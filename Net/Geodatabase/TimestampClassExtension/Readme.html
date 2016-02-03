@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Timestamper class extension</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Timestamper class extension</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample provides an example of a geodatabase class extension that implements the optional IObjectClassEvents interface. By listening to object creation and modification events from the base class, this extension automatically maintains creation and modification time stamps for each object in the class, along with the name of the user who created or last modified the object. Along with this class extension, this sample contains two ancillary classes—a custom class description and a custom property page. The custom class description allows time-stamped feature classes to be created from ArcCatalog and the property page allows users to configure the class extension from ArcCatalog.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open the solution in Visual Studio.  </li>
+<li>Ensure ArcCatalog is closed. Build the solution's class library in Visual Studio (this registers the class extension, description, and property page with ArcGIS).  </li>
+<li>Start ArcCatalog. When creating a feature class in a geodatabase, Timestamped Class should show as a type of class.  </li>
+<li>After creating a time-stamped feature class, view the feature class's properties. There should be a Timestamp Settings tab that allows the extension to be configured.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Creating%20class%20extensions&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Creating class extensions</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=How%20to%20create%20property%20pages%20and%20property%20sheets&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to create property pages and property sheets</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

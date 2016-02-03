@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>3D dynamic element tracking</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates the techniques for manipulating the globe camera to track a dynamic element and covers the following techniques:</div>
+    <ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+      <li>Setting globe's camera observer and target</li>
+      <li>Creating and loading graphic layers</li>
+      <li>Creating, adding, and updating graphic elements in a graphic layer</li>
+      <li>Working with ArcObjects real-time feed manager, including the following:</li>
+      <ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+        <li>Setting the real-time feed simulator as an input feed</li>
+        <li>Listening to real-time feeds PositionUpdated event </li>
+      </ul>
+    </ul>
+  </purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+    
+    
+    
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path>USAMajorHighways/usa_major_highways.shp</data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>TrackDynamicObject.cs</filename>
+        <description>The command's implementation file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TrackSelectionDlg.cs</filename>
+        <description>The dialog box allowing users to select the required tracking type.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>TrackDynamicObject.vb</filename>
+        <description>The command's implementation file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TrackSelectionDlg.vb</filename>
+        <description>The dialog box allowing users to select the required tracking type.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution.</step>
+        <step>Build the solution.</step>
+        <step>Open a GlobeControl application in design mode.</step>
+        <step>On the Customize dialog box choose the .NET Samples category.</step>
+        <step>On the Command Items pane, drag the Track Dynamic Object command on to a toolbar.</step>
+        <step>Run the application and click the command.</step>
+        <step>From TrackSelectionDlg, select the type of tracking you want to use.</step>
+        <step>Click OK to start tracking.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display></topic_display>
+      <topic_link></topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>3D analysis &amp; visualization</tag>
+    <tag>Globe</tag>
+  </content_area_tags>
+  <guid>1e6fd533-2b08-4cd3-99cb-58f220d99819</guid>
+  <content_management>
+    <owner>Yaron fine</owner>
+    <tech_reviewer>Morakot Pilouk</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-27</last_updated_date>
+    <last_updated_time>12:13:43</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-23</last_copyedit_date>
+      <last_copyedit_time>13:00:16</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-23</edit_date>
+        <edit_time>13:00:08</edit_time>
+        <edit_notes>Edited.<br xmlns="http://www.w3.org/1999/xhtml"/>Ready for SDK inclusion.<br xmlns="http://www.w3.org/1999/xhtml"/>If owner needs to change, do so on the content management page.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>kyli4140</editor_name>
+									<edit_date>2010-04-27</edit_date>
+									<edit_time>12:13:20</edit_time>
+									<edit_notes>Removed Related topic link to Walkthrough: Tracking dynamic objects in ArcGlobe/GlobeControl (1477c242-a79d-4b65-bba6-2895488939fb) since not in the SDK at 10 Final.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

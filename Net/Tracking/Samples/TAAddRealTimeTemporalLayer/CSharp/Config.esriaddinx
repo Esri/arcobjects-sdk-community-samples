@@ -1,0 +1,22 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>TAAddRealTimeTemporalLayer</Name>
+  <AddInID>{839fbe97-2c95-4440-ae59-34005cbaeadb}</AddInID>
+  <Description>This button adds a live Tracking Server Layer to the map.</Description>
+  <Version>1.0</Version>
+  <Image>Images\TAAddRealTimeTemporalLayer.png</Image>
+  <Author>Ryan Elliott</Author>
+  <Company>ESRI</Company>
+  <Date>8/31/2009 1:59:50 PM</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="TAAddRealTimeTemporalLayer.dll" namespace="TAAddRealTimeTemporalLayer">
+    <ArcMap>
+      <Commands>
+        <Button id="TAAddRealTimeTemporalLayer_AddTrackingServerLayerButton" class="AddTrackingServerLayerButton" caption="Adds Tracking Server Layer" category="Add-In Controls" image="Images\AddTrackingServerLayerButton.png">
+          <Help>This button adds a live Tracking Server Layer to the map.</Help>
+        </Button>
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

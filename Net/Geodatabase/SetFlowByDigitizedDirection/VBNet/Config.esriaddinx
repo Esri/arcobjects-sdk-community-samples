@@ -1,0 +1,24 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>SetFlowByDigitizedDirection</Name>
+  <AddInID>{eb4f06ad-1341-4c18-805b-1b60e5eb60e7}</AddInID>
+  <Description>Type in a description for the add-in.</Description>
+  <Version>1.0</Version>
+  <Image>Images\SetFlowByDigitizedDirection.png</Image>
+  <Author>alan2713</Author>
+  <Company>ESRI</Company>
+  <Date>2009-09-03 15:45:25</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="SetFlowByDigitizedDirection.dll" namespace="SetFlowByDigitizedDirection">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_SetFlowByDigitizedDirection_SetFlowByDigitizedDirectionVBNet" class="SetFlowByDigitizedDirectionVBNet" tip="Set Flow By Digitized Direction VBNet" message="Sets the flow direction by the digitized direction of each edge." caption="Set Flow By Digitized Direction VBNet" category="Add-in Developer Samples" image="Images\SetFlowByDigitizedDirectionVBNet.png">
+          <Help heading="Set Flow By Digitized Direction VBNet">The Set Flow By Digitized Direction add-in illustrates how to create a custom flow direction solver for utility networks.
+
+The button sets the flow direction for each edge feature in the network along the direction in which the feature was digitized.  An edit session must be in progress in order to use this button.</Help>
+        </Button>
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

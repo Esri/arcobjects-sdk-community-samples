@@ -1,0 +1,32 @@
+<!--  Copyright 2011 ESRI
+ 
+ All rights reserved under the copyright laws of the United States
+ and applicable international laws, treaties, and conventions.
+ 
+ You may freely redistribute and use this sample code, with or
+ without modification, provided you include the original copyright
+ notice and use restrictions.
+ 
+ See the use restrictions at <your ArcGIS install location>/DeveloperKit10.2/userestrictions.txt.
+ 
+ -->
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>PrintActiveViewArcPressCS_Net_Addin</Name>
+  <AddInID>{7e8e18e6-ab12-4a35-8a8a-4f21bbcaed5c}</AddInID>
+  <Description>Prints Active View to selected printer with ArcPress</Description>
+  <Version>1.0</Version>
+  <Image>Images\PrintActiveViewArcPressCS_Net2008_Addin.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>3/15/2010</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="PrintActiveViewArcPressCS_Net_Addin.dll" namespace="PrintActiveViewArcPressCS_Net_Addin">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_PrintActiveViewArcPressCS" class="PrintActiveViewArcPressCS_Net_Addin" message="Prints Active View to selected printer with ArcPress" caption="Print Active View with ArcPress CSharp.NET" tip="Print Active View with ArcPress CSharp.NET" category="Developer Samples" image="Images\PrintActiveViewArcPressCS_Net2008_Addin.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

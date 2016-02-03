@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Route application using the NAServer extension in ArcGIS for Server via a Web service</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Route application using the NAServer extension in ArcGIS for Server via a Web service</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample is a stand-alone application that shows how to programmatically perform point-to-point routing using the ArcGIS Network Analyst extension in ArcGIS for Server connecting to a Web service catalog. This sample demonstrates some of the key programming patterns when using ArcGIS Network Analyst extension server objects. These programming patterns include the following:Connecting to the Web service.Accessing solver properties from a route analysis layer.Creating stop locations from a set of x,y coordinates.Setting NAServer route solver parameters.Solving to find the best route.Accessing NAServer result objects (map showing the route, driving directions, and input and output NAClasses).   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Publish a network analysis service (see the following section).  </li>
+<li>Open the solution file in Visual Studio.  </li>
+<li>In the Solution Explorer, right-click References, and choose Add Web Reference.  </li>
+<li>Type in the following URL: http://<server>:6080/arcgis/services/SanFrancisco/MapServer/NAServer?wsdl, then click Go.  </li>
+<li>In the Web Reference Name control, type the name WebService.  </li>
+<li>Click Add Reference.  </li>
+<li>Save the solution.  </li>
+<li>Build and run the project.  </li>
+<li>Choose the route solver options.  </li>
+<li>Click the Find Route button.  </li>
+<li>Click the different tabs to get the solver results according to your NAServerRouteParams.  </li>
+</ol>
+
+<h4>Publish a network analysis service</h4>
+
+<ol>
+<li>Open ArcMap.  </li>
+<li>Open <Your ArcGIS Developer Kit install folder>\samples\data\SanFrancisco\SanFrancisco.mxd.  </li>
+<li>Navigate to File > Share As > Service.  </li>
+<li>Choose Publish a service, and click Next.  </li>
+<li>Choose the Publisher connection to ArcGIS 10.2 for Server, which will host the published document.   </li>
+<li>Click Next, then click Continue.  </li>
+<li>Choose Capabilities and check the Network Analysis check box.  </li>
+<li>Click the Analyze button and address any significant issues that may be present.  </li>
+<li>Click the Publish button. Note: If the publishing connection does not have "Copy data to the server when publishing" selected, SanFrancisco.gdb should be present on the server in exactly the same location as on the publishing machine.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine: Network Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Basic: Network Analyst </td><td> ArcGIS for Desktop Basic: Network Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Standard: Network Analyst </td><td> ArcGIS for Desktop Standard: Network Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced: Network Analyst </td><td> ArcGIS for Desktop Advanced: Network Analyst </td></tr>  
+</table>
+
+</body>
+</html>

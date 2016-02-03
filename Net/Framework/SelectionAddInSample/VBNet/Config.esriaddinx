@@ -1,0 +1,81 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Selection Sample VB.NET</Name>
+  <AddInID>{BB1BB09E-F0A3-42c3-A62D-3062464AE48A}</AddInID>
+  <Description>A custom selection extension that includes new selection tools and a dockable window that reports the selection on a per layer basis.</Description>
+  <Version>1.0</Version>
+  <Image>Images\SelectionSample.png</Image>
+  <Author>ESRI Staff</Author>
+  <Company>ESRI</Company>
+  <Date>10/8/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="SelectionSample.dll" namespace="SelectionSample">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_SelectionSample_ToggleDockWinBtn" class="ToggleDockWinBtn" caption="Toggle Dockable Window" category="Framework AddIn Samples" image="Images\ToggleDockWinBtn.png" tip="Toggle dockable window." message="Toggle dockable window.">
+          <Help heading="Add-in button">Click on the button to toggle the dockable window with selected features count per layer.</Help>
+        </Button>
+        <Tool id="ESRI_SelectionSample_SelectByLineTool" class="SelectByLineTool" caption="Select By Line Tool" category="Framework AddIn Samples" image="Images\SelectByLine.png" cursor="Images\SelectByLine.cur" tip="Select By Line Tool." message="Select By Line Tool."></Tool>
+        <ToolPalette id="ESRI_SelectionSample_ToolPalette" caption="Selection Palette" isMenuStyle="false" category="Framework AddIn Samples" >
+          <Items>
+            <Tool refID="esriArcMapUI.SelectByPolygonTool" />
+            <Tool refID="esriArcMapUI.SelectByLayerCommand" />
+            <Tool refID="ESRI_SelectionSample_SelectByLineTool" />
+          </Items>
+        </ToolPalette>
+        <ComboBox id="ESRI_SelectionSample_SelectionTargetComboBox" class="SelectionTargetComboBox"
+                  tip="Select the selectoin target." message="Select the selection target."
+                  caption="Selection Target:" showCaption="false" category="Framework AddIn Samples" 
+                  image="Images\SelectionTargetComboBox.png" editable="true" sizeString="WWWWWWWWWWWWWW"
+                  rows="4" itemSizeString="WWWWWWWWWWWWWW" hintText="Selection target">
+          <Help heading="Add-in ComboBox">Use this combo box to set the selection target.</Help>
+        </ComboBox>
+        <MultiItem id="ESRI_SelectionSample_MultiItem" caption="MultiItem AddIn" class="ZoomToLayerMultiItem" message="Select layer to zoom to its full extent.">
+          <Help heading="Add-in MultiItem">Select layer to zoom to its full extent.</Help>
+        </MultiItem>
+      </Commands>
+      <Extensions>
+        <Extension id="ESRI_SelectionSample_SimpleExtension" autoLoad="false" productName="Selection Sample Extension" showInExtensionDialog="true" class="SelectionExtension">
+          <Description>This is a selection sample extension.</Description>
+        </Extension>
+      </Extensions>
+      <Toolbars>
+        <Toolbar id="ESRI_SelectionSample_AddInToolbar" caption="Selection AddIn Toolbar" showInitially="true">
+          <Items>
+            <!--Reference to the custom combobox-->
+            <ComboBox refID="ESRI_SelectionSample_SelectionTargetComboBox" separator="true"/>
+            <!--Reference to the custom menu to provide access to the custom multiItem -->
+            <Menu refID="ESRI_SelectionSample_ZoomToLayerMenu"/>
+            <!--Reference to the custom button and tool-->
+            <Button refID="ESRI_SelectionSample_ToggleDockWinBtn"/>
+            <Tool refID="ESRI_SelectionSample_SelectByLineTool" />
+            <!--Reference to the custom tool palette-->
+            <ToolPalette refID="ESRI_SelectionSample_ToolPalette" separator="true" />
+            <!--Reference to the custom Menu-->
+            <Menu refID="ESRI_SelectionSample_AddInMenu" separator="true" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+      <Menus>
+        <Menu id="ESRI_SelectionSample_AddInMenu" caption="Selection Tools Menu" isRootMenu="false">
+          <Items>
+            <!--Built in buttons-->
+            <Button refID="esriArcMapUI.ClearSelectionCommand" />
+            <Button refID="esriArcMapUI.SelectAllCommand" />
+          </Items>
+        </Menu>
+        <Menu id="ESRI_SelectionSample_ZoomToLayerMenu" caption="Zoom To Layer">
+          <Items>
+            <MultiItem refID="ESRI_SelectionSample_MultiItem"/>
+          </Items>
+        </Menu>
+      </Menus>
+      <DockableWindows>
+        <DockableWindow id="ESRI_SelectionSample_SelCountDockWin" class="SelCountDockWin+AddinImpl" caption="Selected Features Count" image="Images\ToggleDockWinBtn.png">
+          <InitialPlacement height="300" width="300" state="pinned" position="right" neighbor="esriArcMapUI.TOCDockableWindow" />
+        </DockableWindow>
+      </DockableWindows>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

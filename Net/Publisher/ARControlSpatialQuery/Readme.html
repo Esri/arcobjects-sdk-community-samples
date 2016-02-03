@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>ArcReaderGlobeControl document properties</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>ArcReaderGlobeControl document properties</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to use the IARGlobeControl.ShowARGlobeWindow method to display the FileProperties modal window when the Browse dialog box is used to select a document to load into the control. The DataFrame and Layer properties modal windows are displayed by right-clicking the globe or a layer in the table of contents (TOC) to display the context menu and selecting Properties. The IARGlobeControl.TOCVisible property is used to toggle the visibility of the TOC if the loaded document was published with permission to do so.  When the TOC is invisible, the DataFrame and Layer properties cannot be displayed manually. Instead, the IARGlobeControl.ARGlobe property is used to obtain pertinent information about the globe; for example, its Description, DistanceUnits, Name, and SpatialReferenceName properties. The IARGlobe.ARLayer property is used to iterate each layer in the globe and obtain its Description, Name, MaximumScale, and MinimumScale properties. These properties are concatenated into a string, which is displayed in a RichTextBox.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio, open the solution file, and build the project.   </li>
+<li>Run the application.   </li>
+<li>Browse to a Published Map File (PMF) from ArcGlobe to load.   </li>
+<li>Display the file properties.  </li>
+<li>Right-click the globe in the TOC to display the data frame properties.   </li>
+<li>Right-click a layer in the TOC to display the layer properties.   </li>
+<li>Hide the TOC.   </li>
+<li>Display the globe and layer properties.   </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic: Publisher </td><td> ArcReader </td></tr>  
+<tr><td> ArcGIS for Desktop Standard: Publisher </td><td> Engine </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced: Publisher </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

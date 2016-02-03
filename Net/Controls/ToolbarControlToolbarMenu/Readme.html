@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Creating toolbar menus that work with the ToolbarControl</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Creating toolbar menus that work with the ToolbarControl</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates creating menu items, submenus, and pop-up menus using the ToolbarMenu object. The sample uses the ToolbarControl in conjunction with the MapControl and control commands.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Browse to a map document to load into the MapControl.   </li>
+<li>Navigate around the data using the commands on the ToolbarControl.   </li>
+<li>Use the command buttons to add a menu item to the ToolbarControl, and a submenu to the menu item.   </li>
+<li>Right-click the display to show the Navigation menu.   </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The AddItem method is used within the Form_Load event to add new items to the ToolbarControl with their style set. An IMenuDef object is created from a menu defined within the same application. The menu is defined within a class implementing the IMenuDef interface and is made up of default ToolbarControl commands.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This menu is added to a ToolbarMenu using the AddItem method and the ToolbarMenu.Hook property is set to the ToolbarControl. A submenu is added to this menu using the IToolbarMenu.AddSubMenu method. The IToolbarMenu.PopupMenu method is used within the MapControl OnMouseDown event to display the menu when the right mouse button is used.</div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=ToolbarControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ToolbarControl class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IToolbarControl%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IToolbarControl interface</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IToolbarMenu%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IToolbarMenu interface</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IMenuDef%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IMenuDef interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

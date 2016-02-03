@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="9.4.0.896" PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Get and set key properties on a mosaic dataset</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">
+<div>This sample shows how to open a mosaic dataset and goes through each row in the attribute table, then checks whether the dataset in the row has any band information (band properties) associated with it. If the item has no band information, band properties for the first three bands in the item (if the item has three or more bands) are inserted. The mosaic dataset product definition is changed to natural color red, green, and blue (RGB) so that ArcGIS can use the band names of the mosaic dataset. This sample also shows how to set a key property on the mosaic dataset.</div>
+<div> </div>
+<div>This sample has the following functions:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Functions to get/set any key property for a dataset</li>
+<li>Functions to get/set any band property for a dataset</li>
+<li>Functions to get all the properties and all the band properties </li>
+<div>for a dataset</div></ul></div></purpose>
+	<development_license>
+		
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine Developer Kit</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.2</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			
+		<file>
+        <filename>GetSetKeyProperty.cs</filename>
+        <description>Main source file that contains the components of the sample, including licensing code.</description>
+        <viewable_code>true</viewable_code>
+      </file></files>
+	<files lang="VBNet">
+									
+								<file>
+        <filename>GetSetKeyProperty.vb</filename>
+        <description>Main source file that contains the components of the sample, including licensing code.</description>
+        <viewable_code>true</viewable_code>
+      </file></files></file_section>
+	<how_to_use_section>
+		
+	<how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution file.</step>
+        <step>Edit the strings in the Input database and Mosaic Dataset region to specify the parameters that specify the database from which to open the mosaic dataset, and the name of the mosaic dataset to open. Alternatively, these parameters can also be specified as command line arguments.</step>
+        <step>Compile and run the program.</step>
+        <step>If the program succeeds, the console shows a Success message. If an error occurs, it shows on the console window.</step>
+        <step>Load the changed mosaic dataset into ArcMap or ArcCatalog.</step>
+      </how_to_use_steps>
+    </how_to_use></how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Rasters</tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag>Raster dataset</existing_tag><existing_tag>Mosaic dataset</existing_tag>
+	</indexing_tags>
+	<guid>ad5911a0-2908-4cb7-870a-60806d24bf38</guid>
+	<content_management>
+		<owner>pras4765</owner>
+		<tech_reviewer>Wenxue Ju</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2011-11-09</langrev_last_updated_date>
+		<langrev_last_updated_time>14:23:22</langrev_last_updated_time>
+		<last_updated_date>2011-11-21</last_updated_date>
+		<last_updated_time>10:22:03</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2011-11-21</last_copyedit_date>
+									<last_copyedit_time>10:22:49</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>mine3384</editor_name>
+										<edit_date>2011-11-21</edit_date>
+										<edit_time>10:22:54</edit_time>
+										<edit_notes>Edited. SDK inclusion completed. Per <span xmlns="http://www.w3.org/1999/xhtml" style="FONT-SIZE: 10pt"><font face="Tahoma">Prashant, added to TOC under Working with mosaic datasets folder.</font></span></edit_notes>
+									</editing_section>
+								</edits></content_management>
+	<current_user>mine3384</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

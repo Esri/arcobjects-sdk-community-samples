@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>View CAD data in a MapControl</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>View CAD data in a MapControl</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample provides a stand-alone application containing a MapControl that can be used to view computer-aided design (CAD) data. When compiled, the application can be associated with the most common CAD file name extensions (.dxf, .dwg, and .dng) so that this will be the default application for opening files of these types. When opened, the application allows the user to view the data including the ability to zoom and pan.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Edit the CADFiles.REG file, replacing the two instances of the path to the sample executable to the actual path of the sample executable on your machine; for example, C:\Program Files\ArcGIS\DeveloperKit<version number>\Samples\ArcObjectsNET\MapControlCADViewer\CSharp\CADView.exe.   </li>
+<li>Double-click this .reg file to merge its contents into the registry. Note that merging this data into the registry may overwrite existing file associations for these file types.   </li>
+<li>Select any CAD file (.dxf, .dwg, or .dgn)—for example, in Windows Explorer—and right-click the file.   </li>
+<li>Choose View. The application opens to display the CAD file you selected inside the MapControl.   </li>
+<li>Zoom in on the CAD data by dragging a rectangle using the left mouse button and pan around using the right mouse button.   </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=MapControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">MapControl class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IMapControl2%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IMapControl2 interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Custom solver</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Custom solver</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample provides a custom ArcGIS Network Analyst extension solver for traversing a network dataset and finding connected/disconnected network components.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open the solution file in Visual Studio.  </li>
+<li>If your SDK is not installed in "\Program Files (x86)\ArcGIS\DeveloperKit10.2", search for that string and replace all entries with the correct path.  </li>
+<li>Build the solution.  </li>
+<li>If the compilation process does not register the CustomSolver.dll into ArcGIS for Desktop, register it manually.  </li>
+<li>Start ArcMap.  </li>
+<li>Add a network dataset to the map.  </li>
+<li>On the Network Analyst toolbar, click Network Analyst > Options, and set it to show all messages.  </li>
+<li>Open the Network Analyst toolbar and click Network Analyst > New Connectivity.  </li>
+<li>Load locations into the Seed Points layer of the Connectivity analysis layer.  </li>
+<li>Click Solve. Lines are added to the Lines layer that reference source features that are not connected to any of the seed points.  </li>
+<li>Right-click the Connectivity layer and click Properties to change the properties of the analysis layer, including whether you want to output the connected features instead of the disconnected features and whether or not you want to generate the line geometry.  </li>
+<li>Re-solve to see the effects of changing the analysis layer properties.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic: Network Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard: Network Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced: Network Analyst </td></tr>  
+</table>
+
+</body>
+</html>

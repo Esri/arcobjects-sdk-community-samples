@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>CustomReportSample</Name>
+  <AddInID>{22a0ff58-cbda-44de-a8b8-63f898b9fda4}</AddInID>
+  <Description>This sample shows of how to use ArcObjects' interfaces to build a report.</Description>
+  <Version>1.0</Version>
+  <Image>Images\CustomReport_CS.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>9/8/2010</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="CustomReport_CS.dll" namespace="CustomReport_CS">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_CustomReport_CS_GenerateReport" class="GenerateReport" message="Generate a report based on user's preference" caption="Generate a report" tip="Generate a report" category="Add-In Controls" image="Images\GenerateReport.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

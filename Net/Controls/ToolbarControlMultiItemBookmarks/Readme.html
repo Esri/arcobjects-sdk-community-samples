@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Add a custom bookmarks MultiItem to the ToolbarControl</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Add a custom bookmarks MultiItem to the ToolbarControl</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates creating a MultiItem and adding it to a ToolbarMenu. The MultiItem creates a menu item for each spatial bookmark that exists in the bookmarks collection of the focus map. The sample uses the ToolbarControl in conjunction with the MapControl and Control commands.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Browse to a map document to load into the MapControl.   </li>
+<li>Navigate around the data using the commands on the ToolbarControl.   </li>
+<li>Zoom to any bookmark listed on the spatial bookmark menu.  </li>
+<li>Create a new bookmark based on the current extent of the focus map.   </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">An IMultiItem object is created from a MultiItem defined in the same application. The MultiItem is defined in a class implementing the IMenuDef interface. The IMultiItem.OnPopup function determines the number of menu items to be created and returns the number of bookmarks in the focus maps bookmark collection. The IMultiItem.ItemCaption property sets each menu item caption to ISpatialBookmark.Name and the IMultiItem.OnItemClick event zooms to the bookmark with the ISpatialBookmark.ZoomTo method. </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">A new ToolbarMenu is created and the IToolbarMenu2.AddMultiItem method is used to add the spatial bookmarks MultiItem to the ToolbarMenu. A create bookmarks custom command defined in the application is also added to the ToolbarMenu using the IToolbarMenu2.AddItem method. The IToolbarControl.AddItem method is used in the Form_Load event to add the ToolbarMenu and some control commands to the ToolbarControl with their style set. </div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=ToolbarControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ToolbarControl class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IToolbarControl%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IToolbarControl interface</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IToolbarMenu2%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IToolbarMenu2 interface</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IMultiItem%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IMultiItem interface</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=How%20to%20create%20dynamic%20menu%20commands%20using%20a%20MultiItem&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to create dynamic menu commands using a MultiItem</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="9.4.0.860" PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Working with packages in ArcGIS Engine</title>
+	<purpose>This sample demonstrates how to open map and layer packages from <a href="http://www.arcgis.com/home/" xmlns="http://www.w3.org/1999/xhtml">ArcGIS.com</a>. As an ArcGIS Engine developer, you can deploy your application and leverage ArcGIS.com to deploy your data and map documents. Data generally updates more frequently than the application and ArcGIS.com can be used to easily push updates to the end user. This sample application shows how to work with ArcGIS.com layer packages, map packages, and Web maps (it first attempts to make a connection to ArcGIS.com). If it can connect, it directly consumes the package. If it cannot make a connection, it searches for the associated layer files and map documents in the known user location where the results of the packages are stored.</purpose>
+	<development_license>
+		<license>
+			<name>Engine Developer Kit</name>
+			<extension></extension>
+		</license>
+	</development_license>
+	<deployment_license>
+		<license>
+			<name>Engine</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp>1</min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="VBNet">
+			<file>
+				<filename>FrmMapControl.vb</filename>
+				<description>Contains the code to work with packages.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		</files>
+	<files lang="CSharp">
+									<file>
+										<filename>FrmMapControl.cs</filename>
+										<description>Contains the code to work with packages.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								</files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Start Visual Studio and open the solution file.</step><step>Build and run the solution.</step><step>You can use the default uniform resource locator (URL) in the text box or specify your own by following the instructions in the "Accessing packages from ArcGIS.com" section in the "Working with packages" topic in the "See Also" section at the bottom of this sample.</step><step>Click each button to download and open the package.</step><step>When you have downloaded the package, the sample works disconnected as it accesses the downloaded data on disk. However, this will not work for Web maps because they require a connection to view the data.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display>Working with packages</topic_display>
+			<topic_link>1f200ac5-3bc9-4bb7-bd2f-b4f9ba499064#ArcGISDotCom</topic_link>
+		</topic>
+	<topic>
+									<topic_display>ArcGIS.com</topic_display>
+									<topic_link>http://www.arcgis.com/home/</topic_link>
+								</topic></related_topics>
+	<content_area_tags>
+		<tag></tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	<new_tag>Package</new_tag><new_tag>Web Map</new_tag></indexing_tags>
+	<guid>f86bf077-798d-4a30-9a13-14d1fdc66ef7</guid>
+	<content_management>
+		<owner>ralf4792</owner>
+		<tech_reviewer>dara4409</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2010-11-01</langrev_last_updated_date>
+		<langrev_last_updated_time>09:34:56</langrev_last_updated_time>
+		<last_updated_date>2010-11-16</last_updated_date>
+		<last_updated_time>11:43:41</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2010-11-16</last_copyedit_date>
+									<last_copyedit_time>11:45:12</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>mine3384</editor_name>
+										<edit_date>2010-11-16</edit_date>
+										<edit_time>08:25:11</edit_time>
+										<edit_notes>I've edited the text that is here, but is this sample complete because there are no steps to show how to use the sample, just the paragraph in the Purpose section. And is CR#171001 for this sample?</edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-11-16</edit_date>
+									<edit_time>11:45:26</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited</div>
+<div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml">Added link to ArcGIS Online (ArcGIS.com).</div></edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>mine3384</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

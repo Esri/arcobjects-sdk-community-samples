@@ -1,0 +1,63 @@
+
+// Tree.idl : IDL source for Tree.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Tree.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(D52B8F3D-1B1F-11D6-8A9D-00104BB6FCCB),
+	
+		helpstring("ITreeFeature Interface"),
+		pointer_default(unique)
+	]
+	interface ITreeFeature : IUnknown
+	{
+		[propget, helpstring("property Age")] HRESULT Age([out, retval] long *pVal);
+	};
+
+[
+	uuid(D52B8F31-1B1F-11D6-8A9D-00104BB6FCCB),
+	version(1.0),
+	helpstring("Tree 1.0 Type Library")
+]
+library TREELib
+{
+
+	//If you are working on a 64-bit machine, you will need to update the 
+	//OLB path to \Program Files (x86)\ArcGIS for the samples to work.
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	importlib("\Program Files (x86)\ArcGis\Desktop10.4\com\esriGeodatabase.olb");
+
+	[
+		uuid(D52B8F3E-1B1F-11D6-8A9D-00104BB6FCCB),
+		helpstring("TreeFeature Class")
+	]
+	coclass TreeFeature
+	{
+		[default] interface IUnknown;
+		interface IRowBuffer;
+		interface IRow;
+		interface IRowEdit;
+		interface IRowEvents;
+		interface IValidate;
+		interface IRowSubtypes;
+		interface IObject;
+		interface IRelatedObjectEvents;
+		interface IFeature;
+		interface IFeatureBuffer;
+		interface IFeatureDraw;
+		interface IFeatureEdit;
+		interface IFeatureChanges; 
+		interface IFeatureEvents;
+		interface IRowChanges;
+		interface IRowCompare;
+		interface IFeatureSimplify; 
+		interface ISupportErrorInfo;
+		interface ITreeFeature;
+	};
+};

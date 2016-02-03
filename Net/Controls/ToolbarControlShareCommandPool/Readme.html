@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Share a command pool between ToolbarControls</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Share a command pool between ToolbarControls</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates what happens when multiple ToolbarControls share the same CommandPool and use the ToolbarControl in conjunction with the MapControl and control commands.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Browse to a map document to load into the MapControl.   </li>
+<li>Click the ZoomIn, ZoomOut, or Pan tool (only one tool is depressed).   </li>
+<li>Share the same CommandPool between both ToolbarControls (the UsageCount changes).   </li>
+<li>Click the ZoomIn, ZoomOut, or Pan tool (the same tool on both ToolbarControls are depressed).  </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The AddItem method is used within the Form_Load event to add four new items to ToolbarControl1 and ToolbarControl2. Three of the items that are added to ToolbarControl1 are also added to ToolbarControl2. By default, each ToolbarControl has its own CommandPool to which these items' commands are added. One instance of each command in the CommandPool of ToolbarControl1 is used by ToolbarControl1; consequently, the ICommandPool.UsageCount of each command is one. This is the same for ToolbarControl2.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">By selecting the check box, ToolbarControl1 and ToolbarControl2 share the CommandPool of ToolbarControl1. If any command used by ToolbarControl2 is in the CommandPool, the ICommand.UsageCount of that command increments by one. If any command used by ToolbarControl2 is not in the CommandPool, the command is added to the CommandPool with an ICommandPool.UsageCount of one.</div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=ToolbarControl%20Class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ToolbarControl Class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IToolbarControl%20Interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IToolbarControl Interface</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=ICommandPool%20Interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ICommandPool Interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

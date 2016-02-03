@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.536" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Set flow by digitized direction</title>
+  <purpose>The Set Flow by Digitized Direction sample is an ArcMap add-in that shows how to create a custom flow direction solver button for utility networks. This button sets the flow direction for each edge feature in the network along the direction in which the feature was digitized.<br xmlns="http://www.w3.org/1999/xhtml" /></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <apis>
+    <api>
+    </api>
+  </apis>
+  <capabilities>
+    <capability>
+    </capability>
+  </capabilities>
+  <min_version>10.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>
+    </data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>SetFlowByDigitizedDirectionCSharp.cs</filename>
+        <description>Class file containing the custom flow direction solver.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>SetFlowByDigitizedDirectionVBNET.vb</filename>
+        <description>Class file containing the custom flow direction solver.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>Adding the button to ArcMap</title>
+      <how_to_use_steps>
+        <step>Open the .sln file in Visual Studio and compile it.</step>
+        <step>Start ArcMap and make the Utility Network Analyst toolbar visible.</step>
+        <step>Click the Customize menu and click Customize Mode. The Customize dialog box opens.</step>
+        <step>Click the Commands tab. </step>
+        <step>In the Categories list, click Add-in Developer Samples. Set Flow by Digitized Direction is listed under Commands. </step>
+        <step>Drag the command button onto the Utility Network Analyst toolbar.</step>
+      </how_to_use_steps>
+    </how_to_use>
+    <how_to_use>
+      <title>Using the button to set the flow direction</title>
+      <how_to_use_steps>
+        <step>Add a geometric network to ArcMap.</step>
+        <step>Start editing.</step>
+        <step>Click the button to set the flow according to the digitized direction of the features.</step>
+        <step>Stop editing and save your edits.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Networks</tag>
+  <tag>Add-ins</tag></content_area_tags>
+  <indexing_tags>
+    <existing_tag>geometric networks</existing_tag>
+  <existing_tag>networks, geometric</existing_tag></indexing_tags>
+  <guid>ff3f5479-d43d-4bf8-aa68-81265b998f37</guid>
+  <content_management>
+    <owner>alan2713</owner>
+    <tech_reviewer>doug2507</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2009-09-28</last_updated_date>
+    <last_updated_time>10:59:16</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-28</last_copyedit_date>
+      <last_copyedit_time>11:01:40</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-09-28</edit_date>
+        <edit_time>11:01:15</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div>
+        </edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>alan2713</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

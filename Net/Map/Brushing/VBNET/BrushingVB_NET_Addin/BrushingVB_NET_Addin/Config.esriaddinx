@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Brushing_AddinVB</Name>
+  <AddInID>{62b3cfec-9123-4bae-881b-362185dc2ea2}</AddInID>
+  <Description>Select features by dragging graphic object</Description>
+  <Version>1.0</Version>
+  <Image>Images\Brushing_Addin.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>12/14/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.3" />
+  </Targets>
+  <AddIn language="CLR" library="Brushing_AddinVB.dll" namespace="Brushing_Addin">
+    <ArcMap>
+      <Commands>
+        <Tool id="ESRI_Brushing_Addin" class="BrushingVB" message="Select features by dragging graphic object" caption="Brushing Tool" tip="Brushing Tool" category="Custom Graph Controls" image="Images\BrushingCS.png" cursor="Images\BrushingCS.cur" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

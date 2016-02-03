@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.572" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Tabbed feature inspector</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to create a custom object inspector. Custom object inspectors allow you to control the information that's returned to the user when selected features are inspected. The custom inspector calculates and reports the area and perimeter for the selected polygons, length, and coordinates for selected lines and points. It also reports the total number of selected features. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The custom information is shown in the second panel of a tabbed control. The first panel of the control shows the standard information for the feature. A command button is also created for the extension classid value to be added to the feature class so it can recognize the extension.</div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>TabbedInspector.cs</filename>
+        <description>User Control Class file demonstrating how to build a custom inspector.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TabbedInspector.Designer.cs</filename>
+        <description>File containing user control design information.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information of the project.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddEXTCLSID.cs</filename>
+        <description>Class file containing the command to add the extension ID to the feature class.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>ObjectInspector.vb</filename>
+        <description>Class file demonstrating how to build a custom inspector; inherits the feature inspector user control.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>My Project/AssemblyInfo.vb</filename>
+        <description>Located in the MyProject folder along with other files containing assembly information.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddEXTCLSID.vb</filename>
+        <description>Class file containing the command to add the extension ID to the feature class.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the solution file, and build the project. </step><step>Register the sample with ESRIRegAsm.exe.</step>
+        <step>Start ArcMap and add the Editor toolbar. </step><step>Click the Customize menu, click Customize Mode, and click the Commands tab.</step><step>Under Categories, scroll down, and click Developer Samples.</step><step>Under Commands, select the AddEXTCLSID command, and drag it to an available toolbar. </step><step>Click the command, browse to the personal or file geodatabase feature class you want to use, and click Add.</step>
+        
+        <step>Load the feature class you selected with the AddEXTCLSID command onto the map. </step>
+        <step>Start an edit session and use the Edit tool to select several features.</step>
+        <step>Click the Attributes tool on the Editor toolbar. The Attributes dialog box opens. The custom inspector appears in the right-hand window of the Attributes dialog box whenever you inspect features belonging to the customized feature class. The default feature inspector shows for features belonging to any other feature class added to the map.</step>
+        <step>Click a single feature ID (FID) in the tree view; its properties are reported.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information>The AddEXTCLSID command is included in the sample to enable testing of the feature inspector on different geodatabase feature classes. This command adds a globally unique identifier (GUID) from the tabbed inspector class to the extension class identifier (EXTCLSID) parameter of the feature class. This is so ArcMap can ensure the objects or feature classes implement the instance and the class extension behavior (use the tabbed inspector instead of the normal inspector). The IClassSchemaEdit interface contains the AlterClassExtensionCLSID method to do this work. </additional_information><related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Editing</tag>
+    <tag>Geodatabase</tag>
+  </content_area_tags>
+  <guid>FBB894AD-16DF-4FAD-82F6-F0CA13B5BE7D</guid>
+  <content_management>
+    <owner>Lisa Crowe</owner>
+    <tech_reviewer>Xiaoling Yang</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-01-27</last_updated_date>
+    <last_updated_time>13:20:20</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-01-27</last_copyedit_date>
+									<last_copyedit_time>14:51:23</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-01-27</edit_date>
+									<edit_time>14:50:57</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Already in the SDK.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

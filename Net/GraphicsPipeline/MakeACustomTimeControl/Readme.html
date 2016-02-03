@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Make a custom time slider</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Make a custom time slider</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how the map's current time can be controlled using a custom control dialog box. The sample includes code showing how to convert the time values from Windows date and time controls into ArcGIS Time objects. It also shows how you can add and subtract times using the TimeExtent and TimeDuration classes.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open the Visual Studio solution file and build the project. This will create a .dll and a type library (.tlb) file in the \bin folder. The .dll gets registered with the ESRI Add-Ins component category.   </li>
+<li>Start ArcMap and load the TimeAwareHurricanes.mxd map in the folder <Your ArcGIS Developer Kit Install directory>/Samples/data/Time.  </li>
+<li>Open the Customize dialog box. On the Commands tab, select the Add-In Controls. The Add-In Controls appear, including the Custom Time Control.   </li>
+<li>Drag the Custom Time Control button onto one of the toolbars and close the Customize dialog box.  </li>
+<li>Double-click atlantic<em>hurricanes</em>2000 to open the layer's properties.   </li>
+<li>Click the Time tab. Make sure the Enable Time on this layer check box is selected.  </li>
+<li>Click OK to close the properties panel.   </li>
+<li>Click the Custom Time Control button.  </li>
+<li>Note that only a portion of the hurricane data shows on the map. Drag the slider in the Custom Time Control back and forth to interactively change the time. Try using the date picker in the Custom Time Control to go to a specific date.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

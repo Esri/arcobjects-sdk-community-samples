@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Publish an image service and set configurations</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Publish an image service and set configurations</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample shows how to programmatically publish an image service to ArcGIS 10.2 for Server. It illustrates how to connect to a server admin endpoint, create an image service and set parameters and capabilities based on data source type (mosaic dataset, raster dataset, raster layer), and enable Web Coverage Service (WCS) and Web Map Service (WMS). Additional functionalities include starting, stopping, and deleting an image service.  </p>
+
+<h3>Usage</h3>
+
+<h4>How to use</h4>
+
+<ol>
+<li>Start Visual Studio, open the solution file, and compile the program.  </li>
+<li>Run isconfig from the command line environment. To run this utility, both the client and ArcGIS Server need to have access to the data source. See the Additional information section below.  </li>
+<li>This sample only populates commonly used properties in this configuration, you may need to alter some of them based on your service requirements.  </li>
+<li>Caching and REST metadata/thumbnail/iteminfo are not handled in this sample. Caching can be created after service creating through caching geoprocessing tools, and REST metadata/thumbnail/iteminfo can be created by making calls to ArcGIS Server admin endpoint.  </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>  
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+</table>
+
+</body>
+</html>

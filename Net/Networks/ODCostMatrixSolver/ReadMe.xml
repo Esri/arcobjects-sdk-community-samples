@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.923" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Origin-destination cost matrix solver</title>
+  <purpose>This sample application demonstrates how to programmatically perform an origin-destination cost matrix analysis. This sample shows how to load locations from a feature class, set solver parameters, execute the analysis, and obtain the output results.</purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>Network Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Network Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Network Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Network Analyst</extension>
+    </license>
+  </deployment_license>
+  <apis>
+    <api>
+    </api>
+  </apis>
+  <capabilities>
+    <capability>
+    </capability>
+  </capabilities>
+  <min_version>10.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>SanFrancisco\SanFrancisco.gdb</data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>frmODCostMatrixSolver.cs</filename>
+        <description>User interface code.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Program.cs</filename>
+        <description>Main entry point for the application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LicenseInitializer.cs</filename>
+        <description>License initializer.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>frmODCostMatrixSolver.vb</filename>
+        <description>User interface code.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LicenseInitializer.vb</filename>
+        <description>License initializer.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the solution file, and build the project.</step>
+        <step>In the application, click Find OD Cost Matrix. The analysis is performed and the cost matrix information is displayed.</step>
+        <step>Optionally, change the solver settings and solve again.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Programming with ArcGIS Network Analyst extension</topic_display>
+      <topic_link>dcd61a15-8837-4577-a762-2661018351b7</topic_link>
+    </topic>
+    <topic>
+      <topic_display>What is ArcGIS Network Analyst extension?</topic_display>
+      <topic_link>5B4F85A5-0976-4266-9481-DCFBD3EE850B/9D7270A4-DEA5-42E1-B7F2-569C11731F8C</topic_link>
+    </topic>
+    <topic>
+      <topic_display>What is a network dataset?</topic_display>
+      <topic_link>5B4F85A5-0976-4266-9481-DCFBD3EE850B/4488E235-0D3D-49D5-8523-EF832D4CDB10</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Geodatabase</topic_display>
+      <topic_link>bef38cda-6aa0-42f0-8346-13030f84b9c8#Network dataset</topic_link>
+    </topic>
+    <topic>
+      <topic_display>About the ArcGIS Network Analyst extension tutorial</topic_display>
+      <topic_link>5B4F85A5-0976-4266-9481-DCFBD3EE850B/19205FCD-879C-4D89-AE90-F952F83F869B</topic_link>
+    </topic>
+    <topic>
+      <topic_display>NetworkAnalyst</topic_display>
+      <topic_link>f0b6867e-e145-4a22-be8b-6b8daad40d58</topic_link>
+    </topic>
+    <topic>
+      <topic_display>ArcGIS Network Analyst extension Object Model Diagram</topic_display>
+      <topic_link>esriNetworkAnalyst/NetworkAnalystObjectModel.pdf</topic_link>
+    </topic>
+    <topic>
+      <topic_display>An overview of the network analyst toolbox</topic_display>
+      <topic_link>05B6872E-680C-4349-968D-32BE82DC063E/FF78130E-01A3-4C2E-A7C9-650C83C52702</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Network extension</tag>
+    <tag>General .NET</tag>
+    <tag>Networks</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>Origin-Destination cost matrix</existing_tag>
+    
+  </indexing_tags>
+  <guid>6278e314-91e0-4f1a-aa5c-9b3e39b2f55b</guid>
+  <content_management>
+    <owner>Na An</owner>
+    <tech_reviewer>Patrick Stevens</tech_reviewer>
+    <status>SDK inclusion requested</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-03-30</last_updated_date>
+    <last_updated_time>13:23:33</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2010-03-30</last_copyedit_date>
+      <last_copyedit_time>13:23:30</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-07-29</edit_date>
+        <edit_time>17:54:58</edit_time>
+        <edit_notes>Edited.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-03-30</edit_date>
+									<edit_time>13:23:10</edit_time>
+									<edit_notes>Minor edits following author updates.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>patr5651</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Custom subtyped command and tool</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">You can create multiple commands or tools with similar functionalities in a single class by implementing ICommandSubType. The primary purpose of this sample is to illustrate how to create a single subtyped command that behaves and appears like multiple commands.</div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>PolyFeedbackTools.cs</filename>
+        <description>Subtyped tools tracking multisided display feedback (ArcMap only).</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomInCommands.cs</filename>
+        <description>Subtyped commands with different levels of fixed zoom in (ArcMap, ArcGlobe, or ArcScene).</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>PolyFeedbackTools.vb</filename>
+        <description>Subtyped tools tracking multisided display feedback (ArcMap only).</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZoomInCommands.vb</filename>
+        <description>Subtyped commands with different levels of fixed zoom in (ArcMap, ArcGlobe, or ArcScene).</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open and compile the sample project in Visual Studio. Set up a debug application if needed.</step>
+        <step>The ZoomInCommands class works in ArcMap, ArcScene, or ArcGlobe. Drag and drop the Fixed zoom in x# (C#) or Fixed zoom in x# (VB .NET) command under the .NET Samples category on the Customize dialog box onto the application.</step>
+        <step>Click the command to perform the fixed zoom in at various levels. If necessary, add data to verify each command is zooming at a different level.</step>
+        <step>The PolyFeedbackTools class works in ArcMap only. Drag and drop the # sides feedback (C#) or # sides feedback (VB .NET) tool from the .NET Samples category on the Customize dialog box onto the application.</step>
+        <step>Click to activate the feedback tool and click the map to start a polygon display feedback. The display feedback automatically finishes when the shape has reached the number of sides limit of the tool. The status bar also reports the area of the tracked polygon.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample contains a command class called ZoomInCommands that implements three subtyped commands performing different levels of fixed zoom in, and a tool class called PolyFeedbackTools that implements three subtyped tools tracking different kinds of polygon display feedback (3- to 5-sided). </div>
+  </additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>How to create multiple commands or tools in a single class subtyped command</topic_display>
+      <topic_link>3914dff0-b2f2-461b-8603-3dba04574ff7</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Recently used files—Command, MultiItem, and ComboBox</topic_display>
+      <topic_link>5cb60440-ed8d-40ea-bb7d-077c6c5e72b6</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Application Framework</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag></existing_tag>
+  </indexing_tags>
+  <guid>b8f0f7ae-eced-46a4-941d-e8815d2544dc</guid>
+  <content_management>
+    <owner>Steve Van Esch</owner>
+    <tech_reviewer>Xiaoling Yang</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:06:01</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-25</last_copyedit_date>
+      <last_copyedit_time>11:35:23</last_copyedit_time>
+      <copyeditor>linn</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>linn</editor_name>
+        <edit_date>2009-09-25</edit_date>
+        <edit_time>11:35:08</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion requested.</div>
+        </edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

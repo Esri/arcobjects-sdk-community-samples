@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Get and set key properties on a mosaic dataset</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Get and set key properties on a mosaic dataset</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample shows how to open a mosaic dataset and goes through each row in the attribute table, then checks whether the dataset in the row has any band information (band properties) associated with it. If the item has no band information, band properties for the first three bands in the item (if the item has three or more bands) are inserted. The mosaic dataset product definition is changed to natural color red, green, and blue (RGB) so that ArcGIS can use the band names of the mosaic dataset. This sample also shows how to set a key property on the mosaic dataset. This sample has the following functions:Functions to get/set any key property for a datasetFunctions to get/set any band property for a datasetFunctions to get all the properties and all the band properties for a dataset  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio and open the solution file.  </li>
+<li>Edit the strings in the Input database and Mosaic Dataset region to specify the parameters that specify the database from which to open the mosaic dataset, and the name of the mosaic dataset to open. Alternatively, these parameters can also be specified as command line arguments.  </li>
+<li>Compile and run the program.  </li>
+<li>If the program succeeds, the console shows a Success message. If an error occurs, it shows on the console window.  </li>
+<li>Load the changed mosaic dataset into ArcMap or ArcCatalog.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+</table>
+
+</body>
+</html>

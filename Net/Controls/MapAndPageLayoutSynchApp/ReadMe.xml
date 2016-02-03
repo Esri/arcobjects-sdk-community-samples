@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.706" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Synchronized MapControl and PageLayoutControl application</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates synchronization of a MapControl and a PageLayoutControl in one application. This means that, as in ArcMap, you can switch between the two views and maintain the scale and extent, as well as add graphics to the Map view and see them in the PageLayout view.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">For simplicity, this sample only handles one data frame; it selects the first data frame from a map document.</div></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>frmMain.cs</filename>
+        <description>Implementation file of the application main form hosting the MapControl and the PageLayoutControl.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Maps.cs</filename>
+        <description>Implementation class of the IMaps interface that is needed for synchronization.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>OpenNewMapDocument.cs</filename>
+        <description>Command that allows you to open existing map documents.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ControlsSynchronizer.cs</filename>
+        <description>Class responsible for synchronizing the MapControl and the PageLayoutControl.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>frmMain.vb</filename>
+        <description>Implementation file of the application main form hosting the MapControl and the PageLayoutControl.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Maps.vb</filename>
+        <description>Implementation class of the IMaps interface that is needed for synchronization.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>OpenNewMapDocument.vb</filename>
+        <description>Command that allows you to open existing map documents.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ControlsSynchronizer.vb</filename>
+        <description>Class responsible for synchronizing the MapControl and the PageLayoutControl.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the solution, and build the project.</step>
+        
+        <step>Press F5 or double-click the resulting executable to run the application.</step>
+        <step>Use the Open Map Document command to load a new map document to the application.</step>
+        <step>Zoom in and add graphic elements using the Graphics toolbar at the bottom on the application window.</step>
+        <step>Click the Layout tab to switch to the Layout view. The PageLayout is centered around the same point as the MapControl, and the graphic elements from the Map view are visible in the Layout view.</step>
+        <step>Use the Pan tool in the PageLayout view, then switch back to the Map view. Once again, the map is centered around the same point as the Layout view.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>How to create a MapControl application</topic_display>
+      <topic_link>01ae7c92-2669-4d87-b11b-6ec685ca0396</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Walkthrough: Building a map viewing application using the ArcGIS Engine controls</topic_display>
+      <topic_link>7bd52ed1-18ae-4aa7-8cde-e9eaed9537fe</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Load a map document into the PageLayoutControl</topic_display>
+      <topic_link>C0E2736E-74B7-4fcf-BAF3-8AE947A4893E</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Printing with the PageLayoutControl</topic_display>
+      <topic_link>12940E59-1342-4d53-B619-2B609D298221</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Working with map elements</topic_display>
+      <topic_link>5d4623c3-fba3-4a3e-948f-4f064ec2f1e0</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How to drop data onto the MapControl</topic_display>
+      <topic_link>8ad52807-7d3d-46af-8c22-d3f92beb37f1</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Printing</tag>
+    <tag>Controls</tag>
+    <tag>Application Framework</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>PageLayoutControl</existing_tag>
+    <existing_tag>MapControl</existing_tag>
+    <existing_tag>Display</existing_tag>
+  </indexing_tags>
+  <guid>667d20df-d51e-4766-8ca0-c8b0cb924e5d</guid>
+  <content_management>
+    <owner>Mary Harvey</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-05-12</last_updated_date>
+    <last_updated_time>11:35:53</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-05-12</last_copyedit_date>
+									<last_copyedit_time>11:41:06</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-05-12</edit_date>
+									<edit_time>11:40:43</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ExportActiveViewCS_Net_Addin</Name>
+  <AddInID>{e4d7f3c9-71ad-4c7a-a230-ff5e78888d4b}</AddInID>
+  <Description>Exports Active View using CSharp</Description>
+  <Version>1.0</Version>
+  <Image>Images\ExportActiveViewCS_Net_Addin.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>10/30/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="ExportActiveViewCS_Net_Addin.dll" namespace="ExportActiveViewCS_Net_Addin">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_ExportActiveViewCS" class="ExportActiveViewCS_Net" message="Exports Active View using CSharp" caption="Export Active View CS" tip="Export Active View CS" category="Developer Samples" image="Images\ExportActiveViewCS_Net_Addin.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

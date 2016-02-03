@@ -1,0 +1,25 @@
+HKCR
+{
+	CustomXform.RMCXform.1 = s 'RMCXform Class'
+	{
+		CLSID = s '{22FF5E72-3D6A-4dee-B353-6677A78F378F}'
+	}
+	CustomXform.RMCXform = s 'RMCXform Class'
+	{
+		CLSID = s '{22FF5E72-3D6A-4dee-B353-6677A78F378F}'
+		CurVer = s 'CustomXform.RMCXform.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {22FF5E72-3D6A-4dee-B353-6677A78F378F} = s 'RMCXform Class'
+		{
+			ProgID = s 'CustomXform.RMCXform.1'
+			VersionIndependentProgID = s 'CustomXform.RMCXform'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{E1B666EB-5173-4bdf-A607-CD643EAC7993}'
+		}
+	}
+}

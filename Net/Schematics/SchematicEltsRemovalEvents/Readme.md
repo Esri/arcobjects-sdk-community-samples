@@ -1,0 +1,46 @@
+##Customizing schematic feature removal events
+
+###Purpose  
+This sample shows how to customize the BeforeRemoveFeature predefined schematic event used to manage the removal of schematic features contained in schematic diagrams. By default, when the Remove Schematic Features command is clicked, schematic features are graphically removed without being removed from the database. In this sample, the BeforeRemoveFeature predefined event is customized so the related record in the database is definitively removed.  
+
+
+###Usage
+1. Start Visual Studio, open the solution file, and build the project.  
+1. Navigate to <ArcGIS DeveloperKit install location>\Samples\data\Schematics, and copy the SampleRemoval.gdb geodatabase in a folder for which you have full rights.  
+1. Start ArcMap and open a new empty map.  
+1. Click Customize and click Extension.  
+1. Confirm that neither the Schematic Features Removal Events (C#) nor the Schematic Feature Removal Events (VBNet) extension is checked and close the Extensions dialog box.  
+1. Open the Substation 08 schematic diagram contained in the SampleRemoval_Schematic schematic dataset in the SampleRemoval.gdb geodatabase you copied at step#2.  
+1. Start an edit session on this schematic diagram.  
+1. Select a set of schematic features in this diagram.  
+1. Click Remove Schematic Features. The selected schematic features are graphically removed, but they are kept in the schematic feature classes.  
+1. Close the edit session on the Substation 08 schematic diagram, and click Yes on the prompt message for saving.  
+1. Click Update Diagram. The Update Diagram dialog box opens.  
+1. Check the Synchronize against original selection/trace/query option and uncheck the Persist manually removed, reduced, or reconnected features option.  
+1. Click OK. The diagram is updated and the schematic features removed in step 8 are restored and reappear in the diagram after updating.   
+1. Click Customize and click Extension.  
+1. Check the Schematic Features Removal Events (C#) or Schematic Feature Removal Events (VBNet) extension option and close the Extensions dialog box.  
+1. Start an edit session on the Substation 08 schematic diagram.  
+1. Select a set of schematic features in this diagram.  
+1. Click Remove Schematic Features. The selected schematic features are graphically removed, but the associated records on the Inside_Nodes or Inside_Links tables from which they were queried (upon diagram generation) are also definitively removed. Updating the diagram will never restore the removed schematic features in the diagram regardless of the Persist manually removed, reduced, or reconnected features option that is used. They are no longer queried from the Inside_Nodes or Inside_Links tables because the related records have been removed.  
+
+
+
+
+
+
+
+####See Also  
+[BeforeRemoveFeature Schematic event](http://desktopdev.arcgis.com/search/?q=BeforeRemoveFeature%20Schematic%20event&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+
+
+---------------------------------
+
+####Licensing  
+| Development licensing | Deployment licensing | 
+| :------------- | :------------- | 
+| ArcGIS for Desktop Basic: Schematics | ArcGIS for Desktop Basic: Schematics |  
+| ArcGIS for Desktop Standard: Schematics | ArcGIS for Desktop Standard: Schematics |  
+| ArcGIS for Desktop Advanced: Schematics | ArcGIS for Desktop Advanced: Schematics |  
+
+

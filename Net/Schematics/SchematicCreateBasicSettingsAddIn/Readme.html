@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Utility wizard for basic schematic datasets configuration</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Utility wizard for basic schematic datasets configuration</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample, developed as an add-in ArcCatalog extension, is a Utility wizard that can be used to create a schematic dataset in a geodatabase with basic settings on a diagram template that uses geometric network data as the input for generating schematic diagrams. It greatly simplifies the schematic dataset's primary configuration steps for simple cases. It allows the following:Configuration of some basic properties for the Standard builder that will be used to generate the schematic diagrams (optional).Specification of the input geometric network data from which the diagrams will be generated (required). This results in the creation of the associated schematic feature classes in the schematic dataset.Specification of node reduction by priority rules to systematically reduce any orphan nodes and nodes with two connections when those nodes are based on specific schematic feature classes (optional).Specification of the directions for a Hierarchical-Smart Tree layout algorithm to be automatically executed at the diagram generation (optional).Creation of specific schematic attributes associated with fields in the geometric network feature classes (optional).  </p>
+
+<h3>Usage</h3>
+
+<h4>Building the component</h4>
+
+<ol>
+<li>Start Visual Studio.  </li>
+<li>Open the solution and build the project.  </li>
+</ol>
+
+<h4>Adding the custom Create Basic Schematic Settings button to any ArcCatalog toolbar</h4>
+
+<ol>
+<li>Start ArcCatalog.  </li>
+<li>Click Customize and click Customize Mode.  </li>
+<li>Click the Commands tab, and click Schematic Extras (VBNet) or Schematic Extras (CSharp) in the Categories list.  </li>
+<li>Drag-and-drop the Create Basic Schematic Settings command onto any toolbar.  </li>
+</ol>
+
+<h4>Testing the Create Basic Schematic Settings wizard</h4>
+
+<ol>
+<li>In the Catalog tree, either select the geodatabase in which you want to create the new schematic dataset with basic settings or select the schematic dataset in which you want to configure a new diagram template.  </li>
+<li>Click the Create Basic Schematic Settings (VBNet) or Create Basic Schematic Settings (C#) button. The Dataset and Template Name dialog box appears.  </li>
+<li>If you started from a selected geodatabase, type a name for the new schematic dataset to create in the Dataset Name field. When starting from a schematic dataset, the Dataset Name field is already specified.  </li>
+<li>Type a name for the diagram template in the Template Name field.  </li>
+<li>Select Use digitized vertices if you want the schematic links in the diagrams based on the new diagram template to display with their initial vertices.  </li>
+<li>Click Next. The Select a map document dialog box appears.  </li>
+<li>Select the map that contains the geographic feature classes from which you want to generate the diagrams based on the new diagram template and click Add. The Select network feature classes to reduce dialog box appears.  </li>
+<li>If you want a Node reduction by priority rule to be configured on your diagram template for one or several schematic feature classes, select the desired schematic feature class items.  </li>
+<li>Click Next. The Advanced Options dialog box appears.  </li>
+<li>In the Algorithm tab, if you want a Smart Tree schematic layout algorithm to be automatically executed at the end of each diagram generation, select the Apply Smart Tree algorithm check box, then configure the desired Direction and Root Feature Class using the drop-down lists.  </li>
+<li>In the Attributes tab, if you want some schematic associated field attributes to be automatically created on your schematic feature classes, select the Create associated attribute check box. Select the desired schematic feature class on the left part of the form and, on the right part, select the check box related to each desired field item.  </li>
+<li>Click Done. The process starts. A new schematic dataset containing a new diagram template with the settings you specified is created in the geodatabase.  </li>
+<li>You can now open the map that was selected in the preceding Step 7, select some features, and generate a new diagram based on the new dataset and/or template.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Advanced: Schematics </td><td> ArcGIS for Desktop Advanced: Schematics </td></tr>  
+</table>
+
+</body>
+</html>

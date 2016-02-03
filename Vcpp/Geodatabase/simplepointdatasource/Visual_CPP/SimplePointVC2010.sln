@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimplePointVC", "SimplePointVC2010.vcxproj", "{B422329A-2ADB-452B-94A1-FF48BC7C26D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Unicode Debug|Win32 = Unicode Debug|Win32
+		Unicode Release|Win32 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B422329A-2ADB-452B-94A1-FF48BC7C26D0}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{B422329A-2ADB-452B-94A1-FF48BC7C26D0}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{B422329A-2ADB-452B-94A1-FF48BC7C26D0}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
+		{B422329A-2ADB-452B-94A1-FF48BC7C26D0}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

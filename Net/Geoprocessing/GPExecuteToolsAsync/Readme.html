@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Executing geoprocessing tools in the background</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Executing geoprocessing tools in the background</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to run multiple geoprocessing tools in the background of an ArcGIS Engine application. It illustrates how the result of one tool execution can then be used as an input to another tool. It also shows how to provide the user with feedback while the tools are executing by listening to events fired by the geoprocessor.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio, open the solution file, and compile the project.  </li>
+<li>In the Engine application that opens, select some cities using the Select tool or accept the preselected city of Los Angeles.  </li>
+<li>Specify a buffer distance or accept the default of 30 miles.  </li>
+<li>Click the Run button. The geoprocessing analysis starts. Progress is reported in the ListView control, and the final result is added to the map.   </li>
+<li>While the tools are executing, check that the application is still responsive by navigating around the map.  </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml">Multiple, unrelated geoprocessing tools can be executed by calling the ExecuteAsync method for each tool from within the same method. For example, you can buffer a selected city by a distance to produce a result, then union the Highways and Zip Codes layer to produce another result. The output from the first tool does not affect the inputs to the second tool.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml">Another common scenario is where the output from one tool becomes an input parameter to another tool. In this sample, selected cities are buffered to output a result that is then used to clip features in the Zip Codes layer. Calling the ExecuteAsync method from within the same method does not work in this case since all input parameters must exist prior to tool execution. This sample works around that restriction.</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml">Each tool is added to a Queue object. The first tool is de-queued and called for execution from within the <font size="2">btnRunGP_Click event handler. The second tool is then called</font><font size="2"> for execution from within the ToolExecuted event handler but only if the first has completed successfully. This approach is scalable, as any number of tools can be added to the queue.</font></div>  
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

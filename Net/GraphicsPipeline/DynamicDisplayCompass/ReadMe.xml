@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="11.0.8034" solutionVersion="9.4.0.702" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Dynamic display compass</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates drawing on the map in dynamic mode using an OpenGL application programming interface (API). A command is implemented that adds a compass object to the map, which rotates along together with the dynamic map. The following issues are covered in this sample: </div>
+    <ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+      <li>Wiring dynamic map events to listen to the Before or After DynamicDraw, which allows you to plug in your drawing to the map.</li>
+      <li>Creation of OpenGL display lists.</li>
+      <li>Mapping a bitmap into an OpenGL texture and binding the texture to an OpenGL geometry.</li>
+      <li>Translating, scaling, and rotating OpenGL display lists. </li>
+    </ul>
+  </purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>This sample uses third-party wrapper classes only available in C#; therefore, there is no VB .NET version.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>CompassCmd.cs</filename>
+        <description>Implementation file for the Dynamic Display Compass class. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>OpenGL_GL_v4.cs</filename>
+        <description>Wrapper class for OpenGL GL library.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>OpenGL_GLU_v4.cs</filename>
+        <description>Wrapper class for OpenGL GLU library.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>OpenGL_WGL_v4.cs</filename>
+        <description>Wrapper class for OpenGL WGL library.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution.</step>
+        <step>Build the solution to make the Dynamic Display Compass command .dll file. Use this command in an application with a MapControl and a ToolbarControl, such as the MapControlApplication template included with the Visual Studio integration.</step>
+        <step>Add the command to the ToolbarControl. The command can be found in the .NET Samples category with the name, Dynamic Display Compass.</step>
+        <step>Run the application and click the Dynamic Display Compass command to add the compass object to the map. The map switches into dynamic mode and adds the compass to the map. The compass rotates with the map when rotated.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>How dynamic display works</topic_display>
+      <topic_link>ce103ad6-848e-4bb6-9de3-5519d577cc2f</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Rendering dynamic map content</topic_display>
+      <topic_link>fa7e5681-834b-4c68-8e73-125df3b29f51</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How to create a dynamic glyph from a marker symbol</topic_display>
+      <topic_link>113991a0-b335-47db-9528-2e097f4d7ed0</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How to plug in dynamic drawing</topic_display>
+      <topic_link>5d33bb02-a3ef-4112-a522-237e6371e5ad</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Limitations for dynamic display</topic_display>
+      <topic_link>0b062497-a3fc-4c56-a688-0fb9b2fcb4ea</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic display—tracking dynamic object</topic_display>
+      <topic_link>6ecff86c-990f-4f9f-a9f9-1e05e7940622</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic display layer</topic_display>
+      <topic_link>37c19547-1902-46fe-a98a-fb605c188dea</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic heads up display</topic_display>
+      <topic_link>84812d59-7a3f-488a-b45e-2a8e3868231b</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+    <tag>Commands &amp; Tools</tag>
+    <tag>Events</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>OpenGL</existing_tag>
+    <existing_tag>Dynamic display</existing_tag>
+  </indexing_tags>
+  <guid>ef4797a2-c0ec-4410-a6de-aec2bacb66cc</guid>
+  <content_management>
+    <owner>Yaron Fine</owner>
+    <tech_reviewer>Craig Proctor</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-28</last_updated_date>
+    <last_updated_time>20:20:04</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-23</last_copyedit_date>
+      <last_copyedit_time>12:32:43</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>dara4409</editor_name>
+        <edit_date>2009-09-02</edit_date>
+        <edit_time>11:32:38</edit_time>
+        <edit_notes>
+          <div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+            <font face="Times New Roman">Support has requested we provide an application that already to get the sample up and running quickly. I have added the alternative to use the MapControlApp template rather than creating your own MapControl application</font>
+          </div>
+        </edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-23</edit_date>
+        <edit_time>12:32:34</edit_time>
+        <edit_notes>Edited.<br xmlns="http://www.w3.org/1999/xhtml"/>Ready for SDK inclusion.<br xmlns="http://www.w3.org/1999/xhtml"/>If owner needs to change, do so on the content management page.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>dara4409</editor_name>
+        <edit_date>2009-10-08</edit_date>
+        <edit_time>14:03:42</edit_time>
+        <edit_notes>Added Additional Requirements stating no VB. Net is available</edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

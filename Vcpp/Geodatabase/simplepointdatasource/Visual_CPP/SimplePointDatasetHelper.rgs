@@ -1,0 +1,25 @@
+HKCR
+{
+	SimplePointVC.SimplePointDatasetHelper.1 = s 'SimplePointDatasetHelper Class'
+	{
+		CLSID = s '{79D3B766-730F-11D6-8ADA-00104BB6FCCB}'
+	}
+	SimplePointVC.SimplePointDatasetHelper = s 'SimplePointDatasetHelper Class'
+	{
+		CLSID = s '{79D3B766-730F-11D6-8ADA-00104BB6FCCB}'
+		CurVer = s 'SimplePointVC.SimplePointDatasetHelper.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {79D3B766-730F-11D6-8ADA-00104BB6FCCB} = s 'SimplePointDatasetHelper Class'
+		{
+			ProgID = s 'SimplePointVC.SimplePointDatasetHelper.1'
+			VersionIndependentProgID = s 'SimplePointVC.SimplePointDatasetHelper'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{65E5BA11-721A-11D6-8AD9-00104BB6FCCB}'
+		}
+	}
+}

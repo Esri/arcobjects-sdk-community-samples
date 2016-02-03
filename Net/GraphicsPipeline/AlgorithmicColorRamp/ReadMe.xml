@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.706" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Use an AlgorithmicColorRamp to color a ClassBreaksRenderer</title>
+	<purpose>This sample demonstrates a tool for producing a user-specified AlgorithmicColorRamp, which is used to color the symbols on a ClassBreaksRenderer on a feature layer. </purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		
+	<license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>AlgorithmicColorRamp.cs</filename>
+				<description>Class module containing tool implementation.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+        <filename>frmAlgorithmicColorRamp.cs</filename>
+        <description>Windows form file containing the tool's dialog box.</description>
+        <viewable_code>true</viewable_code>
+      </file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>AlgorithmicColorRamp.vb</filename>
+										<description>Class module containing tool implementation.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>frmAlgorithmicColorRamp.vb</filename>
+									<description>Windows form file containing the tool's dialog box.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Open the Visual Studio solution file and build the project.</step><step>Start ArcMap and create a map. </step><step>Open the Customize dialog box. On the Toolbars tab, select the Context Menus option. The Context Menus toolbar appears. </step><step>Using the Context Menus toolbar, click Context Menus and click Feature Layer Context Menu. The Feature Layer context menu appears.</step><step>On the Commands tab on the Customize dialog box, select the new AlgorithmicColorRamp command from the Developer Samples category. Drag this command onto the Feature Layer context menu that was displayed in the previous step. Close the Customize dialog box. </step><step>Add a feature layer (containing polygons, lines, or points) to the map document.</step><step>Render your layer with a ClassBreaksRenderer. Right-click the layer and click Properties, then Symbology. Choose the Quantities, GraduatedColors option and add values from any suitable Value field. </step><step>Change the colors on the renderer by right-clicking the feature layer in the table of contents (TOC). The dialog box that appears allows you to create an AlgorithmicColorRamp based on a FromColor, a ToColor, and an Algorithm.</step><step>Click OK to recolor your feature layer renderer according to your selections. </step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Renderer</tag>
+	<tag>Commands &amp; Tools</tag><tag>Cartography, Mapping, &amp; 2D Display</tag><tag>Add-ins</tag></content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>602401af-fd44-49e6-b650-7e561937bcc6</guid>
+	<content_management>
+		<owner>maxi4368</owner>
+		<tech_reviewer>Craig Williams</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-12-16</langrev_last_updated_date>
+		<langrev_last_updated_time>15:13:24</langrev_last_updated_time>
+		<last_updated_date>2010-07-01</last_updated_date>
+		<last_updated_time>12:08:03</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2010-05-03</last_copyedit_date>
+									<last_copyedit_time>10:04:03</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>kyli4140</editor_name>
+										<edit_date>2010-04-29</edit_date>
+										<edit_time>13:53:20</edit_time>
+										<edit_notes>Added to SDK and set to copyediting.</edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-05-03</edit_date>
+									<edit_time>10:04:02</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion completed.</div></edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>kyli4140</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

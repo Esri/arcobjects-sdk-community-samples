@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="11.0.8034" solutionVersion="9.4.0.700" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Simple dynamic display application</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates the basic capabilities of the dynamic display and is the associated sample for the walkthrough, <a href="http://756d0373-8e76-4145-a337-5af537ee6393">Getting started with dynamic display</a>. This sample includes the following: </div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Additional tools that work in dynamic display</li>
+<li>Custom commands that enable dynamic mode</li>
+<li>A simple dynamic layer and command that adds the layer on to the map </li></ul></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path>wsiearth</data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>MyDynamicLayer.cs</filename>
+        <description>The dynamic layer implementation file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LoadDynamicLayerCmd.cs</filename>
+        <description>The LoadDynamicLayerCmd.cs file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ToggleDynamicDisplayCmd.cs</filename>
+        <description>The ToggleDynamicDisplayCmd.cs file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MainForm.cs</filename>
+        <description>The application main form.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CreateNewDocument.cs</filename>
+        <description>A custom command to create a map document.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>MyDynamicLayer.vb</filename>
+        <description>The dynamic layer implementation file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>LoadDynamicLayerCmd.vb</filename>
+        <description>The LoadDynamicLayerCmd.cs file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ToggleDynamicDisplayCmd.vb</filename>
+        <description>The ToggleDynamicDisplayCmd.cs file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MainForm.vb</filename>
+        <description>The application main form.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>CreateNewDocument.vb</filename>
+        <description>A custom command to create a map document.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution file. </step>
+        <step>Build the solution. </step>
+        <step>Press F5 or double-click the resulting executable to run the application. </step>
+        <step>Click the Add Data command and select the Rasters data type on the left panel on the Add Data dialog box, then browse to the wsiearth folder in the data provided with the samples.</step>
+        <step>Click the wsiearth.tif image and click Open to add it to the map.</step>
+        <step>Click the Toggle Dynamic Mode command on the toolbar to switch to dynamic mode.</step>
+        <step>Click the Continuous Zoom, Roam, and Rotation tools on the toolbar to navigate the map.</step>
+        <step>Click the Add Dynamic Map command on the toolbar to add a dynamic layer.</step>
+        <step>To add additional instances of the dynamic layer to the map, click the Add Dynamic Map command again.</step>
+        <step>Click the Toggle Dynamic Mode command on the toolbar to turn off dynamic mode.</step>
+        <step>Close the application.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Walkthrough: Getting started with dynamic display</topic_display>
+      <topic_link>756d0373-8e76-4145-a337-5af537ee6393</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Dynamic display</topic_display>
+      <topic_link>c9e1ccf5-df7d-44d3-a2da-d916f65fd94a</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How dynamic display works</topic_display>
+      <topic_link>ce103ad6-848e-4bb6-9de3-5519d577cc2f</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Best practices for using dynamic display</topic_display>
+      <topic_link>35db2220-8004-4588-8629-dafaca5a6b11</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+    <tag>Layer</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>Dynamic display</existing_tag>
+    <existing_tag>Custom layer</existing_tag>
+  </indexing_tags>
+  <guid>9108dca1-3aa4-4dea-af6f-7f631b6ad072</guid>
+  <content_management>
+    <owner>Yaron Fine</owner>
+    <tech_reviewer>Jianxia Song</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:17:31</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2009-09-23</last_copyedit_date>
+									<last_copyedit_time>11:23:30</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>dara4409</editor_name>
+									<edit_date>2009-09-01</edit_date>
+									<edit_time>15:48:40</edit_time>
+									<edit_notes>Updated data path from Raster\wsiearth to wsiearth\wsiearth</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-09-23</edit_date>
+									<edit_time>11:23:26</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Ready for SDK inclusion.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">If owner needs to changed, do so on content management page.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

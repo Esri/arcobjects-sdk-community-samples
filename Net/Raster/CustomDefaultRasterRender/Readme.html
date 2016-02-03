@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Create a custom default raster renderer</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Create a custom default raster renderer</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample shows how to create a custom default raster renderer. This sample creates a dynamic-link library (DLL), which is registered to the component category, and changes the default behavior to add a 1-bit tagged image file format (TIFF) image.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio, open the solution file, and compile the program. A DLL is generated and registered in the ESRI RasterRendererMakers component category.  </li>
+<li>Run category.exe from the ArcGIS bin directory to confirm that the custom DLL was added to that category.  </li>
+<li>Start ArcMap and add a 1-bit TIFF image. The image displays as a unique value renderer with red color.  </li>
+<li>To return to the ArcGIS built-in renderer for the 1-bit TIFF, use the esriregasm.exe utility from the Program Files\Common Files\ArcGIS\bin folder to unregister the DLL.   </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> Engine Developer Kit </td><td>  </td></tr>  
+</table>
+
+</body>
+</html>

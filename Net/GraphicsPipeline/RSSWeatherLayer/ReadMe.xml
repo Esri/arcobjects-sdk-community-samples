@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>RSS weather layer</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample illustrates a real-life scenario for creating a new layer to consume a Web service and display the information in a map. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows implementation of the following:</div>
+<ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Simple editing capabilities</li>
+<li xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Selection by attribute and location</li>
+<li xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Persistence</li>
+<li xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Identify</li></ul></purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path>USZipCodeData/ZipCode_Boundaries_US_Major_Cities.shp</data_path>
+  </data_paths>
+  <requirements>
+    <requires>This sample makes use of an assembly PropertyPages.dll (Extensible OLE Property Pages in .NET), which was written by Robert Simpson. For more information, see http://www.codeguru.com/cpp/controls/propertysheet/propertysheetbuttons/article.php/c8545.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>RSSWeatherLayerClass.cs</filename>
+        <description>Implementation file of the custom layer.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RSSWeatherIdentifyObject.cs</filename>
+        <description>Implementation file of IIdentifyObject required to support standard identification.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>IdentifyDlg.cs</filename>
+        <description>Identify dialog box used by the Identify object.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddRSSWeatherLayer.cs</filename>
+        <description>Command that connects and disconnects the layer from RSS Web service.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SelectByCityName.cs</filename>
+        <description>Allows selection of weather items from a list according to the city name.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>WeatherItemSelectionDlg.cs</filename>
+        <description>Selection dialog box for the SelectByCityName command.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>WeatherLayerToolbar.cs</filename>
+        <description>Toolbar that hosts the layer's commands and tools.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddWeatherItemCmd.cs</filename>
+        <description>Command that allows adding weather items by a given ZIP Code.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddWeatherItemTool.cs</filename>
+        <description>Tool that allows adding weather items by clicking the map.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZipCodeDlg.cs</filename>
+        <description>Dialog box where users type a ZIP Code to add new weather items.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PropertySheet.cs</filename>
+        <description>User control serving as a property sheet for the layer's properties.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RSSLayerProps.cs</filename>
+        <description>Property page showing information retrieved from the layer (a list of city names for all weather items).</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RSSLayerProps2.cs</filename>
+        <description>Property page for controlling the layer's symbol size.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RSSLayerProperties.cs</filename>
+        <description>Command that opens the layer's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RefreshLayerCmd.cs</filename>
+        <description>Command that refreshes the layer.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>RSSWeatherLayerClass.vb</filename>
+        <description>Implementation file of the custom layer.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RSSWeatherIdentifyObject.vb</filename>
+        <description>Implementation file of IIdentifyObject required to support standard identification.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>IdentifyDlg.vb</filename>
+        <description>Identify dialog box used by the Identify object.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddRSSWeatherLayer.vb</filename>
+        <description>Command that connects and disconnects the layer from RSS Web service.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SelectByCityName.vb</filename>
+        <description>Allows selection of weather items from a list according to the city name.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>WeatherItemSelectionDlg.vb</filename>
+        <description>Selection dialog box for the SelectByCityName command.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>WeatherLayerToolbar.vb</filename>
+        <description>Toolbar that hosts the layer's commands and tools.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddWeatherItemCmd.vb</filename>
+        <description>Command that allows adding weather items by a given ZIP Code.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddWeatherItemTool.vb</filename>
+        <description>Tool that allows adding weather items by clicking the map.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ZipCodeDlg.vb</filename>
+        <description>Dialog box where users type a ZIP Code to add new weather items.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>PropertySheet.vb</filename>
+        <description>User control serving as a property sheet for the layer's properties.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RSSLayerProps.vb</filename>
+        <description>Property page showing information retrieved from the layer (a list of city names for all weather items).</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RSSLayerProps2.vb</filename>
+        <description>Property page for controlling the layer's symbol size.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RSSLayerProperties.vb</filename>
+        <description>Command that opens the layer's property page.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>RefreshLayerCmd.vb</filename>
+        <description>Command that refreshes the layer.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the solution file, and build the project.</step>
+        
+        <step>Open a MapControl application or ArcMap.</step>
+        <step>From the toolbars list, select the RSS Weather layer toolbar to add to the application.</step>
+        <step>Click Load Layer to connect to the RSS weather service.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">To use the layer without using the existing AddRSSWeatherLayer command, you will have to manage the refreshes of the layer. You can do that by listening to the OnWeatherItemAdded and OnWeatherItemsUpdated events or by using a timer to refresh the layer.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The following items are covered in this sample:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>Implementing a custom layer through inheritance of a BaseClass. </li>
+<li>Consuming Web services (Yahoo really simple syndication [RSS] service). </li>
+<li>Executing a lengthy ArcObjects task on a background thread. </li>
+<li>Sharing resources between multiple threads. </li>
+<li>Updating user interface (UI) components from a background thread to keep responsiveness. </li>
+<li>Firing and wiring .NET events. </li>
+<li>Implementing Identify objects and displaying the results in an Identify dialog box. </li>
+<li>Adding and managing property pages for an Engine application. </li>
+<li>Adding new items to the layer. </li></ul></additional_information><related_topics>
+    <topic>
+      <topic_display>Writing multithreaded ArcObjects code</topic_display>
+      <topic_link>2c2d2655-a208-4902-bf4d-b37a1de120de</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How to wire ArcObjects .NET events</topic_display>
+      <topic_link>8dbe2ce3-f2cc-497e-8a6f-b89ab93d1373</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Layer</tag>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+    <tag>Controls</tag>
+    <tag>Events</tag>
+    <tag>Threading</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>Multithreading</existing_tag>
+    <existing_tag>Custom layer</existing_tag>
+  </indexing_tags>
+  <guid>c1139f01-eab8-4761-a9c4-c102689063de</guid>
+  <content_management>
+    <owner>Yaron Fine</owner>
+    <tech_reviewer>Morakot Pilouk</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-23</last_updated_date>
+    <last_updated_time>13:52:13</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-04-23</last_copyedit_date>
+									<last_copyedit_time>13:58:01</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-04-23</edit_date>
+									<edit_time>13:57:10</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.896" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Create a raster catalog using the geoprocessor</title>
+  <purpose>This sample uses the geoprocessor class in conjunction with CreateRasterCatalog and WorkspaceToRasterCatalog geoprocessing tool classes to create a raster catalog, and load a directory of rasters to the raster catalog. It demonstrates the recommended approach for creating and loading raster catalogs from rasters in a folder.</purpose>
+  <development_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>CreateRasterCatalog_GP.cs</filename>
+        <description>Source code showing how to create a raster catalog and load rasters using geoprocessing.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>CreateRasterCatalog_GP.vb</filename>
+        <description>Source code showing how to create a raster catalog and load rasters using geoprocessing.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the solution file in Visual Studio.</step>
+        <step>Modify the data paths to your input data path and output geodatabase.</step>
+        <step>Run the sample.</step>
+        <step>Browse to the output geodatabase and refresh the connection. The new raster catalog with all the rasters from the input directory appears.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Rasters</tag>
+    <tag>Geoprocessing</tag>
+  </content_area_tags>
+  <guid>5f36acb3-8aab-4cf3-9895-f90a646257b8</guid>
+  <content_management>
+    <owner>Hong Xu</owner>
+    <tech_reviewer>Robert Berger</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-07</last_updated_date>
+    <last_updated_time>16:48:09</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-04-07</last_copyedit_date>
+									<last_copyedit_time>16:49:26</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-04-07</edit_date>
+									<edit_time>16:49:17</edit_time>
+									<edit_notes>Edited. SDK inclusion requested.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>elea2233</editor_name>
+									<edit_date>2011-05-04</edit_date>
+									<edit_time>14:02:38</edit_time>
+									<edit_notes>Topic has been in the SDk for a long time but still showed as SDK Inclusion requested. Updated to reflect correct state.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>elea2233</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

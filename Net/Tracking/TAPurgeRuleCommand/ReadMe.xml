@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.502" ?>
+<?mso-application progid="InfoPath.Document"?>
+<esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Updating the purge rule on a real-time temporal layer</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates the following:</div>
+    <ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+      <li>
+        <div>Retrieving the temporal layers in a map or globe.</div>
+      </li>
+      <li>
+        <div>Retrieving and setting the purge rule used by a temporal feature class.</div>
+      </li>
+      <li>
+        <div>Setting the threshold and purge percentage properties for a temporal feature class.</div>
+      </li>
+    </ul>
+  </purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp />
+  <max_version>
+  </max_version>
+  <max_sp />
+  <data_paths>
+    <data_path />
+  </data_paths>
+  <requirements>
+    <requires>Access to real-time data served through a tracking server.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>PurgeRuleForm.cs</filename>
+        <description>Demonstrates accessing and updating the purge rule for a real-time feed.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>PurgeRuleForm.vb</filename>
+        <description>Demonstrates accessing and updating the purge rule for a real-time feed.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Open and build the .NET solution.</step>
+        <step>Add the command to ArcMap, ArcGlobe, or an existing MapControl or GlobeControl application.</step>
+        <step>Open a document that has at least one real-time temporal layer or add a real-time layer to your display.</step>
+        <step>Click the command to have it show a dialog box for changing the purge rule settings.</step>
+        <step>Select the temporal layer to which you want to change the settings.</step>
+        <step>Modify purge rule settings and click Apply.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information>The purge rule defines how real-time data is stored in the geodatabase. Tracking Analyst stores real-time data in-memory to eliminate the performance bottleneck of reading and writing data to disk. To limit the maximum amount of memory consumed, data must be periodically removed or purged from the geodatabase. The mechanism for specifying the data that is removed and how often, is called the "purge" rule. There are two methods available for removing records from the in-memory database<font face="Verdana" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">—p</font>urge oldest and purge all except the latest.  <br xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" /><br xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" />When using the purge oldest records setting, the oldest records are deleted from the geodatabase according to their time stamps. There are two parameters that determine when data is purged<font face="Verdana" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">—</font>the purge threshold and how much data to purge when the threshold has been reached. <br xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" /><br xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" />The purge all except latest setting is intended for use with continuous observations, see <a href="http://e2acff61-7eab-4394-a33a-690a6364f7a6" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Working with time data</a>. As data is received, observations are grouped into tracks based on their event ID. The purge all except latest setting causes the previous observation for the track to be deleted when a new observation is received. This is useful if you only want to see the current location of the different tracks. </additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Tracking extension</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>5fde8683-f568-4d5f-83c6-933b5fc58ed3</guid>
+  <content_management>
+    <owner>Ryan Elliott</owner>
+    <tech_reviewer>Hanoch Kalmanovich</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2009-09-17</last_updated_date>
+    <last_updated_time>12:37:08</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-17</last_copyedit_date>
+      <last_copyedit_time>12:39:15</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-15</edit_date>
+        <edit_time>13:35:02</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Edited.<br />Ready for SDK inclusion.</div>
+        </edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-17</edit_date>
+        <edit_time>12:39:08</edit_time>
+        <edit_notes>Verified link for Working with time data.</edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>mine3384</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

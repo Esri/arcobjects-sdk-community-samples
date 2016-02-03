@@ -1,0 +1,59 @@
+
+// LogoMarkerSymbolApp.idl : IDL source for LogoMarkerSymbolVC.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (LogoMarkerSymbolVC.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(D7F5BF28-852A-11D5-A161-00508BA08E67),
+	version(1.0),
+	helpstring("LogoMarkerSymbolVC 1.0 Type Library")
+]
+library LOGOMARKERSYMBOLVCLib
+{
+	//If you are working on a 64-bit machine, you will need to update the 
+	//OLB path to \Program Files (x86)\ArcGIS for the samples to work.
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	importlib("C:\Program Files (x86)\ArcGIS\Desktop10.4\COM\esriDisplay.olb");
+	[
+		object,
+		uuid(D7F5BF34-852A-11D5-A161-00508BA08E68),
+		helpstring("ILogoMarkerSymbol Interface"),
+		pointer_default(unique)
+	]
+	interface ILogoMarkerSymbol : IUnknown
+	{
+		[propget, helpstring("property ColorBorder")] HRESULT ColorBorder([out, retval] IColor* *ppColor);
+		[propput, helpstring("property ColorBorder")] HRESULT ColorBorder([in] IColor* pColor);
+		[propget, helpstring("property ColorLeft")] HRESULT ColorLeft([out, retval] IColor* *ppColor);
+		[propput, helpstring("property ColorLeft")] HRESULT ColorLeft([in] IColor* pColor);
+		[propget, helpstring("property ColorRight")] HRESULT ColorRight([out, retval] IColor* *ppColor);
+		[propput, helpstring("property ColorRight")] HRESULT ColorRight([in] IColor* pColor);
+		[propget, helpstring("property ColorTop")] HRESULT ColorTop([out, retval] IColor* *ppColor);
+		[propput, helpstring("property ColorTop")] HRESULT ColorTop([in] IColor* pColor);
+	};
+
+	[
+		uuid(D7F5BF35-852A-11D5-A161-00508BA08E68),
+		helpstring("LogoMarkerSymbol Class")
+	]
+	coclass LogoMarkerSymbol
+	{
+		[default] interface IUnknown;
+		interface ILogoMarkerSymbol;
+	};
+
+	[
+		uuid(520120CD-8B8F-11D5-A162-00508BA08E68),
+		helpstring("LogoMarkerPropertyPage Class")
+	]
+	coclass LogoMarkerPropertyPage
+	{
+		interface IUnknown;
+	};
+};

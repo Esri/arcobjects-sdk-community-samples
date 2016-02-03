@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Working with packages in ArcGIS Engine</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Working with packages in ArcGIS Engine</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to open map and layer packages from ArcGIS.com. As an ArcGIS Engine developer, you can deploy your application and leverage ArcGIS.com to deploy your data and map documents. Data generally updates more frequently than the application and ArcGIS.com can be used to easily push updates to the end user. This sample application shows how to work with ArcGIS.com layer packages, map packages, and Web maps (it first attempts to make a connection to ArcGIS.com). If it can connect, it directly consumes the package. If it cannot make a connection, it searches for the associated layer files and map documents in the known user location where the results of the packages are stored.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio and open the solution file.  </li>
+<li>Build and run the solution.  </li>
+<li>You can use the default uniform resource locator (URL) in the text box or specify your own by following the instructions in the "Accessing packages from ArcGIS.com" section in the "Working with packages" topic in the "See Also" section at the bottom of this sample.  </li>
+<li>Click each button to download and open the package.  </li>
+<li>When you have downloaded the package, the sample works disconnected as it accesses the downloaded data on disk. However, this will not work for Web maps because they require a connection to view the data.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Working%20with%20packages&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Working with packages</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=ArcGIS.com&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ArcGIS.com</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

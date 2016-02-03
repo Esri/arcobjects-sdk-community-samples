@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.673" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>ArcReaderControl document properties</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates how to use the IARControl.ShowARWindow method to display the FileProperties modal window when the Browse dialog box is used to select a document to load into the control. The DataFrame and Layer properties modal windows are displayed by right-clicking a map or layer in the table of contents (TOC) to display the context menu and selecting Properties. The IARControl.TOCVisible property is used to toggle the visibility of the TOC if the loaded document was published with permission to do so. </div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">When the TOC is invisible, the DataFrame and Layer properties cannot be displayed manually. Instead, the IARPageLayout.ARMap property is used to iterate each map and obtain its Description, DistanceUnits, Name, and SpatialReferenceName properties. The IARMap.ARLayer property is used to iterate each layer in the map and obtain its Description, Name, MaximumScale, and MinimumScale properties. These properties are concatenated into a string, which is displayed in a RichTextBox.</div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Publisher</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Publisher</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Publisher</extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcReader</name>
+      <extension>
+      </extension>
+    </license>
+  <license>
+									<name>Engine</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="VBNet">
+      <file>
+        <filename>DocumentProperties.vb</filename>
+        <description>Form file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AssemblyInfo.vb</filename>
+        <description>Assembly information.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="CSharp">
+      <file>
+        <filename>DocumentProperties.cs</filename>
+        <description>Form file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AssemblyInfo.cs</filename>
+        <description>Assembly information. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Start Visual Studio, open the solution file, and build the project. </step>
+        <step>Run the application.</step>
+        <step>Browse to a Published Map File (PMF) from ArcMap to load.</step>
+        <step>Display the file properties. </step>
+        <step>Right-click a map in the TOC to display the data frame properties.</step>
+        <step>Right-click a layer in the TOC to display the layer properties. </step>
+        <step>Hide the TOC. </step>
+        <step>Display the map and layer properties. </step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Publisher</tag>
+  </content_area_tags>
+  <guid>5cf389ab-045b-41d5-8d90-06c3d75e6928</guid>
+  <content_management>
+    <owner>Mark Bockenhauer</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>copyediting requested</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-03-08</last_updated_date>
+    <last_updated_time>15:04:22</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-03-08</last_copyedit_date>
+									<last_copyedit_time>15:04:19</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-03-08</edit_date>
+									<edit_time>15:03:59</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>gyoung</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

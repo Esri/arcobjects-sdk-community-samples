@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolbarControlExtension", "Application\ToolbarControlExtension.csproj", "{A15A7708-1C6B-404B-A6F4-6883D13DA385}"
+	ProjectSection(ProjectDependencies) = postProject
+		{664E41A4-2082-4FB5-8012-7B2D97597B7B} = {664E41A4-2082-4FB5-8012-7B2D97597B7B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomFactorExtension", "Extension\ZoomFactorExtension.csproj", "{664E41A4-2082-4FB5-8012-7B2D97597B7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A15A7708-1C6B-404B-A6F4-6883D13DA385}.Debug|x86.ActiveCfg = Debug|x86
+		{A15A7708-1C6B-404B-A6F4-6883D13DA385}.Debug|x86.Build.0 = Debug|x86
+		{A15A7708-1C6B-404B-A6F4-6883D13DA385}.Release|x86.ActiveCfg = Release|x86
+		{A15A7708-1C6B-404B-A6F4-6883D13DA385}.Release|x86.Build.0 = Release|x86
+		{664E41A4-2082-4FB5-8012-7B2D97597B7B}.Debug|x86.ActiveCfg = Debug|x86
+		{664E41A4-2082-4FB5-8012-7B2D97597B7B}.Debug|x86.Build.0 = Debug|x86
+		{664E41A4-2082-4FB5-8012-7B2D97597B7B}.Release|x86.ActiveCfg = Release|x86
+		{664E41A4-2082-4FB5-8012-7B2D97597B7B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

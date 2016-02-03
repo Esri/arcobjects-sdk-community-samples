@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.536" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Buffer snap agent</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <span class="PropertyValue">This sample demonstrates how to create a snapping agent based on a buffer around the points of the current editable point feature class. In this sample, a snapped vertex of a feature is located no closer than 1000 map units from the point that is closest to the cursor. For electrical datasets, it is common to want to snap primary lines to the boundary of the symbol representing a pole. Use this snapping agent with an appropriate buffer distance (based on the radius of the pole symbol).</span>
+    </div>
+  </purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>BufferSnapAgent/BufferSnap.cs</filename>
+        <description>Class file containing buffer snapping agent.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Application/EditingForm.cs</filename>
+        <description>Form file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>BufferSnapAgent/BufferSnap.vb</filename>
+        <description>Class file containing buffer snapping agent.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Application/EditingForm.vb</filename>
+        <description>Form file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Open and build the solution to register the BufferSnap class in the ESRI Engine Snap Agents component category.</step>
+        <step>Run the solution.</step>
+        <step>Start editing.</step>
+        <step>Zoom in on some point features to a 1:30000 map scale.</step>
+        <step>Open the Snapping Environment dialog box and turn on the Buffer Snap agent.</step>
+        <step>Begin adding new features to snap to buffers (1000 map units) around the point features in the specified feature class.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information>The EditingForm Load event sets up the map and snapping environment. The map units are set to meters and the snap tolerance is set to 2000 map units. An <a href="http://esricarto/IFeatureCache.htm" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">IFeatureCache</a> object is used to contain the point features closest to the cursor location. The feature cache is iterated to find the feature from the cache, which when buffered, is nearest to the cursor location. The cursor is then snapped to this location, which is 1000 map units from this feature. </additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Editing</tag>
+    <tag>Controls</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>aabb8116-c924-4da6-a242-3bc00b28fd03</guid>
+  <content_management>
+    <owner>Gayle Young</owner>
+    <tech_reviewer>Mary Harvey</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2009-09-10</last_updated_date>
+    <last_updated_time>11:43:35</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2009-10-09</last_copyedit_date>
+									<last_copyedit_time>13:49:20</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-10-09</edit_date>
+									<edit_time>13:49:12</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Ready for SDK inclusion.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

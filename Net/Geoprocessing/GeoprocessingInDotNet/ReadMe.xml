@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Consuming a geoprocessing custom model in .NET</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to consume a custom geoprocessing model in a .NET Visual Studio console project. This sample accompanies the <a href="http://6015005b-85ad-4e45-b0cf-cf59bfaec915/">Consuming a geoprocessing model tool in .NET</a> walkthrough topic. </div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path>AirportsAndGolf</data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="VBNet">
+      <file>
+        <filename>LicenseInitializer.vb</filename>
+        <description>Initializes the application to use ArcObjects.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Module1.vb</filename>
+        <description>The main code module that demonstrates consuming a geoprocessing custom model.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      
+      
+    </files>
+    <files lang="CSharp">
+      <file>
+        <filename>LicenseInitializer.cs</filename>
+        <description>Initializes the application to use ArcObjects.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>Program.cs</filename>
+        <description>The main code module that demonstrates consuming a geoprocessing custom model.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      
+      
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>Data preparation</title>
+      <how_to_use_steps>
+        <step>Create a directory on your local machine to copy the test data and files. For example, create gp under the C:\ drive in which case your files and data will be in C:\gp\AirportsAndGolf directory. You can, however, create the folder anywhere as the program prompts you to type the path in the command line.</step>
+        
+        <step>Copy the AirportsAndGolf folder from the &lt;ArcGIS Developer Kit installation location&gt;\Samples\data folder to the directory you created in Step 1. The following files show in the file view—golf.gdb (geodatabase), airportgolf.mxd (map document), Find Golf Courses.tbx (toolbox), and validateinput.py (Python file). See the following screen shot that shows the data and files on the local drive and in the Catalog tree: </step>
+        
+        
+        
+      </how_to_use_steps>
+    <how_to_use_pictures>
+									<picture>
+										<image>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</image>
+										<caption>Screen shot showing data and files on the local drive and in the Catalog tree.</caption>
+									</picture>
+								</how_to_use_pictures></how_to_use>
+    
+  <how_to_use>
+									<title>Test the .NET solution</title>
+									<how_to_use_steps>
+										<step>Open the solution file in the CSharp or VBNet folder for this sample. </step><step>Compile and run the solution. </step><step>On the console window, type the data's full path, then press Enter. </step>
+									</how_to_use_steps>
+								</how_to_use></how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Walkthrough: Consuming a geoprocessing model tool in .NET</topic_display>
+      <topic_link>6015005b-85ad-4e45-b0cf-cf59bfaec915</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Geoprocessing</tag>
+    <tag>Visual Studio IDE Integration</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>a178bf1f-19cb-4d64-9ba2-db5684dee59b</guid>
+  <content_management>
+    <owner>Nobbir Ahmed</owner>
+    <tech_reviewer>Shing Lin</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:15:18</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-02-24</last_copyedit_date>
+									<last_copyedit_time>10:51:37</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-02-24</edit_date>
+									<edit_time>10:51:42</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited. SDK inclusion requested.</div>
+<ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited screen shots into one and added callouts.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

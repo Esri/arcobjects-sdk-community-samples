@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.673" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Multiple globe viewers</title>
+  <purpose>This add-in sample shows how multiple viewer windows can be opened in ArcGlobe and tied to the main viewer. With this capability, developers can have multiple views from the same camera position. In this sample, the user has the option to add a new viewer to ArcGlobe, then by using the tool, get the "observer top down" view in the new window for the current observer location in the main viewer. The display in the new viewer is dynamically updated as the user navigates around in the main window. In a similar manner, developers can add other options in addition to the observer top down view.</purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>3D Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>3D Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>MultipleGlobeViewers.cs</filename>
+        <description>Main implementation file.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SecondaryViewerForm.cs</filename>
+        <description>Windows form class with the UI for the tool.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    
+  <files lang="VBNet">
+									<file>
+										<filename>MultipleGlobeViewers.vb</filename>
+										<description>Main implementation file.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>SecondaryViewerForm.vb</filename>
+									<description>Windows form class with the UI for the tool</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the solution in Visual Studio.</step>
+        <step>Build the solution.</step>
+        <step>Start ArcGlobe.</step>
+        <step>On the Customize dialog box, choose the Add-In Controls category.</step>
+        <step>On the Command Items pane, drag the MultipleGlobeViewers command onto a toolbar.</step>
+        <step>Run the application.</step>
+        <step>Add a new viewer using the Add New Viewer command on the ArcGlobe user interface (UI).</step>
+        <step>Click the tool to open the form and select the viewer that you want to work with.</step>
+        <step>Select the way you want to tie the new viewer to the main viewer; either TopDown or Synced up.</step>
+        <step>Navigate on the main viewer and see how the secondary viewer is automatically updated.</step>
+        <step>Note that the Top Down view works only in the surface mode. Therefore, if you choose the Top Down option while you are in the global navigation mode, until you change to local navigation mode, the secondary viewer is in sync with the main viewer.</step>
+        <step>If the form is closed, the secondary viewers are no longer tied to the main viewer.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>3D analysis &amp; visualization</tag>
+    <tag>Globe</tag>
+  <tag>Add-ins</tag></content_area_tags>
+  <guid>a624b87f-a473-46d0-bc9c-9ef29db381ac</guid>
+  <content_management>
+    <owner>Deepinder Deol</owner>
+    <tech_reviewer>Hardeep Bajwa</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-01</last_updated_date>
+    <last_updated_time>15:42:36</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-02-26</last_copyedit_date>
+									<last_copyedit_time>15:50:31</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-02-26</edit_date>
+									<edit_time>15:50:25</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited. SDK inclusion requested.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">According to Kylie's comment in StarTeam, this sample does not have VB .NET code.</div></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

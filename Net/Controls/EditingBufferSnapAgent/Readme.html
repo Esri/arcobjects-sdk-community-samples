@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Buffer snap agent</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Buffer snap agent</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to create a snapping agent based on a buffer around the points of the current editable point feature class. In this sample, a snapped vertex of a feature is located no closer than 1000 map units from the point that is closest to the cursor. For electrical datasets, it is common to want to snap primary lines to the boundary of the symbol representing a pole. Use this snapping agent with an appropriate buffer distance (based on the radius of the pole symbol).  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open and build the solution to register the BufferSnap class in the ESRI Engine Snap Agents component category.  </li>
+<li>Run the solution.  </li>
+<li>Start editing.  </li>
+<li>Zoom in on some point features to a 1:30000 map scale.  </li>
+<li>Open the Snapping Environment dialog box and turn on the Buffer Snap agent.  </li>
+<li>Begin adding new features to snap to buffers (1000 map units) around the point features in the specified feature class.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td>  </td><td> Engine </td></tr>  
+</table>
+
+</body>
+</html>

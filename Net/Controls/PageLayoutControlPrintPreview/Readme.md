@@ -1,0 +1,43 @@
+##Print preview using the PageLayoutControl
+
+###Purpose  
+This sample demonstrates changing the printer and printer settings and applying the changes to the PageLayoutControl and its print preview. The sample uses .NET OpenFileDialog, PageSetupDialog, PrintPreviewDialog, and PrintDialog to load a map document into the PageLayoutControl, change the printer settings, display a print preview, and print the IPageLayoutControl.Page property, respectively. The terminology used is as follows:Print page—A page that is displayed in the Print Preview dialog box or printed to a physical printer.Device boundaries—The boundaries of the page to which the map document is printed.Visible boundaries—The area of the map document that fits on the print page.Graphics device—Encapsulates a graphical device interface (GDI) drawing surface, provides methods for drawing objects to the display device, and is associated with a specific device context.   
+
+
+###Usage
+1. Browse and select a map document to load into the PageLayoutControl.   
+1. Select a printer and change the page settings in the Page Setup dialog box.   
+1. Preview the print layout of the map in the Print Preview dialog box.   
+1. Print the document using the Print dialog box.   
+
+
+
+
+
+####Additional information  
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">After loading a map document into the PageLayoutControl using OpenFileDialog, select a printer and change the page settings using PageSetupDialog. PrintPreviewDialog displays IPageLayoutControl.Page as print pages dependent upon the selected printer and the page settings. The key functionality is implemented in the document_PrintPage event handler, which is called when PrintPreviewDialog appears.</div>  
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">First, the IPage.PageToPrinterMapping property is set with the selected index from the combo box. The combo box allows you to specify the way the IPageLayoutControl.Page property is mapped to the print pages. The following options are available:</div>  
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Second, the device boundaries (devBounds) of the printer, as well as the visible boundaries (visBounds) of the map document, are obtained using the selected printer properties.</div>  
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">IPageLayoutControl.Page is printed into PrintPreviewDialog using the Output method of the PageLayoutControl.ActiveView. In addition to the graphics device's resolution (dpi), device boundaries (devBounds), visible boundaries (visBounds), and CancelTracker, the method gets passed a handle to the graphics device to which the map document is printed. This graphics device handle is obtained by calling GetHdc on the graphics object that gets passed within the method's argument structure. Calls to the GetHdc and ReleaseHdc methods must appear in pairs. If ReleaseHdc is not called, the application will fail with an exception.</div>  
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">If the map document is to be mapped to more than one page, the HasMorePages property of the document_PrintPage's argument is set to true. This ensures that document_PrintPage will be called again. This is repeated until the last page is printed to PrintPreviewDialog. The document can then be printed using PrintDialog.</div>  
+
+
+####See Also  
+[PageLayoutControl class](http://desktopdev.arcgis.com/search/?q=PageLayoutControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IPageLayoutControl interface](http://desktopdev.arcgis.com/search/?q=IPageLayoutControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+
+
+---------------------------------
+
+####Licensing  
+| Development licensing | Deployment licensing | 
+| :------------- | :------------- | 
+| Engine Developer Kit | Engine |  
+|  | ArcGIS for Desktop Basic |  
+|  | ArcGIS for Desktop Standard |  
+|  | ArcGIS for Desktop Advanced |  
+
+

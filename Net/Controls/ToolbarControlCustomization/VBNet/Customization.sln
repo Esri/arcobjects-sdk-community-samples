@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Customization", "Customization.vbproj", "{71758326-D997-4CE2-9158-F3A6EF3560FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71758326-D997-4CE2-9158-F3A6EF3560FC}.Debug|x86.ActiveCfg = Debug|x86
+		{71758326-D997-4CE2-9158-F3A6EF3560FC}.Debug|x86.Build.0 = Debug|x86
+		{71758326-D997-4CE2-9158-F3A6EF3560FC}.Release|x86.ActiveCfg = Release|x86
+		{71758326-D997-4CE2-9158-F3A6EF3560FC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

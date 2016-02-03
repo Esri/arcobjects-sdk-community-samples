@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.846" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Extent view</title>
+	<purpose>The GxExtentView sample demonstrates how to create a custom view for ArcCatalog. It displays an overview map with a red rectangle on top that delineates the spatial extent of the currently selected dataset. You can add the view as a custom preview, a custom tabbed view, or both. </purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine Developer Kit</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>clsExtentView.cs</filename>
+				<description>The class file containing the IGxView implementation.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>FrmExtentView.cs</filename>
+									<description>The form that contains the Engine map control used for the overview.</description>
+									<viewable_code>false</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>clsExtentView.vb</filename>
+										<description>The class file containing the IGxView implementation.</description>
+										<viewable_code>false</viewable_code>
+									</file>
+								<file>
+									<filename>FrmExtentView.vb</filename>
+									<description>The form that contains the Engine map control used for the overview.</description>
+									<viewable_code>false</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Register the CustomGxObject_CS.dll. For more information, see "How to register COM components" in the following "See Also" section in this sample.</step><step>Start ArcCatalog and browse to &lt;your ArcGIS Developer Kit installation location&gt;/Samples/Data/World.</step><step>Select a dataset in the tree view (such as World Cities.lyr).</step><step>Select the Extent view (either through preview or from one of the tabs). An overview map of the world shows with a red rectangle that depicts the spatial extent of your selected dataset. Since you are viewing the extent on a world scale, the rectangle depicting your data might be difficult to see if it does not cover a large geographic area. </step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display>How to register COM components </topic_display>
+			<topic_link>8ec382ff-a019-4f22-8057-c5b075c99b95</topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag></tag>
+	</content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>66eff418-bbca-4322-9520-17b2a2b14417</guid>
+	<content_management>
+		<owner>Bobby Pohan</owner>
+		<tech_reviewer>Kent Marten</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2010-09-02</langrev_last_updated_date>
+		<langrev_last_updated_time>12:06:08</langrev_last_updated_time>
+		<last_updated_date>2010-09-10</last_updated_date>
+		<last_updated_time>09:40:59</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2010-09-10</last_copyedit_date>
+									<last_copyedit_time>09:41:52</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>mine3384</editor_name>
+										<edit_date>2010-09-10</edit_date>
+										<edit_time>09:41:57</edit_time>
+										<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0pt"><font face="Times New Roman">Edited according to our style guidelines: <a href="http://devinfo/sites/sdk/shared%20documents/styleguide.aspx">http://devinfo/sites/sdk/shared%20documents/styleguide.aspx</a>.</font></li>
+<li style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0pt"><font face="Times New Roman">SDK inclusion requested.</font></li>
+<li style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0pt"><font face="Times New Roman">Changed the link for "How to register COM components" to the GUID (8ec382ff-a019-4f22-8057-c5b075c99b95). Removed the path, <a href="http://help.arcgis.com/en/sdk/10.0/arcobjects_net/conceptualhelp/index.html#//0001000002pv000000">http://help.arcgis.com/en/sdk/10.0/arcobjects_net/conceptualhelp/index.html#//0001000002pv000000</a>.</font></li>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0pt"><font face="Times New Roman">Do not use the URL that is on the Web site. Use the correct GUID for SDK topics. To find the GUID, use the SDK Content Finder located on our SDK team site under the Utilities column on the left (<a href="http://devinfo/sites/sdk/default.aspx">http://devinfo/sites/sdk/default.aspx</a>). </font></li>
+<li style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0pt"><font face="Times New Roman">For linking conventions, see the InfoPath guide (<a href="http://devinfo/sites/sdk/shared%20documents/infopathGuide.aspx#Hyperlink_syntax_conventions">http://devinfo/sites/sdk/shared%20documents/infopathGuide.aspx#Hyperlink_syntax_conventions</a>).</font></li></ul></ul></edit_notes>
+									</editing_section>
+								</edits></content_management>
+	<current_user>kyli4140</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

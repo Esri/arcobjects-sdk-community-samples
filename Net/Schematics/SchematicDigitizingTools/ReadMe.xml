@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.923" productVersion="14.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Implementing a schematic digitizing tool</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to implement a tool that can be used in ArcMap to digitize schematic features in schematic diagrams. This sample includes a configuration file to work with a specific type of diagram (a diagram in the DigitizingSample schematic dataset). The Extensible Markup Language (XML) configuration file can be modified to work with other schematic datasets as well. </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample also shows how to use the Schematic library to create schematic features and how to use an add-in dockable window.</div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Schematics</extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Schematics</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Schematics</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path>Schematics\GenericDigitizing.gdb</data_path><data_path>Schematics\DigitizeProperties.xml</data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="VBNet">
+      <file>
+        <filename>DigitTool.vb</filename>
+        <description>Class file that implements the digitizing tool.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    <file>
+									<filename>DockableDigit.vb</filename>
+									<description>Class that implements the dockable window with digit properties.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>Config.esriaddinx</filename>
+									<description>Add-in declarations in XML.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+    <files lang="CSharp">
+      <file>
+        <filename>DigitTool.cs</filename>
+        <description>Class file that implements the digitizing tool.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    <file>
+									<filename>DockableDigit.cs</filename>
+									<description>Class that implements the dockable window with digit properties.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>Config.esriaddinx</filename>
+									<description>Add-in declarations in XML.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+  </file_section>
+  <how_to_use_section>
+    
+  <how_to_use>
+									<title>Building the project</title>
+									<how_to_use_steps>
+										<step>Start Visual Studio, open the solution file, and build the project.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Adding the new tool to the ArcMap toolbar and opening the sample schematic diagram</title>
+									<how_to_use_steps>
+										<step>Navigate to &lt;ArcGIS DeveloperKit install location&gt;\Samples\data\Schematics, and copy both the GenericDigitizing.gdb geodatabase and DigitizeProperties.xml file in a folder for which you have full rights.</step><step>Start ArcMap and open a new empty map.</step><step>Click Customize, and click Customize Mode. The Customize dialog box opens.</step><step>Click the Commands tab, select the Schematic Samples category, and drag the DigitTool tool onto the Schematic Editor toolbar.</step><step>Click Close on the Customize dialog box.</step><step>Click Open Schematic Diagrams on the Schematic toolbar and browse to and select the Crime1 schematic diagram contained in the DigitizingSample schematic dataset in the GenericDigitizing sample geodatabase you copied at step#1.</step><step>Click Start Editing Diagram on the Schematic Editor drop-down menu.</step><step>Click the schematic digitizing tool (DigitTool). The Schematic Digitize dockable window opens. This window is organized in two sections: the first section concerns the digitizing of schematic nodes, the second section concerns the digitizing of schematic links.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Digitizing schematic nodes</title>
+									<how_to_use_steps>
+										<step>On the Schematic Digitize dialog box's first section, click the Node Type drop-down list</step><step>Choose the type of node you want to digitize in the active diagram; for this example, choose Person.</step><step>Fill in the Name text box; for example, type PersonA. The name is a mandatory parameter that needs to be specified before digitizing the related node in the active schematic diagram.</step><step>Click anywhere in the background of the schematic diagram. The new PersonA schematic node appears at the clicked location.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Digitizing schematic links</title>
+									<how_to_use_steps>
+										<step>On the Schematic Digitize dialog box's second section, click the Link Type drop-down list.</step><step>Choose the type of link you want to digitize in the active diagram; for this example, choose Relation. </step><step>Using the Relation Type drop-down list, specify the type of relation you want to create. This is a mandatory parameter that needs to be specified before going further. For this example, choose person-person-friend.</step><step>Click two persons nodes in the active diagram. A link connecting the two clicked nodes is created.</step>
+									</how_to_use_steps>
+								</how_to_use><how_to_use>
+									<title>Stopping the digitizing operations</title>
+									<how_to_use_steps>
+										<step>Click Stop Editing Diagram on the Schematic Editor drop-down menu. </step><step>Click Yes to save the edits. The newly digitized schematic features are saved in the schematic dataset.</step>
+									</how_to_use_steps>
+								</how_to_use></how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">If you want to use this add-in tool to digitize schematic features in your own schematic database, you only need to configure the DigitizeProperties.xml file.</div>
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="1" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" NDListNewStart="true">
+<li>
+<div>Navigate to &lt;ArcGIS DeveloperKit install location&gt;\Samples\data\Schematics, and copy the DigitizeProperties.xml file in the same folder your schematic database is.</div>
+</li><li>
+<div>Edit this copied DigitizeProperties.xml file with a text editor<font face="Calibri">.</font></div>
+</li><ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="a" NDListNewStart="true">
+<li>
+<div>REQUIRED—Set up the node and link schematic feature classes you want to digitize:</div>
+</li><ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="i" NDListNewStart="true">
+<li>
+<div>Create a <strong><font face="Courier New">NodeFeature </font></strong>item for each node schematic feature class you want to digitize and type the exact name of the node schematic feature class in your schematic dataset for the <font face="Courier New"><strong>FeatureClassName</strong></font> parameter.<br/>For example, if you want to digitize Valves schematic nodes, you must configure a NodeFeature item as follows:<br/><font face="Courier New">&lt;NodeFeature FeatureClassName="Valves"&gt;<br/>&lt;/NodeFeature&gt;</font></div>
+</li><li>
+<div>Create a <font face="Courier New"><strong>LinkFeature</strong></font> item for each link schematic feature class you want to digitize and type the exact name of the link schematic feature class in your schematic dataset for the <font face="Courier New"><strong><font face="Courier New"><strong>FeatureClassName</strong></font></strong></font> parameter.<br/>For example, if you want to digitize PrimaryLines schematic links, you must configure a LinkFeature item as follows:<br/><font face="Courier New"><font face="Courier New">&lt;LinkFeature FeatureClassName="PrimaryLines"&gt;<br/>&lt;/LinkFeature&gt;</font></font></div></li></ol>
+<li>
+<div>OPTIONAL—Set up the attributes you want to edit for each digitized schematic feature:</div>
+</li><ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="i" NDListNewStart="true">
+<li>
+<div>Create a <strong><font face="Courier New">Field </font></strong>item for each attribute you want to be editable through the digitizing form.</div>
+</li><li>
+<div>Specify the <font face="Courier New"><strong>DisplayName </strong></font>parameter. This is the label that will display for this attribute on the digitizing form.</div>
+</li><li>
+<div>Specify the <font face="Courier New"><strong>DBColumnName </strong></font>parameter. This is name of the related field in the schematic feature class.</div>
+</li><li>
+<div>Specify the <font face="Courier New"><strong>Type </strong></font>parameter—<em><font face="Courier New">Text</font></em>, <font face="Courier New"><em>Date</em></font>, <font face="Courier New"><em>Combo </em></font>or <font face="Courier New"><em>MaskText</em></font>. This is the type of attribute values the user will edit.</div>
+</li><ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" NDListNewStart="true">
+<li>
+<div>With a <em><font face="Courier New">Text</font></em> type, a regular text box will be automatically added to the digitizing form.<br/>In this case, when <font face="Calibri"><font face="Verdana">configuring </font></font>the <strong><font face="Courier New">Length </font></strong>parameter, you can also limit the number of characters the user can type in the text box.</div>
+</li><li>
+<div>With a <font face="Courier New"><em>Date</em></font> type, a drop down date pick list will be automatically added to the digitizing form.</div>
+</li><li>
+<div>With a <font face="Courier New"><em>Combo</em></font> type, a combo box will be automatically added to the digitizing form.<br/>In this case, you must also configure a list of <strong><font face="Courier New">Value</font></strong> parameters, for each possible value you want to display in the combo box.</div>
+</li><li>
+<div>With a <font face="Courier New"><em>MaskText </em></font>type, a text box will be automatically added to the digitizing form to allow users typing a specific type of text value that will have to verify a specific format. For example, a field that will be used to have the user enter their social security number.<br/>In this case, you must provide the expected format—<font face="Courier New"><strong>Mask</strong></font> parameter. For example, "###-##-###". See the Appendix section above for more details on Mask.</div></li></ul>
+<li>
+<div>Specify when the attribute is mandatory or not—<font face="Courier New"><strong>Mandatory</strong></font> parameter, <font face="Courier New"><em>True</em></font>  or <em><font face="Courier New">False</font></em>. With Mandatory="True", it forces the user to specify the field value.</div></li></ol></ol></ol>
+<div style="PADDING-LEFT: 100px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Here are sample parameters to allow the digitizing of nodes based on the Persons schematic feature class and fill some attribute fields for the digitized person:</div>
+<div style="PADDING-LEFT: 100px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;NodeFeature FeatureClassName="Persons" /&gt;</font></div>
+<div style="PADDING-LEFT: 150px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Field DisplayName="Your Name" DBColumnName="NAME" Type="Text" Length="30" Mandatory="True"&gt;</font></div>
+<div style="PADDING-LEFT: 150px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Field DisplayName="Date of Birth" DBColumnName="BIRTH_DATE" Type="Date" Mandatory="True"&gt;</font></div>
+<div style="PADDING-LEFT: 150px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Field DisplayName="Sexe" DBColumnName="SEXE" Type="Combo"</font></div>
+<div style="PADDING-LEFT: 200px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Value Default="True"&gt;"M"&lt;/Value&gt;</font></div>
+<div style="PADDING-LEFT: 200px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Value&gt;"F"&lt;/Value&gt;</font></div>
+<div style="PADDING-LEFT: 150px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;/Field&gt;</font></div>
+<div style="PADDING-LEFT: 150px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Field DisplayName="Social Security Number" DBColumnName="SS_NUM" Type="MaskText" Mask=</font><font face="Verdana"> "###-##-###"/&gt;</font></div>
+<div style="PADDING-LEFT: 100px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;/NodeFeature&gt;</font></div>
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="1" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" NDListNewStart="true">
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="a" start="3" NDListNewStart="true">
+<li>OPTIONAL—Set up the link relationships if you want to enforce that a certain type of link can only connect to and from certain type of nodes. <br/>Such link relationships must be configured inside a <strong><font face="Courier New">&lt;Relations&gt;…&lt;/Relations&gt;</font></strong> tag, surrounding all the individual <strong><font face="Courier New">&lt;Relation…&gt;&lt;/Relation&gt;</font></strong><font face="Calibri">.</font></li>
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="i" NDListNewStart="true">
+<li>Specify the <font face="Courier New"><strong>LinkType</strong></font> parameter. This is the exact name of the link schematic feature class in your schematic dataset you want to use when digitizing this kind of relation.</li>
+<li>Specify the <font face="Courier New"><strong>FromType</strong></font> parameter. This is the exact name of the node schematic feature class in your schematic dataset which contains nodes that can be at the start for this kind of relations.</li>
+<li>Specify the <font face="Courier New"><strong>ToType</strong></font> parameter. This is the exact name of the node schematic feature class in your schematic dataset which contains nodes that can be at the end for this kind of relations.</li>
+<li>Specify subtypes for the possible relations if needed.<br/>For example, if you want to allow a connection from a Persons node to another Persons node, but want to specify if the relationship is as a Friend or Enemy, you can specify two parameters <strong><font face="Courier New">Value</font></strong>.</li></ol></ol></ol>
+<div style="PADDING-LEFT: 150px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Relations&gt;</font></div>
+<div style="PADDING-LEFT: 200px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Relation LinkType="Link1" FromType="Persons" ToType="Persons"&gt;</font></div>
+<div style="PADDING-LEFT: 250px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Value&gt;Friend&lt;/Value&gt;</font></div>
+<div style="PADDING-LEFT: 250px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Value&gt;Enemy&lt;/Value&gt;</font></div>
+<div style="PADDING-LEFT: 200px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;/Relation&gt;</font></div>
+<div style="PADDING-LEFT: 150px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;/Relations&gt;</font></div>
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="1" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" NDListNewStart="true">
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="a" start="4" NDListNewStart="true">
+<li>REQUIRED—Customize the digitizing form:</li>
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="i" NDListNewStart="true">
+<li>Specify the <font face="Courier New"><strong>MandatoryColor</strong></font> parameter. This is the background color that will be used for each edited attribute you set up as mandatory during step#4.e.</li>
+<li>Specify the <strong><font face="Courier New">FormName</font></strong> parameter. This is the caption of the digitizing form the user will see.</li>
+<li>Specify the <font face="Courier New"><strong>AutoClearAfterCreate</strong></font> parameter, <font face="Courier New"><em>True</em></font> or <em><font face="Courier New">False</font></em>. This determines whether all edited attributes are cleared after the user digitizes a schematic feature or not.</li></ol></ol></ol>
+<div style="PADDING-LEFT: 100px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Those three parameters must be configured at the end of the XML file:</div>
+<div style="PADDING-LEFT: 100px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;?xml version="1.0" encoding="utf-8" ?&gt;</font></div>
+<div style="PADDING-LEFT: 150px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;Properties&gt;</font></div>
+<div style="PADDING-LEFT: 200px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">…</font></div>
+<div style="PADDING-LEFT: 200px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">…</font></div>
+<div style="PADDING-LEFT: 200px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;MandatoryColor&gt;Yellow<font face="Courier New">&lt;/MandatoryColor&gt;</font></font></div>
+<div style="PADDING-LEFT: 200px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;FormName&gt;Digitize Inside Plants<font face="Courier New">&lt;/FormName&gt;</font></font></div>
+<div style="PADDING-LEFT: 200px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New">&lt;AutoClearAfterCreate&gt;True<font face="Courier New">&lt;/AutoClearAfterCreate&gt;</font></font></div>
+<div style="PADDING-LEFT: 150px" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"><font face="Courier New"><font face="Courier New">&lt;/Properties&gt;</font></font></div>
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="1" start="3" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" NDListNewStart="true">
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="a" start="5" NDListNewStart="true">
+<li>Save your DigitizeProperties.xml file.</li></ol>
+<li>Set up your schematic dataset so that it knows where the DigitizeProperties.xml file is.</li>
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="a" NDListNewStart="true">
+<li>Edit your schematic dataset within Schematic Dataset Editor.</li>
+<li>Right-click the schematic diagram template entry related to the diagrams in which you want to allow the digitizing of schematic features, and click New Attribute.</li>
+<li>Type DigitizePropertiesLocation for the attribute Name.</li>
+<li>Select Constant for the attribute Type.</li>
+<li>Type .\DigitizeProperties.xml for the attribute Value.</li>
+<li>Click OK.</li>
+<li>Save your schematic dataset.</li></ol></ol>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<hr tabIndex="-1"/>
+<strong>Appendix—Mask Characters Description</strong></div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li><font size="2"># Digit placeholder. </font>
+</li><li><font size="2">. Decimal placeholder.<br/>The actual character used is the one specified as the decimal placeholder in your international settings. This character is treated as a literal for masking purposes. </font>
+</li><li><font size="2">, Thousands separator. <br/>The actual character used is the one specified as the thousands separator in your international settings. This character is treated as a literal for masking purposes. </font>
+</li><li><font size="2">: Time separator.<br/>The actual character used is the one specified as the time separator in your international settings. This character is treated as a literal for masking purposes. </font>
+</li><li><font size="2">/ Date separator.<br/>The actual character used is the one specified as the date separator in your international settings. This character is treated as a literal for masking purposes. </font>
+</li><li><font size="2">\ Treat the next character in the mask string as a literal. This allows you to include the '#', '&amp;', 'A', and '?' characters in the mask. This character is treated as a literal for masking purposes. </font>
+</li><li><font size="2">&amp; Character placeholder. <br/>Valid values for this placeholder are ANSI characters in the following ranges: 32-126 and 128-255. </font>
+</li><li><font size="2">&gt; Convert all the characters that follow to uppercase. </font>
+</li><li><font size="2">&lt; Convert all the characters that follow to lowercase. </font>
+</li><li><font size="2">A Alphanumeric character placeholder (entry required).<br/>For example: a – z, A – Z, or 0 – 9. </font>
+</li><li><font size="2">a Alphanumeric character placeholder (entry optional).</font></li>
+<li><font size="2">9 Digit placeholder (entry optional).<br/>For example: 0 – 9. </font>
+</li><li><font size="2">C Character or space placeholder (entry optional).<br/>This operates exactly like the &amp; placeholder, and ensures compatibility with Microsoft Access. </font>
+</li><li><font size="2">? Letter placeholder.<br/>For example: a – z or A – Z. </font></li></ul>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<div><font size="2">Literal All other symbols are displayed as literals; that is, as themselves.</font></div>
+<div> </div></div></additional_information><related_topics>
+    <topic>
+      <topic_display>ISchematicInMemoryFeatureClass</topic_display>
+      <topic_link>esriSchematic/ISchematicInMemoryFeatureClass.htm</topic_link>
+    </topic>
+    
+    
+    
+    
+  </related_topics>
+  <content_area_tags>
+    <tag>Schematics extension</tag>
+  <tag>Add-ins</tag></content_area_tags>
+  <guid>647f64c8-9a17-4231-b0e3-399e2577e98d</guid>
+  <content_management>
+    <owner>Dominique Broux</owner>
+    <tech_reviewer>Anne-Yvonne BLIN</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2012-04-04</last_updated_date>
+    <last_updated_time>12:18:13</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2010-02-08</last_copyedit_date>
+									<last_copyedit_time>16:04:15</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>kyli4140</editor_name>
+									<edit_date>2009-12-17</edit_date>
+									<edit_time>22:16:55</edit_time>
+									<edit_notes>Sample doesn't compile - 12/17. Removed from 9.4 Beta 2 unless it can be fixed by 9am tomorrow (12/18/09).</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2010-02-08</edit_date>
+									<edit_time>16:03:21</edit_time>
+									<edit_notes><ul xmlns="http://www.w3.org/1999/xhtml" style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc">
+<li>Edited.</li>
+<li>Already in the SDK.</li></ul></edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>anne0002</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

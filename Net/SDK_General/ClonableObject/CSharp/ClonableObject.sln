@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClonableObject", "ClonableObject.csproj", "{44E02B82-5B58-4F60-91CC-2B13351678CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{594375B4-43CD-408D-834D-7E75E78F9AAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44E02B82-5B58-4F60-91CC-2B13351678CC}.Debug|x86.ActiveCfg = Debug|x86
+		{44E02B82-5B58-4F60-91CC-2B13351678CC}.Debug|x86.Build.0 = Debug|x86
+		{44E02B82-5B58-4F60-91CC-2B13351678CC}.Release|x86.ActiveCfg = Release|x86
+		{44E02B82-5B58-4F60-91CC-2B13351678CC}.Release|x86.Build.0 = Release|x86
+		{594375B4-43CD-408D-834D-7E75E78F9AAE}.Debug|x86.ActiveCfg = Debug|x86
+		{594375B4-43CD-408D-834D-7E75E78F9AAE}.Debug|x86.Build.0 = Debug|x86
+		{594375B4-43CD-408D-834D-7E75E78F9AAE}.Release|x86.ActiveCfg = Release|x86
+		{594375B4-43CD-408D-834D-7E75E78F9AAE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

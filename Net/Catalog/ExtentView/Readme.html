@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Extent view</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Extent view</h2>
+
+<h3>Purpose</h3>
+
+<p>The GxExtentView sample demonstrates how to create a custom view for ArcCatalog. It displays an overview map with a red rectangle on top that delineates the spatial extent of the currently selected dataset. You can add the view as a custom preview, a custom tabbed view, or both.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Register the CustomGxObject_CS.dll. For more information, see "How to register COM components" in the following "See Also" section in this sample.  </li>
+<li>Start ArcCatalog and browse to <your ArcGIS Developer Kit installation location>/Samples/Data/World.  </li>
+<li>Select a dataset in the tree view (such as World Cities.lyr).  </li>
+<li>Select the Extent view (either through preview or from one of the tabs). An overview map of the world shows with a red rectangle that depicts the spatial extent of your selected dataset. Since you are viewing the extent on a world scale, the rectangle depicting your data might be difficult to see if it does not cover a large geographic area.   </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=How%20to%20register%20COM%20components&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to register COM components</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+</table>
+
+</body>
+</html>

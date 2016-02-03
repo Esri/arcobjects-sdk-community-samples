@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Custom reshape polyline edit task</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Custom reshape polyline edit task</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample illustrates how to create a custom ArcGIS Engine edit task that can be used in conjunction with the out-of-the-box editing commands. The Reshape Polyline edit task allows the user to perform a reshape on the selected feature within an edit session.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Build and run the sample.  </li>
+<li>Start editing.  </li>
+<li>Zoom in on a polyline feature that you want to reshape.  </li>
+<li>Select this feature with the Edit tool.  </li>
+<li>Select the Reshape Polyline edit task from the Edit Task Tool control.  </li>
+<li>Using the Sketch tool, digitize a new line that intersects the selected feature in at least two places.  </li>
+<li>Finish the sketch to perform the reshape.  </li>
+<li>Stop editing and save edits to persist changes. See the following illustration:  </li>
+</ol>
+
+<p><img src="images/pic1.png" alt="Illustration of performing a reshape on the selected feature." /><br />
+Illustration of performing a reshape on the selected feature.  </p>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The edit task is created by implementing the IEngineEditTask interface. Compiling this sample registers the edit task in the ESRI Engine Edit Tasks component category, which is used to populate the ControlsEditingTaskToolControl at runtime. The position of the task within the ControlsEditingTaskToolControl list is controlled using the IEngineEditTask.GroupName property and the display name using the IEngineEditTask.Name property. The IEngineEditTask.Activate method is called when the end user selects the edit task in the ControlsEditingTaskToolControl. The Activate method is used to set up listeners to the following IEngineEditEvents:</div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">These event listeners set the IEngineEditSketch.GeometryType to null if the following conditions are met, thereby, disabling the Sketch tool: </div>  
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The IEngineEditLayers.TargetLayer property on the EngineEditor singleton is used to return to the target layer selected in the ControlsEditingTargetToolControl. The IEngineEditTask.OnFinishSketch method is used to reshape the geometry of the selected feature using the IPolyline.Reshape method, passing in a path created from the digitized sketch as an argument. The task calls the IFeature.Store method within an edit operation to commit the changes.</div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=EngineEditorClass&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">EngineEditorClass</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

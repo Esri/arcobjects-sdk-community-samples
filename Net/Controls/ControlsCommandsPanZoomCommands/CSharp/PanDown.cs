@@ -1,0 +1,218 @@
+using System;
+using ESRI.ArcGIS.Carto;
+using ESRI.ArcGIS.Geometry;
+using ESRI.ArcGIS.Controls;
+using ESRI.ArcGIS.SystemUI;
+using ESRI.ArcGIS.ADF.CATIDs;
+using System.Runtime.InteropServices;
+
+namespace PanZoom
+{
+	[ClassInterface(ClassInterfaceType.None)]
+	[Guid("593EDF4F-D1FE-4a8d-8076-C3B583C37F6B")]
+
+	public class PanDown : ICommand
+	{
+        #region COM Registration Function(s)
+        [ComRegisterFunction()]
+        [ComVisible(false)]
+        static void RegisterFunction(Type registerType)
+        {
+            // Required for ArcGIS Component Category Registrar support
+            ArcGISCategoryRegistration(registerType);
+
+            //
+            // TODO: Add any COM registration code here
+            //
+        }
+
+        [ComUnregisterFunction()]
+        [ComVisible(false)]
+        static void UnregisterFunction(Type registerType)
+        {
+            // Required for ArcGIS Component Category Registrar support
+            ArcGISCategoryUnregistration(registerType);
+
+            //
+            // TODO: Add any COM unregistration code here
+            //
+        }
+
+        #region ArcGIS Component Category Registrar generated code
+        /// <summary>
+        /// Required method for ArcGIS Component Category registration -
+        /// Do not modify the contents of this method with the code editor.
+        /// </summary>
+        private static void ArcGISCategoryRegistration(Type registerType)
+        {
+            string regKey = string.Format("HKEY_CLASSES_ROOT\\CLSID\\{{{0}}}", registerType.GUID);
+            ControlsCommands.Register(regKey);
+
+        }
+        /// <summary>
+        /// Required method for ArcGIS Component Category unregistration -
+        /// Do not modify the contents of this method with the code editor.
+        /// </summary>
+        private static void ArcGISCategoryUnregistration(Type registerType)
+        {
+            string regKey = string.Format("HKEY_CLASSES_ROOT\\CLSID\\{{{0}}}", registerType.GUID);
+            ControlsCommands.Unregister(regKey);
+
+        }
+
+        #endregion
+        #endregion
+
+		[DllImport("gdi32.dll")]
+		static extern bool DeleteObject(IntPtr hObject);
+
+		private System.Drawing.Bitmap m_bitmap;
+		private IntPtr m_hBitmap;
+		private IHookHelper m_pHookHelper;
+
+		public PanDown()
+		{
+			string[] res = GetType().Assembly.GetManifestResourceNames();
+			if(res.GetLength(0) > 0)
+			{
+				m_bitmap = new System.Drawing.Bitmap(GetType().Assembly.GetManifestResourceStream(GetType(), "PanDown.bmp"));
+				if(m_bitmap != null)
+				{
+					m_bitmap.MakeTransparent(m_bitmap.GetPixel(1,1));
+					m_hBitmap = m_bitmap.GetHbitmap();
+				}
+			}
+			m_pHookHelper = new HookHelperClass ();
+		}
+
+		~PanDown()
+		{
+			if(m_hBitmap.ToInt32() != 0)
+				DeleteObject(m_hBitmap);
+		}
+	
+		#region ICommand Members
+
+		public void OnClick()
+		{
+			if(m_pHookHelper == null) return;
+
+			//Get the active view
+			IActiveView pActiveView = (IActiveView) m_pHookHelper.FocusMap;
+
+			//Get the extent
+			IEnvelope pEnvelope = (IEnvelope) pActiveView.Extent;
+
+			//Create a point to pan to
+			IPoint pPoint;
+			pPoint = new PointClass();
+			pPoint.X = (pEnvelope.XMin + pEnvelope.XMax) / 2;
+			pPoint.Y = ((pEnvelope.YMin + pEnvelope.YMax) / 2) - (pEnvelope.Height / (100 / GetPanFactor()));
+
+			//Center the envelope on the point
+			pEnvelope.CenterAt(pPoint);
+
+			//Set the new extent
+			pActiveView.Extent = pEnvelope;
+
+			//Refresh the active view
+			pActiveView.Refresh();
+		}
+
+		private long GetPanFactor()
+		{
+			return 50;
+		}
+
+		public string Message
+		{
+			get
+			{
+				return "Pan display down by the pan factor percentage";
+			}
+		}
+
+		public int Bitmap
+		{
+			get
+			{
+				return m_hBitmap.ToInt32();
+			}
+		}
+
+		public void OnCreate(object hook)
+		{
+			m_pHookHelper.Hook = hook;
+		}
+
+		public string Caption
+		{
+			get
+			{
+				return "Pan Down";
+			}
+		}
+
+		public string Tooltip
+		{
+			get
+			{
+				return "Pan Down";
+			}
+		}
+
+		public int HelpContextID
+		{
+			get
+			{
+				// TODO:  Add PanDown.HelpContextID getter implementation
+				return 0;
+			}
+		}
+
+		public string Name
+		{
+			get
+			{
+				return "Sample_Pan/Zoom_Pan Down";
+			}
+		}
+
+		public bool Checked
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		public bool Enabled
+		{
+			get
+			{
+				if(m_pHookHelper.FocusMap == null) return false;
+				
+				return true;
+			}
+		}
+
+		public string HelpFile
+		{
+			get
+			{
+				// TODO:  Add PanDown.HelpFile getter implementation
+				return null;
+			}
+		}
+
+		public string Category
+		{
+			get
+			{
+				return "Sample_Pan/Zoom";
+			}
+		}
+
+		#endregion
+	}
+}

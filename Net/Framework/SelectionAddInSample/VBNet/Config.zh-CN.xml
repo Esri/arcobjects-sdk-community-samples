@@ -1,0 +1,78 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>选择图层实例</Name>
+  <AddInID>{6fa0df73-57ab-491e-a73d-e58ce07af414_2}</AddInID>
+  <Description>这是一个关于选择图层实例</Description>
+  <Version>1.0</Version>
+  <Image>Images\SelectionSample.png</Image>
+  <Author>Xiaoling Yang</Author>
+  <Company>ESRI</Company>
+  <Date>7/24/2009 9:29:45 AM</Date>
+  <Targets>
+    <Target name="Desktop" version="10.2" />
+  </Targets>
+  <AddIn language="CLR" library="SelectionSample.dll" namespace="SelectionSample">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_SelectionSample_ToggleDockWinBtn" class="ToggleDockWinBtn" caption="打开窗口" category="插件实例"
+ image="Images\ToggleDockWinBtn.png" tip="打开显示图层选择的窗口." message="打开显示图层选择的窗口.">
+          <Help heading="按钮插件">点击此按钮打开显示图层选择的窗口.</Help>
+        </Button>
+
+        <Tool id="ESRI_SelectionSample_SelectByLineTool" class="SelectByLineTool" caption="用线选择" category="插件实例"
+              image="Images\SelectByLine.png" cursor="Images\SelectByLine.cur" tip="用线选择." message="用线选择.">
+        </Tool>
+        <ToolPalette id="ESRI_SelectionSample_ToolPalette" caption="选择图板" isMenuStyle="false" category="插件实例">
+          <Items>
+            <Tool refID="esriArcMapUI.SelectByPolygonTool"/>
+            <Tool refID="esriArcMapUI.SelectByLayerCommand"/>
+            <Tool refID="ESRI_SelectionSample_SelectByLineTool"/>
+          </Items>
+        </ToolPalette>
+        <ComboBox id="ESRI_SelectionSample_SelectionTargetComboBox" class="SelectionTargetComboBox" tip="选择图层目标." message="选择图层目标." caption="选择图层目标" category="插件实例" image="Images\SelectionTargetComboBox.png" editable="false" sizeString="图图图图图图图图" rows="4" itemSizeString="WWWWWWWWWWWWWWWWW" hintText="选择图层目标">
+          <Help heading="Add-in ComboBox">Use this combo box to set the selection target.</Help>
+        </ComboBox>
+        <MultiItem id="ESRI_SelectionSample_MultiItem" caption="MultiItem 实例" class="ZoomToLayerMultiItem" message="选择图层">
+          <Help heading="Add-in MultiItem">选择图层</Help>
+        </MultiItem>
+      </Commands>
+      <Extensions>
+        <Extension id="ESRI_SelectionSample_SimpleExtension" autoLoad="true" productName="选择图层扩展" showInExtensionDialog="true" class="SelectionExtension">
+          <Description>这是一个关于选择图层实例的扩展</Description>
+        </Extension>
+      </Extensions>
+      <Toolbars>
+        <Toolbar id="ESRI_SelectionSample_AddInToolbar" caption="选择图层工具条插件">
+          <Items>
+            <ComboBox refID="ESRI_SelectionSample_SelectionTargetComboBox" separator="true"/>
+            <Menu refID="ESRI_SelectionSample_ZoomToLayerMenu"/>
+            <Button refID="ESRI_SelectionSample_ToggleDockWinBtn" />
+            <Tool refID="ESRI_SelectionSample_SelectByLineTool" />
+            <ToolPalette refID="ESRI_SelectionSample_ToolPalette" separator="true" />
+            <Menu refID="ESRI_SelectionSample_AddInMenu" separator="true" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+      <Menus>
+        <Menu id="ESRI_SelectionSample_AddInMenu" caption="选择图层菜单插件" isRootMenu="false">
+          <Items>
+            <!--Built in button-->
+            <Button refID="esriArcMapUI.ClearSelectionCommand"/>
+            <Button refID="esriArcMapUI.SelectAllCommand"/>
+          </Items>
+        </Menu>
+        <Menu id="ESRI_SelectionSample_ZoomToLayerMenu" caption="Zoom To Layer">
+          <Items>
+            <MultiItem refID="ESRI_SelectionSample_MultiItem"/>
+          </Items>
+        </Menu>
+      </Menus>
+      <DockableWindows>
+        <DockableWindow id="ESRI_SelectionSample_SelCountDockWin" class="SelCountDockWin+AddinImpl" caption="被选中的图元数目"
+                        image="Images\ToggleDockWinBtn.png" >
+          <InitialPlacement height="300" width="300" state="pinned" position="right" neighbor="esriArcMapUI.TOCDockableWindow"/>
+        </DockableWindow>
+      </DockableWindows>
+    </ArcMap>
+  </AddIn>
+
+</ESRI.Configuration>

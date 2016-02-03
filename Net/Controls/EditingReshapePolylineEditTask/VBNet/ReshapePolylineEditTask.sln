@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ReshapePolylineEditTask", "EngineEditTask\ReshapePolylineEditTask.vbproj", "{6C6FC769-17B2-4AEA-8964-867FAE5E0317}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Application", "Application\Application.vbproj", "{F3AFA2D5-28A0-4A22-A59A-94D330F3CB0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C6FC769-17B2-4AEA-8964-867FAE5E0317}.Debug|x86.ActiveCfg = Debug|x86
+		{6C6FC769-17B2-4AEA-8964-867FAE5E0317}.Debug|x86.Build.0 = Debug|x86
+		{6C6FC769-17B2-4AEA-8964-867FAE5E0317}.Release|x86.ActiveCfg = Release|x86
+		{6C6FC769-17B2-4AEA-8964-867FAE5E0317}.Release|x86.Build.0 = Release|x86
+		{F3AFA2D5-28A0-4A22-A59A-94D330F3CB0F}.Debug|x86.ActiveCfg = Debug|x86
+		{F3AFA2D5-28A0-4A22-A59A-94D330F3CB0F}.Debug|x86.Build.0 = Debug|x86
+		{F3AFA2D5-28A0-4A22-A59A-94D330F3CB0F}.Release|x86.ActiveCfg = Release|x86
+		{F3AFA2D5-28A0-4A22-A59A-94D330F3CB0F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

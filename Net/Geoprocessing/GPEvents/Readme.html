@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Geoprocessing events listener</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Geoprocessing events listener</h2>
+
+<h3>Purpose</h3>
+
+<p>When using geoprocessing (GP) to execute tools, you usually get the tool execution results when it is done. In many cases, you need to listen to the GP events as they happen, for example, when a toolbox is loaded, or messages received while a tool is executing. This sample demonstrates the implementation of a listener helper that allows you to listen to the various GP events. The TestListner application serves as the client that listens to the GP events.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio and open the solution.  </li>
+<li>Build the solution to make the GeoprocessorEventHelper class .dll and the TestListner test application.  </li>
+<li>Right-click the project and select Set as Startup Project to ensure the TestListner project is the start-up project for the solution (notice the messages on the Output window in Visual Studio as they get fired by the geoprocessor). The application creates a random shapefile in the machine's temporary directory.  </li>
+</ol>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

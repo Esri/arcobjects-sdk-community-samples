@@ -1,0 +1,128 @@
+
+// SimplePointVC.idl : IDL source for SimplePointVC.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (SimplePointVC.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(65E5BA11-721A-11D6-8AD9-00104BB6FCCB),
+	version(1.0),
+	helpstring("SimplePointVC 1.0 Type Library")
+]
+library SIMPLEPOINTVCLib
+{
+	//If you are working on a 64-bit machine, you will need to update the 
+	//OLB path to \Program Files (x86)\ArcGIS for the samples to work.
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	importlib("\Program Files (x86)\ArcGIS\Desktop10.4\com\esriGeometry.olb");
+	importlib("\Program Files (x86)\ArcGIS\Desktop10.4\com\esriGeodatabase.olb");
+
+	// TODO remove if not required
+	[
+		object,
+		uuid(DA8C16B8-00C8-490C-8CCE-80202C76CED3),
+		helpstring("ISingletonRelease Interface"),
+		pointer_default(unique)
+	]
+	interface ISingletonRelease : IUnknown
+	{
+		[helpstring("method ReleaseInstance")] HRESULT ReleaseInstance();
+	};
+
+
+	[
+		object,
+		uuid(65E5BA1D-721A-11D6-8AD9-00104BB6FCCB),
+	
+		helpstring("ISimplePointWorkspaceFactory Interface"),
+		pointer_default(unique)
+	]
+	interface ISimplePointWorkspaceFactory : IUnknown
+	{
+	};
+	[
+		object,
+		uuid(79D3B763-730F-11D6-8ADA-00104BB6FCCB),
+	
+		helpstring("ISimplePointWorkspaceHelper Interface"),
+		pointer_default(unique)
+	]
+	interface ISimplePointWorkspaceHelper : IUnknown
+	{
+		[propput, helpstring("property WorkspacePath")] HRESULT WorkspacePath([in] BSTR newVal);
+	};
+	[
+		object,
+		uuid(79D3B765-730F-11D6-8ADA-00104BB6FCCB),
+	
+		helpstring("ISimplePointDatasetHelper Interface"),
+		pointer_default(unique)
+	]
+	interface ISimplePointDatasetHelper : IUnknown
+	{
+		[propput, helpstring("property DatasetName")] HRESULT DatasetName([in] BSTR newVal);
+		[propput, helpstring("property WorkspacePath")] HRESULT WorkspacePath([in] BSTR newVal);
+	};
+	[
+		object,
+		uuid(A049B833-73D7-11D6-8ADB-00104BB6FCCB),
+	
+		helpstring("ISimplePointCursorHelper Interface"),
+		pointer_default(unique)
+	]
+	interface ISimplePointCursorHelper : IUnknown
+	{
+		[propput, helpstring("property FilePath")] HRESULT FilePath([in] BSTR newVal);
+		[propput, helpstring("property FieldMap")] HRESULT FieldMap([in] VARIANT fieldmap);
+		[propput, helpstring("property OID")] HRESULT OID([in] long lOID);
+		[propputref, helpstring("property QueryEnvelope")] HRESULT QueryEnvelope([in] IEnvelope* pEnvelope);
+		[propputref, helpstring("property Fields")] HRESULT Fields([in] IFields* pFields);
+	};
+
+	[
+		uuid(65E5BA1E-721A-11D6-8AD9-00104BB6FCCB),
+		helpstring("SimplePointWorkspaceFactory Class")
+	]
+	coclass SimplePointWorkspaceFactory
+	{
+		[default] interface IUnknown;
+		interface IPlugInWorkspaceFactoryHelper; 
+		interface ISimplePointWorkspaceFactory;
+	};
+	[
+		uuid(79D3B764-730F-11D6-8ADA-00104BB6FCCB),
+		helpstring("SimplePointWorkspaceHelper Class")
+	]
+	coclass SimplePointWorkspaceHelper
+	{
+		[default] interface IUnknown;
+		interface IPlugInWorkspaceHelper; 
+		interface ISimplePointWorkspaceHelper;
+	};
+	[
+		uuid(79D3B766-730F-11D6-8ADA-00104BB6FCCB),
+		helpstring("SimplePointDatasetHelper Class")
+	]
+	coclass SimplePointDatasetHelper
+	{
+		[default] interface IUnknown;
+		interface IPlugInDatasetHelper; 
+		interface IPlugInDatasetInfo; 
+		interface ISimplePointDatasetHelper;
+	};
+	[
+		uuid(A049B834-73D7-11D6-8ADB-00104BB6FCCB),
+		helpstring("SimplePointCursorHelper Class")
+	]
+	coclass SimplePointCursorHelper
+	{
+		[default] interface IUnknown;
+		interface IPlugInCursorHelper;
+		interface IPlugInFastQueryValues;
+		interface ISimplePointCursorHelper;
+	};
+};

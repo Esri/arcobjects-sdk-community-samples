@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Selection restriction evaluator</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Selection restriction evaluator</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to create a dynamic network evaluator that can be used by a restriction attribute in a network dataset. By using this sample, you can dynamically restrict network elements based on the currently selected network source features in ArcMap.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Start Visual Studio, open the solution file, then build the solution.  Be sure to open Visual Studio "As Administrator."  </li>
+<li>Start ArcCatalog and select an appropriate network dataset to work with.  </li>
+<li>Add a new restriction attribute to the network dataset.  </li>
+<li>Set SelectionRestriction as the evaluator type for all participating network sources for this new restriction attribute.   </li>
+<li>Start ArcMap and add your network dataset to the map.  </li>
+<li>Click Yes when prompted, to add the network dataset's source feature classes to the map.  </li>
+<li>Create a new network analysis layer and make sure that your new restriction is selected under the Analysis Settings tab of the analysis layer's property pages.  </li>
+<li>Create a selection of the features that you want to restrict from your analysis.  </li>
+<li>Solve your network analysis layer.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Programming%20with%20ArcGIS%20Network%20Analyst%20extension&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Programming with ArcGIS Network Analyst extension</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=What%20is%20ArcGIS%20Network%20Analyst%20extension%3F&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">What is ArcGIS Network Analyst extension?</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=What%20is%20a%20network%20dataset%3F&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">What is a network dataset?</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=Geodatabase&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Geodatabase</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=About%20the%20ArcGIS%20Network%20Analyst%20extension%20tutorial&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">About the ArcGIS Network Analyst extension tutorial</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=NetworkAnalyst&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">NetworkAnalyst</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=ArcGIS%20Network%20Analyst%20extension%20Object%20Model%20Diagram&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ArcGIS Network Analyst extension Object Model Diagram</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=An%20overview%20of%20the%20network%20analyst%20toolbox&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">An overview of the network analyst toolbox</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic: Network Analyst </td><td> ArcGIS for Desktop Basic: Network Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Standard: Network Analyst </td><td> ArcGIS for Desktop Standard: Network Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced: Network Analyst </td><td> ArcGIS for Desktop Advanced: Network Analyst </td></tr>  
+</table>
+
+</body>
+</html>

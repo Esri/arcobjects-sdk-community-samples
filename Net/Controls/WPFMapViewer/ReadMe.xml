@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.896" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>MapViewer hosted in a WPF</title>
+  <purpose>Microsoft's Windows Presentation Foundation (WPF) provides the facility to host Windows Forms controls within a WPF application. This sample demonstrates how to host the ArcGIS Engine Map control, Toolbar control, and TOC control on a WPF window by using the WindowsFormsHost control. A combination of code and Extensible Application Markup Language (XAML) is used to view a map inside the WPF application.</purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>
+    </data_path>
+  </data_paths>
+  <requirements>
+    <requires>Microsoft Visual Studio installed</requires>
+    <requires>.NET Framework 3.5 as target framework</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>App.xaml.cs</filename>
+        <description>Perform ArcGIS Engine license initialization when application starts.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MapWindow.xaml</filename>
+        <description>Declare the layout of map viewer on a WPF window. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MapWindow.xaml.cs</filename>
+        <description>Programmatically host ArcGIS Engine controls and set their properties within a WPF window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>Application.xaml.vb</filename>
+        <description>Perform ArcGIS Engine license initialization when application starts.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MapWindow.xaml</filename>
+        <description>Declare the layout of map viewer on a WPF window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>MapWindow.xaml.vb</filename>
+        <description>Programmatically host ArcGIS Engine controls and set their properties within a WPF window.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Start Visual Studio and open the solution.</step>
+        <step>Press F5 to build and run the project.</step>
+        <step>Click Open on the toolbar to load a .mxd file onto the map or click Add Data to browse to the data.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>How to host an ArcGIS Engine MapControl in a WPF application</topic_display>
+      <topic_link>f407a9b3-7ef0-498b-946e-3322aeef31f3</topic_link>
+    </topic>
+    <topic>
+      <topic_display>WindowsClient.NET</topic_display>
+      <topic_link>http://windowsclient.net/</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Walkthrough: Hosting a Windows Forms Composite Control in Windows Presentation Foundation</topic_display>
+      <topic_link>http://msdn.microsoft.com/en-us/library/ms750944.aspx</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Controls</tag>
+  <tag>WPF</tag></content_area_tags>
+  <indexing_tags>
+    <existing_tag>ArcGIS Engine</existing_tag>
+    
+  </indexing_tags>
+  <guid>3c55e6c7-b162-404d-b249-0ef0d02d5826</guid>
+  <content_management>
+    <owner>Jianxia Song</owner>
+    <tech_reviewer>Don Kemlage</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2011-03-23</last_updated_date>
+    <last_updated_time>15:32:54</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-09</last_copyedit_date>
+      <last_copyedit_time>09:50:21</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-09</edit_date>
+        <edit_time>09:50:19</edit_time>
+        <edit_notes>Edited.</edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>elea2233</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

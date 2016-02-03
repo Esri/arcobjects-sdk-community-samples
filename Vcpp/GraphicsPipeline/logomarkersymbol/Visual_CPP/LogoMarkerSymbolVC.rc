@@ -1,0 +1,203 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""LogoMarkerSymbolVC.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "LogoMarkerSymbolVC Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "LogoMarkerSymbolVC\0"
+            VALUE "LegalCopyright", "Copyright 2001\0"
+            VALUE "OriginalFilename", "LogoMarkerSymbolVC.DLL\0"
+            VALUE "ProductName", "LogoMarkerSymbolVC Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_LOGOMARKERSYMBOL    REGISTRY DISCARDABLE    "LogoMarkerSymbol.rgs"
+IDR_LOGOMARKERPROPERTYPAGE REGISTRY DISCARDABLE    "LogoMarkerPropertyPage.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOGOMARKERPROPERTYPAGE DIALOGEX 0, 0, 183, 101
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Button1",IDC_BTN_TOP,30,32,10,14,BS_BITMAP
+    PUSHBUTTON      "Button1",IDC_BTN_LEFT,73,32,10,14,BS_BITMAP
+    PUSHBUTTON      "Button1",IDC_BTN_RIGHT,117,32,10,14,BS_BITMAP
+    PUSHBUTTON      "Button1",IDC_BTN_BORDER,161,32,10,14,BS_BITMAP
+    EDITTEXT        IDC_EDT_SIZE,41,63,33,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_SIZE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,74,63,9,12
+    EDITTEXT        IDC_EDT_ANGLE,41,84,33,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_ANGLE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,74,84,9,12
+    EDITTEXT        IDC_EDT_XOFFSET,126,63,33,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_XOFFSET,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,159,63,9,12
+    EDITTEXT        IDC_EDT_YOFFSET,126,84,33,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_YOFFSET,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,159,84,9,12
+    GROUPBOX        "Color",IDC_STATIC,6,9,170,45
+    CONTROL         "",IDC_RICH_BORDER,"RICHEDIT",ES_AUTOHSCROLL | 
+                    WS_TABSTOP,143,32,18,14,WS_EX_DLGMODALFRAME | 
+                    WS_EX_TRANSPARENT
+    LTEXT           "Top",IDC_STATIC,11,21,14,8
+    LTEXT           "Left",IDC_STATIC,55,21,13,8
+    LTEXT           "Right",IDC_STATIC,100,21,18,8
+    LTEXT           "Border",IDC_STATIC,144,21,22,8
+    CONTROL         "",IDC_RICH_RIGHT,"RICHEDIT",ES_AUTOHSCROLL | WS_TABSTOP,
+                    99,32,18,14,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    CONTROL         "",IDC_RICH_LEFT,"RICHEDIT",ES_AUTOHSCROLL | WS_TABSTOP,
+                    55,32,18,14,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    CONTROL         "",IDC_RICH_TOP,"RICHEDIT",ES_AUTOHSCROLL | WS_TABSTOP,
+                    12,32,18,14,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    LTEXT           "Size:",IDC_STATIC,23,64,17,12
+    LTEXT           "Angle:",IDC_STATIC,19,86,21,9
+    LTEXT           "XOffset:",IDC_STATIC,98,64,26,9
+    LTEXT           "YOffset:",IDC_STATIC,98,86,27,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_BUTTON          BITMAP  DISCARDABLE     "bmp_butt.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LOGOMARKERPROPERTYPAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 165
+        BOTTOMMARGIN, 28
+        HORZGUIDE, 14
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "LogoMarkerSymbolVC"
+    IDS_TITLELogoMarkerPropertyPage "Custom Marker Symbol"
+    IDS_HELPFILELogoMarkerPropertyPage "Help File Name"
+    IDS_DOCSTRINGLogoMarkerPropertyPage "Logo Marker Symbol"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "LogoMarkerSymbolVC.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

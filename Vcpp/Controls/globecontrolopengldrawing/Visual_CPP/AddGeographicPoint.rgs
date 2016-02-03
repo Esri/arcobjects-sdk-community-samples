@@ -1,0 +1,30 @@
+HKCR
+{
+	GlobeDigitizePoint.AddGeographicPoint.1 = s 'AddGeographicPoint Class'
+	{
+		CLSID = s '{EA9A6EEA-10A1-4F25-9979-F96EDA7750B5}'
+	}
+	GlobeDigitizePoint.AddGeographicPoint = s 'AddGeographicPoint Class'
+	{
+		CLSID = s '{EA9A6EEA-10A1-4F25-9979-F96EDA7750B5}'
+		CurVer = s 'GlobeDigitizePoint.AddGeographicPoint.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {EA9A6EEA-10A1-4F25-9979-F96EDA7750B5} = s 'AddGeographicPoint Class'
+		{
+			ProgID = s 'GlobeDigitizePoint.AddGeographicPoint.1'
+			VersionIndependentProgID = s 'GlobeDigitizePoint.AddGeographicPoint'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{EC5796BE-D8E7-4547-8333-B23C86B9ACC5}'
+			'Implemented Categories'
+			{
+				{B284D891-22EE-4F12-A0A9-B1DDED9197F4}
+			}
+		}
+	}
+}

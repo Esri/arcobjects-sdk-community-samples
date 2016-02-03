@@ -1,0 +1,111 @@
+
+// CustomXform.idl : IDL source for CustomXform.dll
+//
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+  uuid(E1B666EB-5173-4bdf-A607-CD643EAC7993),
+  version(1.0),
+  helpstring("CustomXform 1.0 Type Library")
+]
+library CustomXformLib
+{
+	//If you are working on a 64-bit machine, you will need to update the 
+	//OLB path to \Program Files (x86)\ArcGIS for the samples to work.
+  importlib("stdole32.tlb");
+  importlib("stdole2.tlb");
+  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.4\com\esriSystem.olb");
+  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.4\com\esriGeometry.olb");
+  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.4\com\esriGeoDataBase.olb"); 
+  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.4\com\esriCarto.olb");
+  
+  // Interfaces
+  // ISimpleXForm Interface
+  [
+    object,
+    oleautomation,
+    pointer_default(unique),
+    uuid(7E536337-CB2A-47ed-BA32-071C74728361),
+    helpstring("Provides access to members that control a custom SimpleXform")
+  ]
+  interface ISimpleXform : IUnknown
+  {
+    [
+      propget, 
+      helpstring("The name")
+    ] 
+    HRESULT Name([out, retval] BSTR* pName);
+
+    [
+      propput, 
+      helpstring("The name")
+    ] 
+    HRESULT Name([in] BSTR name);
+  };
+
+  //IRMCXForm Interface
+  [
+    object,
+    oleautomation,
+    pointer_default(unique),
+    uuid(144C653A-50FC-4d61-BED9-859EF234ED14),
+    helpstring("Provides access to members that control a custom RMCXform")
+  ]
+  interface IRMCXform : IUnknown
+  {
+    [
+      propget, 
+      helpstring("The name")
+    ] 
+    HRESULT Name([out, retval] BSTR* pName);
+
+    [
+      propput, 
+      helpstring("The name")
+    ] 
+    HRESULT Name([in] BSTR name);
+
+    [
+      propget, 
+      helpstring("The coefficients")
+    ] 
+    HRESULT Coefficients([out, retval] double* coefficients);
+
+    [
+      propput, 
+      helpstring("The coefficients")
+    ] 
+    HRESULT Coefficients([in] double* coefficients);
+  };
+
+  // CoClasses
+  // SimpleXForm
+  [
+    uuid(2FA1F0BB-E7DA-4a7a-A11A-56E9D712C3EF),
+    helpstring("A custom SimpleXform Class")
+  ]
+  coclass SimpleXform
+  {
+    [default] interface IUnknown;
+    interface ISimpleXform;
+    interface IGeodataXform;
+    interface IPersistStream;
+    interface IClone;
+  };
+
+  // RMCXForm
+  [
+    uuid(22FF5E72-3D6A-4dee-B353-6677A78F378F),
+    helpstring("A custom RMCXform Class")
+  ]
+  coclass RMCXform
+  {
+    [default] interface IUnknown;
+    interface IRMCXform;
+    interface IGeodataXform;
+    interface IPersistStream;
+    interface IClone;
+  };
+};

@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>TAPlaybackTrackingData2008</Name>
+  <AddInID>{39c3a571-be9c-447e-9dfa-635c1116431a}</AddInID>
+  <Description>Creates a Tracking layer, loads it with temporal data, and animates it.</Description>
+  <Version>1.0</Version>
+  <Image>Images\TAPlaybackTrackingData2008.png</Image>
+  <Author>Ryan Elliott</Author>
+  <Company>ESRI</Company>
+  <Date>9/3/2009 12:09:39 PM</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="TAPlaybackTrackingData2008.dll" namespace="TAPlaybackTrackingData2008">
+    <ArcMap>
+      <Commands>
+        <Button id="TAPlaybackTrackingData2008_PlaybackDataButton" class="PlaybackDataButton" tip="Plays back tracking data" message="Creates a Tracking layer, loads it with temporal data, and animates it." caption="Playback Tracking Data" category="Add-In Controls" image="Images\PlaybackDataButton.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

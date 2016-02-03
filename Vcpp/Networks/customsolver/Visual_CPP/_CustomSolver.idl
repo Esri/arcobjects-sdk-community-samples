@@ -1,0 +1,77 @@
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\um\prsht.idl";
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\um\mshtml.idl";
+import "c:\program files (x86)\windows kits\8.1\include\um\dimm.idl";
+import "c:\program files (x86)\windows kits\8.1\include\um\dispex.idl";
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\shared\dxgitype.idl";
+import "c:\program files (x86)\windows kits\8.1\include\shared\dxgiformat.idl";
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\um\mshtmhst.idl";
+import "c:\program files (x86)\windows kits\8.1\include\um\docobj.idl";
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\um\exdisp.idl";
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\um\objsafe.idl";
+
+[
+	uuid(461F2460-19D4-4289-8663-3A52C439F82B),
+	helpstring("Options for connectivity output")
+] 
+#line 31 "c:\\arcgis_sdk\\networks\\com_cpp\\vcpp\\samples\\customsolver\\visual_cpp\\connectivitysolver.h"
+enum outputConnectivityType {
+	outputConnectedLines = 0,
+	outputDisconnectedLines = 1,
+};
+
+[
+	object,
+	uuid(C9D1BFF5-B12B-48C4-A631-3FE0CEFEC631),
+	oleautomation,
+	helpstring("IConnectivitySolver Interface"),
+	pointer_default(unique)
+] 
+#line 43 "c:\\arcgis_sdk\\networks\\com_cpp\\vcpp\\samples\\customsolver\\visual_cpp\\connectivitysolver.h"
+interface IConnectivitySolver : IUnknown {
+#line 45 "c:\\arcgis_sdk\\networks\\com_cpp\\vcpp\\samples\\customsolver\\visual_cpp\\connectivitysolver.h"
+	[propget,helpstring("Indicates the line output type")] HRESULT  OutputLines([out,retval] enum esriNAOutputLineType *pVal);
+	[propput,helpstring("Indicates the line output type")] HRESULT  OutputLines([in] enum esriNAOutputLineType newVal);
+	[propget,helpstring("Indicates the connectivity output type")] HRESULT  OutputConnectivity([out,retval] enum outputConnectivityType *pVal);
+	[propput,helpstring("Indicates the connectivity output type")] HRESULT  OutputConnectivity([in] enum outputConnectivityType newVal);
+};
+
+
+[ version(1.0), uuid(F25947D1-9C81-48A6-9BFF-CF9EB158FFD7), helpstring("CustomSolver 1.0 Type Library") ]
+library CustomSolver
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(D60D514D-EAB0-49D7-B5EB-C2533E91837C),
+		helpstring("ConnectivitySolver Class")
+	] 
+#line 63 "c:\\arcgis_sdk\\networks\\com_cpp\\vcpp\\samples\\customsolver\\visual_cpp\\connectivitysolver.h"
+	coclass ConnectivitySolver {
+		[default]	interface IConnectivitySolver;
+	};
+
+	[
+		version(1.0),
+		uuid(4D82C01E-0DDE-40D6-9FA3-BABE65383C9C),
+		helpstring("ConnectivitySymbolizer Class")
+	] 
+#line 34 "c:\\arcgis_sdk\\networks\\com_cpp\\vcpp\\samples\\customsolver\\visual_cpp\\connectivitysymbolizer.h"
+	coclass ConnectivitySymbolizer {
+		[default]	interface INASymbolizer2;
+	};
+
+	[
+		version(1.0),
+		uuid(241CF566-AFEF-40D3-8ADC-3914AF4CED16),
+		helpstring("ConnSolverPropPage Class")
+	] 
+#line 31 "c:\\arcgis_sdk\\networks\\com_cpp\\vcpp\\samples\\customsolver\\visual_cpp\\connsolverproppage.h"
+	coclass ConnSolverPropPage {
+		[default]	interface IUnknown;
+	};
+
+	importlib("\Program Files (x86)\ArcGIS\Desktop10.4\com\esrinetworkanalyst.olb");
+}
+

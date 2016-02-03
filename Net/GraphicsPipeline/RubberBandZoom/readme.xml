@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.706" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>RubberBand zoom</title>
+	<purpose>This sample demonstrates how to use the Display library's RubberBand object to zoom to the selected area.</purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine Developer Kit</name>
+									<extension></extension>
+								</license></development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS for Desktop Basic</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license><license>
+									<name>Engine</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires>A map with zoomable data or layout elements.</requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>RubberBandZoom.cs</filename>
+				<description>The C# source code for the RubberBandZoom tool.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		</files>
+	<files lang="VBNet">
+									<file>
+										<filename>RubberBandZoom.vb</filename>
+										<description>The VB .NET source code for the RubberBandZoom tool.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								</files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Start Visual Studio and open the applicable solution file.</step><step>Build the project and start ArcMap.</step><step>Click the Customize menu and click Customize Mode. </step><step>Click the Commands tab and click Developer Samples.</step><step>Click the applicable tool and drag it onto an active toolbar in ArcMap.</step><step>Click the tool to enable it.</step><step>Click and drag an area to zoom in. Right-click to go back to the previous extent.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<related_topics>
+		<topic>
+			<topic_display>Display library overview</topic_display>
+			<topic_link>8d81aed9-9643-4e22-930c-3cadcb816891</topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Cartography, Mapping, &amp; 2D Display</tag>
+	<tag>Add-ins</tag></content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>dd9b8bce-3849-4d30-bb69-102f61cb58d9</guid>
+	<content_management>
+		<owner>maxi4368</owner>
+		<tech_reviewer>Jeremy Wright</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-12-16</langrev_last_updated_date>
+		<langrev_last_updated_time>20:36:51</langrev_last_updated_time>
+		<last_updated_date>2010-05-03</last_updated_date>
+		<last_updated_time>10:21:42</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2010-05-03</last_copyedit_date>
+									<last_copyedit_time>10:25:35</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>kyli4140</editor_name>
+										<edit_date>2010-04-29</edit_date>
+										<edit_time>14:06:37</edit_time>
+										<edit_notes>minor edits in summary, sent to copyediting, and added to 10 Final SDK.</edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-05-03</edit_date>
+									<edit_time>10:25:32</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">SDK inclusion completed.</div></edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>kyli4140</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

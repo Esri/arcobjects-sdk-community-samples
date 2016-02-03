@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" productVersion="12.0.0" solutionVersion="9.4.0.896" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>WPF Globe Gallery</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample shows how to host the ArcGIS Engine Globe .NET control with the Windows Presentation Foundation (WPF) classes. It displays various exported thumbnails from globe (.3dd) documents and takes advantage of WPF features such as image translation. All of the WPF elements are defined in Extensible Application Markup Language (XAML) including various templates and styles. The sample also shows how to do the following:</div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml">
+<li>Handle license initialization</li>
+<li>Create and host the control with a WindowsFormsHost</li>
+<li>Format control styles with XAML</li>
+<li>Handle WPF and Globe control events</li>
+<li>Wire up existing tools to WPF controls</li>
+<li>Release Component Object Model (COM) objects</li></ul></purpose>
+	<development_license>
+		<license>
+			<name>Engine Developer Kit</name>
+			<extension></extension>
+		</license>
+	</development_license>
+	<deployment_license>
+		<license>
+			<name>Engine</name>
+			<extension>3D Analyst</extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension>3D Analyst</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>3D Analyst</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>3D Analyst</extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires>.NET Framework 3.5.</requires><requires>3D maps are from free ArcGIS Online standard services.</requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>app.xaml.cs</filename>
+				<description>Perform ArcGIS Engine for Windows binding and license initialization while loading map images.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		<file>
+									<filename>GalleryWindow.xaml.cs</filename>
+									<description>Display globe map images. </description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>GalleryWindow.xaml</filename>
+									<description>Declare the layout of the map gallery.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>GlobeView.xaml.cs</filename>
+									<description>Programmatically host the Globe control and set its properties and events within a WPF window.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>GlobeView.xaml</filename>
+									<description>Declare the layout of the Globe view.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>mapClasses.cs</filename>
+									<description>Utility class to help display the maps.</description>
+									<viewable_code>true</viewable_code>
+								</file></files>
+	<files lang="VBNet">
+									<file>
+										<filename>Application.xaml.vb</filename>
+										<description>Perform ArcGIS Engine for Windows binding and license initialization while loading map images.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>Gallery.xaml.vb</filename>
+									<description>Display globe map images.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>Gallery.xaml</filename>
+									<description>Declare the layout of the map gallery.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>GlobeView.xaml.vb</filename>
+									<description>Programmatically host the Globe control and set its properties and events within a WPF window.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>GlobeView.xaml</filename>
+									<description>Declare the layout of the Globe view.</description>
+									<viewable_code>true</viewable_code>
+								</file><file>
+									<filename>mapClasses.vb</filename>
+									<description>Utility class to help display the maps.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Start Visual Studio. </step><step>Press F5 to run the sample.</step><step>Play the Zoom Slider to view map images in the gallery.</step><step>Double-click an image to open the Globe Viewer window, which displays the associated .3dd file in the ArcGIS Globe control. Multiple Globe Viewer windows can be opened simultaneously (it can take longer to open the first map, but should be faster when opening subsequent maps).</step><step>Click the tools such as Navigation, Fly, and TargetZoom to view the globe map. When done with the Fly tool, press Esc to release it.</step><step>Close the Gallery window.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<additional_information>The map must be in Joint Photographic Experts Group (JPEG) image format with a stored thumbnail to display in the gallery. The images in the sample are exported individually from an ArcGlobe application, then edited in Kodak digital camera software to create the stored thumbnail.</additional_information><related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>WPF</tag>
+	<tag>Controls</tag></content_area_tags>
+	<indexing_tags>
+		<existing_tag>3D</existing_tag>
+	</indexing_tags>
+	<guid>382ec341-385c-43bd-9c40-25d74346adb2</guid>
+	<content_management>
+		<owner>jian3624</owner>
+		<tech_reviewer>Allan Laframboise</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-12-11</langrev_last_updated_date>
+		<langrev_last_updated_time>17:27:57</langrev_last_updated_time>
+		<last_updated_date>2011-09-08</last_updated_date>
+		<last_updated_time>13:19:44</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2011-09-08</last_copyedit_date>
+									<last_copyedit_time>13:19:15</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>kyli4140</editor_name>
+										<edit_date>2009-12-17</edit_date>
+										<edit_time>18:10:59</edit_time>
+										<edit_notes>Fixed some formatting and minor text issues. Removed unnecessary additional requirements. Added to SDK but left copyediting in progress.</edit_notes>
+									</editing_section>
+								<editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2010-02-16</edit_date>
+									<edit_time>11:04:59</edit_time>
+									<edit_notes>Edited. SDK inclusion requested.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2011-09-08</edit_date>
+									<edit_time>13:19:20</edit_time>
+									<edit_notes>10.2 product name change</edit_notes>
+								</editing_section></edits></content_management>
+	<current_user>mine3384</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

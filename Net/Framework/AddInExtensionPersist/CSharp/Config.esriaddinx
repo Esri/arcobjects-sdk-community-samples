@@ -1,0 +1,21 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>PersistExtensionAddIn</Name>
+  <AddInID>{d0711c8e-e7dd-4acd-bf9c-fc1ce7049bb6}</AddInID>
+  <Description>Type in a description for the add-in.</Description>
+  <Version>1.0</Version>
+  <Image>Images\PersistExtensionAddIn.png</Image>
+  <Author>xiao</Author>
+  <Company>ESRI</Company>
+  <Date>8/19/2009 9:38:35 AM</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="PersistExtensionAddIn.dll" namespace="PersistExtensionAddIn">
+    <ArcMap>
+      <Extensions>
+        <!--ESRI_PersistExtensionAddIn_LogExtension-->
+        <Extension id="AddinExt" class="LogExtension" showInExtensionDialog="false" autoLoad="true" />
+      </Extensions>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

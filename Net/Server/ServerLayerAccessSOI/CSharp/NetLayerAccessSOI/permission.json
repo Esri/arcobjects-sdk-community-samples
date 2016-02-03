@@ -1,0 +1,21 @@
+{
+    "permissions": [
+		{
+            "fqsn": "USA.MapServer",
+            "permission": [
+                {
+                    "role": "silver",
+                    "authorizedLayers": "1"
+                },
+                {
+                    "role": "gold",
+                    "authorizedLayers": "2,3"
+                },
+                {
+                    "role": "platinum",
+                    "authorizedLayers": "0,1,2,3"
+                }
+            ]
+        }
+    ]
+}

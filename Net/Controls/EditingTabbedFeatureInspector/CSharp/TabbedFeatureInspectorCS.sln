@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabbedInspectorCS", "TabbedInspector\TabbedInspectorCS.csproj", "{3F24E442-44D3-4838-901B-BDD06FF330ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngineApplicationCS", "EngineApplication\EngineApplicationCS.csproj", "{9B07730B-F6E7-496C-8955-441D7F87DA55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F24E442-44D3-4838-901B-BDD06FF330ED}.Debug|x86.ActiveCfg = Debug|x86
+		{3F24E442-44D3-4838-901B-BDD06FF330ED}.Debug|x86.Build.0 = Debug|x86
+		{3F24E442-44D3-4838-901B-BDD06FF330ED}.Release|x86.ActiveCfg = Release|x86
+		{3F24E442-44D3-4838-901B-BDD06FF330ED}.Release|x86.Build.0 = Release|x86
+		{9B07730B-F6E7-496C-8955-441D7F87DA55}.Debug|x86.ActiveCfg = Debug|x86
+		{9B07730B-F6E7-496C-8955-441D7F87DA55}.Debug|x86.Build.0 = Debug|x86
+		{9B07730B-F6E7-496C-8955-441D7F87DA55}.Release|x86.ActiveCfg = Release|x86
+		{9B07730B-F6E7-496C-8955-441D7F87DA55}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

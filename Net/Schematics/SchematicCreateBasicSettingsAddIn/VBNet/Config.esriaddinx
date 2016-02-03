@@ -1,0 +1,31 @@
+﻿<!--  Copyright 2011 ESRI
+ 
+ All rights reserved under the copyright laws of the United States
+ and applicable international laws, treaties, and conventions.
+ 
+ You may freely redistribute and use this sample code, with or
+ without modification, provided you include the original copyright
+ notice and use restrictions.
+ 
+ See the use restrictions at <your ArcGIS install location>/DeveloperKit10.2/userestrictions.txt.
+  -->
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Schematic Create Basic Settings AddIn (VBNet)</Name>
+  <AddInID>{7986f03b-2eed-4877-a760-c6bcdd6a06ae}</AddInID>
+  <Description>This add-in allows to create a schematic dataset and quickly configure a schematic diagram template that will use geometric network data as the input for generating schematic diagrams.</Description>
+  <Version>1.0</Version>
+  <Image>Images\SchematicCreateBasicSettingsAddIn.png</Image>
+  <Author>anne0002</Author>
+  <Company>ESRI</Company>
+  <Date>1/10/2011</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="SchematicCreateBasicSettingsAddIn.dll" namespace="SchematicCreateBasicSettingsAddIn">
+    <ArcCatalog>
+      <Commands>
+        <Button id="ESRI_SchematicCreateBasicSettingsAddIn_VBNet" class="GenerateSchematicTemplate" message="Creates a schematic dataset in the currently selected geodatabase and configures a schematic template that will use geometric network data as the input for generating schematic diagrams." caption="Create Basic Schematic Settings (VBNet)" tip="Create Basic Schematic Settings (VBNet)" category="Schematic Extras (VBNet)" image="Images\GenerateSchematicTemplate.png" />
+      </Commands>
+    </ArcCatalog>
+  </AddIn>
+</ESRI.Configuration>

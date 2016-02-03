@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Custom subtyped command and tool</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Custom subtyped command and tool</h2>
+
+<h3>Purpose</h3>
+
+<p>You can create multiple commands or tools with similar functionalities in a single class by implementing ICommandSubType. The primary purpose of this sample is to illustrate how to create a single subtyped command that behaves and appears like multiple commands.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Open and compile the sample project in Visual Studio. Set up a debug application if needed.  </li>
+<li>The ZoomInCommands class works in ArcMap, ArcScene, or ArcGlobe. Drag and drop the Fixed zoom in x# (C#) or Fixed zoom in x# (VB .NET) command under the .NET Samples category on the Customize dialog box onto the application.  </li>
+<li>Click the command to perform the fixed zoom in at various levels. If necessary, add data to verify each command is zooming at a different level.  </li>
+<li>The PolyFeedbackTools class works in ArcMap only. Drag and drop the # sides feedback (C#) or # sides feedback (VB .NET) tool from the .NET Samples category on the Customize dialog box onto the application.  </li>
+<li>Click to activate the feedback tool and click the map to start a polygon display feedback. The display feedback automatically finishes when the shape has reached the number of sides limit of the tool. The status bar also reports the area of the tracked polygon.  </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample contains a command class called ZoomInCommands that implements three subtyped commands performing different levels of fixed zoom in, and a tool class called PolyFeedbackTools that implements three subtyped tools tracking different kinds of polygon display feedback (3- to 5-sided). </div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=How%20to%20create%20multiple%20commands%20or%20tools%20in%20a%20single%20class%20subtyped%20command&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to create multiple commands or tools in a single class subtyped command</a><br />
+<a href="../../../Net/Framework/RecentFilesCommands">Sample: Recently used files—Command, MultiItem, and ComboBox</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

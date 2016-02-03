@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Subset network evaluators</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Subset network evaluators</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample includes two custom evaluators that can be plugged into a network dataset and used by the ArcGIS Network Analyst extension. The FilterSubset evaluator can be used to restrict streets based on the current selection in ArcMap. The ScaleSubset evaluator can be used to slow down streets that fall within polygon graphics on the map. Both evaluators use parameterized attributes to pass information from ArcMap to the evaluator.  Building the solution installs these two custom evaluators, adds a custom command to ArcMap, and automatically adds two context items to the ArcCatalog network dataset context menu, which is used to help create or remove network attributes that use these evaluators. While the functionality provided by this sample is more easily handled by using polygon barriers in your analysis, the purpose of the sample is to provide help getting started using custom evaluators. The same concepts can be used to create and consume these evaluators in an ArcGIS Engine environment.   </p>
+
+<h3>Usage</h3>
+
+<h4>Installation</h4>
+
+<ol>
+<li>Start Visual Studio.  </li>
+<li>Rebuild the SubsetNetworkEvaluators solution.  </li>
+</ol>
+
+<h4>Editing the network dataset to use subset network evaluators in ArcCatalog</h4>
+
+<ol>
+<li>Start ArcCatalog using an ArcGIS for Desktop Basic or higher license and check out an ArcGIS Network Analyst extension license to enable network dataset schema updates.  </li>
+<li>Right-click the Streets_ND network dataset in the SanFrancisco.gdb/Transportation dataset in the SanFrancisco folder, and choose Add Subset Attributes to add new attributes that have parameters and are assigned the new custom evaluators (this can also be done manually by using the property page).  </li>
+<li>If you decide to uninstall these sample subset evaluators, choose Remove Subset Attributes on any network dataset that has added them. Otherwise, the network dataset will not open because it cannot instantiate these custom evaluators. Alternatively, you can manually remove or edit any attributes that use these evaluators using the property page.  </li>
+</ol>
+
+<h4>Using the auto update EID array parameters command in ArcMap</h4>
+
+<ol>
+<li>Close ArcCatalog.  </li>
+<li>Start ArcMap with a new document and add the Streets_ND network dataset in the SanFrancisco.gdb/Transportation dataset in the SanFrancisco folder. When prompted, add the feature classes to use the feature selection.  </li>
+<li>Ensure that an ArcGIS Network Analyst extension license is checked out and the Network Analyst toolbar is active.  </li>
+<li>On the Network Analyst drop-down command, choose the New Route command.  </li>
+<li>On the Analysis Settings property page of the new Route NALayer, set the ScaleSubset_Minutes attribute as the impedance attribute, then select the FilterSubset restriction.  </li>
+<li>On the Attribute Parameters property page of the new Route NALayer, the parameters were automatically added. On the ScaleSubset<em>Minutes attribute, the ScaleSubset</em>Factor parameter value defaults to 1. In this case, use these polygons as slowdown polygons in areas of severe congestion. Therefore, to slowdown elements within slowdown polygons by a factor of 5, type 5 for the parameter value. Also, notice the <em>_eids_</em> parameters on the Attribute Parameters property page. These are the network parameters that are automatically updated if the AutoUpdateNetworkElementArrayParametersCommand command is toggled on. These arrays can also be manually set by typing in the list on this property page or by other programmatic means.  </li>
+<li>Add two or more stops to the new route and solve.  </li>
+<li>In ArcMap, click Customize > Custom Mode. On the Customize dialog box, click the Commands tab and the Network Analyst Samples category, then add the AutoUpdateNetworkElementArrayParametersCommand to the Network Analyst toolbar.  </li>
+<li>Click the command to toggle on the auto update subset parameters, and toggle off to stop listening to selection change and graphic element change events.  </li>
+<li>Select some street features, including some streets overlapping the previously solved route. Solve again. Since the AutoUpdateNetworkElementArrayParametersCommand is toggled on and you are using the FilterSubset restriction attribute for this NALayer, the selected features update the subset parameters to restrict the network elements corresponding to the selected features. The path should not go on the selected features, or if you selected too many streets, the path might not be traversable.  </li>
+<li>Clear the selection and solve again. The path should go back to the original path.  </li>
+<li>On the Drawing toolbar's Drawing drop-down command, click Default Symbol Properties and change the symbol to have a hollow or hatched fill symbol so you can see through polygon graphic elements added to ArcMap.  </li>
+<li>Using one of the polygon drawing tools, such as New Polygon on the Drawing toolbar, digitize in one or more polygons in the vicinity of the path or stops, and resolve the route.  </li>
+<li>Solve again, and the route might change. If it did not change, increase the scale factor or add larger slowdown polygon graphic elements. Unlike the filter scale evaluator, if necessary, the route can still traverse elements in the subset.  </li>
+<li>Toggle off the AutoUpdateNetworkElementArrayParametersCommand to clear the EID array parameters and stop listening for selection or graphic element changes.  </li>
+</ol>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=Programming%20with%20the%20ArcGIS%20Network%20Analyst%20extension&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Programming with the ArcGIS Network Analyst extension</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=What%20is%20the%20ArcGIS%20Network%20Analyst%20extension%3F&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">What is the ArcGIS Network Analyst extension?</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=What%20is%20a%20network%20dataset%3F&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">What is a network dataset?</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=Geodatabase&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Geodatabase</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=About%20the%20ArcGIS%20Network%20Analyst%20extension%20tutorial&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">About the ArcGIS Network Analyst extension tutorial</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=NetworkAnalyst&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">NetworkAnalyst</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=ArcGIS%20Network%20Analyst%20extension%20Object%20Model%20Diagram&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ArcGIS Network Analyst extension Object Model Diagram</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=An%20overview%20of%20the%20Network%20Analyst%20toolbox&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">An overview of the Network Analyst toolbox</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> ArcGIS for Desktop Basic: Network Analyst </td><td> ArcGIS for Desktop Basic: Network Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Standard: Network Analyst </td><td> ArcGIS for Desktop Standard: Network Analyst </td></tr>  
+<tr><td> ArcGIS for Desktop Advanced: Network Analyst </td><td> ArcGIS for Desktop Advanced: Network Analyst </td></tr>  
+</table>
+
+</body>
+</html>

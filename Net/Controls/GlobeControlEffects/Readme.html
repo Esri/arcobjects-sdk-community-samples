@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Effects in the GlobeControl</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Effects in the GlobeControl</h2>
+
+<h3>Purpose</h3>
+
+<p>This sample demonstrates how to manipulate heads-up display (HUD), north arrow, observer location (latitude, longitude, and altitude), enabling, setting sun, and ambient light effects. This sample shows how to do the following:Use the IGlobeViewer interface NorthArrowEnabled and HUDEnabled properties to enable north arrow and heads-up display.Use the IGlobeDisplayRendering interface GetSunColor, SetSunColor, GetSunPosition, and SetSunPosition methods and AmbientLight property to get and set the sun color, sun position, and ambient light.Use the IGlobeCamera.GetObserverLatLonAlt method to get observer latitude, longitude, and altitude.Listen to an AfterDraw event of IGlobeDisplayEvents.  </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>If no default document is loaded, open a globe document.  </li>
+<li>Select the Enable Sun check box to enable and disable the sun effect and click the Set Sun Color button to set the desired color of the sun.   </li>
+<li>Select the HUD check boxes to enable and disable the built-in heads-up display; the Alternate HUD area shows how to make a heads-up display.   </li>
+</ol>
+
+<p><img src="images/pic1.png" alt="Screen shot of the HUD options used in this sample." /><br />
+Screen shot of the HUD options used in this sample.  </p>
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=GlobeControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">GlobeControl class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IGlobeControl%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IGlobeControl interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine: 3D Analyst </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic: 3D Analyst </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard: 3D Analyst </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced: 3D Analyst </td></tr>  
+</table>
+
+</body>
+</html>

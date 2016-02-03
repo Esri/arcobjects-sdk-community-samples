@@ -1,0 +1,25 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>DigitToolCS</Name>
+    <AddInID>{d6a45c7d-30ad-4b78-b986-4480afdff7dc}</AddInID>
+    <Description>Digit schematic feature.</Description>
+    <Version>1.0</Version>
+    <Image>Images\DigitTool.png</Image>
+    <Author>ESRI</Author>
+    <Company>ESRI</Company>
+    <Date>29/10/2009</Date>
+    <Targets>
+        <Target name="Desktop" version="10.4" />
+    </Targets>
+    <AddIn language="CLR" library="ESRI.ArcGIS.SchematicSamples.DigitToolCS.dll" namespace="DigitTool">
+        <ArcMap>
+            <Commands>
+                <Tool id="DigitTool_DigitToolCS" class="DigitTool" onDemand="false" message="Sample of schematic digit tool." caption="Digit Tool" tip="Digit Tool." category="Schematic Samples" image="Images\DigitTool.png" />
+            </Commands>
+            <DockableWindows>
+                <DockableWindow id="DigitTool_DockableWindowCS" class="DigitDockableWindow+AddinImpl" caption="Schematic Digitize" image="Images\DigitWindow.png">
+                    <InitialPlacement height="597" width="333" state="pinned" position="left" />
+                </DockableWindow>
+            </DockableWindows>
+        </ArcMap>
+    </AddIn>
+</ESRI.Configuration>

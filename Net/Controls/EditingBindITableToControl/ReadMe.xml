@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.524" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Bind a geodatabase table to a .NET control</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates how to bind a geodatabase table and a .NET control. Additionally, it shows how editing and coded-value domains can be supported.</div>
+    <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  </purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+    
+    
+    
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires></requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>ArcDataBinding/FieldPropertyDescriptor.cs</filename>
+        <description>The implementation of the FieldPropertyDescriptor class used to describe each IField in an ITable.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ArcDataBinding/TableWrapper.cs</filename>
+        <description>The implementation of the TableWrapper class used to bind an ITable to a control; inherits from the System.ComponentModel.BindingList class and ITypedList. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>DemoITableBinding/MainWnd.cs</filename>
+        <description>The main form of the application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>ArcDataBinding/FieldPropertyDescriptor.vb</filename>
+        <description>The implementation of the FieldPropertyDescriptor class used to describe each IField in an ITable.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>ArcDataBinding/TableWrapper.vb</filename>
+        <description>The implementation of the TableWrapper class used to bind an ITable to a control; inherits from the System.ComponentModel.BindingList class and ITypedList. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>DemoITableBinding/MainWind.vb</filename>
+        <description>The main form of the application.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Open the solution and build it.</step>
+        <step>Run the sample to display the main window.</step>
+        <step>The data in the table can be viewed by using the scroll bars and the current row can be changed by using the forward and back buttons on the navigation control at the bottom.</step>
+        <step>Select the Use Coded Value Domain check box to show the domain value names for the Enabled column.</step>
+        <step>All fields apart from geometry and Shape_Length can be edited by clicking the appropriate cell in the grid.</step>
+        <step>The NAME field can also be edited by changing the text in the text box.</step>
+        <step>Add a new row by typing values at the end of the grid or by clicking the Add Row button on the navigation control.</step>
+        <step>Remove the current row by clicking the Delete button on the navigation control.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <additional_information><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows the binding of an entire ITable to a Microsoft DataGridView control and also a single IField to a Microsoft TextBox control. The solution contains the following two projects: </div>
+<ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li><strong>ArcDatabinding project (data binding implementation)</strong><font face="Verdana">—</font>The TableWrapper class inherits from System.ComponentModel.BindingList to provide a default implementation of a list of objects (in this case, a list of IRows) that can be bound to a .NET control. <br/><br/>The TableWrapper class also implements ITypedList to allow a control to query it for any properties required to correctly display the data in a control. As the individual fields in the ITable are not .NET properties, they must be made to look like properties of an IRow. This is achieved by creating a collection of "fake" properties with one for each field in the ITable. This is contained in the fakePropertiesList member and is used by the ITypedList implementation.<br/><br/>The FieldPropertyDescriptor class implements the fake properties and inherits from System.ComponentModel.PropertyDescriptor. It overrides methods used to get type information for each IField in a given ITable, sets values for IFields when a new row is added, changes existing IField values, and deletes the values of IFields when an IRow is deleted. It also handles the type conversions required when showing the data in a .NET control.</li>
+<li><strong>DemoITableBinding project (sample application using the ArcDataBinding project)</strong><font face="Verdana">—</font>This application shows a form containing a DataGridView, TextBox, and a BindingNavigater. The BindingNavigater allows the user to step through the data in the DataGridView and also add and remove rows. The TextBox shows the content of the FULL_NAME column of the current row in the DataGridView. Selecting the Use Coded Value Domain check box shows the coded-value domain value names in the Enabled column rather than the numeric values. <br/><br/><span style="FONT-SIZE: 10pt">The data binding is performed within the <span style="FONT-SIZE: 10pt">Form_Load event handler. A</span></span> <span style="FONT-SIZE: 10pt">new TableWrapper is created with a reference to the ITable being passed into the constructor. The TableWrapper instance is then used to set the DataSource property for a BindingSource object.</span> <br/><br/>The BindingSource acts as a common binding source for all the controls on the form and allows synchronization with the TableWrapper. Any changes made to data in one control attached to the BindingSource is reflected in all other controls that are also attached to the BindingSource. The controls update when the current row is changed using the BindingNavigator.<br/><br/>This sample uses a BindingList with IRows being added to its object collection. A better implementation would be to implement all the interfaces required for a bindable list; thereby, allowing direct access to the wrapped ITable. The sample implementation loads the whole of the ITable into the BindingList, which results in a delay on startup but allows browsing of the ITable's contents without delays. Currently, no support is provided to show Raster or Blob Geodatabase field types.</li></ul></additional_information>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Editing</tag>
+    <tag>Geodatabase</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>a6eb84fb-93db-4bc3-82a9-874d8890a8ca</guid>
+  <content_management>
+    <owner>Mike Rudden</owner>
+    <tech_reviewer>Gayle Young</tech_reviewer>
+    <status>authoring in progress</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2009-10-15</last_updated_date>
+    <last_updated_time>10:14:48</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2009-10-09</last_copyedit_date>
+									<last_copyedit_time>12:54:59</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-10-09</edit_date>
+									<edit_time>12:54:57</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Edited.</div><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Are the following additional requirements still valid (9.4 supports .NET Framework 3.5): </div>
+<ol style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+<li>This sample uses the System.ComponentModel.BindingList class which requires Microsoft .NET Framework 2.0.</li></ol></edit_notes>
+								</editing_section><editing_section>
+									<editor_name>dara4409</editor_name>
+									<edit_date>2009-10-14</edit_date>
+									<edit_time>08:56:31</edit_time>
+									<edit_notes>removed additional requirement</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

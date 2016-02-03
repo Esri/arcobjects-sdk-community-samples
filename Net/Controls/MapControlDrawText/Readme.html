@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Draw text on a MapControl</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+    th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Draw text on a MapControl</h2>
+
+<h3>Purpose</h3>
+
+<p>This draw text sample application demonstrates the splined text rendering capabilities of ArcObjects. When you click the map to track a line, the MapControl method DrawText is used to place the text within the text box along the tracked line. At least two clicks are required for the line and text to appear on the MapControl.   </p>
+
+<h3>Usage</h3>
+
+<ol>
+<li>Type the text to annotate the map.   </li>
+<li>Use the left mouse button to trace a line on the map, and use the right mouse button to zoom in.  </li>
+</ol>
+
+<h4>Additional information</h4>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The application uses the AddLayerFromFile method to load the world continents sample data, which is then symbolized. The OnClick event either uses the TrackRectangle method to zoom in (if the right or middle mouse button has been used) or adds the new point to the line and updates the display through the Refresh method. The Refresh method is used to draw the esriViewForeground, thereby removing any previously drawn annotation and triggering the MapControl's OnAfterDraw event. The OnAfterDraw event uses the DrawShape and DrawText methods to draw the line and text onto the MapControl in response to the refresh of the esriViewForeground phase. </div>  
+
+<h4>See Also</h4>
+
+<p><a href="http://desktopdev.arcgis.com/search/?q=MapControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">MapControl class</a><br />
+<a href="http://desktopdev.arcgis.com/search/?q=IMapControl2%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IMapControl2 interface</a>  </p>
+
+<hr />
+
+<h4>Licensing</h4>
+
+<table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
+<tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+</table>
+
+</body>
+</html>

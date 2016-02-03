@@ -1,0 +1,25 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Editing_EditEventListener</Name>
+  <AddInID>{193302b8-a18d-48f8-9458-d9710da7db29}</AddInID>
+  <Description>Track various edit events, and see the order they fire in the dockable window.</Description>
+  <Version>1.0</Version>
+  <Image>Images\Editing_EditEventListener.png</Image>
+  <Author>lisa4707</Author>
+  <Company>ESRI Employee</Company>
+  <Date>9/9/2009 4:32:04 PM</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="Editing_EditEventListener.dll" namespace="Editing_EditEventListener">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_Employee_Editing_EditEventListener_EditorEventsDialogCommand" class="EditorEventsDialogCommand" tip="Track various edit events" message="This command opens a dockable window containing a tab that lists edit events as they fire, and a tab allowing the user to select which events to listen to." caption="Edit event tracker" category="Add-In Controls" image="Images\EditorEventsDialogCommand.png" />
+      </Commands>
+      <DockableWindows>
+        <DockableWindow id="ESRI_Employee_Editing_EditEventListener_EditorEventsDialog" class="EditorEventsDialog+AddinImpl" caption="Edit Events" image="Images\EditorEventsDialog.png">
+          <InitialPlacement height="158" width="340" state="unpinned" position="right" />
+        </DockableWindow>
+      </DockableWindows>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

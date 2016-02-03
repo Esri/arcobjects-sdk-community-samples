@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.896" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Triangle graphic element</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates an implementation of a custom graphic element. These elements can be used to create triangle graphic elements in the map and move, rotate, resize, and modify their symbol.</div>
+    <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+    <div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates the technique for serializing elements into a map document (.mxd) in addition to backwards compatibility support, such as serializing elements into a ArcGIS 8.3 map document. </div>
+  </purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.2</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>TriangleElementClass.cs</filename>
+        <description>Implementation file of TriangleElement.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TriangleElementTool.cs</filename>
+        <description>Tool implementation file to add new Triangle elements to the map.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>TriangleElementClass.vb</filename>
+        <description>Implementation file of TriangleElement.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>TriangleElementTool.vb</filename>
+        <description>Tool implementation file to add new Triangle elements to the map.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the solution using Visual Studio.</step>
+        <step>Build the solution to make the TriangleElement class library.</step>
+        <step>Use this command in an application with a MapControl and ToolbarControl, or in ArcMap.</step>
+        <step>Add the TriangleElementTool to the ToolbarControl. The tool (Triangle Element) can be found in the .NET Samples category.</step>
+        <step>Run the application and add, then choose the Triangle Element tool. Use the tool to add new triangle elements to the map. Use the Select Elements tool to resize and move the triangle elements. Use the Rotation tool to rotate triangles.</step>
+        <step>Save your map document containing triangle elements or use Save a Copy to save the triangle elements to a pre ArcGIS 9.0 map document file (.mxd).</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Implementing cloning</topic_display>
+      <topic_link>9915ff7d-f119-47ed-b381-cf7dded5cd93</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+    
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>IDocumentVersionSupportGEN interface</existing_tag>
+    <existing_tag>IClone interface</existing_tag>
+    <existing_tag>IElement interface</existing_tag>
+    <existing_tag>IPersistVariant interface</existing_tag>
+    <existing_tag>Persistence</existing_tag>
+    <existing_tag>Cloning</existing_tag>
+  </indexing_tags>
+  <guid>ca7f7974-a2ec-4ca8-8767-04a6caa575f1</guid>
+  <content_management>
+    <owner>Craig Williams</owner>
+    <tech_reviewer>Jeremy Wright</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-02-11</last_updated_date>
+    <last_updated_time>11:15:27</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2008-07-24</last_copyedit_date>
+									<last_copyedit_time>15:00:00</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+									<editor_name>crai3924</editor_name>
+									<edit_date>2010-02-11</edit_date>
+									<edit_time>11:29:26</edit_time>
+									<edit_notes>Minor upgrade to ArcGIS 10.  Text is unchanged except for a minor version number change.</edit_notes>
+								</editing_section><editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>elea2233</editor_name>
+									<edit_date>2011-05-04</edit_date>
+									<edit_time>14:20:57</edit_time>
+									<edit_notes>Topic has been in the SDk for a long time but still showed as SDK Inclusion requested. Updated to reflect correct state.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>elea2233</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRulesCS", "CustomRules\CustomRulesCS.csproj", "{678CF4EE-C957-41AC-9CFC-D35BA06E423D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRulesPageCS", "CustomRulesPage\CustomRulesPageCS.csproj", "{F9CCEA3C-CF76-49FB-A9EF-7AA0389CA1B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{678CF4EE-C957-41AC-9CFC-D35BA06E423D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{678CF4EE-C957-41AC-9CFC-D35BA06E423D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{678CF4EE-C957-41AC-9CFC-D35BA06E423D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{678CF4EE-C957-41AC-9CFC-D35BA06E423D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CCEA3C-CF76-49FB-A9EF-7AA0389CA1B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CCEA3C-CF76-49FB-A9EF-7AA0389CA1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CCEA3C-CF76-49FB-A9EF-7AA0389CA1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CCEA3C-CF76-49FB-A9EF-7AA0389CA1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.700" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Adding a real-time feed to ArcMap</title>
+  <purpose>This sample demonstrates connecting to a Tracking Server and adding one of the services to ArcMap. This sample also shows initializing the Tracking Analyst extension.</purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+  <license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension>Tracking Analyst</extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension>Tracking Analyst</extension>
+								</license></development_license>
+  <deployment_license>
+    
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>Tracking Analyst</extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>Tracking Server with a feed running is required to successfully execute this sample.</requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AddTrackingServerLayerButton.cs</filename>
+        <description>Command that connects to a Tracking Service and adds it to ArcMap.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>AddTrackingServerLayerButton.vb</filename>
+        <description>Command that connects to a Tracking Service and adds it to ArcMap.</description>
+        <viewable_code>false</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Open the solution.</step>
+        <step>Change the TS_SERVER_NAME to the name of your Tracking Server machine.</step>
+        <step>Change the TS_SERVICE_NAME to the name of the real-time feed on your Tracking Server you want to connect to.</step>
+        <step>Build the solution.</step>
+        <step>Add the Add-in button to a toolbar in ArcMap.</step>
+        <step>Click the Add-in button to have it add the temporal layer to Arcmap.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Sample: Add and symbolize a historical temporal layer in ArcMap</topic_display>
+      <topic_link>cdd67da1-fe45-4e14-81de-1185a5e126c3</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Tracking extension</tag>
+  <tag>Add-ins</tag></content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>5a71bebe-4ada-4fc9-9127-35b265475657</guid>
+  <content_management>
+    <owner>Ryan Elliott</owner>
+    <tech_reviewer>Hanoch Kalmanovich</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-08</last_updated_date>
+    <last_updated_time>11:14:02</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2009-09-15</last_copyedit_date>
+									<last_copyedit_time>13:16:01</last_copyedit_time>
+									<copyeditor>mine3384</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-09-15</edit_date>
+									<edit_time>13:15:56</edit_time>
+									<edit_notes>Edited.<br xmlns="http://www.w3.org/1999/xhtml"/>Ready for SDK inclusion.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>kyli4140</editor_name>
+									<edit_date>2009-11-16</edit_date>
+									<edit_time>14:27:21</edit_time>
+									<edit_notes>Returned to author: VB.NET code doesn't compile.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

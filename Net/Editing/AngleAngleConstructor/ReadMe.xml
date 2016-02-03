@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" solutionVersion="9.4.0.540" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Angle Angle shape constructor</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates how to create a shape constructor. The angle-angle shape constructor adds points to the edit sketch based on the input of two point locations and two angles. An angle intersection is constructed based on these inputs. If a new point is not calculated, a message dialog box appears indicating this. </div>
+    <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  </purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <apis>
+    <api>
+    </api>
+  </apis>
+  <capabilities>
+    <capability>
+    </capability>
+  </capabilities>
+  <min_version>10.0</min_version>
+  <min_sp>
+  </min_sp>
+  <max_version>
+  </max_version>
+  <max_sp>
+  </max_sp>
+  <data_paths>
+    <data_path>
+    </data_path>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>AngleAngleCmd.cs</filename>
+        <description>Command component for constructor.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AngleAngleCstr.cs</filename>
+        <description>Implementation component for constructor.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  <files lang="VBNet">
+									<file>
+										<filename>AngleAngleCmd.vb</filename>
+										<description>Command component for constructor.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								<file>
+									<filename>AngleAngleCstr.vb</filename>
+									<description>Implementation component for constructor.</description>
+									<viewable_code>true</viewable_code>
+								</file></files></file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <title>
+      </title>
+      <how_to_use_steps>
+        <step>Compile and register the .dll.</step>
+        <step>Start ArcMap and load some data.</step>
+        <step>Customize ArcMap and add the shape constructor to the Editor toolbar.</step>
+        <step>Select a feature template and a construction tool.</step>
+        <step>Click the Angle-Angle shape constructor. Add three mouse points to view the next edit segment.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>
+      </topic_display>
+      <topic_link>
+      </topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>
+    </tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>
+    </existing_tag>
+  </indexing_tags>
+  <guid>88181e54-d3a2-4d63-9704-82b2cb4ee318</guid>
+  <content_management>
+    <owner>sean3281</owner>
+    <tech_reviewer>doug morgenthaler</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>false</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2009-10-13</last_updated_date>
+    <last_updated_time>10:32:36</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2009-09-17</last_copyedit_date>
+      <last_copyedit_time>14:55:09</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>mine3384</editor_name>
+        <edit_date>2009-09-17</edit_date>
+        <edit_time>14:55:04</edit_time>
+        <edit_notes>
+          <div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+          <div xmlns="http://www.w3.org/1999/xhtml">Ready for SDK inclusion; however, does not have VB .NET code.</div>
+        </edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>sean3281</editor_name>
+									<edit_date>2009-10-13</edit_date>
+									<edit_time>10:31:42</edit_time>
+									<edit_notes>VB.NET Code added</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

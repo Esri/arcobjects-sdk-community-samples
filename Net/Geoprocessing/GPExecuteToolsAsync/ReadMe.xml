@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-gb" productVersion="12.0.0" solutionVersion="9.4.0.667" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Executing geoprocessing tools in the background</title>
+	<purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates how to run multiple geoprocessing tools in the background of an ArcGIS Engine application. It illustrates how the result of one tool execution can then be used as an input to another tool. It also shows how to provide the user with feedback while the tools are executing by listening to events fired by the geoprocessor.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div></purpose>
+	<development_license>
+		<license>
+			<name>Engine Developer Kit</name>
+			<extension></extension>
+		</license>
+	</development_license>
+	<deployment_license>
+		<license>
+			<name>Engine</name>
+			<extension></extension>
+		</license>
+	<license>
+									<name>ArcGIS for Desktop Basic</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Standard</name>
+									<extension></extension>
+								</license><license>
+									<name>ArcGIS for Desktop Advanced</name>
+									<extension></extension>
+								</license></deployment_license>
+	<apis>
+		<api></api>
+	</apis>
+	<capabilities>
+		<capability></capability>
+	</capabilities>
+	<min_version>10.0</min_version>
+	<min_sp></min_sp>
+	<max_version></max_version>
+	<max_sp></max_sp>
+	<data_paths>
+		<data_path></data_path>
+	</data_paths>
+	<requirements>
+		<requires></requires>
+	</requirements>
+	<file_section>
+		<files lang="CSharp">
+			<file>
+				<filename>RunGPForm.cs</filename>
+				<description>ArcGIS Engine application.</description>
+				<viewable_code>true</viewable_code>
+			</file>
+		</files>
+	<files lang="VBNet">
+									<file>
+										<filename>RunGPForm.vb</filename>
+										<description>ArcGIS Engine application.</description>
+										<viewable_code>true</viewable_code>
+									</file>
+								</files></file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title></title>
+			<how_to_use_steps>
+				<step>Start Visual Studio, open the solution file, and compile the project.</step><step>In the Engine application that opens, select some cities using the Select tool or accept the preselected city of Los Angeles.</step><step>Specify a buffer distance or accept the default of 30 miles.</step><step>Click the Run button. The geoprocessing analysis starts. Progress is reported in the ListView control, and the final result is added to the map. </step><step>While the tools are executing, check that the application is still responsive by navigating around the map.</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<additional_information><div xmlns="http://www.w3.org/1999/xhtml">Multiple, unrelated geoprocessing tools can be executed by calling the ExecuteAsync method for each tool from within the same method. For example, you can buffer a selected city by a distance to produce a result, then union the Highways and Zip Codes layer to produce another result. The output from the first tool does not affect the inputs to the second tool.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">Another common scenario is where the output from one tool becomes an input parameter to another tool. In this sample, selected cities are buffered to output a result that is then used to clip features in the Zip Codes layer. Calling the ExecuteAsync method from within the same method does not work in this case since all input parameters must exist prior to tool execution. This sample works around that restriction.</div>
+<div xmlns="http://www.w3.org/1999/xhtml"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml">Each tool is added to a Queue object. The first tool is de-queued and called for execution from within the <font size="2">btnRunGP_Click event handler. The second tool is then called</font><font size="2"> for execution from within the ToolExecuted event handler but only if the first has completed successfully. This approach is scalable, as any number of tools can be added to the queue.</font></div></additional_information><related_topics>
+		<topic>
+			<topic_display></topic_display>
+			<topic_link></topic_link>
+		</topic>
+	</related_topics>
+	<content_area_tags>
+		<tag>Geoprocessing</tag>
+	<tag>Controls</tag></content_area_tags>
+	<indexing_tags>
+		<existing_tag></existing_tag>
+	</indexing_tags>
+	<guid>68e096e5-5c2e-4f74-9b58-2c0943ab0ba1</guid>
+	<content_management>
+		<owner>mrudden</owner>
+		<tech_reviewer>gyoung</tech_reviewer>
+		<status>SDK inclusion completed</status>
+		<sdk_inclusion_complete>
+			<NET>false</NET>
+			<JAVA>false</JAVA>
+			<CPP>false</CPP>
+			<XO>false</XO>
+		</sdk_inclusion_complete>
+		<requested_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</requested_tocs>
+		<applied_tocs>
+			<desktop>false</desktop>
+			<engine>false</engine>
+			<server>false</server>
+			<net_ide_integration>false</net_ide_integration>
+			<xo>false</xo>
+		</applied_tocs>
+		<langrev_last_updated_date>2009-11-30</langrev_last_updated_date>
+		<langrev_last_updated_time>17:09:21</langrev_last_updated_time>
+		<last_updated_date>2010-02-09</last_updated_date>
+		<last_updated_time>17:03:06</last_updated_time>
+	<copyediting>
+									<last_copyedit_date>2010-01-21</last_copyedit_date>
+									<last_copyedit_time>14:39:53</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+									<editing_section>
+										<editor_name>linn</editor_name>
+										<edit_date>2010-01-21</edit_date>
+										<edit_time>14:39:37</edit_time>
+										<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Edited.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Already in the SDK.</div></edit_notes>
+									</editing_section>
+								</edits></content_management>
+	<current_user>gyoung</current_user>
+	<sdk>NETEngDt</sdk>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>

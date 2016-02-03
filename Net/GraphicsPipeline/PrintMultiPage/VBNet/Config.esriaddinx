@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>PrintMultiPagesVB_NET_Addin</Name>
+  <AddInID>{ef5ca6e8-c2d8-4079-a0a8-87dcbfed29d4}</AddInID>
+  <Description>Sample demonstrates tiled printing using IPrinterMPage</Description>
+  <Version>1.0</Version>
+  <Image>Images\PrintMultiPagesVB_NET_Addin.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>12/10/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="PrintMultiPagesVB_NET_Addin.dll" namespace="PrintMultiPagesVB_NET_Addin">
+    <ArcMap>
+      <Commands>
+        <Button id="ESRI_PrintMultiPagesVB" class="PrintMultiPagesVB_NET_Addin" message="Sample demonstrates tiled printing using IPrinterMPage" caption="Print Multiple Pages VB.NET" tip="Print Multiple Pages VB.NET" category="Developer Samples" image="Images\PrintMultiPagesVB_NET_Addin.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

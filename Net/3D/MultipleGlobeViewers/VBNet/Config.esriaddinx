@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>MultipleGlobeViewers</Name>
+  <AddInID>{6f9faa20-fde0-435f-b2f5-a457f82621e2}</AddInID>
+  <Description>This sample shows how multiple viewer windows can be opened in ArcGlobe and tied to the main viewer.</Description>
+  <Version>1.0</Version>
+  <Image>Images\MultipleGlobeViewers.png</Image>
+  <Author>ESRI</Author>
+  <Company>ESRI</Company>
+  <Date>12/10/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="MultipleGlobeViewers.dll" namespace="MultipleGlobeViewers">
+    <ArcGlobe>
+      <Commands>
+        <Button id="ESRI_MultipleGlobeViewers_MultipleGlobeViewers" class="MultipleGlobeViewers" message="This sample shows how multiple viewer windows can be opened in ArcGlobe and tied to the main viewer." caption="MultipleGlobeViewers" tip="MultipleGlobeViewers" category="Add-In Controls" image="Images\MultipleGlobeViewers.png" />
+      </Commands>
+    </ArcGlobe>
+  </AddIn>
+</ESRI.Configuration>

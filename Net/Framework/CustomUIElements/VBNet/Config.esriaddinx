@@ -1,0 +1,66 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Dharama</Name>
+  <AddInID>{438eb6a9-8b23-49e3-8385-d49d306aa94d}</AddInID>
+  <Description>A custom collection of mapping tools for Dharma Initiative personnel.</Description>
+  <Version>1.0</Version>
+  <Image>Images\CustomUIElements.png</Image>
+  <Author>John Locke</Author>
+  <Company>Dharma Inst.</Company>
+  <Date>9/18/2009</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="CustomUIElements.dll" namespace="CustomUIElements">
+    <ArcMap>
+      <Commands>
+        <Tool id="ESRI_CustomUIElements_AddGraphicsTool" class="AddGraphicsTool" 
+              tip="Digitize a line" message="Digitize a line" 
+              caption="Add Graphics Tool" 
+              category="Add-In Controls" image="Images\AddGraphicsTool.png">
+          <Help heading="Add Graphics Tool">Digitize a line on a map.</Help>
+        </Tool>
+        <Button id="ESRI_CustomUIElements_ZoomToLayerButton" class="ZoomToLayerButton" 
+                tip="Zoom to selected layer" message="Zoom to selected layer." 
+                caption="Zoom To Layer" category="Add-In Controls" 
+                image="Images\ZoomToLayerButton.png">
+          <Help heading="Zoom To Selected Layer">Sets the extent to the selected layer.</Help>
+        </Button>
+      </Commands>
+
+      <Menus>
+        <Menu id="ESRI_CustomUIElements_UIMenu" caption="Zoom Commands" isRootMenu="true" isShortcutMenu="true">
+          <Items>
+            <Button refID="esriArcMapUI.FullExtentCommand" />
+            <!--Sub Menus-->
+            <!--ArcGIS Built-in Menu-->
+            <Menu refID="esriArcMapUI.MxZoomLayoutMenu" />
+            <!--Custom Menu-->
+            <Menu refID="ESRI_CustomUIElements_UISubMenu" />
+          </Items>
+        </Menu>
+        <Menu id="ESRI_CustomUIElements_UISubMenu" caption="More Zoom Commands">
+          <Items>
+            <Button refID="esriArcMapUI.ZoomToLastExtentBackCommand" />
+            <Button refID="esriArcMapUI.ZoomToLastExtentForwardCommand" />
+          </Items>
+        </Menu>
+      </Menus>
+
+      <Toolbars>
+        <Toolbar id="ESRI_CustomUIElements_UIToolbar" caption="Dharma Toolbar">
+          <Items>
+            <Tool refID="ESRI_CustomUIElements_AddGraphicsTool" />
+            <Button refID="ESRI_CustomUIElements_ZoomToLayerButton" />
+            <!--ArcGIS built-in Commands-->
+            <!--Fixed Zoom In; refID can be ProgID-->
+            <Button refID="esriArcMapUI.ZoomInFixedCommand" />
+            <!--Fixed Zoom out Command; refID can be GUID-->
+            <Button refID="{0830FB34-7EE6-11D0-87EC-080009EC732A}" />
+            <!--ArcGIS built-in Menus-->
+            <Menu refID="esriArcMapUI.MxZoomLayoutMenu" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="11.0.8034" solutionVersion="9.4.0.700" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Dynamic display layer</title>
+  <purpose>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates using the ArcGIS Dynamic Display to implement a dynamic layer. A dynamic layer is a custom layer that, in addition to the standard interfaces, implements the IDynamicLayer interface. That interface allows this layer to draw its items into the Dynamic Disiplay and take advantage of graphics card hardware acceleration.</div>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows implementation of a dynamic layer through inheritance of base-class 'DynamicLayerBase' which is part of the ESRI.ArcGIS.ADF.BaseClasses namespace. In order to use the 'DynamicLayerBase' class, the user must derive from it and override method 'DrawDynamicLayer()'. </div>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This layer uses synthetic data to simulate dynamic data. In case of a real-life dynamic layer, the dynamic data might be streamed to the layer by a communication port, Extensible Markup Language (XML) stream, ArcGIS tracking server, or any other live feed. </div>
+  </purpose>
+  <development_license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>9.3</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path/>
+  </data_paths>
+  <requirements>
+    <requires>
+    </requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>MyDynamicLayerClass.cs</filename>
+        <description>Implementation file of the dynamic layer</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddMyDynamicLayerCmd.cs</filename>
+        <description>A command that allows to add or remove the dynamic layer</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>DynamicLayerToolbar.cs</filename>
+        <description>The toolbar that hosts the AddMyDynamicLayer command</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>MyDynamicLayerClass.vb</filename>
+        <description>Implementation file of the dynamic layer</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddMyDynamicLayerCmd.vb</filename>
+        <description>A command that allows to add or remove the dynamic layer</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>DynamicLayerToolbar.vb</filename>
+        <description>The toolbar that hosts the AddMyDynamicLayer command</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the solution using Visual Studio.</step>
+        <step>Build the solution to make the 'Add Dynamic Layer' command dll.</step>
+        <step>You will need to use this command in an application with a MapControl and a ToolbarControl such as, the MapControlApplication template included with the Visual Studio Integration.</step>
+        <step>Add the command to the ToolbarControl. The command can be found in the '.NET Samples' category with the name 'Add Dynamic Layer'. </step>
+        <step>Run the application and add any layer to use as a background.</step>
+        <step>Click the 'Add Dynamic Layer' command in order to add the dynamic layer to the map. You will notice that the map will switch into Dynamic-Mode and the layer with 100 dynamic items will get added to the map.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Dynamic display</topic_display>
+      <topic_link>c9e1ccf5-df7d-44d3-a2da-d916f65fd94a</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Walkthrough: Getting started with dynamic display </topic_display>
+      <topic_link>756d0373-8e76-4145-a337-5af537ee6393</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How dynamic display works</topic_display>
+      <topic_link>ce103ad6-848e-4bb6-9de3-5519d577cc2f</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Best practices for using dynamic display</topic_display>
+      <topic_link>35db2220-8004-4588-8629-dafaca5a6b11</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic display—tracking dynamic object</topic_display>
+      <topic_link>6ecff86c-990f-4f9f-a9f9-1e05e7940622</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic display compass</topic_display>
+      <topic_link>ef4797a2-c0ec-4410-a6de-aec2bacb66cc</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Writing multithreaded ArcObjects code</topic_display>
+      <topic_link>2c2d2655-a208-4902-bf4d-b37a1de120de</topic_link>
+    </topic>
+    <topic>
+      <topic_display>How to create a dynamic glyph from a marker symbol</topic_display>
+      <topic_link>113991a0-b335-47db-9528-2e097f4d7ed0</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic logo</topic_display>
+      <topic_link>0e0ed4d0-287c-4009-aea8-3c8ed1109836</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Sample: Dynamic heads up display</topic_display>
+      <topic_link>84812d59-7a3f-488a-b45e-2a8e3868231b</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Cartography, Mapping, &amp; 2D Display</tag>
+    <tag>Layer</tag>
+    <tag>Renderer</tag>
+    <tag>Commands &amp; Tools</tag>
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>Dynamic display</existing_tag>
+    <existing_tag>Custom layer</existing_tag>
+  </indexing_tags>
+  <guid>37c19547-1902-46fe-a98a-fb605c188dea</guid>
+  <content_management>
+    <owner>Yaron Fine</owner>
+    <tech_reviewer>Craig Proctor</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <sdk_inclusion_complete>
+      <NET>true</NET>
+      <JAVA>false</JAVA>
+      <CPP>false</CPP>
+      <XO>false</XO>
+    </sdk_inclusion_complete>
+    <requested_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>false</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2010-04-21</last_updated_date>
+    <last_updated_time>16:16:58</last_updated_time>
+    <copyediting>
+      <last_copyedit_date>2006-07-27</last_copyedit_date>
+      <last_copyedit_time>15:00:00</last_copyedit_time>
+      <copyeditor>mine3384</copyeditor>
+    </copyediting>
+    <edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a>Â as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+      <editing_section>
+        <editor_name>dara4409</editor_name>
+        <edit_date>2009-09-02</edit_date>
+        <edit_time>10:12:33</edit_time>
+        <edit_notes>
+          <div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+            <font face="Times New Roman">Support has requested we provide an application that already has a dd button in order to get the sample up and running quickly. I have added the alternative to use the MapControl Application </font>
+          </div>
+        </edit_notes>
+      </editing_section>
+    </edits>
+  </content_management>
+  <current_user>kyli4140</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>

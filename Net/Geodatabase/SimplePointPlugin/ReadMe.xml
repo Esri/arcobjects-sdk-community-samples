@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.923" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+  <title>Simple point plug-in data source</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample implements a plug-in data source for a SimplePoint data format to provide direct read-only ArcGIS support for the format.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The data in this sample follows a simple format. An American Standard Code for Information Interchange (ASCII) text file contains data for each new point on a new line. The first six characters are the x-coordinate, the next six characters contain the y-coordinate, and the trailing characters contain an attribute value. You can use the sample data from the software development kit (SDK) samples folder or create data according to the preceding specifications.</div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">For more information, see <a href="http://f4ce6eb3-606c-4aa1-a7ba-28abaa81f930">Creating a plug-in data source</a>. </div></purpose>
+  <development_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine Developer Kit</name>
+      <extension>
+      </extension>
+    </license>
+  </development_license>
+  <deployment_license>
+    <license>
+      <name>ArcGIS for Desktop Basic</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Standard</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>ArcGIS for Desktop Advanced</name>
+      <extension>
+      </extension>
+    </license>
+    <license>
+      <name>Engine</name>
+      <extension>
+      </extension>
+    </license>
+  </deployment_license>
+  <min_version>10.0</min_version>
+  <min_sp/>
+  <max_version>
+  </max_version>
+  <max_sp/>
+  <data_paths>
+    <data_path>SimplePointData/points.csp</data_path>
+  </data_paths>
+  <requirements>
+    <requires></requires>
+  </requirements>
+  <file_section>
+    <files lang="CSharp">
+      <file>
+        <filename>SimplePointWkspFact.cs</filename>
+        <description>Simple point workspace factory helper implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointWksp.cs</filename>
+        <description>Simple point workspace helper implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointDataset.cs</filename>
+        <description>Simple point plug-in dataset helper implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointCursor.cs</filename>
+        <description>Simple point plug-in cursor implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddSimplePointLayerCmd.cs</filename>
+        <description>Command for adding SimplePoint dataset programmatically.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>OpenSimplePointDlg.cs</filename>
+        <description>A dialog box to select SimplePoint datasets. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>OpenSimplePointDlg.Designer.cs</filename>
+        <description>Designer file of the OpenSimplePointDlg dialog box.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+    <files lang="VBNet">
+      <file>
+        <filename>SimplePointWkspFact.vb</filename>
+        <description>Simple point workspace factory helper implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointWksp.vb</filename>
+        <description>Simple point workspace helper implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointDataset.vb</filename>
+        <description>Simple point plug-in dataset helper implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>SimplePointCursor.vb</filename>
+        <description>Simple point plug-in cursor implementation.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>AddSimplePointLayerCmd.vb</filename>
+        <description>Command for adding SimplePoint dataset programmatically.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>OpenSimplePointDlg.vb</filename>
+        <description>A dialog box to select SimplePoint datasets. </description>
+        <viewable_code>true</viewable_code>
+      </file>
+      <file>
+        <filename>OpenSimplePointDlg.Designer.vb</filename>
+        <description>Designer file of the OpenSimplePointDlg dialog box.</description>
+        <viewable_code>true</viewable_code>
+      </file>
+    </files>
+  </file_section>
+  <how_to_use_section>
+    <how_to_use>
+      <how_to_use_steps>
+        <step>Open the solution using Visual Studio.</step>
+        <step>Build the solution to make the SimplePointPlugin class library.</step>
+      </how_to_use_steps>
+    </how_to_use>
+    <how_to_use>
+      <title>Using simple point with ArcGIS for Desktop</title>
+      <how_to_use_steps>
+        <step>Start ArcCatalog and ArcMap.</step>
+        <step>In ArcCatalog, browse to the ArcGIS installation folder and locate the Developer Kit's Samples\Data\SimplePointData\ folder (you will see a Points dataset).</step>
+        <step>In ArcCatalog's tree-view, expand the feature dataset to view the contained datasets.</step>
+        <step>Drag the Points dataset onto ArcMap.</step>
+        <step>In ArcMap, use the layer's properties to change the renderer to a "Unique values renderer." Use the values from the ColumnOne field.</step>
+        <step>Examine the layer's attribute table, identify and apply the selection on the layer.</step>
+      </how_to_use_steps>
+    </how_to_use>
+    <how_to_use>
+      <title>Using simple point with ArcGIS Engine</title>
+      <how_to_use_steps>
+        <step>Use this command in an application with a MapControl or PageLayoutControl, and a ToolbarControl.</step>
+        <step>Add the command to the ToolbarControl. The command (Add SimplePoint layer) can be found in the .NET Samples category.</step>
+        <step>Run the application.</step>
+        <step>Click the Add SimplePoint layer command. The OpenSimplePointDlg dialog box appears. </step><step>Click the Open Simple Point Data button to browse for Simple Point data datasets. Use Points in &lt;ArcGIS Developer Kit Installation folder&gt;\Samples\data\SimplePointData.</step>
+        <step>From the datasets list, select the datasets to add to the map and click OK.</step>
+      </how_to_use_steps>
+    </how_to_use>
+  </how_to_use_section>
+  <related_topics>
+    <topic>
+      <topic_display>Plug-in data sources</topic_display>
+      <topic_link>00ba44b9-76eb-4e22-9c72-de83e626edd1</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Creating a plug-in data source</topic_display>
+      <topic_link>f4ce6eb3-606c-4aa1-a7ba-28abaa81f930</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Implementing optional functionality on plug-in data sources</topic_display>
+      <topic_link>700d1c53-7434-407c-b2e2-ad9b22f4a7e4</topic_link>
+    </topic>
+    <topic>
+      <topic_display>Adding a plug-in data source programmatically</topic_display>
+      <topic_link>a4843200-9ff3-45f7-8404-5bf1022568cb</topic_link>
+    </topic>
+  </related_topics>
+  <content_area_tags>
+    <tag>Geodatabase</tag>
+    <tag>Data interoperability</tag>
+    
+  </content_area_tags>
+  <indexing_tags>
+    <existing_tag>PlugIn</existing_tag>
+    <existing_tag>Plug-in</existing_tag>
+  </indexing_tags>
+  <guid>61c9658b-1a8e-4192-8456-470c73e33da3</guid>
+  <content_management>
+    <owner>James MacKay</owner>
+    <tech_reviewer>Brent Pierce</tech_reviewer>
+    <status>SDK inclusion completed</status>
+    <requested_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </requested_tocs>
+    <applied_tocs>
+      <desktop>true</desktop>
+      <engine>true</engine>
+      <server>false</server>
+      <net_ide_integration>false</net_ide_integration>
+      <xo>false</xo>
+    </applied_tocs>
+    <last_updated_date>2012-03-12</last_updated_date>
+    <last_updated_time>15:11:17</last_updated_time>
+    <copyediting>
+									<last_copyedit_date>2012-03-12</last_copyedit_date>
+									<last_copyedit_time>15:12:43</last_copyedit_time>
+									<copyeditor>linn</copyeditor>
+								</copyediting><edits>
+      <editing_section>
+        <editor_name>kyli4140</editor_name>
+        <edit_date>2008-11-17</edit_date>
+        <edit_time>15:38:41</edit_time>
+        <edit_notes>Form brought into StarTeam. For previous notes and history see the SharePoint site at <a href="" xmlns="http://www.w3.org/1999/xhtml">http://devinfo/sites/ArcGISNetSDK/default.aspx</a> as well as the files in the ArcObjects VSS in Samples NET.</edit_notes>
+      </editing_section>
+    <editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-11-05</edit_date>
+									<edit_time>11:31:55</edit_time>
+									<edit_notes>Edited. Ready for SDK inclusion.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>kyli4140</editor_name>
+									<edit_date>2009-11-13</edit_date>
+									<edit_time>15:04:55</edit_time>
+									<edit_notes>VB.NET version of the sample won't compile.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>jame5441</editor_name>
+									<edit_date>2009-11-18</edit_date>
+									<edit_time>14:03:12</edit_time>
+									<edit_notes>Fixed VB.NET version issues - changed references and replaced old regsvr32 registration with ESRIRegAsm registration.</edit_notes>
+								</editing_section><editing_section>
+									<editor_name>mine3384</editor_name>
+									<edit_date>2009-12-15</edit_date>
+									<edit_time>09:47:23</edit_time>
+									<edit_notes><div xmlns="http://www.w3.org/1999/xhtml">Minor edits.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">Set back to SDK inclusion completed.</div></edit_notes>
+								</editing_section><editing_section>
+									<editor_name>linn</editor_name>
+									<edit_date>2012-03-12</edit_date>
+									<edit_time>15:12:28</edit_time>
+									<edit_notes>10.2 product name changes update.</edit_notes>
+								</editing_section></edits>
+  </content_management>
+  <current_user>linn</current_user>
+  <sdk>NETEngDt</sdk>
+  <doc_type>Sample</doc_type>
+</esri_sdk_sample>
