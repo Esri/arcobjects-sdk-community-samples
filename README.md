@@ -9,14 +9,34 @@ This repository contains ArcObjects SDK Samples for the ArcObjects SDK 10.4.  Th
 
 3D, Catalog, Controls, Editing, Framework, Geocoding, Geodatabase, Geoprocessing, Graphics Pipeline, Map, Networks, Publisher, Publisher AR Control Spatial Query, Raster, Schematics, SDK General, Server, Spatial Analyst, Tracking
 
+## Features
+
+This repository contains 229 ArcObjects SDK Samples shown in detail in the [ArcObjects SDK Community Samples list](#arcobjects-sdk-community-samples):
+
+## Instructions
+
+To contribute samples, it is recommended to have some background on Git and GitHub. 
+
+If you wish to contribute to this website, please  
+* fork this repository on GitHub,  
+* write your sample into a branch of your forked repo  
+ * make sure that all class files have triple slash comments  
+ * add the copyright header on all source files  
+* push your sample to a named branch, 
+* then send a pull request.
+
+##Resources
+
+* [API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* Download the ArcObjects SDK for .Net from MyEsri.com  
+
 ## Requirements
 
 [ArcObjects SDK System Requirements](http://desktop.arcgis.com/en/desktop/latest/get-started/system-requirements/arcobjects-sdk-system-requirements.htm)  
-[Sample Data Download](../../releases)  
 
-## Features
-
-This repository contains 229 ArcObjects SDK Samples listed below:
+##ArcObjects SDK Community Samples  
 
 ###.NET
 
@@ -365,7 +385,7 @@ Find a bug or want to request a new feature?  Please submit an issue.  Issues ar
 Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
 
 ## Licensing
-Copyright 2015 Esri
+Copyright 2016 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -381,5 +401,5 @@ limitations under the License.
 
 A copy of the license is available in the repository's [license.txt](./License.txt) file.
 
-[](Esri Tags: ArcObjects-SDK)
+[](Esri Tags: ArcObjects-SDK-NET)
 [](Esri Language: C-Sharp)
