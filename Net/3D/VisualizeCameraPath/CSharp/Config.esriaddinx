@@ -1,4 +1,22 @@
-﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--
+
+   Copyright 2016 Esri
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>VisualizeCameraPath</Name>
   <AddInID>{e318acb8-1656-45a6-8b8d-f026214ddda1}</AddInID>
   <Description>This add-in allows you to generate and visualize the trace back path the camera follows in a GlobeCamera animation. The path is created using 3D graphic elements. The sample allows the placement of graphics (at the camera positions) as the number of graphic elements created per second or by setting the maximum number of elements created between keyframe positions. This is useful to visualize the camera's location at a time duration without playing or previewing the animation—for example, to generate the flight path of an animation you created by recording the navigation (using the Navigate tool, Fly tool, and so on). Also, the GlobeCamera keyframes have a different color than the intermediate camera positions. There is also the option to generate graphics for the "Camera to target" direction at each of the camera positions. By visualizing this information, users can make changes to their keyframe attributes resulting in better and fine tuned animations.</Description>
