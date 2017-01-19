@@ -1,0 +1,31 @@
+<div dojoAttachPoint="containerNode">
+ <div class="clear" style="height: 3em;"></div>
+ 
+  <table>
+   <tbody>
+     <tr>
+       <td>Layer Type:</td>
+       <td><input dojoType="dijit.form.ValidationTextBox" required="true" dojoAttachPoint="_layerTypeTextBox"/></td>
+     </tr>
+     <tr>
+       <td>Maximum Number of Features:</td>
+       <td><input dojoType="dijit.form.NumberSpinner"  dojoAttachPoint="_maxNumFeaturesNumberSpinner"/></td>
+     </tr>
+     <tr>
+       <td>Return Format:</td>
+       <td>
+         <select dojoType="dijit.form.Select" required="true" dojoAttachPoint="_returnFormatSelect">
+           <option value="JSON">JSON</option>
+           <option value="HTML">HTML</option>
+           <option value="TEXT">TEXT</option>
+         </select>
+       </td>
+     </tr>
+     <tr>
+       <td>Editable?:</td>
+       <td><input dojoType="dijit.form.CheckBox" dojoAttachPoint="_isEditableCheckBox"/></td>
+     </tr>
+   </tbody>
+ </table>
+
+</div>
