@@ -11,7 +11,7 @@ This repository contains ArcObjects SDK Samples for the ArcObjects SDK 10.5.  Th
 
 ## Features
 
-This repository contains 213 ArcObjects SDK Samples which are all itemized in this [ArcObjects SDK Community Samples list](#arcobjects-sdk-community-samples)  
+This repository contains 213 ArcObjects SDK Samples which are all itemized in this [ArcObjects SDK Community Samples list](#arcobjects-sdk-community-samples-1)  
 
 ## Instructions
 
