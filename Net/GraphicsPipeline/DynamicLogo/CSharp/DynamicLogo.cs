@@ -18,6 +18,7 @@
 */
 using System;
 using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using ESRI.ArcGIS.ADF.BaseClasses;
@@ -252,20 +253,19 @@ namespace DynamicLogo
 
     private string GetLogoPath()
     {
-      //get the ArcGIS path from the registry
-      string runtimeVersion = RuntimeManager.ActiveRuntime.Version;
-      RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\ESRI\ArcObjectsSDK" + runtimeVersion);
-      string path = Convert.ToString(key.GetValue("InstallDir"));
+      //set the path of the logo
+        //relative file path to the sample data from project location
+        string sLogoPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        sLogoPath = System.IO.Path.Combine(sLogoPath, @"ArcGIS\data\ESRILogo\ESRI_LOGO.bmp");
+        var filePath = new DirectoryInfo(sLogoPath);
+        System.Diagnostics.Debug.WriteLine(string.Format("File path for data root: {0} [{1}]", filePath.FullName, Directory.GetCurrentDirectory()));
 
-      //set the of the logo
-      string str = System.IO.Path.Combine(path, @"Samples\data\ESRILogo\ESRI_LOGO.bmp");
-      if (!System.IO.File.Exists(str))
+        if (!System.IO.File.Exists(sLogoPath))
       {
-        MessageBox.Show("Path :" + str + " does not exists!");
+        MessageBox.Show(string.Format("File path for logo does not exist: {0} [{1}] please correct in sample code or copy the logo to the specified location", filePath.FullName, Directory.GetCurrentDirectory()));
         return string.Empty;
       }
-
-      return str;
+      return sLogoPath;
     }
 
     private ISymbol CreateStandardLogoSymbol()

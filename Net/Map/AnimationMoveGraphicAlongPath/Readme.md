@@ -1,11 +1,28 @@
-##Move a graphic along a path in ArcMap
+## Move a graphic along a path in ArcMap
 
-###Purpose  
 This sample implements the move-object-along-path functionality for ArcMap animation. It allows you to move a point graphic element or a text element along a selected line feature or a selected line graphic. A new animation type (Map Graphic animation type) and its corresponding keyframe (Map Graphic keyframe) are implemented to support moving a graphic along the path. It also implements an ArcMap command for creating a move-object-along-path animation. The purpose of this sample is to show how to create a custom animation type in ArcMap and how to implement an ArcMap command to import the animation tracks. To create a custom animation type, implement a new keyframe class and a new animation type class.   
 
 
-###Usage
-####Add and use the move-graphic-along-path functionality in ArcMap  
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Map
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### Add and use the move-graphic-along-path functionality in ArcMap  
 1. Compile the sample project in Visual Studio.  
 1. Start ArcMap and click Customize, Toolbars, and Animation. The Animation toolbar appears.  
 1. Click Customize, then Customize Mode. The Customize dialog box appears.  
@@ -22,7 +39,7 @@ This sample implements the move-object-along-path functionality for ArcMap anima
 
 
 
-####Additional information  
+#### Additional information  
 <div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml">If more then one line feature (or line graphic) is selected, only the first one is used as the path of the movement.</div>  
 <div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml">You can elect to show the trace of the moving graphic element by selecting the Trace path option on the Move Graphic along Path dialog box when you create the track. </div>  
 <div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml">You can change the Trace path option after a track is created by opening the Animation Manager and selecting the track on the Tracks tab. Click Properties, then click the Graphic Track Properties tab. The Trace path option is available on this tab.</div>  
@@ -35,11 +52,11 @@ This sample implements the move-object-along-path functionality for ArcMap anima
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 
 

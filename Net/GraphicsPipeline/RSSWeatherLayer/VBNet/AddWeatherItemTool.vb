@@ -15,6 +15,7 @@
 Imports Microsoft.VisualBasic
 Imports System
 Imports System.Drawing
+Imports System.IO
 Imports System.Runtime.InteropServices
 Imports Microsoft.Win32
 Imports ESRI.ArcGIS.ADF.BaseClasses
@@ -111,11 +112,11 @@ Imports ESRI.ArcGIS.DataSourcesFile
         m_hookHelper.Hook = hook
 
         'connect to the ZipCodes featureclass
-        'get the ArcGIS path from the registry
-        Dim key As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\ESRI\ArcObjectsSdk10.4")
-        Dim path As String = Convert.ToString(key.GetValue("InstallDir"))
+        Dim path As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
 
-        path = System.IO.Path.Combine(path, "Samples\Data\USZipCodeData\")
+        path = System.IO.Path.Combine(path, "ArcGIS\data\USZipCodeData\")
+        if (not Directory.Exists(path)) then throw new Exception(string.Format("Fix code to point to your sample data: {0} was not found", path))
+
 
         Dim wf As IWorkspaceFactory = New ShapefileWorkspaceFactoryClass()
         Dim ws As IWorkspace = wf.OpenFromFile(path, 0)

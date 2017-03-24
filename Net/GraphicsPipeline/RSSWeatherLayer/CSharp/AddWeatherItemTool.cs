@@ -18,6 +18,7 @@
 */
 using System;
 using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
 using ESRI.ArcGIS.ADF.BaseClasses;
@@ -121,33 +122,32 @@ namespace RSSWeatherLayer
 		/// </summary>
 		/// <param name="hook">Instance of the application</param>
 		public override void OnCreate(object hook)
-		{
-      //Instantiate the hook helper
-      if (m_hookHelper == null)
-        m_hookHelper = new HookHelperClass();
+        {
+            //Instantiate the hook helper
+            if (m_hookHelper == null)
+                m_hookHelper = new HookHelperClass();
 
-      //set the hook
-      m_hookHelper.Hook = hook;
+            //set the hook
+            m_hookHelper.Hook = hook;
 
-			//connect to the ZipCodes featureclass
-      //get the ArcGIS path from the registry
-      RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\ESRI\ArcObjectsSdk10.4");
-      string path = Convert.ToString(key.GetValue("InstallDir"));
+            //connect to the ZipCodes featureclass
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-      path = System.IO.Path.Combine(path, @"Samples\Data\USZipCodeData\");
+            path = System.IO.Path.Combine(path, @"ArcGIS\data\USZipCodeData\");
+            if (!Directory.Exists(path)) throw new Exception(string.Format("Fix code to point to your sample data: {0} was not found", path));
 
-			IWorkspaceFactory wf = new ShapefileWorkspaceFactoryClass() as IWorkspaceFactory;
-      IWorkspace ws = wf.OpenFromFile(path, 0);
-			IFeatureWorkspace fw = ws as IFeatureWorkspace;
-			m_featureClass = fw.OpenFeatureClass("US_ZipCodes");
+            IWorkspaceFactory wf = new ShapefileWorkspaceFactoryClass() as IWorkspaceFactory;
+            IWorkspace ws = wf.OpenFromFile(path, 0);
+            IFeatureWorkspace fw = ws as IFeatureWorkspace;
+            m_featureClass = fw.OpenFeatureClass("US_ZipCodes");
 
-      m_spatialRefWGS84 = CreateGeoCoordSys();
-		}
+            m_spatialRefWGS84 = CreateGeoCoordSys();
+        }
 
-		/// <summary>
-		/// Occurs when this command is clicked
-		/// </summary>
-		public override void OnClick()
+        /// <summary>
+        /// Occurs when this command is clicked
+        /// </summary>
+        public override void OnClick()
 		{
 			try
 			{

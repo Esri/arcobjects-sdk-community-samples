@@ -1,10 +1,27 @@
-##Edit event listener
+## Edit event listener
 
-###Purpose  
 The add-in in this sample provides the ability to understand when various edit events are fired in response to changes in the editing environment or user actions. Using this sample can help you determine which events are appropriate to listen for in various situations, and understand what causes an event to fire.  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Editing
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio, open the solution file, and build the project.  
 1. Start ArcMap, click the Customize menu, and click Add-In Manager. The Add-In Manager dialog box opens.  
 1. Using the Browse for Add-In command, browse to the location of the add-in and select the .esriAddIn file located in the projects bin\Debug folder.   
@@ -24,17 +41,17 @@ Screen shot showing the Select Events and Listen to Events tabs.
 
 
 
-####See Also  
+#### See Also  
 [Working with editing events](http://desktop.arcgis.com/search/?q=Working%20with%20editing%20events&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 
 

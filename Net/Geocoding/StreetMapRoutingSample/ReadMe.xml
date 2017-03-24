@@ -5,17 +5,17 @@
   </purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
@@ -28,17 +28,17 @@
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
@@ -58,7 +58,7 @@
     <data_path/>
   </data_paths>
   <requirements>
-    <requires>The StreetMap routing API only functions with Smart Data Compression (SDC) data and the accompanying routing service (.rs) and address locator files that are created with the DDK-Pro application. The Data &amp; Maps data package that is shipped with ArcGIS Engine and ArcGIS for Desktop contains a complete set of SDC data with routing and address files (this data can be used with the sample). On the Data &amp; Maps and StreetMap North America DVD, navigate to the streetmap_na\data folder to access the routing service and address locator files. </requires>
+    <requires>The StreetMap routing API only functions with Smart Data Compression (SDC) data and the accompanying routing service (.rs) and address locator files that are created with the DDK-Pro application. The Data &amp; Maps data package that is shipped with ArcGIS Engine and ArcGIS Desktop contains a complete set of SDC data with routing and address files (this data can be used with the sample). On the Data &amp; Maps and StreetMap North America DVD, navigate to the streetmap_na\data folder to access the routing service and address locator files. </requires>
   </requirements>
   <file_section>
     <files lang="CSharp">

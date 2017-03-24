@@ -253,13 +253,9 @@ Public NotInheritable Class TrackObject : Inherits BaseCommand
 
   Private Sub GenerateNavigationData()
     Try
-      'get the ArcGIS install path from the registry
-      Dim runtimeVersion As String = RuntimeManager.ActiveRuntime.Version
-      Dim key As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\ESRI\ArcObjectsSDK" + runtimeVersion)
-      Dim path As String = Convert.ToString(key.GetValue("InstallDir"))
-
+      Dim path As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
       'get navigationData.xml file from DeveloperKit
-      m_navigationDataFileName = System.IO.Path.Combine(path, "Samples\data\USAMajorHighways\NavigationData.xml")
+      m_navigationDataFileName = System.IO.Path.Combine(path, "ArcGIS\data\USAMajorHighways\NavigationData.xml")
       If (Not System.IO.File.Exists(m_navigationDataFileName)) Then
         Throw New Exception("File " & m_navigationDataFileName & " cannot be found!")
       End If

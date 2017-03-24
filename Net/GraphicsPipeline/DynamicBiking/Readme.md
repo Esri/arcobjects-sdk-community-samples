@@ -1,10 +1,27 @@
-##Dynamic biking
+## Dynamic biking
 
-###Purpose  
-This sample shows how to work with the geometry bridge in dynamic display and animate dynamic symbols. This sample can be used to play back any global positioning system (GPS) data saved in a GPS exchange format (GPX) or Garmin history (HST) format.   
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample shows how to work with the geometry bridge in dynamic display and animate dynamic symbols. This sample can be used to play back any global positioning system (GPS) data saved in a GPS exchange format (GPX) or Garmin history (HST) format. </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio and open the solution file.  
 1. Build the solution to make .dll files for the dynamic biking, dynamic biking track mode, and dynamic biking speed commands.   
 1. Add the Dynamic Biking toolbar to an application with a MapControl and ToolbarControl, such as the MyDynamicDisplayApp sample located in the .NET samples folder.  
@@ -27,7 +44,7 @@ This sample shows how to work with the geometry bridge in dynamic display and a
 
 
 
-####See Also  
+#### See Also  
 [How to use IGeometryBridge to update dynamic geometries](http://desktop.arcgis.com/search/?q=How%20to%20use%20IGeometryBridge%20to%20update%20dynamic%20geometries&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Walkthrough: Getting started with dynamic display](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Getting%20started%20with%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Dynamic display](http://desktop.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
@@ -38,12 +55,12 @@ This sample shows how to work with the geometry bridge in dynamic display and a
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

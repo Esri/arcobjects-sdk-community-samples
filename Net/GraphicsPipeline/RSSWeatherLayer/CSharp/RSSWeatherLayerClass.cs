@@ -1081,10 +1081,9 @@ namespace RSSWeatherLayer
     private void PopulateLocationsTableProc()
     {
       //get the ArcGIS path from the registry
-        RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\ESRI\ArcObjectsSdk10.4");
-      string path = Convert.ToString(key.GetValue("InstallDir"));
+      string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-      if (!System.IO.File.Exists(System.IO.Path.Combine(path, @"Samples\Data\USZipCodeData\ZipCode_Boundaries_US_Major_Cities.shp")))
+            if (!System.IO.File.Exists(System.IO.Path.Combine(path, @"ArcGIS\data\USZipCodeData\ZipCode_Boundaries_US_Major_Cities.shp")))
       {
         MessageBox.Show("Cannot find file ZipCode_Boundaries_US_Major_Cities.shp!");
         return;
@@ -1092,7 +1091,7 @@ namespace RSSWeatherLayer
 
       //open the featureclass
       IWorkspaceFactory wf = new ShapefileWorkspaceFactoryClass() as IWorkspaceFactory;
-      IWorkspace ws = wf.OpenFromFile(System.IO.Path.Combine(path, @"Samples\Data\USZipCodeData"), 0);
+      IWorkspace ws = wf.OpenFromFile(System.IO.Path.Combine(path, @"ArcGIS\data\USZipCodeData"), 0);
       IFeatureWorkspace fw = ws as IFeatureWorkspace;
       IFeatureClass featureClass = fw.OpenFeatureClass("ZipCode_Boundaries_US_Major_Cities");
       //map the name and zip fields

@@ -18,54 +18,71 @@
   </style>
 </head>
 <body>
-  <h2>Create custom move, rotate, and scale GeometricEffects within a single project</h2>
+  ## Create custom move, rotate, and scale GeometricEffects within a single project
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample tool demonstrates how to create multiple sets of geometric effects in a single project and adds it to the existing list of geometric effects. Three geometric effects for move, rotate, and scale are included in the sample.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">IGeometricEffect and IGraphicAttributes are the two basic interfaces that are required to be implemented by every geometric effect class. IPersistVariant interface is implemented, in addition to persist the class.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">The sample also implements IEditInteraction so that all graphic attributes that are used to control the custom class will be exposed using the graphical user interface (GUI) through the representation tools. </div>  
 
-<p>This sample tool demonstrates how to create multiple sets of geometric effects in a single project and adds it to the existing list of geometric effects. Three geometric effects for move, rotate, and scale are included in the sample. IGeometricEffect and IGraphicAttributes are the two basic interfaces that are required to be implemented by every geometric effect class. IPersistVariant interface is implemented, in addition to persist the class. The sample also implements IEditInteraction so that all graphic attributes that are used to control the custom class will be exposed using the graphical user interface (GUI) through the representation tools.   </p>
+```
+Language:              C#, VB
+Subject:               Map
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Open the Visual Studio solution file and build the project. This adds the custom object into the ESRI Representation Geometric Effect component category as GETransformCSharp.GETransform<em>Move, GETransformCSharp.GETransform</em>Rotate, and GETransformCSharp.GETransform_Scale. The component name will differ if the VB.NET project solution is built.  </li>
-<li>Open a new or existing ArcMap document.  </li>
-<li>Click the Add Data button to add a point, line, or polygon feature class with representations to the map document.   </li>
-<li>In the Layer Properties dialog box, change the Feature Renderer to Representation Renderer on the Symbology tab.  </li>
-<li>Select any Representation Rule (for example, RuleA) in the Representation Renderer for which you want to add this custom geometric effect to.  </li>
-<li>Select a symbol layer (for example, LayerA) in this representation rule or add a new symbol layer.  </li>
-<li>Click + next to the selected symbol layer to open the Geometric Effects dialog box, which lists all geometric effects. The custom classes will be listed under the point, line, and polygon input options. Select one of the effects from Transform Move, Transform Rotate, or Transform Scale to produce either a move, rotate, or scaling effect on the display geometries.   </li>
-<li>Change the values for the graphic attributes for these custom effects or accept the default values.  </li>
-<li>Close the Layer Properties dialog box.  </li>
-<li>Start an edit session to interactively modify these attributes.   </li>
-<li>Select a feature representation that uses the rule applied with the Move custom effect using the Select tool in the Representation toolbar.   </li>
-<li>Click the Representation Properties tool in the toolbar to open a dialog box. Make sure that the Tool tab is also selected.  </li>
-<li>Select the Move tool in the Representation toolbar. All attributes that can be modified interactively using the Resize tool appear in a list under the layer (LayerA). You will see both attributes of the Move effect (X and Y offset distances) listed.  </li>
-<li>Check the check boxes for the attributes and use the Move tool to interactively modify the attributes.   </li>
-<li>Clear the check boxes if you do not want to modify these attributes interactively.  </li>
-<li>Similarly, rotate and resize the representation tools present in the Representation toolbar can be used interactively in an edit session to work with the rotate and resize custom geometric effects.  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<p><img src="images/pic1.png" alt="The Layer Properties dialog box with highlighted tabs and buttons used in this sample. " /><br />
-The Layer Properties dialog box with highlighted tabs and buttons used in this sample.   </p>
+### Usage
+1. Open the Visual Studio solution file and build the project. This adds the custom object into the ESRI Representation Geometric Effect component category as GETransformCSharp.GETransform_Move, GETransformCSharp.GETransform_Rotate, and GETransformCSharp.GETransform_Scale. The component name will differ if the VB.NET project solution is built.  
+1. Open a new or existing ArcMap document.  
+1. Click the Add Data button to add a point, line, or polygon feature class with representations to the map document.   
+1. In the Layer Properties dialog box, change the Feature Renderer to Representation Renderer on the Symbology tab.  
+1. Select any Representation Rule (for example, RuleA) in the Representation Renderer for which you want to add this custom geometric effect to.  
+1. Select a symbol layer (for example, LayerA) in this representation rule or add a new symbol layer.  
+1. Click + next to the selected symbol layer to open the Geometric Effects dialog box, which lists all geometric effects. The custom classes will be listed under the point, line, and polygon input options. Select one of the effects from Transform Move, Transform Rotate, or Transform Scale to produce either a move, rotate, or scaling effect on the display geometries.   
+1. Change the values for the graphic attributes for these custom effects or accept the default values.  
+1. Close the Layer Properties dialog box.  
+1. Start an edit session to interactively modify these attributes.   
+1. Select a feature representation that uses the rule applied with the Move custom effect using the Select tool in the Representation toolbar.   
+1. Click the Representation Properties tool in the toolbar to open a dialog box. Make sure that the Tool tab is also selected.  
+1. Select the Move tool in the Representation toolbar. All attributes that can be modified interactively using the Resize tool appear in a list under the layer (LayerA). You will see both attributes of the Move effect (X and Y offset distances) listed.  
+1. Check the check boxes for the attributes and use the Move tool to interactively modify the attributes.   
+1. Clear the check boxes if you do not want to modify these attributes interactively.  
+1. Similarly, rotate and resize the representation tools present in the Representation toolbar can be used interactively in an edit session to work with the rotate and resize custom geometric effects.  
 
-<h4>Additional information</h4>
+![The Layer Properties dialog box with highlighted tabs and buttons used in this sample. ](images/pic1.png)  
+The Layer Properties dialog box with highlighted tabs and buttons used in this sample.   
 
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml">
-  <strong>Description of the tools</strong>
+  **Description of the tools**
 </div>  
-
 <div xmlns="http://www.w3.org/1999/xhtml">
-  <br />Move Geometric Effect—This sample tool allows a point, line, and polygon geometry to be processed to result in a Move effect, moving display geometry by a given x and y offset distances. The Move representation tool in the Representations toolbar can be interactively used to modify the x and y offset distances in an edit session.<br /><br />Rotate Geometric Effect—This sample tool allows a line and polygon geometry to be processed to result in a Rotate effect, rotating display geometry by a given rotation angle. The Rotate representation tool in the Representations toolbar can be interactively used to modify the angle of rotation in an edit session.<br /><br />Scale Geometric Effect—This sample tool allows a line and polygon geometry to be processed to result in a Scale effect, scaling the display geometry by a given x and y scaling factors. The Resize representation tool in the Representations toolbar can be interactively used to modify the x and y scaling factors in an edit session.</div>  
 
-<hr />
+Move Geometric Effect—This sample tool allows a point, line, and polygon geometry to be processed to result in a Move effect, moving display geometry by a given x and y offset distances. The Move representation tool in the Representations toolbar can be interactively used to modify the x and y offset distances in an edit session.  
 
-<h4>Licensing</h4>
+Rotate Geometric Effect—This sample tool allows a line and polygon geometry to be processed to result in a Rotate effect, rotating display geometry by a given rotation angle. The Rotate representation tool in the Representations toolbar can be interactively used to modify the angle of rotation in an edit session.  
 
+Scale Geometric Effect—This sample tool allows a line and polygon geometry to be processed to result in a Scale effect, scaling the display geometry by a given x and y scaling factors. The Resize representation tool in the Representations toolbar can be interactively used to modify the x and y scaling factors in an edit session.</div>  
+
+---------------------------------
+
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td> ArcGIS Desktop Standard </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td> ArcGIS Desktop Advanced </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

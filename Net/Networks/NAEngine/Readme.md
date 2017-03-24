@@ -1,11 +1,28 @@
-##ArcGIS Network Analyst extension Engine application
+## ArcGIS Network Analyst extension Engine application
 
-###Purpose  
-This sample application implements some simple tools to assist in working with network analysis layers in ArcGIS Engine. It also includes property pages to change the analysis settings for the following types of network analysis layers: Route, Closest Facility, OD Cost Matrix, Service Area, and Vehicle Routing Problem (VRP).  
+This sample application implements some simple tools to assist in working with network analysis layers in ArcGIS Engine. It also includes property pages to change the analysis settings for the following types of network analysis layers<font face="Verdana" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">: </font>Route, Closest Facility, OD Cost Matrix, Service Area, and Vehicle Routing Problem (VRP).  
 
 
-###Usage
-####Using this sample  
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Networks
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### Using this sample  
 1. Start Visual Studio and open the solution file.  
 1. Build the solution.  
 1. Run the NAEngine.exe application.  
@@ -18,7 +35,7 @@ This sample application implements some simple tools to assist in working with n
 
 
 
-####See Also  
+#### See Also  
 [Programming with ArcGIS Network Analyst extension](http://desktop.arcgis.com/search/?q=Programming%20with%20ArcGIS%20Network%20Analyst%20extension&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [What is ArcGIS Network Analyst extension?](http://desktop.arcgis.com/search/?q=What%20is%20ArcGIS%20Network%20Analyst%20extension%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [What is a network dataset?](http://desktop.arcgis.com/search/?q=What%20is%20a%20network%20dataset%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
@@ -31,12 +48,12 @@ This sample application implements some simple tools to assist in working with n
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine: Network Analyst |  
-|  | ArcGIS for Desktop Basic: Network Analyst |  
-|  | ArcGIS for Desktop Standard: Network Analyst |  
-|  | ArcGIS for Desktop Advanced: Network Analyst |  
+|  | ArcGIS Desktop Basic: Network Analyst |  
+|  | ArcGIS Desktop Standard: Network Analyst |  
+|  | ArcGIS Desktop Advanced: Network Analyst |  
 
 

@@ -1,13 +1,38 @@
-##Dynamic display—tracking dynamic object
+## Dynamic display—tracking dynamic object
 
-###Purpose  
-This sample shows how to use the ArcGIS dynamic display to track a dynamic object and simulate a tracking mode where the map is centered and aligned according to the tracked object. The following items are discussed in this sample:Switching the display into dynamic mode
-Updating the map visible extent and rotation according to information for the tracked object
-Listening to the AfterDynamicDraw event to show the location of the tracked objectCreating dynamic glyphs from in-memory bitmaps
-Changing different characters of the dynamic symbol The tracking data for this sample gets created synthetically out of an existing feature class. This process might take time before the sample starts running.   
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to use the ArcGIS dynamic display to track a dynamic object and simulate a tracking mode where the map is centered and aligned according to the tracked object. The following items are discussed in this sample:</div>
+
+*   Switching the display into dynamic mode
+
+*   Updating the map visible extent and rotation according to information for the tracked object
+
+*   Listening to the AfterDynamicDraw event to show the location of the tracked object
+*   Creating dynamic glyphs from in-memory bitmaps
+
+*   Changing different characters of the dynamic symbol
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The tracking data for this sample gets created synthetically out of an existing feature class. This process might take time before the sample starts running. </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio and open the solution file.  
 1. Build the solution to make the Track Dynamic Object command .dll file. Use the command in an application with a MapControl and ToolbarControl, such as the MapControlApplication template included with the Visual Studio integration.  
 1. Add this command to a ToolbarControl. The command (Track Dynamic Object) is located in the .NET samples category.  
@@ -21,7 +46,7 @@ Changing different characters of the dynamic symbol The tracking data for this 
 
 
 
-####See Also  
+#### See Also  
 [Dynamic display](http://desktop.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [How dynamic display works](http://desktop.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Best practices for using dynamic display](http://desktop.arcgis.com/search/?q=Best%20practices%20for%20using%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
@@ -33,12 +58,12 @@ Changing different characters of the dynamic symbol The tracking data for this 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

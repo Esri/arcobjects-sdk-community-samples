@@ -1,10 +1,31 @@
-##Create custom move, rotate, and scale GeometricEffects within a single project
+## Create custom move, rotate, and scale GeometricEffects within a single project
 
-###Purpose  
-This sample tool demonstrates how to create multiple sets of geometric effects in a single project and adds it to the existing list of geometric effects. Three geometric effects for move, rotate, and scale are included in the sample. IGeometricEffect and IGraphicAttributes are the two basic interfaces that are required to be implemented by every geometric effect class. IPersistVariant interface is implemented, in addition to persist the class. The sample also implements IEditInteraction so that all graphic attributes that are used to control the custom class will be exposed using the graphical user interface (GUI) through the representation tools.   
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample tool demonstrates how to create multiple sets of geometric effects in a single project and adds it to the existing list of geometric effects. Three geometric effects for move, rotate, and scale are included in the sample.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">IGeometricEffect and IGraphicAttributes are the two basic interfaces that are required to be implemented by every geometric effect class. IPersistVariant interface is implemented, in addition to persist the class.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">The sample also implements IEditInteraction so that all graphic attributes that are used to control the custom class will be exposed using the graphical user interface (GUI) through the representation tools. </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Map
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the Visual Studio solution file and build the project. This adds the custom object into the ESRI Representation Geometric Effect component category as GETransformCSharp.GETransform_Move, GETransformCSharp.GETransform_Rotate, and GETransformCSharp.GETransform_Scale. The component name will differ if the VB.NET project solution is built.  
 1. Open a new or existing ArcMap document.  
 1. Click the Add Data button to add a point, line, or polygon feature class with representations to the map document.   
@@ -28,7 +49,7 @@ This sample tool demonstrates how to create multiple sets of geometric effects i
 The Layer Properties dialog box with highlighted tabs and buttons used in this sample.   
 
 
-####Additional information  
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml">
   <strong>Description of the tools</strong>
 </div>  
@@ -40,11 +61,11 @@ The Layer Properties dialog box with highlighted tabs and buttons used in this s
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 
 

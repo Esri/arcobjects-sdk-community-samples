@@ -1,10 +1,63 @@
-##Implementing the ISchematicRulesHelper to easily develop a custom schematic rule
+## Implementing the ISchematicRulesHelper to easily develop a custom schematic rule
 
-###Purpose  
-Beginning with ArcGIS 10.2, the Schematics Extension provides a Schematics Rules Helper to aid in the implementation of custom rules. Before this helper, a developer had to have a good knowledge of the internal mechanisms and constraints of schematics such as the following:How to report the associationsHow to report relationsWhen to update the current geometryHow to update or create schematic features, and so onThis new helper facilitates the implementation of custom Schematic Rules by exposing a public application programming interface (API) that processes these crucial tasks for the developer. Caution: If you plan to implement a custom schematic rule to be executed via a client-server application, the solution must implement two projects; one for the custom rule property page and the other for the custom rule execution itself. The component dedicated to the custom rule execution will have to be registered with the ArcGIS server to be used on any client-server application. This sample demonstrates how to use the rules helper to develop a rule. The rule will find nodes of a certain schematic feature class that have only two links connected. For each of those nodes that are found, the rule will create a new node that is a certain distance away and then connect the two nodes with a new link. The placement angle of the new node and link will be based on the bisector (middle) of the existing two links.  
+  <div xmlns="http://www.w3.org/1999/xhtml">
+    <span style="FONT-SIZE: 10pt">Beginning with ArcGIS 10.2, the Schematics Extension provides a Schematics Rules Helper to aid in the implementation of custom rules. Before<span style="FONT-SIZE: 10pt"> this helper, a developer had to have a good knowledge of the internal mechanisms and constraints of schematics such as the following:</span></span>
+  </div>
+
+*   <span style="FONT-SIZE: 10pt">
+        <span style="FONT-SIZE: 10pt">How to report the associations</span>
+      </span>
+
+*   <span style="FONT-SIZE: 10pt">
+        <span style="FONT-SIZE: 10pt">How to report relations</span>
+      </span>
+
+*   <span style="FONT-SIZE: 10pt">
+        <span style="FONT-SIZE: 10pt">When to update the current geometry</span>
+      </span>
+
+*   <span style="FONT-SIZE: 10pt">
+        <span style="FONT-SIZE: 10pt">How to update or create schematic features, and so on</span>
+      </span>
+
+  <div style="LINE-HEIGHT: 12pt; MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10pt" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="FONT-SIZE: 10pt">This new helper facilitates the implementation of custom Schematic Rules by exposing a public application programming interface (API) that processes these crucial tasks for the developer.</span>
+  </div>
+  <div style="LINE-HEIGHT: 12pt; MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10pt" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="FONT-SIZE: 10pt">
+      ****
+    </span> </div>
+  <div style="LINE-HEIGHT: 12pt; MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10pt" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="FONT-SIZE: 10pt">
+      **Caution:** If you plan to implement a custom schematic rule to be executed via a client-server application, the solution must implement two projects; one for the custom rule property page and the other for the custom rule execution itself. The component dedicated to the custom rule execution will have to be registered with the ArcGIS server to be used on any client-server application.</span>
+  </div>
+  <div style="LINE-HEIGHT: 12pt; MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10pt" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="FONT-SIZE: 10pt"></span> </div>
+  <div style="LINE-HEIGHT: 12pt; MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10pt" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="FONT-SIZE: 10pt"></span>
+    <span style="FONT-SIZE: 10pt">This sample <span style="FONT-SIZE: 10pt">demonstrates how to use the rules helper to develop a rule. The rule will find nodes of a certain schematic feature class that have only two links connected. For each of those nodes that are found, the rule will create a new node that is a certain distance away and then connect the two nodes with a new link. The placement angle of the new node and link will be based on the bisector (middle) of the existing two links.</span></span>
+  </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Schematics
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the solution file and build the project. Note that this step automatically registers the components.  
 1. Start ArcCatalog.  
 1. Browse to any geodatabase that contains a schematic dataset.  
@@ -27,7 +80,7 @@ Beginning with ArcGIS 10.2, the Schematics Extension provides a Schematics Rule
 
 
 
-####See Also  
+#### See Also  
 [ISchematicRulesHelper interface](http://desktop.arcgis.com/search/?q=ISchematicRulesHelper%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [ISchematicRule interface](http://desktop.arcgis.com/search/?q=ISchematicRule%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [ISchematicRuleDesign interface](http://desktop.arcgis.com/search/?q=ISchematicRuleDesign%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
@@ -35,11 +88,11 @@ Beginning with ArcGIS 10.2, the Schematics Extension provides a Schematics Rule
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Schematics | ArcGIS for Desktop Basic: Schematics |  
-| ArcGIS for Desktop Standard: Schematics | ArcGIS for Desktop Standard: Schematics |  
-| ArcGIS for Desktop Advanced: Schematics | ArcGIS for Desktop Advanced: Schematics |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Schematics | ArcGIS Desktop Basic: Schematics |  
+| ArcGIS Desktop Standard: Schematics | ArcGIS Desktop Standard: Schematics |  
+| ArcGIS Desktop Advanced: Schematics | ArcGIS Desktop Advanced: Schematics |  
 
 

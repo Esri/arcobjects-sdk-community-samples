@@ -1,10 +1,27 @@
-##Creating a zoom factor extension that works with a ToolbarControl
+## Creating a zoom factor extension that works with a ToolbarControl
 
-###Purpose  
-This sample demonstrates creating a ZoomFactor extension containing three commands that work with the ToolbarControl.  
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates creating a ZoomFactor extension containing three commands that work with the ToolbarControl.</div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Browse to a map document to load into the MapControl.   
 1. Navigate around the data using the commands on the ToolbarControl.   
 1. Enable the extension and navigate around the data using the commands from the extension.   
@@ -13,7 +30,7 @@ This sample demonstrates creating a ZoomFactor extension containing three comman
 
 
 
-####Additional information  
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The AddItem method is used within the Form Load event to add new command items to the ToolbarControl with their style set. These command items are defined in the controls commands library and the ZoomFactor extension.</div>  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The ZoomFactor extension is created via its ProgID and added to the ExtensionManager singleton object using the IExtensionManagerAdmin.AddExtension method. The application is responsible for the lifetime and state of the ZoomFactor extension. The IExtensionManager.FindExtension method is used to find the ZoomFactor extension, and the IExtensionConfig.State property controls the state of the ZoomFactor extension.</div>  
@@ -21,19 +38,19 @@ This sample demonstrates creating a ZoomFactor extension containing three comman
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The ZoomFactor extension is used to control the state of the ZoomIn, ZoomOut, and SetZoomFactor commands. The ZoomFactor extension implements IExtension, IExtensionConfig, and the IZoomExtension custom interface, which has a ZoomFactor property. The SetZoomFactor command prompts you for a zoom factor to set into the ZoomFactor property. The ZoomIn and ZoomOut commands use the ZoomFactor to determine the zoom ratio. The Enabled state of each command is determined by IExtensionConfig.State.</div>  
 
 
-####See Also  
+#### See Also  
 [ToolbarControl class](http://desktop.arcgis.com/search/?q=ToolbarControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [IToolbarControl interface](http://desktop.arcgis.com/search/?q=IToolbarControl%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

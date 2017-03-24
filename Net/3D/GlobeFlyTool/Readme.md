@@ -1,10 +1,27 @@
-##Globe Fly tool
+## Globe Fly tool
 
-###Purpose  
 This add-in sample shows how to create a Fly tool for ArcGlobe. This sample mimics the out-of-the-box Fly tool for ArcGlobe. Developers can use this sample as a starting point to customize the Fly tool according to their needs.  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               3D
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the solution in Visual Studio.  
 1. Build the solution.  
 1. Open ArcGlobe (in design mode).  
@@ -24,11 +41,11 @@ This add-in sample shows how to create a Fly tool for ArcGlobe. This sample mimi
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: 3D Analyst | ArcGIS for Desktop Basic: 3D Analyst |  
-| ArcGIS for Desktop Standard: 3D Analyst | ArcGIS for Desktop Standard: 3D Analyst |  
-| ArcGIS for Desktop Advanced: 3D Analyst | ArcGIS for Desktop Advanced: 3D Analyst |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: 3D Analyst | ArcGIS Desktop Basic: 3D Analyst |  
+| ArcGIS Desktop Standard: 3D Analyst | ArcGIS Desktop Standard: 3D Analyst |  
+| ArcGIS Desktop Advanced: 3D Analyst | ArcGIS Desktop Advanced: 3D Analyst |  
 
 

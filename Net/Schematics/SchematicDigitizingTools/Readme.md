@@ -1,14 +1,33 @@
-##Implementing a schematic digitizing tool
+## Implementing a schematic digitizing tool
 
-###Purpose  
-This sample shows how to implement a tool that can be used in ArcMap to digitize schematic features in schematic diagrams. This sample includes a configuration file to work with a specific type of diagram (a diagram in the DigitizingSample schematic dataset). The Extensible Markup Language (XML) configuration file can be modified to work with other schematic datasets as well.  This sample also shows how to use the Schematic library to create schematic features and how to use an add-in dockable window.  
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to implement a tool that can be used in ArcMap to digitize schematic features in schematic diagrams. This sample includes a configuration file to work with a specific type of diagram (a diagram in the DigitizingSample schematic dataset). The Extensible Markup Language (XML) configuration file can be modified to work with other schematic datasets as well. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample also shows how to use the Schematic library to create schematic features and how to use an add-in dockable window.</div>  
 
 
-###Usage
-####Building the project  
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Schematics
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### Building the project  
 1. Start Visual Studio, open the solution file, and build the project.  
 
-####Adding the new tool to the ArcMap toolbar and opening the sample schematic diagram  
+#### Adding the new tool to the ArcMap toolbar and opening the sample schematic diagram  
 1. Navigate to <ArcGIS DeveloperKit install location>\Samples\data\Schematics, and copy both the GenericDigitizing.gdb geodatabase and DigitizeProperties.xml file in a folder for which you have full rights.  
 1. Start ArcMap and open a new empty map.  
 1. Click Customize, and click Customize Mode. The Customize dialog box opens.  
@@ -18,19 +37,19 @@ This sample shows how to implement a tool that can be used in ArcMap to digitiz
 1. Click Start Editing Diagram on the Schematic Editor drop-down menu.  
 1. Click the schematic digitizing tool (DigitTool). The Schematic Digitize dockable window opens. This window is organized in two sections: the first section concerns the digitizing of schematic nodes, the second section concerns the digitizing of schematic links.  
 
-####Digitizing schematic nodes  
+#### Digitizing schematic nodes  
 1. On the Schematic Digitize dialog box's first section, click the Node Type drop-down list  
 1. Choose the type of node you want to digitize in the active diagram; for this example, choose Person.  
 1. Fill in the Name text box; for example, type PersonA. The name is a mandatory parameter that needs to be specified before digitizing the related node in the active schematic diagram.  
 1. Click anywhere in the background of the schematic diagram. The new PersonA schematic node appears at the clicked location.  
 
-####Digitizing schematic links  
+#### Digitizing schematic links  
 1. On the Schematic Digitize dialog box's second section, click the Link Type drop-down list.  
 1. Choose the type of link you want to digitize in the active diagram; for this example, choose Relation.   
 1. Using the Relation Type drop-down list, specify the type of relation you want to create. This is a mandatory parameter that needs to be specified before going further. For this example, choose person-person-friend.  
 1. Click two persons nodes in the active diagram. A link connecting the two clicked nodes is created.  
 
-####Stopping the digitizing operations  
+#### Stopping the digitizing operations  
 1. Click Stop Editing Diagram on the Schematic Editor drop-down menu.   
 1. Click Yes to save the edits. The newly digitized schematic features are saved in the schematic dataset.  
 
@@ -38,7 +57,7 @@ This sample shows how to implement a tool that can be used in ArcMap to digitiz
 
 
 
-####Additional information  
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">If you want to use this add-in tool to digitize schematic features in your own schematic database, you only need to configure the DigitizeProperties.xml file.</div>  
 <div xmlns="http://www.w3.org/1999/xhtml">Navigate to &lt;ArcGIS DeveloperKit install location&gt;\Samples\data\Schematics, and copy the DigitizeProperties.xml file in the same folder your schematic database is.</div>  
 <div xmlns="http://www.w3.org/1999/xhtml">Edit this copied DigitizeProperties.xml file with a text editor<font face="Calibri">.</font></div>  
@@ -146,17 +165,17 @@ This sample shows how to implement a tool that can be used in ArcMap to digitiz
 <div xmlns="http://www.w3.org/1999/xhtml"> </div>  
 
 
-####See Also  
+#### See Also  
 [ISchematicInMemoryFeatureClass](http://desktop.arcgis.com/search/?q=ISchematicInMemoryFeatureClass&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Schematics | ArcGIS for Desktop Basic: Schematics |  
-| ArcGIS for Desktop Standard: Schematics | ArcGIS for Desktop Standard: Schematics |  
-| ArcGIS for Desktop Advanced: Schematics | ArcGIS for Desktop Advanced: Schematics |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Schematics | ArcGIS Desktop Basic: Schematics |  
+| ArcGIS Desktop Standard: Schematics | ArcGIS Desktop Standard: Schematics |  
+| ArcGIS Desktop Advanced: Schematics | ArcGIS Desktop Advanced: Schematics |  
 
 

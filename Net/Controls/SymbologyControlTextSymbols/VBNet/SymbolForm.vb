@@ -145,15 +145,5 @@ Public Class Form2
         Return m_styleGalleryItem
 
     End Function
-
-    Private Function routin_ReadRegisTry(ByVal sKey As String) As String
-        'Open the subkey for reading
-        Dim rk As Microsoft.Win32.RegistryKey = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(sKey, True)
-        If rk Is Nothing Then
-            Return ""
-        End If
-        ' Get the data from a specified item in the key.
-        Return rk.GetValue("InstallDir")
-
-    End Function
+  
 End Class

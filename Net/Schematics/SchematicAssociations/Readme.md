@@ -1,14 +1,37 @@
-##Implementing associations between GIS features and schematic features
+## Implementing associations between GIS features and schematic features
 
-###Purpose  
-This sample shows how to implement associations between geographic information system (GIS) features displayed on a map and schematic features contained in a schematic diagram. Two particular attributes, RelatedFeatureCN and RelatedFeatureOID, are used on the AfterLoadDiagram schematic event to automatically create the associations when an edit session is started on a diagram.  These attributes can be created on schematic feature classes associated with the diagram template that implements these diagrams; they must return the feature class name and ObjectID that allow you to identify the GIS feature you want associated with a schematic feature. This sample is developed as an add-in ArcMap extension.  
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample shows how to implement associations between geographic information system (GIS) features displayed on a map and schematic features contained in a schematic diagram.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">Two particular attributes, RelatedFeatureCN and RelatedFeatureOID, are used on the AfterLoadDiagram schematic event to automatically create the associations when an edit session is started on a diagram. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">These attributes can be created on schematic feature classes associated with the diagram template that implements these diagrams; they must return the feature class name and ObjectID that allow you to identify the GIS feature you want associated with a schematic feature.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample is developed as an add-in ArcMap extension.</div>  
 
 
-###Usage
-####Building the component  
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Schematics
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### Building the component  
 1. Open the solution file and build the project. This automatically registers the component.  
 
-####Configuring the RelatedFeatureCN and RelatedFeatureOID attributes on the schematic feature class  
+#### Configuring the RelatedFeatureCN and RelatedFeatureOID attributes on the schematic feature class  
 1. Start ArcCatalog.  
 1. Browse to a geodatabase that contains a schematic dataset.  
 1. Right-click the schematic dataset entry and click Edit. The Schematic Dataset Editor starts.  
@@ -24,7 +47,7 @@ This sample shows how to implement associations between geographic information
 1. Click OK. The RelatedFeatureOID attribute creation is complete.  
 1. Click Save on the Schematic Dataset Editor toolbar and close the Schematic Dataset Editor.  
 
-####Testing the newly specified associations  
+#### Testing the newly specified associations  
 1. Start ArcMap with a new empty map.  
 1. Enable the Schematic Features Associations with Geographic Features (VB .NET) or Schematic Features Associations with Geographic Features (C#) extension using the Customize>Extensions menu.  
 1. Add the GIS features in the active data frame.  
@@ -39,7 +62,7 @@ This sample shows how to implement associations between geographic information
 
 
 
-####See Also  
+#### See Also  
 [ISchematicInMemoryFeatureLinkerEdit interface](http://desktop.arcgis.com/search/?q=ISchematicInMemoryFeatureLinkerEdit%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [AfterLoadDiagram Schematic event](http://desktop.arcgis.com/search/?q=AfterLoadDiagram%20Schematic%20event&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [ISchematicInMemoryDiagram interface](http://desktop.arcgis.com/search/?q=ISchematicInMemoryDiagram%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
@@ -48,11 +71,11 @@ This sample shows how to implement associations between geographic information
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Schematics | ArcGIS for Desktop Basic: Schematics |  
-| ArcGIS for Desktop Advanced: Schematics | ArcGIS for Desktop Standard: Schematics |  
-| ArcGIS for Desktop Standard: Schematics | ArcGIS for Desktop Advanced: Schematics |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Schematics | ArcGIS Desktop Basic: Schematics |  
+| ArcGIS Desktop Advanced: Schematics | ArcGIS Desktop Standard: Schematics |  
+| ArcGIS Desktop Standard: Schematics | ArcGIS Desktop Advanced: Schematics |  
 
 

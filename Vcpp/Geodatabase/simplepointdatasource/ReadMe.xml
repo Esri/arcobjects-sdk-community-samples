@@ -1,34 +1,34 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/vcpp/VCppSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:VCPPSample:" language="en-us" solutionVersion="9.4.0.681" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/vcpp/VCppSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:VCPPSample:" language="en-us" solutionVersion="9.4.0.681" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
   <title>SimplePoint Plug-in Data Source</title>
   <purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample implements a read-only plug-in data source. The data format is a text file of formatted XY locations with a single character attribute.</div>
 <div xmlns="http://www.w3.org/1999/xhtml"> </div></purpose>
   <development_license>
     
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension/>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension/>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension/>
     </license>
   </development_license>
   <deployment_license>
     
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension/>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension/>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension/>
     </license>
   </deployment_license>

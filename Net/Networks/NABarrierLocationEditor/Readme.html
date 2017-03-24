@@ -18,43 +18,54 @@
   </style>
 </head>
 <body>
-  <h2>ArcGIS Network Analyst extension barrier location editor</h2>
+  ## ArcGIS Network Analyst extension barrier location editor
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates how to load polygon and polyline barrier values programmatically, while also providing a way to visualize and edit the underlying network element values that make up a polygon or polyline barrier.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample also illustrates how to flash the geometry of a network element (with a corresponding digitized direction arrow) and how to set up a context menu command for the NAWindow.</div>  
 
-<p>This sample demonstrates how to load polygon and polyline barrier values programmatically, while also providing a way to visualize and edit the underlying network element values that make up a polygon or polyline barrier. This sample also illustrates how to flash the geometry of a network element (with a corresponding digitized direction arrow) and how to set up a context menu command for the NAWindow.  </p>
+```
+Language:              C#, VB
+Subject:               Networks
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Compile the application. In non-XP Windows operating systems, be sure to open Visual Studio with "As Administrator."  </li>
-<li>Start ArcMap.  </li>
-<li>Create or load a network analysis layer.  </li>
-<li>Create or load a polygon or polyline barrier.  </li>
-<li>Right-click the barrier. On the context menu, choose Edit.  </li>
-<li>Follow the directions on the Editing dialog box to edit the edge ranges and junctions that make up the barrier.  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<h4>See Also</h4>
+### Usage
+1. Compile the application. In non-XP Windows operating systems, be sure to open Visual Studio with "As Administrator."  
+1. Start ArcMap.  
+1. Create or load a network analysis layer.  
+1. Create or load a polygon or polyline barrier.  
+1. Right-click the barrier. On the context menu, choose Edit.  
+1. Follow the directions on the Editing dialog box to edit the edge ranges and junctions that make up the barrier.  
 
-<p><a href="http://desktop.arcgis.com/search/?q=Programming%20with%20the%20ArcGIS%20Network%20Analyst%20extension&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Programming with the ArcGIS Network Analyst extension</a><br />
-<a href="http://desktop.arcgis.com/search/?q=What%20is%20ArcGIS%20Network%20Analyst%20extension%3F&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">What is ArcGIS Network Analyst extension?</a><br />
-<a href="http://desktop.arcgis.com/search/?q=What%20is%20a%20network%20dataset%3F&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">What is a network dataset?</a><br />
-<a href="http://desktop.arcgis.com/search/?q=Geodatabase&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Geodatabase</a><br />
-<a href="http://desktop.arcgis.com/search/?q=About%20the%20ArcGIS%20Network%20Analyst%20extension%20tutorial&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">About the ArcGIS Network Analyst extension tutorial</a><br />
-<a href="http://desktop.arcgis.com/search/?q=NetworkAnalyst&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">NetworkAnalyst</a><br />
-<a href="http://desktop.arcgis.com/search/?q=ArcGIS%20Network%20Analyst%20extension%20Object%20Model%20Diagram&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ArcGIS Network Analyst extension Object Model Diagram</a><br />
-<a href="http://desktop.arcgis.com/search/?q=An%20overview%20of%20the%20network%20analyst%20toolbox&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">An overview of the network analyst toolbox</a>  </p>
+#### See Also  
+[Programming with the ArcGIS Network Analyst extension](http://desktop.arcgis.com/search/?q=Programming%20with%20the%20ArcGIS%20Network%20Analyst%20extension&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[What is ArcGIS Network Analyst extension?](http://desktop.arcgis.com/search/?q=What%20is%20ArcGIS%20Network%20Analyst%20extension%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[What is a network dataset?](http://desktop.arcgis.com/search/?q=What%20is%20a%20network%20dataset%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Geodatabase](http://desktop.arcgis.com/search/?q=Geodatabase&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[About the ArcGIS Network Analyst extension tutorial](http://desktop.arcgis.com/search/?q=About%20the%20ArcGIS%20Network%20Analyst%20extension%20tutorial&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[NetworkAnalyst](http://desktop.arcgis.com/search/?q=NetworkAnalyst&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ArcGIS Network Analyst extension Object Model Diagram](http://desktop.arcgis.com/search/?q=ArcGIS%20Network%20Analyst%20extension%20Object%20Model%20Diagram&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[An overview of the network analyst toolbox](http://desktop.arcgis.com/search/?q=An%20overview%20of%20the%20network%20analyst%20toolbox&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
-<hr />
+---------------------------------
 
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic: Network Analyst </td><td> ArcGIS for Desktop Basic: Network Analyst </td></tr>  
-<tr><td> ArcGIS for Desktop Standard: Network Analyst </td><td> ArcGIS for Desktop Standard: Network Analyst </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced: Network Analyst </td><td> ArcGIS for Desktop Advanced: Network Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Basic: Network Analyst </td><td> ArcGIS Desktop Basic: Network Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Standard: Network Analyst </td><td> ArcGIS Desktop Standard: Network Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Advanced: Network Analyst </td><td> ArcGIS Desktop Advanced: Network Analyst </td></tr>  
 </table>
-
 </body>
 </html>

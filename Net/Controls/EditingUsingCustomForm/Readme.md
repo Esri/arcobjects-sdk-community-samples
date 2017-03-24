@@ -1,10 +1,27 @@
-##Editing using a custom form
+## Editing using a custom form
 
-###Purpose  
 This sample demonstrates how to hide the complexity of editing in an ArcGIS Engine application by presenting a simple editing interface to users. It also shows how to impose business rules on the editing process by listening to ArcGIS Engine edit events.   
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Compile and run the sample.  
 1. Click the launch editor form command (blue square, white E).  
 1. Click Edit on the EditorForm to start editing the Highways layer.  
@@ -19,7 +36,7 @@ This sample demonstrates how to hide the complexity of editing in an ArcGIS Engi
 Screen shot of the EditorForm used to edit the Highways layer.  
 
 
-####Additional information  
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Applications that allow users to edit data often attempt to simplify the editing process and maintain data integrity through business rules. The following shows how this sample achieves this in an ArcGIS Engine application:</div>  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
@@ -40,19 +57,19 @@ Screen shot of the EditorForm used to edit the Highways layer.
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The EditorForm listens to the IEngineEditEvents.OnSketchModified event to check whether an  edit is valid or invalid. A spatial query is performed in the IsHighWaysEditValid function to determine whether the highway feature being edited intersects the Lakes layer. If the function returns false, the edit is rolled back by calling the IOperationStack.Undo method<font face="Verdana">—</font>an Invalid Edit warning appears on the EditorForm.</div>  
 
 
-####See Also  
+#### See Also  
 [Sample: Custom reshape polyline edit task](../../../Net/Controls/EditingReshapePolylineEditTask)  
 [Sample: Custom vertex editing commands](../../../Net/Controls/EditingVertexCommands)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

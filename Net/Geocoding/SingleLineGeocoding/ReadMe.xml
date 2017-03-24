@@ -4,25 +4,25 @@
 	<development_license>
 		
 	<license>
-									<name>ArcGIS for Desktop Basic</name>
+									<name>ArcGIS Desktop Basic</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license></development_license>
 	<deployment_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license></deployment_license>
 	<apis>
@@ -82,7 +82,7 @@
 		<tag>Geocoding</tag>
 	</content_area_tags>
 	<indexing_tags>
-		<new_tag>ArcGIS for Desktop</new_tag>
+		<new_tag>ArcGIS Desktop</new_tag>
 	<existing_tag>ArcGIS Engine</existing_tag><existing_tag>Single line geocoding</existing_tag></indexing_tags>
 	<guid>d848c464-3ff5-483b-ab8c-7ac97fdbae3b</guid>
 	<content_management>

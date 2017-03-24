@@ -7,12 +7,12 @@
 <li style="MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt"><span>This sample can be used as a reference for developers needing to extend synchronization for any reason.</span> </li></ul></purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
@@ -24,12 +24,12 @@
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
@@ -102,7 +102,7 @@
 <li style="FONT-WEIGHT: normal">To extend the sample to cover this case, you can implement the AfterExportingDataChanges event in the extension. This event is called when you run the export data changes command. Here, you can use the same logic from the AfterSynchronizingDataChanges event handler to copy the raster datasets to a local file geodatabase. This can then be copied with the delta file to a location accessible by the target replica geodatabase. When the data file is imported, you can add code to the AfterSynchronizingDataChanges event, which is also called with the import message command. This code can import the raster datasets from the local file geodatabase.</li></ul>
 <li style="FONT-WEIGHT: normal"><strong>Multiple replicas</strong><font face="Verdana">—</font>This sample is for a single replica. Implementing it for several replicas involves creating a gen column per replica.</li>
 <li style="FONT-WEIGHT: normal"><strong>Multiple raster catalogs</strong><font face="Verdana">—</font>This sample is for a single raster catalog. Implementing it for several raster catalogs involves adding enhancements to keep track of which raster catalogs to synchronize.
-</li><li style="FONT-WEIGHT: normal"><strong>Replication using geodata services and ArcGIS for Server</strong><font face="Verdana">—</font>This sample does not work in this environment. Synchronizing using geodata services and ArcGIS for Server ignores the raster catalog. In this case, you can use similar techniques as previously described for disconnected replication, since the server uses delta files to synchronize changes.</li>
+</li><li style="FONT-WEIGHT: normal"><strong>Replication using geodata services and ArcGIS Enterprise</strong><font face="Verdana">—</font>This sample does not work in this environment. Synchronizing using geodata services and ArcGIS Enterprise ignores the raster catalog. In this case, you can use similar techniques as previously described for disconnected replication, since the server uses delta files to synchronize changes.</li>
 <li style="FONT-WEIGHT: normal"><strong>Creating a workspace property page</strong><font face="Verdana">—</font>To avoid hard coding the values, such as the replica and raster dataset name, a property page can be created that gets and sets the values from a private table.</li></ul></additional_information><related_topics>
     <topic>
       <topic_display>How to create a replica in a connected environment</topic_display>

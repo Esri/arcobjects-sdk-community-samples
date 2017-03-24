@@ -1,10 +1,27 @@
-##Custom map navigation commands
+## Custom map navigation commands
 
-###Purpose  
-This topic provides a set of sample PanZoom commands and tools that can be used in conjunction with the MapControl, PageLayoutControl, and ToolbarControl. It is assumed you have previous experience in creating custom tools and commands.   
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This topic provides a set of sample PanZoom commands and tools that can be used in conjunction with the MapControl, PageLayoutControl, and ToolbarControl. It is assumed you have previous experience in creating custom tools and commands. </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Build the project.  
 1. Do one of the following: a) Add the commands to the ToolbarControl programmatically using the IToolbarControl.AddItem method; b) Use the commands directly with the MapControl or PageLayoutControl programmatically by creating a new instance of a command and passing the MapControl or PageLayoutControl to its OnCreate event; c) Add the commands interactively to the ToolbarControl by clicking the Add from File button in the ToolbarControl's Customizing dialog box (available through the property pages) and browsing to the *.tlb file; or d) Add the commands interactively to the ToolbarControl by dragging them from the Sample_Pan[_VBNET]/Zoom category in the ToolbarControl's Customizing dialog box.  
 
@@ -12,23 +29,23 @@ This topic provides a set of sample PanZoom commands and tools that can be used 
 
 
 
-####Additional information  
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample uses the following:</div>  
 
 
-####See Also  
+#### See Also  
 [HookHelper Class](http://desktop.arcgis.com/search/?q=HookHelper%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [IHookHelper Interface](http://desktop.arcgis.com/search/?q=IHookHelper%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

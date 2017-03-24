@@ -1,10 +1,29 @@
-##ArcReaderGlobeControl document properties
+## ArcReaderGlobeControl document properties
 
-###Purpose  
-This sample demonstrates how to use the IARGlobeControl.ShowARGlobeWindow method to display the FileProperties modal window when the Browse dialog box is used to select a document to load into the control. The DataFrame and Layer properties modal windows are displayed by right-clicking the globe or a layer in the table of contents (TOC) to display the context menu and selecting Properties. The IARGlobeControl.TOCVisible property is used to toggle the visibility of the TOC if the loaded document was published with permission to do so.  When the TOC is invisible, the DataFrame and Layer properties cannot be displayed manually. Instead, the IARGlobeControl.ARGlobe property is used to obtain pertinent information about the globe; for example, its Description, DistanceUnits, Name, and SpatialReferenceName properties. The IARGlobe.ARLayer property is used to iterate each layer in the globe and obtain its Description, Name, MaximumScale, and MinimumScale properties. These properties are concatenated into a string, which is displayed in a RichTextBox.   
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to use the IARGlobeControl.ShowARGlobeWindow method to display the FileProperties modal window when the Browse dialog box is used to select a document to load into the control. The DataFrame and Layer properties modal windows are displayed by right-clicking the globe or a layer in the table of contents (TOC) to display the context menu and selecting Properties. The IARGlobeControl.TOCVisible property is used to toggle the visibility of the TOC if the loaded document was published with permission to do so. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">When the TOC is invisible, the DataFrame and Layer properties cannot be displayed manually. Instead, the IARGlobeControl.ARGlobe property is used to obtain pertinent information about the globe; for example, its Description, DistanceUnits, Name, and SpatialReferenceName properties. The IARGlobe.ARLayer property is used to iterate each layer in the globe and obtain its Description, Name, MaximumScale, and MinimumScale properties. These properties are concatenated into a string, which is displayed in a RichTextBox. </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Publisher
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio, open the solution file, and build the project.   
 1. Run the application.   
 1. Browse to a Published Map File (PMF) from ArcGlobe to load.   
@@ -24,13 +43,13 @@ This sample demonstrates how to use the IARGlobeControl.ShowARGlobeWindow method
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Publisher | ArcReader |  
-| ArcGIS for Desktop Standard: Publisher | Engine |  
-| ArcGIS for Desktop Advanced: Publisher | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Publisher | ArcReader |  
+| ArcGIS Desktop Standard: Publisher | Engine |  
+| ArcGIS Desktop Advanced: Publisher | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

@@ -212,12 +212,13 @@ namespace GeoEvents
 		{
 			m_MapControl = (IMapControl2) axMapControl1.GetOcx();
 
-			//Find sample data
-			string sFilePath = @"..\..\..\Data\World";
+            //Find sample data
+            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            filePath = System.IO.Path.Combine(filePath, @"ArcGIS\data\World");
 
 			//Add sample shapefile data
-			m_MapControl.AddShapeFile(sFilePath, "world30");
-			m_MapControl.AddLayerFromFile(sFilePath + @"\continents.lyr",0);
+			m_MapControl.AddShapeFile(filePath, "world30");
+			m_MapControl.AddLayerFromFile(System.IO.Path.Combine(filePath , @"continents.lyr"),0);
 
 			//Symbolize the data
 			SymbolizeData(m_MapControl.get_Layer(0), 0.1, GetRGBColor(0, 0, 0), GetRGBColor(0, 128, 0));

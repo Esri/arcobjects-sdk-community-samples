@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.673" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.673" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
   <title>Save a layer file in a MapControl application</title>
   <purpose>This sample demonstrates how to create and save a layer file in a stand-alone ArcGIS Engine application. In addition to providing the ability to save layer files, this sample also implements a context menu that opens when you right-click a layer in the application's table of contents (TOC). This context menu hosts two commands: Save the current layer as a layer file and Remove the current layer from the map. </purpose>
   <development_license>
@@ -18,17 +18,17 @@
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>

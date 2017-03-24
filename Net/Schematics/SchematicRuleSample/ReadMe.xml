@@ -7,29 +7,29 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample details a customized schematic rule implementation. The goal of this sample is not in the rule, but how to implement it. The purpose is to create a schematic rule (in this sample, Reduce Schematic Links) that reduces schematic links, implemented by a specific schematic feature class, when two or more links have the same extremity nodes (and optionally, connect at the same port on these extremity nodes).</div></purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>Schematics</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>Schematics</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>Schematics</extension>
     </license>
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>Schematics</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>Schematics</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>Schematics</extension>
     </license>
   </deployment_license>

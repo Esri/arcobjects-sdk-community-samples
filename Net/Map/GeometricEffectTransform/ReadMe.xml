@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.667" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.667" productVersion="11.0.8034" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
   <title>Create custom move, rotate, and scale GeometricEffects within a single project</title>
   <purpose>
     <div xmlns="http://www.w3.org/1999/xhtml">This sample tool demonstrates how to create multiple sets of geometric effects in a single project and adds it to the existing list of geometric effects. Three geometric effects for move, rotate, and scale are included in the sample.</div>
@@ -9,34 +9,34 @@
   </purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>

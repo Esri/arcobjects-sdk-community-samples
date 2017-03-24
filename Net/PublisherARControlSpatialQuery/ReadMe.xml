@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.780" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.780" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
   <title>ArcReaderControl spatial query</title>
   <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to use the IARMap.QueryARFeatures method to search for visible features intersecting a given envelope using IARSearchDef. </div>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
@@ -7,15 +7,15 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The ZoomTo, CenterAt, Flash, and Flicker methods are used to identify each feature on the map. </div></purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>Publisher</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>Publisher</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>Publisher</extension>
     </license>
   </development_license>
@@ -29,13 +29,13 @@
 									<name>Engine</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Basic</name>
+									<name>ArcGIS Desktop Basic</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license></deployment_license>
   <min_version>10.0</min_version>

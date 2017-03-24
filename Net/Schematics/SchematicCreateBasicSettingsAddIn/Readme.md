@@ -1,21 +1,44 @@
-##Utility wizard for basic schematic datasets configuration
+## Utility wizard for basic schematic datasets configuration
 
-###Purpose  
-This sample, developed as an add-in ArcCatalog extension, is a Utility wizard that can be used to create a schematic dataset in a geodatabase with basic settings on a diagram template that uses geometric network data as the input for generating schematic diagrams. It greatly simplifies the schematic dataset's primary configuration steps for simple cases. It allows the following:Configuration of some basic properties for the Standard builder that will be used to generate the schematic diagrams (optional).Specification of the input geometric network data from which the diagrams will be generated (required). This results in the creation of the associated schematic feature classes in the schematic dataset.Specification of node reduction by priority rules to systematically reduce any orphan nodes and nodes with two connections when those nodes are based on specific schematic feature classes (optional).Specification of the directions for a Hierarchical-Smart Tree layout algorithm to be automatically executed at the diagram generation (optional).Creation of specific schematic attributes associated with fields in the geometric network feature classes (optional).  
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample, developed as an add-in ArcCatalog extension, is a Utility wizard that can be used to create a schematic dataset in a geodatabase with basic settings on a diagram template that uses geometric network data as the input for generating schematic diagrams. It greatly simplifies the schematic dataset's primary configuration steps for simple cases. It allows the following:</div>
+
+*   Configuration of some basic properties for the Standard builder that will be used to generate the schematic diagrams (optional).
+*   Specification of the input geometric network data from which the diagrams will be generated (required). This results in the creation of the associated schematic feature classes in the schematic dataset.
+*   Specification of node reduction by priority rules to systematically reduce any orphan nodes and nodes with two connections when those nodes are based on specific schematic feature classes (optional).
+*   Specification of the directions for a Hierarchical-Smart Tree layout algorithm to be automatically executed at the diagram generation (optional).
+*   Creation of specific schematic attributes associated with fields in the geometric network feature classes (optional).  
 
 
-###Usage
-####Building the component  
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Schematics
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### Building the component  
 1. Start Visual Studio.  
 1. Open the solution and build the project.  
 
-####Adding the custom Create Basic Schematic Settings button to any ArcCatalog toolbar  
+#### Adding the custom Create Basic Schematic Settings button to any ArcCatalog toolbar  
 1. Start ArcCatalog.  
 1. Click Customize and click Customize Mode.  
 1. Click the Commands tab, and click Schematic Extras (VBNet) or Schematic Extras (CSharp) in the Categories list.  
 1. Drag-and-drop the Create Basic Schematic Settings command onto any toolbar.  
 
-####Testing the Create Basic Schematic Settings wizard  
+#### Testing the Create Basic Schematic Settings wizard  
 1. In the Catalog tree, either select the geodatabase in which you want to create the new schematic dataset with basic settings or select the schematic dataset in which you want to configure a new diagram template.  
 1. Click the Create Basic Schematic Settings (VBNet) or Create Basic Schematic Settings (C#) button. The Dataset and Template Name dialog box appears.  
 1. If you started from a selected geodatabase, type a name for the new schematic dataset to create in the Dataset Name field. When starting from a schematic dataset, the Dataset Name field is already specified.  
@@ -40,9 +63,9 @@ This sample, developed as an add-in ArcCatalog extension, is a Utility wizard th
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Advanced: Schematics | ArcGIS for Desktop Advanced: Schematics |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Advanced: Schematics | ArcGIS Desktop Advanced: Schematics |  
 
 

@@ -18,35 +18,45 @@
   </style>
 </head>
 <body>
-  <h2>Applying a time offset to a time-aware feature layer</h2>
+  ## Applying a time offset to a time-aware feature layer
 
-<h3>Purpose</h3>
+This sample demonstrates how to apply an offset to a time-aware layer.  
 
-<p>This sample demonstrates how to apply an offset to a time-aware layer.  </p>
+```
+Language:              C#, VB
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Open the Visual Studio solution file and build the project. This will create a .dll and a type library (.tlb) file in the \bin folder. The .dll gets registered with the ESRI Add-Ins component category.   </li>
-<li>Start ArcMap and load the TimeAwareHurricanes.mxd map in the folder <Your ArcGIS Developer Kit Install directory>/Samples/data/Time.  </li>
-<li>Open the Customize dialog box. On the Commands tab, select the Add-In Controls. The Add-In Controls appear, including the Time Offset button.   </li>
-<li>Drag the Time Offset button onto one of the toolbars and close the Customize dialog box.  </li>
-<li>Double-click atlantic<em>hurricanes</em>2000 to open the layer's properties.   </li>
-<li>Click the Time tab. Note that the time offset is 0.  </li>
-<li>Click Cancel to close the properties panel.  </li>
-<li>Click the Time Offset button.  </li>
-<li>Reopen the properties of the atlantic<em>hurricanes</em>2000 layer. Note that the time offset has changed.  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<hr />
+### Usage
+1. Open the Visual Studio solution file and build the project. This will create a .dll and a type library (.tlb) file in the \bin folder. The .dll gets registered with the ESRI Add-Ins component category.   
+1. Start ArcMap and load the TimeAwareHurricanes.mxd map in the folder <Your ArcGIS Developer Kit Install directory>/Samples/data/Time.  
+1. Open the Customize dialog box. On the Commands tab, select the Add-In Controls. The Add-In Controls appear, including the Time Offset button.   
+1. Drag the Time Offset button onto one of the toolbars and close the Customize dialog box.  
+1. Double-click atlantic_hurricanes_2000 to open the layer's properties.   
+1. Click the Time tab. Note that the time offset is 0.  
+1. Click Cancel to close the properties panel.  
+1. Click the Time Offset button.  
+1. Reopen the properties of the atlantic_hurricanes_2000 layer. Note that the time offset has changed.  
 
-<h4>Licensing</h4>
+---------------------------------
 
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td> ArcGIS Desktop Standard </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td> ArcGIS Desktop Advanced </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

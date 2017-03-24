@@ -1,14 +1,31 @@
-##Custom solver
+## Custom solver
 
-###Purpose  
-This sample provides a custom ArcGIS Network Analyst extension solver for traversing a network dataset and finding connected/disconnected network components.   
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample provides a custom ArcGIS Network Analyst extension solver for traversing a network dataset and finding connected/disconnected network components. </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              VC++
+Subject:               Networks
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the solution file in Visual Studio.  
 1. If your SDK is not installed in "\Program Files (x86)\ArcGIS\DeveloperKit10.2", search for that string and replace all entries with the correct path.  
 1. Build the solution.  
-1. If the compilation process does not register the CustomSolver.dll into ArcGIS for Desktop, register it manually.  
+1. If the compilation process does not register the CustomSolver.dll into ArcGIS Desktop, register it manually.  
 1. Start ArcMap.  
 1. Add a network dataset to the map.  
 1. On the Network Analyst toolbar, click Network Analyst > Options, and set it to show all messages.  
@@ -28,11 +45,11 @@ This sample provides a custom ArcGIS Network Analyst extension solver for traver
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic: Network Analyst |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard: Network Analyst |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced: Network Analyst |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic: Network Analyst |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard: Network Analyst |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced: Network Analyst |  
 
 

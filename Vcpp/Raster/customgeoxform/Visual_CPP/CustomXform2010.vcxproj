@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Unicode Debug|Win32">
       <Configuration>Unicode Debug</Configuration>
@@ -159,7 +159,7 @@ echo Warning : Cannot register Unicode DLL on Windows 95
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>"$(CommonProgramFiles)\ArcGIS\bin\esriregasm.exe" /p:desktop "$(TargetPath)"</Command>
+      <Command>"$(CommonProgramFiles)\ArcGIS\bin\esriregasm.exe" /p:desktop /s "$(TargetPath)"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Performing registration</Message>

@@ -1,10 +1,27 @@
-##Generate a report
+## Generate a report
 
-###Purpose  
-This sample shows how to create a report using a selected template. The user is given a set of templates to choose from. The selected report template is then exported to a Portable Document Format (PDF) file. The templates are set to use the data included in the software development kit (SDK) installation.  
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample shows how to create a report using a selected template. The user is given a set of templates to choose from. The selected report template is then exported to a Portable Document Format (PDF) file. The templates are set to use the data included in the software development kit (SDK) installation.</div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Map
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio and build the solution.  
 1. Start ArcMap. Click the Customize menu.  
 1. Select Add-In Manager. Ensure that Custom Report Add-Ins is installed.  
@@ -20,18 +37,18 @@ This sample shows how to create a report using a selected template. The user is
 
 
 
-####See Also  
+#### See Also  
 [How to register COM components](http://desktop.arcgis.com/search/?q=How%20to%20register%20COM%20components&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Working with reports](http://desktop.arcgis.com/search/?q=Working%20with%20reports&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic |  |  
-| ArcGIS for Desktop Standard |  |  
-| ArcGIS for Desktop Advanced |  |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic |  |  
+| ArcGIS Desktop Standard |  |  
+| ArcGIS Desktop Advanced |  |  
 
 

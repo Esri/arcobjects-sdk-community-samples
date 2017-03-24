@@ -1,10 +1,39 @@
-##Multivariate renderer
+## Multivariate renderer
 
-###Purpose  
-This sample consists of a multivariate feature renderer that can represent multiple, independent data distributions on a single layer. The multivariate renderer is a powerful way to represent the relationship between two or more data distributions when multiple variables exist for the same geographic features (points, lines, or areas). Each data variable is assigned a unique graphical visual variable (for example, the size, shape, and orientation) and the multivariate symbolization is built up from two or more of these. The implementation of this is that the multivariate renderer maintains references to several univariate ESRI feature renderers (SimpleRenderer, UniqueValueRenderer, ClassBreaksRenderer, or ProportionalSymbolRenderer).  For example, population and housing data might be available for city point data. You can assign a ClassBreaksRenderer to encode both of these variables and thus, choose to use symbol color (to be specific, its saturation and value components) to encode a variable for percent housing vacancy, and use symbol size in points to represent a variable for total population. You could add a third variable to your symbolization, making it trivariate, if you have a categorical variable, perhaps that indicates the region where the city is located. This could be symbolized using the symbol shape or the hue component of color. This sample also includes a multivariate feature renderer property page that allows the software user to build and assign a multivariate feature renderer to a layer in ArcMap. The design of both the renderer and property page takes advantage of the existing support in ArcMap for univariate feature rendering. To set up multivariate symbolization for a layer, first make several copies of the layer and set up each univariate symbolization, then use the multivariate renderer property page to create multivariate symbolization based on the univariate symbolizations.  The multivariate renderer is designed as a "super" feature renderer that manages a collection of multiple univariate feature renderers. The custom multivariate renderer keeps track of each constituent renderer and, on IFeatureRenderer.Draw, draws the multivariate symbology for each feature by combining symbology from each univariate renderer. Both the custom property page and custom renderer use Bertin's graphical as a fundamental design principle. By using the property page, you can choose to encode a single variable using size, color, shape and pattern, or orientation. Size is useful for representing quantitative difference. The multivariate renderer uses a ClassBreaksRenderer for this. You can separate color into hue, saturation, and value. Hue is what most people think of when they think of color and is good for showing categorical difference. Saturation is the richness of the color, and value can be thought of as lightness and darkness. Both are good for showing quantitative difference and they are combined together for the purposes of this renderer. Shape and pattern are combined together as a single encoded graphical visual variable, which is useful for symbolizing categorical difference between features.  Orientation (rotation) of a symbol can be useful for symbolizing categorical difference or quantitative difference if the variable being represented has some true directionality (for example, predominate wind direction measured at point features).   
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample consists of a multivariate feature renderer that can represent multiple, independent data distributions on a single layer. The multivariate renderer is a powerful way to represent the relationship between two or more data distributions when multiple variables exist for the same geographic features (points, lines, or areas). Each data variable is assigned a unique graphical visual variable (for example, the size, shape, and orientation) and the multivariate symbolization is built up from two or more of these. The implementation of this is that the multivariate renderer maintains references to several univariate ESRI feature renderers (SimpleRenderer, UniqueValueRenderer, ClassBreaksRenderer, or ProportionalSymbolRenderer). </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">For example, population and housing data might be available for city point data. You can assign a ClassBreaksRenderer to encode both of these variables and thus, choose to use symbol color (to be specific, its saturation and value components) to encode a variable for percent housing vacancy, and use symbol size in points to represent a variable for total population. You could add a third variable to your symbolization, making it trivariate, if you have a categorical variable, perhaps that indicates the region where the city is located. This could be symbolized using the symbol shape or the hue component of color.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample also includes a multivariate feature renderer property page that allows the software user to build and assign a multivariate feature renderer to a layer in ArcMap. The design of both the renderer and property page takes advantage of the existing support in ArcMap for univariate feature rendering. To set up multivariate symbolization for a layer, first make several copies of the layer and set up each univariate symbolization, then use the multivariate renderer property page to create multivariate symbolization based on the univariate symbolizations. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The multivariate renderer is designed as a "super" feature renderer that manages a collection of multiple univariate feature renderers. The custom multivariate renderer keeps track of each constituent renderer and, on IFeatureRenderer.Draw, draws the multivariate symbology for each feature by combining symbology from each univariate renderer. Both the custom property page and custom renderer use Bertin's graphical as a fundamental design principle. By using the property page, you can choose to encode a single variable using size, color, shape and pattern, or orientation. Size is useful for representing quantitative difference. The multivariate renderer uses a ClassBreaksRenderer for this.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">You can separate color into hue, saturation, and value. Hue is what most people think of when they think of color and is good for showing categorical difference. Saturation is the richness of the color, and value can be thought of as lightness and darkness. Both are good for showing quantitative difference and they are combined together for the purposes of this renderer.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Shape and pattern are combined together as a single encoded graphical visual variable, which is useful for symbolizing categorical difference between features. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Orientation (rotation) of a symbol can be useful for symbolizing categorical difference or quantitative difference if the variable being represented has some true directionality (for example, predominate wind direction measured at point features). </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the sample.  
 1. Compile the sample to create its .dll.  
 1. Start ArcMap.  
@@ -27,11 +56,11 @@ This sample consists of a multivariate feature renderer that can represent multi
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 
 

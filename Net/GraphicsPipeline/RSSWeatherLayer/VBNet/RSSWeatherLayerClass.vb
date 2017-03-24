@@ -1038,18 +1038,16 @@ Imports ESRI.ArcGIS.DataSourcesFile
 	''' Load the information from the MajorCities featureclass to the locations table
 	''' </summary>
 	Private Sub PopulateLocationsTableProc()
-	  'get the ArcGIS path from the registry
-        Dim key As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\ESRI\ArcObjectsSdk10.4")
-	  Dim path As String = Convert.ToString(key.GetValue("InstallDir"))
+	  Dim path As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
 
-        If (Not System.IO.File.Exists(System.IO.Path.Combine(path, "Samples\Data\USZipCodeData\ZipCode_Boundaries_US_Major_Cities.shp"))) Then
+        If (Not System.IO.File.Exists(System.IO.Path.Combine(path, "ArcGIS\data\USZipCodeData\ZipCode_Boundaries_US_Major_Cities.shp"))) Then
             MessageBox.Show("Cannot find file ZipCode_Boundaries_US_Major_Cities.shp!")
             Return
         End If
 
 	  'open the featureclass
 		Dim wf As IWorkspaceFactory = New ShapefileWorkspaceFactoryClass()
-        Dim ws As IWorkspace = wf.OpenFromFile(System.IO.Path.Combine(path, "Samples\Data\USZipCodeData"), 0)
+        Dim ws As IWorkspace = wf.OpenFromFile(System.IO.Path.Combine(path, "ArcGIS\data\USZipCodeData"), 0)
 	  Dim fw As IFeatureWorkspace = TryCast(ws, IFeatureWorkspace)
 	  Dim featureClass As IFeatureClass = fw.OpenFeatureClass("ZipCode_Boundaries_US_Major_Cities")
 	  'map the name and zip fields

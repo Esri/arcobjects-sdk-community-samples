@@ -30,7 +30,7 @@ Imports ESRI.ArcGIS.Analyst3D
 	Public Partial Class GlobeView : Inherits Window
     Private _map As Map
 		Public globeControl As AxGlobeControl
-    Private mapPath As String = "..\..\..\..\..\data\Globe\"
+    Private mapPath As String  = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
 
     Public Property SelectedMap() As Map
       Get
@@ -66,7 +66,7 @@ Imports ESRI.ArcGIS.Analyst3D
     Private Sub glbDisplay_AfterDraw(ByVal pViewer As ISceneViewer)
       ' load 3dd files
       If globeControl.DocumentFilename Is Nothing Then
-        globeControl.Load3dFile(mapPath & "\" & _map.MapName & ".3dd")
+        globeControl.Load3dFile(mapPath & "\Globe\" & _map.MapName & ".3dd")
       End If
     End Sub
 

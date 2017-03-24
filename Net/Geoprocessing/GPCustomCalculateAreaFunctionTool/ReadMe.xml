@@ -3,17 +3,17 @@
   <purpose>This sample is for developers who want to extend the geoprocessing framework by building new geoprocessing tools using ArcObjects. This sample explains how to build a geoprocessing function tool and describes the ArcObjects components necessary for building these tools. This sample function tool calculates the area of a polygon feature class.</purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
@@ -25,17 +25,17 @@
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
@@ -78,8 +78,8 @@
       <how_to_use_steps>
         <step>Open the solution file, review the code, and compile the project. The function factory is automatically added to the Geoprocessor Function Factory component category.</step>
         <step>Register the DLL (in the Debug folder) with ESRIRegAsm utility. </step>
-        <step>Create a custom toolbox in a folder or a geodatabase. ArcGIS for Desktop and ArcGIS Engine developers can do this by using the IGPUtilities2.CreateToolboxFromFactory method.</step>
-        <step>ArcGIS for Desktop users also have the option to add the tool to a custom toolbox manually in ArcCatalog, ArcMap, or ArcGlobe. Right-click a custom toolbox, choose Add, click Tool, expand the AreaCalculation function factory, select the Calculate Area tool, and click OK. The tool is added to the custom toolbox.</step>
+        <step>Create a custom toolbox in a folder or a geodatabase. ArcGIS Desktop and ArcGIS Engine developers can do this by using the IGPUtilities2.CreateToolboxFromFactory method.</step>
+        <step>ArcGIS Desktop users also have the option to add the tool to a custom toolbox manually in ArcCatalog, ArcMap, or ArcGlobe. Right-click a custom toolbox, choose Add, click Tool, expand the AreaCalculation function factory, select the Calculate Area tool, and click OK. The tool is added to the custom toolbox.</step>
       </how_to_use_steps>
     </how_to_use>
   </how_to_use_section>

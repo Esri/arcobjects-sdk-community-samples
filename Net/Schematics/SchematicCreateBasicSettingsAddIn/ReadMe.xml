@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" productVersion="12.0.0" solutionVersion="9.4.0.896" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" language="en-us" productVersion="12.0.0" solutionVersion="9.4.0.896" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2008-08-20T22:42:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
 	<title>Utility wizard for basic schematic datasets configuration</title>
 	<purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample, developed as an add-in ArcCatalog extension, is a Utility wizard that can be used to create a schematic dataset in a geodatabase with basic settings on a diagram template that uses geometric network data as the input for generating schematic diagrams. It greatly simplifies the schematic dataset's primary configuration steps for simple cases. It allows the following:</div>
 <ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml">
@@ -9,13 +9,13 @@
 <li>Creation of specific schematic attributes associated with fields in the geometric network feature classes (optional).</li></ul></purpose>
 	<development_license>
 		<license>
-			<name>ArcGIS for Desktop Advanced</name>
+			<name>ArcGIS Desktop Advanced</name>
 			<extension>Schematics</extension>
 		</license>
 	</development_license>
 	<deployment_license>
 		<license>
-			<name>ArcGIS for Desktop Advanced</name>
+			<name>ArcGIS Desktop Advanced</name>
 			<extension>Schematics</extension>
 		</license>
 	</deployment_license>

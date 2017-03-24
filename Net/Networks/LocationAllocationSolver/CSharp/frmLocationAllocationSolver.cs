@@ -56,7 +56,7 @@ namespace LocationAllocationSolver
 		private void Initialize()
 		{
 			// Open Geodatabase and network dataset
-			IFeatureWorkspace featureWorkspace = OpenWorkspace(Application.StartupPath + @"\..\..\..\..\..\Data\SanFrancisco\SanFrancisco.gdb") as IFeatureWorkspace;
+			IFeatureWorkspace featureWorkspace = OpenWorkspace(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"ArcGIS\data\SanFrancisco\SanFrancisco.gdb")) as IFeatureWorkspace;
 			INetworkDataset networkDataset = OpenNetworkDataset(featureWorkspace as IWorkspace, "Transportation", "Streets_ND");
 
 			// Create NAContext and NASolver

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.706" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.706" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
   <title>Enable layer drag and drop in the TOCControl</title>
   <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to drag and drop layers in the TOCControl. The sample uses the TOCControl in conjunction with the PageLayoutControl and the controls commands. The ITOCControl2.EnableLayerDragDrop property is used to enable layer dragging and dropping. Once enabled, layers can be dragged and dropped as follows:</div>
 <ul style="MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px" type="disc" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
@@ -22,17 +22,17 @@
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>

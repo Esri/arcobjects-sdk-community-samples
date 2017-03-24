@@ -4,30 +4,30 @@
   <development_license>
     
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension/>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension/>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension/>
     </license>
   </development_license>
   <deployment_license>
     
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>Network Analyst</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>Network Analyst</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>Network Analyst</extension>
     </license>
   </deployment_license>
@@ -137,7 +137,7 @@
     <how_to_use>
       <title/>
       <how_to_use_steps>
-        <step>Open the solution file in Visual Studio.</step><step>If your SDK is not installed in "\Program Files (x86)\ArcGIS\DeveloperKit10.2", search for that string and replace all entries with the correct path.</step><step>Build the solution.</step><step>If the compilation process does not register the CustomSolver.dll into ArcGIS for Desktop, register it manually.</step>
+        <step>Open the solution file in Visual Studio.</step><step>If your SDK is not installed in "\Program Files (x86)\ArcGIS\DeveloperKit10.2", search for that string and replace all entries with the correct path.</step><step>Build the solution.</step><step>If the compilation process does not register the CustomSolver.dll into ArcGIS Desktop, register it manually.</step>
         <step>Start ArcMap.</step>
         <step>Add a network dataset to the map.</step><step>On the Network Analyst toolbar, click Network Analyst &gt; Options, and set it to show all messages.</step>
         <step>Open the Network Analyst toolbar and click Network Analyst &gt; New Connectivity.</step>

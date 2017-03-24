@@ -1,10 +1,27 @@
-##Dynamic logo
+## Dynamic logo
 
-###Purpose  
-This sample demonstrates implementation of a logo that will be shown in both standard display and dynamic display. In this sample, the ESRI logo draws in the lower-left corner of the map display.  
+  <div xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates implementation of a logo that will be shown in both standard display and dynamic display. In this sample, the ESRI logo draws in the lower-left corner of the map display.</div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio and open the solution.  
 1. Build the solution to make the DynamicLogo library. Use this command in an application with a MapControl and a ToolbarControl, such as in the MapControl Application template provided in the Visual Studio Integration.  
 1. Add the command to the ToolbarControl. The command (Show Logo) is located in the .NET Samples category.  
@@ -17,7 +34,7 @@ This sample demonstrates implementation of a logo that will be shown in both st
 
 
 
-####See Also  
+#### See Also  
 [Dynamic display](http://desktop.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [How to create a dynamic glyph from a marker symbol](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Sample: Dynamic display layer](../../../Net/GraphicsPipeline/MyDynamicLayer)  
@@ -27,12 +44,12 @@ This sample demonstrates implementation of a logo that will be shown in both st
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

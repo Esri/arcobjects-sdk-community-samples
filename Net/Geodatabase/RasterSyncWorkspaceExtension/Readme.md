@@ -1,11 +1,36 @@
-##Extending the replication synchronization process
+## Extending the replication synchronization process
 
-###Purpose  
-Developers might want to extend the core replica behavior during synchronization. The synchronization process can be extended by implementing a workspace extension that supports IWorkspaceReplicaSyncEvents. By implementing this interface in an extension, custom behavior can be executed before and after any replica synchronization process executed on a geodatabase.This sample describes the process using the example of a developer wanting to copy new raster datasets from a raster catalog during the synchronization. In this example, when synchronization is executed, the extension identifies and copies the new raster datasets from the source geodatabase to the target geodatabase.This sample is for connected synchronization where connections are made to local geodatabases.This sample can be used as a reference for developers needing to extend synchronization for any reason.  
+  <div style="MARGIN-TOP: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+    <span>Developers might want to extend the core replica behavior during synchronization. The synchronization process can be extended by implementing a workspace extension that supports IWorkspaceReplicaSyncEvents. By implementing this interface in an extension, custom behavior can be executed before and after any replica synchronization process executed on a geodatabase.</span>
+  </div>
+
+*   <span>This sample describes the process using the example of a developer wanting to copy new raster datasets from a raster catalog during the synchronization. In this example, when synchronization is executed, the extension identifies and copies the new raster datasets from the source geodatabase to the target geodatabase.</span>
+
+*   <span>This sample is for connected synchronization where connections are made to local geodatabases.</span>
+
+*   <span>This sample can be used as a reference for developers needing to extend synchronization for any reason.</span>  
 
 
-###Usage
-####Preparing the data  
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Geodatabase
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### Preparing the data  
 1. This sample requires that the raster catalog has a long integer column named "gen." If the replica has been created and has that column, proceed with Step 7 in this section.   
 1. Open the parent raster catalog to be synchronized in ArcMap.  
 1. Add the gen column to the raster catalog using the Add Field option in the attribute table.  
@@ -15,7 +40,7 @@ Developers might want to extend the core replica behavior during synchronization
 1. Once the replica exists, make sure that the raster catalog exists in the parent and the child replica geodatabases, and that each has a long integer column named gen.  
 1. If there are common raster datasets, set the value in the gen column to 0 for the common datasets in the parent and child replica geodatabases.  
 
-####Building the extension  
+#### Building the extension  
 1. Once the data is prepared, build the extension and register it with the replica geodatabases by completing the following steps.  
 1. Copy the solution locally and open the solution.  
 1. Open the RasterSyncWorkspaceExtension.cs (if working in C#) or RasterSyncWorkspaceExtension.vb (if working in VB .NET) source file.  
@@ -23,7 +48,7 @@ Developers might want to extend the core replica behavior during synchronization
 1. The other variable is the replica variable (a private constant string, currently set to "myreplicaras"), which is the name of the replica whose synchronization event triggers this behavior. By changing this value before building the assembly, the replica with extended behavior can be changed.  
 1. Right-click the project and choose build. This creates the assembly in the project's debug or release directory (depending on the selected option).  
 
-####Applying the extension to one or more geodatabases  
+#### Applying the extension to one or more geodatabases  
 1. Which geodatabase or geodatabases require the workspace extension depends on the type of replica being used. For one-way parent-to-child replication, both geodatabases involved with the replica requires the extension. For two-way replication, both geodatabases involved with the replica requires the extension. The RasterSynchExtensionReg* project compiles to an executable that registers the workspace extension with a geodatabase.  
 1. Right-click the RasterSyncExtensionReg* project and choose Set as StartUp Project.  
 1. Open RegisterExtension.cs.  
@@ -33,7 +58,7 @@ Developers might want to extend the core replica behavior during synchronization
 1. Press F5 to run the project.  
 1. Steps 2-7 in this section registers the extension with one of the replica geodatabases. If two-way replication is being used, repeat these steps for the other replica geodatabase. Once this is completed, synchronizing the replica identified in the previous steps executes the extension.  
 
-####Using the extension  
+#### Using the extension  
 1. Synchronizing the replica associated with the extension using the wizards, or the geoprocessing tools in ArcCatalog or ArcMap, triggers the extension's behavior. To test this, assuming that a two-way replica is being used, complete the following steps.  
 1. Load one or more new raster datasets into the raster catalog in the parent geodatabase. When this is done, the gen column has a null value for the new raster datasets.  
 1. In the same way, load one or more new raster datasets into the raster catalog in the child.  
@@ -46,21 +71,21 @@ Developers might want to extend the core replica behavior during synchronization
 
 
 
-####Additional information  
+#### Additional information  
 <div style="FONT-WEIGHT: normal" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The main goal of the sample is to show how to extend replica synchronization. There are a number of enhancements that can be added to support your specific requirements. Some of these include the following:</div>  
 
 
-####See Also  
+#### See Also  
 [How to create a replica in a connected environment](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20replica%20in%20a%20connected%20environment&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 | Engine Developer Kit | Engine: Geodatabase Update |  
 
 

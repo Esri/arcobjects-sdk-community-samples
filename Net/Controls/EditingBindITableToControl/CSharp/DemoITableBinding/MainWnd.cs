@@ -73,9 +73,9 @@ namespace DemoITableBinding
     {
       // Get workspace and open mdb file
       IWorkspaceFactory2 wkspcFactory = (IWorkspaceFactory2)new FileGDBWorkspaceFactoryClass();
-      IFeatureWorkspace wkspc = wkspcFactory.OpenFromFile(
-      @"..\..\..\..\..\..\data\SanFrancisco\SanFrancisco.gdb",
-      Handle.ToInt32()) as IFeatureWorkspace;
+            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        filePath = System.IO.Path.Combine(filePath, @"ArcGIS\data\SanFrancisco\SanFrancisco.gdb");
+      IFeatureWorkspace wkspc = wkspcFactory.OpenFromFile(filePath, Handle.ToInt32()) as IFeatureWorkspace;
 
       //open the Geodatabase table
       ITable foundITable = wkspc.OpenFeatureClass("Parks") as ITable;

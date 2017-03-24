@@ -9,29 +9,29 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The same concepts can be used to create and consume these evaluators in an ArcGIS Engine environment. </div></purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>Network Analyst</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>Network Analyst</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>Network Analyst</extension>
     </license>
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>Network Analyst</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>Network Analyst</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>Network Analyst</extension>
     </license>
   </deployment_license>
@@ -164,7 +164,7 @@
     <how_to_use>
       <title>Editing the network dataset to use subset network evaluators in ArcCatalog</title>
       <how_to_use_steps>
-        <step>Start ArcCatalog using an ArcGIS for Desktop Basic or higher license and check out an ArcGIS Network Analyst extension license to enable network dataset schema updates.</step>
+        <step>Start ArcCatalog using an ArcGIS Desktop Basic or higher license and check out an ArcGIS Network Analyst extension license to enable network dataset schema updates.</step>
         <step>Right-click the Streets_ND network dataset in the SanFrancisco.gdb/Transportation dataset in the SanFrancisco folder, and choose Add Subset Attributes to add new attributes that have parameters and are assigned the new custom evaluators (this can also be done manually by using the property page).</step>
         <step>If you decide to uninstall these sample subset evaluators, choose Remove Subset Attributes on any network dataset that has added them. Otherwise, the network dataset will not open because it cannot instantiate these custom evaluators. Alternatively, you can manually remove or edit any attributes that use these evaluators using the property page.</step>
       </how_to_use_steps>

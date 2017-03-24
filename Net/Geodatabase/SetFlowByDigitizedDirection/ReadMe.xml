@@ -3,24 +3,24 @@
   <purpose>The Set Flow by Digitized Direction sample is an ArcMap add-in that shows how to create a custom flow direction solver button for utility networks. This button sets the flow direction for each edge feature in the network along the direction in which the feature was digitized.<br xmlns="http://www.w3.org/1999/xhtml" /></purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>

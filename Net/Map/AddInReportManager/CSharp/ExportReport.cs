@@ -50,8 +50,14 @@ namespace CustomReport_CS
         {
             // store the templates information
             reports = new Dictionary<Int32,String>();
-            m_FileLocation = CustomReport_CS.Properties.Settings.Default.DataLocation;
-            String[] filePaths = Directory.GetFiles(m_FileLocation, "*.rlf");
+            m_FileLocation = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            m_FileLocation = Path.Combine(m_FileLocation, @"ArcGIS\data\California\Report Templates");
+            if (!System.IO.File.Exists(m_FileLocation))
+                throw new Exception(String.Format("Fix code to point to your sample data: {0} was not found",
+                    m_FileLocation));
+
+
+           String[] filePaths = Directory.GetFiles(m_FileLocation, " *.rlf");
             XmlDocument doc = new XmlDocument();
             try
             {

@@ -190,8 +190,8 @@ Public NotInheritable Class GxPyObjectVBNET
 
     Private ReadOnly Property InternalObjectName() As IName Implements IGxObject.InternalObjectName
         Get
-            Dim fileName As IFileName = New FileName
-            fileName.Path = m_names(0)
+            Dim fileName As IFileName = CType(New FileName, IFileName)
+      fileName.Path = m_names(0)
 
             Return CType(fileName, IName)
         End Get

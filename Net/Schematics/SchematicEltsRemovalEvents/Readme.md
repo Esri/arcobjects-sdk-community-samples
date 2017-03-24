@@ -1,10 +1,29 @@
-##Customizing schematic feature removal events
+## Customizing schematic feature removal events
 
-###Purpose  
-This sample shows how to customize the BeforeRemoveFeature predefined schematic event used to manage the removal of schematic features contained in schematic diagrams. By default, when the Remove Schematic Features command is clicked, schematic features are graphically removed without being removed from the database. In this sample, the BeforeRemoveFeature predefined event is customized so the related record in the database is definitively removed.  
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to customize the BeforeRemoveFeature predefined schematic event used to manage the removal of schematic features contained in schematic diagrams. By default, when the Remove Schematic Features command is clicked, schematic features are graphically removed without being removed from the database.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">In this sample, the BeforeRemoveFeature predefined event is customized so the related record in the database is definitively removed.</div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Schematics
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio, open the solution file, and build the project.  
 1. Navigate to <ArcGIS DeveloperKit install location>\Samples\data\Schematics, and copy the SampleRemoval.gdb geodatabase in a folder for which you have full rights.  
 1. Start ArcMap and open a new empty map.  
@@ -30,17 +49,17 @@ This sample shows how to customize the BeforeRemoveFeature predefined schematic 
 
 
 
-####See Also  
+#### See Also  
 [BeforeRemoveFeature Schematic event](http://desktop.arcgis.com/search/?q=BeforeRemoveFeature%20Schematic%20event&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Schematics | ArcGIS for Desktop Basic: Schematics |  
-| ArcGIS for Desktop Standard: Schematics | ArcGIS for Desktop Standard: Schematics |  
-| ArcGIS for Desktop Advanced: Schematics | ArcGIS for Desktop Advanced: Schematics |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Schematics | ArcGIS Desktop Basic: Schematics |  
+| ArcGIS Desktop Standard: Schematics | ArcGIS Desktop Standard: Schematics |  
+| ArcGIS Desktop Advanced: Schematics | ArcGIS Desktop Advanced: Schematics |  
 
 

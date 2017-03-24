@@ -292,13 +292,9 @@ namespace DynamicObjectTracking
     {
       try
       {
-        //get the ArcGIS install path from the registry
-        string runtimeVersion = RuntimeManager.ActiveRuntime.Version;
-        RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\ESRI\ArcObjectsSDK" + runtimeVersion);
-        string path = Convert.ToString(key.GetValue("InstallDir"));
-
+        string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         //get navigationData.xml file from DeveloperKit
-        m_navigationDataFileName = System.IO.Path.Combine(path, @"Samples\data\USAMajorHighways\NavigationData.xml");
+        m_navigationDataFileName = System.IO.Path.Combine(path, @"ArcGIS\data\USAMajorHighways\NavigationData.xml");
         if (!System.IO.File.Exists(m_navigationDataFileName))
         {
           throw new Exception("File " + m_navigationDataFileName + " cannot be found!");

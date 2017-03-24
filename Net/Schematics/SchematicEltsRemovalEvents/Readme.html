@@ -18,48 +18,59 @@
   </style>
 </head>
 <body>
-  <h2>Customizing schematic feature removal events</h2>
+  ## Customizing schematic feature removal events
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to customize the BeforeRemoveFeature predefined schematic event used to manage the removal of schematic features contained in schematic diagrams. By default, when the Remove Schematic Features command is clicked, schematic features are graphically removed without being removed from the database.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">In this sample, the BeforeRemoveFeature predefined event is customized so the related record in the database is definitively removed.</div>  
 
-<p>This sample shows how to customize the BeforeRemoveFeature predefined schematic event used to manage the removal of schematic features contained in schematic diagrams. By default, when the Remove Schematic Features command is clicked, schematic features are graphically removed without being removed from the database. In this sample, the BeforeRemoveFeature predefined event is customized so the related record in the database is definitively removed.  </p>
+```
+Language:              C#, VB
+Subject:               Schematics
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Start Visual Studio, open the solution file, and build the project.  </li>
-<li>Navigate to <ArcGIS DeveloperKit install location>\Samples\data\Schematics, and copy the SampleRemoval.gdb geodatabase in a folder for which you have full rights.  </li>
-<li>Start ArcMap and open a new empty map.  </li>
-<li>Click Customize and click Extension.  </li>
-<li>Confirm that neither the Schematic Features Removal Events (C#) nor the Schematic Feature Removal Events (VBNet) extension is checked and close the Extensions dialog box.  </li>
-<li>Open the Substation 08 schematic diagram contained in the SampleRemoval_Schematic schematic dataset in the SampleRemoval.gdb geodatabase you copied at step#2.  </li>
-<li>Start an edit session on this schematic diagram.  </li>
-<li>Select a set of schematic features in this diagram.  </li>
-<li>Click Remove Schematic Features. The selected schematic features are graphically removed, but they are kept in the schematic feature classes.  </li>
-<li>Close the edit session on the Substation 08 schematic diagram, and click Yes on the prompt message for saving.  </li>
-<li>Click Update Diagram. The Update Diagram dialog box opens.  </li>
-<li>Check the Synchronize against original selection/trace/query option and uncheck the Persist manually removed, reduced, or reconnected features option.  </li>
-<li>Click OK. The diagram is updated and the schematic features removed in step 8 are restored and reappear in the diagram after updating.   </li>
-<li>Click Customize and click Extension.  </li>
-<li>Check the Schematic Features Removal Events (C#) or Schematic Feature Removal Events (VBNet) extension option and close the Extensions dialog box.  </li>
-<li>Start an edit session on the Substation 08 schematic diagram.  </li>
-<li>Select a set of schematic features in this diagram.  </li>
-<li>Click Remove Schematic Features. The selected schematic features are graphically removed, but the associated records on the Inside<em>Nodes or Inside</em>Links tables from which they were queried (upon diagram generation) are also definitively removed. Updating the diagram will never restore the removed schematic features in the diagram regardless of the Persist manually removed, reduced, or reconnected features option that is used. They are no longer queried from the Inside<em>Nodes or Inside</em>Links tables because the related records have been removed.  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<h4>See Also</h4>
+### Usage
+1. Start Visual Studio, open the solution file, and build the project.  
+1. Navigate to <ArcGIS DeveloperKit install location>\Samples\data\Schematics, and copy the SampleRemoval.gdb geodatabase in a folder for which you have full rights.  
+1. Start ArcMap and open a new empty map.  
+1. Click Customize and click Extension.  
+1. Confirm that neither the Schematic Features Removal Events (C#) nor the Schematic Feature Removal Events (VBNet) extension is checked and close the Extensions dialog box.  
+1. Open the Substation 08 schematic diagram contained in the SampleRemoval_Schematic schematic dataset in the SampleRemoval.gdb geodatabase you copied at step#2.  
+1. Start an edit session on this schematic diagram.  
+1. Select a set of schematic features in this diagram.  
+1. Click Remove Schematic Features. The selected schematic features are graphically removed, but they are kept in the schematic feature classes.  
+1. Close the edit session on the Substation 08 schematic diagram, and click Yes on the prompt message for saving.  
+1. Click Update Diagram. The Update Diagram dialog box opens.  
+1. Check the Synchronize against original selection/trace/query option and uncheck the Persist manually removed, reduced, or reconnected features option.  
+1. Click OK. The diagram is updated and the schematic features removed in step 8 are restored and reappear in the diagram after updating.   
+1. Click Customize and click Extension.  
+1. Check the Schematic Features Removal Events (C#) or Schematic Feature Removal Events (VBNet) extension option and close the Extensions dialog box.  
+1. Start an edit session on the Substation 08 schematic diagram.  
+1. Select a set of schematic features in this diagram.  
+1. Click Remove Schematic Features. The selected schematic features are graphically removed, but the associated records on the Inside_Nodes or Inside_Links tables from which they were queried (upon diagram generation) are also definitively removed. Updating the diagram will never restore the removed schematic features in the diagram regardless of the Persist manually removed, reduced, or reconnected features option that is used. They are no longer queried from the Inside_Nodes or Inside_Links tables because the related records have been removed.  
 
-<p><a href="http://desktop.arcgis.com/search/?q=BeforeRemoveFeature%20Schematic%20event&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">BeforeRemoveFeature Schematic event</a>  </p>
+#### See Also  
+[BeforeRemoveFeature Schematic event](http://desktop.arcgis.com/search/?q=BeforeRemoveFeature%20Schematic%20event&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
-<hr />
+---------------------------------
 
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic: Schematics </td><td> ArcGIS for Desktop Basic: Schematics </td></tr>  
-<tr><td> ArcGIS for Desktop Standard: Schematics </td><td> ArcGIS for Desktop Standard: Schematics </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced: Schematics </td><td> ArcGIS for Desktop Advanced: Schematics </td></tr>  
+<tr><td> ArcGIS Desktop Basic: Schematics </td><td> ArcGIS Desktop Basic: Schematics </td></tr>  
+<tr><td> ArcGIS Desktop Standard: Schematics </td><td> ArcGIS Desktop Standard: Schematics </td></tr>  
+<tr><td> ArcGIS Desktop Advanced: Schematics </td><td> ArcGIS Desktop Advanced: Schematics </td></tr>  
 </table>
-
 </body>
 </html>

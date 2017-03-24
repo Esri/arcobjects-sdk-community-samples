@@ -18,44 +18,57 @@
   </style>
 </head>
 <body>
-  <h2>RSS weather layer</h2>
+  ## RSS weather layer
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample illustrates a real-life scenario for creating a new layer to consume a Web service and display the information in a map. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows implementation of the following:</div>
 
-<p>This sample illustrates a real-life scenario for creating a new layer to consume a Web service and display the information in a map.  This sample shows implementation of the following:Simple editing capabilitiesSelection by attribute and locationPersistenceIdentify  </p>
+*   Simple editing capabilities
+*   Selection by attribute and location
+*   Persistence
+*   Identify  
 
-<h3>Usage</h3>
+```
+Language:              C#, VB
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<ol>
-<li>Start Visual Studio, open the solution file, and build the project.  </li>
-<li>Open a MapControl application or ArcMap.  </li>
-<li>From the toolbars list, select the RSS Weather layer toolbar to add to the application.  </li>
-<li>Click Load Layer to connect to the RSS weather service.  </li>
-</ol>
+### Resources
 
-<h4>Additional information</h4>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
+### Usage
+1. Start Visual Studio, open the solution file, and build the project.  
+1. Open a MapControl application or ArcMap.  
+1. From the toolbars list, select the RSS Weather layer toolbar to add to the application.  
+1. Click Load Layer to connect to the RSS weather service.  
+
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">To use the layer without using the existing AddRSSWeatherLayer command, you will have to manage the refreshes of the layer. You can do that by listening to the OnWeatherItemAdded and OnWeatherItemsUpdated events or by using a timer to refresh the layer.</div>  
-
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
-
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The following items are covered in this sample:</div>  
 
-<h4>See Also</h4>
+#### See Also  
+[Writing multithreaded ArcObjects code](http://desktop.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to wire ArcObjects .NET events](http://desktop.arcgis.com/search/?q=How%20to%20wire%20ArcObjects%20.NET%20events&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
-<p><a href="http://desktop.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Writing multithreaded ArcObjects code</a><br />
-<a href="http://desktop.arcgis.com/search/?q=How%20to%20wire%20ArcObjects%20.NET%20events&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to wire ArcObjects .NET events</a>  </p>
+---------------------------------
 
-<hr />
-
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
 <tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
-<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td> ArcGIS Desktop Standard </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td> ArcGIS Desktop Advanced </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

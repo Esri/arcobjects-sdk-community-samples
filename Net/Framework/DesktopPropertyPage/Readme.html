@@ -18,48 +18,56 @@
   </style>
 </head>
 <body>
-  <h2>Layer property page and property sheet</h2>
+  ## Layer property page and property sheet
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">A property sheet is a dialog box that contains one or many property pages. Each property page on the property sheet contains controls to view and allow users to interact with objects by changing the values of their properties without writing code. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to implement and register a custom layer property page (LayerVisibilityPage class) for ArcGIS Desktop in .NET. This property page toggles visibility of the target layer. It also includes a custom command (SimpleLayerPropertiesCmd class) showing how to display a property sheet with a selective number of property pages. </div>  
 
-<p>A property sheet is a dialog box that contains one or many property pages. Each property page on the property sheet contains controls to view and allow users to interact with objects by changing the values of their properties without writing code.  This sample shows how to implement and register a custom layer property page (LayerVisibilityPage class) for ArcGIS for Desktop in .NET. This property page toggles visibility of the target layer. It also includes a custom command (SimpleLayerPropertiesCmd class) showing how to display a property sheet with a selective number of property pages.   </p>
+```
+Language:              C#, VB
+Subject:               Framework
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<h4>Implement and register a custom layer property page</h4>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<ol>
-<li>Open and compile the sample project in Visual Studio. Set up a debug application if needed.  </li>
-<li>Open ArcMap, ArcScene, or ArcGlobe. The custom layer property page works in all of these applications since it is registered in the appropriate layer property page component categories.  </li>
-<li>Add a layer to the application.  </li>
-<li>Display the layer context menu by right-clicking the layer and selecting Properties. The Properties dialog box appears.  </li>
-<li>Activate the custom property page by clicking the Layer Visibility (C#) or Layer Visibility (VB.NET) tab.  </li>
-<li>The visibility is controlled by two radio buttons on the page. Toggle visibility to enable the Apply button in the dialog box.   </li>
-<li>Click the Apply or OK button to commit the change. The TOC and display are refreshed to reflect the change you made with the custom property page.  </li>
-<li>Close the Properties dialog box.  </li>
-</ol>
+### Usage
+#### Implement and register a custom layer property page   
+1. Open and compile the sample project in Visual Studio. Set up a debug application if needed.  
+1. Open ArcMap, ArcScene, or ArcGlobe. The custom layer property page works in all of these applications since it is registered in the appropriate layer property page component categories.  
+1. Add a layer to the application.  
+1. Display the layer context menu by right-clicking the layer and selecting Properties. The Properties dialog box appears.  
+1. Activate the custom property page by clicking the Layer Visibility (C#) or Layer Visibility (VB.NET) tab.  
+1. The visibility is controlled by two radio buttons on the page. Toggle visibility to enable the Apply button in the dialog box.   
+1. Click the Apply or OK button to commit the change. The TOC and display are refreshed to reflect the change you made with the custom property page.  
+1. Close the Properties dialog box.  
 
-<h4>Add the custom command (SimpleLayerPropertiesCmd) that displays the simplified layer property sheet</h4>
+#### Add the custom command (SimpleLayerPropertiesCmd) that displays the simplified layer property sheet  
+1. Click the Customize menu, and click Customize Mode. The Customize dialog box appears.   
+1. Click the Toolbars tab and select Context Menus.  
+1. Expand and scroll down to Feature Layer Context Menu, and click to expand the menu.  
+1. Click the Commands tab, and drag and drop the Simple Layer Properties (C#) or Simple Layer Properties (VB.NET) command from the .NET Samples category onto the Feature Layer Context Menu.   
+1. Close the dialog box.  
+1. Click the Simple Layer Properties command you just added. The layer context menu displays. The simplified Properties dialog box only shows the Layer Visibility and Symbology pages.  
+1. If necessary, clean up to remove the custom command by resetting the Feature Layer Context Menu in the Customize dialog box.  
 
-<ol>
-<li>Click the Customize menu, and click Customize Mode. The Customize dialog box appears.   </li>
-<li>Click the Toolbars tab and select Context Menus.  </li>
-<li>Expand and scroll down to Feature Layer Context Menu, and click to expand the menu.  </li>
-<li>Click the Commands tab, and drag and drop the Simple Layer Properties (C#) or Simple Layer Properties (VB.NET) command from the .NET Samples category onto the Feature Layer Context Menu.   </li>
-<li>Close the dialog box.  </li>
-<li>Click the Simple Layer Properties command you just added. The layer context menu displays. The simplified Properties dialog box only shows the Layer Visibility and Symbology pages.  </li>
-<li>If necessary, clean up to remove the custom command by resetting the Feature Layer Context Menu in the Customize dialog box.  </li>
-</ol>
+---------------------------------
 
-<hr />
-
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td> ArcGIS Desktop Standard </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td> ArcGIS Desktop Advanced </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

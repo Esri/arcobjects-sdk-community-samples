@@ -109,7 +109,8 @@ Public Class EditingForm
     'add some sample line data to the map
     Dim workspaceFactory As IWorkspaceFactory = New AccessWorkspaceFactoryClass()
     'relative file path to the sample data from EXE location
-        Dim filePath As String = "..\..\..\data\StreamflowDateTime\Streamflow.mdb"
+    Dim filePath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+    filePath = System.IO.Path.Combine (filePath, "ArcGIS\data\StreamflowDateTime\Streamflow.mdb")
     
     Dim workspace As IFeatureWorkspace = CType(workspaceFactory.OpenFromFile(filePath, AxMapControl1.hWnd), IFeatureWorkspace)
 

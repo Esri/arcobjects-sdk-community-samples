@@ -7,14 +7,14 @@
 <div xmlns="http://www.w3.org/1999/xhtml">Note: To be able to serialize a function to and from an XML file, you need to update the XmlSupport.dat file, which is described in this sample topic.</div></purpose>
 	<development_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license><license>
 									<name>Engine Developer Kit</name>
@@ -22,14 +22,14 @@
 								</license></development_license>
 	<deployment_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license><license>
 									<name>Engine</name>

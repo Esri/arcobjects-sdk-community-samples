@@ -54,7 +54,8 @@ namespace EditingUsingCustomForm
             m_mapControl = (IMapControl3) axMapControl1.Object;
 
             //relative file path to the sample data from EXE location
-            string filePath = @"..\..\..\data\USAMajorHighways";
+            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            filePath = System.IO.Path.Combine(filePath, @"ArcGIS\data\USAMajorHighways");
  
             //Add Lakes layer
             IWorkspaceFactory workspaceFactory = new ShapefileWorkspaceFactoryClass();

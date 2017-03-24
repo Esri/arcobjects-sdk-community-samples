@@ -18,36 +18,48 @@
   </style>
 </head>
 <body>
-  <h2>ArcReaderGlobeControl document properties</h2>
+  ## ArcReaderGlobeControl document properties
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to use the IARGlobeControl.ShowARGlobeWindow method to display the FileProperties modal window when the Browse dialog box is used to select a document to load into the control. The DataFrame and Layer properties modal windows are displayed by right-clicking the globe or a layer in the table of contents (TOC) to display the context menu and selecting Properties. The IARGlobeControl.TOCVisible property is used to toggle the visibility of the TOC if the loaded document was published with permission to do so. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">When the TOC is invisible, the DataFrame and Layer properties cannot be displayed manually. Instead, the IARGlobeControl.ARGlobe property is used to obtain pertinent information about the globe; for example, its Description, DistanceUnits, Name, and SpatialReferenceName properties. The IARGlobe.ARLayer property is used to iterate each layer in the globe and obtain its Description, Name, MaximumScale, and MinimumScale properties. These properties are concatenated into a string, which is displayed in a RichTextBox. </div>  
 
-<p>This sample demonstrates how to use the IARGlobeControl.ShowARGlobeWindow method to display the FileProperties modal window when the Browse dialog box is used to select a document to load into the control. The DataFrame and Layer properties modal windows are displayed by right-clicking the globe or a layer in the table of contents (TOC) to display the context menu and selecting Properties. The IARGlobeControl.TOCVisible property is used to toggle the visibility of the TOC if the loaded document was published with permission to do so.  When the TOC is invisible, the DataFrame and Layer properties cannot be displayed manually. Instead, the IARGlobeControl.ARGlobe property is used to obtain pertinent information about the globe; for example, its Description, DistanceUnits, Name, and SpatialReferenceName properties. The IARGlobe.ARLayer property is used to iterate each layer in the globe and obtain its Description, Name, MaximumScale, and MinimumScale properties. These properties are concatenated into a string, which is displayed in a RichTextBox.   </p>
+```
+Language:              C#, VB
+Subject:               Publisher
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Start Visual Studio, open the solution file, and build the project.   </li>
-<li>Run the application.   </li>
-<li>Browse to a Published Map File (PMF) from ArcGlobe to load.   </li>
-<li>Display the file properties.  </li>
-<li>Right-click the globe in the TOC to display the data frame properties.   </li>
-<li>Right-click a layer in the TOC to display the layer properties.   </li>
-<li>Hide the TOC.   </li>
-<li>Display the globe and layer properties.   </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<hr />
+### Usage
+1. Start Visual Studio, open the solution file, and build the project.   
+1. Run the application.   
+1. Browse to a Published Map File (PMF) from ArcGlobe to load.   
+1. Display the file properties.  
+1. Right-click the globe in the TOC to display the data frame properties.   
+1. Right-click a layer in the TOC to display the layer properties.   
+1. Hide the TOC.   
+1. Display the globe and layer properties.   
 
-<h4>Licensing</h4>
+---------------------------------
 
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic: Publisher </td><td> ArcReader </td></tr>  
-<tr><td> ArcGIS for Desktop Standard: Publisher </td><td> Engine </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced: Publisher </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic: Publisher </td><td> ArcReader </td></tr>  
+<tr><td> ArcGIS Desktop Standard: Publisher </td><td> Engine </td></tr>  
+<tr><td> ArcGIS Desktop Advanced: Publisher </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

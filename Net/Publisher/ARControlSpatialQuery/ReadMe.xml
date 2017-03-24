@@ -1,19 +1,19 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.673" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" productVersion="12.0.0" solutionVersion="9.4.0.673" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
   <title>ArcReaderGlobeControl document properties</title>
   <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to use the IARGlobeControl.ShowARGlobeWindow method to display the FileProperties modal window when the Browse dialog box is used to select a document to load into the control. The DataFrame and Layer properties modal windows are displayed by right-clicking the globe or a layer in the table of contents (TOC) to display the context menu and selecting Properties. The IARGlobeControl.TOCVisible property is used to toggle the visibility of the TOC if the loaded document was published with permission to do so. </div>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">When the TOC is invisible, the DataFrame and Layer properties cannot be displayed manually. Instead, the IARGlobeControl.ARGlobe property is used to obtain pertinent information about the globe; for example, its Description, DistanceUnits, Name, and SpatialReferenceName properties. The IARGlobe.ARLayer property is used to iterate each layer in the globe and obtain its Description, Name, MaximumScale, and MinimumScale properties. These properties are concatenated into a string, which is displayed in a RichTextBox. </div></purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>Publisher</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>Publisher</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>Publisher</extension>
     </license>
   </development_license>
@@ -27,13 +27,13 @@
 									<name>Engine</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Basic</name>
+									<name>ArcGIS Desktop Basic</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license></deployment_license>
   <min_version>10.0</min_version>

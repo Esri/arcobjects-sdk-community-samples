@@ -214,7 +214,7 @@ Shared Sub Main()
 
         Dim sFilePath As String
         'Find sample data by navigating two folders up
-        sFilePath = "..\..\..\Data\World\Continents.lyr"
+        sFilePath = System.IO.Path.Combine (Environment.SpecialFolder.MyDocuments, "ArcGIS\data\World\Continents.lyr")
 
         'Add sample 'country' shapefile data
         AxMapControl1.AddLayerFromFile(sFilePath)

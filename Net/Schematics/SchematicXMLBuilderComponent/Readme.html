@@ -18,72 +18,71 @@
   </style>
 </head>
 <body>
-  <h2>Implementing an XML builder external component</h2>
+  ## Implementing an XML builder external component
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates the implementation of ISchematicXmlGenerate and ISchematicXmlUpdate to automatically create the input Extensible Markup Language (XML) data to generate and update diagrams based on the XML builder. The creation of the input XML data is based on the features in the GISForXMLSample geodatabase. This component can be used to generate and update XML builder diagrams from features contained in this geodatabase when they are currently selected on a map document. </div>  
 
-<p>This sample demonstrates the implementation of ISchematicXmlGenerate and ISchematicXmlUpdate to automatically create the input Extensible Markup Language (XML) data to generate and update diagrams based on the XML builder. The creation of the input XML data is based on the features in the GISForXMLSample geodatabase. This component can be used to generate and update XML builder diagrams from features contained in this geodatabase when they are currently selected on a map document.   </p>
+```
+Language:              C#, VB
+Subject:               Schematics
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<h4>Building the component</h4>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<ol>
-<li>Start Visual Studio, open the solution file, and build the component.  </li>
-</ol>
+### Usage
+#### Building the component  
+1. Start Visual Studio, open the solution file, and build the component.  
 
-<h4>Copying the sample database in a working folder</h4>
+#### Copying the sample database in a working folder  
+1. Navigate to <ArcGIS DeveloperKit install location>\Samples\data\Schematics  
+1. Copy both the GISForXMLSample.gdb geodatabase and the GISForXMLSample.mxd file in a folder for which you have full rights.  
 
-<ol>
-<li>Navigate to <ArcGIS DeveloperKit install location>\Samples\data\Schematics  </li>
-<li>Copy both the GISForXMLSample.gdb geodatabase and the GISForXMLSample.mxd file in a folder for which you have full rights.  </li>
-</ol>
+#### Configuring the schematic dataset  
+1. Start ArcCatalog.  
+1. Browse to the GISForXMLSample geodatabase you have just copied.  
+1. Right-click the GISForXMLSample_Schematic schematic dataset contained in this geodatabase and click Edit. The Schematic Dataset Editor opens.  
+1. Click the XMLDiagrams diagram template in the Dataset Editor tree.  
+1. On the Properties tab on the right, click the Schematic Builder Properties button. The Schematic Builder Properties dialog box opens.  
+1. Type MyExtXMLComponentCS.XMLDocImpl or MyExtXMLComponentVB.XMLDocImpl (depending on the language you're using) in the Generate and Update fields.  
+1. Check the Initialize link vertices and Automatic schematic feature class creation options.  
+1. Click OK.  
+1. Click Save and exit the Schematic Dataset Editor.  
 
-<h4>Configuring the schematic dataset</h4>
+#### Testing the XML builder diagram generate and update functions  
+1. Start ArcMap and open the GISForXMLSample.mxd file from your working folder. This .mxd file references the ElectricDataset feature dataset stored in the copied GISForXMLSample geodatabase.  
+1. Start the Schematics extension.  
+1. In ArcMap, click Customize, click Toolbars, and choose the Schematic, Schematic Editor, and Schematic Network Analyst toolbars.  
+1. Click the Select Features tool on the Tools toolbar and select a set of features on the active data frame.  
+1. Click Generate New Schematic Diagram on the Schematic toolbar. The New Schematic Diagram dialog box opens.  
+1. Ensure that the GISForXMLSample_Schematic schematic dataset is selected on the Schematic Dataset or Schematic Folder drop-down list and that the XMLDiagrams diagram template is selected on the Schematic Diagram Template drop-down list.  
+1. Type a name for the diagram in the Schematic Diagram Name field, for example, XMLDiagramFromSelection1.  
+1. Click OK. The XMLDiagramFromSelection1 diagram, based on the selected set of features, is generated and opens in a new data frame.  
+1. Activate the Layers data frame containing the ElectricDataset features and select a new set of features.  
+1. Click Schematic on the Schematic toolbar and click Update Diagram. The Update Diagram dialog box opens.  
+1. Click OK. The active diagram is updated according to the features currently selected on the map.  
+1. Select the Propagate Map Selection to Schematic command to confirm that the schematic features contained in the active diagram are correctly associated with the features from which they were created.  
 
-<ol>
-<li>Start ArcCatalog.  </li>
-<li>Browse to the GISForXMLSample geodatabase you have just copied.  </li>
-<li>Right-click the GISForXMLSample_Schematic schematic dataset contained in this geodatabase and click Edit. The Schematic Dataset Editor opens.  </li>
-<li>Click the XMLDiagrams diagram template in the Dataset Editor tree.  </li>
-<li>On the Properties tab on the right, click the Schematic Builder Properties button. The Schematic Builder Properties dialog box opens.  </li>
-<li>Type MyExtXMLComponentCS.XMLDocImpl or MyExtXMLComponentVB.XMLDocImpl (depending on the language you're using) in the Generate and Update fields.  </li>
-<li>Check the Initialize link vertices and Automatic schematic feature class creation options.  </li>
-<li>Click OK.  </li>
-<li>Click Save and exit the Schematic Dataset Editor.  </li>
-</ol>
+#### See Also  
+[ISchematicXMLGenerate interface](http://desktop.arcgis.com/search/?q=ISchematicXMLGenerate%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISchematicXMLUpdate interface](http://desktop.arcgis.com/search/?q=ISchematicXMLUpdate%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
-<h4>Testing the XML builder diagram generate and update functions</h4>
+---------------------------------
 
-<ol>
-<li>Start ArcMap and open the GISForXMLSample.mxd file from your working folder. This .mxd file references the ElectricDataset feature dataset stored in the copied GISForXMLSample geodatabase.  </li>
-<li>Start the Schematics extension.  </li>
-<li>In ArcMap, click Customize, click Toolbars, and choose the Schematic, Schematic Editor, and Schematic Network Analyst toolbars.  </li>
-<li>Click the Select Features tool on the Tools toolbar and select a set of features on the active data frame.  </li>
-<li>Click Generate New Schematic Diagram on the Schematic toolbar. The New Schematic Diagram dialog box opens.  </li>
-<li>Ensure that the GISForXMLSample_Schematic schematic dataset is selected on the Schematic Dataset or Schematic Folder drop-down list and that the XMLDiagrams diagram template is selected on the Schematic Diagram Template drop-down list.  </li>
-<li>Type a name for the diagram in the Schematic Diagram Name field, for example, XMLDiagramFromSelection1.  </li>
-<li>Click OK. The XMLDiagramFromSelection1 diagram, based on the selected set of features, is generated and opens in a new data frame.  </li>
-<li>Activate the Layers data frame containing the ElectricDataset features and select a new set of features.  </li>
-<li>Click Schematic on the Schematic toolbar and click Update Diagram. The Update Diagram dialog box opens.  </li>
-<li>Click OK. The active diagram is updated according to the features currently selected on the map.  </li>
-<li>Select the Propagate Map Selection to Schematic command to confirm that the schematic features contained in the active diagram are correctly associated with the features from which they were created.  </li>
-</ol>
-
-<h4>See Also</h4>
-
-<p><a href="http://desktop.arcgis.com/search/?q=ISchematicXMLGenerate%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ISchematicXMLGenerate interface</a><br />
-<a href="http://desktop.arcgis.com/search/?q=ISchematicXMLUpdate%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ISchematicXMLUpdate interface</a>  </p>
-
-<hr />
-
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic: Schematics </td><td> ArcGIS for Desktop Basic: Schematics </td></tr>  
-<tr><td> ArcGIS for Desktop Standard: Schematics </td><td> ArcGIS for Desktop Standard: Schematics </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced: Schematics </td><td> ArcGIS for Desktop Advanced: Schematics </td></tr>  
+<tr><td> ArcGIS Desktop Basic: Schematics </td><td> ArcGIS Desktop Basic: Schematics </td></tr>  
+<tr><td> ArcGIS Desktop Standard: Schematics </td><td> ArcGIS Desktop Standard: Schematics </td></tr>  
+<tr><td> ArcGIS Desktop Advanced: Schematics </td><td> ArcGIS Desktop Advanced: Schematics </td></tr>  
 </table>
-
 </body>
 </html>

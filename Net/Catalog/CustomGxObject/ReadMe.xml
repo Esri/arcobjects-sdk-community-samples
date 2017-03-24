@@ -3,26 +3,26 @@
 	<purpose>This sample code demonstrates how to create a custom GxObject and the GxObject factory to go with it. With a custom object and factory, you can browse for the specified file types within ArcCatalog. </purpose>
 	<development_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license></development_license>
 	<deployment_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license></deployment_license>
 	<apis>

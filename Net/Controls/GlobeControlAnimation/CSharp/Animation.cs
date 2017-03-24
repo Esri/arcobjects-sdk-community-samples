@@ -20,6 +20,7 @@ using ESRI.ArcGIS.esriSystem;
 using ESRI.ArcGIS.Analyst3D;
 using ESRI.ArcGIS.GlobeCore;
 using System;
+using System.IO;
 using System.Windows.Forms;
 using System.Security.Permissions;
 using ESRI.ArcGIS;
@@ -303,12 +304,16 @@ namespace GlobeCntrlAnimation
             Application.Run(new Form1());
 		}
 
-
 		private void Form1_Load(object sender, System.EventArgs e)
 		{	
 			//check and load if the animation file is present...
-			m_AnimFilePath = @"..\..\..\..\..\Data\ArcGlobeAnimation\AnimationSample.aga";
-			if (System.IO.File.Exists(m_AnimFilePath))
+		    m_AnimFilePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            m_AnimFilePath = Path.Combine(m_AnimFilePath, @"ArcGIS\data\Globe\AnimationSample.aga");
+            var filePath = new DirectoryInfo(m_AnimFilePath);
+            System.Diagnostics.Debug.WriteLine(string.Format("File path for data root: {0} [{1}]", filePath.FullName, Directory.GetCurrentDirectory()));
+            if (!File.Exists(m_AnimFilePath)) throw new Exception(string.Format("Fix code to point to your sample data: {0} [{1}] was not found", filePath.FullName, Directory.GetCurrentDirectory()));
+
+            if (System.IO.File.Exists(m_AnimFilePath))
 			{
 				//Load the sample animation file into the animation file into the doc...
 				IGlobe globe = axGlobeControl1.Globe;
@@ -614,15 +619,6 @@ namespace GlobeCntrlAnimation
 					globeDisplay.RefreshViewers();
 				}
 			}
-		}
-
-		private string routin_ReadRegistry(string sKey) 
-		{
-			//Open the subkey for reading
-			Microsoft.Win32.RegistryKey rk = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(sKey,true);
-			if (rk == null) return ""; 
-			// Get the data from a specified item in the key.
-			return (string) rk.GetValue("InstallDir");
 		}
 
 		private void axToolbarControl1_OnItemClick(object sender, ESRI.ArcGIS.Controls.IToolbarControlEvents_OnItemClickEvent e)

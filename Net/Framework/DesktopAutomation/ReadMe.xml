@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.923" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
-  <title>Automate ArcGIS for Desktop applications</title>
-  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to automate ArcGIS for Desktop applications (ArcMap, ArcScene, and ArcGlobe) from stand-alone .NET applications. To programmatically start a new application session, you can use the new operator to create a new Document object (MxDocument, SxDocument, or GMxDocument). Once you successfully create the new Document object, a new application session is started. </div>
+  <title>Automate ArcGIS Desktop applications</title>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to automate ArcGIS Desktop applications (ArcMap, ArcScene, and ArcGlobe) from stand-alone .NET applications. To programmatically start a new application session, you can use the new operator to create a new Document object (MxDocument, SxDocument, or GMxDocument). Once you successfully create the new Document object, a new application session is started. </div>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The stand-alone application also allows you to add layers to the new session of the application. IObjectFactory is used to create the new layers inside the application's process space. In addition, it shows how to programmatically clean up and shut down the application properly, including how to handle the case when the application has been closed by the user manually (with AppROT event). </div></purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
@@ -49,21 +49,21 @@
     <files lang="CSharp">
       <file>
         <filename>Form1.cs</filename>
-        <description>Form for automation demonstration showing how to start an ArcGIS for Desktop application.</description>
+        <description>Form for automation demonstration showing how to start an ArcGIS Desktop application.</description>
         <viewable_code>true</viewable_code>
       </file>
     </files>
     <files lang="VBNet">
       <file>
         <filename>Form1.vb</filename>
-        <description>Form for automation demonstration showing how to start an ArcGIS for Desktop application.</description>
+        <description>Form for automation demonstration showing how to start an ArcGIS Desktop application.</description>
         <viewable_code>true</viewable_code>
       </file>
     </files>
   </file_section>
   <how_to_use_section>
     <how_to_use>
-      <title>Automating an ArcGIS for Desktop application</title>
+      <title>Automating an ArcGIS Desktop application</title>
       <how_to_use_steps>
         <step>Open the solution file in Visual Studio and compile the sample.</step>
         <step>Run DesktopAutomationCS.exe or DesktopAutomationVB.exe depending on the language version.</step>
@@ -90,7 +90,7 @@
   </how_to_use_section>
   <related_topics>
     <topic>
-      <topic_display>Automating ArcGIS for Desktop applications</topic_display>
+      <topic_display>Automating ArcGIS Desktop applications</topic_display>
       <topic_link>56eba175-54c1-46b4-801a-fc968e582581</topic_link>
     </topic>
   </related_topics>

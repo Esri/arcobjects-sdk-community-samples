@@ -18,33 +18,45 @@
   </style>
 </head>
 <body>
-  <h2>Buffer snap agent</h2>
+  ## Buffer snap agent
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml">
+    <span class="PropertyValue">This sample demonstrates how to create a snapping agent based on a buffer around the points of the current editable point feature class. In this sample, a snapped vertex of a feature is located no closer than 1000 map units from the point that is closest to the cursor. For electrical datasets, it is common to want to snap primary lines to the boundary of the symbol representing a pole. Use this snapping agent with an appropriate buffer distance (based on the radius of the pole symbol).</span>
+  </div>  
 
-<p>This sample demonstrates how to create a snapping agent based on a buffer around the points of the current editable point feature class. In this sample, a snapped vertex of a feature is located no closer than 1000 map units from the point that is closest to the cursor. For electrical datasets, it is common to want to snap primary lines to the boundary of the symbol representing a pole. Use this snapping agent with an appropriate buffer distance (based on the radius of the pole symbol).  </p>
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Open and build the solution to register the BufferSnap class in the ESRI Engine Snap Agents component category.  </li>
-<li>Run the solution.  </li>
-<li>Start editing.  </li>
-<li>Zoom in on some point features to a 1:30000 map scale.  </li>
-<li>Open the Snapping Environment dialog box and turn on the Buffer Snap agent.  </li>
-<li>Begin adding new features to snap to buffers (1000 map units) around the point features in the specified feature class.  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<hr />
+### Usage
+1. Open and build the solution to register the BufferSnap class in the ESRI Engine Snap Agents component category.  
+1. Run the solution.  
+1. Start editing.  
+1. Zoom in on some point features to a 1:30000 map scale.  
+1. Open the Snapping Environment dialog box and turn on the Buffer Snap agent.  
+1. Begin adding new features to snap to buffers (1000 map units) around the point features in the specified feature class.  
 
-<h4>Licensing</h4>
+---------------------------------
 
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> Engine Developer Kit </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> Engine Developer Kit </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Advanced </td></tr>  
 <tr><td>  </td><td> Engine </td></tr>  
 </table>
-
 </body>
 </html>

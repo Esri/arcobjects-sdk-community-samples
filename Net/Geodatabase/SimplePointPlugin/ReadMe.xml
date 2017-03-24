@@ -7,17 +7,17 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">For more information, see <a href="http://f4ce6eb3-606c-4aa1-a7ba-28abaa81f930">Creating a plug-in data source</a>. </div></purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
@@ -29,17 +29,17 @@
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
@@ -144,7 +144,7 @@
       </how_to_use_steps>
     </how_to_use>
     <how_to_use>
-      <title>Using simple point with ArcGIS for Desktop</title>
+      <title>Using simple point with ArcGIS Desktop</title>
       <how_to_use_steps>
         <step>Start ArcCatalog and ArcMap.</step>
         <step>In ArcCatalog, browse to the ArcGIS installation folder and locate the Developer Kit's Samples\Data\SimplePointData\ folder (you will see a Points dataset).</step>

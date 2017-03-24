@@ -87,7 +87,8 @@ namespace EditingSampleApp
             //add some sample point data to the map
             IWorkspaceFactory workspaceFactory = new FileGDBWorkspaceFactoryClass();
             //relative file path to the sample data from EXE location
-            string filePath = @"..\..\..\..\data\AirportsAndGolf\Golf.gdb";
+            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            filePath = System.IO.Path.Combine(filePath, @"ArcGIS\data\AirportsAndGolf\Golf.gdb");
           
             IFeatureWorkspace workspace = (IFeatureWorkspace)workspaceFactory.OpenFromFile(filePath, axMapControl1.hWnd);
 

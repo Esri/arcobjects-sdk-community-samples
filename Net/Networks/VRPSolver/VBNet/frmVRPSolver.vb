@@ -55,7 +55,7 @@ Partial Public Class frmVRPSolver
 
 		' Open network dataset
 		Try
-			Dim workspace As IWorkspace = OpenWorkspace(Application.StartupPath & "\..\..\..\..\..\Data\SanFrancisco\SanFrancisco.gdb")
+			Dim workspace As IWorkspace = OpenWorkspace(System.IO.Path.Combine (Environment.SpecialFolder.MyDocuments, "ArcGIS\data\SanFrancisco\SanFrancisco.gdb"))
 			networkDataset = OpenNetworkDataset(workspace, "Transportation", "Streets_ND")
 			featureWorkspace = TryCast(workspace, IFeatureWorkspace)
 		Catch ex As Exception

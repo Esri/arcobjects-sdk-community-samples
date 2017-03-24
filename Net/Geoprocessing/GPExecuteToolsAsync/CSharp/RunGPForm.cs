@@ -282,7 +282,7 @@ namespace RunGPAsync
       try
       {           
         //Relative path to the sample data from EXE location
-        string dirPath = @"..\..\..\..\..\data\USZipCodeData";
+        string dirPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"ArcGIS\data\USZipCodeData");
         
         //Create the cities layer
         IFeatureClass cities = _gp.Open(dirPath + @"\ZipCode_Boundaries_US_Major_Cities.shp") as IFeatureClass;
@@ -297,7 +297,7 @@ namespace RunGPAsync
         zipBndrysLayer.Name = "Zip Code boundaries";
         
         //Create the highways layer
-        dirPath = @"..\..\..\..\..\data\USAMajorHighways";
+        dirPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"ArcGIS\data\USAMajorHighways");
         IFeatureClass highways = _gp.Open(dirPath + @"\usa_major_highways.shp") as IFeatureClass;
         IFeatureLayer highwaysLayer = new FeatureLayerClass();
         highwaysLayer.FeatureClass = highways;

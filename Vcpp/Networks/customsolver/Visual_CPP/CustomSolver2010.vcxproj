@@ -116,7 +116,7 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>"$(CommonProgramFiles)\ArcGIS\bin\esriregasm.exe" /p:desktop  "$(TargetPath)"</Command>
+      <Command>"$(CommonProgramFiles)\ArcGIS\bin\esriregasm.exe" /p:desktop /s "$(TargetPath)"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Performing Custom Build Step</Message>

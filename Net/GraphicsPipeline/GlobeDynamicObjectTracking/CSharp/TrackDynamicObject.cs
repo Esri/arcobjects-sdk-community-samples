@@ -18,6 +18,7 @@
 */
 using System;
 using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
 using ESRI.ArcGIS.ADF.BaseClasses;
@@ -149,16 +150,15 @@ namespace GlobeDynamicObjectTracking
       //set the hook
       m_globeHookHelper.Hook = hook;
 
-      
-      //get the ArcGIS path from the registry
-      RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\ESRI\ArcObjectsSDK10.2");
-      string path = Convert.ToString(key.GetValue("InstallDir"));
 
-      //set the path to the featureclass used by the GPS simulator
-      m_shapefileName = System.IO.Path.Combine(path, "Samples\\data\\USAMajorHighways\\usa_major_highways.shp");
+        //set the path to the featureclass used by the GPS simulator
+        string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        m_shapefileName = System.IO.Path.Combine(path, @"ArcGIS\data\USAMajorHighways\usa_major_highways.shp");
+        System.Diagnostics.Debug.WriteLine(string.Format("File path for data root: {0}", m_shapefileName));
+        if (!   File.Exists(m_shapefileName)) throw new Exception(string.Format("Fix code to point to your sample data: {0} was not found", m_shapefileName));
 
-      //get the GlobeDisplsy from the hook helper
-      m_globeDisplay = m_globeHookHelper.GlobeDisplay;
+        //get the GlobeDisplsy from the hook helper
+        m_globeDisplay = m_globeHookHelper.GlobeDisplay;
 
       //initialize the real-time manager
       if (null == m_realTimeFeedManager)

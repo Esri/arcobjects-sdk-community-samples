@@ -74,7 +74,8 @@ Public Class EditingForm
         'add some sample line data to the map
         Dim workspaceFactory As IWorkspaceFactory = New FileGDBWorkspaceFactory
         'relative file path to the sample data from EXE location
-        Dim filePath As String = "..\..\..\..\data\AirportsAndGolf\Golf.gdb"
+        Dim filePath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+        filePath = System.IO.Path.Combine (filePath, "ArcGIS\data\AirportsAndGolf\Golf.gdb")
         Dim workspace As IFeatureWorkspace = CType(workspaceFactory.OpenFromFile(filePath, AxMapControl1.hWnd), IFeatureWorkspace)
         Dim featureLayer As IFeatureLayer = New FeatureLayerClass()
 

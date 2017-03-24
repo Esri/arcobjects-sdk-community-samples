@@ -1,10 +1,27 @@
-##Create a custom selection extension by extending ArcObjects
+## Create a custom selection extension by extending ArcObjects
 
-###Purpose  
-This sample demonstrates how to create ArcGIS for Desktop user interface (UI) components by extending ArcObjects. The sample is based on a selection theme, but it also shows multiple ArcObjects components working together. It contains an extension, a dockview, a toolbar with a combo box, a tool palette, a multiItem, several buttons and tools, and a menu. The sample also has several event handlers.  
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates how to create ArcGIS Desktop user interface (UI) components by extending ArcObjects. The sample is based on a selection theme, but it also shows multiple ArcObjects components working together. It contains an extension, a dockview, a toolbar with a combo box, a tool palette, a multiItem, several buttons and tools, and a menu. The sample also has several event handlers.</div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Framework
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Build the solution.  
 1. Start ArcMap and add some data.  
 1. Click the Customize menu, select Toolbars, and click the Selection COM toolbar.  
@@ -26,11 +43,11 @@ This sample demonstrates how to create ArcGIS for Desktop user interface (UI) 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 
 

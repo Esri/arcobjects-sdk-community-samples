@@ -27,7 +27,7 @@
   <Company>ESRI</Company>
   <Date>8/19/2009 12:59:51 PM</Date>
   <Targets>
-    <Target name="Desktop" version="10.4" />
+    <Target name="Desktop" version="10.5" />
   </Targets>
   <AddIn language="CLR" library="AddInEditorExtension.dll" 
          namespace="AddInEditorExtension">

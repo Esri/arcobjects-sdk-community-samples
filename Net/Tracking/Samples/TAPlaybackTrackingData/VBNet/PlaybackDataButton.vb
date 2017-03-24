@@ -339,7 +339,7 @@ Public Class PlaybackDataButton
 
   Private Function openPlaybackData() As IFeatureClass
         'set the path to the featureclass in the sample data
-    Dim path As String = "..\..\..\..\..\data\Time\ProjectData.gdb"
+    Dim path As String = System.IO.Path.Combine (Environment.SpecialFolder.MyDocuments, "ArcGIS\data\Time\ProjectData.gdb")
     If (Not System.IO.Directory.Exists(path)) Then
       MessageBox.Show("Cannot find hurricane data:" & Constants.vbLf & path, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
       Return Nothing

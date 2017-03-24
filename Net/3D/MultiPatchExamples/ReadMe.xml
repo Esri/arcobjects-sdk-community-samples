@@ -14,15 +14,15 @@
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>3D Analyst</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>3D Analyst</extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>3D Analyst</extension>
     </license>
     <license>
@@ -247,7 +247,7 @@
     </how_to_use>
   </how_to_use_section>
   <additional_information><font size="2" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
-<div>If you are working in a 2D environment, the code to create the multipatch items are the same. Write your class to draw them, as the one used in this example draws in 3D. If you are working in 2D with these multipoint items, no extension (neither 3D Analyst for ArcGIS for Desktop Basic, ArcGIS for Desktop Standard, and ArcGIS for Desktop, nor 3D for ArcGIS Engine) is required. </div></font></additional_information>
+<div>If you are working in a 2D environment, the code to create the multipatch items are the same. Write your class to draw them, as the one used in this example draws in 3D. If you are working in 2D with these multipoint items, no extension (neither 3D Analyst for ArcGIS Desktop Basic, ArcGIS Desktop Standard, and ArcGIS Desktop, nor 3D for ArcGIS Engine) is required. </div></font></additional_information>
   <related_topics>
     <topic>
       <topic_display>How to create a multipatch using a series of triangles</topic_display>

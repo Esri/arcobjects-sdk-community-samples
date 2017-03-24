@@ -18,36 +18,48 @@
   </style>
 </head>
 <body>
-  <h2>Create camera flyby from path</h2>
+  ## Create camera flyby from path
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This add-in sample describes how to create a camera fly from path. The tool mimics the out-of-the-box functionality to create a camera fly from path available on the Animations toolbar. The tool creates a Globe Camera animation that moves the camera along a selected feature in a feature class.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The tool allows you to create three types of flybys using the path destination options. You can choose to create a simple flyby where both the observer and target move along the path. The second option allows you to create a camera fly where the observer moves along the path while looking at the current target. The third option allows you to move the target along the path while the observer remains fixed at one location. </div>  
 
-<p>This add-in sample describes how to create a camera fly from path. The tool mimics the out-of-the-box functionality to create a camera fly from path available on the Animations toolbar. The tool creates a Globe Camera animation that moves the camera along a selected feature in a feature class. The tool allows you to create three types of flybys using the path destination options. You can choose to create a simple flyby where both the observer and target move along the path. The second option allows you to create a camera fly where the observer moves along the path while looking at the current target. The third option allows you to move the target along the path while the observer remains fixed at one location.   </p>
+```
+Language:              C#, VB
+Subject:               Map
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Open the Visual Studio solution file.  </li>
-<li>Build the solution.  </li>
-<li>Start ArcGlobe.  </li>
-<li>On the Customize dialog box, choose the Add-In Controls category.  </li>
-<li>On the Command Items pane, drag the Camera flyby from path onto a toolbar.  </li>
-<li>To move the globe camera along a path, add a line feature dataset in the globe session. Also, select a line feature using the "Select features" tool. The selected line is the one along which the globe camera will be animated.   </li>
-<li>Choose the tool.  </li>
-<li>Choose the options on the Camera Flyby From Path form.  </li>
-<li>On running the tool, a Globe Camera track gets added to the globe.  </li>
-<li>An animation is created, which can then be played by clicking Customize, Toolbars, and Animation to open the Animation Toolbar and then clicking on “Open Animation Controls” command  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<hr />
+### Usage
+1. Open the Visual Studio solution file.  
+1. Build the solution.  
+1. Start ArcGlobe.  
+1. On the Customize dialog box, choose the Add-In Controls category.  
+1. On the Command Items pane, drag the Camera flyby from path onto a toolbar.  
+1. To move the globe camera along a path, add a line feature dataset in the globe session. Also, select a line feature using the "Select features" tool. The selected line is the one along which the globe camera will be animated.   
+1. Choose the tool.  
+1. Choose the options on the Camera Flyby From Path form.  
+1. On running the tool, a Globe Camera track gets added to the globe.  
+1. An animation is created, which can then be played by clicking Customize, Toolbars, and Animation to open the Animation Toolbar and then clicking on “Open Animation Controls” command  
 
-<h4>Licensing</h4>
+---------------------------------
 
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic: 3D Analyst </td><td> ArcGIS for Desktop Basic: 3D Analyst </td></tr>  
-<tr><td> ArcGIS for Desktop Standard: 3D Analyst </td><td> ArcGIS for Desktop Standard: 3D Analyst </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced: 3D Analyst </td><td> ArcGIS for Desktop Advanced: 3D Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Basic: 3D Analyst </td><td> ArcGIS Desktop Basic: 3D Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Standard: 3D Analyst </td><td> ArcGIS Desktop Standard: 3D Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Advanced: 3D Analyst </td><td> ArcGIS Desktop Advanced: 3D Analyst </td></tr>  
 </table>
-
 </body>
 </html>

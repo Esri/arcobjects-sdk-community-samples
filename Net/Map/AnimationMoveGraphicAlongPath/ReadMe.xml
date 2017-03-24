@@ -3,34 +3,34 @@
   <purpose>This sample implements the move-object-along-path functionality for ArcMap animation. It allows you to move a point graphic element or a text element along a selected line feature or a selected line graphic. A new animation type (Map Graphic animation type) and its corresponding keyframe (Map Graphic keyframe) are implemented to support moving a graphic along the path. It also implements an ArcMap command for creating a move-object-along-path animation. The purpose of this sample is to show how to create a custom animation type in ArcMap and how to implement an ArcMap command to import the animation tracks. To create a custom animation type, implement a new keyframe class and a new animation type class. </purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>

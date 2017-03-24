@@ -124,7 +124,7 @@ Public Class MapViewer
         AxToolbarControl1.SetBuddyControl(AxPageLayoutControl1)
 
         'Load a pre-authored map document into the PageLayoutControl using relative paths
-        Dim sFileName As String = "..\..\..\..\data\GulfOfStLawrence\Gulf_of_St._Lawrence.mxd"
+        Dim sFileName As String = System.IO.Path.Combine (Environment.SpecialFolder.MyDocuments, "ArcGIS\data\GulfOfStLawrence\Gulf_of_St._Lawrence.mxd")
         If AxPageLayoutControl1.CheckMxFile(sFileName) Then
             AxPageLayoutControl1.LoadMxFile(sFileName)
         End If

@@ -1,10 +1,27 @@
-##Using list functions to migrate from personal geodatabases to file geodatabases
+## Using list functions to migrate from personal geodatabases to file geodatabases
 
-###Purpose  
 A common conversion task is the large-scale transfer of data from one format to another. This sample takes advantage of ListWorkspaces, ListFeatureClasses, ListTables, and ListDatasets to identify the personal geodatabases in a folder and converts the feature datasets, feature classes, and tables of each to file geodatabases.  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Geoprocessing
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Change the workspace paths to a local workspace containing personal geodatabases.  
 1. Compile and run the project.  
 
@@ -14,18 +31,18 @@ A common conversion task is the large-scale transfer of data from one format to 
 
 
 
-####See Also  
+#### See Also  
 [How to list data](http://desktop.arcgis.com/search/?q=How%20to%20list%20data&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 | Engine Developer Kit | Engine |  
 
 

@@ -40,7 +40,7 @@ namespace GlobeGallery
     {
 				private Map _map;
         public AxGlobeControl globeControl;
-				private string mapPath=@"..\..\..\..\..\data\Globe\";
+				private string mapPath= Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
         public GlobeView()
         {
@@ -81,7 +81,7 @@ namespace GlobeGallery
         {
 					// load 3dd on first time render only, let the WPF drawing thread render the window controls first
           if (globeControl.DocumentFilename == null)
-              globeControl.Load3dFile(mapPath + _map.MapName + ".3dd");   
+              globeControl.Load3dFile(System.IO.Path.Combine(System.IO.Path.Combine(mapPath, "Globe"), _map.MapName + ".3dd"));   
         }
 
 				private void globeControl_OnMouseMove (object sender, IGlobeControlEvents_OnMouseMoveEvent e)

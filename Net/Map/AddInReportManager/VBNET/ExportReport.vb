@@ -42,7 +42,11 @@ Public Class ExportReport
         ' Add any initialization after the InitializeComponent() call.
         ' store the templates information
         reports = New Dictionary(Of Int32, String)()
-        m_FileLocation = CustomReportVBNET.My.Settings.DataLocation
+        m_FileLocation = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+        m_FileLocation = Path.Combine(m_FileLocation, "ArcGIS\data\California\Report Templates")
+        If (not System.IO.File.Exists(m_FileLocation)) Then Throw New Exception(String.Format("Fix code to point to your sample data: {0} was not found", m_FileLocation))
+    
+
         Dim filePaths As String() = Directory.GetFiles(m_FileLocation, "*.rlf")
         Dim doc As XmlDocument = New XmlDocument()
         Try

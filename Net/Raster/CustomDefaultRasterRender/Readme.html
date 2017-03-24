@@ -18,31 +18,41 @@
   </style>
 </head>
 <body>
-  <h2>Create a custom default raster renderer</h2>
+  ## Create a custom default raster renderer
 
-<h3>Purpose</h3>
+This sample shows how to create a custom default raster renderer. This sample creates a dynamic-link library (DLL), which is registered to the component category, and changes the default behavior to add a 1-bit tagged image file format (TIFF) image.  
 
-<p>This sample shows how to create a custom default raster renderer. This sample creates a dynamic-link library (DLL), which is registered to the component category, and changes the default behavior to add a 1-bit tagged image file format (TIFF) image.  </p>
+```
+Language:              C#, VB
+Subject:               Raster
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Start Visual Studio, open the solution file, and compile the program. A DLL is generated and registered in the ESRI RasterRendererMakers component category.  </li>
-<li>Run category.exe from the ArcGIS bin directory to confirm that the custom DLL was added to that category.  </li>
-<li>Start ArcMap and add a 1-bit TIFF image. The image displays as a unique value renderer with red color.  </li>
-<li>To return to the ArcGIS built-in renderer for the 1-bit TIFF, use the esriregasm.exe utility from the Program Files\Common Files\ArcGIS\bin folder to unregister the DLL.   </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<hr />
+### Usage
+1. Start Visual Studio, open the solution file, and compile the program. A DLL is generated and registered in the ESRI RasterRendererMakers component category.  
+1. Run category.exe from the ArcGIS bin directory to confirm that the custom DLL was added to that category.  
+1. Start ArcMap and add a 1-bit TIFF image. The image displays as a unique value renderer with red color.  
+1. To return to the ArcGIS built-in renderer for the 1-bit TIFF, use the esriregasm.exe utility from the Program Files\Common Files\ArcGIS\bin folder to unregister the DLL.   
 
-<h4>Licensing</h4>
+---------------------------------
 
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td> ArcGIS Desktop Standard </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td> ArcGIS Desktop Advanced </td><td> ArcGIS Desktop Advanced </td></tr>  
 <tr><td> Engine Developer Kit </td><td>  </td></tr>  
 </table>
-
 </body>
 </html>

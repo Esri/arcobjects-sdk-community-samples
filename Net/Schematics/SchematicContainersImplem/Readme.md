@@ -1,10 +1,31 @@
-##Implementing schematic containers around schematic features
+## Implementing schematic containers around schematic features
 
-###Purpose  
-This sample demonstrates the implementation of schematic containers. It uses the AfterLoadDiagram procedure to define relations between schematic features contained in a diagram. The schematic diagrams contains Stations and Containers features. For the Stations schematic feature class, the RelatedFeeder schematic attribute has been created using the Schematic Dataset Editor. This attribute is used in the AfterLoadDiagram procedure to identify the schematic container related to each station contained in the diagram. This sample shows how schematic relations and containers can be managed by custom code; however, schematic containers can also be configured in schematic diagrams without developing custom code when configuring the PEN and PTN predefined schematic attributes.  
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates the implementation of schematic containers. It uses the AfterLoadDiagram procedure to define relations between schematic features contained in a diagram.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The schematic diagrams contains Stations and Containers features. For the Stations schematic feature class, the RelatedFeeder schematic attribute has been created using the Schematic Dataset Editor. This attribute is used in the AfterLoadDiagram procedure to identify the schematic container related to each station contained in the diagram.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how schematic relations and containers can be managed by custom code; however, schematic containers can also be configured in schematic diagrams without developing custom code when configuring the PEN and PTN predefined schematic attributes.</div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Schematics
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio, open the solution, and build the project.  
 1. Navigate to the ContainerSample.gdb sample geodatabase, located by default at <ArcGIS DeveloperKit install location>\Samples\data\Schematics and copy this geodatabase in a folder for which you have full rights.  
 1. Start ArcMap and open a new empty map.  
@@ -27,18 +48,18 @@ This sample demonstrates the implementation of schematic containers. It uses the
 
 
 
-####See Also  
+#### See Also  
 [ISchematicContainerManager interface](http://desktop.arcgis.com/search/?q=ISchematicContainerManager%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [ISchematicRelationManager interface](http://desktop.arcgis.com/search/?q=ISchematicRelationManager%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Schematics | ArcGIS for Desktop Basic: Schematics |  
-| ArcGIS for Desktop Standard: Schematics | ArcGIS for Desktop Standard: Schematics |  
-| ArcGIS for Desktop Advanced: Schematics | ArcGIS for Desktop Advanced: Schematics |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Schematics | ArcGIS Desktop Basic: Schematics |  
+| ArcGIS Desktop Standard: Schematics | ArcGIS Desktop Standard: Schematics |  
+| ArcGIS Desktop Advanced: Schematics | ArcGIS Desktop Advanced: Schematics |  
 
 

@@ -1,11 +1,30 @@
-##Layer property page and property sheet
+## Layer property page and property sheet
 
-###Purpose  
-A property sheet is a dialog box that contains one or many property pages. Each property page on the property sheet contains controls to view and allow users to interact with objects by changing the values of their properties without writing code.  This sample shows how to implement and register a custom layer property page (LayerVisibilityPage class) for ArcGIS for Desktop in .NET. This property page toggles visibility of the target layer. It also includes a custom command (SimpleLayerPropertiesCmd class) showing how to display a property sheet with a selective number of property pages.   
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">A property sheet is a dialog box that contains one or many property pages. Each property page on the property sheet contains controls to view and allow users to interact with objects by changing the values of their properties without writing code. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to implement and register a custom layer property page (LayerVisibilityPage class) for ArcGIS Desktop in .NET. This property page toggles visibility of the target layer. It also includes a custom command (SimpleLayerPropertiesCmd class) showing how to display a property sheet with a selective number of property pages. </div>  
 
 
-###Usage
-####Implement and register a custom layer property page   
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Framework
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### Implement and register a custom layer property page   
 1. Open and compile the sample project in Visual Studio. Set up a debug application if needed.  
 1. Open ArcMap, ArcScene, or ArcGlobe. The custom layer property page works in all of these applications since it is registered in the appropriate layer property page component categories.  
 1. Add a layer to the application.  
@@ -15,7 +34,7 @@ A property sheet is a dialog box that contains one or many property pages. Each 
 1. Click the Apply or OK button to commit the change. The TOC and display are refreshed to reflect the change you made with the custom property page.  
 1. Close the Properties dialog box.  
 
-####Add the custom command (SimpleLayerPropertiesCmd) that displays the simplified layer property sheet  
+#### Add the custom command (SimpleLayerPropertiesCmd) that displays the simplified layer property sheet  
 1. Click the Customize menu, and click Customize Mode. The Customize dialog box appears.   
 1. Click the Toolbars tab and select Context Menus.  
 1. Expand and scroll down to Feature Layer Context Menu, and click to expand the menu.  
@@ -34,11 +53,11 @@ A property sheet is a dialog box that contains one or many property pages. Each 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 
 

@@ -3,21 +3,21 @@
   <purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample makes a subclass of the standard esriGeodatabase Feature by adding an interface with functions specific to trees.</div></purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension/>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension/>
     </license>
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension/>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension/>
     </license>
   </deployment_license>

@@ -1,11 +1,32 @@
-##Change the appearance of the ToolbarControl
+## Change the appearance of the ToolbarControl
 
-###Purpose  
-This sample demonstrates the visual effects of changing the appearance properties of the ToolbarControl. The ToolbarControl is used in conjunction with the GlobeControl and control commands. The ToolbarControl can do the following:Display vertically within a container formDisplay with background colors and a fill style
-Display hidden items on a "hidden items menu"   
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates the visual effects of changing the appearance properties of the ToolbarControl. The ToolbarControl is used in conjunction with the GlobeControl and control commands. The ToolbarControl can do the following:</div>
+
+*   Display vertically within a container form
+*   Display with background colors and a fill style
+
+*   Display hidden items on a "hidden items menu"   
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Use the controls to change the orientation and background properties of the ToolbarControl.  
 1. Optionally, use the commands on the ToolbarControl to load a globe document (*.3dd) into the GlobeControl and navigate around its display.  
 
@@ -15,19 +36,19 @@ Display hidden items on a "hidden items menu"
 
 
 
-####See Also  
+#### See Also  
 [ToolbarControl coclass](http://desktop.arcgis.com/search/?q=ToolbarControl%20coclass&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [IToolbarControl2 interface](http://desktop.arcgis.com/search/?q=IToolbarControl2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine: 3D Analyst |  
-|  | ArcGIS for Desktop Basic: 3D Analyst |  
-|  | ArcGIS for Desktop Standard: 3D Analyst |  
-|  | ArcGIS for Desktop Advanced: 3D Analyst |  
+|  | ArcGIS Desktop Basic: 3D Analyst |  
+|  | ArcGIS Desktop Standard: 3D Analyst |  
+|  | ArcGIS Desktop Advanced: 3D Analyst |  
 
 

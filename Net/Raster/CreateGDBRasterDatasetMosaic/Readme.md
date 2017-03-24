@@ -1,10 +1,27 @@
-##Mosaic raster datasets to a geodatabase raster dataset
+## Mosaic raster datasets to a geodatabase raster dataset
 
-###Purpose  
-This sample demonstrates the recommended approach to create a raster mosaic in a geodatabase (file geodatabase or ArcSDE geodatabase) from rasters in a folder using geoprocessing tool classes. The task involves two steps—create an empty raster dataset and mosaic rasters in a folder (optionally subfolders) to the new raster dataset.  
+This sample demonstrates the recommended approach to create a raster mosaic in a geodatabase (file geodatabase or ArcSDE geodatabase) from rasters in a folder using geoprocessing tool classes. The task involves two steps<font xmlns="http://www.w3.org/1999/xhtml" face="Verdana">—</font>create an empty raster dataset and mosaic rasters in a folder (optionally subfolders) to the new raster dataset.  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Raster
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the CreateRasterMosaic solution file.  
 1. Review the source code and make any changes to the data location and loading options.  
 1. Compile and run.  
@@ -16,18 +33,18 @@ This sample demonstrates the recommended approach to create a raster mosaic in a
 
 
 
-####See Also  
+#### See Also  
 [Sample: Mosaic raster datasets to a file raster format](../../../Net/Raster/CreateFileRasterDatasetMosaic)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 | Engine Developer Kit | Engine |  
 
 

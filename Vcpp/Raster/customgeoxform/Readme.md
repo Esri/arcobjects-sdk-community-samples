@@ -1,10 +1,33 @@
-##Create a custom geodata transform
+## Create a custom geodata transform
 
-###Purpose  
-ArcGIS supports many geodata transforms such as RPCXFrom and PolynomialXForm for transforming pixel coordinates to map coordinates and vice versa. This sample shows how to create a custom geodata transform.  
+  <div xmlns="http://www.w3.org/1999/xhtml">
+    <div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt">
+      <span>
+        <font face="Verdana">ArcGIS supports many geodata transforms such as RPCXFrom and PolynomialXForm for transforming pixel coordinates to map coordinates and vice versa. This sample shows how to create a custom geodata transform.</font>
+      </span>
+    </div>
+  </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              VC++
+Subject:               Raster
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Compile and build the solution and generate CustomXForm.dll.  
 1. Register CustomXForm.dll.  
 1. To transform a raster using SimpleXForm, modify the GeodataXForm on a geodataset. It will then be persisted to the geodataset, as shown in the code example in the Additional information section below.   
@@ -18,7 +41,7 @@ ArcGIS supports many geodata transforms such as RPCXFrom and PolynomialXForm for
 
 
 
-####Additional information  
+#### Additional information  
 <div style="PADDING-RIGHT: 0in; MARGIN-TOP: 0in; PADDING-LEFT: 0in; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml">
   <font face="Verdana">To create a custom geodata transform, you will create a GeodataXForm class by implementing the IGeodataXform, IPersistStream, and IClone interfaces.</font>
 </div>  
@@ -47,11 +70,11 @@ ArcGIS supports many geodata transforms such as RPCXFrom and PolynomialXForm for
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 
 

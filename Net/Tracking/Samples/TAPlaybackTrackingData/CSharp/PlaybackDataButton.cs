@@ -168,7 +168,7 @@ namespace TAPlaybackTrackingData
     private IFeatureClass openPlaybackData()
     {
       //set the path to the featureclass
-      string path = @"..\..\..\..\..\data\Time\ProjectData.gdb";
+      string path = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"ArcGIS\data\Time\ProjectData.gdb");
       if (!System.IO.Directory.Exists(path))
       {
         MessageBox.Show("Cannot find hurricane data:\n" + path, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

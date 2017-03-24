@@ -6,7 +6,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The editing properties used by the feature editing commands in the ToolbarControl and the ToolbarMenu are determined by the IEditProperties and IEditProperties2 interface members implemented by the EngineEditor object. The EditProperties and EditProperties2 forms are used to manage and validate changes to these properties by the end user.</div>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Note: If you are editing features from a shapefile or a personal geodatabase, the minimum license required to initialize this application is an ArcGIS Engine or ArcGIS for Desktop Basic license. If you are editing features from an enterprise geodatabase, the minimum license required to initialize this application is an ArcGIS Engine Enterprise GeoDatabase or ArcGIS for Desktop Standard license. Before running this application, check the product licenses in the LicenseControl property pages accordingly. </div></purpose>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Note: If you are editing features from a shapefile or a personal geodatabase, the minimum license required to initialize this application is an ArcGIS Engine or ArcGIS Desktop Basic license. If you are editing features from an enterprise geodatabase, the minimum license required to initialize this application is an ArcGIS Engine Enterprise GeoDatabase or ArcGIS Desktop Standard license. Before running this application, check the product licenses in the LicenseControl property pages accordingly. </div></purpose>
   <development_license>
     <license>
       <name>Engine Developer Kit</name>
@@ -21,17 +21,17 @@
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>

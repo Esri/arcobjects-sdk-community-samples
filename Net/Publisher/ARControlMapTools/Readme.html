@@ -18,34 +18,46 @@
   </style>
 </head>
 <body>
-  <h2>ArcReaderControl map tools</h2>
+  ## ArcReaderControl map tools
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates how to set the IARControl.CurrentTool property to the MapZoomIn, MapZoomOut, or MapPan tool to navigate around the map view or any of the data frames when the current view is a PageLayout. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">The OnAfterScreenDraw event uses the IARMap.CanUndoExtent and CanRedoExtent properties to determine whether the IARMap.UndoExtent and RedoExtent methods can be used to undo or redo extent changes. The IARMap.SetExtent method is set to the result of the IARMap.GetFullExtent method to zoom to the full extent of the data in the map. </div>  
 
-<p>This sample demonstrates how to set the IARControl.CurrentTool property to the MapZoomIn, MapZoomOut, or MapPan tool to navigate around the map view or any of the data frames when the current view is a PageLayout.  The OnAfterScreenDraw event uses the IARMap.CanUndoExtent and CanRedoExtent properties to determine whether the IARMap.UndoExtent and RedoExtent methods can be used to undo or redo extent changes. The IARMap.SetExtent method is set to the result of the IARMap.GetFullExtent method to zoom to the full extent of the data in the map.   </p>
+```
+Language:              C#, VB
+Subject:               Publisher
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Compile and run the sample from the provided code.   </li>
-<li>Enter a valid file path of a Published Map File (PMF) from ArcMap and load.   </li>
-<li>Click the Map button to display the data view.   </li>
-<li>Use the tools to navigate around the focus map.   </li>
-<li>Click the Layout button to display the layout view.  </li>
-<li>Use the tools to navigate the data in any of the data frames on the page layout.   </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<hr />
+### Usage
+1. Compile and run the sample from the provided code.   
+1. Enter a valid file path of a Published Map File (PMF) from ArcMap and load.   
+1. Click the Map button to display the data view.   
+1. Use the tools to navigate around the focus map.   
+1. Click the Layout button to display the layout view.  
+1. Use the tools to navigate the data in any of the data frames on the page layout.   
 
-<h4>Licensing</h4>
+---------------------------------
 
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic: Publisher </td><td> ArcReader </td></tr>  
-<tr><td> ArcGIS for Desktop Standard: Publisher </td><td> Engine </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced: Publisher </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic: Publisher </td><td> ArcReader </td></tr>  
+<tr><td> ArcGIS Desktop Standard: Publisher </td><td> Engine </td></tr>  
+<tr><td> ArcGIS Desktop Advanced: Publisher </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

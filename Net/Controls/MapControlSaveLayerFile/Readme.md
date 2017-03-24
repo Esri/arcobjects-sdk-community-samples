@@ -1,10 +1,27 @@
-##Save a layer file in a MapControl application
+## Save a layer file in a MapControl application
 
-###Purpose  
 This sample demonstrates how to create and save a layer file in a stand-alone ArcGIS Engine application. In addition to providing the ability to save layer files, this sample also implements a context menu that opens when you right-click a layer in the application's table of contents (TOC). This context menu hosts two commands: Save the current layer as a layer file and Remove the current layer from the map.   
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio, open the solution file, and build the project.  
 1. Press F5 to run the MapControl application.  
 1. Use the AddData command to add a dataset to the map, or as an alternative, use Add MapDocument to add an existing map document to the map.  
@@ -18,18 +35,18 @@ This sample demonstrates how to create and save a layer file in a stand-alone Ar
 
 
 
-####See Also  
+#### See Also  
 [How to save a layer file](http://desktop.arcgis.com/search/?q=How%20to%20save%20a%20layer%20file&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

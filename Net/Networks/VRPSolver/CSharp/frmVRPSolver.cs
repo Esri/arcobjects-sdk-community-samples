@@ -64,7 +64,7 @@ namespace VRP_CSharp
 			try
 			{
 				// Open Geodatabase and network dataset
-				IWorkspace workspace = OpenWorkspace(Application.StartupPath + @"\..\..\..\..\..\Data\SanFrancisco\SanFrancisco.gdb");
+				IWorkspace workspace = OpenWorkspace(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"ArcGIS\data\SanFrancisco\SanFrancisco.gdb"));
 				networkDataset = OpenNetworkDataset(workspace, "Transportation", "Streets_ND");
 				featureWorkspace = workspace as IFeatureWorkspace;
 			}

@@ -15,6 +15,7 @@
 Imports Microsoft.VisualBasic
 Imports System
 Imports System.Drawing
+Imports System.IO
 Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
 Imports ESRI.ArcGIS.ADF.BaseClasses
@@ -223,19 +224,20 @@ Public NotInheritable Class DynamicLogo : Inherits BaseCommand
 #End Region
 
   Private Function GetLogoPath() As String
-    'get the ArcGIS path from the registry
-    Dim runtimeVersion As String = RuntimeManager.ActiveRuntime.Version
-    Dim key As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\ESRI\ArcObjectsSDK" + runtimeVersion)
-    Dim path As String = Convert.ToString(key.GetValue("InstallDir"))
+
+     'relative file path to the sample data from project location
+        dim sLogoPath as string = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+        sLogoPath = System.IO.Path.Combine(sLogoPath, "ArcGIS\data\ESRILogo\ESRI_LOGO.bmp")
+        dim filePath as DirectoryInfo = new DirectoryInfo(sLogoPath)
+        System.Diagnostics.Debug.WriteLine(string.Format("File path for data root: {0} [{1}]", filePath.FullName, Directory.GetCurrentDirectory()))
 
     'set the of the logo
-    Dim str As String = System.IO.Path.Combine(path, "Samples\data\ESRILogo\ESRI_LOGO.bmp")
-    If (Not System.IO.File.Exists(str)) Then
-      MessageBox.Show("Path :" & str & " does not exists!")
+    If (Not System.IO.File.Exists(sLogoPath)) Then
+      MessageBox.Show(string.Format("File path for the logo was not found: {0} [{1}] please correct in code or place logo file in proper path", filePath.FullName, Directory.GetCurrentDirectory()))
       Return String.Empty
     End If
 
-    Return str
+    Return sLogoPath
   End Function
 
   Private Function CreateStandardLogoSymbol() As ISymbol

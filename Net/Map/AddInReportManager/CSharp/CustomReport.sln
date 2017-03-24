@@ -1,7 +1,14 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomReport", "CustomReport.csproj", "{6BC8A458-F8A0-4A0A-8820-548AE120FAB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binaries", "Binaries", "{45DD6A2D-2354-45E8-809A-B825DA2670BD}"
+	ProjectSection(SolutionItems) = preProject
+		Binaries\Microsoft.VisualBasic.PowerPacks.Vs.dll = Binaries\Microsoft.VisualBasic.PowerPacks.Vs.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

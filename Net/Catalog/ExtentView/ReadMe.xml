@@ -3,14 +3,14 @@
 	<purpose>The GxExtentView sample demonstrates how to create a custom view for ArcCatalog. It displays an overview map with a red rectangle on top that delineates the spatial extent of the currently selected dataset. You can add the view as a custom preview, a custom tabbed view, or both. </purpose>
 	<development_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license><license>
 									<name>Engine Developer Kit</name>
@@ -18,14 +18,14 @@
 								</license></development_license>
 	<deployment_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license><license>
 									<name>Engine</name>

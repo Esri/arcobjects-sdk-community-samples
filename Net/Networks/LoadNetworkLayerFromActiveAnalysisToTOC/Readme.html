@@ -18,46 +18,55 @@
   </style>
 </head>
 <body>
-  <h2>Load network layer from active analysis to the table of contents</h2>
+  ## Load network layer from active analysis to the table of contents
 
-<h3>Purpose</h3>
+Network analysis layers can be opened in ArcMap without loading their corresponding network layer. This add-in interrogates a network analysis layer to determine its associated network dataset, then the network dataset is loaded to the map as a network layer.  
 
-<p>Network analysis layers can be opened in ArcMap without loading their corresponding network layer. This add-in interrogates a network analysis layer to determine its associated network dataset, then the network dataset is loaded to the map as a network layer.  </p>
+```
+Language:              C#, VB
+Subject:               Networks
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Start Visual Studio and open the solution.  </li>
-<li>Compile the solution.  </li>
-<li>Start ArcMap.  </li>
-<li>Click Customize, then Customize Mode.  </li>
-<li>Click the Commands tab.  </li>
-<li>Scroll down to Network Analyst.  </li>
-<li>Drag the command onto the Network Analyst toolbar.  </li>
-<li>Load a network analysis layer to the map.  </li>
-<li>Click the command button to load the network layer.  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<h4>See Also</h4>
+### Usage
+1. Start Visual Studio and open the solution.  
+1. Compile the solution.  
+1. Start ArcMap.  
+1. Click Customize, then Customize Mode.  
+1. Click the Commands tab.  
+1. Scroll down to Network Analyst.  
+1. Drag the command onto the Network Analyst toolbar.  
+1. Load a network analysis layer to the map.  
+1. Click the command button to load the network layer.  
 
-<p><a href="http://desktop.arcgis.com/search/?q=Programming%20with%20ArcGIS%20Network%20Analyst%20extension&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Programming with ArcGIS Network Analyst extension</a><br />
-<a href="http://desktop.arcgis.com/search/?q=What%20is%20ArcGIS%20Network%20Analyst%20extension%3F&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">What is ArcGIS Network Analyst extension?</a><br />
-<a href="http://desktop.arcgis.com/search/?q=What%20is%20a%20network%20dataset%3F&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">What is a network dataset?</a><br />
-<a href="http://desktop.arcgis.com/search/?q=Geodatabase&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Geodatabase</a><br />
-<a href="http://desktop.arcgis.com/search/?q=About%20the%20ArcGIS%20Network%20Analyst%20extension%20tutorial&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">About the ArcGIS Network Analyst extension tutorial</a><br />
-<a href="http://desktop.arcgis.com/search/?q=NetworkAnalyst&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">NetworkAnalyst</a><br />
-<a href="http://desktop.arcgis.com/search/?q=ArcGIS%20Network%20Analyst%20extension%20Object%20Model%20Diagram&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ArcGIS Network Analyst extension Object Model Diagram</a><br />
-<a href="http://desktop.arcgis.com/search/?q=An%20overview%20of%20the%20network%20analyst%20toolbox&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">An overview of the network analyst toolbox</a>  </p>
+#### See Also  
+[Programming with ArcGIS Network Analyst extension](http://desktop.arcgis.com/search/?q=Programming%20with%20ArcGIS%20Network%20Analyst%20extension&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[What is ArcGIS Network Analyst extension?](http://desktop.arcgis.com/search/?q=What%20is%20ArcGIS%20Network%20Analyst%20extension%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[What is a network dataset?](http://desktop.arcgis.com/search/?q=What%20is%20a%20network%20dataset%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Geodatabase](http://desktop.arcgis.com/search/?q=Geodatabase&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[About the ArcGIS Network Analyst extension tutorial](http://desktop.arcgis.com/search/?q=About%20the%20ArcGIS%20Network%20Analyst%20extension%20tutorial&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[NetworkAnalyst](http://desktop.arcgis.com/search/?q=NetworkAnalyst&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ArcGIS Network Analyst extension Object Model Diagram](http://desktop.arcgis.com/search/?q=ArcGIS%20Network%20Analyst%20extension%20Object%20Model%20Diagram&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[An overview of the network analyst toolbox](http://desktop.arcgis.com/search/?q=An%20overview%20of%20the%20network%20analyst%20toolbox&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
-<hr />
+---------------------------------
 
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Advanced: Network Analyst </td><td> ArcGIS for Desktop Advanced: Network Analyst </td></tr>  
-<tr><td> ArcGIS for Desktop Standard: Network Analyst </td><td> ArcGIS for Desktop Standard: Network Analyst </td></tr>  
-<tr><td> ArcGIS for Desktop Basic: Network Analyst </td><td> ArcGIS for Desktop Basic: Network Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Advanced: Network Analyst </td><td> ArcGIS Desktop Advanced: Network Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Standard: Network Analyst </td><td> ArcGIS Desktop Standard: Network Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Basic: Network Analyst </td><td> ArcGIS Desktop Basic: Network Analyst </td></tr>  
 </table>
-
 </body>
 </html>

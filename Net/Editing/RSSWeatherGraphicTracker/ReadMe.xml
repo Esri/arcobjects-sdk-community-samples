@@ -9,13 +9,13 @@
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Basic</name>
+									<name>ArcGIS Desktop Basic</name>
 									<extension>3D Analyst</extension>
 								</license><license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension>3D Analyst</extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension>3D Analyst</extension>
 								</license></development_license>
 	<deployment_license>
@@ -24,13 +24,13 @@
 			<extension>3D Analyst</extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Basic</name>
+									<name>ArcGIS Desktop Basic</name>
 									<extension>3D Analyst</extension>
 								</license><license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension>3D Analyst</extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension>3D Analyst</extension>
 								</license></deployment_license>
 	<apis>

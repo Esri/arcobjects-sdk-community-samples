@@ -1,10 +1,29 @@
-##Synchronized MapControl and PageLayoutControl application
+## Synchronized MapControl and PageLayoutControl application
 
-###Purpose  
-This sample demonstrates synchronization of a MapControl and a PageLayoutControl in one application. This means that, as in ArcMap, you can switch between the two views and maintain the scale and extent, as well as add graphics to the Map view and see them in the PageLayout view. For simplicity, this sample only handles one data frame; it selects the first data frame from a map document.  
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates synchronization of a MapControl and a PageLayoutControl in one application. This means that, as in ArcMap, you can switch between the two views and maintain the scale and extent, as well as add graphics to the Map view and see them in the PageLayout view.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">For simplicity, this sample only handles one data frame; it selects the first data frame from a map document.</div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio, open the solution, and build the project.  
 1. Press F5 or double-click the resulting executable to run the application.  
 1. Use the Open Map Document command to load a new map document to the application.  
@@ -18,7 +37,7 @@ This sample demonstrates synchronization of a MapControl and a PageLayoutControl
 
 
 
-####See Also  
+#### See Also  
 [How to create a MapControl application](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20MapControl%20application&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Walkthrough: Building a map viewing application using the ArcGIS Engine controls](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Building%20a%20map%20viewing%20application%20using%20the%20ArcGIS%20Engine%20controls&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Sample: Load a map document into the PageLayoutControl](../../../Net/Controls/PageLayoutControlLoadMapDocument)  
@@ -29,12 +48,12 @@ This sample demonstrates synchronization of a MapControl and a PageLayoutControl
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

@@ -1,10 +1,31 @@
-##Simple dynamic display application
+## Simple dynamic display application
 
-###Purpose  
-This sample demonstrates the basic capabilities of the dynamic display and is the associated sample for the walkthrough, Getting started with dynamic display. This sample includes the following: Additional tools that work in dynamic displayCustom commands that enable dynamic modeA simple dynamic layer and command that adds the layer on to the map   
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates the basic capabilities of the dynamic display and is the associated sample for the walkthrough, [Getting started with dynamic display](http://756d0373-8e76-4145-a337-5af537ee6393). This sample includes the following: </div>
+
+*   Additional tools that work in dynamic display
+*   Custom commands that enable dynamic mode
+*   A simple dynamic layer and command that adds the layer on to the map   
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio and open the solution file.   
 1. Build the solution.   
 1. Press F5 or double-click the resulting executable to run the application.   
@@ -23,7 +44,7 @@ This sample demonstrates the basic capabilities of the dynamic display and is th
 
 
 
-####See Also  
+#### See Also  
 [Walkthrough: Getting started with dynamic display](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Getting%20started%20with%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Dynamic display](http://desktop.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [How dynamic display works](http://desktop.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
@@ -32,12 +53,12 @@ This sample demonstrates the basic capabilities of the dynamic display and is th
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

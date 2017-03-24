@@ -885,8 +885,9 @@ namespace RSSWeatherGraphicTracker
     /// Load the information from the MajorCities featureclass to the locations table
     /// </summary>
     private void PopulateLocationsTable()
-    { 
-      string path = System.IO.Path.Combine(m_installationFolder + @"\..", @"DeveloperKit10.4\Samples\data\USZipCodeData\");
+    {
+        string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        path = System.IO.Path.Combine(path, @"ArcGIS\data\USZipCodeData\");
 
       //open the featureclass
       IWorkspaceFactory wf = new ShapefileWorkspaceFactoryClass() as IWorkspaceFactory;

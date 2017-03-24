@@ -15,6 +15,7 @@
 Option Strict Off
 Option Explicit On
 
+Imports System.IO
 Imports ESRI.ArcGIS.esriSystem
 Imports ESRI.ArcGIS.Analyst3D
 Imports ESRI.ArcGIS.GlobeCore
@@ -329,9 +330,15 @@ Shared Sub Main()
 
         Dim pBasicScene As IBasicScene
         Dim pGlobe As IGlobe
+        Dim filePath As DirectoryInfo
 
         'check and load if the animation file is present...
-        m_sAnimFilePath = "..\..\..\..\..\Data\ArcGlobeAnimation\AnimationSample.aga"
+		    m_sAnimFilePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+        m_sAnimFilePath = Path.Combine(m_sAnimFilePath, "ArcGIS\data\Globe\AnimationSample.aga")
+        filePath = New DirectoryInfo(m_sAnimFilePath)
+        System.Diagnostics.Debug.WriteLine(String.Format("File path for data root: {0} [{1}]", filePath.FullName, Directory.GetCurrentDirectory()))
+        If (not System.IO.File.Exists(m_sAnimFilePath)) Then Throw New Exception(String.Format("Fix code to point to your sample data: {0} [{1}] was not found", filePath.FullName, Directory.GetCurrentDirectory()))
+    
         If System.IO.File.Exists(m_sAnimFilePath) Then
             'Load the sample animation file into the animation file into the doc...
             pGlobe = AxGlobeControl1.Globe

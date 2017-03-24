@@ -18,42 +18,56 @@
   </style>
 </head>
 <body>
-  <h2>Dynamic display compass</h2>
+  ## Dynamic display compass
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates drawing on the map in dynamic mode using an OpenGL application programming interface (API). A command is implemented that adds a compass object to the map, which rotates along together with the dynamic map. The following issues are covered in this sample: </div>
 
-<p>This sample demonstrates drawing on the map in dynamic mode using an OpenGL application programming interface (API). A command is implemented that adds a compass object to the map, which rotates along together with the dynamic map. The following issues are covered in this sample: Wiring dynamic map events to listen to the Before or After DynamicDraw, which allows you to plug in your drawing to the map.Creation of OpenGL display lists.Mapping a bitmap into an OpenGL texture and binding the texture to an OpenGL geometry.Translating, scaling, and rotating OpenGL display lists.   </p>
+*   Wiring dynamic map events to listen to the Before or After DynamicDraw, which allows you to plug in your drawing to the map.
+*   Creation of OpenGL display lists.
+*   Mapping a bitmap into an OpenGL texture and binding the texture to an OpenGL geometry.
+*   Translating, scaling, and rotating OpenGL display lists.   
 
-<h3>Usage</h3>
+```
+Language:              C#
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<ol>
-<li>Start Visual Studio and open the solution.  </li>
-<li>Build the solution to make the Dynamic Display Compass command .dll file. Use this command in an application with a MapControl and a ToolbarControl, such as the MapControlApplication template included with the Visual Studio integration.  </li>
-<li>Add the command to the ToolbarControl. The command can be found in the .NET Samples category with the name, Dynamic Display Compass.  </li>
-<li>Run the application and click the Dynamic Display Compass command to add the compass object to the map. The map switches into dynamic mode and adds the compass to the map. The compass rotates with the map when rotated.  </li>
-</ol>
+### Resources
 
-<h4>See Also</h4>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<p><a href="http://desktop.arcgis.com/search/?q=How%20dynamic%20display%20works&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How dynamic display works</a><br />
-<a href="http://desktop.arcgis.com/search/?q=Rendering%20dynamic%20map%20content&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Rendering dynamic map content</a><br />
-<a href="http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to create a dynamic glyph from a marker symbol</a><br />
-<a href="http://desktop.arcgis.com/search/?q=How%20to%20plug%20in%20dynamic%20drawing&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to plug in dynamic drawing</a><br />
-<a href="http://desktop.arcgis.com/search/?q=Limitations%20for%20dynamic%20display&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Limitations for dynamic display</a><br />
-<a href="../../../Net/GraphicsPipeline/DynamicObjectTracking">Sample: Dynamic display—tracking dynamic object</a><br />
-<a href="../../../Net/GraphicsPipeline/MyDynamicLayer">Sample: Dynamic display layer</a><br />
-<a href="../../../Net/GraphicsPipeline/DynamicDisplayHUD">Sample: Dynamic heads up display</a>  </p>
+### Usage
+1. Start Visual Studio and open the solution.  
+1. Build the solution to make the Dynamic Display Compass command .dll file. Use this command in an application with a MapControl and a ToolbarControl, such as the MapControlApplication template included with the Visual Studio integration.  
+1. Add the command to the ToolbarControl. The command can be found in the .NET Samples category with the name, Dynamic Display Compass.  
+1. Run the application and click the Dynamic Display Compass command to add the compass object to the map. The map switches into dynamic mode and adds the compass to the map. The compass rotates with the map when rotated.  
 
-<hr />
+#### See Also  
+[How dynamic display works](http://desktop.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Rendering dynamic map content](http://desktop.arcgis.com/search/?q=Rendering%20dynamic%20map%20content&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create a dynamic glyph from a marker symbol](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to plug in dynamic drawing](http://desktop.arcgis.com/search/?q=How%20to%20plug%20in%20dynamic%20drawing&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Limitations for dynamic display](http://desktop.arcgis.com/search/?q=Limitations%20for%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Sample: Dynamic display—tracking dynamic object](../../../Net/GraphicsPipeline/DynamicObjectTracking)  
+[Sample: Dynamic display layer](../../../Net/GraphicsPipeline/MyDynamicLayer)  
+[Sample: Dynamic heads up display](../../../Net/GraphicsPipeline/DynamicDisplayHUD)  
 
-<h4>Licensing</h4>
+---------------------------------
 
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
 <tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

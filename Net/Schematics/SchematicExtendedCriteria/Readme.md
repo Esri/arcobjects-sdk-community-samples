@@ -1,18 +1,69 @@
-##Implementing extended criteria for some predefined schematic rules
+## Implementing extended criteria for some predefined schematic rules
 
-###Purpose  
-This sample shows how to implement custom extended criteria that are intended for use with the following schematic rules:Node Reduction By PriorityFeature RemovalExpand LinksCollapse Related ElementsThis sample will help you become familiar with the ISchematicNodeReductionExtended, ISchematicCollapseRelatedElementsExtended, ISchematicFeatureRemovalExtended, and ISchematicExpandLinksByAttributeExtented interfaces, and it will help you understand how these interfaces must be implemented to use a custom criterion to achieve the following:Reduce nodes during a Node Reduction By Priority rule executionRemove schematic features during a Feature Removal Links ruleExpand schematic links during an Expand Links rule executionCollapse schematic features during a Collapse Related Elements rule executionAny criterion can be combined with the other options specified for the rule to define the final set of schematic features that will be impacted during the rule execution. These extended criteria have been developed to work with data stored in the ExtendedCriteriaSamples sample geodatabase containing cable links and plant nodes. The PlantOnCableDiameter and PlantWithoutEquipment extended criteria are implemented for the Node Reduction By Priority rule as follows:PlantOnCableDiameter works on the set of incident cable links related to a node candidate for being reduced. If all incident cable diameters are 8, the candidate node is reduced.PlantWithoutEquipment works directly on the candidate plant nodes that can be reduced. The candidate node is reduced only when it does not have any associated record in a specific database table.The FeatureRemovalExt extended criterion is implemented for the Feature Removal rule; it can be used to remove cable schematic links that have particular identifiers. The ExpandLinksExt extended criterion is implemented for the Expand Links rule; it is used to expands cable schematic links according to particular attribute values on their plant origin nodes. The CollapseRelatedElts extended criterion is a template class you must customize to use an extended criterion for Collapse Related Elements rules.   
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to implement custom extended criteria that are intended for use with the following schematic rules:</div>
+
+*   <div>Node Reduction By Priority</div>
+
+*   <div>Feature Removal</div>
+
+*   <div>Expand Links</div>
+
+*   <div>Collapse Related Elements</div>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample will help you become familiar with the ISchematicNodeReductionExtended, ISchematicCollapseRelatedElementsExtended, <font size="2">ISchematicFeatureRemovalExtended,</font> and ISchematicExpandLinksByAttributeExtented interfaces, and it will help you understand how these interfaces must be implemented to use a custom criterion to achieve the following:</div>
+
+*   <div>Reduce nodes during a Node Reduction By Priority rule execution</div>
+
+*   <div>Remove schematic features during a Feature Removal Links rule</div>
+
+*   <div>Expand schematic links during an Expand Links rule execution</div>
+
+*   <div>Collapse schematic features during a Collapse Related Elements rule execution</div>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Any criterion can be combined with the other options specified for the rule to define the final set of schematic features that will be impacted during the rule execution.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">These extended criteria have been developed to work with data stored in the ExtendedCriteriaSamples sample geodatabase containing cable links and plant nodes.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The PlantOnCableDiameter and PlantWithoutEquipment extended criteria are implemented for the Node Reduction By Priority rule as follows:</div>
+
+*   <div>PlantOnCableDiameter works on the set of incident cable links related to a node candidate for being reduced. If all incident cable diameters are 8, the candidate node is reduced.</div>
+
+*   <div>PlantWithoutEquipment works directly on the candidate plant nodes that can be reduced. The candidate node is reduced only when it does not have any associated record in a specific database table.</div>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The FeatureRemovalExt extended criterion is implemented for the Feature Removal rule; it can be used to remove cable schematic links that have particular identifiers.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The ExpandLinksExt extended criterion is implemented for the Expand Links rule; it is used to expands cable schematic links according to particular attribute values on their plant origin nodes.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The CollapseRelatedElts extended criterion is a template class you must customize to use an extended criterion for Collapse Related Elements rules. </div>  
 
 
-###Usage
-####Building the component  
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Schematics
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### Building the component  
 1. Start Visual Studio, open the solution file, and build the project.  
 
-####Copying the sample database in a working folder  
+#### Copying the sample database in a working folder  
 1. Navigate to <ArcGIS DeveloperKit install location>\Samples\data\Schematics  
 1. Copy the ExtendedCriteriaSamples.gdb geodatabase in a folder for which you have full rights.  
 
-####Configuring a Node Reduction By Priority rule using the Reduce if connected cable diameters are 8 custom reduce extended criteria  
+#### Configuring a Node Reduction By Priority rule using the Reduce if connected cable diameters are 8 custom reduce extended criteria  
 1. Start ArcCatalog, browse to the copied ExtendedCriteriaSamples geodatabase, right-click the ExtendedCriteriaSamples_Schematic schematic dataset, then click Edit.  
 1. From the Schematic Dataset Editor tree, click the DiagramsFromSampleFeatureDataset diagram template.  
 1. Click the Rules tab.  
@@ -30,7 +81,7 @@ This sample shows how to implement custom extended criteria that are intended 
 1. Click Update Diagram on the Schematic toolbar. The Update Diagram dialog box opens.   
 1. Keep the Synchronize against original selection/trace/query option checked and click OK. At the end of the update process, all plants' connecting links whose diameters are 8 are reduced.  
 
-####Configuring a Node Reduction By Priority rule using the Reduce plants without equipments custom reduce extended criteria  
+#### Configuring a Node Reduction By Priority rule using the Reduce plants without equipments custom reduce extended criteria  
 1. Start ArcCatalog, browse to the copied ExtendedCriteriaSamples geodatabase, right-click the ExtendedCriteriaSamples_Schematic schematic dataset, then click Edit.  
 1. From the Schematic Dataset Editor tree, click the DiagramsFromSampleFeatureDataset diagram template.  
 1. Click the Rules tab.  
@@ -48,7 +99,7 @@ This sample shows how to implement custom extended criteria that are intended 
 1. Click Update Diagram on the Schematic toolbar. The Update Diagram dialog box opens.   
 1. Keep the Synchronize against original selection/trace/query option checked and click OK. At the end of the update process, the plants without equipments are reduced.  
 
-####Configuring a Feature Removal rule using the Remove cables with particular ID custom reduce extended criteria  
+#### Configuring a Feature Removal rule using the Remove cables with particular ID custom reduce extended criteria  
 1. Start ArcCatalog, browse to the copied ExtendedCriteriaSamples geodatabase, right-click the ExtendedCriteriaSamples_Schematic schematic dataset, then click Edit.  
 1. From the Schematic Dataset Editor tree, click the DiagramsFromSampleFeatureDataset diagram template.  
 1. Click the Rules tab.  
@@ -66,7 +117,7 @@ This sample shows how to implement custom extended criteria that are intended 
 1. Click Update Diagram on the Schematic toolbar. The Update Diagram dialog box opens.   
 1. Keep the Synchronize against original selection/trace/query option checked and click OK. At the end of the update process, two cables are removed.  
 
-####Configuring an Expand Links rule using the Use origin plant's MaxOutLines value custom reduce extended criteria  
+#### Configuring an Expand Links rule using the Use origin plant's MaxOutLines value custom reduce extended criteria  
 1. Start ArcCatalog, browse to the copied ExtendedCriteriaSamples geodatabase, right-click the ExtendedCriteriaSamples_Schematic schematic dataset, then click Edit.  
 1. From the Schematic Dataset Editor tree, click the DiagramsFromSampleFeatureDataset diagram template.  
 1. Click the Rules tab.  
@@ -94,7 +145,7 @@ This sample shows how to implement custom extended criteria that are intended 
 
 
 
-####See Also  
+#### See Also  
 [ISchematicCollapseRelatedElementsExtended interface](http://desktop.arcgis.com/search/?q=ISchematicCollapseRelatedElementsExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [ISchematicNodeReductionExtended interface](http://desktop.arcgis.com/search/?q=ISchematicNodeReductionExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [ISchematicFeatureRemovalExtended interface](http://desktop.arcgis.com/search/?q=ISchematicFeatureRemovalExtended%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
@@ -103,11 +154,11 @@ This sample shows how to implement custom extended criteria that are intended 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Schematics | ArcGIS for Desktop Basic: Schematics |  
-| ArcGIS for Desktop Standard: Schematics | ArcGIS for Desktop Standard: Schematics |  
-| ArcGIS for Desktop Advanced: Schematics | ArcGIS for Desktop Advanced: Schematics |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Schematics | ArcGIS Desktop Basic: Schematics |  
+| ArcGIS Desktop Standard: Schematics | ArcGIS Desktop Standard: Schematics |  
+| ArcGIS Desktop Advanced: Schematics | ArcGIS Desktop Advanced: Schematics |  
 
 

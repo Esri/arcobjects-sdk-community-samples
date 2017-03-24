@@ -18,43 +18,52 @@
   </style>
 </head>
 <body>
-  <h2>Add a traversal result to the map</h2>
+  ## Add a traversal result to the map
 
-<h3>Purpose</h3>
+ArcGIS Network Analyst extension solvers generate solutions as routes that are represented by a single feature. To analyze the individual network elements that make up those routes, the traversal result must be accessed. This sample shows how to take the traversal result from a completed network analysis and load it on the map.  
 
-<p>ArcGIS Network Analyst extension solvers generate solutions as routes that are represented by a single feature. To analyze the individual network elements that make up those routes, the traversal result must be accessed. This sample shows how to take the traversal result from a completed network analysis and load it on the map.  </p>
+```
+Language:              C#, VB
+Subject:               Networks
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Compile the application.  </li>
-<li>Start ArcMap.  </li>
-<li>Click Customize, then Customize Mode.  </li>
-<li>Click the commands tab.  </li>
-<li>Scroll down to Network Analyst.  </li>
-<li>Drag the tool corresponding to this sample up to the Network Analyst toolbar.  </li>
-<li>Run a solve on a network analysis layer.  </li>
-<li>Click the button for this sample to load the traversal result from the active network analysis layer on the map.  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<h4>See Also</h4>
+### Usage
+1. Compile the application.  
+1. Start ArcMap.  
+1. Click Customize, then Customize Mode.  
+1. Click the commands tab.  
+1. Scroll down to Network Analyst.  
+1. Drag the tool corresponding to this sample up to the Network Analyst toolbar.  
+1. Run a solve on a network analysis layer.  
+1. Click the button for this sample to load the traversal result from the active network analysis layer on the map.  
 
-<p><a href="http://desktop.arcgis.com/search/?q=Programming%20with%20ArcGIS%20Network%20Analyst%20extension&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Programming with ArcGIS Network Analyst extension</a><br />
-<a href="http://desktop.arcgis.com/search/?q=What%20is%20ArcGIS%20Network%20Analyst%20extension%3F&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">What is ArcGIS Network Analyst extension?</a><br />
-<a href="http://desktop.arcgis.com/search/?q=About%20the%20ArcGIS%20Network%20Analyst%20extension%20tutorial&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">About the ArcGIS Network Analyst extension tutorial</a><br />
-<a href="http://desktop.arcgis.com/search/?q=NetworkAnalyst&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">NetworkAnalyst</a><br />
-<a href="http://desktop.arcgis.com/search/?q=ArcGIS%20Network%20Analyst%20extension%20Object%20Model%20Diagram&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ArcGIS Network Analyst extension Object Model Diagram</a><br />
-<a href="http://desktop.arcgis.com/search/?q=An%20overview%20of%20the%20network%20analyst%20toolbox&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">An overview of the network analyst toolbox</a>  </p>
+#### See Also  
+[Programming with ArcGIS Network Analyst extension](http://desktop.arcgis.com/search/?q=Programming%20with%20ArcGIS%20Network%20Analyst%20extension&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[What is ArcGIS Network Analyst extension?](http://desktop.arcgis.com/search/?q=What%20is%20ArcGIS%20Network%20Analyst%20extension%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[About the ArcGIS Network Analyst extension tutorial](http://desktop.arcgis.com/search/?q=About%20the%20ArcGIS%20Network%20Analyst%20extension%20tutorial&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[NetworkAnalyst](http://desktop.arcgis.com/search/?q=NetworkAnalyst&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ArcGIS Network Analyst extension Object Model Diagram](http://desktop.arcgis.com/search/?q=ArcGIS%20Network%20Analyst%20extension%20Object%20Model%20Diagram&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[An overview of the network analyst toolbox](http://desktop.arcgis.com/search/?q=An%20overview%20of%20the%20network%20analyst%20toolbox&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
-<hr />
+---------------------------------
 
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Advanced: Network Analyst </td><td> ArcGIS for Desktop Advanced: Network Analyst </td></tr>  
-<tr><td> ArcGIS for Desktop Standard: Network Analyst </td><td> ArcGIS for Desktop Standard: Network Analyst </td></tr>  
-<tr><td> ArcGIS for Desktop Basic: Network Analyst </td><td> ArcGIS for Desktop Basic: Network Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Advanced: Network Analyst </td><td> ArcGIS Desktop Advanced: Network Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Standard: Network Analyst </td><td> ArcGIS Desktop Standard: Network Analyst </td></tr>  
+<tr><td> ArcGIS Desktop Basic: Network Analyst </td><td> ArcGIS Desktop Basic: Network Analyst </td></tr>  
 </table>
-
 </body>
 </html>

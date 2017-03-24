@@ -18,35 +18,44 @@
   </style>
 </head>
 <body>
-  <h2>Applying user interface customizations at startup</h2>
+  ## Applying user interface customizations at startup
 
-<h3>Purpose</h3>
+It is unsafe to make user interface customizations before the ArcGIS application framework has fully initialized. This sample shows you how to use IApplicationStatusEvents and IApplicationStatus inside a custom extension to monitor the framework's state and properly apply interface customizations when the extension loads.  
 
-<p>It is unsafe to make user interface customizations before the ArcGIS application framework has fully initialized. This sample shows you how to use IApplicationStatusEvents and IApplicationStatus inside a custom extension to monitor the framework's state and properly apply interface customizations when the extension loads.  </p>
+```
+Language:              C#, VB
+Subject:               Framework
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Open and compile the solution in Visual Studio.  </li>
-<li>Start ArcMap.  </li>
-<li>Click Customize and click Extensions.  </li>
-<li>Turn on the ACME extension. The ACME menu appears on the main menu bar.  </li>
-<li>Turning off the extension removes the ACME menu.  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<h4>See Also</h4>
+### Usage
+1. Open and compile the solution in Visual Studio.  
+1. Start ArcMap.  
+1. Click Customize and click Extensions.  
+1. Turn on the ACME extension. The ACME menu appears on the main menu bar.  
+1. Turning off the extension removes the ACME menu.  
 
-<p><a href="http://desktop.arcgis.com/search/?q=Creating%20an%20application%20extension&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Creating an application extension</a>  </p>
+#### See Also  
+[Creating an application extension](http://desktop.arcgis.com/search/?q=Creating%20an%20application%20extension&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
-<hr />
+---------------------------------
 
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td> ArcGIS Desktop Standard </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td> ArcGIS Desktop Advanced </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

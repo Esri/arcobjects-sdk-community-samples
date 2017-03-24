@@ -1,10 +1,31 @@
-##Custom vertex editing commands
+## Custom vertex editing commands
 
-###Purpose  
-This sample provides four tools to insert or delete vertices from an edit sketch and shows the following approaches.Using fine grained ArcObjectsUsing containment to call out-of-the-box commandsIt also shows how to create sketch operations. All the tools can be used in conjunction with the out-of-the-box ArcGIS Engine editing commands. The sample assumes previous experience in creating custom tools and commands.   
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample provides four tools to insert or delete vertices from an edit sketch and shows the following approaches.</div>
+
+*   Using fine grained ArcObjects
+*   Using containment to call out-of-the-box commands
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">It also shows how to create sketch operations. All the tools can be used in conjunction with the out-of-the-box ArcGIS Engine editing commands. The sample assumes previous experience in creating custom tools and commands. </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start editing.  
 1. Zoom in on a polyline or polygon feature.  
 1. Select a feature with the edit tool.  
@@ -16,7 +37,7 @@ This sample provides four tools to insert or delete vertices from an edit sketc
 
 
 
-####Additional information  
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The CustomVertexCommands class and the UsingOutOfBoxVertexCommands class each contain the following tools for vertex management:</div>  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The InsertVertex tool creates a vertex at the clicked location while DeleteVertex deletes the closest vertex. Both classes have the following in common:</div>  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The CustomVertexCommands class uses fine grained ArcObjects to perform the vertex operations. The OnMouseUp event is used to transform the clicked location from screen coordinates to map coordinates using the IDisplayTransformation.ToMapPoint method. </div>  
@@ -29,18 +50,18 @@ This sample provides four tools to insert or delete vertices from an edit sketc
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The approach taken in the CustomVertexCommands class provides greater flexibility programmatically, whereas the UsingOutOfBoxVertexCommands class is more concise with less code to maintain. </div>  
 
 
-####See Also  
+#### See Also  
 [EngineEditorClass](http://desktop.arcgis.com/search/?q=EngineEditorClass&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

@@ -117,7 +117,8 @@ namespace EditingSampleApp
             //add some sample line data to the map
             IWorkspaceFactory workspaceFactory = new AccessWorkspaceFactoryClass();
             //relative file path to the sample data from EXE location
-            string filePath = @"..\..\..\data\StreamflowDateTime\Streamflow.mdb";
+            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            filePath = System.IO.Path.Combine(filePath, @"ArcGIS\data\StreamflowDateTime\Streamflow.mdb");
             
             IFeatureWorkspace workspace = (IFeatureWorkspace)workspaceFactory.OpenFromFile(filePath, axMapControl1.hWnd);
 

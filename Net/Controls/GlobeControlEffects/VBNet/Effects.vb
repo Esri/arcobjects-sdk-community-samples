@@ -12,6 +12,7 @@
 
 'See the License for the specific language governing permissions and
 'limitations under the License.
+Imports System.IO
 Imports ESRI.ArcGIS.esriSystem
 Imports ESRI.ArcGIS.GlobeCore
 Imports ESRI.ArcGIS.Display
@@ -533,14 +534,15 @@ Public Class Effects
 
   Private Sub frmGlbCntrl_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
 
-    'Get the SDK location
-    Dim sGlbData As String = RuntimeManager.ActiveRuntime.Path.ToString
-    sGlbData = System.IO.Directory.GetParent(sGlbData).ToString
-    'First time removes the directory separator
-    sGlbData = System.IO.Directory.GetParent(sGlbData).ToString
-    sGlbData = sGlbData + "\\DeveloperKit" + RuntimeManager.ActiveRuntime.Version + "\\Samples\\data\\Globe\\World Imagery.3dd"
-    If AxGlobeControl1.Check3dFile(sGlbData) Then AxGlobeControl1.Load3dFile(sGlbData)
 
+    'relative file path to the sample data from project location
+    Dim sGlbData As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+    sGlbData = Path.Combine(sGlbData, "ArcGIS\data\Globe\World Imagery.3dd")
+    Dim filePath as DirectoryInfo = New DirectoryInfo(sGlbData)
+    System.Diagnostics.Debug.WriteLine(String.Format("File path for data root: {0} [{1}]", filePath.FullName, Directory.GetCurrentDirectory()))
+    If (not System.IO.File.Exists(sGlbData)) Then Throw New Exception(String.Format("Fix code to point to your sample data: {0} [{1}] was not found", filePath.FullName, Directory.GetCurrentDirectory()))
+    If AxGlobeControl1.Check3dFile(sGlbData) Then AxGlobeControl1.Load3dFile(sGlbData)
+    
     'Enable north arrow, HUD and GlobeTips..
     Dim bChkArrow As Boolean, bHUD As Boolean
     bChkArrow = AxGlobeControl1.GlobeViewer.NorthArrowEnabled

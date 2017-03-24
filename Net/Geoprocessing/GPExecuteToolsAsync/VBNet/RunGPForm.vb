@@ -251,7 +251,7 @@ Public Partial Class RunGPForm
 	Private Sub SetupMap()
 		Try
 			'Relative path to the sample data from EXE location
-			Dim dirPath As String = "..\..\..\..\..\data\USZipCodeData"
+			Dim dirPath As String = System.IO.Path.Combine (Environment.SpecialFolder.MyDocuments, "ArcGIS\data\USZipCodeData")
 
       'Create the cities layer
 			Dim cities As IFeatureClass = TryCast(_gp.Open(dirPath & "\ZipCode_Boundaries_US_Major_Cities.shp"), IFeatureClass)
@@ -266,7 +266,7 @@ Public Partial Class RunGPForm
 			zipBndrysLayer.Name = "Zip Code boundaries"
 			
       'Create the highways layer
-			dirPath = "..\..\..\..\..\data\USAMajorHighways"
+			dirPath = System.IO.Path.Combine (Environment.SpecialFolder.MyDocuments, "ArcGIS\data\USAMajorHighways")
 			Dim highways As IFeatureClass = TryCast(_gp.Open(dirPath & "\usa_major_highways.shp"), IFeatureClass)
 			Dim highwaysLayer As IFeatureLayer = New FeatureLayerClass()
 			highwaysLayer.FeatureClass = highways

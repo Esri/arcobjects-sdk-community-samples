@@ -1,10 +1,29 @@
-##ArcGIS Network Analyst extension barrier location editor
+## ArcGIS Network Analyst extension barrier location editor
 
-###Purpose  
-This sample demonstrates how to load polygon and polyline barrier values programmatically, while also providing a way to visualize and edit the underlying network element values that make up a polygon or polyline barrier. This sample also illustrates how to flash the geometry of a network element (with a corresponding digitized direction arrow) and how to set up a context menu command for the NAWindow.  
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates how to load polygon and polyline barrier values programmatically, while also providing a way to visualize and edit the underlying network element values that make up a polygon or polyline barrier.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample also illustrates how to flash the geometry of a network element (with a corresponding digitized direction arrow) and how to set up a context menu command for the NAWindow.</div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Networks
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Compile the application. In non-XP Windows operating systems, be sure to open Visual Studio with "As Administrator."  
 1. Start ArcMap.  
 1. Create or load a network analysis layer.  
@@ -18,7 +37,7 @@ This sample demonstrates how to load polygon and polyline barrier values progra
 
 
 
-####See Also  
+#### See Also  
 [Programming with the ArcGIS Network Analyst extension](http://desktop.arcgis.com/search/?q=Programming%20with%20the%20ArcGIS%20Network%20Analyst%20extension&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [What is ArcGIS Network Analyst extension?](http://desktop.arcgis.com/search/?q=What%20is%20ArcGIS%20Network%20Analyst%20extension%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [What is a network dataset?](http://desktop.arcgis.com/search/?q=What%20is%20a%20network%20dataset%3F&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
@@ -31,11 +50,11 @@ This sample demonstrates how to load polygon and polyline barrier values progra
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Network Analyst | ArcGIS for Desktop Basic: Network Analyst |  
-| ArcGIS for Desktop Standard: Network Analyst | ArcGIS for Desktop Standard: Network Analyst |  
-| ArcGIS for Desktop Advanced: Network Analyst | ArcGIS for Desktop Advanced: Network Analyst |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Network Analyst | ArcGIS Desktop Basic: Network Analyst |  
+| ArcGIS Desktop Standard: Network Analyst | ArcGIS Desktop Standard: Network Analyst |  
+| ArcGIS Desktop Advanced: Network Analyst | ArcGIS Desktop Advanced: Network Analyst |  
 
 

@@ -89,7 +89,9 @@ Namespace DemoITableBinding
         Private Sub MainWnd_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
             ' Get workspace and open mdb file
             Dim wkspcFactory As IWorkspaceFactory2 = DirectCast(New FileGDBWorkspaceFactoryClass, IWorkspaceFactory2)
-            Dim wkspc As IFeatureWorkspace = DirectCast(wkspcFactory.OpenFromFile("..\..\..\..\..\..\data\SanFrancisco\SanFrancisco.gdb", Handle.ToInt32), IFeatureWorkspace)
+            Dim filePath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+            filePath = System.IO.Path.Combine (filePath, "ArcGIS\data\SanFrancisco\SanFrancisco.gdb")
+            Dim wkspc As IFeatureWorkspace = DirectCast(wkspcFactory.OpenFromFile(filePath, Handle.ToInt32), IFeatureWorkspace)
 
             'Open the Geodatabase table
             Dim foundITable As ITable = TryCast(wkspc.OpenFeatureClass("Parks"), ITable)

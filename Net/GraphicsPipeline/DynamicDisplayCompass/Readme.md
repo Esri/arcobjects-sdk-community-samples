@@ -1,10 +1,32 @@
-##Dynamic display compass
+## Dynamic display compass
 
-###Purpose  
-This sample demonstrates drawing on the map in dynamic mode using an OpenGL application programming interface (API). A command is implemented that adds a compass object to the map, which rotates along together with the dynamic map. The following issues are covered in this sample: Wiring dynamic map events to listen to the Before or After DynamicDraw, which allows you to plug in your drawing to the map.Creation of OpenGL display lists.Mapping a bitmap into an OpenGL texture and binding the texture to an OpenGL geometry.Translating, scaling, and rotating OpenGL display lists.   
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates drawing on the map in dynamic mode using an OpenGL application programming interface (API). A command is implemented that adds a compass object to the map, which rotates along together with the dynamic map. The following issues are covered in this sample: </div>
+
+*   Wiring dynamic map events to listen to the Before or After DynamicDraw, which allows you to plug in your drawing to the map.
+*   Creation of OpenGL display lists.
+*   Mapping a bitmap into an OpenGL texture and binding the texture to an OpenGL geometry.
+*   Translating, scaling, and rotating OpenGL display lists.   
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Start Visual Studio and open the solution.  
 1. Build the solution to make the Dynamic Display Compass command .dll file. Use this command in an application with a MapControl and a ToolbarControl, such as the MapControlApplication template included with the Visual Studio integration.  
 1. Add the command to the ToolbarControl. The command can be found in the .NET Samples category with the name, Dynamic Display Compass.  
@@ -16,7 +38,7 @@ This sample demonstrates drawing on the map in dynamic mode using an OpenGL appl
 
 
 
-####See Also  
+#### See Also  
 [How dynamic display works](http://desktop.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Rendering dynamic map content](http://desktop.arcgis.com/search/?q=Rendering%20dynamic%20map%20content&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [How to create a dynamic glyph from a marker symbol](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
@@ -29,12 +51,12 @@ This sample demonstrates drawing on the map in dynamic mode using an OpenGL appl
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

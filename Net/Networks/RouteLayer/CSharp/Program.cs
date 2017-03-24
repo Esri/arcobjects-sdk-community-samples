@@ -70,7 +70,7 @@ namespace RouteLayer
 	/// </summary>
 	public class RouteClass
 	{
-		private const String FGDB_WORKSPACE = @"\..\..\..\..\..\Data\SanFrancisco\SanFrancisco.gdb";
+		private const String FGDB_WORKSPACE =  @"ArcGIS\data\SanFrancisco\SanFrancisco.gdb";
 		private const String INPUT_STOPS_FC = "Stores";
 		private const String INPUT_NAME_FIELD = "Name";
 		private const String FEATURE_DATASET = "Transportation";
@@ -84,7 +84,7 @@ namespace RouteLayer
 			// Open the feature workspace, input feature class, and network dataset
 			// As Workspace Factories are Singleton objects, they must be instantiated with the Activator
 			IWorkspaceFactory workspaceFactory = System.Activator.CreateInstance(System.Type.GetTypeFromProgID("esriDataSourcesGDB.FileGDBWorkspaceFactory")) as IWorkspaceFactory;
-			IFeatureWorkspace featureWorkspace = workspaceFactory.OpenFromFile(Application.StartupPath + FGDB_WORKSPACE, 0) as IFeatureWorkspace;
+			IFeatureWorkspace featureWorkspace = workspaceFactory.OpenFromFile(System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), FGDB_WORKSPACE), 0) as IFeatureWorkspace;
 			IFeatureClass inputStopsFClass = featureWorkspace.OpenFeatureClass(INPUT_STOPS_FC);
 
 			// Obtain the dataset container from the workspace

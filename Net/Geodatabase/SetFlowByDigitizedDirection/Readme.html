@@ -18,42 +18,48 @@
   </style>
 </head>
 <body>
-  <h2>Set flow by digitized direction</h2>
+  ## Set flow by digitized direction
 
-<h3>Purpose</h3>
+The Set Flow by Digitized Direction sample is an ArcMap add-in that shows how to create a custom flow direction solver button for utility networks. This button sets the flow direction for each edge feature in the network along the direction in which the feature was digitized.    
 
-<p>The Set Flow by Digitized Direction sample is an ArcMap add-in that shows how to create a custom flow direction solver button for utility networks. This button sets the flow direction for each edge feature in the network along the direction in which the feature was digitized.  </p>
+```
+Language:              C#, VB
+Subject:               Geodatabase
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<h4>Adding the button to ArcMap</h4>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<ol>
-<li>Open the .sln file in Visual Studio and compile it.  </li>
-<li>Start ArcMap and make the Utility Network Analyst toolbar visible.  </li>
-<li>Click the Customize menu and click Customize Mode. The Customize dialog box opens.  </li>
-<li>Click the Commands tab.   </li>
-<li>In the Categories list, click Add-in Developer Samples. Set Flow by Digitized Direction is listed under Commands.   </li>
-<li>Drag the command button onto the Utility Network Analyst toolbar.  </li>
-</ol>
+### Usage
+#### Adding the button to ArcMap  
+1. Open the .sln file in Visual Studio and compile it.  
+1. Start ArcMap and make the Utility Network Analyst toolbar visible.  
+1. Click the Customize menu and click Customize Mode. The Customize dialog box opens.  
+1. Click the Commands tab.   
+1. In the Categories list, click Add-in Developer Samples. Set Flow by Digitized Direction is listed under Commands.   
+1. Drag the command button onto the Utility Network Analyst toolbar.  
 
-<h4>Using the button to set the flow direction</h4>
+#### Using the button to set the flow direction  
+1. Add a geometric network to ArcMap.  
+1. Start editing.  
+1. Click the button to set the flow according to the digitized direction of the features.  
+1. Stop editing and save your edits.  
 
-<ol>
-<li>Add a geometric network to ArcMap.  </li>
-<li>Start editing.  </li>
-<li>Click the button to set the flow according to the digitized direction of the features.  </li>
-<li>Stop editing and save your edits.  </li>
-</ol>
+---------------------------------
 
-<hr />
-
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Standard </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td> ArcGIS Desktop Advanced </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

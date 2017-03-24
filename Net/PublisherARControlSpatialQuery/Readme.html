@@ -18,34 +18,48 @@
   </style>
 </head>
 <body>
-  <h2>ArcReaderControl spatial query</h2>
+  ## ArcReaderControl spatial query
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates how to use the IARMap.QueryARFeatures method to search for visible features intersecting a given envelope using IARSearchDef. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The SetEnvelopeShape method sets the search geometry of the query to the current visual extent of the focus map, and the SpatialRelationship is set to "intersects." This query definition is passed to the QueryARFeatures method to create an ARFeatureSet. Features are accessed from ARFeatureSet using the Next method and the ARFeature property. The FieldAliasName and Value of each field is displayed if the loaded document was published with permission to query values. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The ZoomTo, CenterAt, Flash, and Flicker methods are used to identify each feature on the map. </div>  
 
-<p>This sample demonstrates how to use the IARMap.QueryARFeatures method to search for visible features intersecting a given envelope using IARSearchDef.  The SetEnvelopeShape method sets the search geometry of the query to the current visual extent of the focus map, and the SpatialRelationship is set to "intersects." This query definition is passed to the QueryARFeatures method to create an ARFeatureSet. Features are accessed from ARFeatureSet using the Next method and the ARFeature property. The FieldAliasName and Value of each field is displayed if the loaded document was published with permission to query values.  The ZoomTo, CenterAt, Flash, and Flicker methods are used to identify each feature on the map.   </p>
+```
+Language:              C#, VB
+Subject:               Publisher AR Control Spatial Query
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Start Visual Studio, open the solution file, and build the project.  </li>
-<li>Run the application.   </li>
-<li>Browse to a Published Map File (PMF) from ArcMap to load.   </li>
-<li>Navigate to some features of interest.  </li>
-<li>Query the focus map for all visible features within the current map extent.  </li>
-<li>Loop through the features to display field values, and use the PanTo, ZoomTo, Flash, and Flicker buttons to identify each feature on the map.   </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<hr />
+### Usage
+1. Start Visual Studio, open the solution file, and build the project.  
+1. Run the application.   
+1. Browse to a Published Map File (PMF) from ArcMap to load.   
+1. Navigate to some features of interest.  
+1. Query the focus map for all visible features within the current map extent.  
+1. Loop through the features to display field values, and use the PanTo, ZoomTo, Flash, and Flicker buttons to identify each feature on the map.   
 
-<h4>Licensing</h4>
+---------------------------------
 
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic: Publisher </td><td> ArcReader </td></tr>  
-<tr><td> ArcGIS for Desktop Standard: Publisher </td><td> Engine </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced: Publisher </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic: Publisher </td><td> ArcReader </td></tr>  
+<tr><td> ArcGIS Desktop Standard: Publisher </td><td> Engine </td></tr>  
+<tr><td> ArcGIS Desktop Advanced: Publisher </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

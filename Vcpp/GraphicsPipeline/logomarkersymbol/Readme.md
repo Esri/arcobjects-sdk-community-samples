@@ -1,10 +1,28 @@
-##LogoMarkerSymbol
+## LogoMarkerSymbol
 
-###Purpose  
-This example provides a custom symbol which draws a company logo to symbolize a point. Simple custom functionality is provided to alter the colors of the different parts of the symbol, and a property page is also provided to allow end users to edit the properties of the symbol.   
+  <div xmlns="http://www.w3.org/1999/xhtml">This example provides a custom symbol which draws a company logo to symbolize a point. Simple custom functionality is provided to alter the colors of the different parts of the symbol, and a property page is also provided to allow end users to edit the properties of the symbol.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              VC++
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Register LogoMarkerSymbolVB.dll or LogoMarkerSymbolVC.dll.  
 1. Open ArcMap, and add a layer with point features, or a marker graphic element.  
 1. For a layer, right-click the layer in the ArcMap table of contents, choose Properties, and then in the Layer Properties dialog box, choose the Symbology tab. The Single Symbol renderer should be  selected by default—click the Symbol button to show the Symbol Selector.  
@@ -23,11 +41,11 @@ This example provides a custom symbol which draws a company logo to symbolize a 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 
 

@@ -3,26 +3,26 @@
 	<purpose>The GxStyles sample demonstrates how to create custom GxObjects and a custom GxView. It introduces a new root node (called Style Gallery) that when expanded, contains a tree structure of styles. Individual styles can be previewed with a new custom view that is available under the Preview tab. </purpose>
 	<development_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license></development_license>
 	<deployment_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license></deployment_license>
 	<apis>

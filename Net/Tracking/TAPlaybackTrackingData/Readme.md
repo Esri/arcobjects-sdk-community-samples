@@ -1,10 +1,35 @@
-##Play back tracking data
+## Play back tracking data
 
-###Purpose  
-This sample demonstrates using the ArcGIS Tracking Analyst extension to play back tracking data. The tracking data can be any type of a feature class that has time stamp information (such as date and time). In this sample, you learn how to initialize the Tracking Analyst extension and the Tracking Analyst tracking environment. This sample covers the following:Opening the tracking data feature classCreating the renderers used by the temporal layer to display temporal dataLoading the Tracking Analyst extensionInitializing the tracking environmentAssigning temporal operators to the tracking environment to display temporal dataIncrementing a temporal operatorChanging the tracking environment temporal perspective time stamp   
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates using the ArcGIS Tracking Analyst extension to play back tracking data. The tracking data can be any type of a feature class that has time stamp information (such as date and time). In this sample, you learn how to initialize the Tracking Analyst extension and the Tracking Analyst tracking environment. This sample covers the following:</div>
+
+*   Opening the tracking data feature class
+*   Creating the renderers used by the temporal layer to display temporal data
+*   Loading the Tracking Analyst extension
+*   Initializing the tracking environment
+*   Assigning temporal operators to the tracking environment to display temporal data
+*   Incrementing a temporal operator
+*   Changing the tracking environment temporal perspective time stamp   
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Tracking
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the solution in Visual Studio.  
 1. Build the solution to make the play back tracking data Add-in's dynamic-link library (DLL) file.  
 1. Add the Add-in's button to a toolbar in ArcMap.  
@@ -16,17 +41,17 @@ This sample demonstrates using the ArcGIS Tracking Analyst extension to play bac
 
 
 
-####See Also  
+#### See Also  
 [How to connect to ArcGIS Tracking Server](http://desktop.arcgis.com/search/?q=How%20to%20connect%20to%20ArcGIS%20Tracking%20Server&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Tracking Analyst | ArcGIS for Desktop Basic: Tracking Analyst |  
-| ArcGIS for Desktop Standard: Tracking Analyst | ArcGIS for Desktop Standard: Tracking Analyst |  
-| ArcGIS for Desktop Advanced: Tracking Analyst | ArcGIS for Desktop Advanced: Tracking Analyst |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Tracking Analyst | ArcGIS Desktop Basic: Tracking Analyst |  
+| ArcGIS Desktop Standard: Tracking Analyst | ArcGIS Desktop Standard: Tracking Analyst |  
+| ArcGIS Desktop Advanced: Tracking Analyst | ArcGIS Desktop Advanced: Tracking Analyst |  
 
 

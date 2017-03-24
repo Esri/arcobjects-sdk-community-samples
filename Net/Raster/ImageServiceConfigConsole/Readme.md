@@ -1,11 +1,28 @@
-##Publish an image service and set configurations
+## Publish an image service and set configurations
 
-###Purpose  
 This sample shows how to programmatically publish an image service to ArcGIS 10.2 for Server. It illustrates how to connect to a server admin endpoint, create an image service and set parameters and capabilities based on data source type (mosaic dataset, raster dataset, raster layer), and enable Web Coverage Service (WCS) and Web Map Service (WMS). Additional functionalities include starting, stopping, and deleting an image service.  
 
 
-###Usage
-####How to use  
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Raster
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### How to use  
 1. Start Visual Studio, open the solution file, and compile the program.  
 1. Run isconfig from the command line environment. To run this utility, both the client and ArcGIS Server need to have access to the data source. See the Additional information section below.  
 1. This sample only populates commonly used properties in this configuration, you may need to alter some of them based on your service requirements.  
@@ -15,7 +32,7 @@ This sample shows how to programmatically publish an image service to ArcGIS 
 
 
 
-####Additional information  
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml"> </div>  
 
 
@@ -23,12 +40,12 @@ This sample shows how to programmatically publish an image service to ArcGIS 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
 | Engine Developer Kit | Engine |  
 
 

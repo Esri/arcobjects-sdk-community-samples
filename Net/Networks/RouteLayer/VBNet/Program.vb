@@ -19,7 +19,6 @@ Imports ESRI.ArcGIS.esriSystem
 Imports ESRI.ArcGIS.Carto
 Imports ESRI.ArcGIS.Display
 Imports ESRI.ArcGIS.Geoprocessor
-Imports ESRI.ArcGIS.DataManagementTools
 
 ' Main class that checks out the appropriate ArcGIS license and calls RouteClass.SolveRoute to perform the analysis
 Module Program
@@ -57,7 +56,7 @@ End Module
 
 'The RouteClass class is the workhorse class that does the analysis and writes it to disk
 Public Class RouteClass
-	Private Const FGDB_WORKSPACE As String = "..\..\..\..\..\Data\SanFrancisco\SanFrancisco.gdb"
+	Private Const FGDB_WORKSPACE As String = "ArcGIS\data\SanFrancisco\SanFrancisco.gdb"
 	Private Const INPUT_STOPS_FC As String = "Stores"
 	Private Const SHAPE_INPUT_NAME_FIELD As String = "Name"
 	Private Const FEATURE_DATASET As String = "Transportation"
@@ -68,7 +67,7 @@ Public Class RouteClass
 		' Open the feature workspace, input feature class, and network dataset
 		' As Workspace Factories are Singleton objects, they must be instantiated with the Activator
 		Dim workspaceFactory As IWorkspaceFactory = Activator.CreateInstance(Type.GetTypeFromProgID("esriDataSourcesGDB.FileGDBWorkspaceFactory"))
-		Dim featureWorkspace As IFeatureWorkspace = workspaceFactory.OpenFromFile(FGDB_WORKSPACE, 0)
+		Dim featureWorkspace As IFeatureWorkspace = workspaceFactory.OpenFromFile(System.IO.Path.Combine (Environment.SpecialFolder.MyDocuments, FGDB_WORKSPACE), 0)
 		Dim inputStopsFClass As IFeatureClass = featureWorkspace.OpenFeatureClass(INPUT_STOPS_FC)
 
 		' Obtain the dataset container from the workspace

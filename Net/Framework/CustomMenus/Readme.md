@@ -1,11 +1,28 @@
-##Add a custom menu created in .NET to ArcGIS for Desktop
+## Add a custom menu created in .NET to ArcGIS Desktop
 
-###Purpose  
-This sample demonstrates how to create a base or root-level menu with submenu functionality. The root-level menu is created by inheriting the BaseMenu class from the ESRI.ArcGIS.ADF.Local assembly's ESRI.ArcGIS.ADF namespace and by implementing the ESRI.ArcGIS.Framework.IRootLevelMenu interface. The submenu functionality is created by using existing ArcGIS functionality that is accessed by the class identifier (CLSID) and ProgID in ArcMap. Additionally, a custom command is created and is accessed as a submenu. This sample contains all of the code demonstrated in the Adding a custom menu created in .NET to ArcGIS for Desktop walkthrough.  
+This sample demonstrates how to create a base or root-level menu with submenu functionality. The root-level menu is created by inheriting the BaseMenu class from the ESRI.ArcGIS.ADF.Local assembly's ESRI.ArcGIS.ADF namespace and by implementing the [ESRI.ArcGIS.Framework.IRootLevelMenu](http://esriFramework/IRootLevelMenu.htm) interface. The submenu functionality is created by using existing ArcGIS functionality that is accessed by the class identifier (CLSID) and ProgID in ArcMap. Additionally, a custom command is created and is accessed as a submenu. This sample contains all of the code demonstrated in the [Adding a custom menu created in .NET to ArcGIS Desktop](http://e685b331-303d-47a0-ae4f-22a41ab3566b) walkthrough.  
 
 
-###Usage
-####Add and use menu and submenu commands in ArcMap  
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Framework
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### Add and use menu and submenu commands in ArcMap  
 1. Open and compile the solution in Visual Studio.  
 1. Start ArcMap.  
 1. Click the Customize menu and click Customize Mode. The Customize dialog box appears.   
@@ -23,19 +40,19 @@ Screen shot of the My_Menu command in ArcMap.
 
 
 
-####See Also  
-[Walkthrough: Adding a custom menu created in .NET to ArcGIS for Desktop](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Adding%20a%20custom%20menu%20created%20in%20.NET%20to%20ArcGIS%20for%20Desktop&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+#### See Also  
+[Walkthrough: Adding a custom menu created in .NET to ArcGIS Desktop](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Adding%20a%20custom%20menu%20created%20in%20.NET%20to%20ArcGIS%20Desktop&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Creating toolbars and menus](http://desktop.arcgis.com/search/?q=Creating%20toolbars%20and%20menus&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 [Creating commands and tools](http://desktop.arcgis.com/search/?q=Creating%20commands%20and%20tools&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 
 

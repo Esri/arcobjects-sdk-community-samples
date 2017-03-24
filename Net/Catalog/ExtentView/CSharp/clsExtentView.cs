@@ -18,6 +18,7 @@
 */
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Runtime.InteropServices;
 using ESRI.ArcGIS.ADF.CATIDs;
@@ -117,7 +118,10 @@ namespace ExtentView_CS
                 m_pSelection.OnSelectionChanged += new IGxSelectionEvents_OnSelectionChangedEventHandler(OnSelectionChanged);
                 // get data from the MyProject's settings.
                 // please change accordingly
-                m_path = Properties.Settings.Default.DataLocation;
+                m_path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                m_path = System.IO.Path.Combine(m_path, @"ArcGIS\data\world");
+                if (!Directory.Exists(m_path)) throw new Exception(string.Format("Fix code to point to your sample data: {0} was not found", m_path));
+
                 //Add data to map control
                 frmExtentView.AxMapControl1.AddShapeFile(m_path, "world30");
                 frmExtentView.AxMapControl1.Extent = frmExtentView.AxMapControl1.FullExtent;

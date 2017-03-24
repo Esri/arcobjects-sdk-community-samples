@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.923" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
-  <title>Add a custom menu created in .NET to ArcGIS for Desktop</title>
-  <purpose>This sample demonstrates how to create a base or root-level menu with submenu functionality. The root-level menu is created by inheriting the BaseMenu class from the ESRI.ArcGIS.ADF.Local assembly's ESRI.ArcGIS.ADF namespace and by implementing the <a href="http://esriFramework/IRootLevelMenu.htm" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">ESRI.ArcGIS.Framework.IRootLevelMenu</a> interface. The submenu functionality is created by using existing ArcGIS functionality that is accessed by the class identifier (CLSID) and ProgID in ArcMap. Additionally, a custom command is created and is accessed as a submenu. This sample contains all of the code demonstrated in the <a href="http://e685b331-303d-47a0-ae4f-22a41ab3566b" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Adding a custom menu created in .NET to ArcGIS for Desktop</a> walkthrough.</purpose>
+  <title>Add a custom menu created in .NET to ArcGIS Desktop</title>
+  <purpose>This sample demonstrates how to create a base or root-level menu with submenu functionality. The root-level menu is created by inheriting the BaseMenu class from the ESRI.ArcGIS.ADF.Local assembly's ESRI.ArcGIS.ADF namespace and by implementing the <a href="http://esriFramework/IRootLevelMenu.htm" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">ESRI.ArcGIS.Framework.IRootLevelMenu</a> interface. The submenu functionality is created by using existing ArcGIS functionality that is accessed by the class identifier (CLSID) and ProgID in ArcMap. Additionally, a custom command is created and is accessed as a submenu. This sample contains all of the code demonstrated in the <a href="http://e685b331-303d-47a0-ae4f-22a41ab3566b" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">Adding a custom menu created in .NET to ArcGIS Desktop</a> walkthrough.</purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
@@ -99,7 +99,7 @@
   </how_to_use_section>
   <related_topics>
     <topic>
-      <topic_display>Walkthrough: Adding a custom menu created in .NET to ArcGIS for Desktop</topic_display>
+      <topic_display>Walkthrough: Adding a custom menu created in .NET to ArcGIS Desktop</topic_display>
       <topic_link>e685b331-303d-47a0-ae4f-22a41ab3566b</topic_link>
     </topic>
     <topic>

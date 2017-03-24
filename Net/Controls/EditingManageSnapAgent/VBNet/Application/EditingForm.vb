@@ -86,7 +86,8 @@ Shared Sub Main()
     'add some sample line data to the map
     Dim workspaceFactory As IWorkspaceFactory = New ShapefileWorkspaceFactoryClass()
 
-        Dim filePath As String = "..\..\..\..\..\..\data\USAMajorHighways"
+    Dim filePath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+    filePath = System.IO.Path.Combine (filePath, "ArcGIS\data\USAMajorHighways")
     Dim workspace As IFeatureWorkspace = DirectCast(workspaceFactory.OpenFromFile(filePath, AxMapControl1.hWnd), IFeatureWorkspace)
     Dim featureLayer As IFeatureLayer = New FeatureLayerClass()
 

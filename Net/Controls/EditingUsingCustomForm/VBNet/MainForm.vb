@@ -47,7 +47,8 @@ Shared Sub Main()
         m_mapControl = CType(AxMapControl1.Object, IMapControl3)
 
         'relative file path to the sample data from EXE location
-        Dim filePath As String = "..\..\..\data\USAMajorHighways"
+        Dim filePath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+        filePath = System.IO.Path.Combine (filePath, "ArcGIS\data\USAMajorHighways")
 
         'Add Lakes layer
         Dim workspaceFactory As IWorkspaceFactory = New ShapefileWorkspaceFactoryClass()

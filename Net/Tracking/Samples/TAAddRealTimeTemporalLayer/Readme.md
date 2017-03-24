@@ -1,10 +1,27 @@
-##Adding a real-time feed to ArcMap
+## Adding a real-time feed to ArcMap
 
-###Purpose  
 This sample demonstrates connecting to a Tracking Server and adding one of the services to ArcMap. This sample also shows initializing the Tracking Analyst extension.  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Tracking
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the solution.  
 1. Change the TS_SERVER_NAME to the name of your Tracking Server machine.  
 1. Change the TS_SERVICE_NAME to the name of the real-time feed on your Tracking Server you want to connect to.  
@@ -18,17 +35,17 @@ This sample demonstrates connecting to a Tracking Server and adding one of the s
 
 
 
-####See Also  
+#### See Also  
 [Sample: Add and symbolize a historical temporal layer in ArcMap](../../../Net/Tracking/Samples/TAAddHistoricalTrackingLayer)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Tracking Analyst | ArcGIS for Desktop Advanced: Tracking Analyst |  
-| ArcGIS for Desktop Standard: Tracking Analyst | ArcGIS for Desktop Standard: Tracking Analyst |  
-| ArcGIS for Desktop Advanced: Tracking Analyst | ArcGIS for Desktop Basic: Tracking Analyst |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Tracking Analyst | ArcGIS Desktop Advanced: Tracking Analyst |  
+| ArcGIS Desktop Standard: Tracking Analyst | ArcGIS Desktop Standard: Tracking Analyst |  
+| ArcGIS Desktop Advanced: Tracking Analyst | ArcGIS Desktop Basic: Tracking Analyst |  
 
 

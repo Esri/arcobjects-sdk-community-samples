@@ -5,26 +5,26 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">When you click a feature point (gage station) using the Time Series Graph tool, the tool identifies the point and finds the gage ID. All the measurements from this point for this gage ID are used in making a graph based on a graph template. If there is an existing open graph window, the tool creates the graph series in this window. If there is no open graph window, the tool creates the graph series in a new graph window. </div></purpose>
 	<development_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license></development_license>
 	<deployment_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension></extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension></extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension></extension>
 								</license></deployment_license>
 	<apis>
@@ -76,7 +76,7 @@
 		<how_to_use>
 			<title></title>
 			<how_to_use_steps>
-				<step>Open the solution file in Visual Studio and build the project. </step><step>Start ArcMap, click the Customize drop-down menu, and click Customize Mode. The Customize dialog box appears.</step><step>Click the Commands tab, scroll to Add-in Controls in the categories list, and drag the Time Series Graph tool to a toolbar in ArcMap. </step><step>Move the timeseries.tee file from the sample folder to the &lt;your ArcGIS for Desktop install location&gt;/GraphTemplates folder.</step><step>Add the TimeSerTool.lyr to ArcMap. </step><step>Select the Time Series Graph tool and click the point (gage station). A line graph is drawn in a new graph window. </step><step>To add lines to the same graph, keep the graph window open, and a new line is added into it. To draw lines on a new graph, close the graph window, and a new line is drawn in a separate graph window. </step>
+				<step>Open the solution file in Visual Studio and build the project. </step><step>Start ArcMap, click the Customize drop-down menu, and click Customize Mode. The Customize dialog box appears.</step><step>Click the Commands tab, scroll to Add-in Controls in the categories list, and drag the Time Series Graph tool to a toolbar in ArcMap. </step><step>Move the timeseries.tee file from the sample folder to the &lt;your ArcGIS Desktop install location&gt;/GraphTemplates folder.</step><step>Add the TimeSerTool.lyr to ArcMap. </step><step>Select the Time Series Graph tool and click the point (gage station). A line graph is drawn in a new graph window. </step><step>To add lines to the same graph, keep the graph window open, and a new line is added into it. To draw lines on a new graph, close the graph window, and a new line is drawn in a separate graph window. </step>
 			</how_to_use_steps>
 		</how_to_use>
 	</how_to_use_section>

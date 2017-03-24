@@ -1,10 +1,27 @@
-##Create a raster catalog using the geoprocessor
+## Create a raster catalog using the geoprocessor
 
-###Purpose  
 This sample uses the geoprocessor class in conjunction with CreateRasterCatalog and WorkspaceToRasterCatalog geoprocessing tool classes to create a raster catalog, and load a directory of rasters to the raster catalog. It demonstrates the recommended approach for creating and loading raster catalogs from rasters in a folder.  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Raster
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the solution file in Visual Studio.  
 1. Modify the data paths to your input data path and output geodatabase.  
 1. Run the sample.  
@@ -20,11 +37,11 @@ This sample uses the geoprocessor class in conjunction with CreateRasterCatalog 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 | Engine Developer Kit | Engine |  
 
 

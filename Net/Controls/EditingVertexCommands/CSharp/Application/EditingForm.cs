@@ -95,7 +95,8 @@ namespace EditingSampleApp
             //add some sample line data to the map
             IWorkspaceFactory workspaceFactory = new ShapefileWorkspaceFactoryClass();
             //relative file path to the sample data from EXE location
-            string filePath = @"C:\Program Files\ArcGIS\DeveloperKit10.0\Samples\data\USAMajorHighways";
+            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            filePath = System.IO.Path.Combine(filePath, @"ArcGIS\data\USAMajorHighways");
             IFeatureWorkspace workspace = (IFeatureWorkspace)workspaceFactory.OpenFromFile(filePath, axMapControl1.hWnd);
 
             IFeatureLayer featureLayer = new FeatureLayerClass();

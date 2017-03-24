@@ -189,7 +189,7 @@ Shared Sub Main()
 
         'Find sample data
         Dim sFilePath As String
-        sFilePath = "..\..\..\Data\World"
+        sFilePath = System.IO.Path.Combine (Environment.SpecialFolder.MyDocuments, "ArcGIS\data\World")
 
         'Add sample shapefile data
         m_pMapControl.AddShapeFile(sFilePath, "world30")

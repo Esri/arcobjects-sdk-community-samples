@@ -125,7 +125,7 @@ namespace Controls
             axToolbarControl1.SetBuddyControl(axPageLayoutControl1);
 
             //Load a pre-authored map document into the PageLayoutControl using relative paths
-            string fileName = @"..\..\..\..\data\GulfOfStLawrence\Gulf_of_St._Lawrence.mxd";
+            string fileName = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"ArcGIS\data\GulfOfStLawrence\Gulf_of_St._Lawrence.mxd");
             if (axPageLayoutControl1.CheckMxFile(fileName))
                 axPageLayoutControl1.LoadMxFile(fileName, "");
         }

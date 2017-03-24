@@ -18,6 +18,7 @@
 */
 using System;
 using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
 using ESRI.ArcGIS.ADF.BaseClasses;
@@ -125,37 +126,35 @@ namespace RSSWeatherLayer3D
 		/// </summary>
 		/// <param name="hook">Instance of the application</param>
 		public override void OnCreate(object hook)
-		{
-      //Instantiate the hook helper
-      if (null == m_globeHookHelper)
-        m_globeHookHelper = new GlobeHookHelperClass();
-      
-      //set the hook
-      m_globeHookHelper.Hook = hook;
+        {
+            //Instantiate the hook helper
+            if (null == m_globeHookHelper)
+                m_globeHookHelper = new GlobeHookHelperClass();
 
-      //get the relevant members
-      IGlobe globe = m_globeHookHelper.Globe;
-      m_scene = globe as IScene;
-      m_globeDsp = m_globeHookHelper.GlobeDisplay;
-			m_globeViewUtil = m_globeHookHelper.Camera as IGlobeViewUtil;
+            //set the hook
+            m_globeHookHelper.Hook = hook;
 
-			//connect to the ZipCodes featureclass
-      //get the ArcGIS path from the registry
-      String versionNumber = RuntimeManager.ActiveRuntime.Version;
-      RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\ESRI\ArcObjectsSdk" + versionNumber);
-      string path = Convert.ToString(key.GetValue("InstallDir"));
-      path = System.IO.Path.Combine(path, @"Samples\data\USZipCodeData");
+            //get the relevant members
+            IGlobe globe = m_globeHookHelper.Globe;
+            m_scene = globe as IScene;
+            m_globeDsp = m_globeHookHelper.GlobeDisplay;
+            m_globeViewUtil = m_globeHookHelper.Camera as IGlobeViewUtil;
 
-			IWorkspaceFactory wf = new ShapefileWorkspaceFactoryClass() as IWorkspaceFactory;
-      IWorkspace ws = wf.OpenFromFile(path, 0);
-			IFeatureWorkspace fw = ws as IFeatureWorkspace;
-			m_featureClass = fw.OpenFeatureClass("US_ZipCodes");
-		}
+            //connect to the ZipCodes featureclass
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            path = System.IO.Path.Combine(path, @"ArcGIS\data\USZipCodeData");
+            if (!Directory.Exists(path)) throw new Exception(string.Format("Fix code to point to your sample data: {0} was not found", path));
 
-		/// <summary>
-		/// Occurs when this command is clicked
-		/// </summary>
-		public override void OnClick()
+            IWorkspaceFactory wf = new ShapefileWorkspaceFactoryClass() as IWorkspaceFactory;
+            IWorkspace ws = wf.OpenFromFile(path, 0);
+            IFeatureWorkspace fw = ws as IFeatureWorkspace;
+            m_featureClass = fw.OpenFeatureClass("US_ZipCodes");
+        }
+
+        /// <summary>
+        /// Occurs when this command is clicked
+        /// </summary>
+        public override void OnClick()
 		{
 			try
 			{

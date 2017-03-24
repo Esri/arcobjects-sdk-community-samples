@@ -848,7 +848,8 @@ Class RSSWeather
 	''' Load the information from the MajorCities featureclass to the locations table
 	''' </summary>
 	Private Sub PopulateLocationsTable()
-        Dim path As String = System.IO.Path.Combine(m_installationFolder & "\..", "DeveloperKit10.4\Samples\data\USZipCodeData\")
+    Dim path As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+    path = System.IO.Path.Combine (path, "ArcGIS\data\USZipCodeData\")
 
 		'open the featureclass
 		Dim wf As IWorkspaceFactory = TryCast(New ShapefileWorkspaceFactoryClass(), IWorkspaceFactory)

@@ -1,10 +1,27 @@
-##Web browser dockable window
+## Web browser dockable window
 
-###Purpose  
 This sample contains a simple dockable window hosting a Web browser and a combo box listing useful ESRI links. A command that toggles the visibility of the dockable window is also included. These components are created using the Dockable Window item template included with the Visual Studio integrated development environment (IDE) integration feature of the software development kit (SDK).  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Framework
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open and compile the sample project in Visual Studio. If necessary, set up a debug application.  
 1. Start ArcCatalog, ArcMap, ArcScene, or ArcGlobe.   
 1. Click the Customize menu, and click Customize Mode. The Customize dialog box opens.  
@@ -18,17 +35,17 @@ This sample contains a simple dockable window hosting a Web browser and a combo
 
 
 
-####See Also  
+#### See Also  
 [Sample: Simple logging dockable window with a custom context menu](../../../Net/Framework/SimpleLogWindow)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 
 

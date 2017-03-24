@@ -18,40 +18,48 @@
   </style>
 </head>
 <body>
-  <h2>Custom subtyped command and tool</h2>
+  ## Custom subtyped command and tool
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">You can create multiple commands or tools with similar functionalities in a single class by implementing ICommandSubType. The primary purpose of this sample is to illustrate how to create a single subtyped command that behaves and appears like multiple commands.</div>  
 
-<p>You can create multiple commands or tools with similar functionalities in a single class by implementing ICommandSubType. The primary purpose of this sample is to illustrate how to create a single subtyped command that behaves and appears like multiple commands.  </p>
+```
+Language:              C#, VB
+Subject:               Framework
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Open and compile the sample project in Visual Studio. Set up a debug application if needed.  </li>
-<li>The ZoomInCommands class works in ArcMap, ArcScene, or ArcGlobe. Drag and drop the Fixed zoom in x# (C#) or Fixed zoom in x# (VB .NET) command under the .NET Samples category on the Customize dialog box onto the application.  </li>
-<li>Click the command to perform the fixed zoom in at various levels. If necessary, add data to verify each command is zooming at a different level.  </li>
-<li>The PolyFeedbackTools class works in ArcMap only. Drag and drop the # sides feedback (C#) or # sides feedback (VB .NET) tool from the .NET Samples category on the Customize dialog box onto the application.  </li>
-<li>Click to activate the feedback tool and click the map to start a polygon display feedback. The display feedback automatically finishes when the shape has reached the number of sides limit of the tool. The status bar also reports the area of the tracked polygon.  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<h4>Additional information</h4>
+### Usage
+1. Open and compile the sample project in Visual Studio. Set up a debug application if needed.  
+1. The ZoomInCommands class works in ArcMap, ArcScene, or ArcGlobe. Drag and drop the Fixed zoom in x# (C#) or Fixed zoom in x# (VB .NET) command under the .NET Samples category on the Customize dialog box onto the application.  
+1. Click the command to perform the fixed zoom in at various levels. If necessary, add data to verify each command is zooming at a different level.  
+1. The PolyFeedbackTools class works in ArcMap only. Drag and drop the # sides feedback (C#) or # sides feedback (VB .NET) tool from the .NET Samples category on the Customize dialog box onto the application.  
+1. Click to activate the feedback tool and click the map to start a polygon display feedback. The display feedback automatically finishes when the shape has reached the number of sides limit of the tool. The status bar also reports the area of the tracked polygon.  
 
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample contains a command class called ZoomInCommands that implements three subtyped commands performing different levels of fixed zoom in, and a tool class called PolyFeedbackTools that implements three subtyped tools tracking different kinds of polygon display feedback (3- to 5-sided). </div>  
 
-<h4>See Also</h4>
+#### See Also  
+[How to create multiple commands or tools in a single class subtyped command](http://desktop.arcgis.com/search/?q=How%20to%20create%20multiple%20commands%20or%20tools%20in%20a%20single%20class%20subtyped%20command&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Sample: Recently used files—Command, MultiItem, and ComboBox](../../../Net/Framework/RecentFilesCommands)  
 
-<p><a href="http://desktop.arcgis.com/search/?q=How%20to%20create%20multiple%20commands%20or%20tools%20in%20a%20single%20class%20subtyped%20command&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to create multiple commands or tools in a single class subtyped command</a><br />
-<a href="../../../Net/Framework/RecentFilesCommands">Sample: Recently used files—Command, MultiItem, and ComboBox</a>  </p>
+---------------------------------
 
-<hr />
-
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td> ArcGIS Desktop Standard </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td> ArcGIS Desktop Advanced </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

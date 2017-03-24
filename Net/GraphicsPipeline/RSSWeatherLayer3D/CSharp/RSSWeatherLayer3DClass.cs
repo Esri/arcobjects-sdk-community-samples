@@ -605,12 +605,10 @@ namespace RSSWeatherLayer3D
     /// </summary>
     private void PopulateLocationsTableProc()
     {
-      //get the ArcGIS path from the registry
-      String versionNumber = RuntimeManager.ActiveRuntime.Version;
-      RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\ESRI\ArcObjectsSDK" + versionNumber);
-      string path = Convert.ToString(key.GetValue("InstallDir"));
-      //set the path to the featureclass used by the GPS simulator
-      path = System.IO.Path.Combine(path, @"Samples\data\USZipCodeData");
+    //set the path to the featureclass used by the GPS simulator
+    string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+    path = System.IO.Path.Combine(path, @"ArcGIS\data\USZipCodeData");
+    if (!Directory.Exists(path)) throw new Exception(string.Format("Fix code to point to your sample data: {0} was not found", path));
 
        
       //open the featureclass

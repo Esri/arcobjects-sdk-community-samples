@@ -18,45 +18,51 @@
   </style>
 </head>
 <body>
-  <h2>Update a legend format with SymbologyControl area and line patches</h2>
+  ## Update a legend format with SymbologyControl area and line patches
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates using the SymbologyControl to display AreaPatch and LinePatch symbols that are used to update the format of a legend. The sample uses the SymbologyControl in conjunction with the PageLayoutControl, ToolbarControl, and the controls commands.</div>  
 
-<p>This sample demonstrates using the SymbologyControl to display AreaPatch and LinePatch symbols that are used to update the format of a legend. The sample uses the SymbologyControl in conjunction with the PageLayoutControl, ToolbarControl, and the controls commands.  </p>
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Open a map document.   </li>
-<li>Add a legend to the PageLayout.   </li>
-<li>Change the area patch and line patch style by selecting an item from the SymbologyControl.  </li>
-<li>Delete the legend.   </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<h4>Additional information</h4>
+### Usage
+1. Open a map document.   
+1. Add a legend to the PageLayout.   
+1. Change the area patch and line patch style by selecting an item from the SymbologyControl.  
+1. Delete the legend.   
 
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">A new Legend MapSurround is created and added to the GraphicsContainer of the PageLayout with a name of Legend using the IPageLayoutControl.AddElement method. The IPageLayoutControl.FindElementByName method is used to find the Legend element to delete it using the IGraphicsContainer.DeleteElement method, or update its formatting.</div>  
-
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>  
-
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">The LoadStyleFile method is used within the Form_Load event of the SymbolForm to add the contents of the ESRI.ServerStyle into the SymbologyControl. The StyleClass property is used to set whether AreaPatch or LinePatch symbols show in the SymbologyControl. Clicking an item shown in the SymbologyControl fires the OnItemSelectedEvent. The ILegend.Format.DefaultAreaPatch is set when the IStyleGalleryItem.Item property implements IAreaPatch, and the ILegend.Format.DefaultLinePatch is set when the IStyleGalleryItem.Item property implements ILinePatch. </div>  
 
-<h4>See Also</h4>
+#### See Also  
+[SymbologyControl Class](http://desktop.arcgis.com/search/?q=SymbologyControl%20Class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISymbologyControl Interface](http://desktop.arcgis.com/search/?q=ISymbologyControl%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[ISymbologyStyleClass Interface](http://desktop.arcgis.com/search/?q=ISymbologyStyleClass%20Interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
-<p><a href="http://desktop.arcgis.com/search/?q=SymbologyControl%20Class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">SymbologyControl Class</a><br />
-<a href="http://desktop.arcgis.com/search/?q=ISymbologyControl%20Interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ISymbologyControl Interface</a><br />
-<a href="http://desktop.arcgis.com/search/?q=ISymbologyStyleClass%20Interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">ISymbologyStyleClass Interface</a>  </p>
+---------------------------------
 
-<hr />
-
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
 <tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

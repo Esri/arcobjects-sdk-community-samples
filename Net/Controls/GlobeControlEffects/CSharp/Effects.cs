@@ -527,13 +527,15 @@ namespace GlobeControlEffects
 
 		private void Form1_Load(object sender, System.EventArgs e)
 		{
-      // Get the SDK location
-      string sGlbData = RuntimeManager.ActiveRuntime.Path.ToString();
-      sGlbData = Directory.GetParent(sGlbData).ToString();
-      // first time removes the directory separator
-      sGlbData = Directory.GetParent(sGlbData).ToString();
-      sGlbData = sGlbData + "\\DeveloperKit" + RuntimeManager.ActiveRuntime.Version + "\\Samples\\data\\Globe\\World Imagery.3dd";
-      if (axGlobeControl1.Check3dFile(sGlbData)) axGlobeControl1.Load3dFile(sGlbData);
+
+            //relative file path to the sample data from project location
+		    string sGlbData = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            sGlbData  = Path.Combine(sGlbData, @"ArcGIS\data\Globe\World Imagery.3dd");
+            var filePath = new DirectoryInfo(sGlbData);
+            System.Diagnostics.Debug.WriteLine(string.Format("File path for data root: {0} [{1}]", filePath.FullName, Directory.GetCurrentDirectory()));
+            if (!File.Exists(sGlbData)) throw new Exception(string.Format("Fix code to point to your sample data: {0} [{1}] was not found", filePath.FullName, Directory.GetCurrentDirectory()));
+
+            if (axGlobeControl1.Check3dFile(sGlbData)) axGlobeControl1.Load3dFile(sGlbData);
 
 			//Enable north arrow, HUD and GlobeTips.
 			bool bChkArrow = axGlobeControl1.GlobeViewer.NorthArrowEnabled;
@@ -617,15 +619,6 @@ namespace GlobeControlEffects
 			pCmDRgb.Green = colorDialog1.Color.G;
 
 			ChangeIllumination(pCmDRgb);
-		}
-
-		private string routin_ReadRegistry(string sKey) 
-		{
-			//Open the subkey for reading
-			Microsoft.Win32.RegistryKey rk = Microsoft.Win32.Registry.LocalMachine.OpenSubKey(sKey,true);
-			if (rk == null) return ""; 
-			// Get the data from a specified item in the key.
-			return (string) rk.GetValue("InstallDir");
 		}
 
 		private void ChangeIllumination(IRgbColor prgb)

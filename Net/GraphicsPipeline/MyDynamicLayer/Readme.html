@@ -18,46 +18,59 @@
   </style>
 </head>
 <body>
-  <h2>Dynamic display layer</h2>
+  ## Dynamic display layer
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample demonstrates using the ArcGIS Dynamic Display to implement a dynamic layer. A dynamic layer is a custom layer that, in addition to the standard interfaces, implements the IDynamicLayer interface. That interface allows this layer to draw its items into the Dynamic Disiplay and take advantage of graphics card hardware acceleration.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows implementation of a dynamic layer through inheritance of base-class 'DynamicLayerBase' which is part of the ESRI.ArcGIS.ADF.BaseClasses namespace. In order to use the 'DynamicLayerBase' class, the user must derive from it and override method 'DrawDynamicLayer()'. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This layer uses synthetic data to simulate dynamic data. In case of a real-life dynamic layer, the dynamic data might be streamed to the layer by a communication port, Extensible Markup Language (XML) stream, ArcGIS tracking server, or any other live feed. </div>  
 
-<p>This sample demonstrates using the ArcGIS Dynamic Display to implement a dynamic layer. A dynamic layer is a custom layer that, in addition to the standard interfaces, implements the IDynamicLayer interface. That interface allows this layer to draw its items into the Dynamic Disiplay and take advantage of graphics card hardware acceleration. This sample shows implementation of a dynamic layer through inheritance of base-class 'DynamicLayerBase' which is part of the ESRI.ArcGIS.ADF.BaseClasses namespace. In order to use the 'DynamicLayerBase' class, the user must derive from it and override method 'DrawDynamicLayer()'.  This layer uses synthetic data to simulate dynamic data. In case of a real-life dynamic layer, the dynamic data might be streamed to the layer by a communication port, Extensible Markup Language (XML) stream, ArcGIS tracking server, or any other live feed.   </p>
+```
+Language:              C#, VB
+Subject:               Graphics Pipeline
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Open the solution using Visual Studio.  </li>
-<li>Build the solution to make the 'Add Dynamic Layer' command dll.  </li>
-<li>You will need to use this command in an application with a MapControl and a ToolbarControl such as, the MapControlApplication template included with the Visual Studio Integration.  </li>
-<li>Add the command to the ToolbarControl. The command can be found in the '.NET Samples' category with the name 'Add Dynamic Layer'.   </li>
-<li>Run the application and add any layer to use as a background.  </li>
-<li>Click the 'Add Dynamic Layer' command in order to add the dynamic layer to the map. You will notice that the map will switch into Dynamic-Mode and the layer with 100 dynamic items will get added to the map.  </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<h4>See Also</h4>
+### Usage
+1. Open the solution using Visual Studio.  
+1. Build the solution to make the 'Add Dynamic Layer' command dll.  
+1. You will need to use this command in an application with a MapControl and a ToolbarControl such as, the MapControlApplication template included with the Visual Studio Integration.  
+1. Add the command to the ToolbarControl. The command can be found in the '.NET Samples' category with the name 'Add Dynamic Layer'.   
+1. Run the application and add any layer to use as a background.  
+1. Click the 'Add Dynamic Layer' command in order to add the dynamic layer to the map. You will notice that the map will switch into Dynamic-Mode and the layer with 100 dynamic items will get added to the map.  
 
-<p><a href="http://desktop.arcgis.com/search/?q=Dynamic%20display&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Dynamic display</a><br />
-<a href="http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Getting%20started%20with%20dynamic%20display&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Walkthrough: Getting started with dynamic display</a><br />
-<a href="http://desktop.arcgis.com/search/?q=How%20dynamic%20display%20works&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How dynamic display works</a><br />
-<a href="http://desktop.arcgis.com/search/?q=Best%20practices%20for%20using%20dynamic%20display&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Best practices for using dynamic display</a><br />
-<a href="../../../Net/GraphicsPipeline/DynamicObjectTracking">Sample: Dynamic display—tracking dynamic object</a><br />
-<a href="../../../Net/GraphicsPipeline/DynamicDisplayCompass">Sample: Dynamic display compass</a><br />
-<a href="http://desktop.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">Writing multithreaded ArcObjects code</a><br />
-<a href="http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">How to create a dynamic glyph from a marker symbol</a><br />
-<a href="../../../Net/GraphicsPipeline/DynamicLogo">Sample: Dynamic logo</a><br />
-<a href="../../../Net/GraphicsPipeline/DynamicDisplayHUD">Sample: Dynamic heads up display</a>  </p>
+#### See Also  
+[Dynamic display](http://desktop.arcgis.com/search/?q=Dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Walkthrough: Getting started with dynamic display](http://desktop.arcgis.com/search/?q=Walkthrough%3A%20Getting%20started%20with%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How dynamic display works](http://desktop.arcgis.com/search/?q=How%20dynamic%20display%20works&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Best practices for using dynamic display](http://desktop.arcgis.com/search/?q=Best%20practices%20for%20using%20dynamic%20display&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Sample: Dynamic display—tracking dynamic object](../../../Net/GraphicsPipeline/DynamicObjectTracking)  
+[Sample: Dynamic display compass](../../../Net/GraphicsPipeline/DynamicDisplayCompass)  
+[Writing multithreaded ArcObjects code](http://desktop.arcgis.com/search/?q=Writing%20multithreaded%20ArcObjects%20code&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[How to create a dynamic glyph from a marker symbol](http://desktop.arcgis.com/search/?q=How%20to%20create%20a%20dynamic%20glyph%20from%20a%20marker%20symbol&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[Sample: Dynamic logo](../../../Net/GraphicsPipeline/DynamicLogo)  
+[Sample: Dynamic heads up display](../../../Net/GraphicsPipeline/DynamicDisplayHUD)  
 
-<hr />
+---------------------------------
 
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
 <tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>

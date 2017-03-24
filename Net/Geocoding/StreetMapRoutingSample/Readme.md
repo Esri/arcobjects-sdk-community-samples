@@ -1,10 +1,27 @@
-##StreetMap routing
+## StreetMap routing
 
-###Purpose  
-This sample shows how to utilize the StreetMap routing application programming interface (API). It is an implementation of a simple dialog box allowing you to set from and to stop addresses along with other routing settings, such as calculate a route, display route geometry on the map, and display driving directions text.  
+  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows how to utilize the StreetMap routing application programming interface (API). It is an implementation of a simple dialog box allowing you to set from and to stop addresses along with other routing settings, such as calculate a route, display route geometry on the map, and display driving directions text.</div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Geocoding
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the solution file in Visual Studio and build the project.  
 1. Start ArcMap.  
 1. Click the Customize menu, click Toolbars, and click Routing Sample to enable the Routing Sample toolbar.  
@@ -28,12 +45,12 @@ This sample shows how to utilize the StreetMap routing application programming i
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 |  |  |  
 
 

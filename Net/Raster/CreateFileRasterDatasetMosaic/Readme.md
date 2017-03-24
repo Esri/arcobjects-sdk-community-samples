@@ -1,10 +1,27 @@
-##Mosaic raster datasets to a file raster format
+## Mosaic raster datasets to a file raster format
 
-###Purpose  
 This sample shows how to create a file raster dataset or a personal geodatabase raster mosaic from all rasters stored in a folder and its subfolders. This approach is different from creating a geodatabase raster dataset mosaic due to a different implementation mechanism for handling a file mosaic and a geodatabase (file geodatabase and ArcSDE) raster mosaic.  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Raster
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the CreateFileRasterMosaic solution in Visual Studio.  
 1. Review the source code and substitute the local variables with your data location.  
 1. Compile and run.  
@@ -16,18 +33,18 @@ This sample shows how to create a file raster dataset or a personal geodatabas
 
 
 
-####See Also  
+#### See Also  
 [Sample: Mosaic raster datasets to a geodatabase raster dataset](../../../Net/Raster/CreateGDBRasterDatasetMosaic)  
 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic | ArcGIS for Desktop Basic |  
-| ArcGIS for Desktop Standard | ArcGIS for Desktop Standard |  
-| ArcGIS for Desktop Advanced | ArcGIS for Desktop Advanced |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic | ArcGIS Desktop Basic |  
+| ArcGIS Desktop Standard | ArcGIS Desktop Standard |  
+| ArcGIS Desktop Advanced | ArcGIS Desktop Advanced |  
 | Engine Developer Kit | Engine |  
 
 

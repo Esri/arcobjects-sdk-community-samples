@@ -3,26 +3,26 @@
 	<purpose>This topic shows how to create a Math Function Raster dataset combining multiple operations together into a complex equation. It opens the raster datasets, applies two Math Function Raster operations (adding two rasters together, then dividing by a third raster) and saves the created Function Raster dataset to the specified file.</purpose>
 	<development_license>
 		<license>
-			<name>ArcGIS for Desktop Advanced</name>
+			<name>ArcGIS Desktop Advanced</name>
 			<extension>Spatial Analyst</extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension>Spatial Analyst</extension>
 								</license><license>
-									<name>ArcGIS for Desktop Basic</name>
+									<name>ArcGIS Desktop Basic</name>
 									<extension>Spatial Analyst</extension>
 								</license></development_license>
 	<deployment_license>
 		<license>
-			<name>ArcGIS for Desktop Advanced</name>
+			<name>ArcGIS Desktop Advanced</name>
 			<extension>Spatial Analyst</extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension>Spatial Analyst</extension>
 								</license><license>
-									<name>ArcGIS for Desktop Basic</name>
+									<name>ArcGIS Desktop Basic</name>
 									<extension>Spatial Analyst</extension>
 								</license></deployment_license>
 	<apis>

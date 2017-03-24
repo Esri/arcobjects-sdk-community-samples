@@ -53,7 +53,7 @@ namespace ServiceAreaSolver
 			ckbUseRestriction.Checked = false;
 			axMapControl.ClearLayers();
 
-			txtWorkspacePath.Text = Application.StartupPath + @"\..\..\..\..\..\Data\SanFrancisco\SanFrancisco.gdb";
+			txtWorkspacePath.Text = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"ArcGIS\data\SanFrancisco\SanFrancisco.gdb");
 			txtNetworkDataset.Text = "Streets_ND";
 			txtFeatureDataset.Text = "Transportation";
 			txtInputFacilities.Text = "Hospitals";

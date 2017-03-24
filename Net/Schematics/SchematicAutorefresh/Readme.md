@@ -1,25 +1,46 @@
-##Schematic diagram auto refresh
+## Schematic diagram auto refresh
 
-###Purpose  
-This sample is an ArcMap add-in that shows how to create a custom button that turns the automatic refresh feature on and off in a schematic diagram.  
+  <div xmlns="http://www.w3.org/1999/xhtml">
+    <div>
+      <span class="PropertyValue">This sample is an ArcMap add-in that shows how to create a custom button that turns the automatic refresh feature on and off in a schematic diagram.</span>
+    </div>
+  </div>  
 
 
-###Usage
-####Building the component  
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Schematics
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
+#### Building the component  
 1. Open the solution file and build the project.  
 
-####Configuring schematic attributes to be evaluated at On Start Editing  
+#### Configuring schematic attributes to be evaluated at On Start Editing  
 1. Start ArcCatalog and edit a schematic dataset with a diagram template configured to work from a geometric network.  
 1. Check the On Start Editing evaluation mode for any Associated Field schematic attribute that is used to label or symbolize the schematic features in the schematic diagrams.  
 1. Save the schematic dataset and exit the Schematic Dataset Editor.  
 
-####Adding the custom AutoRefresh button to the Schematic Editor toolbar  
+#### Adding the custom AutoRefresh button to the Schematic Editor toolbar  
 1. Start ArcMap with a new empty map.  
 1. Click Customize and click Customize Mode.  
 1. Click the Commands tab and click AutoRefresh (VBNet) or AutoRefresh (C#) in the Categories list.  
 1. Drag and drop the AutoRefresh command onto the Schematic Editor toolbar.  
 
-####Testing auto refresh in the schematic diagram  
+#### Testing auto refresh in the schematic diagram  
 1. In the Layers data frame, add the geometric network data with which your diagram template works.  
 1. Open a schematic diagram containing schematic features that were affected by the changes made during the On Start Editing evaluation, or generate a schematic diagram.  
 1. Click Schematic Editor and click Start Editing Diagram on the Schematic Editor toolbar.  
@@ -42,11 +63,11 @@ This sample is an ArcMap add-in that shows how to create a custom button that 
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
-| ArcGIS for Desktop Basic: Schematics | ArcGIS for Desktop Basic: Schematics |  
-| ArcGIS for Desktop Standard: Schematics | ArcGIS for Desktop Standard: Schematics |  
-| ArcGIS for Desktop Advanced: Schematics | ArcGIS for Desktop Advanced: Schematics |  
+| ------------- | ------------- | 
+| ArcGIS Desktop Basic: Schematics | ArcGIS Desktop Basic: Schematics |  
+| ArcGIS Desktop Standard: Schematics | ArcGIS Desktop Standard: Schematics |  
+| ArcGIS Desktop Advanced: Schematics | ArcGIS Desktop Advanced: Schematics |  
 
 

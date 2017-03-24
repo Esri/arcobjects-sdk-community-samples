@@ -248,7 +248,7 @@ namespace DrawText
 		private void Form1_Load(object sender, System.EventArgs e)
 		{
 			//Find sample data by navigating two folders up
-			string sFilePath = @"..\..\..\Data\World\Continents.lyr";
+			string sFilePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"ArcGIS\data\World\Continents.lyr");
             
 			//Add sample 'country' shapefile data
 			axMapControl1.AddLayerFromFile(sFilePath); 

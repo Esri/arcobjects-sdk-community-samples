@@ -13,26 +13,26 @@
 <div style="LINE-HEIGHT: 12pt; MARGIN-TOP: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt; FONT-SIZE: 10pt" xmlns="http://www.w3.org/1999/xhtml"><span style="FONT-SIZE: 10pt"></span><span style="FONT-SIZE: 10pt">This sample <span style="FONT-SIZE: 10pt">demonstrates how to use the rules helper to develop a rule. The rule will find nodes of a certain schematic feature class that have only two links connected. For each of those nodes that are found, the rule will create a new node that is a certain distance away and then connect the two nodes with a new link. The placement angle of the new node and link will be based on the bisector (middle) of the existing two links.</span></span></div></purpose>
 	<development_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension>Schematics</extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension>Schematics</extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension>Schematics</extension>
 								</license></development_license>
 	<deployment_license>
 		<license>
-			<name>ArcGIS for Desktop Basic</name>
+			<name>ArcGIS Desktop Basic</name>
 			<extension>Schematics</extension>
 		</license>
 	<license>
-									<name>ArcGIS for Desktop Standard</name>
+									<name>ArcGIS Desktop Standard</name>
 									<extension>Schematics</extension>
 								</license><license>
-									<name>ArcGIS for Desktop Advanced</name>
+									<name>ArcGIS Desktop Advanced</name>
 									<extension>Schematics</extension>
 								</license></deployment_license>
 	<apis>

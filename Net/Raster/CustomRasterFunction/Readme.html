@@ -18,70 +18,74 @@
   </style>
 </head>
 <body>
-  <h2>Create a custom raster function</h2>
+  ## Create a custom raster function
 
-<h3>Purpose</h3>
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample shows how to create a custom raster function, its corresponding arguments object and the user interface (UI) for the function by implementing the IRasterFunction and IRasterFunctionArguments interfaces along with additional interfaces. The implemented function is a watermark function that uses GDI+ to read a small watermark image and blend it with the raster to which it is applied.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">The Function UI can be used to view or modify the parameters of the function. The function editor can be used to add or remove it from a function raster dataset or mosaic dataset. The optional test application provided can be used to apply the custom function to a raster dataset or a mosaic dataset, create a Raster Function template from the custom function, serialize the function template to Extensible Markup Language (XML), and deserialize it back from an XML file. </div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>
+  <div xmlns="http://www.w3.org/1999/xhtml">Note: To serialize a function to and from an XML file, you need to update the XmlSupport.dat file, which is described in this sample topic.</div>  
 
-<p>This sample shows how to create a custom raster function, its corresponding arguments object and the user interface (UI) for the function by implementing the IRasterFunction and IRasterFunctionArguments interfaces along with additional interfaces. The implemented function is a watermark function that uses GDI+ to read a small watermark image and blend it with the raster to which it is applied. The Function UI can be used to view or modify the parameters of the function. The function editor can be used to add or remove it from a function raster dataset or mosaic dataset. The optional test application provided can be used to apply the custom function to a raster dataset or a mosaic dataset, create a Raster Function template from the custom function, serialize the function template to Extensible Markup Language (XML), and deserialize it back from an XML file.  Note: To serialize a function to and from an XML file, you need to update the XmlSupport.dat file, which is described in this sample topic.  </p>
+```
+Language:              C#, VB
+Subject:               Raster
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<h4>Setting up the custom function</h4>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<ol>
-<li>Start Visual Studio and open the solution.  </li>
-<li>Build the WatermarkFunction and WatermarkFunctionUI projects.  </li>
-<li>The function can now be used like any of the built-in functions in the system.  </li>
-</ol>
+### Usage
+#### Setting up the custom function  
+1. Start Visual Studio and open the solution.  
+1. Build the WatermarkFunction and WatermarkFunctionUI projects.  
+1. The function can now be used like any of the built-in functions in the system.  
 
-<h4>Updating XmlSupport.dat to be able to serialize functions to and from xml</h4>
+#### Updating XmlSupport.dat to be able to serialize functions to and from xml  
+1. Open the XmlSupportSubsetWM.dat file in the TestWatermarkFunction folder. Copy its contents.  
+1. Open <Program Files>\ArcGIS\<Desktop Directory>\bin\XmlSupport.dat. This is an XML file containing types that can be serialized to and from an XML file. Create a backup of the file.  
+1. Paste the contents copied in Step 1 inside the main node of the XML file along with the other type entries. Make sure it's between type nodes and not inside one.  
+1. Save the XMLSupport.dat file.  
 
-<ol>
-<li>Open the XmlSupportSubsetWM.dat file in the TestWatermarkFunction folder. Copy its contents.  </li>
-<li>Open <Program Files>\ArcGIS\<Desktop Directory>\bin\XmlSupport.dat. This is an XML file containing types that can be serialized to and from an XML file. Create a backup of the file.  </li>
-<li>Paste the contents copied in Step 1 inside the main node of the XML file along with the other type entries. Make sure it's between type nodes and not inside one.  </li>
-<li>Save the XMLSupport.dat file.  </li>
-</ol>
+#### Using the custom function in desktop  
+1. Start ArcMap.  
+1. Open the raster dataset on which the function is to be applied.  
+1. Open the Image Analysis window.  
+1. Select the raster dataset on which the function is to be applied in the topmost section.  
+1. In ArcGIS 10.0, under the Processing section, click the Clip button, open the properties of the newly created layer, then navigate to the functions tab. The function editor opens. Right-click the Clip function and click Remove.  
+1. In ArcGIS 10.2 and after, under the Processing section click the fx button. The function editor opens.  
+1. Right-click the dataset, open the Insert menu, and click the NDVI Custom function. This opens the Watermark Function UI page, which allows you to set parameters.  
+1. Input the location of the watermark, the path to the watermark image, and the blend percentage.  
+1. Click OK.  
+1. In ArcGIS 10.0, the layer now represents the output of the custom function applied to the raster dataset.  
+1. In ArcGIS 10.2 and after, a new layer is created that represents the output of the custom function applied to the raster dataset.  
 
-<h4>Using the custom function in desktop</h4>
+#### Using the custom function test application  
+1. Start Visual Studio and open the solution file.  
+1. Open the TestWatermarkFunction project.  
+1. Set the flags to add the Watermark function on top of a raster dataset and a mosaic dataset, to serialize a raster function template containing the custom function to an XML file, or to deserialize an XML file back to a function template containing the custom function.  
+1. Edit the strings in the Specify inputs region to specify the directory and name of the input dataset, the Geodatabase and name of the mosaic dataset, the output directory, the name of the output dataset (including the .afr extension), and the full path to the XML file to write out or read from if needed.   
+1. Set the parameters for the Watermark Custom function (that is, the location of the watermark, the path to the watermark image and the blending percentage).  
+1. Compile and run the program. If the program succeeds, the console shows a Success message. If an error occurs, it shows on the console window.  
+1. If adding on top of a raster dataset, load the created output .afr file into an ArcMap or ArcCatalog dataset. An image that represents the output of the custom function applied to the raster dataset appears.  
+1. If adding on top of a mosaic dataset, load the mosaic dataset to which the custom function was added in ArcMap or ArcCatalog. An image that represents the output of the custom function applied to the raster dataset appears.  
 
-<ol>
-<li>Start ArcMap.  </li>
-<li>Open the raster dataset on which the function is to be applied.  </li>
-<li>Open the Image Analysis window.  </li>
-<li>Select the raster dataset on which the function is to be applied in the topmost section.  </li>
-<li>In ArcGIS 10.0, under the Processing section, click the Clip button, open the properties of the newly created layer, then navigate to the functions tab. The function editor opens. Right-click the Clip function and click Remove.  </li>
-<li>In ArcGIS 10.2 and after, under the Processing section click the fx button. The function editor opens.  </li>
-<li>Right-click the dataset, open the Insert menu, and click the NDVI Custom function. This opens the Watermark Function UI page, which allows you to set parameters.  </li>
-<li>Input the location of the watermark, the path to the watermark image, and the blend percentage.  </li>
-<li>Click OK.  </li>
-<li>In ArcGIS 10.0, the layer now represents the output of the custom function applied to the raster dataset.  </li>
-<li>In ArcGIS 10.2 and after, a new layer is created that represents the output of the custom function applied to the raster dataset.  </li>
-</ol>
+---------------------------------
 
-<h4>Using the custom function test application</h4>
-
-<ol>
-<li>Start Visual Studio and open the solution file.  </li>
-<li>Open the TestWatermarkFunction project.  </li>
-<li>Set the flags to add the Watermark function on top of a raster dataset and a mosaic dataset, to serialize a raster function template containing the custom function to an XML file, or to deserialize an XML file back to a function template containing the custom function.  </li>
-<li>Edit the strings in the Specify inputs region to specify the directory and name of the input dataset, the Geodatabase and name of the mosaic dataset, the output directory, the name of the output dataset (including the .afr extension), and the full path to the XML file to write out or read from if needed.   </li>
-<li>Set the parameters for the Watermark Custom function (that is, the location of the watermark, the path to the watermark image and the blending percentage).  </li>
-<li>Compile and run the program. If the program succeeds, the console shows a Success message. If an error occurs, it shows on the console window.  </li>
-<li>If adding on top of a raster dataset, load the created output .afr file into an ArcMap or ArcCatalog dataset. An image that represents the output of the custom function applied to the raster dataset appears.  </li>
-<li>If adding on top of a mosaic dataset, load the mosaic dataset to which the custom function was added in ArcMap or ArcCatalog. An image that represents the output of the custom function applied to the raster dataset appears.  </li>
-</ol>
-
-<hr />
-
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
-<tr><td> ArcGIS for Desktop Basic </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td> ArcGIS for Desktop Standard </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td> ArcGIS for Desktop Advanced </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td> ArcGIS Desktop Basic </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td> ArcGIS Desktop Standard </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td> ArcGIS Desktop Advanced </td><td> ArcGIS Desktop Advanced </td></tr>  
 <tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
 </table>
-
 </body>
 </html>

@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.DataSourcesNetCDF</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView">
+      <summary>The Multi Dimension DatasetView Interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView.ClearSelectedDimensions">
+      <summary>Clears a selected list of dimensions and values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView.GetDimensionIndex(System.String)">
+      <summary>The selected dimension index for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView.GetDimensions">
+      <summary>All dimensions which may be used to select values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView.GetDimensionValue(System.String)">
+      <summary>The selected dimension value for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView.GetSelectedDimensionIndices">
+      <summary>Indices for the values of selected dimensions.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView.GetSelectedDimensions">
+      <summary>The selected dimension names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView.GetSelectedDimensionValues">
+      <summary>The selected dimension values.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView.SelectDimensionByIndex(System.String,System.Int32)">
+      <summary>Selects the dimension for viewing by an index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView.SelectDimensionByValue(System.String,System.Object)">
+      <summary>Selects the dimension for viewing by a value.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.IMDFeatureClassView">
+      <summary>The Multi Dimension FeatureClassView Interface.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDFeatureClassView.MItem">
+      <summary>The M variable or dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDFeatureClassView.RowDimensionList">
+      <summary>The list of row dimensions used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDFeatureClassView.VariableList">
+      <summary>The list of variables used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDFeatureClassView.XDimension">
+      <summary>The x-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDFeatureClassView.YDimension">
+      <summary>The y-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDFeatureClassView.ZItem">
+      <summary>The Z variable or dimension item used.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.IMDRasterDatasetView">
+      <summary>The Multi Dimension RasterDatasetView Interface.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDRasterDatasetView.BandDimension">
+      <summary>The band dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDRasterDatasetView.Variable">
+      <summary>The variable used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDRasterDatasetView.XDimension">
+      <summary>The x-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDRasterDatasetView.YDimension">
+      <summary>The y-dimension item used.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.IMDTableView">
+      <summary>The Multi Dimension TableView Interface.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDTableView.DimensionList">
+      <summary>The list of dimensions used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.IMDTableView.VariableList">
+      <summary>The list of variables used.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.IMDWorkspace">
+      <summary>The Multi Dimension Workspace Interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.IMDWorkspace.CreateView(System.String,ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView)">
+      <summary>Creates a dataset from a view definition.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace">
+      <summary>Provides access to members that control a NetCDF workspace.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetAttributeNames(System.String)">
+      <summary>The array of global or variable specific attribute names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetAttributeValue(System.String,System.String,System.Int32)">
+      <summary>The attribute value for a specified variable and an attribute name or keyword.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetDimensionIndex(System.String,System.Object)">
+      <summary>The dimension index for a specified dimension and value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetDimensions">
+      <summary>The array of dimension items.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetDimensionsByVariable(System.String)">
+      <summary>The dimension items for a specified variable.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetDimensionSize(System.String)">
+      <summary>The size or length of a specified dimension.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetDimensionValue(System.String,System.Int32)">
+      <summary>The dimension value for a specified dimension and index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetDimensionValues(System.String)">
+      <summary>The values for a specified dimension.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetFieldType(System.String)">
+      <summary>The field type of a variable or dimension.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetIndexFromValue(System.String,System.Object)">
+      <summary>Return the index of a specified variable or dimension value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetSpatialReference(System.String,System.String,System.String)">
+      <summary>The spatial reference for a variable.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetValueFromIndex(System.Int32,System.String)">
+      <summary>The dimension or variable value for a given index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetVariables">
+      <summary>The array of variable strings.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.INetCDFWorkspace.GetVariablesByDimension(System.String)">
+      <summary>All variables having the specified dimension name.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassName">
+      <summary>A container for name information about a NetCDF feature class.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass">
+      <summary>A container for name information about a NetCDF feature class.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.ClearSelectedDimensions">
+      <summary>Clears a selected list of dimensions and values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDDatasetView_ClearSelectedDimensions">
+      <summary>Clears a selected list of dimensions and values/indices.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.DataSourcesNetCDF..">
+      <summary>A container for name information about a NetCDF feature class. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.DataSourcesNetCDF.._">
+      <summary>A container for name information about a NetCDF feature class. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.#ctor">
+      <summary>A container for name information about a NetCDF feature class. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.GetDimensionIndex(System.String)">
+      <summary>The selected dimension index for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDDatasetView_GetDimensionIndex(System.String)">
+      <summary>The selected dimension index for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.GetDimensions">
+      <summary>All dimensions which may be used to select values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDDatasetView_GetDimensions">
+      <summary>All dimensions which may be used to select values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.GetDimensionValue(System.String)">
+      <summary>The selected dimension value for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDDatasetView_GetDimensionValue(System.String)">
+      <summary>The selected dimension value for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.GetSelectedDimensionIndices">
+      <summary>Indices for the values of selected dimensions.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDDatasetView_GetSelectedDimensionIndices">
+      <summary>Indices for the values of selected dimensions.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.GetSelectedDimensions">
+      <summary>The selected dimension names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDDatasetView_GetSelectedDimensions">
+      <summary>The selected dimension names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.GetSelectedDimensionValues">
+      <summary>The selected dimension values.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDDatasetView_GetSelectedDimensionValues">
+      <summary>The selected dimension values.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.SelectDimensionByIndex(System.String,System.Int32)">
+      <summary>Selects the dimension for viewing by an index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDDatasetView_SelectDimensionByIndex(System.String,System.Int32)">
+      <summary>Selects the dimension for viewing by an index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.SelectDimensionByValue(System.String,System.Object)">
+      <summary>Selects the dimension for viewing by a value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDDatasetView_SelectDimensionByValue(System.String,System.Object)">
+      <summary>Selects the dimension for viewing by a value.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.MItem">
+      <summary>The M variable or dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDFeatureClassView_MItem">
+      <summary>The M variable or dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.RowDimensionList">
+      <summary>The list of row dimensions used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDFeatureClassView_RowDimensionList">
+      <summary>The list of row dimensions used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.VariableList">
+      <summary>The list of variables used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDFeatureClassView_VariableList">
+      <summary>The list of variables used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.XDimension">
+      <summary>The x-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDFeatureClassView_XDimension">
+      <summary>The x-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.YDimension">
+      <summary>The y-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDFeatureClassView_YDimension">
+      <summary>The y-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.ZItem">
+      <summary>The Z variable or dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IMDFeatureClassView_ZItem">
+      <summary>The Z variable or dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.Category">
+      <summary>The category of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IDatasetName_Category">
+      <summary>The category of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.Name">
+      <summary>The name of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IDatasetName_Name">
+      <summary>The name of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.SubsetNames">
+      <summary>Subset names contained within this dataset name.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IDatasetName_SubsetNames">
+      <summary>Subset names contained within this dataset name.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.Type">
+      <summary>The type of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IDatasetName_Type">
+      <summary>The type of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.WorkspaceName">
+      <summary>The WorkspaceName of the DatasetName.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IDatasetName_WorkspaceName">
+      <summary>The WorkspaceName of the DatasetName.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.NameString">
+      <summary>The name string of the object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IName_NameString">
+      <summary>The name string of the object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.Open">
+      <summary>Opens the object referred to by this name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IName_Open">
+      <summary>Opens the object referred to by this name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.GetSizeMax(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IPersistStream_GetSizeMax(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IsDirty">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IPersistStream_IsDirty">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.Load(ESRI.ArcGIS.esriSystem.IStream)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IPersistStream_Load(ESRI.ArcGIS.esriSystem.IStream)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.Save(ESRI.ArcGIS.esriSystem.IStream,System.Int32)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IPersistStream_Save(ESRI.ArcGIS.esriSystem.IStream,System.Int32)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.GetClassID(System.Guid@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFFeatureClassNameClass.IPersistStream_GetClassID(System.Guid@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetName">
+      <summary>A container for name information about a NetCDF raster dataset.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass">
+      <summary>A container for name information about a NetCDF raster dataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.ClearSelectedDimensions">
+      <summary>Clears a selected list of dimensions and values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDDatasetView_ClearSelectedDimensions">
+      <summary>Clears a selected list of dimensions and values/indices.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.DataSourcesNetCDF..">
+      <summary>A container for name information about a NetCDF raster dataset. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.DataSourcesNetCDF.._">
+      <summary>A container for name information about a NetCDF raster dataset. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.#ctor">
+      <summary>A container for name information about a NetCDF raster dataset. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.GetDimensionIndex(System.String)">
+      <summary>The selected dimension index for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDDatasetView_GetDimensionIndex(System.String)">
+      <summary>The selected dimension index for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.GetDimensions">
+      <summary>All dimensions which may be used to select values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDDatasetView_GetDimensions">
+      <summary>All dimensions which may be used to select values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.GetDimensionValue(System.String)">
+      <summary>The selected dimension value for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDDatasetView_GetDimensionValue(System.String)">
+      <summary>The selected dimension value for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.GetSelectedDimensionIndices">
+      <summary>Indices for the values of selected dimensions.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDDatasetView_GetSelectedDimensionIndices">
+      <summary>Indices for the values of selected dimensions.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.GetSelectedDimensions">
+      <summary>The selected dimension names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDDatasetView_GetSelectedDimensions">
+      <summary>The selected dimension names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.GetSelectedDimensionValues">
+      <summary>The selected dimension values.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDDatasetView_GetSelectedDimensionValues">
+      <summary>The selected dimension values.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.SelectDimensionByIndex(System.String,System.Int32)">
+      <summary>Selects the dimension for viewing by an index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDDatasetView_SelectDimensionByIndex(System.String,System.Int32)">
+      <summary>Selects the dimension for viewing by an index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.SelectDimensionByValue(System.String,System.Object)">
+      <summary>Selects the dimension for viewing by a value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDDatasetView_SelectDimensionByValue(System.String,System.Object)">
+      <summary>Selects the dimension for viewing by a value.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.BandDimension">
+      <summary>The band dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDRasterDatasetView_BandDimension">
+      <summary>The band dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.Variable">
+      <summary>The variable used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDRasterDatasetView_Variable">
+      <summary>The variable used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.XDimension">
+      <summary>The x-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDRasterDatasetView_XDimension">
+      <summary>The x-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.YDimension">
+      <summary>The y-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMDRasterDatasetView_YDimension">
+      <summary>The y-dimension item used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.Category">
+      <summary>The category of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IDatasetName_Category">
+      <summary>The category of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.Name">
+      <summary>The name of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IDatasetName_Name">
+      <summary>The name of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.SubsetNames">
+      <summary>Subset names contained within this dataset name.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IDatasetName_SubsetNames">
+      <summary>Subset names contained within this dataset name.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.Type">
+      <summary>The type of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IDatasetName_Type">
+      <summary>The type of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.WorkspaceName">
+      <summary>The WorkspaceName of the DatasetName.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IDatasetName_WorkspaceName">
+      <summary>The WorkspaceName of the DatasetName.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.Size64">
+      <summary>The size. 64bit Value</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IDatasetNameFileSize_Size64">
+      <summary>The size. 64bit Value</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.StatMode">
+      <summary>The access mode.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IDatasetNameFileStat_StatMode">
+      <summary>The access mode.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.StatSize">
+      <summary>The size.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IDatasetNameFileStat_StatSize">
+      <summary>The size.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.StatTime(ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode)">
+      <summary>The date modified/created/accessed.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IDatasetNameFileStat_StatTime(ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode)">
+      <summary>The date modified/created/accessed.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.Metadata">
+      <summary>The PropertySet containing metadata.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMetadata_Metadata">
+      <summary>The PropertySet containing metadata.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.Synchronize(ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction,System.Int32)">
+      <summary>Updates metadata with the current properties; may create metadata if it doesn't already exist.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMetadata_Synchronize(ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction,System.Int32)">
+      <summary>Updates metadata with the current properties; may create metadata if it doesn't already exist.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.CanEditMetadata">
+      <summary>Indicates if metadata can be edited.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IMetadataEdit_CanEditMetadata">
+      <summary>Indicates if metadata can be edited.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.NativeType">
+      <summary>The native type.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.INativeTypeInfo_NativeType">
+      <summary>The native type.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.RasterBandNames">
+      <summary>The band names in the RasterDataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IRasterDatasetName_RasterBandNames">
+      <summary>The band names in the RasterDataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.NameString">
+      <summary>The name string of the object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IName_NameString">
+      <summary>The name string of the object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.Open">
+      <summary>Opens the object referred to by this name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IName_Open">
+      <summary>Opens the object referred to by this name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.GetSizeMax(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IPersistStream_GetSizeMax(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IsDirty">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IPersistStream_IsDirty">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.Load(ESRI.ArcGIS.esriSystem.IStream)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IPersistStream_Load(ESRI.ArcGIS.esriSystem.IStream)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.Save(ESRI.ArcGIS.esriSystem.IStream,System.Int32)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IPersistStream_Save(ESRI.ArcGIS.esriSystem.IStream,System.Int32)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.GetClassID(System.Guid@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFRasterDatasetNameClass.IPersistStream_GetClassID(System.Guid@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableName">
+      <summary>A container for name information about a NetCDF table.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass">
+      <summary>A container for name information about a NetCDF table.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.ClearSelectedDimensions">
+      <summary>Clears a selected list of dimensions and values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDDatasetView_ClearSelectedDimensions">
+      <summary>Clears a selected list of dimensions and values/indices.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.DataSourcesNetCDF..">
+      <summary>A container for name information about a NetCDF table. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.DataSourcesNetCDF.._">
+      <summary>A container for name information about a NetCDF table. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.#ctor">
+      <summary>A container for name information about a NetCDF table. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.GetDimensionIndex(System.String)">
+      <summary>The selected dimension index for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDDatasetView_GetDimensionIndex(System.String)">
+      <summary>The selected dimension index for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.GetDimensions">
+      <summary>All dimensions which may be used to select values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDDatasetView_GetDimensions">
+      <summary>All dimensions which may be used to select values/indices.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.GetDimensionValue(System.String)">
+      <summary>The selected dimension value for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDDatasetView_GetDimensionValue(System.String)">
+      <summary>The selected dimension value for a dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.GetSelectedDimensionIndices">
+      <summary>Indices for the values of selected dimensions.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDDatasetView_GetSelectedDimensionIndices">
+      <summary>Indices for the values of selected dimensions.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.GetSelectedDimensions">
+      <summary>The selected dimension names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDDatasetView_GetSelectedDimensions">
+      <summary>The selected dimension names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.GetSelectedDimensionValues">
+      <summary>The selected dimension values.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDDatasetView_GetSelectedDimensionValues">
+      <summary>The selected dimension values.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.SelectDimensionByIndex(System.String,System.Int32)">
+      <summary>Selects the dimension for viewing by an index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDDatasetView_SelectDimensionByIndex(System.String,System.Int32)">
+      <summary>Selects the dimension for viewing by an index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.SelectDimensionByValue(System.String,System.Object)">
+      <summary>Selects the dimension for viewing by a value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDDatasetView_SelectDimensionByValue(System.String,System.Object)">
+      <summary>Selects the dimension for viewing by a value.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.DimensionList">
+      <summary>The list of dimensions used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDTableView_DimensionList">
+      <summary>The list of dimensions used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.VariableList">
+      <summary>The list of variables used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IMDTableView_VariableList">
+      <summary>The list of variables used.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.Category">
+      <summary>The category of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IDatasetName_Category">
+      <summary>The category of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.Name">
+      <summary>The name of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IDatasetName_Name">
+      <summary>The name of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.SubsetNames">
+      <summary>Subset names contained within this dataset name.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IDatasetName_SubsetNames">
+      <summary>Subset names contained within this dataset name.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.Type">
+      <summary>The type of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IDatasetName_Type">
+      <summary>The type of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.WorkspaceName">
+      <summary>The WorkspaceName of the DatasetName.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IDatasetName_WorkspaceName">
+      <summary>The WorkspaceName of the DatasetName.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.NameString">
+      <summary>The name string of the object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IName_NameString">
+      <summary>The name string of the object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.Open">
+      <summary>Opens the object referred to by this name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IName_Open">
+      <summary>Opens the object referred to by this name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.GetSizeMax(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IPersistStream_GetSizeMax(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IsDirty">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IPersistStream_IsDirty">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.Load(ESRI.ArcGIS.esriSystem.IStream)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IPersistStream_Load(ESRI.ArcGIS.esriSystem.IStream)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.Save(ESRI.ArcGIS.esriSystem.IStream,System.Int32)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IPersistStream_Save(ESRI.ArcGIS.esriSystem.IStream,System.Int32)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.GetClassID(System.Guid@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFTableNameClass.IPersistStream_GetClassID(System.Guid@)">
+      <summary>This is a Microsoft Type, see the MSDN help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspace">
+      <summary>The NetCDF workspace object.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass">
+      <summary>The NetCDF workspace object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.CreateView(System.String,ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView)">
+      <summary>Creates a dataset from a view definition.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IMDWorkspace_CreateView(System.String,ESRI.ArcGIS.DataSourcesNetCDF.IMDDatasetView)">
+      <summary>Creates a dataset from a view definition.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.DataSourcesNetCDF..">
+      <summary>The NetCDF workspace object. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.DataSourcesNetCDF.._">
+      <summary>The NetCDF workspace object. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.#ctor">
+      <summary>The NetCDF workspace object. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetAttributeNames(System.String)">
+      <summary>The array of global or variable specific attribute names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetAttributeNames(System.String)">
+      <summary>The array of global or variable specific attribute names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetAttributeValue(System.String,System.String,System.Int32)">
+      <summary>The attribute value for a specified variable and an attribute name or keyword.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetAttributeValue(System.String,System.String,System.Int32)">
+      <summary>The attribute value for a specified variable and an attribute name or keyword.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetDimensionIndex(System.String,System.Object)">
+      <summary>The dimension index for a specified dimension and value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetDimensionIndex(System.String,System.Object)">
+      <summary>The dimension index for a specified dimension and value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetDimensions">
+      <summary>The array of dimension items.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetDimensions">
+      <summary>The array of dimension items.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetDimensionsByVariable(System.String)">
+      <summary>The dimension items for a specified variable.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetDimensionsByVariable(System.String)">
+      <summary>The dimension items for a specified variable.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetDimensionSize(System.String)">
+      <summary>The size or length of a specified dimension.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetDimensionSize(System.String)">
+      <summary>The size or length of a specified dimension.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetDimensionValue(System.String,System.Int32)">
+      <summary>The dimension value for a specified dimension and index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetDimensionValue(System.String,System.Int32)">
+      <summary>The dimension value for a specified dimension and index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetDimensionValues(System.String)">
+      <summary>The values for a specified dimension.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetDimensionValues(System.String)">
+      <summary>The values for a specified dimension.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetFieldType(System.String)">
+      <summary>The field type of a variable or dimension.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetFieldType(System.String)">
+      <summary>The field type of a variable or dimension.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetIndexFromValue(System.String,System.Object)">
+      <summary>Return the index of a specified variable or dimension value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetIndexFromValue(System.String,System.Object)">
+      <summary>Return the index of a specified variable or dimension value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetSpatialReference(System.String,System.String,System.String)">
+      <summary>The spatial reference for a variable.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetSpatialReference(System.String,System.String,System.String)">
+      <summary>The spatial reference for a variable.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetValueFromIndex(System.Int32,System.String)">
+      <summary>The dimension or variable value for a given index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetValueFromIndex(System.Int32,System.String)">
+      <summary>The dimension or variable value for a given index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetVariables">
+      <summary>The array of variable strings.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetVariables">
+      <summary>The array of variable strings.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.GetVariablesByDimension(System.String)">
+      <summary>All variables having the specified dimension name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.INetCDFWorkspace_GetVariablesByDimension(System.String)">
+      <summary>All variables having the specified dimension name.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.BrowseName">
+      <summary>The browse name of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_BrowseName">
+      <summary>The browse name of the dataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.CanCopy">
+      <summary>True if this dataset can be copied.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_CanCopy">
+      <summary>True if this dataset can be copied.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.CanDelete">
+      <summary>True if this dataset can be deleted.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_CanDelete">
+      <summary>True if this dataset can be deleted.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.CanRename">
+      <summary>True if this dataset can be renamed.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_CanRename">
+      <summary>True if this dataset can be renamed.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Category">
+      <summary>The category of the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_Category">
+      <summary>The category of the dataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Copy(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace)">
+      <summary>Copies this dataset to a new dataset with the specified name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_Copy(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace)">
+      <summary>Copies this dataset to a new dataset with the specified name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Delete">
+      <summary>Deletes this dataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_Delete">
+      <summary>Deletes this dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.FullName">
+      <summary>The associated name object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_FullName">
+      <summary>The associated name object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Name">
+      <summary>The name of the Dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_Name">
+      <summary>The name of the Dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.PropertySet">
+      <summary>The set of properties for the dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_PropertySet">
+      <summary>The set of properties for the dataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Rename(System.String)">
+      <summary>Renames this Dataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_Rename(System.String)">
+      <summary>Renames this Dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Subsets">
+      <summary>Datasets contained within this dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_Subsets">
+      <summary>Datasets contained within this dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Type">
+      <summary>The type of the Dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_Type">
+      <summary>The type of the Dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Workspace">
+      <summary>The workspace containing this dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IDataset_Workspace">
+      <summary>The workspace containing this dataset.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.ConnectionProperties">
+      <summary>The connection properties of the workspace.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IWorkspace_ConnectionProperties">
+      <summary>The connection properties of the workspace.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.DatasetNames(ESRI.ArcGIS.Geodatabase.esriDatasetType)">
+      <summary>The DatasetNames in the workspace.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IWorkspace_DatasetNames(ESRI.ArcGIS.Geodatabase.esriDatasetType)">
+      <summary>The DatasetNames in the workspace.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Datasets(ESRI.ArcGIS.Geodatabase.esriDatasetType)">
+      <summary>The datasets in the workspace.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IWorkspace_Datasets(ESRI.ArcGIS.Geodatabase.esriDatasetType)">
+      <summary>The datasets in the workspace.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.ExecuteSQL(System.String)">
+      <summary>Executes the specified SQL statement.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IWorkspace_ExecuteSQL(System.String)">
+      <summary>Executes the specified SQL statement.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Exists">
+      <summary>Checks if the workspace exists.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IWorkspace_Exists">
+      <summary>Checks if the workspace exists.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IsDirectory">
+      <summary>TRUE if the workspace is a file system directory.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IWorkspace_IsDirectory">
+      <summary>TRUE if the workspace is a file system directory.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.PathName">
+      <summary>The file system full path of the workspace.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IWorkspace_PathName">
+      <summary>The file system full path of the workspace.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IWorkspace_Type">
+      <summary>The Type of the Workspace.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.WorkspaceFactory">
+      <summary>The factory that created the workspace.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IWorkspace_WorkspaceFactory">
+      <summary>The factory that created the workspace.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.Property(ESRI.ArcGIS.Geodatabase.esriWorkspacePropertyGroupType,System.Int32)">
+      <summary>Information about this particular property.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.IWorkspaceProperties_Property(ESRI.ArcGIS.Geodatabase.esriWorkspacePropertyGroupType,System.Int32)">
+      <summary>Information about this particular property.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.InterfaceSupportsErrorInfo(System.Guid@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceClass.ISupportErrorInfo_InterfaceSupportsErrorInfo(System.Guid@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactory">
+      <summary>Provides access to members that control creation of NetCDF workspaces.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass">
+      <summary>Provides access to members that control creation of NetCDF workspaces.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.ContainsWorkspace(System.String,ESRI.ArcGIS.esriSystem.IFileNames)">
+      <summary>Indicates if parentDirectory contains a valid workspace, or is a valid file-system workspace.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_ContainsWorkspace(System.String,ESRI.ArcGIS.esriSystem.IFileNames)">
+      <summary>Indicates if parentDirectory contains a valid workspace, or is a valid file-system workspace.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.DataSourcesNetCDF..">
+      <summary>Provides access to members that control creation of NetCDF workspaces. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.DataSourcesNetCDF.._">
+      <summary>Provides access to members that control creation of NetCDF workspaces. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.#ctor">
+      <summary>Provides access to members that control creation of NetCDF workspaces. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.Copy(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String,ESRI.ArcGIS.Geodatabase.IWorkspaceName@)">
+      <summary>Copies a workspace to the specified destination folder.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_Copy(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String,ESRI.ArcGIS.Geodatabase.IWorkspaceName@)">
+      <summary>Copies a workspace to the specified destination folder.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.Create(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)">
+      <summary>Creates a new workspace specified by the directory, file name, and connection properties.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_Create(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)">
+      <summary>Creates a new workspace specified by the directory, file name, and connection properties.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.GetClassID">
+      <summary>The class ID of the WorkspaceFactory.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_GetClassID">
+      <summary>The class ID of the WorkspaceFactory.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.GetWorkspaceName(System.String,ESRI.ArcGIS.esriSystem.IFileNames)">
+      <summary>Retrieves the workspace name of a workspace from the given list of file names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_GetWorkspaceName(System.String,ESRI.ArcGIS.esriSystem.IFileNames)">
+      <summary>Retrieves the workspace name of a workspace from the given list of file names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IsWorkspace(System.String)">
+      <summary>True if the specified file identifies a workspace supported by the workspace factory.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_IsWorkspace(System.String)">
+      <summary>True if the specified file identifies a workspace supported by the workspace factory.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.Move(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String)">
+      <summary>Moves a workspace to the specified destination folder.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_Move(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String)">
+      <summary>Moves a workspace to the specified destination folder.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.Open(ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)">
+      <summary>Opens the workspace specified by the connection properties.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_Open(ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)">
+      <summary>Opens the workspace specified by the connection properties.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.OpenFromFile(System.String,System.Int32)">
+      <summary>Opens the workspace specified by the given file name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_OpenFromFile(System.String,System.Int32)">
+      <summary>Opens the workspace specified by the given file name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.ReadConnectionPropertiesFromFile(System.String)">
+      <summary>The connection properties from the specified file.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_ReadConnectionPropertiesFromFile(System.String)">
+      <summary>The connection properties from the specified file.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.WorkspaceDescription(System.Boolean)">
+      <summary>A singular or plural description of the type of workspace the workspace factory opens/creates.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_WorkspaceDescription(System.Boolean)">
+      <summary>A singular or plural description of the type of workspace the workspace factory opens/creates.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.WorkspaceType">
+      <summary>The type of workspace the workspace factory opens/creates.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory_WorkspaceType">
+      <summary>The type of workspace the workspace factory opens/creates.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.OpenFromString(System.String,System.Int32)">
+      <summary>Opens the workspace specified by a connection string.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_OpenFromString(System.String,System.Int32)">
+      <summary>Opens the workspace specified by a connection string.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_ContainsWorkspace(System.String,ESRI.ArcGIS.esriSystem.IFileNames)">
+      <summary>Indicates if parentDirectory contains a valid workspace, or is a valid file-system workspace.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_Copy(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String,ESRI.ArcGIS.Geodatabase.IWorkspaceName@)">
+      <summary>Copies a workspace to the specified destination folder.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_Create(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)">
+      <summary>Creates a new workspace specified by the directory, file name, and connection properties.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_GetClassID">
+      <summary>The class ID of the WorkspaceFactory.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_GetWorkspaceName(System.String,ESRI.ArcGIS.esriSystem.IFileNames)">
+      <summary>Retrieves the workspace name of a workspace from the given list of file names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_IsWorkspace(System.String)">
+      <summary>True if the specified file identifies a workspace supported by the workspace factory.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_Move(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String)">
+      <summary>Moves a workspace to the specified destination folder.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_Open(ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)">
+      <summary>Opens the workspace specified by the connection properties.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_OpenFromFile(System.String,System.Int32)">
+      <summary>Opens the workspace specified by the given file name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_ReadConnectionPropertiesFromFile(System.String)">
+      <summary>The connection properties from the specified file.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_WorkspaceDescription(System.Boolean)">
+      <summary>A singular or plural description of the type of workspace the workspace factory opens/creates.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.IWorkspaceFactory2_WorkspaceType">
+      <summary>The type of workspace the workspace factory opens/creates.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.InterfaceSupportsErrorInfo(System.Guid@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DataSourcesNetCDF.NetCDFWorkspaceFactoryClass.ISupportErrorInfo_InterfaceSupportsErrorInfo(System.Guid@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DataSourcesNetCDF.esriNetCDFError">
+      <summary>The NetCDF related error codes.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataSourcesNetCDF.esriNetCDFError.E_NETCDF_FILE_NOT_FOUND">
+      <summary>NetCDF file cannot be found.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataSourcesNetCDF.esriNetCDFError.E_NETCDF_FILE_INVALID_EXTENSION">
+      <summary>NetCDF file extension is invalid.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataSourcesNetCDF.esriNetCDFError.E_NETCDF_RENDERER_INVALID_BAND_INDEX">
+      <summary>Specified band index is invalid.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataSourcesNetCDF.esriNetCDFError.E_NETCDF_FILE_FAILED_TO_RENAME">
+      <summary>Failed to rename the specified file.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataSourcesNetCDF.esriNetCDFError.E_NETCDF_FILE_FAILED_TO_COPY">
+      <summary>Failed to copy the specified file.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataSourcesNetCDF.esriNetCDFError.E_NETCDF_ACCESS_IS_DENIED">
+      <summary>The user does not have permission to execute the operation.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataSourcesNetCDF.esriNetCDFError.E_NETCDF_DATASET_EXIST">
+      <summary>NetCDF file(table for SDE) already exist.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DataSourcesNetCDF.esriNetCDFError.E_NETCDF_UNKNOWN_ERROR">
+      <summary>Unknown error.</summary>
+    </member>
+  </members>
+</doc>

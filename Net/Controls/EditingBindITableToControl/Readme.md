@@ -1,10 +1,28 @@
-##Bind a geodatabase table to a .NET control
+## Bind a geodatabase table to a .NET control
 
-###Purpose  
-This sample demonstrates how to bind a geodatabase table and a .NET control. Additionally, it shows how editing and coded-value domains can be supported.   
+  <div xmlns="http://www.w3.org/1999/xhtml">This sample demonstrates how to bind a geodatabase table and a .NET control. Additionally, it shows how editing and coded-value domains can be supported.</div>
+  <div xmlns="http://www.w3.org/1999/xhtml"> </div>  
 
 
-###Usage
+<!-- TODO: Fill this section below with metadata about this sample-->
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
+
+### Resources
+
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
+
+### Usage
 1. Open the solution and build it.  
 1. Run the sample to display the main window.  
 1. The data in the table can be viewed by using the scroll bars and the current row can be changed by using the forward and back buttons on the navigation control at the bottom.  
@@ -18,7 +36,7 @@ This sample demonstrates how to bind a geodatabase table and a .NET control.
 
 
 
-####Additional information  
+#### Additional information  
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">This sample shows the binding of an entire ITable to a Microsoft DataGridView control and also a single IField to a Microsoft TextBox control. The solution contains the following two projects: </div>  
 
 
@@ -26,12 +44,12 @@ This sample demonstrates how to bind a geodatabase table and a .NET control.
 
 ---------------------------------
 
-####Licensing  
+#### Licensing  
 | Development licensing | Deployment licensing | 
-| :------------- | :------------- | 
+| ------------- | ------------- | 
 | Engine Developer Kit | Engine |  
-|  | ArcGIS for Desktop Basic |  
-|  | ArcGIS for Desktop Standard |  
-|  | ArcGIS for Desktop Advanced |  
+|  | ArcGIS Desktop Basic |  
+|  | ArcGIS Desktop Standard |  
+|  | ArcGIS Desktop Advanced |  
 
 

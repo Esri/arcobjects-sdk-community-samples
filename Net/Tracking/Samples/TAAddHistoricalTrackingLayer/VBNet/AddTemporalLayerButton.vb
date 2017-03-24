@@ -85,7 +85,7 @@ Public Class AddTemporalLayerButton
   Private Function openTemporalData() As IFeatureClass
 
     'set the path to the featureclass
-    Dim path As String = "..\..\..\..\..\data\Time\ProjectData.gdb"
+    Dim path As String = System.IO.Path.Combine (Environment.SpecialFolder.MyDocuments, "ArcGIS\data\Time\ProjectData.gdb")
     If (Not System.IO.Directory.Exists(path)) Then
       MessageBox.Show("Cannot find hurricane data:" & Constants.vbLf & path, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
       Return Nothing

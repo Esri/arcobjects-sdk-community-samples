@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RoutingSample</name>
+    </assembly>
+    <members>
+        <member name="T:RoutingSample.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:RoutingSample.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:RoutingSample.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="M:RoutingSample.RoutingToolbar.ArcGISCategoryRegistration(System.Type)">
+            <summary>
+            Required method for ArcGIS Component Category registration -
+            Do not modify the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:RoutingSample.RoutingToolbar.ArcGISCategoryUnregistration(System.Type)">
+            <summary>
+            Required method for ArcGIS Component Category unregistration -
+            Do not modify the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

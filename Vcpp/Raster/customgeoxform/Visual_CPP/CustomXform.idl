@@ -16,10 +16,10 @@ library CustomXformLib
 	//OLB path to \Program Files (x86)\ArcGIS for the samples to work.
   importlib("stdole32.tlb");
   importlib("stdole2.tlb");
-  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.4\com\esriSystem.olb");
-  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.4\com\esriGeometry.olb");
-  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.4\com\esriGeoDataBase.olb"); 
-  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.4\com\esriCarto.olb");
+  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.5\com\esriSystem.olb");
+  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.5\com\esriGeometry.olb");
+  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.5\com\esriGeoDataBase.olb"); 
+  importlib("C:\Program Files (x86)\ArcGIS\Desktop10.5\com\esriCarto.olb");
   
   // Interfaces
   // ISimpleXForm Interface

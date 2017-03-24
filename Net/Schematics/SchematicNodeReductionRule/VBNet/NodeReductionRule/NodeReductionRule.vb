@@ -518,7 +518,7 @@ Public Class NodeReductionRule
         Dim newPts As IPointCollection = Nothing
         Dim link1Pts As IPointCollection = Nothing
         Dim link2Pts As IPointCollection = Nothing
-        Dim buildGeometry As IGeometry = New Polyline()
+        Dim buildGeometry As IGeometry = TryCast(New Polyline(), IGeometry)
         Dim iCount As Integer
         Dim i As Integer
 

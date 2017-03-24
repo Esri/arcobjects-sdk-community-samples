@@ -202,6 +202,7 @@ Public NotInheritable Class CustomUpstreamTraceTaskVBNet
 		naxBarriers.CreateSelectionBarriers(selSetBarriers)
 		netSolver.ElementBarriers(esriElementType.esriETJunction) = juncElemBarriers
 		netSolver.ElementBarriers(esriElementType.esriETEdge) = edgeElemBarriers
+    netSolver.ElementBarriers(esriElementType.esriETEdge) = Nothing
 		netSolver.SelectionSetBarriers = selSetBarriers
 
 		' set up the disabled layers for the network solver

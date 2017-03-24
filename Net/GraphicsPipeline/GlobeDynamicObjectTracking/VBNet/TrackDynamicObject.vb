@@ -132,13 +132,13 @@ Public NotInheritable Class TrackDynamicObject : Inherits BaseCommand : Implemen
     m_globeHookHelper.Hook = hook
 
     'connect to the ZipCodes featureclass
-    'get the ArcGIS path from the registry
-        Dim key As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\ESRI\ArcObjectsSDK10.2")
-    Dim path As String = Convert.ToString(key.GetValue("InstallDir"))
+    Dim path As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
 
     'set the path to the featureclass used by the GPS simulator
-    m_shapefileName = System.IO.Path.Combine(path, "Samples\\data\\USAMajorHighways\\usa_major_highways.shp")
-
+    m_shapefileName = System.IO.Path.Combine(path, "ArcGIS\data\USAMajorHighways\usa_major_highways.shp")
+    System.Diagnostics.Debug.WriteLine(String.Format("File path for data root: {0} ", m_shapefileName))
+    If (not System.IO.File.Exists(m_shapefileName)) Then Throw New Exception(String.Format("Fix code to point to your sample data: {0} was not found", m_shapefileName))
+    
     'get the GlobeDisplsy from the hook helper
     m_globeDisplay = m_globeHookHelper.GlobeDisplay
 

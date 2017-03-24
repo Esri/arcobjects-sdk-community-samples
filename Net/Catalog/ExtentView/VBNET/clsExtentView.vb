@@ -12,6 +12,7 @@
 
 'See the License for the specific language governing permissions and
 'limitations under the License.
+Imports System.IO
 Imports ESRI.ArcGIS.ADF.CATIDs
 Imports ESRI.ArcGIS.esriSystem
 Imports ESRI.ArcGIS.CatalogUI
@@ -104,7 +105,10 @@ Public Class clsExtentView
             m_pSelection = Application.Selection
             ' get data from the MyProject's settings.
             ' please change accordingly
-            m_path = My.Settings.DataLocation
+            m_path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+            m_path = System.IO.Path.Combine (m_path, "ArcGIS\data\world")
+            if (not Directory.Exists(m_path)) Then throw new Exception(string.Format("Fix code to point to your sample data: {0} was not found", m_path))
+
             'Add data to map control
             frmExtentView.AxMapControl1.AddShapeFile(m_path, "world30")
             frmExtentView.AxMapControl1.Extent = frmExtentView.AxMapControl1.FullExtent

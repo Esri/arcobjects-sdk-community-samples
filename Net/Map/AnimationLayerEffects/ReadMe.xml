@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.923" productVersion="12.0.0" ?><?mso-application progid="InfoPath.Document"?><esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
   <title>Layer effects animation in ArcMap</title>
-  <purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample shows how to create custom animations in ArcGIS for Desktop and implement a layer effects animation type for ArcMap. It allows you to animate through layer brightness and contrast. This animation only works with raster layers that support contrast and brightness as layer properties. </div>
+  <purpose><div xmlns="http://www.w3.org/1999/xhtml">This sample shows how to create custom animations in ArcGIS Desktop and implement a layer effects animation type for ArcMap. It allows you to animate through layer brightness and contrast. This animation only works with raster layers that support contrast and brightness as layer properties. </div>
 <div xmlns="http://www.w3.org/1999/xhtml"> </div>
 <div xmlns="http://www.w3.org/1999/xhtml">As shown by the sample code, to create a custom animation type in ArcMap, ArcScene, or ArcGlobe, implement a new keyframe class and a new animation type class. Register the animation type class in the Esri Map Animation Types component category (or Esri 3D Animation Types for ArcScene and Esri 3D Animation Types for Globe or ArcGlobe).</div></purpose>
   <development_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>
   </development_license>
   <deployment_license>
     <license>
-      <name>ArcGIS for Desktop Basic</name>
+      <name>ArcGIS Desktop Basic</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Standard</name>
+      <name>ArcGIS Desktop Standard</name>
       <extension>
       </extension>
     </license>
     <license>
-      <name>ArcGIS for Desktop Advanced</name>
+      <name>ArcGIS Desktop Advanced</name>
       <extension>
       </extension>
     </license>

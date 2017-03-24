@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.SystemUI</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.SystemUI.IArcGISPortal">
+      <summary>Provides access to the IArcGISPortal Interface.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IArcGISPortal.BannerImage">
+      <summary>method BannerImage</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IArcGISPortal.BannerImageUrl">
+      <summary>method BannerImageUrl</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IArcGISPortal.IsMultiTenant">
+      <summary>method Name</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IArcGISPortal.Name">
+      <summary>method Name</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IArcGISPortal.Portal">
+      <summary>method Portal</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IArcGISPortal.SignonImage">
+      <summary>method SignonImage</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon">
+      <summary>Provides access to the IArcGISSingleSignon Interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon.GetCurrentToken(System.String@,System.String@,System.Int32@,System.String@)">
+      <summary>Returns the current token and matching referer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon.GetToken(System.Int32,System.String@,System.String@,System.Int32@,System.String@)">
+      <summary>Signs the user in to ArcGIS Online if required, and returns the current token and matching referer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon.GetURI(ESRI.ArcGIS.SystemUI.esriArcGISUri,System.String@)">
+      <summary>Returns the requested ArcGIS online URI</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon.SignOut">
+      <summary>Signs the user out of ArcGIS Online.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon2">
+      <summary>Provides access to the IArcGISSingleSignon2 Interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon2.GetBingToken(System.String@,System.String@,System.Int32@)">
+      <summary>Returns the Bing token and matching referer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon2.GetCurrentToken(System.String@,System.String@,System.Int32@,System.String@)">
+      <summary>Returns the current token and matching referer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon2.GetToken(System.Int32,System.String@,System.String@,System.Int32@,System.String@)">
+      <summary>Signs the user in to ArcGIS Online if required, and returns the current token and matching referer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon2.GetURI(ESRI.ArcGIS.SystemUI.esriArcGISUri,System.String@)">
+      <summary>Returns the requested ArcGIS online URI</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IArcGISSingleSignon2.SignOut">
+      <summary>Signs the user out of ArcGIS Online.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IComboBox">
+      <summary>Provides access to members that define a COM combo box.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IComboBox.DropDownHeight">
+      <summary>The Combo box's drop down height</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IComboBox.DropDownWidth">
+      <summary>The Combo box's drop down width</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IComboBox.Editable">
+      <summary>Is the combo box editable?</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IComboBox.HintText">
+      <summary>Set the hint displayed in the editbox.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IComboBox.OnEditChange(System.String)">
+      <summary>Called by system when the edit box is typed into (if editable)</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IComboBox.OnEnter">
+      <summary>Called by system when an &lt;enter&gt; key is pressed in the edit box (if editable)</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IComboBox.OnFocus(System.Boolean)">
+      <summary>Called by system when the gets or loses focus</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IComboBox.OnSelChange(System.Int32)">
+      <summary>Called by system when a selection changes</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IComboBox.ShowCaption">
+      <summary>Indicates if the caption is shown when this combo box is placed on toolbar.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IComboBox.Width">
+      <summary>The Combo box's width</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ICommand">
+      <summary>Provides access to members that define a COM command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ICommand.Bitmap">
+      <summary>The bitmap that is used as the icon on this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ICommand.Caption">
+      <summary>The caption of this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ICommand.Category">
+      <summary>The name of the category with which this command is associated.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ICommand.Checked">
+      <summary>Indicates if this command is checked.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ICommand.Enabled">
+      <summary>Indicates if this command is enabled.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ICommand.HelpContextID">
+      <summary>The help context ID associated with this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ICommand.HelpFile">
+      <summary>The name of the help file associated with this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ICommand.Message">
+      <summary>The statusbar message for this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ICommand.Name">
+      <summary>The name of this commmand.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ICommand.OnClick">
+      <summary>Occurs when this command is clicked.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ICommand.OnCreate(System.Object)">
+      <summary>Occurs when this command is created.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ICommand.Tooltip">
+      <summary>The tooltip for this command.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ICommandHost">
+      <summary>Provides access to the ICommandHost Interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ICommandHost.SetCommand(System.Object@)">
+      <summary>The SetCommand method is used to bind a command instance to its host.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ICommandSubType">
+      <summary>Provides access to members that define a subtyped command.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ICommandSubType.GetCount">
+      <summary>The number of commands defined with this CLSID.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ICommandSubType.SetSubType(System.Int32)">
+      <summary>The subtype of the command.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ICompletionNotify">
+      <summary>Provides access to a method that advises the framework that the control user has indicated completion.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ICompletionNotify.SetComplete">
+      <summary>Advises the framework that the control user has indicated completion.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IComponentTip">
+      <summary>Provides a tip for a component that is displayed by the What's This Help tool.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IComponentTip.Heading">
+      <summary>The heading for the tip.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IComponentTip.Image">
+      <summary>The image for the tip.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IComponentTip.Tip">
+      <summary>The main body of the tip.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IComPropertySheetEvents">
+      <summary>Provides access to events that occur on a COM property sheet.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IComPropertySheetEvents_Event">
+      <summary>Provides access to events that occur on a COM property sheet.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IComPropertySheetEvents.OnApply">
+      <summary>Occurs when changes are applied.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.SystemUI.IComPropertySheetEvents_Event.OnApply">
+      <summary>Occurs when changes are applied.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IDataObjectHelper">
+      <summary>Provides access to members for OLE drag and drop.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IDataObjectHelper.CanGetFiles">
+      <summary>Indicates if files are available in the DataObject.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IDataObjectHelper.CanGetNames">
+      <summary>Indicates if Esri names are available in the DataObject.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IDataObjectHelper.GetData(System.Int32)">
+      <summary>If specified DataObject format can be retrieved, returns the data as safe array of bytes.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IDataObjectHelper.GetFiles">
+      <summary>If the DataObject format supports files, returns a safe array of strings representing filenames.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IDataObjectHelper.GetFormat(System.Int32)">
+      <summary>Indicates if the DataObject supports the specified format.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IDataObjectHelper.GetNames">
+      <summary>If the DataObject format supports Esri names, returns an enumerator of names.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IDataObjectHelper.InternalObject">
+      <summary>Provides access to the internal IDataObject pointer.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IItemDef">
+      <summary>Provides access to members that define an item on a commandbar.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IItemDef.Group">
+      <summary>Indicates if the defined item should start a group on the menu or toolbar.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IItemDef.ID">
+      <summary>The CLSID or PROGID of the item being defined.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IItemDef.SubType">
+      <summary>The subtype of the item being defined.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IMenuDef">
+      <summary>Provides access to members that define a menu.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMenuDef.Caption">
+      <summary>The caption of this menu.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IMenuDef.GetItemInfo(System.Int32,ESRI.ArcGIS.SystemUI.IItemDef)">
+      <summary>The CLSID for the item on this menu at the specified index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMenuDef.ItemCount">
+      <summary>The number of items in this menu.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMenuDef.Name">
+      <summary>The name of this menu.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IMultiItem">
+      <summary>Provides access to members that define a multiItem.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItem.Caption">
+      <summary>The caption of the multiItem.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItem.HelpContextID">
+      <summary>The help context ID associated with this multiItem.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItem.HelpFile">
+      <summary>The name of the help file associated with this multiItem.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItem.ItemBitmap(System.Int32)">
+      <summary>The bitmap for the item at the specified index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItem.ItemCaption(System.Int32)">
+      <summary>The caption of the item at the specified index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItem.ItemChecked(System.Int32)">
+      <summary>Indicates if item at the specified index is checked.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItem.ItemEnabled(System.Int32)">
+      <summary>Indicates if the item at the specified index is enabled.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItem.Message">
+      <summary>The status bar message for all items on the multiItem.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItem.Name">
+      <summary>The name of the multiItem.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IMultiItem.OnItemClick(System.Int32)">
+      <summary>Occurs when the item at the specified index is clicked.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IMultiItem.OnPopup(System.Object)">
+      <summary>Occurs when the menu that contains the multiItem is about to be displayed.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IMultiItemEx">
+      <summary>Provides access to members that define a multiItem with extended features.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItemEx.ItemHelpContextID(System.Int32)">
+      <summary>The help context ID associated with the item specified by the index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItemEx.ItemHelpFile(System.Int32)">
+      <summary>The name of the help file associated with the item specified by the index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItemEx.ItemMessage(System.Int32)">
+      <summary>The status bar message for the item specified by the index.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IMultiItemSeparator">
+      <summary>Extends multiItem capabalities to support separators.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IMultiItemSeparator.Separator(System.Int32)">
+      <summary>Indicates if item has a separator.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IOperation">
+      <summary>Provides access to members that control Operations.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IOperation.CanRedo">
+      <summary>Indicates if the operation can be redone.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IOperation.CanUndo">
+      <summary>Indicates if the operation can be undone.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IOperation.Do">
+      <summary>Performs the operation.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IOperation.MenuString">
+      <summary>The menu string.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IOperation.Redo">
+      <summary>Redoes the operation.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IOperation.Undo">
+      <summary>Undoes the operation.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IOperationStack">
+      <summary>Provides access to members that control the Operation Stack.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IOperationStack.Count">
+      <summary>The number of operations on the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IOperationStack.Do(ESRI.ArcGIS.SystemUI.IOperation)">
+      <summary>Performs the given operation and places it on the stack.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IOperationStack.Item(System.Int32)">
+      <summary>The operation at the specified index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IOperationStack.Redo">
+      <summary>Redoes the next operation on the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IOperationStack.Remove(System.Int32)">
+      <summary>Removes an operation from the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IOperationStack.Reset">
+      <summary>Removes all operations from the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IOperationStack.Undo">
+      <summary>Undoes the previous operation on the stack.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IPaletteDef">
+      <summary>Provides access to members that define a ToolbarPalette.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IPaletteDef.Caption">
+      <summary>The caption of this palette.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IPaletteDef.GetItemInfo(System.Int32,ESRI.ArcGIS.SystemUI.IItemDef)">
+      <summary>The CLSID for the item on this palette at the specified index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IPaletteDef.ItemCount">
+      <summary>The number of items on this palette.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IPaletteDef.Name">
+      <summary>The name of this palette.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IProgressDialog">
+      <summary>Provides access to members that work with a progress dialog.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IProgressDialog.CancelEnabled">
+      <summary>Indicates if the cancel button is enabled.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IProgressDialog.HideDialog">
+      <summary>Hides the progress dialog.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IProgressDialog.ShowDialog">
+      <summary>Shows the progress dialog.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ISystemMouseCursor">
+      <summary>Provides access to members that load and get mouse cursor.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ISystemMouseCursor.Cursor">
+      <summary>Currently loaded mouse cursor.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ISystemMouseCursor.Load(ESRI.ArcGIS.SystemUI.esriSystemMouseCursor)">
+      <summary>Loads system provided mouse cursor.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ISystemMouseCursor.LoadFromFile(System.String)">
+      <summary>Loads mouse cursor from file. If file name uses relative path, the path must be relative to current application executable.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ITool">
+      <summary>Provides access to members that define a tool.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ITool.Cursor">
+      <summary>The mouse pointer for this tool.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ITool.Deactivate">
+      <summary>Causes the tool to no longer be the active tool.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ITool.OnContextMenu(System.Int32,System.Int32)">
+      <summary>Context menu event occured at the given xy location.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ITool.OnDblClick">
+      <summary>Occurs when a mouse button is double clicked when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ITool.OnKeyDown(System.Int32,System.Int32)">
+      <summary>Occurs when a key on the keyboard is pressed when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ITool.OnKeyUp(System.Int32,System.Int32)">
+      <summary>Occurs when a key on the keyboard is released when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ITool.OnMouseDown(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Occurs when a mouse button is pressed when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ITool.OnMouseMove(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Occurs when the mouse is moved when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ITool.OnMouseUp(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Occurs when a mouse button is released when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ITool.Refresh(System.Int32)">
+      <summary>Occurs when a screen display in the application is refreshed.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IToolBarDef">
+      <summary>Provides access to members that define a toolbar.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IToolBarDef.Caption">
+      <summary>The caption of this toolbar.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IToolBarDef.GetItemInfo(System.Int32,ESRI.ArcGIS.SystemUI.IItemDef)">
+      <summary>The CLSID for the item on this toolbar at the specified index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IToolBarDef.ItemCount">
+      <summary>The number of items in this toolbar.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IToolBarDef.Name">
+      <summary>The name of this toolbar.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IToolControl">
+      <summary>Provides access to members that define a toolcontrol.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IToolControl.hWnd">
+      <summary>The handle of the control.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IToolControl.OnDrop(ESRI.ArcGIS.SystemUI.esriCmdBarType)">
+      <summary>Indicates if the drag-drop operation is valid.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IToolControl.OnFocus(ESRI.ArcGIS.SystemUI.ICompletionNotify)">
+      <summary>Occurs when the control gains focus.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IToolKeys">
+      <summary>Allows a tool to override system shortcut keys.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.IToolKeys.OverrideKey(System.Int32,System.Int32)">
+      <summary>Indicate whether the specified key is handled by the tool.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IToolPalette">
+      <summary>Tool palette.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IToolPalette.MenuStyle">
+      <summary>The menu style</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IToolPalette.PaletteColumns">
+      <summary>The Number of Columns to display</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IToolPalette.PaletteItem(System.Int32)">
+      <summary>The CLSID for the item on this menu at the specified index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IToolPalette.PaletteItemCount">
+      <summary>The number of items in this menu.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IToolPalette.TearOff">
+      <summary>The tearoff style</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IToolSelectedLayer">
+      <summary>Provides access to members that set and get the current selected layer, which selection commands and tools works on.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.IToolSelectedLayer.LayerIndex">
+      <summary>The index of selected layer.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ArcGISSingleSignon">
+      <summary>An object for working with the ArcGIS Single Sign on system.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass">
+      <summary>An object for working with the ArcGIS Single Sign on system.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.BannerImage">
+      <summary>method BannerImage</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IArcGISPortal_BannerImage">
+      <summary>method BannerImage</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI..">
+      <summary>An object for working with the ArcGIS Single Sign on system. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI.._">
+      <summary>An object for working with the ArcGIS Single Sign on system. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.#ctor">
+      <summary>An object for working with the ArcGIS Single Sign on system. Constructor has no input arguments.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.BannerImageUrl">
+      <summary>method BannerImageUrl</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IArcGISPortal_BannerImageUrl">
+      <summary>method BannerImageUrl</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IsMultiTenant">
+      <summary>method Name</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IArcGISPortal_IsMultiTenant">
+      <summary>method Name</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.Name">
+      <summary>method Name</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IArcGISPortal_Name">
+      <summary>method Name</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.Portal">
+      <summary>method Portal</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IArcGISPortal_Portal">
+      <summary>method Portal</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.SignonImage">
+      <summary>method SignonImage</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IArcGISPortal_SignonImage">
+      <summary>method SignonImage</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.GetCurrentToken(System.String@,System.String@,System.Int32@,System.String@)">
+      <summary>Returns the current token and matching referer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IArcGISSingleSignon_GetCurrentToken(System.String@,System.String@,System.Int32@,System.String@)">
+      <summary>Returns the current token and matching referer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.GetToken(System.Int32,System.String@,System.String@,System.Int32@,System.String@)">
+      <summary>Signs the user in to ArcGIS Online if required, and returns the current token and matching referer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IArcGISSingleSignon_GetToken(System.Int32,System.String@,System.String@,System.Int32@,System.String@)">
+      <summary>Signs the user in to ArcGIS Online if required, and returns the current token and matching referer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.GetURI(ESRI.ArcGIS.SystemUI.esriArcGISUri,System.String@)">
+      <summary>Returns the requested ArcGIS online URI</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IArcGISSingleSignon_GetURI(ESRI.ArcGIS.SystemUI.esriArcGISUri,System.String@)">
+      <summary>Returns the requested ArcGIS online URI</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.SignOut">
+      <summary>Signs the user out of ArcGIS Online.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ArcGISSingleSignonClass.IArcGISSingleSignon_SignOut">
+      <summary>Signs the user out of ArcGIS Online.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.CommandHost">
+      <summary>Use this class to host C++ command implementations in a Toolbar.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.CommandHostClass">
+      <summary>Use this class to host C++ command implementations in a Toolbar.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.Bitmap">
+      <summary>The bitmap that is used as the icon on this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_Bitmap">
+      <summary>The bitmap that is used as the icon on this command.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI..">
+      <summary>Use this class to host C++ command implementations in a Toolbar. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI.._">
+      <summary>Use this class to host C++ command implementations in a Toolbar. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.CommandHostClass.#ctor">
+      <summary>Use this class to host C++ command implementations in a Toolbar. Constructor has no input arguments.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.Caption">
+      <summary>The caption of this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_Caption">
+      <summary>The caption of this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.Category">
+      <summary>The name of the category with which this command is associated.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_Category">
+      <summary>The name of the category with which this command is associated.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.Checked">
+      <summary>Indicates if this command is checked.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_Checked">
+      <summary>Indicates if this command is checked.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.Enabled">
+      <summary>Indicates if this command is enabled.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_Enabled">
+      <summary>Indicates if this command is enabled.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.HelpContextID">
+      <summary>The help context ID associated with this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_HelpContextID">
+      <summary>The help context ID associated with this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.HelpFile">
+      <summary>The name of the help file associated with this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_HelpFile">
+      <summary>The name of the help file associated with this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.Message">
+      <summary>The statusbar message for this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_Message">
+      <summary>The statusbar message for this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.Name">
+      <summary>The name of this commmand.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_Name">
+      <summary>The name of this commmand.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.CommandHostClass.OnClick">
+      <summary>Occurs when this command is clicked.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_OnClick">
+      <summary>Occurs when this command is clicked.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.CommandHostClass.OnCreate(System.Object)">
+      <summary>Occurs when this command is created.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_OnCreate(System.Object)">
+      <summary>Occurs when this command is created.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.Tooltip">
+      <summary>The tooltip for this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommand_Tooltip">
+      <summary>The tooltip for this command.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.CommandHostClass.SetCommand(System.Object@)">
+      <summary>The SetCommand method is used to bind a command instance to its host.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.CommandHostClass.ICommandHost_SetCommand(System.Object@)">
+      <summary>The SetCommand method is used to bind a command instance to its host.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ComPropertySheetEventsProxyHelper">
+      <summary>ComPropertySheetEvents proxy source helper object.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ComPropertySheetEventsProxyHelperClass">
+      <summary>ComPropertySheetEvents proxy source helper object.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.SystemUI.ComPropertySheetEventsProxyHelperClass.OnApply">
+      <summary>Occurs when changes are applied.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.SystemUI.ComPropertySheetEventsProxyHelperClass.IComPropertySheetEvents_OnApply">
+      <summary>Occurs when changes are applied.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.SystemUI.ComPropertySheetEventsProxyHelperClass.IComPropertySheetEvents_Event_OnApply">
+      <summary>Occurs when changes are applied.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.SystemUI.ComPropertySheetEventsProxyHelperClass.IComPropertySheetEvents_Event.OnApply">
+      <summary>Occurs when changes are applied.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI..">
+      <summary>Occurs when changes are applied.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI.._">
+      <summary>Occurs when changes are applied.</summary>
+    </member>
+    <member name="E:ESRI.ArcGIS.SystemUI.IComPropertySheetEvents_Event.OnApply">
+      <summary>Occurs when changes are applied.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IComPropertySheetEvents_OnApplyEventHandler">
+      <summary>Handles the IComPropertySheetEvents_Event.OnApply Event</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.IComPropertySheetEvents_Event">
+      <summary>Provides access to events that occur on a COM property sheet.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ComPropertySheetEventsProxyHelperClass.#ctor">
+      <summary>ComPropertySheetEvents proxy source helper object. Constructor has no input arguments.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ControlsOperationStack">
+      <summary>Use this class to provide operation support to the ToolbarControl.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass">
+      <summary>Use this class to provide operation support to the ToolbarControl.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.InterfaceSupportsErrorInfo(System.Guid@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.ISupportErrorInfo_InterfaceSupportsErrorInfo(System.Guid@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI..">
+      <summary>Use this class to provide operation support to the ToolbarControl. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI.._">
+      <summary>Use this class to provide operation support to the ToolbarControl. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.#ctor">
+      <summary>Use this class to provide operation support to the ToolbarControl. Constructor has no input arguments.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.Count">
+      <summary>The number of operations on the stack.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.IOperationStack_Count">
+      <summary>The number of operations on the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.Do(ESRI.ArcGIS.SystemUI.IOperation)">
+      <summary>Performs the given operation and places it on the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.IOperationStack_Do(ESRI.ArcGIS.SystemUI.IOperation)">
+      <summary>Performs the given operation and places it on the stack.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.Item(System.Int32)">
+      <summary>The operation at the specified index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.IOperationStack_Item(System.Int32)">
+      <summary>The operation at the specified index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.Redo">
+      <summary>Redoes the next operation on the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.IOperationStack_Redo">
+      <summary>Redoes the next operation on the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.Remove(System.Int32)">
+      <summary>Removes an operation from the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.IOperationStack_Remove(System.Int32)">
+      <summary>Removes an operation from the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.Reset">
+      <summary>Removes all operations from the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.IOperationStack_Reset">
+      <summary>Removes all operations from the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.Undo">
+      <summary>Undoes the previous operation on the stack.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ControlsOperationStackClass.IOperationStack_Undo">
+      <summary>Undoes the previous operation on the stack.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.DataObjectHelper">
+      <summary>Helper class for OLE drag and drop.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.DataObjectHelperClass">
+      <summary>Helper class for OLE drag and drop.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.InterfaceSupportsErrorInfo(System.Guid@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.ISupportErrorInfo_InterfaceSupportsErrorInfo(System.Guid@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI..">
+      <summary>Helper class for OLE drag and drop. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI.._">
+      <summary>Helper class for OLE drag and drop. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.#ctor">
+      <summary>Helper class for OLE drag and drop. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.CanGetFiles">
+      <summary>Indicates if files are available in the DataObject.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.IDataObjectHelper_CanGetFiles">
+      <summary>Indicates if files are available in the DataObject.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.CanGetNames">
+      <summary>Indicates if Esri names are available in the DataObject.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.IDataObjectHelper_CanGetNames">
+      <summary>Indicates if Esri names are available in the DataObject.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.GetData(System.Int32)">
+      <summary>If specified DataObject format can be retrieved, returns the data as safe array of bytes.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.IDataObjectHelper_GetData(System.Int32)">
+      <summary>If specified DataObject format can be retrieved, returns the data as safe array of bytes.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.GetFiles">
+      <summary>If the DataObject format supports files, returns a safe array of strings representing filenames.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.IDataObjectHelper_GetFiles">
+      <summary>If the DataObject format supports files, returns a safe array of strings representing filenames.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.GetFormat(System.Int32)">
+      <summary>Indicates if the DataObject supports the specified format.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.IDataObjectHelper_GetFormat(System.Int32)">
+      <summary>Indicates if the DataObject supports the specified format.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.GetNames">
+      <summary>If the DataObject format supports Esri names, returns an enumerator of names.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.IDataObjectHelper_GetNames">
+      <summary>If the DataObject format supports Esri names, returns an enumerator of names.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.InternalObject">
+      <summary>Provides access to the internal IDataObject pointer.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.DataObjectHelperClass.IDataObjectHelper_InternalObject">
+      <summary>Provides access to the internal IDataObject pointer.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.SystemFont">
+      <summary>A font object encapsulating Windows font object.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.SystemFontClass">
+      <summary>A font object encapsulating Windows font object.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.SystemMouseCursor">
+      <summary>A helper object working with mouse cursor.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.SystemMouseCursorClass">
+      <summary>A helper object working with mouse cursor.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.SystemMouseCursorClass.Cursor">
+      <summary>Currently loaded mouse cursor.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.SystemMouseCursorClass.ISystemMouseCursor_Cursor">
+      <summary>Currently loaded mouse cursor.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI..">
+      <summary>A helper object working with mouse cursor. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI.._">
+      <summary>A helper object working with mouse cursor. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.SystemMouseCursorClass.#ctor">
+      <summary>A helper object working with mouse cursor. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.SystemMouseCursorClass.Load(ESRI.ArcGIS.SystemUI.esriSystemMouseCursor)">
+      <summary>Loads system provided mouse cursor.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.SystemMouseCursorClass.ISystemMouseCursor_Load(ESRI.ArcGIS.SystemUI.esriSystemMouseCursor)">
+      <summary>Loads system provided mouse cursor.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.SystemMouseCursorClass.LoadFromFile(System.String)">
+      <summary>Loads mouse cursor from file. If file name uses relative path, the path must be relative to current application executable.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.SystemMouseCursorClass.ISystemMouseCursor_LoadFromFile(System.String)">
+      <summary>Loads mouse cursor from file. If file name uses relative path, the path must be relative to current application executable.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ToolHost">
+      <summary>Use this class to host pure C++ tool implementations in a Toolbar.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.ToolHostClass">
+      <summary>Use this class to host pure C++ tool implementations in a Toolbar.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.Bitmap">
+      <summary>The bitmap that is used as the icon on this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_Bitmap">
+      <summary>The bitmap that is used as the icon on this command.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI..">
+      <summary>Use this class to host pure C++ tool implementations in a Toolbar. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.SystemUI.._">
+      <summary>Use this class to host pure C++ tool implementations in a Toolbar. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.#ctor">
+      <summary>Use this class to host pure C++ tool implementations in a Toolbar. Constructor has no input arguments.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.Caption">
+      <summary>The caption of this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_Caption">
+      <summary>The caption of this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.Category">
+      <summary>The name of the category with which this command is associated.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_Category">
+      <summary>The name of the category with which this command is associated.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.Checked">
+      <summary>Indicates if this command is checked.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_Checked">
+      <summary>Indicates if this command is checked.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.Enabled">
+      <summary>Indicates if this command is enabled.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_Enabled">
+      <summary>Indicates if this command is enabled.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.HelpContextID">
+      <summary>The help context ID associated with this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_HelpContextID">
+      <summary>The help context ID associated with this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.HelpFile">
+      <summary>The name of the help file associated with this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_HelpFile">
+      <summary>The name of the help file associated with this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.Message">
+      <summary>The statusbar message for this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_Message">
+      <summary>The statusbar message for this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.Name">
+      <summary>The name of this commmand.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_Name">
+      <summary>The name of this commmand.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.OnClick">
+      <summary>Occurs when this command is clicked.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_OnClick">
+      <summary>Occurs when this command is clicked.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.OnCreate(System.Object)">
+      <summary>Occurs when this command is created.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_OnCreate(System.Object)">
+      <summary>Occurs when this command is created.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.Tooltip">
+      <summary>The tooltip for this command.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommand_Tooltip">
+      <summary>The tooltip for this command.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.SetCommand(System.Object@)">
+      <summary>The SetCommand method is used to bind a command instance to its host.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ICommandHost_SetCommand(System.Object@)">
+      <summary>The SetCommand method is used to bind a command instance to its host.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.Cursor">
+      <summary>The mouse pointer for this tool.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SystemUI.ToolHostClass.ITool_Cursor">
+      <summary>The mouse pointer for this tool.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.Deactivate">
+      <summary>Causes the tool to no longer be the active tool.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ITool_Deactivate">
+      <summary>Causes the tool to no longer be the active tool.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.OnContextMenu(System.Int32,System.Int32)">
+      <summary>Context menu event occured at the given xy location.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ITool_OnContextMenu(System.Int32,System.Int32)">
+      <summary>Context menu event occured at the given xy location.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.OnDblClick">
+      <summary>Occurs when a mouse button is double clicked when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ITool_OnDblClick">
+      <summary>Occurs when a mouse button is double clicked when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.OnKeyDown(System.Int32,System.Int32)">
+      <summary>Occurs when a key on the keyboard is pressed when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ITool_OnKeyDown(System.Int32,System.Int32)">
+      <summary>Occurs when a key on the keyboard is pressed when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.OnKeyUp(System.Int32,System.Int32)">
+      <summary>Occurs when a key on the keyboard is released when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ITool_OnKeyUp(System.Int32,System.Int32)">
+      <summary>Occurs when a key on the keyboard is released when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.OnMouseDown(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Occurs when a mouse button is pressed when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ITool_OnMouseDown(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Occurs when a mouse button is pressed when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.OnMouseMove(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Occurs when the mouse is moved when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ITool_OnMouseMove(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Occurs when the mouse is moved when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.OnMouseUp(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Occurs when a mouse button is released when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ITool_OnMouseUp(System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>Occurs when a mouse button is released when this tool is active.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.Refresh(System.Int32)">
+      <summary>Occurs when a screen display in the application is refreshed.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SystemUI.ToolHostClass.ITool_Refresh(System.Int32)">
+      <summary>Occurs when a screen display in the application is refreshed.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.esriArcGISUri">
+      <summary>ArcGIS online URI</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriArcGISUri.esriArcGISUriBase">
+      <summary>The base uri for ArcGIS online</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriArcGISUri.esriArcGISUriSecure">
+      <summary>The secure uri for ArcGIS online</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriArcGISUri.esriArcGISUriUpdate">
+      <summary>The Update URI</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriArcGISUri.esriArcGISUriPing">
+      <summary>The URI for the ping test</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriArcGISUri.esriArcGISUriSpeed">
+      <summary>The URI for the speed test</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriArcGISUri.esriArcGISBasemapQuery">
+      <summary>The query used to populate the basemap list</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriArcGISUri.esriArcGISGlobeBasemapQuery">
+      <summary>The query used to populate the basemap list for ArcGlobe</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriArcGISUri.esriArcGISUriForgottenPassword">
+      <summary>The URI for the forgotten password link</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriArcGISUri.esriArcGISUriNewAccount">
+      <summary>The URI for the new account link</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriArcGISUri.esriArcGISSiteName">
+      <summary>The name of the ArcGIS Portal</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.esriCmdBarType">
+      <summary>Commandbar types.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriCmdBarType.esriCmdBarTypeToolbar">
+      <summary>Toolbar commandbar type.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriCmdBarType.esriCmdBarTypeMenu">
+      <summary>Menu commandbar type.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriCmdBarType.esriCmdBarTypeShortcutMenu">
+      <summary>Context menu commandbar type.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.esriCommandStyles">
+      <summary>Command display styles.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriCommandStyles.esriCommandStyleTextOnly">
+      <summary>Display text only.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriCommandStyles.esriCommandStyleIconOnly">
+      <summary>Display icon only.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriCommandStyles.esriCommandStyleIconAndText">
+      <summary>Display icon and text.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriCommandStyles.esriCommandStyleMenuBar">
+      <summary>Display bar as main menu.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.esriKeyIntercept">
+      <summary>Options for intercepting key presses handled by a controls container, these values can be combined into a bit mask.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriKeyIntercept.esriKeyInterceptNone">
+      <summary>No keys are intercepted.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriKeyIntercept.esriKeyInterceptArrowKeys">
+      <summary>Intercepts the arrow keys, normally handled by the container to change control focus.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriKeyIntercept.esriKeyInterceptAlt">
+      <summary>Intercepts the Alt key, normally handled by a container to change focus.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriKeyIntercept.esriKeyInterceptTab">
+      <summary>Intercepts the Tab key, normally handled by the container to change control focus.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriKeyIntercept.esriKeyInterceptEnter">
+      <summary>Intercepts the Enter key, normally handled by the container to click the default button.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor">
+      <summary>Mouse cursor options.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorDefault">
+      <summary>Default pointer, same as arrow.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorArrow">
+      <summary>Standard arrow. </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorCrosshair">
+      <summary>Crosshair.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorIBeam">
+      <summary>I-Beam.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorIcon">
+      <summary>Icon.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorSize">
+      <summary>Size, four-pointed arrow pointing north, south, east and west.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorSizeNESW">
+      <summary>Size NE-SW, double arrow pointing north-east and south-west.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorSizeNS">
+      <summary>Size N-S, double arrow pointing north and south.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorSizeNWSE">
+      <summary>Size NW-SE, double arrow pointing north-west and south-east.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorSizeWE">
+      <summary>Size W-E, double arrow pointing west and east.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorUpArrow">
+      <summary>Arrow pointing vertically up.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorHourglass">
+      <summary>Hourglass, wait cursor.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorNoDrop">
+      <summary>Circle with slash through it or a no entry sign.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorArrowHourglass">
+      <summary>Standard arrow and small hourglass.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorArrowQuestion">
+      <summary>Arrow and question mark.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorSizeAll">
+      <summary>Size all, a four-pointed arrow pointing north, south, east and west.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorZoom">
+      <summary>Zoom, a magnifying glass.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorZoomIn">
+      <summary>Zoom in, a magnifying glass with a plus sign.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorZoomOut">
+      <summary>Zoom out, a magnifying glass with a minus sign.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorPan">
+      <summary>Pan, a hand.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorPanning">
+      <summary>Panning, a clenched hand.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorIdentify">
+      <summary>Identify, arrow with information symbol.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorLabel">
+      <summary>Label, arrow with letter A.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorHotLink">
+      <summary>Hot-Link, lightening strike.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorPencil">
+      <summary>Pencil.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorHand">
+      <summary>Hand, closed hand with index finger pointing vertically.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorPageZoomIn">
+      <summary>Page zoom In, magnifying glass with plus sign and a small page.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorPageZoomOut">
+      <summary>Page zoom out, magnifying glass with minus sign and a small page.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorPagePan">
+      <summary>Page pan, open hand with page symbol.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriSystemMouseCursor.esriSystemMouseCursorPagePanning">
+      <summary>Page pan, closed hand with page symbol.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SystemUI.esriTipStyle">
+      <summary>Tooltip Styles.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriTipStyle.esriTipStyleSolid">
+      <summary>Non-transparent Tooltips.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SystemUI.esriTipStyle.esriTipStyleTransparent">
+      <summary>Transparent Tooltips.</summary>
+    </member>
+  </members>
+</doc>

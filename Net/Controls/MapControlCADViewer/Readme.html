@@ -18,37 +18,46 @@
   </style>
 </head>
 <body>
-  <h2>View CAD data in a MapControl</h2>
+  ## View CAD data in a MapControl
 
-<h3>Purpose</h3>
+This sample provides a stand-alone application containing a MapControl that can be used to view computer-aided design (CAD) data. When compiled, the application can be associated with the most common CAD file name extensions (.dxf, .dwg, and .dng) so that this will be the default application for opening files of these types. When opened, the application allows the user to view the data including the ability to zoom and pan.   
 
-<p>This sample provides a stand-alone application containing a MapControl that can be used to view computer-aided design (CAD) data. When compiled, the application can be associated with the most common CAD file name extensions (.dxf, .dwg, and .dng) so that this will be the default application for opening files of these types. When opened, the application allows the user to view the data including the ability to zoom and pan.   </p>
+```
+Language:              C#, VB
+Subject:               Controls
+Organization:          Esri, http://www.esri.com
+Date:                  3/24/2017
+ArcObjects SDK:        10.5
+Visual Studio:         2013, 2015
+.NET Target Framework: 4.5
+```
 
-<h3>Usage</h3>
+### Resources
 
-<ol>
-<li>Edit the CADFiles.REG file, replacing the two instances of the path to the sample executable to the actual path of the sample executable on your machine; for example, C:\Program Files\ArcGIS\DeveloperKit<version number>\Samples\ArcObjectsNET\MapControlCADViewer\CSharp\CADView.exe.   </li>
-<li>Double-click this .reg file to merge its contents into the registry. Note that merging this data into the registry may overwrite existing file associations for these file types.   </li>
-<li>Select any CAD file (.dxf, .dwg, or .dgn)—for example, in Windows Explorer—and right-click the file.   </li>
-<li>Choose View. The application opens to display the CAD file you selected inside the MapControl.   </li>
-<li>Zoom in on the CAD data by dragging a rectangle using the left mouse button and pan around using the right mouse button.   </li>
-</ol>
+* [ArcObjects .NET API Reference online](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm)  
+* [Sample Data Download](../../releases)  
+* [What's new](http://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#05247c04-bfd9-4e36-ae09-bc6e833c3b14.htm)  
+* [Download the ArcObjects SDK for .Net from MyEsri.com](https://my.esri.com/)  
 
-<h4>See Also</h4>
+### Usage
+1. Edit the CADFiles.REG file, replacing the two instances of the path to the sample executable to the actual path of the sample executable on your machine; for example, C:\Program Files\ArcGIS\DeveloperKit<version number>\Samples\ArcObjectsNET\MapControlCADViewer\CSharp\CADView.exe.   
+1. Double-click this .reg file to merge its contents into the registry. Note that merging this data into the registry may overwrite existing file associations for these file types.   
+1. Select any CAD file (.dxf, .dwg, or .dgn)—for example, in Windows Explorer—and right-click the file.   
+1. Choose View. The application opens to display the CAD file you selected inside the MapControl.   
+1. Zoom in on the CAD data by dragging a rectangle using the left mouse button and pan around using the right mouse button.   
 
-<p><a href="http://desktop.arcgis.com/search/?q=MapControl%20class&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">MapControl class</a><br />
-<a href="http://desktop.arcgis.com/search/?q=IMapControl2%20interface&amp;p=0&amp;language=en&amp;product=arcobjects-sdk-dotnet&amp;version=&amp;n=15&amp;collection=help">IMapControl2 interface</a>  </p>
+#### See Also  
+[MapControl class](http://desktop.arcgis.com/search/?q=MapControl%20class&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
+[IMapControl2 interface](http://desktop.arcgis.com/search/?q=IMapControl2%20interface&p=0&language=en&product=arcobjects-sdk-dotnet&version=&n=15&collection=help)  
 
-<hr />
+---------------------------------
 
-<h4>Licensing</h4>
-
+#### Licensing  
 <table><tr><th> Development licensing </th><th> Deployment licensing </th></tr>
 <tr><td> Engine Developer Kit </td><td> Engine </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Basic </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Standard </td></tr>  
-<tr><td>  </td><td> ArcGIS for Desktop Advanced </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Basic </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Standard </td></tr>  
+<tr><td>  </td><td> ArcGIS Desktop Advanced </td></tr>  
 </table>
-
 </body>
 </html>
