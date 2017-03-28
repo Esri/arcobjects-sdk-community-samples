@@ -11,7 +11,7 @@ This repository contains ArcObjects SDK Samples for the ArcObjects SDK 10.5.  Th
 
 ## Features
 
-This repository contains 213 ArcObjects SDK Samples which are all itemized in this [ArcObjects SDK Community Samples list](#arcobjects-sdk-community-samples-1)  
+This repository contains 226 ArcObjects SDK Samples which are all itemized in this [ArcObjects SDK Community Samples list](#arcobjects-sdk-community-samples-1)  
 
 ## Instructions
 
@@ -294,6 +294,23 @@ If you wish to contribute to this website, please
 
 * [ClonableObject (C#, VB)](../../tree/master/Net/SDK_General//ClonableObject)  
 * [PersistStream (C#)](../../tree/master/Net/SDK_General//PersistStream)  
+
+
+#### Server
+
+* [ServerApplyWatermarkSOI (C#)](../../tree/master/Net/Server//ServerApplyWatermarkSOI)  
+* [ServerEditFeaturesRESTSOE (C#)](../../tree/master/Net/Server//ServerEditFeaturesRESTSOE)  
+* [ServerFindNearRESTSOE (C#)](../../tree/master/Net/Server//ServerFindNearRESTSOE)  
+* [ServerFindNearSOAPSOE (C#)](../../tree/master/Net/Server//ServerFindNearSOAPSOE)  
+* [ServerLayerAccessSOI (C#)](../../tree/master/Net/Server//ServerLayerAccessSOI)  
+* [ServerOperationAccessSOI (C#)](../../tree/master/Net/Server//ServerOperationAccessSOI)  
+* [ServerSimpleImageServiceRESTSOE (C#)](../../tree/master/Net/Server//ServerSimpleImageServiceRESTSOE)  
+* [ServerSimpleLoggerSOI (C#)](../../tree/master/Net/Server//ServerSimpleLoggerSOI)  
+* [ServerSimpleRESTSOE (C#)](../../tree/master/Net/Server//ServerSimpleRESTSOE)  
+* [ServerSimpleRESTSOEWithCapabilities (C#)](../../tree/master/Net/Server//ServerSimpleRESTSOEWithCapabilities)  
+* [ServerSimpleRESTSOEWithProperties (C#)](../../tree/master/Net/Server//ServerSimpleRESTSOEWithProperties)  
+* [ServerSimpleSOAPSOE (C#)](../../tree/master/Net/Server//ServerSimpleSOAPSOE)  
+* [ServerSpatialQueryRESTSOE (C#)](../../tree/master/Net/Server//ServerSpatialQueryRESTSOE)  
 
 
 #### Spatial Analyst
