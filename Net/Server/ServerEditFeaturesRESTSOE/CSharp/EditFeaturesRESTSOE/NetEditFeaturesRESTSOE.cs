@@ -581,6 +581,7 @@ namespace NetEditFeaturesRESTSOE
                 {
                     wsEdit.StopEditing(false);
                 }
+                feature = null;
                 return createErrorObject(500,
                     "Error occured while editing layer " + this.layerId + ".",
                     new String[] { "Error details:", e.Message });

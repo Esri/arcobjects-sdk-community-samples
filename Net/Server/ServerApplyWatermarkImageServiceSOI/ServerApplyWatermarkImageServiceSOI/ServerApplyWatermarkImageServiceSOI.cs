@@ -26,7 +26,7 @@ namespace ServerApplyWatermarkImageServiceSOI
     [ComVisible(true)]
     [Guid("ccf64e95-f8e9-4bdd-b3cf-9349a4361f25")]
     [ClassInterface(ClassInterfaceType.None)]
-    [ServerObjectInterceptor("MapServer",
+    [ServerObjectInterceptor("ImageServer",
         Description = "SOI example that applies watermark to exported images",
         DisplayName = "DotNet Apply Watermark Sample SOI for Image Service",
         Properties = "")]
