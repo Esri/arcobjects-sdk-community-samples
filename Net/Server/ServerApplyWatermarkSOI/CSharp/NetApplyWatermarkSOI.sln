@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetApplyWatermarkSOI", "NetApplyWatermarkSOI\NetApplyWatermarkSOI.VS2012.csproj", "{62137B81-B479-48CD-9BB4-DC7A7EC2A835}"
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetApplyWatermarkSOI.VS2012", "NetApplyWatermarkSOI\NetApplyWatermarkSOI.VS2012.csproj", "{1C397940-76A9-4A87-B94B-16933B1F49D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{62137B81-B479-48CD-9BB4-DC7A7EC2A835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{62137B81-B479-48CD-9BB4-DC7A7EC2A835}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{62137B81-B479-48CD-9BB4-DC7A7EC2A835}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{62137B81-B479-48CD-9BB4-DC7A7EC2A835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C397940-76A9-4A87-B94B-16933B1F49D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C397940-76A9-4A87-B94B-16933B1F49D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C397940-76A9-4A87-B94B-16933B1F49D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C397940-76A9-4A87-B94B-16933B1F49D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
