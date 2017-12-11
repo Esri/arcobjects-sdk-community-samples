@@ -47,6 +47,7 @@ namespace NetApplyWatermarkSOI
         private ServerLogger _serverLog;
         private string _outputDirectory = string.Empty;
         private RestSOIHelper _restSOIHelper;
+        private bool _directoryInitialized = false;
 
         public NetApplyWatermarkSOI ()
         {
@@ -60,38 +61,8 @@ namespace NetApplyWatermarkSOI
                 _soHelper = pSOH;
                 _serverLog = new ServerLogger();
                 _restSOIHelper = new RestSOIHelper(pSOH);
-
-                try
-                {
-                    //interop problem?
-                    var se4 = _restSOIHelper.ServerEnvironment as IServerEnvironmentEx;
-                    var dirInfos = se4.GetServerDirectoryInfos();
-                    dirInfos.Reset();
-                    object dirInfo = dirInfos.Next();
-                    while (dirInfo != null)
-                    {
-                        var dinfo2 = dirInfo as IServerDirectoryInfo2;
-                        if (null != dinfo2 && dinfo2.Type == esriServerDirectoryType.esriSDTypeOutput)
-                        {
-                            _outputDirectory = dinfo2.Path;
-                            break;
-                        }
-                        dirInfo = dirInfos.Next();
-                    }
-                }
-                catch (Exception ignore)
-                {
-                    _outputDirectory = string.Empty;
-                }
-
-                _outputDirectory = _outputDirectory.Trim();
-                if (string.IsNullOrEmpty(_outputDirectory))
-                {
-                    _serverLog.LogMessage(ServerLogger.msgType.error, _soiName + ".init()", 500, "OutputDirectory is empty or missing. Reset to default.");
-                    _outputDirectory = "C:\\arcgisserver\\directories\\arcgisoutput";
-                }
-
-                _serverLog.LogMessage(ServerLogger.msgType.infoDetailed, _soiName + ".init()", 500, "OutputDirectory is " + _outputDirectory);
+                // this won't work, serverenvironment not ready until after Init ...
+                //InitializeDirectory();
                 _serverLog.LogMessage(ServerLogger.msgType.infoStandard, _soiName + ".init()", 200, "Initialized " + _soiName + " SOI.");
             }
             catch (Exception e)
@@ -158,13 +129,19 @@ namespace NetApplyWatermarkSOI
                 if (operationName.Equals("export", StringComparison.CurrentCultureIgnoreCase))
                 {
                     Image sourceImage = null;
+                    var watermarker = new ApplyWatermark()
+                    {
+                        // knowing the processID makes it easier to attach the debugger ...
+                        WatermarkText = $"ProcessID: {System.Diagnostics.Process.GetCurrentProcess().Id}"
+                    };
+                    if (!_directoryInitialized)
+                        InitializeDirectory();
+
                     if (outputFormat.Equals("image", StringComparison.CurrentCultureIgnoreCase))
                     {
                         sourceImage = Image.FromStream(new System.IO.MemoryStream(response));
 
-                        var watermarker = new ApplyWatermark();
-
-                        var watermarkedImage = watermarker.Mark(sourceImage, "(c) ESRI Inc.");
+                        var watermarkedImage = watermarker.Mark(sourceImage);
                         var newResponse = new System.IO.MemoryStream();
                         watermarkedImage.Save(newResponse, sourceImage.RawFormat);
 
@@ -188,14 +165,13 @@ namespace NetApplyWatermarkSOI
                         // debug logging
                         //_serverLog.LogMessage(ServerLogger.msgType.error, "debug", 0, "output is " + outputImageFileLocation);
 
-                        var watermarker = new ApplyWatermark();
                         Image watermarkedImage;
 
                         System.Drawing.Imaging.ImageFormat sourceImageFormat;
                         using( sourceImage = Image.FromFile(outputImageFileLocation))
                         {
                             sourceImageFormat = sourceImage.RawFormat;
-                            watermarkedImage = watermarker.Mark(sourceImage, "(c) ESRI Inc.");
+                            watermarkedImage = watermarker.Mark(sourceImage);
                         }
                         // make sure we dispose sourceImage handles before saving to it
 
@@ -319,6 +295,39 @@ namespace NetApplyWatermarkSOI
 
         #region Utility code
 
+        private void InitializeDirectory()
+        {
+            try
+            {
+                var se4 = _restSOIHelper.ServerEnvironment as IServerEnvironmentEx;
+                var dirInfos = se4.GetServerDirectoryInfos();
+                dirInfos.Reset();
+                object dirInfo = dirInfos.Next();
+                while (dirInfo != null)
+                {
+                    var dinfo2 = dirInfo as IServerDirectoryInfo2;
+                    if (null != dinfo2 && dinfo2.Type == esriServerDirectoryType.esriSDTypeOutput)
+                    {
+                        _outputDirectory = dinfo2.Path;
+                        break;
+                    }
+                    dirInfo = dirInfos.Next();
+                }
+            }
+            catch (Exception ignore)
+            {
+                _outputDirectory = string.Empty;
+            }
+
+            _outputDirectory = _outputDirectory.Trim();
+            if (string.IsNullOrEmpty(_outputDirectory))
+            {
+                _serverLog.LogMessage(ServerLogger.msgType.error, _soiName + ".init()", 500, "OutputDirectory is empty or missing. Reset to default.");
+                _outputDirectory = "C:\\arcgisserver\\directories\\arcgisoutput";
+            }
+            _serverLog.LogMessage(ServerLogger.msgType.infoDetailed, _soiName + ".init()", 500, "OutputDirectory is " + _outputDirectory);
+            _directoryInitialized = true;
+        }
 
         /**
    * Generate physical file path from virtual path
