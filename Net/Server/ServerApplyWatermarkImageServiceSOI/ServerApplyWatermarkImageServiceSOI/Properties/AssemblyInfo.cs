@@ -11,7 +11,7 @@ using ESRI.ArcGIS.SOESupport;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ESRI")]
 [assembly: AssemblyProduct("ServerApplyWatermarkImageServiceSOI")]
-[assembly: AssemblyCopyright("Copyright © ESRI 2015")]
+[assembly: AssemblyCopyright("Copyright ©1999-2017 Esri Inc. All Rights Reserved")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -42,5 +42,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "8/19/2015 9:36:03 AM",
     Description = "SOI example that applies watermark to exported images from Image Service",
     TargetProduct = "Server",
-    TargetVersion = "10.5",
+    TargetVersion = "10.6",
     Version = "1.0")]

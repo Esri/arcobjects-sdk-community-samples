@@ -26,7 +26,7 @@
   <Company>ESRI</Company>
   <Date>20/10/2009</Date>
   <Targets>
-    <Target name="Desktop" version="10.5" />
+    <Target name="Desktop" version="10.6" />
   </Targets>
   <AddIn language="CLR" library="EnforcingDiagramName.dll" namespace="EnforcingDiagramName">
     <ArcMap>

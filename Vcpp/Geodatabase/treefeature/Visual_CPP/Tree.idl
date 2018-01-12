@@ -31,7 +31,7 @@ library TREELib
 	//OLB path to \Program Files (x86)\ArcGIS for the samples to work.
 	importlib("stdole32.tlb");
 	importlib("stdole2.tlb");
-	importlib("\Program Files (x86)\ArcGis\Desktop10.5\com\esriGeodatabase.olb");
+	importlib("\Program Files (x86)\ArcGis\Desktop10.6\com\esriGeodatabase.olb");
 
 	[
 		uuid(D52B8F3E-1B1F-11D6-8A9D-00104BB6FCCB),

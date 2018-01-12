@@ -42,5 +42,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "03/16/2012 12:00:00 PM",
     Description = ".Net Simple REST SOE With Capabilities",
     TargetProduct = "Server",
-    TargetVersion = "10.5",
+    TargetVersion = "10.6",
     Version = "1.0")]

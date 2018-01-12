@@ -10,9 +10,9 @@
 Language:              C#, VB
 Subject:               Schematics
 Organization:          Esri, http://www.esri.com
-Date:                  3/28/2017
-ArcObjects SDK:        10.5
-Visual Studio:         2013, 2015
+Date:                  11/17/2017
+ArcObjects SDK:        10.6
+Visual Studio:         2015, 2017
 .NET Target Framework: 4.5
 ```
 

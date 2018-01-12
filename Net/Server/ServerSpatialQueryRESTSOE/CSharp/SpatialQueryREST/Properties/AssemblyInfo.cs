@@ -11,7 +11,7 @@ using ESRI.ArcGIS.SOESupport;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ESRI")]
 [assembly: AssemblyProduct("SpatialQueryREST")]
-[assembly: AssemblyCopyright("Copyright © ESRI 2012")]
+[assembly: AssemblyCopyright("Copyright ©1999-2017 Esri Inc. All Rights Reserved")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -42,5 +42,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "03/16/2012 12:00:00 PM",
     Description = ".NET Spatial Query REST SOE Sample",
     TargetProduct = "Server",
-    TargetVersion = "10.5",
+    TargetVersion = "10.6",
     Version = "1.0")]

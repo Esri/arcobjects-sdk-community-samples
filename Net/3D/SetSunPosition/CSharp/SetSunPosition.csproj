@@ -95,7 +95,7 @@
     <AddInContent Include="Images\SunPositionTool.png;Images\SunPositionTool.cur" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="ESRI.ArcGIS.ADF.Local, version=10.5.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.ADF.Local, version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="ESRI.ArcGIS.ArcGlobe">

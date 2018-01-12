@@ -23,7 +23,7 @@ using ESRI.ArcGIS.SOESupport;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ESRI")]
 [assembly: AssemblyProduct("SimpleLoggerSOI")]
-[assembly: AssemblyCopyright("Copyright (c) ESRI 2014")]
+[assembly: AssemblyCopyright("Copyright ©1999-2017 Esri Inc. All Rights Reserved")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -54,5 +54,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "08/13/2014 12:00:00 PM",
     Description = ".Net Simple Logger SOI Sample",
     TargetProduct = "Server",
-    TargetVersion = "10.5",
+    TargetVersion = "10.6",
     Version = "1.0")]

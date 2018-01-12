@@ -26,7 +26,7 @@
   <Company>ESRI</Company>
   <Date>2009-09-03 13:37:13</Date>
   <Targets>
-    <Target name="Desktop" version="10.5" />
+    <Target name="Desktop" version="10.6" />
   </Targets>
   <AddIn language="CLR" library="SetFlowByDigitizedDirection.dll" namespace="SetFlowByDigitizedDirection">
     <ArcMap>

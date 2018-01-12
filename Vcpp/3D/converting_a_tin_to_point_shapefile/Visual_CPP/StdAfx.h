@@ -38,19 +38,19 @@ using namespace std;
 #pragma warning(disable : 4146)
 #pragma warning(disable : 4192) 
 //import esriSystem.olb	"libid:5E1F7BC3-67C5-4AEE-8EC6-C4B73AAC42ED"
-#import "\Program Files (x86)\ArcGIS\Desktop10.5\com\esriSystem.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "ICursorPtr", "VARTYPE"), rename("min", "EsriSystemmin"), rename("max", "EsriSystemmax"), rename("XMLSerializer","EsriSystemXMLSerializer"), rename("GetObject", "EsriSystemGetObject"), rename("GetJob", "EsriSystemGetJob")
+#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriSystem.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "ICursorPtr", "VARTYPE"), rename("min", "EsriSystemmin"), rename("max", "EsriSystemmax"), rename("XMLSerializer","EsriSystemXMLSerializer"), rename("GetObject", "EsriSystemGetObject"), rename("GetJob", "EsriSystemGetJob")
 //import esriSystemUI.olb "libid:4ECCA6E2-B16B-4ACA-BD17-E74CAE4C150A"
-#import "\Program Files (x86)\ArcGIS\Desktop10.5\com\esriSystemUI.olb" raw_interfaces_only raw_native_types no_namespace named_guids
+#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriSystemUI.olb" raw_interfaces_only raw_native_types no_namespace named_guids
 //import esriGeometry.olb "libid:C4B094C2-FF32-4FA1-ABCB-7820F8D6FB68"
-#import "\Program Files (x86)\ArcGIS\Desktop10.5\com\esriGeometry.olb" raw_interfaces_only raw_native_types no_namespace named_guids
+#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriGeometry.olb" raw_interfaces_only raw_native_types no_namespace named_guids
 //import esriDisplay.olb "libid:59FCCD31-434C-4017-BDEF-DB4B7EDC9CE0"
-#import "\Program Files (x86)\ArcGIS\Desktop10.5\com\esriDisplay.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "ICursorPtr", "VARTYPE"), rename("CMYK", "EsriDisplayCMYK"), rename("DrawText", "EsriDisplayDrawText"), rename("RGB","EsriRGB"), rename("ResetDC","EsriResetDC")
+#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriDisplay.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "ICursorPtr", "VARTYPE"), rename("CMYK", "EsriDisplayCMYK"), rename("DrawText", "EsriDisplayDrawText"), rename("RGB","EsriRGB"), rename("ResetDC","EsriResetDC")
 //import esriGeoDatabase.olb "libid:0475BDB1-E5B2-4CA2-9127-B4B1683E70C2"
-#import "\Program Files (x86)\ArcGIS\Desktop10.5\com\esriGeoDatabase.olb" raw_interfaces_only raw_native_types no_namespace named_guids  rename("GetMessage","esriGeoDatabaseGetMessage")
+#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriGeoDatabase.olb" raw_interfaces_only raw_native_types no_namespace named_guids  rename("GetMessage","esriGeoDatabaseGetMessage")
 //import esriGeoAnalyst.olb "libid:5C54042B-B2ED-4889-8C40-2D89C19DB41D"
-#import "\Program Files (x86)\ArcGIS\Desktop10.5\com\esriGeoAnalyst.olb" raw_interfaces_only raw_native_types no_namespace named_guids
+#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriGeoAnalyst.olb" raw_interfaces_only raw_native_types no_namespace named_guids
 //import esriDataSourcesFile.olb "libid:1CE6AC65-43F5-4529-8FC0-D7ED298E4F1A"
-#import "\Program Files (x86)\ArcGIS\Desktop10.5\com\esriDataSourcesFile.olb" raw_interfaces_only raw_native_types no_namespace named_guids
+#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriDataSourcesFile.olb" raw_interfaces_only raw_native_types no_namespace named_guids
 #pragma warning(pop)
 
 /* Engine Version support "libid:6FCCEDE0-179D-4D12-B586-58C88D26CA78" */

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Unicode Debug|Win32">
       <Configuration>Unicode Debug</Configuration>
@@ -23,14 +23,14 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <UseOfAtl>Dynamic</UseOfAtl>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -115,14 +115,9 @@ echo Warning : Cannot register Unicode DLL on Windows 95
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
     <CustomBuildStep>
       <Message>Performing registration</Message>
-      <Command>if "%OS%"=="" goto NOTNT
-if not "%OS%"=="Windows_NT" goto NOTNT
-regsvr32 /s /c "$(TargetPath)"
+      <Command>regsvr32 /s /c "$(TargetPath)"
+
 echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg"
-goto end
-:NOTNT
-echo Warning : Cannot register Unicode DLL on Windows 95
-:end
 </Command>
       <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
     </CustomBuildStep>

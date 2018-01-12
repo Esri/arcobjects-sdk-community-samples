@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ESRI")]
 [assembly: AssemblyProduct("NetSimpleRESTSOEWithProperties.Cat")]
-[assembly: AssemblyCopyright("Copyright © ESRI 2012")]
+[assembly: AssemblyCopyright("Copyright ©1999-2017 Esri Inc. All Rights Reserved")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -57,45 +57,45 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ESRI.ArcGIS.ADF.Local, version=10.5.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.ADF.Local, version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.5\DotNet\ESRI.ArcGIS.ADF.Local.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.6\DotNet\ESRI.ArcGIS.ADF.Local.dll</HintPath>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.ArcMapUI, version=10.5.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+    <Reference Include="ESRI.ArcGIS.ArcMapUI, version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.5\DotNet\ESRI.ArcGIS.ArcMapUI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.6\DotNet\ESRI.ArcGIS.ArcMapUI.dll</HintPath>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Carto, version=10.5.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+    <Reference Include="ESRI.ArcGIS.Carto, version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.5\DotNet\ESRI.ArcGIS.Carto.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.6\DotNet\ESRI.ArcGIS.Carto.dll</HintPath>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Display, version=10.5.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+    <Reference Include="ESRI.ArcGIS.Display, version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.5\DotNet\ESRI.ArcGIS.Display.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.6\DotNet\ESRI.ArcGIS.Display.dll</HintPath>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Framework, version=10.5.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+    <Reference Include="ESRI.ArcGIS.Framework, version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.5\DotNet\ESRI.ArcGIS.Framework.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.6\DotNet\ESRI.ArcGIS.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geometry, version=10.5.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+    <Reference Include="ESRI.ArcGIS.Geometry, version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.5\DotNet\ESRI.ArcGIS.Geometry.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.6\DotNet\ESRI.ArcGIS.Geometry.dll</HintPath>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.System, version=10.5.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+    <Reference Include="ESRI.ArcGIS.System, version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.5\DotNet\ESRI.ArcGIS.System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.6\DotNet\ESRI.ArcGIS.System.dll</HintPath>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.SystemUI, version=10.5.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+    <Reference Include="ESRI.ArcGIS.SystemUI, version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.5\DotNet\ESRI.ArcGIS.SystemUI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS\DeveloperKit10.6\DotNet\ESRI.ArcGIS.SystemUI.dll</HintPath>
     </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <SpecificVersion>False</SpecificVersion>

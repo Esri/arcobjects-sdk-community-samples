@@ -11,7 +11,7 @@ using ESRI.ArcGIS.SOESupport;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ESRI")]
 [assembly: AssemblyProduct("NetApplyWatermarkSOI")]
-[assembly: AssemblyCopyright("Copyright © ESRI 2015")]
+[assembly: AssemblyCopyright("Copyright ©1999-2017 Esri Inc. All Rights Reserved")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -42,5 +42,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "2/26/2015 2:30:43 PM",
     Description = "",
     TargetProduct = "Server",
-    TargetVersion = "10.5",
+    TargetVersion = "10.6",
     Version = "1.0")]

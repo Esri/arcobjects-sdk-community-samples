@@ -36,23 +36,17 @@
     <AssemblyOriginatorKeyFile>mykey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ESRI.ArcGIS.Carto">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geodatabase">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geometry">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Server">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ESRI.ArcGIS.Server, Version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
     </Reference>
-    <Reference Include="ESRI.ArcGIS.System">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
     </Reference>
-    <Reference Include="ESRI.ArcGIS.SOESupport">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ESRI.ArcGIS.SOESupport, Version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -72,7 +66,7 @@
   <PropertyGroup>
     <ZipFileExtension>soe</ZipFileExtension>
     <AddInTargetProduct>Server</AddInTargetProduct>
-    <AddInTargetVersion>10.5</AddInTargetVersion>
+    <AddInTargetVersion>10.6</AddInTargetVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\ESRI\ESRI.ArcGIS.Server.SDK.targets" Condition="Exists('$(MSBuildExtensionsPath)\ESRI\ESRI.ArcGIS.Server.SDK.targets')" />
