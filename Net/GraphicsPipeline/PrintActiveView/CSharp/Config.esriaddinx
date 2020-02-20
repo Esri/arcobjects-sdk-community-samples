@@ -26,7 +26,7 @@
   <Company>ESRI</Company>
   <Date>11/2/2009</Date>
   <Targets>
-    <Target name="Desktop" version="10.7" />
+    <Target name="Desktop" version="10.8" />
   </Targets>
   <AddIn language="CLR" library="PrintActiveViewCS_Net_Addin.dll" namespace="PrintActiveViewCS_Net_Addin">
     <ArcMap>

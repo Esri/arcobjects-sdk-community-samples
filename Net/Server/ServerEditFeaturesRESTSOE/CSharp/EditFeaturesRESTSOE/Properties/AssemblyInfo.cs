@@ -1,4 +1,4 @@
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using ESRI.ArcGIS.SOESupport;
@@ -42,5 +42,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "11/13/2011 4:55:13 PM",
     Description = ".Net Edit Features REST SOE",
     TargetProduct = "Server",
-    TargetVersion = "10.7",
+    TargetVersion = "10.8",
     Version = "1.0")]

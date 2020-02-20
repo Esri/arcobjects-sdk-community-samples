@@ -88,55 +88,55 @@
     </BootstrapperPackage>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
-    <Reference Include="ESRI.ArcGIS.AnalysisTools, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.AxControls, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.AxControls, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Carto, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.Carto, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Controls, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.Controls, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.DataManagementTools, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Display, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Display, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geodatabase, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Geodatabase, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geometry, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.Geometry, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geoprocessing, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geoprocessor, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.System, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.System, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.SystemUI, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.SystemUI, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Version, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Version, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>

@@ -25,7 +25,7 @@
 // without modification, provided you include the original copyright
 // notice and use restrictions.
 // 
-// See the use restrictions at <your ArcGIS install location>/DeveloperKit10.7/userestrictions.txt.
+// See the use restrictions at <your ArcGIS install location>/DeveloperKit10.8/userestrictions.txt.
 // 
 
 

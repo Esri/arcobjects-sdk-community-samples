@@ -48,7 +48,7 @@
     <Reference Include="ESRI.ArcGIS.Desktop.AddIns">
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Editor, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+    <Reference Include="ESRI.ArcGIS.Editor, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
@@ -129,19 +129,19 @@
     <AddInContent Include="Images\PrintActiveViewArcPressVB_Net2008_Addin.png" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="ESRI.ArcGIS.Carto, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Carto, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Display, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Display, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geometry, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Geometry, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Output, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Output, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.OutputExtensions, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.OutputExtensions, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System.Windows.Forms" />

@@ -8,9 +8,9 @@ This topic shows how to create a Math Function Raster dataset combining multiple
 Language:              C#, VB
 Subject:               Spatial Analyst
 Organization:          Esri, http://www.esri.com
-Date:                  12/13/2018
-ArcObjects SDK:        10.7
-Visual Studio:         2015, 2017
+Date:                  10/17/2019
+ArcObjects SDK:        10.8
+Visual Studio:         2017, 2019
 .NET Target Framework: 4.5
 ```
 

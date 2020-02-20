@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSimpleSoapSOE", "SimpleSoapSOE\NetSimpleSoapSOE.csproj", "{A5913A81-0E17-4855-81BE-122201E69C95}"
 EndProject
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4496A10F-19FF-42CC-9682-369E3AB88B3F}
+		SolutionGuid = {732C85D9-DB99-4737-8476-29AFA0581B96}
 	EndGlobalSection
 EndGlobal

@@ -57,37 +57,37 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ESRI.ArcGIS.3DAnalyst, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.AxControls, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.AxControls, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Carto, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.Carto, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Controls, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.Controls, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Display, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.Display, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geometry, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.Geometry, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.GlobeCore, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.GlobeCore, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Output, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.Output, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.System, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.System, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.SystemUI, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.SystemUI, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Version, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Version, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />

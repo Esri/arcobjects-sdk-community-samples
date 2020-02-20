@@ -8,9 +8,9 @@ This sample demonstrates how to use the Display library's RubberBand object to z
 Language:              C#, VB
 Subject:               Graphics Pipeline
 Organization:          Esri, http://www.esri.com
-Date:                  12/13/2018
-ArcObjects SDK:        10.7
-Visual Studio:         2015, 2017
+Date:                  10/17/2019
+ArcObjects SDK:        10.8
+Visual Studio:         2017, 2019
 .NET Target Framework: 4.5
 ```
 

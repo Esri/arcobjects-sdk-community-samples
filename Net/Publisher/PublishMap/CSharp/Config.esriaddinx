@@ -26,7 +26,7 @@
   <Company>ESRI</Company>
   <Date>19/11/2009</Date>
   <Targets>
-    <Target name="Desktop" version="10.7" />
+    <Target name="Desktop" version="10.8" />
   </Targets>
   <AddIn language="CLR" library="PublishMap2008CSharp.dll" namespace="PublishMap2008CSharp">
     <ArcMap>

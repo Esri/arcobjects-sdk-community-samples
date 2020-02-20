@@ -51,7 +51,7 @@
 extern CComModule _Module;
 #include <atlcom.h>
 
-#include "/Program Files (x86)/ArcGIS/DeveloperKit10.7/include/CATIDs/ArcCATIDs.h"
+#include "/Program Files (x86)/ArcGIS/DeveloperKit10.8/include/CATIDs/ArcCATIDs.h"
 
 #pragma warning(push)
 #pragma warning(disable : 4146)

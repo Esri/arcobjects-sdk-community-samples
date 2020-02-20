@@ -127,30 +127,30 @@
     <AddInContent Include="Images\PointTool.png;Images\PointTool.cur" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="ESRI.ArcGIS.ADF.Local, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.ADF.Local, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.ArcGlobe">
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Carto, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Carto, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Display, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Display, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geodatabase, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Geodatabase, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Geometry, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Geometry, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
@@ -160,15 +160,15 @@
     <Reference Include="ESRI.ArcGIS.3DAnalyst">
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Output, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Output, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.SystemUI, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.SystemUI, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Version, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+    <Reference Include="ESRI.ArcGIS.Version, version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>

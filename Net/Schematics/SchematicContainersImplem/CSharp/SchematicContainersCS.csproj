@@ -60,7 +60,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Carto" />
-    <Reference Include="ESRI.ArcGIS.Editor, Version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+    <Reference Include="ESRI.ArcGIS.Editor, Version=10.8.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>

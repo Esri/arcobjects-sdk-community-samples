@@ -26,7 +26,7 @@
   <Company>ESRI</Company>
   <Date>9/14/2010</Date>
   <Targets>
-    <Target name="Desktop" version="10.7" />
+    <Target name="Desktop" version="10.8" />
   </Targets>
   <AddIn language="CLR" library="CustomReportVBNET.dll" namespace="CustomReportVBNET">
     <ArcMap>

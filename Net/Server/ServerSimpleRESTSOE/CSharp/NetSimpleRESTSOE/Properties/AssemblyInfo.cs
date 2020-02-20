@@ -1,4 +1,4 @@
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -42,5 +42,5 @@ using System.Runtime.InteropServices;
     Date = "8/31/2015 9:00:56 AM",
     Description = "",
     TargetProduct = "Server",
-    TargetVersion = "10.7",
+    TargetVersion = "10.8",
     Version = "1.0")]

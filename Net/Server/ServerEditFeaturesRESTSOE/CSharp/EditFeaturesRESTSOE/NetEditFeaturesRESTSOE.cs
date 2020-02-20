@@ -145,8 +145,7 @@ namespace NetEditFeaturesRESTSOE
            
             JsonObject infoJSON = new JsonObject();
             infoJSON.AddString("name", ".Net Edit Features REST SOE");
-            infoJSON.AddString("description", "This SOE adds and edits features to a selected layer in the host map service. "
-                + "Note that this SOE is not designed to work with map services that have features stored in SDC data format."
+            infoJSON.AddString("description", "This SOE adds and edits features to a selected layer in a map service with editable data source registered to ArcGIS Server. Note that this SOE is not designed to work with hosted map services, or map service with read-only data source."
                 + " The \"layers\" subresource returns all layers in the map service."
                 + " The \"editFeature\" operation allows editing an existing feature in the layer indicated by this SOE's layerId property.\n"
                 + " The \"addFeatures\" operation allows addition of a new feature to the layer indicated by this SOE's layerId property.\n"
@@ -348,7 +347,6 @@ namespace NetEditFeaturesRESTSOE
 
             // edit feature
             string result = System.Text.Encoding.GetEncoding("utf-8").GetString(performEdits(updateFeature, updateFeatureJSON));
-            featureCursor.Flush();
             if (result.Equals(System.Boolean.TrueString))
             {
                 response.AddString("status", "success");

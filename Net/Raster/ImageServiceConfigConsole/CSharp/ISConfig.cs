@@ -79,7 +79,7 @@ namespace ISConfig
         //license           
         if (!InitLicense())
           return;
-        // added with 10.7: ignore certificate errors
+        // added with 10.8: ignore certificate errors
         ServicePointManager.ServerCertificateValidationCallback +=
           (sender, cert, chain, sslPolicyErrors) => true;
 

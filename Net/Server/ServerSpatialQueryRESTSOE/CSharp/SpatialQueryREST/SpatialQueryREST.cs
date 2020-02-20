@@ -1,14 +1,14 @@
 ﻿// Copyright 2015 ESRI
-// 
+//
 // All rights reserved under the copyright laws of the United States
 // and applicable international laws, treaties, and conventions.
-// 
+//
 // You may freely redistribute and use this sample code, with or
 // without modification, provided you include the original copyright
 // notice and use restrictions.
-// 
+//
 // See the use restrictions at <your ArcGIS Developer Kit install location>/userestrictions.txt.
-// 
+//
 
 using System;
 using System.Collections.Generic;
@@ -189,7 +189,7 @@ namespace SpatialQueryREST
                                                       string requestProperties,
                                                   out string responseProperties)
         {
-            responseProperties = null; 
+            responseProperties = null;
 
             // Deserialize the location.
             JsonObject jsonPoint;
@@ -235,7 +235,7 @@ namespace SpatialQueryREST
                 // Clip the geometry.
                 IPolygon clippedResultsGeometry = (IPolygon)topologicalOperator.Intersect(resultsFeature.Shape,
                     ESRI.ArcGIS.Geometry.esriGeometryDimension.esriGeometry2Dimension);
-                clippedResultsGeometry.Densify(0, 0); // Densify to maintain curved appearance when converted to JSON. 
+                clippedResultsGeometry.Densify(0, 0); // Densify to maintain curved appearance when converted to JSON.
                 // Convert the geometry to JSON and add it to the list.
                 JsonObject jsonClippedResultsGeometry = Conversion.ToJsonObject(clippedResultsGeometry);
                 jsonGeometries.Add(jsonClippedResultsGeometry);
