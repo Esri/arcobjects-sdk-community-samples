@@ -54,5 +54,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "08/13/2014 12:00:00 PM",
     Description = ".Net Simple Logger SOI Sample",
     TargetProduct = "Server",
-    TargetVersion = "10.6",
+    TargetVersion = "10.7",
     Version = "1.0")]

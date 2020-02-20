@@ -8,8 +8,8 @@ This sample demonstrates manipulation of the globe light source—enabling and d
 Language:              C#, VB
 Subject:               3D
 Organization:          Esri, http://www.esri.com
-Date:                  11/17/2017
-ArcObjects SDK:        10.6
+Date:                  12/13/2018
+ArcObjects SDK:        10.7
 Visual Studio:         2015, 2017
 .NET Target Framework: 4.5
 ```

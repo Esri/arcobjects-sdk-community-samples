@@ -19,7 +19,7 @@ library LOGOMARKERSYMBOLVCLib
 	//OLB path to \Program Files (x86)\ArcGIS for the samples to work.
 	importlib("stdole32.tlb");
 	importlib("stdole2.tlb");
-	importlib("C:\Program Files (x86)\ArcGIS\Desktop10.6\COM\esriDisplay.olb");
+	importlib("C:\Program Files (x86)\ArcGIS\Desktop10.7\COM\esriDisplay.olb");
 	[
 		object,
 		uuid(D7F5BF34-852A-11D5-A161-00508BA08E68),

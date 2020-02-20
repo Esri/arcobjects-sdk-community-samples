@@ -54,5 +54,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "03/16/2012 12:00:00 PM",
     Description = "Find Near Features SOAP SOE Sample",
     TargetProduct = "Server",
-    TargetVersion = "10.6",
+    TargetVersion = "10.7",
     Version = "1.0")]

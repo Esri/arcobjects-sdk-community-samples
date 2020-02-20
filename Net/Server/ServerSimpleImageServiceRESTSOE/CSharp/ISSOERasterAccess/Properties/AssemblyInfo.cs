@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using ESRI.ArcGIS.SOESupport;
@@ -42,5 +42,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "5/1/2012 12:33:28 PM",
     Description = "Image Service REST SOE Example",
     TargetProduct = "Server",
-    TargetVersion = "10.6",
+    TargetVersion = "10.7",
     Version = "1.0")]

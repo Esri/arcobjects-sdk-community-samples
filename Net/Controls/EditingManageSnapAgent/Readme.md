@@ -8,8 +8,8 @@ This sample demonstrates how to programmatically add, remove, and turn on  [I
 Language:              C#, VB
 Subject:               Controls
 Organization:          Esri, http://www.esri.com
-Date:                  11/17/2017
-ArcObjects SDK:        10.6
+Date:                  12/13/2018
+ArcObjects SDK:        10.7
 Visual Studio:         2015, 2017
 .NET Target Framework: 4.5
 ```

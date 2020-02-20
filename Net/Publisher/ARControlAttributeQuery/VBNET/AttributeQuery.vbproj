@@ -103,7 +103,7 @@
       <Name>ESRI.ArcGIS.PublisherControls</Name>
       <AssemblyFolderKey>hklm\dn\arcgis desktop</AssemblyFolderKey>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Version, version=10.6.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+    <Reference Include="ESRI.ArcGIS.Version, version=10.7.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System">

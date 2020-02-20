@@ -38,7 +38,7 @@
   <Company>ESRI</Company>
   <Date>3/15/2010</Date>
   <Targets>
-    <Target name="Desktop" version="10.6" />
+    <Target name="Desktop" version="10.7" />
   </Targets>
   <AddIn language="CLR" library="PrintActiveViewArcPressCS_Net_Addin.dll" namespace="PrintActiveViewArcPressCS_Net_Addin">
     <ArcMap>

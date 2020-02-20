@@ -56,13 +56,13 @@ extern CComModule _Module;
 #pragma warning(disable : 4192)
 
 //import esriSystem.olb "libid:5E1F7BC3-67C5-4AEE-8EC6-C4B73AAC42ED"
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriSystem.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "VARTYPE"), rename("min", "EsriSystemmin"), rename("max", "EsriSystemmax"), rename("XMLSerializer","EsriSystemXMLSerializer"), rename("GetObject", "EsriSystemGetObject"), rename("GetJob", "EsriSystemGetJob")
+#import "\Program Files (x86)\ArcGIS\Desktop10.7\com\esriSystem.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "VARTYPE"), rename("min", "EsriSystemmin"), rename("max", "EsriSystemmax"), rename("XMLSerializer","EsriSystemXMLSerializer"), rename("GetObject", "EsriSystemGetObject"), rename("GetJob", "EsriSystemGetJob")
 //import esriGeometry.olb "libid:C4B094C2-FF32-4FA1-ABCB-7820F8D6FB68"
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriGeometry.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "VARTYPE")
+#import "\Program Files (x86)\ArcGIS\Desktop10.7\com\esriGeometry.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "VARTYPE")
 //import esriGeoDatabase.olb "libid:0475BDB1-E5B2-4CA2-9127-B4B1683E70C2"
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriGeoDatabase.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "VARTYPE"), rename("GetMessage", "esriGeoDatabaseGetMessage")
+#import "\Program Files (x86)\ArcGIS\Desktop10.7\com\esriGeoDatabase.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "VARTYPE"), rename("GetMessage", "esriGeoDatabaseGetMessage")
 //import esriDataSourcesRaster.olb "libid:8F0541A3-D5BE-4B3F-A8D9-062D5579E19B"
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\com\esriDataSourcesRaster.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "VARTYPE"), rename("StartService", "esriDataSourcesRasterStartService")
+#import "\Program Files (x86)\ArcGIS\Desktop10.7\com\esriDataSourcesRaster.olb" raw_interfaces_only raw_native_types no_namespace named_guids exclude("OLE_COLOR", "OLE_HANDLE", "VARTYPE"), rename("StartService", "esriDataSourcesRasterStartService")
 
 #import "CustomXform.tlb"
 

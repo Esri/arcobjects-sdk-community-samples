@@ -18,8 +18,8 @@ library SIMPLEPOINTVCLib
 	//OLB path to \Program Files (x86)\ArcGIS for the samples to work.
 	importlib("stdole32.tlb");
 	importlib("stdole2.tlb");
-	importlib("\Program Files (x86)\ArcGIS\Desktop10.6\com\esriGeometry.olb");
-	importlib("\Program Files (x86)\ArcGIS\Desktop10.6\com\esriGeodatabase.olb");
+	importlib("\Program Files (x86)\ArcGIS\Desktop10.7\com\esriGeometry.olb");
+	importlib("\Program Files (x86)\ArcGIS\Desktop10.7\com\esriGeodatabase.olb");
 
 	// TODO remove if not required
 	[

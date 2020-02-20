@@ -8,8 +8,8 @@ This sample code demonstrates how to create a custom GxObject and the GxObject f
 Language:              C#, VB
 Subject:               Catalog
 Organization:          Esri, http://www.esri.com
-Date:                  11/17/2017
-ArcObjects SDK:        10.6
+Date:                  12/13/2018
+ArcObjects SDK:        10.7
 Visual Studio:         2015, 2017
 .NET Target Framework: 4.5
 ```

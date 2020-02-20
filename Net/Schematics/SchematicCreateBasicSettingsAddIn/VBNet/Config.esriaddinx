@@ -37,7 +37,7 @@
   <Company>ESRI</Company>
   <Date>1/10/2011</Date>
   <Targets>
-    <Target name="Desktop" version="10.6" />
+    <Target name="Desktop" version="10.7" />
   </Targets>
   <AddIn language="CLR" library="SchematicCreateBasicSettingsAddIn.dll" namespace="SchematicCreateBasicSettingsAddIn">
     <ArcCatalog>

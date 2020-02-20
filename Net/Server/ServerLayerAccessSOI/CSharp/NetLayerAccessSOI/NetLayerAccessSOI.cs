@@ -1231,7 +1231,7 @@ namespace NetLayerAccessSOI
                 String jsonStr = File.ReadAllText(fileName);
 
 
-                var json = new ESRI.ArcGIS.SOESupport.JsonObject(jsonStr);
+                var json = new JsonObject(jsonStr);
                 System.Object[] permissions = null;
                 // create a map of permissions
                 // read the permissions array
