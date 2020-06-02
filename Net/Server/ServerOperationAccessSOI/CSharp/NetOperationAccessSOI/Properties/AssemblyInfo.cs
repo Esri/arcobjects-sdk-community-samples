@@ -42,5 +42,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "9/8/2014 10:08:48 AM",
     Description = "Insert SOE package description here",
     TargetProduct = "Server",
-    TargetVersion = "10.6",
+    TargetVersion = "10.8",
     Version = "1.0")]

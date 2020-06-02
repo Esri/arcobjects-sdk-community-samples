@@ -26,7 +26,7 @@
   <Company>ESRI Employee</Company>
   <Date>9/9/2009 4:32:04 PM</Date>
   <Targets>
-    <Target name="Desktop" version="10.6" />
+    <Target name="Desktop" version="10.8" />
   </Targets>
   <AddIn language="CLR" library="Editing_EditEventListener.dll" namespace="Editing_EditEventListener">
     <ArcMap>

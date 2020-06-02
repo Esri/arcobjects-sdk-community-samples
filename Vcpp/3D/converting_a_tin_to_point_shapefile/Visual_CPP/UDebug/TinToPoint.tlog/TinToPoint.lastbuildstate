@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.5.2:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.17134.0
+Unicode Debug|Win32|C:\Repos\ArcGISRepo\arcobjects-sdk-community-samples\Vcpp\3D\converting_a_tin_to_point_shapefile\Visual_CPP\|

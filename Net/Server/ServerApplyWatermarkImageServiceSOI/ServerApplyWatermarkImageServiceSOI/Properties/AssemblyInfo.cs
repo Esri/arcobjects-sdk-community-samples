@@ -42,5 +42,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "8/19/2015 9:36:03 AM",
     Description = "SOI example that applies watermark to exported images from Image Service",
     TargetProduct = "Server",
-    TargetVersion = "10.6",
+    TargetVersion = "10.8",
     Version = "1.0")]

@@ -26,7 +26,7 @@
   <Company>ESRI</Company>
   <Date>12/10/2009</Date>
   <Targets>
-    <Target name="Desktop" version="10.6" />
+    <Target name="Desktop" version="10.8" />
   </Targets>
   <AddIn language="CLR" library="GlobeFlyTool.dll" namespace="GlobeFlyTool">
     <ArcGlobe>

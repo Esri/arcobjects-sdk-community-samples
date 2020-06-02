@@ -34,7 +34,7 @@
 #include "stdafx.h"
 #include "resource.h"
 
-[importlib("\Program Files (x86)\ArcGIS\Desktop10.6\com\esrinetworkanalyst.olb")];
+[importlib("\Program Files (x86)\ArcGIS\Desktop10.8\com\esrinetworkanalyst.olb")];
 
 // The module attribute causes DllMain, DllRegisterServer and DllUnregisterServer to be automatically implemented for you
 [ module(dll, uuid = "{F25947D1-9C81-48A6-9BFF-CF9EB158FFD7}", 

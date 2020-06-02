@@ -32,7 +32,7 @@
 #pragma once
 
 #include "resource.h"                                           // main symbols
-#include "/Program Files (x86)/ArcGIS/DeveloperKit10.6/include/CATIDs/ArcCATIDs.h"     // component category IDs
+#include "/Program Files (x86)/ArcGIS/DeveloperKit10.8/include/CATIDs/ArcCATIDs.h"     // component category IDs
 #include "ConnectivitySolver.h"
 
 // ConnSolverPropPage

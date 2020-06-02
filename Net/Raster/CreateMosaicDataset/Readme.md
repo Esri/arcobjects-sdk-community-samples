@@ -8,9 +8,9 @@ This topic shows how to create a Mosaic dataset, add rasters to it using one of
 Language:              C#, VB
 Subject:               Raster
 Organization:          Esri, http://www.esri.com
-Date:                  11/17/2017
-ArcObjects SDK:        10.6
-Visual Studio:         2015, 2017
+Date:                  10/17/2019
+ArcObjects SDK:        10.8
+Visual Studio:         2017, 2019
 .NET Target Framework: 4.5
 ```
 

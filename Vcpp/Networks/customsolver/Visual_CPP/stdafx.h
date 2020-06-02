@@ -25,7 +25,7 @@
 // without modification, provided you include the original copyright
 // notice and use restrictions.
 // 
-// See the use restrictions at <your ArcGIS install location>/DeveloperKit10.6/userestrictions.txt.
+// See the use restrictions at <your ArcGIS install location>/DeveloperKit10.8/userestrictions.txt.
 // 
 
 
@@ -97,26 +97,26 @@ using namespace ATL;
 //  exclude("UINT_PTR", "IConvertCacheStorageFormatJob", "IMapCacheExporterJob")
 
 //import esriSystem.olb
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\COM\esriSystem.olb" named_guids no_namespace raw_interfaces_only no_implementation \
+#import "\Program Files (x86)\ArcGIS\Desktop10.8\COM\esriSystem.olb" named_guids no_namespace raw_interfaces_only no_implementation \
   exclude("OLE_COLOR", "OLE_HANDLE", "VARTYPE"), rename("min", "EsriSystemmin"), rename("max", "EsriSystemmax"), rename("XMLSerializer","EsriSystemXMLSerializer"), rename("GetObject", "EsriSystemGetObject"), rename("GetJob", "EsriSystemGetJob")
 //import esriSystemUI.olb
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\COM\esriSystemUI.olb" named_guids no_namespace raw_interfaces_only no_implementation
+#import "\Program Files (x86)\ArcGIS\Desktop10.8\COM\esriSystemUI.olb" named_guids no_namespace raw_interfaces_only no_implementation
 //import esriFramework.olb
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\COM\esriFramework.olb" named_guids no_namespace raw_interfaces_only no_implementation  \
+#import "\Program Files (x86)\ArcGIS\Desktop10.8\COM\esriFramework.olb" named_guids no_namespace raw_interfaces_only no_implementation  \
   exclude("UINT_PTR")
 //import esriGeometry.olb
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\COM\esriGeometry.olb" named_guids no_namespace raw_interfaces_only no_implementation \
+#import "\Program Files (x86)\ArcGIS\Desktop10.8\COM\esriGeometry.olb" named_guids no_namespace raw_interfaces_only no_implementation \
   rename("ISegment", "ISegmentESRI")
 //import esriGeoDatabase.olb
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\COM\esriGeoDatabase.olb" raw_interfaces_only, raw_native_types, no_namespace, named_guids
+#import "\Program Files (x86)\ArcGIS\Desktop10.8\COM\esriGeoDatabase.olb" raw_interfaces_only, raw_native_types, no_namespace, named_guids
 //import esriNetworkAnalyst.olb
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\COM\esriNetworkAnalyst.olb" named_guids, no_namespace, raw_interfaces_only, no_implementation
+#import "\Program Files (x86)\ArcGIS\Desktop10.8\COM\esriNetworkAnalyst.olb" named_guids, no_namespace, raw_interfaces_only, no_implementation
 //import esriDisplay.olb
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\COM\esriDisplay.olb" raw_interfaces_only, raw_native_types, no_namespace, named_guids
+#import "\Program Files (x86)\ArcGIS\Desktop10.8\COM\esriDisplay.olb" raw_interfaces_only, raw_native_types, no_namespace, named_guids
 //import esriDataSourcesRaster.olb
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\COM\esriDataSourcesRaster.olb" raw_interfaces_only, raw_native_types, no_namespace, no_implementation named_guids
+#import "\Program Files (x86)\ArcGIS\Desktop10.8\COM\esriDataSourcesRaster.olb" raw_interfaces_only, raw_native_types, no_namespace, no_implementation named_guids
 //import esriCarto.olb
-#import "\Program Files (x86)\ArcGIS\Desktop10.6\COM\esriCarto.olb" raw_interfaces_only, raw_native_types, no_namespace, named_guids \
+#import "\Program Files (x86)\ArcGIS\Desktop10.8\COM\esriCarto.olb" raw_interfaces_only, raw_native_types, no_namespace, named_guids \
   exclude("UINT_PTR", "IConvertCacheStorageFormatJob", "IMapCacheExporterJob")
 
 // This is included below so we can refer to CLSID_, IID_, etc. defined within

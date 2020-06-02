@@ -42,5 +42,5 @@ using ESRI.ArcGIS.SOESupport;
     Date = "03/16/2012 12:00:00 PM",
     Description = ".NET Spatial Query REST SOE Sample",
     TargetProduct = "Server",
-    TargetVersion = "10.6",
+    TargetVersion = "10.8",
     Version = "1.0")]
