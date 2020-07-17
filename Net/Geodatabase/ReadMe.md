@@ -14,6 +14,7 @@ This repository contains ArcObjects SDK Samples for the ArcObjects SDK 10.8.  Th
 This folder contains ArcObjects SDK Samples that fall under the 'Geodatabase' topic:
 
 * [CustomUpstreamTraceTask (C#, VB)](../../../../tree/master/Net/Geodatabase/CustomUpstreamTraceTask)  
+* [MXDConnectionConverter (C#)](../../../../tree/master/Net/Geodatabase/MXDConnectionConverter)  
 * [RasterSyncWorkspaceExtension (C#, VB)](../../../../tree/master/Net/Geodatabase/RasterSyncWorkspaceExtension)  
 * [SetFlowByDigitizedDirection (C#, VB)](../../../../tree/master/Net/Geodatabase/SetFlowByDigitizedDirection)  
 * [SimplePointPlugin (C#, VB)](../../../../tree/master/Net/Geodatabase/SimplePointPlugin)  

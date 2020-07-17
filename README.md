@@ -11,7 +11,7 @@ This repository contains ArcObjects SDK Samples for the ArcObjects SDK 10.8.  Th
 
 ## Features
 
-This repository contains 226 ArcObjects SDK Samples which are all itemized in this [ArcObjects SDK Community Samples list](#arcobjects-sdk-community-samples-1)  
+This repository contains 227 ArcObjects SDK Samples which are all itemized in this [ArcObjects SDK Community Samples list](#arcobjects-sdk-community-samples-1)  
 
 ## Instructions
 
@@ -159,6 +159,7 @@ If you wish to contribute to this website, please
 #### Geodatabase
 
 * [CustomUpstreamTraceTask (C#, VB)](../../tree/master/Net/Geodatabase/CustomUpstreamTraceTask)  
+* [MXDConnectionConverter (C#)](../../tree/master/Net/Geodatabase/MXDConnectionConverter)  
 * [RasterSyncWorkspaceExtension (C#, VB)](../../tree/master/Net/Geodatabase/RasterSyncWorkspaceExtension)  
 * [SetFlowByDigitizedDirection (C#, VB)](../../tree/master/Net/Geodatabase/SetFlowByDigitizedDirection)  
 * [SimplePointPlugin (C#, VB)](../../tree/master/Net/Geodatabase/SimplePointPlugin)  
