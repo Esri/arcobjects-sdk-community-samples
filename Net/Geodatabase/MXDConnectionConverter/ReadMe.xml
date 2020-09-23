@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution PIVersion="1.0.0.0" href="http://devinfo/sites/sdk/netengdt/NetEngDtSample/Forms/template.xsn" language="en-us" name="urn:schemas-microsoft-com:office:infopath:NETEngDtSample:" solutionVersion="9.4.0.923" productVersion="12.0.0" ?>
+<?mso-application progid="InfoPath.Document"?>
+<esri_sdk_sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003">
+	<title>Convert SDE connections from app server to direct connections</title>
+	<purpose>
+		<div style="MARGIN-TOP: 0in; PADDING-LEFT: 0in; PADDING-RIGHT: 0in; MARGIN-BOTTOM: 0pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-02-10T23:25:53">
+			<span>C# code that will convert sde connections from app server to direct connections.</span>
+		</div>
+	</purpose>
+	<development_license>
+		<license>
+			<name>ArcGIS Desktop Standard</name>
+			<extension>
+			</extension>
+		</license>
+		<license>
+			<name>ArcGIS Desktop Advanced</name>
+			<extension>
+			</extension>
+		</license>
+		<license>
+			<name>Engine Developer Kit</name>
+			<extension>
+			</extension>
+		</license>
+	</development_license>
+	<deployment_license>
+		<license>
+			<name>ArcGIS Desktop Standard</name>
+			<extension>
+			</extension>
+		</license>
+		<license>
+			<name>ArcGIS Desktop Advanced</name>
+			<extension>
+			</extension>
+		</license>
+		<license>
+			<name>Engine</name>
+			<extension>Geodatabase Update</extension>
+		</license>
+	</deployment_license>
+	<min_version>9.3</min_version>
+	<min_sp>
+	</min_sp>
+	<max_version>
+	</max_version>
+	<max_sp>
+	</max_sp>
+	<file_section>
+		<files lang="CSharp" />
+	</file_section>
+	<how_to_use_section>
+		<how_to_use>
+			<title>Building the application</title>
+			<how_to_use_steps>
+				<step>It needs to be built on a machine that has ArcGIS Desktop and the ArcObjects SDK installed.</step>
+			</how_to_use_steps>
+		</how_to_use>
+		<how_to_use>
+			<title>Usage - run the app using 3 parameters:</title>
+			<how_to_use_steps>
+				<step>The first is a folder path that has the mxd’s you’d like to convert (by default it is the current directory).</step>
+				<step>The second parameter is optional and holds the characters you’d like to add after an underscore to the new mxd after conversion is complete (by default, if nothing is passed in it uses “DC”– for example an mxd named “mymap.mxd” will get saved as a new converted mxd named “mymap_DC.mxd”).
+				</step>
+				<step>The last parameter is also optional and is a boolean for verbose output (by default is “false”).</step>
+				<step>**For example:** MXDconnection_converter.exe --help&lt;br&gt;
+					Usage: MXDconnection_converter.exe [{Current Directory | '&lt;PathToMxdDirectory&gt;'}] [{DC | '&lt;newMxdStringToAdd&gt;'}] [VERBOSE] [{? | --help}]
+				</step>
+			</how_to_use_steps>
+		</how_to_use>
+	</how_to_use_section>
+	<additional_information>
+	</additional_information>
+	<related_topics>
+	</related_topics>
+	<content_area_tags>
+		<tag>Controls</tag>
+	</content_area_tags>
+	<guid>6f3127f4-9b95-4488-8132-a600ae290f09</guid>
+	<doc_type>Sample</doc_type>
+</esri_sdk_sample>
