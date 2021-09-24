@@ -33,8 +33,18 @@ Namespace GPCalculateArea
         Private m_ToolName As String = "CalculateArea" 'Function Name
         Private m_MetaDataFile As String = "CalculateArea_area.xml" 'Metadata file
         Private m_Parameters As IArray ' Array of Parameters
-        Private m_GPUtilities As New GPUtilities ' GPUtilities object
+        Private m_GPUtilities As IGPUtilities = Nothing ' GPUtilities object
 
+        Public Sub New()
+            Dim factoryType As Type = Type.GetTypeFromProgID("esriGeoprocessing.GPUtilities")
+            m_GPUtilities = CType(Activator.CreateInstance(factoryType), IGPUtilities3)
+        End Sub
+
+        Protected Overrides Sub Finalize()
+            If m_GPUtilities IsNot Nothing Then
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(m_GPUtilities)
+            End If
+        End Sub
 
 #Region "IGPFunction2 Members"
 

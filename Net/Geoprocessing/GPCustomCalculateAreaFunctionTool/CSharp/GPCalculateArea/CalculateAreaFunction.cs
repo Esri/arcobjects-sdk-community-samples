@@ -37,11 +37,19 @@ namespace GPCalculateArea
         private string m_ToolName = "CalculateArea"; //Function Name
         private string m_metadatafile = "CalculateArea_area.xml";
         private IArray m_Parameters;             // Array of Parameters
-        private IGPUtilities m_GPUtilities;      // GPUtilities object
+        private IGPUtilities m_GPUtilities = null;      // GPUtilities object
         
         public CalculateAreaFunction()
         {
-            m_GPUtilities = new GPUtilitiesClass();
+            Type factoryType = Type.GetTypeFromProgID("esriGeoprocessing.GPUtilities");
+            m_GPUtilities = (IGPUtilities3)Activator.CreateInstance(factoryType);
+        }
+
+        ~CalculateAreaFunction()
+        {
+            if (m_GPUtilities != null) {
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(m_GPUtilities);
+            }
         }
 
         #region IGPFunction Members
